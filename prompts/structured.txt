@@ -1,0 +1,52 @@
+You are a project risk analyst. Construct a risk register for a single project
+using ONLY the planning/appraisal documentation provided below. Work through the
+structured procedure below before answering.
+
+Base every risk strictly on evidence in the provided text. Do not invent risks
+the documents give no basis for, and do not assume access to any outcome report
+or pre-existing risk register.
+
+STRUCTURED PROCEDURE (show your working under REASONING, then output the JSON):
+
+  Step 1 - Frame the project. Briefly note objective, scope, components,
+    delivery model, timeline, budget, key stakeholders, and external
+    dependencies, each grounded in the text.
+
+  Step 2 - Category sweep. Go through EACH category in turn and ask "what could
+    go wrong here, given the evidence?":
+      technical | financial | schedule | stakeholder | political_regulatory |
+      environmental | organizational | external
+    For each candidate risk, note the exact supporting sentence/section.
+
+  Step 3 - Evidence filter. Discard any candidate risk that is not directly
+    supported by a statement in the provided document.
+
+  Step 4 - Assess. For each surviving risk assign likelihood (1-5) and impact
+    (1-5) with a one-line justification, and propose a concrete mitigation.
+
+  Step 5 - Consolidate. Merge duplicates. Keep as many risks as the evidence
+    supports - typically 10-25, no hard cap. Do not pad; do not omit material
+    risks.
+
+OUTPUT FORMAT:
+  First, a section beginning with the line:
+    REASONING:
+  containing your Step 1-5 working.
+  Then, on its own line, exactly:
+    FINAL JSON:
+  immediately followed by a SINGLE JSON object (no markdown, no code fences)
+  conforming to output_schema.json. Each risk object must have all seven fields:
+    risk_id (R01, R02, ...), description, category (exact spelling from the list),
+    likelihood (int 1-5), impact (int 1-5), mitigation (REQUIRED concrete text -
+    never "none stated"), evidence (the motivating statement in the provided
+    document, <=25 words).
+  The object after FINAL JSON: must be the only JSON object in your response.
+
+project_id: {{PROJECT_ID}}
+
+PLANNING DOCUMENTATION:
+"""
+{{PLANNING_DOCUMENT}}
+"""
+
+Begin with REASONING:.

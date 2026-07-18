@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://llm-risk-register-benchmark/output_schema.json",
+  "title": "LLM Risk Register Output (Generation)",
+  "description": "Output contract for a MODEL-GENERATED risk register for a single project. Models receive planning/appraisal documents only and must never be shown any risk register. For extracting the human ground-truth register, use ground_truth_schema.json instead (it relaxes optional fields).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["project_id", "risks"],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "description": "Identifier of the project, matching data/corpus_manifest.csv."
+    },
+    "risks": {
+      "type": "array",
+      "description": "One entry per identified risk. May be empty only if the documents genuinely contain no risk-relevant content.",
+      "items": { "$ref": "#/$defs/risk" }
+    }
+  },
+  "$defs": {
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["risk_id", "description", "category", "likelihood", "impact", "mitigation", "evidence"],
+      "properties": {
+        "risk_id": {
+          "type": "string",
+          "description": "Stable identifier unique within this register, e.g. R01, R02.",
+          "pattern": "^R[0-9]{2,3}$"
+        },
+        "description": {
+          "type": "string",
+          "description": "Concise statement of the risk (what could go wrong and why it matters).",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "description": "Exactly one of the fixed categories.",
+          "enum": [
+            "technical",
+            "financial",
+            "schedule",
+            "stakeholder",
+            "political_regulatory",
+            "environmental",
+            "organizational",
+            "external"
+          ]
+        },
+        "likelihood": {
+          "type": "integer",
+          "description": "Probability of occurrence on a 1 (very low) to 5 (very high) scale.",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "impact": {
+          "type": "integer",
+          "description": "Severity if it occurs on a 1 (negligible) to 5 (severe) scale.",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "mitigation": {
+          "type": "string",
+          "description": "REQUIRED in generation mode: proposing a mitigation/response is part of the task. The value \"none stated\" is NOT valid here (that belongs only to ground-truth extraction) and is scored as a miss.",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "string",
+          "description": "REQUIRED: the specific section, heading, or statement in the PROVIDED planning document that motivated this risk (<=25 words). A risk with no traceable evidence is the operational definition of a hallucination for RQ3.",
+          "minLength": 1,
+          "maxLength": 250
+        }
+      }
+    }
+  }
+}

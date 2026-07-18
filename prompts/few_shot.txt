@@ -1,0 +1,86 @@
+You are a project risk analyst. Your task is to construct a risk register for a
+single project using ONLY the planning/appraisal documentation provided below.
+
+Base every risk strictly on evidence in the provided text. Do not invent risks
+that the documents give no basis for, and do not assume access to any outcome
+report or pre-existing risk register.
+
+Identify the project's material risks. Produce as many risks as the evidence
+supports - typically 10-25. Do not pad the list with shallow or speculative
+entries, and do not omit material risks. There is no hard cap.
+
+For each risk, output these seven fields:
+  - risk_id: stable id unique within this register, formatted R01, R02, ...
+  - description: concise statement of the risk, grounded in the documentation.
+  - category: EXACTLY ONE of:
+      technical | financial | schedule | stakeholder | political_regulatory |
+      environmental | organizational | external
+  - likelihood: integer 1-5 (1 = very low, 5 = very high).
+  - impact: integer 1-5 (1 = negligible, 5 = severe).
+  - mitigation: a concrete proposed mitigation/response (REQUIRED; never
+    "none stated").
+  - evidence: the section/heading/statement in the PROVIDED document that
+    motivated this risk (at most 25 words). No evidence -> do not include it.
+
+Output MUST be a single JSON object and nothing else - no prose, no markdown, no
+code fences - conforming to output_schema.json.
+
+------------------------------------------------------------------------------
+EXAMPLE (illustrative only - this exemplar project is NOT part of the evaluation
+corpus; per the leakage rule, never use an example drawn from the same project
+you are being asked to assess):
+
+EXAMPLE planning documentation:
+"""
+The Programme will replace the national tax authority's legacy collection system
+over 30 months with a budget of USD 60 million, delivered by a single external
+systems integrator. Scope includes migrating taxpayer records from three legacy
+databases and a mandatory go-live before the start of the next fiscal year.
+Staff in 40 regional offices will require retraining on the new system.
+"""
+
+EXAMPLE output:
+{
+  "project_id": "EXAMPLE",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Migration of taxpayer records from three legacy databases may introduce data-quality errors or loss.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Staged migration with automated reconciliation and a validated rollback point per legacy source.",
+      "evidence": "Scope: migrating taxpayer records from three legacy databases."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Fixed go-live before the new fiscal year leaves no schedule float if delivery slips.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Define a contingency fallback to the legacy system and agree phased go-live criteria early.",
+      "evidence": "Mandatory go-live before the start of the next fiscal year."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Reliance on a single external systems integrator concentrates delivery and continuity risk.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Contractual performance milestones, source-code escrow, and knowledge transfer to in-house staff.",
+      "evidence": "Delivered by a single external systems integrator."
+    }
+  ]
+}
+------------------------------------------------------------------------------
+
+Now do the same for the ACTUAL project below.
+
+project_id: {{PROJECT_ID}}
+
+PLANNING DOCUMENTATION:
+"""
+{{PLANNING_DOCUMENT}}
+"""
+
+Return the JSON object now.

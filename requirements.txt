@@ -1,0 +1,23 @@
+# LLM Risk Register Benchmark - pinned dependencies (Python 3.11+)
+# Refresh pins deliberately; do not add new libraries without approval (see CLAUDE.md).
+
+# PDF extraction
+PyMuPDF==1.24.10
+
+# Model APIs
+anthropic==0.39.0
+openai==1.54.4
+
+# Semantic matching / embeddings
+sentence-transformers==3.2.1
+
+# Data + ML utilities
+pandas==2.2.3
+scikit-learn==1.5.2
+numpy==1.26.4
+
+# Plotting
+matplotlib==3.9.2
+
+# Config / secrets
+python-dotenv==1.0.1

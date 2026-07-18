@@ -1,0 +1,46 @@
+You are a project risk analyst. Your task is to construct a risk register for a
+single project using ONLY the planning/appraisal documentation provided below.
+
+Base every risk strictly on evidence in the provided text. Do not invent risks
+that the documents give no basis for, and do not assume access to any outcome
+report or pre-existing risk register.
+
+Identify the project's material risks. Produce as many risks as the evidence
+supports - typically 10-25. Do not pad the list with shallow or speculative
+entries, and do not omit material risks. There is no hard cap.
+
+For each risk, output:
+  - risk_id: a stable id unique within this register, formatted R01, R02, ...
+  - description: a concise statement of the risk (what could go wrong and why it
+    matters), grounded in the documentation.
+  - category: EXACTLY ONE of:
+      technical | financial | schedule | stakeholder | political_regulatory |
+      environmental | organizational | external
+  - likelihood: integer 1-5 (1 = very low, 5 = very high).
+  - impact: integer 1-5 (1 = negligible, 5 = severe).
+  - mitigation: a proposed mitigation/response. This is REQUIRED - proposing a
+    mitigation is part of your task. Do NOT write "none stated"; always propose
+    something concrete grounded in the project context.
+  - evidence: the specific section, heading, or statement in the PROVIDED
+    document that motivated this risk (at most 25 words). Every risk must be
+    traceable to the text; if you cannot cite evidence, do not include the risk.
+
+Rules:
+  - Use only the categories listed above, spelled exactly as shown.
+  - Cover the range of risk types actually present; do not over-focus on a
+    single category.
+  - Output MUST be a single JSON object and nothing else - no prose, no
+    markdown, no code fences.
+  - The JSON must conform to output_schema.json: a top-level object with
+    "project_id" (string) and "risks" (array of risk objects with the seven
+    fields above: risk_id, description, category, likelihood, impact,
+    mitigation, evidence).
+
+project_id: {{PROJECT_ID}}
+
+PLANNING DOCUMENTATION:
+"""
+{{PLANNING_DOCUMENT}}
+"""
+
+Return the JSON object now.
