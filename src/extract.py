@@ -61,7 +61,8 @@ def _normalize_for_match(line: str) -> str:
 
 def _find_repeated_lines(pages_lines: list[list[str]]) -> set[str]:
     """Find normalized header/footer lines that recur across many pages."""
-    if len(pages_lines) < 3:
+    # Need at least two pages for anything to "recur"; single-page docs are skipped.
+    if len(pages_lines) < 2:
         return set()
 
     counter: Counter[str] = Counter()
