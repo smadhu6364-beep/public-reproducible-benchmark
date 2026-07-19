@@ -46,27 +46,32 @@ Suggested ids: `WB01`-`WB05` (World Bank), `UK01`-`UK05` (UK IPA).
 - Documents & Reports: <https://documents.worldbank.org/en/publication/documents-reports/documentlist>
 
 **How to search:**
-1. In Documents & Reports, set **Document Type = "Implementation Completion and
-   Results Report" (ICR)** to find completed projects that are well documented.
-2. From the ICR, open the **same project's project page** on projects.worldbank.org
-   and download the **PAD (Project Appraisal Document)** - this is the planning doc.
-3. Prefer projects that are: English, non-trivial scale (larger IBRD/IDA loans),
+1. In Documents & Reports, set **Document Type = "Project Appraisal Document"
+   (PAD)**. The PAD is a single document that serves BOTH roles here: its
+   planning sections are the model input, and its risk section is our ground
+   truth (different sections of the same file). We do NOT use Implementation
+   Completion Reports (ICRs) - those are written post-closure with hindsight and
+   fit neither role.
+2. Prefer projects that are: English, non-trivial scale (larger IBRD/IDA loans),
    and spread across sectors (transport, energy, water, health, education).
+   Where a choice exists, prefer PADs published after the model training cutoffs
+   (see INCLUSION_CRITERIA.md -> contamination).
 
 **Recommended planning-vs-register mapping for World Bank:**
 - **Planning input (to model):** the PAD project description, components,
   institutional/implementation arrangements, and financing - **with the PAD's own
-  risk section removed** (the SORT / "Systematic Operations Risk-rating Tool"
-  table and any risk matrix).
-- **Ground-truth register (held out):** the PAD's **SORT risk table / risk
-  matrix** (risk categories + ratings), optionally cross-checked against the ICR's
-  account of risks that materialized.
-- ⚠️ Because both live in the PAD, step 4 (leakage separability) is the crux here.
-  If you cannot confidently strip the risk section from the planning text,
-  exclude the project.
+  risk content removed** (see excision target below).
+- **Ground-truth register (held out):** the PAD's **"V. Key Risks and Mitigation
+  Measures"** section together with the **SORT (Systematic Operations Risk-rating
+  Tool) table in the PAD Data Sheet** - risk categories, ratings, and stated
+  mitigations.
+- ⚠️ Because planning content and risk content live in the same PAD, step 4
+  (manual excision) is the crux. Excise "V. Key Risks and Mitigation Measures"
+  and the Data Sheet SORT table before any text is fed to models, and record the
+  page ranges. If you cannot confidently separate them, exclude the project.
 
 **Checklist:**
-- [ ] WB01 - PAD downloaded, SORT/risk table located, separable? recorded
+- [ ] WB01 - PAD downloaded; "V. Key Risks..." + Data Sheet SORT table located, excised, page ranges recorded
 - [ ] WB02 - "
 - [ ] WB03 - "
 - [ ] WB04 - "

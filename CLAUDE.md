@@ -21,7 +21,8 @@ RQ3: Which risk categories do LLMs systematically miss or hallucinate?
 ## Methodology rules (enforce in all code you write)
 
 - Corpus: ~20 real projects with BOTH public planning docs AND a published
-  human risk register. Sources: World Bank ICR reports, UK IPA/GMPP reports.
+  human risk register. Sources: World Bank Project Appraisal Documents (PADs),
+  UK IPA/GMPP reports.
 - LEAKAGE RULE (critical): models only ever receive planning/appraisal
   documents. The file containing the real risk register must never enter a
   prompt, a context window, or a few-shot example drawn from the same project.

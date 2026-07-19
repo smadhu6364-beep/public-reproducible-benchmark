@@ -13,8 +13,9 @@ outcome in `data/corpus_manifest.csv` (`inclusion_status` = `included` /
 - [ ] **Human risk register extractable.** A published, human-authored risk
       register (or clearly-structured risk section) exists and can be extracted
       into the fixed JSON schema (risk_id, description, category, likelihood,
-      impact, mitigation). Partial fields are OK if description + category are
-      present; note gaps in `notes`.
+      impact, mitigation). For World Bank PADs this is the "V. Key Risks and
+      Mitigation Measures" section plus the SORT table in the Data Sheet. Partial
+      fields are OK if description + category are present; note gaps in `notes`.
 - [ ] **English.** Primary documents and the register are in English
       (`language` = `en`). Translations are not used (avoids translation noise).
 - [ ] **Project scale.** Non-trivial project with a real risk profile
@@ -48,9 +49,10 @@ At n=20 the defensible approach is **manual** excision, not automated section
 stripping. Automated detection across PAD formats spanning many years will fail
 silently; manual is slower but auditable. For each included project:
 
-1. **Excise the register.** Identify the risk section (e.g. the World Bank SORT
-   table / risk matrix) and remove it from the planning text that will be fed to
-   models. Record the exact page range(s) in `pages_excised`.
+1. **Excise the register.** Identify the risk section (for World Bank PADs: the
+   "V. Key Risks and Mitigation Measures" section and the SORT table in the Data
+   Sheet) and remove it from the planning text that will be fed to models.
+   Record the exact page range(s) in `pages_excised`.
 2. **Skim for prose echoes.** PADs often restate SORT content in narrative "Key
    Risks" prose elsewhere in the document. Skim the remaining text and remove or
    note any passage that enumerates the register's risks. Record what you found
@@ -82,6 +84,6 @@ included - during pretraining. Excision cannot fix that. Two mitigations, use bo
 
 ## Target
 
-~20 included projects, balanced across the two sources (World Bank ICR reports
-and UK IPA/GMPP reports) and across sectors where possible. Begin with a
+~20 included projects, balanced across the two sources (World Bank PADs and
+UK IPA/GMPP reports) and across sectors where possible. Begin with a
 10-document validation batch (5 + 5) before scaling.
