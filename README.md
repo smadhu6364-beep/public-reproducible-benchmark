@@ -6,7 +6,7 @@ for Automated Risk Register Generation from Project Documentation: A Benchmark S
 We benchmark 3 LLMs (Claude, GPT, one open-source) across 3 prompting strategies
 (zero-shot, few-shot, structured reasoning) on ~20 real projects that have both
 public planning documents and a published human-authored risk register (sources:
-World Bank ICR reports, UK IPA/GMPP reports). Models see **only** planning docs;
+World Bank Project Appraisal Documents (PADs), UK IPA/GMPP reports). Models see **only** planning docs;
 the human register is held out as ground truth (strict no-leakage rule).
 
 **Research questions:** RQ1 completeness/accuracy vs. humans; RQ2 variation across

@@ -231,7 +231,7 @@ intersection is empty, which is the gap.
 
 ## NEXT ACTIONS (in order)
 
-1. **[Madhu, this week — still the gate]** Pull 5 World Bank ICRs + 5 UK IPA docs;
+1. **[Madhu, this week — still the gate]** Pull 5 World Bank PADs + 5 UK IPA docs;
    confirm risk registers are extractable. Nothing else proceeds until this passes.
 2. **[Kruthik]** Download full texts of #8, #9, #11, #12, #15 (the five must-reads).
    Write a half-page summary of each: method, sample size, evaluation design, stated
