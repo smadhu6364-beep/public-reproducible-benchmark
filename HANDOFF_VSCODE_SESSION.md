@@ -23,8 +23,8 @@ the real one, committed to disk where you can actually read it.)
   `src/judge.py` are all real, implemented, tested code. `src/check_env.py`
   (your Task 2) and `docs/rater_protocol.md` (your Task 1) are both done and
   verified working/solid on this end - thank you. Tasks A, B, C, and D are
-  all done (see below) - nothing queued right now, see the note at the end
-  of the Task D section.
+  all done (see below) - Task E (rater recruitment channel research) is
+  next.
 - Bugs found and fixed so far, for context on why the new task exists: a
   systemic SORT-table under-excision (8 WB documents), a Uganda over-excision
   (9 legitimate pages wrongly cut), and HyNet's page-offset (found by you).
@@ -132,24 +132,54 @@ real pilot generation. Found and fixed one real bug: Python's `bool` is a
 subclass of `int`, so `{"completeness": true, ...}` was silently accepted
 as a score of 1. Fixed in `src/judge.py`, committed, re-verified clean.
 
-**No further tasks queued right now.** Everything queueable without a
-real experiment run or real rater recruitment is done: corpus, pipeline,
-Method A (validated), Method B (built, blocked only on API keys), Method C
-(now tested), the figures pipeline, and a model-tier shortlist. What's left
-is genuinely Madhu's decisions (which model tier, `.env` keys, rater
-recruitment) - not engineering work. If you want something to do, ask
-rather than inventing scope, per the ground rules below.
+### Task E: research realistic channels for finding Method B raters
+
+Rater recruitment (CLAUDE.md's Method B: 3-5 practitioner raters) is a real,
+currently-unaddressed bottleneck - not corpus work, not pipeline code, and
+not something either of us can do directly (neither Claude session can
+actually contact and recruit a human). What we *can* do is the research
+legwork, the same pattern as Task D: I drafted the actual outreach message
+and qualifying criteria (`docs/rater_recruitment_outreach.md` - read it
+first for the exact profile needed: real PM experience on complex/
+infrastructure/public-sector-scale projects, comfortable with risk
+registers as a working artifact, not an ML background). Your environment
+has real internet access this sandbox doesn't - use it to find where such
+people might actually be reached, not just to speculate.
+
+Write `docs/rater_recruitment_channels.md` covering:
+- **Free/organic channels:** specific, real professional associations (PMI,
+  APM, or sector-specific equivalents for infrastructure/international-
+  development work) and whether they have an actual mechanism for this kind
+  of ask (a member forum, a research-participation board, local chapter
+  contacts) rather than just a general website. Same for relevant LinkedIn
+  groups or university PM-programme alumni/faculty pages - name real ones
+  if you can find them, don't just describe the category.
+- **Paid channels (in case Madhu decides "paid" on the outreach doc's open
+  question):** expert-network or user-research platforms that could supply
+  a handful of qualified PM professionals for a few hours each (e.g.
+  Respondent.io, User Interviews, or similar) - with approximate cost per
+  participant if published, since that interacts with CLAUDE.md's cost
+  awareness even though the $30 guard is specifically about API spend, not
+  this.
+- **Realistic timeline:** given each channel, how long from "post/ask" to
+  "have 3-5 confirmed raters" - this is the actual thing that matters
+  against the Aug-2026 deadline, more than which channel is theoretically
+  best.
+
+This is research and reporting only - do not draft new outreach copy
+(`rater_recruitment_outreach.md` already covers that) and do not contact
+anyone or sign up for anything.
 
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.
 - Don't touch the frozen RQs or the leakage rule.
-- Task D is a new doc file only - no code changes, no `.env` changes. If it
-  reveals you need to touch something outside this scope, stop and flag it
-  rather than editing quietly.
+- Task E is research/reporting only - a new doc file, no code changes, no
+  outreach sent, no signups. If it reveals you need to touch something
+  outside this scope, stop and flag it rather than editing quietly.
 - The git backlog mentioned in earlier handoffs is resolved - everything's
   committed now, working tree was clean before this round of tasks started.
   I'm still committing your work from the Cowork side as it lands, same as
   before - nothing you need to do differently.
-- Tasks A-D are all done. Nothing is pre-approved right now - ask before
-  starting anything new rather than inventing scope.
+- Task E is pre-approved - no need to check back before starting it. If you
+  finish it and want still more, ask before expanding scope further.
