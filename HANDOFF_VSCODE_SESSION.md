@@ -36,19 +36,23 @@ the real one, committed to disk where you can actually read it.)
 
 Progress since the last handoff on both, but neither is actually resolved yet:
 
-1. **Model tier: DECIDED, keys: still missing.** Madhu picked the "Mid"
-   triple (`docs/model_tier_recommendation.md`) - Sonnet 5 intro + GPT-5.6
-   Terra + a cheap open model. `.env.example` now has the confirmed, exact
-   API model ID strings pre-filled for Claude (`claude-sonnet-5`) and GPT
-   (`gpt-5.6-terra` - note the bare `gpt-5.6` alias currently routes to Sol,
-   not Terra). Two things remain: (a) `.env` itself still has no real API
-   keys - that's Madhu's account/billing action, not engineering; (b) the
-   open-source slot needs a specific hosted-provider pick (Together AI /
-   Fireworks / Groq / DeepInfra) before its exact model-ID string can be
-   set, since the string format differs by provider even for the same
-   model (DeepSeek V4 Pro) - this part *could* be a small task if asked for,
-   but isn't queued right now. `check_env.py` is still ready and tested for
-   the moment real keys land.
+1. **Model tier: fully DECIDED now, all three slots. Keys: still missing.**
+   Madhu picked the "Mid" triple (`docs/model_tier_recommendation.md`) -
+   Sonnet 5 intro + GPT-5.6 Terra + Llama 3.3 70B Turbo via Together AI (this
+   last one decided 2026-07-21, closing the gap `docs/opensource_slot_options.md`
+   researched). `.env.example` now has the confirmed, exact API model ID
+   strings AND base URL/pricing pre-filled for all three - copy it to `.env`
+   and add real keys, nothing else to decide. Only real API keys (all three
+   providers) remain - that's Madhu's account/billing action, not
+   engineering. `check_env.py` is still ready and tested for the moment they
+   land. **Live-verified the full grid's cost estimate end-to-end** with all
+   three slots configured (fake placeholder keys, `--estimate-only` never
+   calls a real API): 189 cells, `models_missing_pricing_data` empty (all
+   three price correctly now), **$41.20 for 2 runs** - over the $30 guard,
+   so a real run will need `--confirm-cost` (consistent with Task D's
+   memo's own ~$38.89 non-batch figure, small difference explained by Llama
+   3.3 70B Turbo's exact pricing vs. the memo's original DeepSeek-Pro
+   assumption for that slot).
 1a. **NEW 2026-07-21: `call_gpt()` fixed for a GPT-5.6-Terra compatibility
     risk found by code review + web search, not yet real-call-verified.**
     Sourced evidence (checked 2026-07-20/21) says OpenAI's GPT-5 reasoning
