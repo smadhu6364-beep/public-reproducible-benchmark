@@ -7,10 +7,13 @@ happens before the Sonnet 5 intro rate ends 2026-08-31). The exact,
 independently-verified API model ID strings for the Claude and GPT slots
 are now pre-filled in `.env.example` (`claude-sonnet-5` and
 `gpt-5.6-terra` — note OpenAI's bare `gpt-5.6` alias currently routes to
-Sol, not Terra, so the explicit string matters). The open-source slot still
-needs a specific hosted-provider pick (Together AI / Fireworks / Groq /
-DeepInfra) before its exact model-ID string can be set, since the string
-format differs by provider even for the same model.
+Sol, not Terra, so the explicit string matters). **UPDATE 2026-07-21
+(Madhu): the open-source slot is now decided too** — Llama 3.3 70B Turbo via
+Together AI (`docs/opensource_slot_options.md` has the sourced provider
+comparison; `.env.example` has the exact `OPENSOURCE_BASE_URL` /
+`OPENSOURCE_MODEL_NAME` / pricing strings pre-filled, same pattern as
+Claude/GPT). All three model slots are now fully specified; only real API
+keys (all three) remain before a real run.
 
 **This was legwork, not a unilateral decision.** CLAUDE.md and the handoff
 were explicit that which paid model runs in each slot is Madhu's call; the
