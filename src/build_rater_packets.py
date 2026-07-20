@@ -289,8 +289,8 @@ def main() -> int:
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED, help=f"RNG seed (default {DEFAULT_SEED}), recorded in the summary")
     parser.add_argument("--sample-per-cell", type=int, default=DEFAULT_SAMPLE_PER_CELL,
                         help=f"Projects sampled per (model x prompt) cell (default {DEFAULT_SAMPLE_PER_CELL}, per rater_protocol section 3.1)")
-    parser.add_argument("--min-uk-per-cell", type=int, default=0,
-                        help="Force at least this many UK projects into each cell (default 0 = naive random; set 1 to guarantee UK representation)")
+    parser.add_argument("--min-uk-per-cell", type=int, default=1,
+                        help="Force at least this many UK projects into each cell (default 1, DECIDED 2026-07-20 by Madhu - see docs/rater_protocol.md section 3.1; pass 0 for the naive unstratified draw)")
     parser.add_argument("--exclude-short-register", action="store_true",
                         help="Drop the metrics.py SHORT_REGISTER_SUBGROUP from the eligible pool (default: keep them)")
     parser.add_argument("--run-index", type=int, default=1, help="Which run to rate (default 1, per rater_protocol section 3.1)")

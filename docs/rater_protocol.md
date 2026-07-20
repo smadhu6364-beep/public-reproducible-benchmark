@@ -112,15 +112,18 @@ over ~470 registers — is not realistic for 3–5 volunteer/practitioner raters
   this sample size. Flag for reconsideration if 45 × (3 items) turns out to
   be too much rater time (see §6 time-budget note).
 
-**UK representation (OPEN — a real decision, not defaulted):** with only 3 UK
-projects in a 21-project pool, a naive random draw can badly under-sample or
-miss them — empirically, sweeping seeds through `build_rater_packets.py`
-produced anywhere from 1 to 8 UK registers out of 45, i.e. some seeds leave UK
-almost unrepresented across all 9 cells. If the paper wants UK business cases
-to be visible in the human-rated results (they are only 3 of 21, but they are
-the study's only non-World-Bank, non-SORT documents), set `--min-uk-per-cell 1`
-to force ≥1 UK register into every cell (≥9 UK registers total). Left OFF by
-default because whether to stratify on document source is a project-owner call.
+**UK representation — DECIDED 2026-07-20 (Madhu): `--min-uk-per-cell 1`.**
+With only 3 UK projects in a 21-project pool, a naive random draw can badly
+under-sample or miss them — empirically, sweeping seeds through
+`build_rater_packets.py` produced anywhere from 1 to 8 UK registers out of 45,
+i.e. some seeds leave UK almost unrepresented across all 9 cells. Since the UK
+documents are the study's only non-World-Bank, non-SORT documents and exist
+specifically to test cross-template generalization (Section III.A of the
+paper draft), leaving their representation in the human-rated sample to
+chance would undercut that argument. The live sample (seed 20260720,
+recorded in `results/rater_packets/sampling_summary.json`) now has 11 UK
+registers across the 45, with every one of the 9 model×prompt cells
+containing at least one.
 
 **This 45-register number and the "run 1 only, full overlap" design are the
 part of this document most likely to need Madhu/Kruthik revision** — they
