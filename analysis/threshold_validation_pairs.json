@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "purpose": "Hand-labeled risk-pair set for validating match.py's EMBEDDING_MODEL (all-MiniLM-L6-v2) and MATCH_THRESHOLD (0.5 default) against real sentence-transformer output. Consumed by src/validate_threshold.py.",
+    "created": "2026-07-20 (VS Code session)",
+    "honest_scope": "The 'ground_truth' side of every pair is drawn VERBATIM from committed data/ground_truth/*.json registers. The 'generated_style' side is HAND-WRITTEN to emulate the kind of register a model would produce (specific wording, its own mitigation), deliberately varying vocabulary from the ground-truth side so that shared word overlap does not artificially inflate cosine similarity. It is NOT real model output - none exists yet (no API keys configured; results/raw_outputs is empty). This makes the threshold conclusion 'validated against a realistic hand-built labeled sample,' which is stronger than the current 'unvalidated first-pass default' but weaker than 'validated against a real experiment run.' State that caveat wherever the resulting threshold is cited.",
+    "tiers": {
+      "clear_positive": "Unambiguously the SAME underlying risk, differently worded. Drives the recommended threshold.",
+      "clear_negative": "Unambiguously DIFFERENT risks. Drives the recommended threshold.",
+      "hard_case": "Genuine granularity-mismatch / borderline judgment calls (e.g. a specific implementation risk vs. a broad SORT category that arguably subsumes it). Reported for illustration but EXCLUDED from the headline threshold computation because the human label itself is uncertain. Several use the real pre-existing pilot generation scratch/pilot_STP_zeroshot.json as the generated side."
+    },
+    "text_convention": "Each side has description + mitigation. match.py's risk_text() embeds `f'{description} {mitigation}'.strip()`, so the validator computes similarity on that concatenation (its primary metric) and on description-only (a sensitivity check)."
+  },
+  "pairs": [
+    {
+      "pair_id": "WB-POS-01",
+      "tier": "clear_positive",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": true,
+      "a": {"source": "ground_truth R01 (political_regulatory)", "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections. Success depends on sustained coordination across labor, education, tourism, agriculture, and finance ministries plus private-sector engagement.", "mitigation": "Anchor the project within MLSSS (core employment-promotion mandate); strengthen technical ownership at directorate level rather than relying on political leadership; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "Political turnover and the fact that the employment agenda spans several ministries could redirect policy and stall counterpart decisions, particularly around the 2026 elections, undermining delivery momentum.", "mitigation": "House the program in the labor ministry's permanent technical staff so it does not depend on any one administration, and convene a standing inter-ministerial steering group."},
+      "rationale": "Same risk: political instability + multi-ministry coordination fragility around the elections."
+    },
+    {
+      "pair_id": "WB-POS-02",
+      "tier": "clear_positive",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": true,
+      "a": {"source": "ground_truth R02 (external/macro)", "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events), which may weaken labor demand, reduce firms' absorption capacity, and constrain the Government's ability to sustain recurrent-cost interventions (training, stipends, employment services).", "mitigation": "Prioritize low-cost, scalable interventions; combine supply-side investments with direct job-creation support; target sectors with growth potential and external demand linkages (incl. labor mobility); coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "Thin fiscal buffers and heavy reliance on imported goods and donor funding expose the country to price and financing shocks that could suppress private hiring and erode the state's capacity to keep paying for stipends and training over time.", "mitigation": "Favor cheap, scalable activities and align the operation with other Bank macro-fiscal and private-sector programs in the country."},
+      "rationale": "Same risk: macro-fiscal fragility / external-shock exposure weakening labor demand and recurrent-cost sustainability."
+    },
+    {
+      "pair_id": "WB-POS-03",
+      "tier": "clear_positive",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": true,
+      "a": {"source": "ground_truth R03 (organizational/institutional capacity)", "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination; sustainability risk if new systems/programs are not institutionalized within government structures and budgets.", "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures (existing MLSSS PIU, coordination committee, AFAP for fiduciary/safeguards); finance targeted TA and staffing; invest in durable institutional assets (labor-market information system, employability portal, strengthened training institutions, formalized service-provider arrangements); use the learning agenda and impact evaluation to identify cost-effective interventions for scale-up."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "The implementing agencies have little track record running labor programs at this scale, and reliance on many delivery partners creates a fragmented arrangement that may not endure once the project ends.", "mitigation": "Deliver through existing units rather than new parallel structures, fund targeted technical assistance and staffing, and embed durable systems such as a labor-market information platform inside government."},
+      "rationale": "Same risk: weak institutional capacity + fragmented multi-partner delivery + sustainability."
+    },
+    {
+      "pair_id": "WB-POS-04",
+      "tier": "clear_positive",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": true,
+      "a": {"source": "ground_truth R04 (financial/fiduciary)", "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.", "mitigation": "Agree ToRs and technical specifications between AFAP and the World Bank before initiating any procurement (prior and post-review); reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual; continue and adapt the risk assessment during implementation."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "Procurement carries substantial fiduciary risk because civil works on a remote island are complex, there is a heavy load of consultancy contracts, and the fiduciary agency is already spread thin across many operations.", "mitigation": "Settle terms of reference with the Bank before launching procurement, bolster the agency's procurement and contract-management staffing, and write dedicated payment-mechanism controls into the operations manual."},
+      "rationale": "Same risk: substantial procurement/fiduciary risk from island civil works + many TA contracts + overstretched agency."
+    },
+    {
+      "pair_id": "WB-NEG-01",
+      "tier": "clear_negative",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": false,
+      "a": {"source": "ground_truth R01 (political_regulatory)", "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections.", "mitigation": "Anchor the project within MLSSS; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."},
+      "b": {"source": "generated_style paraphrase of R04 (procurement)", "description": "Procurement carries substantial fiduciary risk because civil works on a remote island are complex, there is a heavy load of consultancy contracts, and the fiduciary agency is already spread thin across many operations.", "mitigation": "Settle terms of reference with the Bank before launching procurement and bolster the agency's procurement and contract-management staffing."},
+      "rationale": "Different risks: political turnover vs. procurement/fiduciary complexity."
+    },
+    {
+      "pair_id": "WB-NEG-02",
+      "tier": "clear_negative",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": false,
+      "a": {"source": "ground_truth R02 (external/macro)", "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events).", "mitigation": "Prioritize low-cost, scalable interventions; coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."},
+      "b": {"source": "generated_style paraphrase of R03 (institutional capacity)", "description": "The implementing agencies have little track record running labor programs at this scale, and reliance on many delivery partners creates a fragmented arrangement that may not endure once the project ends.", "mitigation": "Deliver through existing units rather than new parallel structures and fund targeted technical assistance and staffing."},
+      "rationale": "Different risks: macro-fiscal shock exposure vs. institutional-capacity/fragmentation."
+    },
+    {
+      "pair_id": "WB-NEG-03",
+      "tier": "clear_negative",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": false,
+      "a": {"source": "ground_truth R04 (financial/fiduciary)", "description": "Complex procurement in a small-island context: residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.", "mitigation": "Agree ToRs with the World Bank before initiating any procurement; reinforce AFAP procurement and contract-management capacity."},
+      "b": {"source": "generated_style paraphrase of R01 (political)", "description": "Political turnover and the fact that the employment agenda spans several ministries could redirect policy and stall counterpart decisions, particularly around the 2026 elections.", "mitigation": "House the program in the labor ministry's permanent technical staff and convene a standing inter-ministerial steering group."},
+      "rationale": "Different risks: procurement/fiduciary vs. political turnover."
+    },
+    {
+      "pair_id": "WB-NEG-04",
+      "tier": "clear_negative",
+      "register": "WB:P-STP-YouthEmployment",
+      "expected_match": false,
+      "a": {"source": "ground_truth R03 (organizational/institutional capacity)", "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics.", "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures; finance targeted TA and staffing."},
+      "b": {"source": "generated_style paraphrase of R02 (macro/external)", "description": "Thin fiscal buffers and heavy reliance on imported goods and donor funding expose the country to price and financing shocks that could suppress private hiring.", "mitigation": "Favor cheap, scalable activities and align the operation with other Bank macro-fiscal programs."},
+      "rationale": "Different risks: institutional capacity vs. macro-fiscal shock exposure."
+    },
+    {
+      "pair_id": "UK-POS-01",
+      "tier": "clear_positive",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": true,
+      "a": {"source": "ground_truth R01 (financial, T1SR1)", "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets.", "mitigation": "Contractual mechanisms ensure HMG only takes on specific risks where appropriate, with liability limited and counterparties incentivised to control costs; governance mechanisms monitor costs and provide early warning of overruns; contingent liability exposure is accurately monitored."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "The programme could see costs escalate after the investment decision, exceeding what the department's delegated budgets can absorb and leaving the taxpayer over-exposed.", "mitigation": "Contracts cap the government's liability and give counterparties incentives to keep costs down, while governance arrangements flag potential overruns early."},
+      "rationale": "Same risk: post-FID cost escalation / affordability exposure to HMG."
+    },
+    {
+      "pair_id": "UK-POS-02",
+      "tier": "clear_positive",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": true,
+      "a": {"source": "ground_truth R02 (organizational, T1SR3)", "description": "There is a risk that the programme does not realise its intended benefits for Track-1.", "mitigation": "Projects undergo detailed technical assurance and financial due diligence; projects must meet Initial Conditions Precedent (ICPs) before contracts take effect and Operational CPs thereafter, with LCCC able to terminate and avoid paying for an underperforming project; contractual mechanisms allocate performance-related risk to the private sector."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "The programme may fail to deliver the benefits it was set up to achieve.", "mitigation": "Each project is put through technical and financial due diligence and must clear conditions precedent before its contract activates; the counterparty can terminate and stop paying a project that underperforms."},
+      "rationale": "Same risk: benefits-realisation failure, mitigated by assurance + conditions precedent + termination rights."
+    },
+    {
+      "pair_id": "UK-POS-03",
+      "tier": "clear_positive",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": true,
+      "a": {"source": "ground_truth R03 (organizational, T1SR4)", "description": "There is a risk that the post-FID operating model across public and private sector parties will not operate successfully.", "mitigation": "Progress of arm's-length bodies' (ALBs') capacity and capability to operate successfully post-FID is monitored through the Delivery Board; a DESNZ Cluster Sponsor Function will be set up between FID and Commercial Operations Date (COD) to mitigate risks to cluster delivery and system integration; readiness-testing mechanisms are in place ahead of FID."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "The multi-party arrangement linking government bodies and private operators may not work effectively once the project moves into delivery.", "mitigation": "A delivery board tracks the readiness and capability of the arm's-length bodies, a dedicated cluster sponsor function is stood up before operations begin, and readiness is tested ahead of the investment decision."},
+      "rationale": "Same risk: post-FID public-private operating model may not function; same monitoring/sponsor-function mitigations."
+    },
+    {
+      "pair_id": "UK-POS-04",
+      "tier": "clear_positive",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": true,
+      "a": {"source": "ground_truth R04 (political_regulatory, T1SR5)", "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework.", "mitigation": "Key planned developments include amendments to the process for granting economic licences, a move toward a competitive allocation process for capture contracts, and evolution of transport & storage business models to reflect an increased private-sector role in managing cross-chain risks; cost-reduction levers (UK ETS pricing, CBAMs) are intended to help cultivate a self-sustaining industry and enable an HMG exit path."},
+      "b": {"source": "generated_style (same risk, varied wording)", "description": "It is not yet clear how government will step back from its role in the Track-1 commercial framework over time.", "mitigation": "The plan is to shift to competitive allocation of capture contracts, evolve the transport-and-storage business models toward greater private risk-bearing, and lean on carbon-pricing levers to grow a self-sustaining market that government can withdraw from."},
+      "rationale": "Same risk: unclear HMG exit path from the commercial framework; same competitive-allocation/carbon-lever mitigations."
+    },
+    {
+      "pair_id": "UK-NEG-01",
+      "tier": "clear_negative",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": false,
+      "a": {"source": "ground_truth R01 (financial, T1SR1 cost exposure)", "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets.", "mitigation": "Contractual mechanisms limit HMG liability; governance monitors costs and provides early warning of overruns."},
+      "b": {"source": "generated_style paraphrase of R04 (exit path)", "description": "It is not yet clear how government will step back from its role in the Track-1 commercial framework over time.", "mitigation": "Shift to competitive allocation of capture contracts and lean on carbon-pricing levers to grow a self-sustaining market."},
+      "rationale": "Different risks: cost/affordability exposure vs. unclear exit path from the commercial framework."
+    },
+    {
+      "pair_id": "UK-NEG-02",
+      "tier": "clear_negative",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": false,
+      "a": {"source": "ground_truth R03 (organizational, operating model)", "description": "There is a risk that the post-FID operating model across public and private sector parties will not operate successfully.", "mitigation": "A Delivery Board monitors ALB capacity; a Cluster Sponsor Function is set up before COD; readiness testing occurs ahead of FID."},
+      "b": {"source": "generated_style paraphrase of R01 (cost exposure)", "description": "The programme could see costs escalate after the investment decision, exceeding what the department's delegated budgets can absorb.", "mitigation": "Contracts cap the government's liability and give counterparties incentives to keep costs down."},
+      "rationale": "Different risks: operating-model functioning vs. cost/affordability exposure."
+    },
+    {
+      "pair_id": "UK-NEG-03",
+      "tier": "clear_negative",
+      "register": "UK:P-UK-HyNetCCUSCluster",
+      "expected_match": false,
+      "a": {"source": "ground_truth R04 (political_regulatory, exit path)", "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework.", "mitigation": "Move toward competitive allocation of capture contracts and evolve transport & storage business models; use ETS/CBAM cost-reduction levers."},
+      "b": {"source": "generated_style paraphrase of R02 (benefits realisation)", "description": "The programme may fail to deliver the benefits it was set up to achieve.", "mitigation": "Each project is put through due diligence and must clear conditions precedent; the counterparty can terminate an underperforming project."},
+      "rationale": "Different risks: exit path vs. benefits-realisation failure."
+    },
+    {
+      "pair_id": "XPROJ-NEG-01",
+      "tier": "clear_negative",
+      "register": "cross-project (UK HyNet vs WB STP)",
+      "expected_match": false,
+      "a": {"source": "P-UK-HyNetCCUSCluster ground_truth R04 (exit path)", "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework.", "mitigation": "Move toward competitive allocation of capture contracts and use ETS/CBAM cost-reduction levers to enable an HMG exit path."},
+      "b": {"source": "P-STP-YouthEmployment ground_truth R02 (macro/external)", "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events).", "mitigation": "Prioritize low-cost, scalable interventions; coordinate with other World Bank macro-fiscal engagements."},
+      "rationale": "Different projects AND different risks: UK CCUS commercial-exit vs. small-island macro-fiscal fragility. Tests that the embedding does not rate any two 'risk-flavored' texts as similar."
+    },
+    {
+      "pair_id": "XPROJ-NEG-02",
+      "tier": "clear_negative",
+      "register": "cross-project (UK Padeswood vs WB STP)",
+      "expected_match": false,
+      "a": {"source": "P-UK-PadeswoodCCUS ground_truth R04 (fraud)", "description": "Fraud risk across the CCUS programme's grant and contract payments.", "mitigation": "A CCUS Fraud Management Strategy is being developed specifying deterrence, prevention, detection, and management of fraud and error, including counter-fraud governance and fraud risk assessments."},
+      "b": {"source": "P-STP-YouthEmployment ground_truth R01 (political)", "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum around the 2026 elections.", "mitigation": "Anchor the project within MLSSS and establish a formal coordination committee and a unified PIU."},
+      "rationale": "Different projects and topics: fraud-management vs. political turnover."
+    },
+    {
+      "pair_id": "WB-HARD-01",
+      "tier": "hard_case",
+      "register": "WB:P-STP-YouthEmployment (real pilot generation)",
+      "expected_match": true,
+      "human_label_confidence": "medium",
+      "a": {"source": "pilot R02 (organizational)", "description": "Delivery depends on five separate public training institutions (CFP-BB, CFP-BSTP, EHT, CATAP, FCT-USTP) plus at least one MSME-support entity (REINA or similar) and a contracted payment service provider, creating a long implementation chain with many external counterparties.", "mitigation": "Standardize contracting templates and reporting requirements across all training institutions; build a centralized dashboard so AFAP/PIU can track each institution's delivery against milestones."},
+      "b": {"source": "ground_truth R03 (organizational/institutional capacity)", "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination.", "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures; finance targeted TA and staffing; invest in durable institutional assets."},
+      "rationale": "Granularity mismatch: the specific 'long delivery chain / many partners' risk is arguably a facet of the broad 'institutional capacity / fragmented multi-partner landscape' SORT category, but the pilot risk is narrower. A reasonable rater could match or not-match."
+    },
+    {
+      "pair_id": "WB-HARD-02",
+      "tier": "hard_case",
+      "register": "WB:P-STP-YouthEmployment (real pilot generation)",
+      "expected_match": true,
+      "human_label_confidence": "medium",
+      "a": {"source": "pilot R03 (financial)", "description": "Grant and stipend disbursement (internship stipends, self-employment grants, MSME grants, inclusion scholarships) runs through a chain of DTEFP direction, AFAP administration, and a contracted PSP for electronic payment - a multi-party payment flow with room for delay, error, or leakage at each handoff, especially for first-time beneficiaries needing electronic accounts.", "mitigation": "Adopt the SPRRP's proven PSP payment mechanism as-is rather than modifying it; set maximum turnaround-time targets for each handoff and audit a sample of payment cycles each supervision mission."},
+      "b": {"source": "ground_truth R04 (financial/fiduciary)", "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.", "mitigation": "Agree ToRs before procurement; reinforce AFAP procurement/contract-management capacity; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual."},
+      "rationale": "Partial overlap: the pilot's payment-flow risk maps onto the ground-truth mitigation clause about 'the grants/stipends payment mechanism,' but the ground-truth risk is dominated by civil-works procurement, not payments. Borderline."
+    },
+    {
+      "pair_id": "WB-HARD-03",
+      "tier": "hard_case",
+      "register": "WB:P-STP-YouthEmployment (real pilot generation)",
+      "expected_match": false,
+      "human_label_confidence": "medium",
+      "a": {"source": "pilot R04 (schedule)", "description": "A new Príncipe training center requires architectural design and technical studies to be procured, plus a new labor market information/data management system to be developed - both are new capital/IT builds with schedule risk (design, procurement, construction/development lead times) not present in the rest of the largely service-delivery project.", "mitigation": "Sequence the Príncipe center and LMIS as separate procurement tracks with their own milestones so delays there don't block disbursement-linked training/stipend activities elsewhere in the project."},
+      "b": {"source": "ground_truth R04 (financial/fiduciary)", "description": "Complex procurement in a small-island context: residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.", "mitigation": "Agree ToRs with the World Bank before initiating any procurement; reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision."},
+      "rationale": "Shared vocabulary (procurement, civil works, Príncipe center) but different risk framing: pilot frames it as SCHEDULE risk of new builds; ground truth frames it as PROCUREMENT/FIDUCIARY risk. Whether these are 'the same risk' is a genuine judgment call - included to show where a lexically-similar-but-differently-framed pair lands."
+    },
+    {
+      "pair_id": "XPROJ-HARD-01",
+      "tier": "hard_case",
+      "register": "cross-project (UK HyNet vs UK Padeswood - legitimately similar)",
+      "expected_match": true,
+      "human_label_confidence": "high",
+      "a": {"source": "P-UK-HyNetCCUSCluster ground_truth R01 (financial, cost exposure)", "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets.", "mitigation": "Contractual mechanisms ensure HMG only takes on specific risks where appropriate, with liability limited and counterparties incentivised to control costs."},
+      "b": {"source": "P-UK-PadeswoodCCUS ground_truth R06 (external, cross-chain/cross-cutting)", "description": "Cross-chain and cross-cutting risks. Cross-chain risks are risks the private sector is exposed to through the network but cannot mitigate against - T&S Construction delay, Padeswood Construction Delay, Padeswood Underperformance, T&S Underperformance, and Discontinuation Provisions; Padeswood joining the HyNet cluster increases HMG's exposure to compensation payments should the T&S network fail or become unavailable.", "mitigation": "Risk allocation is designed so that each risk sits with the party best placed to manage it; the business model contracts and Network Code are structured to limit and price cross-chain exposure."},
+      "rationale": "Two DIFFERENT projects but a GENUINELY similar underlying risk (HMG cost/cross-chain exposure in the same HyNet CCUS cluster). Included specifically to demonstrate WHY match.py restricts matching to within-project: a high similarity here is CORRECT behavior of the embedding, and would be a false cross-project match if match.py did not scope by project. NOT a defect - a design-justification data point."
+    }
+  ]
+}

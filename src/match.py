@@ -15,13 +15,17 @@ Responsibilities:
   - Emit per-run match tables into results/scored/ for metrics.py to consume.
 
 Known limitations, stated plainly rather than hidden:
-  - EMBEDDING_MODEL and MATCH_THRESHOLD below are first-pass defaults, not
-    empirically validated against this corpus. There isn't yet enough real
-    generated-vs-ground-truth data to tune a threshold properly (that requires
-    a real experiment run, which requires API keys that are not yet
-    configured). Treat any recall/precision numbers produced before the
-    threshold is validated against a labeled sample as provisional, and say so
-    in the paper if the threshold is not revisited before real numbers are
+  - MATCH_THRESHOLD was 0.5 as a first-pass default; on 2026-07-20 it was
+    lowered to 0.45 after validation against a hand-labeled pair set (see
+    src/validate_threshold.py and results/threshold_validation_report.md).
+    That validation is NOT a substitute for tuning against a real experiment
+    run: its "generated" side is hand-written to emulate model output because
+    no real output exists yet (no API keys). It is a realistic labeled
+    sample, not a harvested one. EMBEDDING_MODEL (all-MiniLM-L6-v2) validated
+    as fit for purpose in the same run (clean separation of should-match vs.
+    should-not-match pairs). Treat any recall/precision numbers produced
+    before the threshold is re-checked against a real run as provisional, and
+    say so in the paper if it is not revisited before real numbers are
     reported.
   - Generated risks can never have category="other" (forbidden by
     prompts/output_schema.json's enum), but ground-truth risks sometimes do
@@ -50,11 +54,22 @@ RAW_OUTPUTS_DIR = REPO_ROOT / "results" / "raw_outputs"
 GROUND_TRUTH_DIR = REPO_ROOT / "data" / "ground_truth"
 SCORED_DIR = REPO_ROOT / "results" / "scored"
 
-# First-pass defaults - see "Known limitations" above. Override via CLI flags
-# for any tuning/sensitivity-analysis pass rather than editing these in place,
-# so the default stays visible in version control.
+# See "Known limitations" above. Override via CLI flags for any
+# tuning/sensitivity-analysis pass rather than editing these in place, so the
+# default stays visible in version control.
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-MATCH_THRESHOLD = 0.5
+# Validated 2026-07-20 (src/validate_threshold.py, results/threshold_validation_report.md).
+# On the hand-labeled clean pairs, should-match similarities ranged 0.52-0.81
+# (mean 0.66) and should-NOT-match 0.20-0.42 (mean 0.28) - cleanly separable,
+# gap (0.42, 0.52), midpoint 0.47. Both 0.45 and 0.50 classify the clean set
+# perfectly, but 0.45 was chosen over the prior 0.50 because: (a) the lowest
+# true-positive similarity was 0.52, leaving 0.50 only a 0.02 margin against
+# real-output noise, vs. 0.07 at 0.45; (b) on the realistic granularity-
+# mismatch task (a model's specific implementation risk vs. a broad SORT-
+# category ground-truth risk), legitimate matches land in the 0.44-0.50 band
+# that 0.50 clips off, while the highest true-negative (0.42) stays safely
+# below 0.45 so specificity is not sacrificed. Revisit against a real run.
+MATCH_THRESHOLD = 0.45
 
 
 def risk_text(r: dict) -> str:
