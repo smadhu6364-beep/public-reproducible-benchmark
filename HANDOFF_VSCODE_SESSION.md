@@ -54,89 +54,129 @@ complete and independently verified on this end. Full history is in git log /
 `corpus_manifest.csv` notes if you want it; not repeating it here since it's
 done, not actionable.
 
-## New task (highest priority): systematic leakage / page-range audit
+## Previous task (leakage/page-range audit) - done, thank you
 
-Every excision bug this project has found - the SORT-table under-excision,
-the Uganda over-excision, HyNet's 2-page draft offset - was caught by manually
-opening a source document and checking page-by-page, never by trusting a
-recorded range. That's only ever been done ad hoc, one document at a time,
-sometimes by whichever of us happened to be looking at that file that day.
-There's no systematic, rerunnable check that all 21 included projects are
-actually leak-free and correctly excised right now - just a track record of
-manual spot-checks that happened to catch 3 real bugs. Given how much of this
-paper's validity rests on "the ground truth register never entered a model's
-prompt," that gap is worth closing properly.
+17 PASS / 1 WARN / 3 FAIL, all hand-verified before reporting rather than
+trusted raw - real work, and you caught 3 bugs in your own detection
+heuristics along the way, which says good things about how carefully this
+was done. Padeswood WARN and Morocco FAIL were both correctly identified as
+false positives. Peru and Uganda FAILs were real leaks - I independently
+re-verified both against the actual PDFs myself before fixing (found a
+second leak on the same Peru page you didn't call out - R04's E&S finding,
+restated right next to the R03 finding you flagged), then extended their
+excision ranges, re-ran extract.py, and re-verified clean. All committed.
+`src/audit_corpus.py` is now part of the permanent toolkit - it's a good
+`--all` scan to re-run any time the corpus changes.
 
-Build a script - suggest `src/audit_corpus.py` - that, for every row in
-`corpus_manifest.csv` with `inclusion_status=included` (21 right now), does
-two independent checks:
+## Two new tasks (both requested - do Task A first, then Task B)
 
-**1. Page-range re-verification (PDF-sourced projects only - 20 of 21).**
-`P-UK-FreeBreakfastClubs` is the one exception: it's an HTML gov.uk
-publication with no PDF and no page numbers at all (see its manifest row and
-`data/ground_truth/P-UK-FreeBreakfastClubs.json` - `register_location` names
-an HTML heading, not a page range). Skip page-verification for it; handle it
-under check 2 instead (re-fetch its HTML and confirm the risk-bullet text is
-still where `data/processed/P-UK-FreeBreakfastClubs.txt` and the ground truth
-file expect).
+### Task A: validate Method A's matching quality against real embeddings
 
-For the other 20 (18 WB PDFs + `P-UK-HyNetCCUSCluster` +
-`P-UK-PadeswoodCCUS`), open the real PDF in `data/raw/<project_id>/` with
-PyMuPDF and independently re-derive where the risk-bearing section(s)
-actually start and end, by searching page by page for the section heading
-text itself (e.g. "KEY RISKS", "SORT", or for the UK docs the specific
-numbered headings like "2.5 Identify high level potential risks") - the same
-method used to catch all 3 bugs so far. Compare what you find against what
-`corpus_manifest.csv`'s `sort_pages` / `section_v_pages` /
-`proposed_excision_pages` columns claim. Note: WB rows and UK rows use these
-columns slightly differently - WB uses `sort_pages` for the SORT table and
-`section_v_pages` for the Key Risks narrative; UK rows have no SORT table
-(`sort_present=N`) and repurpose `section_v_pages` to mean "the one section
-used as the scored ground-truth register," with everything else listed in
-`other_risk_mentions`. Read a couple of example rows of each type before
-assuming one convention applies to both.
+`src/match.py`'s docstring says it plainly: `EMBEDDING_MODEL =
+"all-MiniLM-L6-v2"` and `MATCH_THRESHOLD = 0.5` are "first-pass defaults, not
+empirically validated against this corpus." Every test of `match_project()`
+so far (including the one done to build match.py itself) used a mocked fake
+encoder - deterministic bag-of-words hashing, not a real model - because this
+sandbox can't reach huggingface.co to download one. That means the actual
+semantic-matching quality that Method A's headline recall/precision numbers
+will depend on has never been checked against anything real. Your
+environment can download the real model; this sandbox can't.
 
-**2. Leak check (all 21, regardless of source type).** For each project, load
-`data/ground_truth/<project_id>.json`, pull every risk's `description` and
-`mitigation` text plus any distinctive IDs mentioned in it (e.g. HyNet's
-"T1SR1"), and confirm none of it appears - verbatim or as an obvious
-paraphrase-with-shared-fragment - in `data/processed/<project_id>.txt`. Also
-check that `other_risk_mentions` content (sections that were excised for
-leakage safety but aren't themselves scored - e.g. HyNet's Sections 1.6, 3.7,
-4.2.4, 5.7) is genuinely absent from the processed text too, not just the
-scored section.
+What to do:
+1. Install `sentence-transformers` if not already (it's in requirements.txt)
+   and confirm you can actually load `all-MiniLM-L6-v2` - this alone is
+   something to report if it fails, since it would mean the pipeline's
+   default model choice needs to change regardless of threshold.
+2. Build a small, hand-constructed test set - not real model output (none
+   exists yet), but plausible stand-ins for it. Pick a mix of 3-4 ground
+   truth registers, including at least one World Bank register (e.g.
+   `P-SRB-CompetitivenessJobs`, has 6 real risks) and the UK
+   `P-UK-HyNetCCUSCluster` register (different phrasing style/framing -
+   worth checking the matcher works across both, not just WB-style text).
+   For each real risk in those registers, write:
+   - a "should-match" paraphrase - different wording, same underlying risk,
+     roughly what a reasonably good model might plausibly generate
+   - a "should-NOT-match" distractor - include some *hard* negatives (same
+     category, genuinely different specific risk) alongside easy ones, since
+     easy negatives won't stress-test the threshold meaningfully
+3. Call `match_project()` directly (see `src/match.py` - it takes two dicts
+   each shaped like `{"risks": [...]}`, exactly the ground truth JSON shape)
+   with your constructed "generated" register against the real ground truth,
+   using the real model. Do this at a few threshold values (e.g. 0.3, 0.4,
+   0.5, 0.6, 0.7), not just the current default - report the trade-off, not
+   a single pass/fail.
+4. Report: does 0.5 actually separate your should-match cases from your
+   should-NOT-match cases? If not, what threshold does, and by how much
+   margin? If you have time, try one alternate embedding model (e.g.
+   `all-mpnet-base-v2`) as a stretch check, but the threshold analysis on
+   the current model is the actual priority.
 
-**Output:** a clear per-project PASS / WARN / FAIL, printed and also written
-to a report file (e.g. `results/corpus_audit_report.md` or similar - your
-call). WARN for anything ambiguous (e.g. a heading found on a slightly
-different page than claimed but the actual risk content still reads
-correctly), FAIL for a confirmed leak or a genuinely wrong page range.
+**This is allowed to end in a recommendation, not just a report** - unlike
+the audit task, changing `MATCH_THRESHOLD`'s default is a normal parameter-
+tuning decision, not something touching leakage-sensitive corpus data. If the
+evidence clearly favors a different threshold, go ahead and change the
+default in `src/match.py` (update the docstring's "known limitations" note
+to say it's now been checked against a hand-built test set, not just
+asserted). If it's genuinely ambiguous, say so and leave the default alone
+rather than picking one arbitrarily.
 
-**Important - report only, don't auto-fix.** If the script finds a real
-discrepancy, do NOT silently correct the manifest or ground truth file the way
-we did for Uganda/HyNet - those corrections each needed a specific, written
-explanation of what was wrong and why (see either row's `notes` for the
-pattern). Flag findings clearly with the specifics (expected vs. actual page,
-or the exact leaked substring and where it appeared) and let me or Madhu
-decide the fix from there. The goal of this task is a trustworthy detector,
-not an autonomous fixer - those are different levels of trust and shouldn't
-be bundled into one script.
+Write your test set and findings to something like
+`results/matching_validation_report.md` so the hand-built pairs are
+reviewable, not just a black-box verdict. Be explicit that this validates the
+*matching mechanism* using constructed proxies, not real model output - a
+further check once real generations exist is still worthwhile, this just
+catches an obviously bad default before any real API budget gets spent on it.
 
-If everything comes back PASS, that's a genuinely useful result too - it
-means the corpus is verified at a level stronger than "we happened to check
-this one and it was fine."
+### Task B: build Method B's packet-generation code
+
+`docs/rater_protocol.md` §3.1-3.2 designed a specific sampling and blinding
+scheme but says plainly the actual code was never written. Build it now so
+it's ready to fire the moment raters are recruited, rather than starting a
+build cycle after that.
+
+One thing to fix while you're in there: §3.1 says "sample 5 of the 18
+projects" - that's stale, the corpus is 21 now (the UK documents were added
+after that doc was written). Update the doc's own numbers to 21, and decide
+(your call, but state the reasoning) whether the 5-per-cell sample should be
+drawn from all 21 or should guarantee UK representation given only 3 of the
+21 are UK documents and one of those is the short-register-subgroup
+Free Breakfast Clubs entry - it would be easy for a naive random draw to
+never include a UK document at all across all 9 cells.
+
+Build:
+- The sampling script: for each of 9 model x prompt cells, sample 5 projects
+  without replacement, seeded RNG (record the seed), same 45 registers for
+  every rater (full overlap, per §3.1).
+- The blinding mechanism: assign an opaque code (`REG-014` style) per sampled
+  register, write the mapping to `results/scored/rater_blinding_map.csv`
+  (must be gitignored - check `.gitignore` covers `results/scored/` contents
+  appropriately, or add a specific rule for this file; it maps code ->
+  project_id/model/prompt/run and must never be shown to raters).
+- Per-rater packet order randomization (a different shuffle per rater, per
+  §3.2).
+- Since no real generations exist yet, test this against placeholder/
+  synthetic register data (there's a real pilot generation already at
+  `scratch/pilot_STP_zeroshot.json` if that's a useful fixture, or construct
+  something synthetic - your call) so the logic is verified working, not
+  just written.
+
+Do NOT build the Fleiss' kappa computation script - `rater_protocol.md` §4
+explicitly says that should wait until real ratings exist to test it
+against, and that reasoning still holds. Packet generation and kappa
+computation are different concerns; this task is only the former.
 
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.
 - Don't touch the frozen RQs or the leakage rule.
-- The audit script is a new, separate file - it shouldn't need to modify
-  `extract.py`/`match.py`/`metrics.py`/`run_experiments.py`/`judge.py`. If
-  building it reveals you actually need to change one of those, stop and flag
-  it rather than editing quietly - those are stable now and I'd want to know
-  why.
+- Task A may edit `src/match.py` (that's the point, if the evidence supports
+  a threshold/model change) but not `extract.py`/`metrics.py`/
+  `run_experiments.py`/`judge.py`. Task B should be new, separate file(s) -
+  if either task reveals you need to touch something outside this scope,
+  stop and flag it rather than editing quietly.
 - Separately, and not blocking your work at all: there's a large backlog of
   real, tested work (yours included) that has never been committed to git -
   everything's sitting as uncommitted/untracked changes. I'm handling that
   from the Cowork side; not something you need to do anything about.
-- If you finish the audit and want more, ask before expanding scope further.
+- If you finish Tasks A and B and want more, ask before expanding scope
+  further.
