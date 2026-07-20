@@ -78,16 +78,30 @@ question when the human register itself is imperfect or incomplete.
 
 ### 3.1 Sampling (OPEN — proposal below needs sign-off)
 
-The full grid is 3 models × 3 prompts × 18 projects = **162 combinations**,
-each with 2–3 runs (CLAUDE.md). Rating all of it — up to ~480 registers — is
-not realistic for 3–5 volunteer/practitioner raters. **Proposal:**
+> **IMPLEMENTED 2026-07-20** in `src/build_rater_packets.py` (§3.1 sampling +
+> §3.2 blinding). The script reads the *current* included-project pool from
+> `corpus_manifest.csv` rather than a hard-coded number, so the stale "18"
+> below is corrected in code automatically. The two genuinely-open design
+> questions are exposed as flags, defaulting to the literal proposal here:
+> `--min-uk-per-cell` (default 0 = the naive draw below; set 1 to guarantee UK
+> representation — see the note after the bullets) and `--exclude-short-register`
+> (default off). Kappa computation (§4) is deliberately NOT implemented yet, per
+> that section.
+
+The full grid is 3 models × 3 prompts × **21** projects (the corpus grew from
+18 to 21 included projects after this document was first drafted) =
+**189 combinations**, each with 2–3 runs (CLAUDE.md). Rating all of it — well
+over ~470 registers — is not realistic for 3–5 volunteer/practitioner raters.
+**Proposal:**
 
 - Rate only **run 1** of each combination for Method B. Multiple runs exist
   for Method A's statistical stability, not to give raters near-duplicate
   copies of the same cell to review.
-- For each of the 9 (model × prompt) cells, randomly sample **5 of the 18
+- For each of the 9 (model × prompt) cells, randomly sample **5 of the 21
   projects** without replacement (seed the RNG and record the seed for
-  reproducibility) → **45 registers total** for the whole rated set.
+  reproducibility) → **45 registers total** for the whole rated set. (The 45
+  is 5 × 9 cells and is unchanged by the pool growing from 18 to 21; only the
+  per-cell draw is now from 21.)
 - This guarantees every model and every prompt strategy has equal
   representation (RQ2), at a fixed, describable sample size, without
   requiring every project to appear in every cell.
@@ -98,6 +112,16 @@ not realistic for 3–5 volunteer/practitioner raters. **Proposal:**
   this sample size. Flag for reconsideration if 45 × (3 items) turns out to
   be too much rater time (see §6 time-budget note).
 
+**UK representation (OPEN — a real decision, not defaulted):** with only 3 UK
+projects in a 21-project pool, a naive random draw can badly under-sample or
+miss them — empirically, sweeping seeds through `build_rater_packets.py`
+produced anywhere from 1 to 8 UK registers out of 45, i.e. some seeds leave UK
+almost unrepresented across all 9 cells. If the paper wants UK business cases
+to be visible in the human-rated results (they are only 3 of 21, but they are
+the study's only non-World-Bank, non-SORT documents), set `--min-uk-per-cell 1`
+to force ≥1 UK register into every cell (≥9 UK registers total). Left OFF by
+default because whether to stratify on document source is a project-owner call.
+
 **This 45-register number and the "run 1 only, full overlap" design are the
 part of this document most likely to need Madhu/Kruthik revision** — they
 trade off statistical power against real rater hours, which is a judgment
@@ -105,10 +129,17 @@ call, not something to lock in silently.
 
 ### 3.2 Blinding mechanism
 
+> **IMPLEMENTED 2026-07-20** in `src/build_rater_packets.py`. Concretely: the
+> mapping file is `results/rater_packets/blinding_map.csv` (**gitignored** — a
+> `.gitignore` rule covers exactly this path; the shareable per-rater
+> assignment sheets and packets alongside it carry codes only). Each per-rater
+> packet order is an independent seeded shuffle. Everything is reproducible
+> from `--seed`, which is recorded in `results/rater_packets/sampling_summary.json`.
+
 - Each sampled register gets an opaque code (e.g. `REG-014`), assigned when
   rating packets are prepared.
-- A separate mapping file (`results/scored/rater_blinding_map.csv` or
-  similar — **gitignored**, never shown to raters) records
+- A separate mapping file (`results/rater_packets/blinding_map.csv` —
+  **gitignored**, never shown to raters) records
   `code → (project_id, model, prompt_strategy, run_index)`. This mapping is
   only used after all ratings are in, to break out kappa/scores by model and
   prompt (RQ2) and to fold Method B into the paper's tables.
