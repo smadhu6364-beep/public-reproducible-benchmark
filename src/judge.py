@@ -110,7 +110,11 @@ def parse_judge_response(raw_text: str) -> tuple[Optional[dict], Optional[str]]:
         return None, f"judge response missing required fields: {sorted(missing)}"
     for field in required:
         v = parsed[field]
-        if not isinstance(v, int) or not (1 <= v <= 5):
+        # bool is a subclass of int in Python (isinstance(True, int) is True),
+        # so a stray {"completeness": true, ...} would otherwise silently pass
+        # as a score of 1 - explicitly excluded here, found via a hand-built
+        # adversarial-input test (see the parse_judge_response test pass).
+        if isinstance(v, bool) or not isinstance(v, int) or not (1 <= v <= 5):
             return None, f"judge field {field!r} must be an integer 1-5, got {v!r}"
 
     return parsed, None
