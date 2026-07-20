@@ -22,8 +22,8 @@ the real one, committed to disk where you can actually read it.)
 - `src/extract.py`, `src/match.py`, `src/metrics.py`, `src/run_experiments.py`,
   `src/judge.py` are all real, implemented, tested code. `src/check_env.py`
   (your Task 2) and `docs/rater_protocol.md` (your Task 1) are both done and
-  verified working/solid on this end - thank you. No outstanding tasks from
-  the previous handoff remain; see the new task below.
+  verified working/solid on this end - thank you. Tasks A and B are also done
+  (see below) - Tasks C and D are next.
 - Bugs found and fixed so far, for context on why the new task exists: a
   systemic SORT-table under-excision (8 WB documents), a Uganda over-excision
   (9 legitimate pages wrongly cut), and HyNet's page-offset (found by you).
@@ -68,104 +68,33 @@ excision ranges, re-ran extract.py, and re-verified clean. All committed.
 `src/audit_corpus.py` is now part of the permanent toolkit - it's a good
 `--all` scan to re-run any time the corpus changes.
 
-## Three tasks (do Task A, then Task B, then Task C - Task C is pre-approved, no need to check back before starting it)
+## Tasks A and B - done, thank you (verified independently before committing)
 
-### Task A: validate Method A's matching quality against real embeddings
+**Task A (matching threshold validation) - fully done.** Real
+`all-MiniLM-L6-v2`, 17 unambiguous hand-labeled pairs (WB + UK + cross-
+project hard cases) plus 4 borderline cases reported separately, run through
+the actual match.py cosine pipeline at a threshold sweep. Clean separation
+(should-match 0.52-0.81, should-not-match 0.20-0.42). `MATCH_THRESHOLD`
+lowered 0.5 -> 0.45 with a specific, defensible rationale (margin above the
+lowest true positive; recovers legitimate granularity-mismatch matches 0.50
+was clipping) - now live in `src/match.py`, well-documented. Nothing further
+needed here unless a real experiment run later suggests revisiting it.
 
-`src/match.py`'s docstring says it plainly: `EMBEDDING_MODEL =
-"all-MiniLM-L6-v2"` and `MATCH_THRESHOLD = 0.5` are "first-pass defaults, not
-empirically validated against this corpus." Every test of `match_project()`
-so far (including the one done to build match.py itself) used a mocked fake
-encoder - deterministic bag-of-words hashing, not a real model - because this
-sandbox can't reach huggingface.co to download one. That means the actual
-semantic-matching quality that Method A's headline recall/precision numbers
-will depend on has never been checked against anything real. Your
-environment can download the real model; this sandbox can't.
+**Task B (rater-packet sampling/blinding) - infrastructure done; packet
+rendering blocked on real generations, not on you.** Sampling, blinding, and
+per-rater assignment sheets all work and are reproducible from a seed.
+Verified deterministic, and the leakage guard holds (packets never read
+`data/ground_truth/`). The UK-representation question you correctly left
+open (rather than silently picking) is now DECIDED: `--min-uk-per-cell 1`
+(I re-ran `build_rater_packets.py` with it and changed the script's own
+default so a future re-run doesn't silently revert to the fragile naive
+draw - see `docs/rater_protocol.md` §3.1 for the reasoning and the live
+sample's composition, now 11 UK registers across the 45 with every one of
+the 9 cells covered). Packet *content* rendering is genuinely still at 0/45
+- that needs `results/raw_outputs/` populated by a real run, which needs
+API keys. Nothing more to do on Task B until then.
 
-What to do:
-1. Install `sentence-transformers` if not already (it's in requirements.txt)
-   and confirm you can actually load `all-MiniLM-L6-v2` - this alone is
-   something to report if it fails, since it would mean the pipeline's
-   default model choice needs to change regardless of threshold.
-2. Build a small, hand-constructed test set - not real model output (none
-   exists yet), but plausible stand-ins for it. Pick a mix of 3-4 ground
-   truth registers, including at least one World Bank register (e.g.
-   `P-SRB-CompetitivenessJobs`, has 6 real risks) and the UK
-   `P-UK-HyNetCCUSCluster` register (different phrasing style/framing -
-   worth checking the matcher works across both, not just WB-style text).
-   For each real risk in those registers, write:
-   - a "should-match" paraphrase - different wording, same underlying risk,
-     roughly what a reasonably good model might plausibly generate
-   - a "should-NOT-match" distractor - include some *hard* negatives (same
-     category, genuinely different specific risk) alongside easy ones, since
-     easy negatives won't stress-test the threshold meaningfully
-3. Call `match_project()` directly (see `src/match.py` - it takes two dicts
-   each shaped like `{"risks": [...]}`, exactly the ground truth JSON shape)
-   with your constructed "generated" register against the real ground truth,
-   using the real model. Do this at a few threshold values (e.g. 0.3, 0.4,
-   0.5, 0.6, 0.7), not just the current default - report the trade-off, not
-   a single pass/fail.
-4. Report: does 0.5 actually separate your should-match cases from your
-   should-NOT-match cases? If not, what threshold does, and by how much
-   margin? If you have time, try one alternate embedding model (e.g.
-   `all-mpnet-base-v2`) as a stretch check, but the threshold analysis on
-   the current model is the actual priority.
-
-**This is allowed to end in a recommendation, not just a report** - unlike
-the audit task, changing `MATCH_THRESHOLD`'s default is a normal parameter-
-tuning decision, not something touching leakage-sensitive corpus data. If the
-evidence clearly favors a different threshold, go ahead and change the
-default in `src/match.py` (update the docstring's "known limitations" note
-to say it's now been checked against a hand-built test set, not just
-asserted). If it's genuinely ambiguous, say so and leave the default alone
-rather than picking one arbitrarily.
-
-Write your test set and findings to something like
-`results/matching_validation_report.md` so the hand-built pairs are
-reviewable, not just a black-box verdict. Be explicit that this validates the
-*matching mechanism* using constructed proxies, not real model output - a
-further check once real generations exist is still worthwhile, this just
-catches an obviously bad default before any real API budget gets spent on it.
-
-### Task B: build Method B's packet-generation code
-
-`docs/rater_protocol.md` §3.1-3.2 designed a specific sampling and blinding
-scheme but says plainly the actual code was never written. Build it now so
-it's ready to fire the moment raters are recruited, rather than starting a
-build cycle after that.
-
-One thing to fix while you're in there: §3.1 says "sample 5 of the 18
-projects" - that's stale, the corpus is 21 now (the UK documents were added
-after that doc was written). Update the doc's own numbers to 21, and decide
-(your call, but state the reasoning) whether the 5-per-cell sample should be
-drawn from all 21 or should guarantee UK representation given only 3 of the
-21 are UK documents and one of those is the short-register-subgroup
-Free Breakfast Clubs entry - it would be easy for a naive random draw to
-never include a UK document at all across all 9 cells.
-
-Build:
-- The sampling script: for each of 9 model x prompt cells, sample 5 projects
-  without replacement, seeded RNG (record the seed), same 45 registers for
-  every rater (full overlap, per §3.1).
-- The blinding mechanism: assign an opaque code (`REG-014` style) per sampled
-  register, write the mapping to `results/scored/rater_blinding_map.csv`
-  (must be gitignored - check `.gitignore` covers `results/scored/` contents
-  appropriately, or add a specific rule for this file; it maps code ->
-  project_id/model/prompt/run and must never be shown to raters).
-- Per-rater packet order randomization (a different shuffle per rater, per
-  §3.2).
-- Since no real generations exist yet, test this against placeholder/
-  synthetic register data (there's a real pilot generation already at
-  `scratch/pilot_STP_zeroshot.json` if that's a useful fixture, or construct
-  something synthetic - your call) so the logic is verified working, not
-  just written.
-
-Do NOT build the Fleiss' kappa computation script - `rater_protocol.md` §4
-explicitly says that should wait until real ratings exist to test it
-against, and that reasoning still holds. Packet generation and kappa
-computation are different concerns; this task is only the former.
-
-### Task C: build the analysis/figures/ pipeline (RQ1/RQ2/RQ3)
+### Task C: build the analysis/figures/ pipeline (RQ1/RQ2/RQ3) - next up
 
 `src/metrics.py`'s `compute_all()` (exposed via `--out <path>`) already
 computes every number the paper's Results section will need, structured for
@@ -237,21 +166,56 @@ Write a short report to `results/figures_pipeline_report.md`: what you
 built, the synthetic scenario you constructed and why, and a description of
 what the 3 figures look like on that synthetic input.
 
+### Task D: research current model-tier options - a recommendation memo, NOT a decision
+
+One of the 3 real blockers (see above) is that `CLAUDE_MODEL_NAME` /
+`GPT_MODEL_NAME` / `OPENSOURCE_MODEL_NAME` are deliberately unset in `.env`.
+That's Madhu's call, not something to fill in guessing at values - but
+researching the actual current options is legwork, not a decision, and your
+environment has real internet access this sandbox doesn't. Do the legwork so
+Madhu can decide fast from a short, sourced shortlist instead of starting
+from scratch.
+
+Write `docs/model_tier_recommendation.md` covering, for each of the 3 slots:
+- **Claude:** 2-3 current model options suitable for long-document
+  structured-JSON generation, with current per-1M-token input/output
+  pricing, dated and sourced (pricing changes - don't present a number
+  without a source and a date).
+- **GPT:** same, current OpenAI model options.
+- **Open-source:** `.env`'s own comment already flags this as undecided
+  between HF hosted inference and a self-hosted OpenAI-compatible endpoint -
+  research what's actually practical for each path today (this project has
+  no dedicated GPU infra mentioned anywhere in the repo) and say which path
+  you'd recommend and why, not just list both.
+
+For each shortlisted combination, estimate total cost for the real grid
+(189 model/prompt/project cells x 2-3 runs) using `run_experiments.py
+--estimate-only`'s existing token-count heuristic as the base - just plug in
+real pricing for the shortlisted models instead of the current $0.00 (which
+is $0.00 only because no model names are set, not because the grid is
+actually free) - so Madhu can sanity-check the choice against CLAUDE.md's
+$30 cost-guard threshold before deciding.
+
+Give 2-3 candidates per slot with tradeoffs stated, not a single pick -
+Madhu still makes the final call and sets `.env`; this task only makes that
+decision fast. Do NOT set any values in `.env` or change `run_experiments.py`
+- unlike Task A's threshold (a normal parameter-tuning call), which paid API
+model to spend real money on is explicitly Madhu's call per CLAUDE.md, not
+something to default even provisionally.
+
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.
 - Don't touch the frozen RQs or the leakage rule.
-- Task A may edit `src/match.py` (that's the point, if the evidence supports
-  a threshold/model change) but not `extract.py`/`metrics.py`/
-  `run_experiments.py`/`judge.py`. Task B and Task C should be new, separate
-  file(s) - Task C specifically goes in `analysis/`, not a 6th file in
-  `src/` (see Task C for why). If any task reveals you need to touch
+- Task C should be new, separate file(s) in `analysis/`, not a 6th file in
+  `src/` (see Task C for why). Task D is a new doc file only - no code
+  changes, no `.env` changes. If any task reveals you need to touch
   something outside this scope, stop and flag it rather than editing
   quietly.
 - The git backlog mentioned in earlier handoffs is resolved - everything's
   committed now, working tree was clean before this round of tasks started.
   I'm still committing your work from the Cowork side as it lands, same as
   before - nothing you need to do differently.
-- Tasks A, B, and C are all pre-approved - no need to check back before
-  starting any of them. If you finish all three and want still more, ask
-  before expanding scope further.
+- Tasks C and D are both pre-approved - no need to check back before
+  starting either. If you finish both and want still more, ask before
+  expanding scope further.
