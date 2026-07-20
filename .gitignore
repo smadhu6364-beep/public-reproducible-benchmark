@@ -15,6 +15,13 @@ scratch/
 # Secrets
 .env
 
+# Method B rater blinding key - maps opaque packet codes (REG-###) back to
+# (model, prompt) and de-anonymizes the blind evaluation. Same "never let this
+# reach a rater" sensitivity as ground truth; must not be committed. Written by
+# src/build_rater_packets.py. The shareable rater assignment sheets and packets
+# alongside it (codes only, no model/prompt/ground-truth) are NOT ignored.
+results/rater_packets/blinding_map.csv
+
 # Python
 __pycache__/
 *.pyc

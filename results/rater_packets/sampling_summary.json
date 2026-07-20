@@ -1,0 +1,116 @@
+{
+  "seed": 20260720,
+  "sample_per_cell": 5,
+  "min_uk_per_cell": 0,
+  "exclude_short_register": false,
+  "run_index": 1,
+  "n_raters": 4,
+  "models": [
+    "claude",
+    "gpt",
+    "opensource"
+  ],
+  "prompts": [
+    "zero_shot",
+    "few_shot",
+    "structured"
+  ],
+  "eligible_pool_size": 21,
+  "eligible_uk_projects": [
+    "P-UK-FreeBreakfastClubs",
+    "P-UK-HyNetCCUSCluster",
+    "P-UK-PadeswoodCCUS"
+  ],
+  "n_registers_sampled": 45,
+  "n_distinct_projects_in_sample": 19,
+  "n_uk_registers_in_sample": 3,
+  "distinct_projects_in_sample": [
+    "P-AFW-HealthSecurityPhase3",
+    "P-ALB-CitizenServiceDelivery",
+    "P-BFA-EconomicOpportunitiesResilience",
+    "P-BGD-SocialProtectionResilience",
+    "P-GTM-SmartPublicFinances",
+    "P-IND-ChhattisgarhAcceleratedLearning",
+    "P-JOR-InnovativeStartupsSMEsFund2",
+    "P-KHM-BasicEducationImprovement",
+    "P-MAR-SecondIdentityTargetingSocialProtection",
+    "P-MEX-SustainableValueChains",
+    "P-MNG-ThirdEnergySector",
+    "P-NGA-AgroProcessingLivelihood",
+    "P-PAK-ResilientAccessibleMicrofinance",
+    "P-PER-ArequipaColca",
+    "P-SRB-CompetitivenessJobs",
+    "P-STP-YouthEmployment",
+    "P-UGA-IntegratedWaterMgmtDev",
+    "P-UK-FreeBreakfastClubs",
+    "P-UK-HyNetCCUSCluster"
+  ],
+  "per_cell": {
+    "claude/zero_shot": [
+      "P-GTM-SmartPublicFinances",
+      "P-MEX-SustainableValueChains",
+      "P-NGA-AgroProcessingLivelihood",
+      "P-UGA-IntegratedWaterMgmtDev",
+      "P-UK-HyNetCCUSCluster"
+    ],
+    "claude/few_shot": [
+      "P-BFA-EconomicOpportunitiesResilience",
+      "P-MNG-ThirdEnergySector",
+      "P-PAK-ResilientAccessibleMicrofinance",
+      "P-SRB-CompetitivenessJobs",
+      "P-UK-FreeBreakfastClubs"
+    ],
+    "claude/structured": [
+      "P-BFA-EconomicOpportunitiesResilience",
+      "P-BGD-SocialProtectionResilience",
+      "P-GTM-SmartPublicFinances",
+      "P-JOR-InnovativeStartupsSMEsFund2",
+      "P-MNG-ThirdEnergySector"
+    ],
+    "gpt/zero_shot": [
+      "P-AFW-HealthSecurityPhase3",
+      "P-MAR-SecondIdentityTargetingSocialProtection",
+      "P-MEX-SustainableValueChains",
+      "P-NGA-AgroProcessingLivelihood",
+      "P-UGA-IntegratedWaterMgmtDev"
+    ],
+    "gpt/few_shot": [
+      "P-AFW-HealthSecurityPhase3",
+      "P-GTM-SmartPublicFinances",
+      "P-MAR-SecondIdentityTargetingSocialProtection",
+      "P-NGA-AgroProcessingLivelihood",
+      "P-PAK-ResilientAccessibleMicrofinance"
+    ],
+    "gpt/structured": [
+      "P-ALB-CitizenServiceDelivery",
+      "P-BGD-SocialProtectionResilience",
+      "P-PER-ArequipaColca",
+      "P-SRB-CompetitivenessJobs",
+      "P-STP-YouthEmployment"
+    ],
+    "opensource/zero_shot": [
+      "P-AFW-HealthSecurityPhase3",
+      "P-KHM-BasicEducationImprovement",
+      "P-NGA-AgroProcessingLivelihood",
+      "P-SRB-CompetitivenessJobs",
+      "P-UK-HyNetCCUSCluster"
+    ],
+    "opensource/few_shot": [
+      "P-BFA-EconomicOpportunitiesResilience",
+      "P-GTM-SmartPublicFinances",
+      "P-MAR-SecondIdentityTargetingSocialProtection",
+      "P-NGA-AgroProcessingLivelihood",
+      "P-STP-YouthEmployment"
+    ],
+    "opensource/structured": [
+      "P-AFW-HealthSecurityPhase3",
+      "P-BGD-SocialProtectionResilience",
+      "P-GTM-SmartPublicFinances",
+      "P-IND-ChhattisgarhAcceleratedLearning",
+      "P-NGA-AgroProcessingLivelihood"
+    ]
+  },
+  "stale_doc_flag": "docs/rater_protocol.md section 3.1 still says '5 of 18 projects' and '45 registers' against an 18-project corpus; the corpus is now 21 included projects. This run used 5/cell against the current pool. The doc text should be updated to 21 and its UK-representation question (this script's --min-uk-per-cell) resolved.",
+  "packets_rendered": 0,
+  "packets_pending_generation": 45
+}
