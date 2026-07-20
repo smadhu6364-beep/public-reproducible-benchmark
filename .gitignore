@@ -1,6 +1,17 @@
 # Data: never commit raw source PDFs
 data/raw/
 
+# Data: excised risk-source pages (SORT table + Key Risks narrative), kept
+# only for human audit of the excision boundary - same leakage sensitivity
+# as data/raw, never commit, never load into a prompt.
+data/risk_source_audit/
+
+# Scratch/prototype work - includes early excise/match/metrics prototypes
+# (since superseded by the real src/ implementations) and scratch/out/risk_source/,
+# which holds excised risk-source content with the same leakage sensitivity as
+# data/risk_source_audit/ above. Never commit.
+scratch/
+
 # Secrets
 .env
 

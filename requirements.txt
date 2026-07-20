@@ -5,8 +5,18 @@
 PyMuPDF==1.24.10
 
 # Model APIs
-anthropic==0.39.0
-openai==1.54.4
+# anthropic bumped 0.39.0 -> 0.117.0 on 2026-07-19: 0.39.0's Client.__init__()
+# passes a 'proxies' kwarg to httpx that current httpx (0.28.x, pulled in
+# transitively since httpx itself isn't pinned here) has removed, so 0.39.0
+# fails immediately with "unexpected keyword argument 'proxies'" before ever
+# reaching the network. Confirmed 0.117.0 resolves it in a fresh install.
+# openai bumped 1.54.4 -> 1.109.1 on 2026-07-19: 1.54.4 hits the exact same
+# httpx 'proxies' kwarg incompatibility documented above for anthropic (httpx
+# itself isn't pinned here, so a fresh install pulls current httpx 0.28.x,
+# which removed that kwarg). Confirmed 1.109.1 resolves it; stayed on the 1.x
+# API rather than jumping to 2.x to avoid an unrelated breaking-change scope.
+anthropic==0.117.0
+openai==1.109.1
 
 # Semantic matching / embeddings
 sentence-transformers==3.2.1
@@ -21,3 +31,6 @@ matplotlib==3.9.2
 
 # Config / secrets
 python-dotenv==1.0.1
+
+# JSON schema validation (ground truth + generation output contracts)
+jsonschema==4.23.0
