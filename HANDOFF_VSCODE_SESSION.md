@@ -68,7 +68,7 @@ excision ranges, re-ran extract.py, and re-verified clean. All committed.
 `src/audit_corpus.py` is now part of the permanent toolkit - it's a good
 `--all` scan to re-run any time the corpus changes.
 
-## Two new tasks (both requested - do Task A first, then Task B)
+## Three tasks (do Task A, then Task B, then Task C - Task C is pre-approved, no need to check back before starting it)
 
 ### Task A: validate Method A's matching quality against real embeddings
 
@@ -165,18 +165,93 @@ explicitly says that should wait until real ratings exist to test it
 against, and that reasoning still holds. Packet generation and kappa
 computation are different concerns; this task is only the former.
 
+### Task C: build the analysis/figures/ pipeline (RQ1/RQ2/RQ3)
+
+`src/metrics.py`'s `compute_all()` (exposed via `--out <path>`) already
+computes every number the paper's Results section will need, structured for
+exactly this: `corpus_wide` (RQ1 - overall recall/precision),
+`by_model_and_prompt` (RQ2), `by_category` (RQ3 - missed vs. hallucinated
+counts per category), and `short_register_subgroup` (the 5-document over-generation
+test - see paper draft Section III.A/F, reported separately, never pooled
+into `corpus_wide`). No figures exist yet, and metrics.py has never been run
+against more than the single São Tomé pilot generation - this task is also
+the first real exercise of the full match.py -> metrics.py chain against a
+multi-model, multi-prompt dataset, since no real experiment has run yet.
+
+What to build, in `analysis/make_figures.py` (writing PNG outputs to
+`analysis/figures/` - both paths already reserved in CLAUDE.md's repo
+structure; please don't add a 6th script to `src/` for this, CLAUDE.md says
+to maintain that directory's file list exactly as the 5 named pipeline
+scripts):
+
+1. RQ1 figure: corpus-wide mean recall and mean precision (`corpus_wide`)
+   shown alongside, never blended with, the short-register subgroup's mean
+   precision/recall (`short_register_subgroup`) - two clearly labeled
+   groups, not one pooled bar.
+2. RQ2 figure: a 3x3 grouped bar chart or heatmap (your call - state which
+   and why) of recall and precision from `by_model_and_prompt`, one
+   cell/group per `"<model> / <prompt>"` key.
+3. RQ3 figure: per-category missed vs. hallucinated counts from
+   `by_category`, one diverging bar per category (missed one direction,
+   hallucinated the other). Handle "other" correctly: generated risks can
+   never have category="other" (forbidden by `output_schema.json`'s enum -
+   see match.py's own docstring), so "other" will structurally always show
+   hallucinated_count=0 - that's expected and correct, not a bug or a data
+   gap, and the figure/caption should make that legible rather than let it
+   look like missing data.
+
+Since no real experiment output exists, test this against synthetic data,
+the same way Task B's placeholder testing works:
+
+4. Write a small synthetic-data generator producing match.json-shaped
+   fixtures (the real schema match.py writes: project_id, model,
+   prompt_strategy, run_index, embedding_model, threshold, matches,
+   gen_risks, gt_risks) across a representative slice of the real grid - all
+   3 models, all 3 prompts, and at least 2 projects, including one
+   short-register-subgroup project (e.g. P-KHM-BasicEducationImprovement)
+   and one ordinary project (e.g. P-SRB-CompetitivenessJobs) - with enough
+   deliberate variation (some misses, some hallucinations, some category
+   disagreement, at least one parse_failed=true run) that the figures
+   aren't just plotting an empty or degenerate case.
+5. Run the real `src/metrics.py --scored-dir <synthetic dir> --out <path>`
+   against that synthetic data - do not hand-write a fake metrics.py output;
+   the point is to exercise the real code path end to end (match.json ->
+   metrics.py -> figures), since this doubles as the first test of
+   metrics.py at more than one project/model/prompt at a time.
+6. Run `analysis/make_figures.py` against that real output and confirm all
+   3 figures render without error and look sane - open them and look,
+   don't just check for a zero exit code.
+
+Keep the synthetic fixtures in a clearly labeled, gitignored scratch
+location (e.g. `scratch/synthetic_scored/`, same precedent as other scratch
+work in this project) so a synthetic number is never mistaken for a real
+one later. State plainly, in the script's docstring and in your report, that
+every figure produced this way is illustrative/pipeline-validation only, not
+a real result - the same caveat applied everywhere else pipeline code has
+been tested ahead of real data.
+
+Do not touch `src/metrics.py`, `src/match.py`, or any real corpus/ground-truth
+file for this task - it's new file(s) only, same rule as Task B.
+
+Write a short report to `results/figures_pipeline_report.md`: what you
+built, the synthetic scenario you constructed and why, and a description of
+what the 3 figures look like on that synthetic input.
+
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.
 - Don't touch the frozen RQs or the leakage rule.
 - Task A may edit `src/match.py` (that's the point, if the evidence supports
   a threshold/model change) but not `extract.py`/`metrics.py`/
-  `run_experiments.py`/`judge.py`. Task B should be new, separate file(s) -
-  if either task reveals you need to touch something outside this scope,
-  stop and flag it rather than editing quietly.
-- Separately, and not blocking your work at all: there's a large backlog of
-  real, tested work (yours included) that has never been committed to git -
-  everything's sitting as uncommitted/untracked changes. I'm handling that
-  from the Cowork side; not something you need to do anything about.
-- If you finish Tasks A and B and want more, ask before expanding scope
-  further.
+  `run_experiments.py`/`judge.py`. Task B and Task C should be new, separate
+  file(s) - Task C specifically goes in `analysis/`, not a 6th file in
+  `src/` (see Task C for why). If any task reveals you need to touch
+  something outside this scope, stop and flag it rather than editing
+  quietly.
+- The git backlog mentioned in earlier handoffs is resolved - everything's
+  committed now, working tree was clean before this round of tasks started.
+  I'm still committing your work from the Cowork side as it lands, same as
+  before - nothing you need to do differently.
+- Tasks A, B, and C are all pre-approved - no need to check back before
+  starting any of them. If you finish all three and want still more, ask
+  before expanding scope further.

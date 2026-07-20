@@ -10,10 +10,11 @@ Responsibilities:
   - Aggregate by category across the corpus - which categories are most often
     missed (low recall) or most often hallucinated (unmatched generated risks'
     categories) (RQ3).
-  - Break out the 4-document short-register/hallucination-test subgroup
-    (P-KHM, P-PAK, P-JOR, P-MAR - see corpus_manifest.csv 2026-07-19 decision
-    notes and paper draft Section III.A/F) as its own reported block, never
-    silently pooled into headline recall/precision.
+  - Break out the 5-document short-register/hallucination-test subgroup
+    (P-KHM, P-PAK, P-JOR, P-MAR, P-UK-FreeBreakfastClubs - see
+    corpus_manifest.csv 2026-07-19 decision notes and paper draft Section
+    III.A/F) as its own reported block, never silently pooled into headline
+    recall/precision.
 
 This module computes numbers from whatever match files exist in
 results/scored/ - it does not know or care whether those came from a real
@@ -140,7 +141,7 @@ def aggregate_by_category(per_run: list[dict]) -> dict:
 
 
 def short_register_subgroup_report(per_run: list[dict]) -> dict:
-    """Precision on the 4-document short-register subgroup, reported separately.
+    """Precision on the 5-document short-register subgroup, reported separately.
 
     Precision (not recall) is the number of interest here: a small true
     register is a sharp test of over-generation (RQ3), and averaging it into
@@ -191,7 +192,7 @@ def compute_all(scored_dir: Path = SCORED_DIR) -> dict:
             "mean_recall": _safe_mean([r["recall"] for r in corpus_wide]),
             "mean_precision": _safe_mean([r["precision"] for r in corpus_wide]),
             "mean_category_accuracy": _safe_mean([r["category_accuracy_of_matches"] for r in corpus_wide]),
-            "note": "Excludes the 4-document short-register subgroup - see short_register_subgroup block.",
+            "note": "Excludes the 5-document short-register subgroup - see short_register_subgroup block.",
         },
         "by_model_and_prompt": aggregate_by_model_prompt(per_run),
         "by_category": aggregate_by_category(per_run),
