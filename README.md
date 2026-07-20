@@ -17,10 +17,20 @@ core failure-mode contribution).
 (B) expert Likert ratings + Fleiss' kappa; (C) LLM-as-judge (supplementary only).
 
 ## Layout
-- `data/` corpus: `raw/` (PDFs, gitignored), `processed/` (text), `ground_truth/` (JSON registers), `corpus_manifest.csv`
-- `prompts/` prompt templates + `output_schema.json`
-- `src/` `extract.py` (done), `run_experiments.py` / `match.py` / `metrics.py` / `judge.py` (deferred)
+- `data/` corpus: `raw/` (PDFs, gitignored), `processed/` (text), `ground_truth/` (JSON registers, complete for all 21 included projects - 18 World Bank PADs + 3 UK business cases), `risk_source_audit/` (excised pages, audit-only, gitignored), `corpus_manifest.csv`
+- `prompts/` prompt templates + `output_schema.json` / `ground_truth_schema.json`
+- `src/` `extract.py`, `run_experiments.py`, `match.py`, `metrics.py`, `judge.py` - all implemented; no full experiment run yet (needs `.env` API keys + a model-tier decision - see `.env.example`)
 - `results/` `raw_outputs/` (append-only) + `scored/`; `analysis/` figures; `paper/` (Overleaf-linked)
+
+## Running the pipeline
+```
+python3 src/extract.py --all                       # regenerate data/processed/ from data/raw/
+python3 src/run_experiments.py --estimate-only      # see projected cost before spending anything
+python3 src/run_experiments.py --confirm-cost       # full grid (needs .env configured first)
+python3 src/match.py --all                          # score raw_outputs/ against ground truth
+python3 src/metrics.py --scored-dir results/scored  # recall/precision/coverage report
+python3 src/judge.py --all                          # supplementary LLM-as-judge (Method C)
+```
 
 ## Setup
 ```
