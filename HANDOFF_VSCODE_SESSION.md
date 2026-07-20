@@ -22,8 +22,9 @@ the real one, committed to disk where you can actually read it.)
 - `src/extract.py`, `src/match.py`, `src/metrics.py`, `src/run_experiments.py`,
   `src/judge.py` are all real, implemented, tested code. `src/check_env.py`
   (your Task 2) and `docs/rater_protocol.md` (your Task 1) are both done and
-  verified working/solid on this end - thank you. Tasks A, B, and C are also
-  done (see below) - Task D is next.
+  verified working/solid on this end - thank you. Tasks A, B, C, and D are
+  all done (see below) - nothing queued right now, see the note at the end
+  of the Task D section.
 - Bugs found and fixed so far, for context on why the new task exists: a
   systemic SORT-table under-excision (8 WB documents), a Uganda over-excision
   (9 legitimate pages wrongly cut), and HyNet's page-offset (found by you).
@@ -109,42 +110,35 @@ exact re-run commands for real data. No real corpus/ground-truth/metrics.py/
 match.py file touched. Nothing further needed here until real experiment
 data exists to regenerate the figures against.
 
-### Task D: research current model-tier options - a recommendation memo, NOT a decision
+## Task D - done, thank you (independently verified before committing)
 
-One of the 3 real blockers (see above) is that `CLAUDE_MODEL_NAME` /
-`GPT_MODEL_NAME` / `OPENSOURCE_MODEL_NAME` are deliberately unset in `.env`.
-That's Madhu's call, not something to fill in guessing at values - but
-researching the actual current options is legwork, not a decision, and your
-environment has real internet access this sandbox doesn't. Do the legwork so
-Madhu can decide fast from a short, sourced shortlist instead of starting
-from scratch.
+`docs/model_tier_recommendation.md` is committed. I checked it carefully
+before trusting it, not just on your word: re-derived the token-count
+arithmetic by hand and spot-checked ~10 of the memo's dollar figures across
+both the per-model and batch-discount tables (all matched exactly),
+cross-checked the Claude slot against this session's own knowledge of the
+current lineup (correct), and independently web-searched the GPT-5.6
+pricing rather than trusting the memo's own citations - Sol/Terra/Luna
+pricing and the GA date both confirmed exactly. Real, trustworthy research,
+not just a plausible-looking table. `.env` and `run_experiments.py` are
+both untouched, as instructed - the model choice is still Madhu's.
 
-Write `docs/model_tier_recommendation.md` covering, for each of the 3 slots:
-- **Claude:** 2-3 current model options suitable for long-document
-  structured-JSON generation, with current per-1M-token input/output
-  pricing, dated and sourced (pricing changes - don't present a number
-  without a source and a date).
-- **GPT:** same, current OpenAI model options.
-- **Open-source:** `.env`'s own comment already flags this as undecided
-  between HF hosted inference and a self-hosted OpenAI-compatible endpoint -
-  research what's actually practical for each path today (this project has
-  no dedicated GPU infra mentioned anywhere in the repo) and say which path
-  you'd recommend and why, not just list both.
+I also did one thing myself in parallel while this ran: `src/judge.py`
+(Method C) had never been tested at all, unlike match.py (Task A). Built no
+new permanent file for it (Method C is supplementary-only, lower stakes),
+but ran `parse_judge_response()` against 8 hand-built adversarial responses
+and `judge_one()` end-to-end with a fake injected judge-caller against the
+real pilot generation. Found and fixed one real bug: Python's `bool` is a
+subclass of `int`, so `{"completeness": true, ...}` was silently accepted
+as a score of 1. Fixed in `src/judge.py`, committed, re-verified clean.
 
-For each shortlisted combination, estimate total cost for the real grid
-(189 model/prompt/project cells x 2-3 runs) using `run_experiments.py
---estimate-only`'s existing token-count heuristic as the base - just plug in
-real pricing for the shortlisted models instead of the current $0.00 (which
-is $0.00 only because no model names are set, not because the grid is
-actually free) - so Madhu can sanity-check the choice against CLAUDE.md's
-$30 cost-guard threshold before deciding.
-
-Give 2-3 candidates per slot with tradeoffs stated, not a single pick -
-Madhu still makes the final call and sets `.env`; this task only makes that
-decision fast. Do NOT set any values in `.env` or change `run_experiments.py`
-- unlike Task A's threshold (a normal parameter-tuning call), which paid API
-model to spend real money on is explicitly Madhu's call per CLAUDE.md, not
-something to default even provisionally.
+**No further tasks queued right now.** Everything queueable without a
+real experiment run or real rater recruitment is done: corpus, pipeline,
+Method A (validated), Method B (built, blocked only on API keys), Method C
+(now tested), the figures pipeline, and a model-tier shortlist. What's left
+is genuinely Madhu's decisions (which model tier, `.env` keys, rater
+recruitment) - not engineering work. If you want something to do, ask
+rather than inventing scope, per the ground rules below.
 
 ## Ground rules (same as always, from CLAUDE.md)
 
@@ -157,5 +151,5 @@ something to default even provisionally.
   committed now, working tree was clean before this round of tasks started.
   I'm still committing your work from the Cowork side as it lands, same as
   before - nothing you need to do differently.
-- Task D is pre-approved - no need to check back before starting it. If you
-  finish it and want still more, ask before expanding scope further.
+- Tasks A-D are all done. Nothing is pre-approved right now - ask before
+  starting anything new rather than inventing scope.
