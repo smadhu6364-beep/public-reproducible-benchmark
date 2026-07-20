@@ -50,6 +50,24 @@ Known limitations, stated plainly:
   - Pricing tables go stale. Whoever runs the real grid should re-check the
     numbers below against the provider's current pricing page first,
     especially if more than a few weeks have passed since 2026-07-19.
+  - ADDED 2026-07-21, sourced via web search (not yet exercised against a
+    real call - .env has never had a real OPENAI_API_KEY): OpenAI's GPT-5
+    "reasoning" family, plausibly including gpt-5.6-terra (the model this
+    project selected), is documented to reject the legacy `max_tokens` chat
+    completions parameter (now `max_completion_tokens`) and to reject
+    `temperature` outright when reasoning_effort != "none". call_gpt() below
+    now sends max_completion_tokens unconditionally and defensively retries
+    without temperature if the API specifically rejects it, recording the
+    outcome as a `temperature_applied` field on every raw output record and
+    run_config.jsonl line rather than silently proceeding as if CLAUDE.md's
+    "temperature 0-0.2 across all 3 models" held when it might not have for
+    the GPT slot. Verified so far only via a mocked openai.OpenAI client
+    (three scenarios: normal success, temperature-rejected retry, an
+    unrelated 400 propagating uncaught) - CONFIRM against a real call the
+    first time real keys exist, and check run_config.jsonl's
+    temperature_applied field across the first few GPT runs before trusting
+    it silently. See the paper draft's Limitations section (V.A) for the
+    disclosed methodological consequence if this fires for real.
 """
 
 from __future__ import annotations
@@ -180,7 +198,11 @@ def _require_env(name: str) -> str:
     return value
 
 
-def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> str:
+def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
+    """Returns (response_text, temperature_applied). Anthropic's Messages API
+    has no known reasoning-mode restriction on temperature, so this always
+    returns True - see call_gpt for why that second value isn't always True
+    for every provider."""
     import anthropic
 
     api_key = _require_env("ANTHROPIC_API_KEY")
@@ -191,28 +213,88 @@ def call_claude(prompt: str, model_version: str, temperature: float, max_tokens:
         temperature=temperature,
         messages=[{"role": "user", "content": prompt}],
     )
-    return "".join(block.text for block in resp.content if getattr(block, "type", None) == "text")
+    text = "".join(block.text for block in resp.content if getattr(block, "type", None) == "text")
+    return text, True
 
 
-def call_gpt(prompt: str, model_version: str, temperature: float, max_tokens: int) -> str:
+def call_gpt(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
+    """Returns (response_text, temperature_applied).
+
+    FINDING sourced 2026-07-20 (web search, not yet exercised against a real
+    call - no OPENAI_API_KEY has existed at any point this was written; verify
+    on the first real run): OpenAI's GPT-5-family "reasoning" models -
+    plausibly including gpt-5.6-terra, the model this project has selected -
+    are documented to (a) reject the legacy `max_tokens` parameter on
+    chat.completions.create() in favor of `max_completion_tokens` (this is
+    now the OpenAI-recommended parameter broadly, not model-specific, so it's
+    switched below unconditionally), and (b) reject `temperature` outright
+    when reasoning_effort != "none" (see developers.openai.com/api/docs/guides/
+    reasoning#reasoning-mode per the search result that surfaced this).
+
+    (b) directly conflicts with CLAUDE.md's "temperature 0-0.2 across all 3
+    models" requirement, which was written before this constraint was known.
+    Handled defensively, not silently: try the call with temperature as
+    requested; if the API specifically rejects it, retry without temperature
+    (the only sane recovery - there is no other way to get a response at
+    all), print a loud stderr warning, and return temperature_applied=False
+    so run_one() can record - not hide - that this call's actual sampling
+    temperature was the model's own default, not the requested value. See the
+    paper draft's Limitations section (V.A) for the disclosed methodological
+    consequence if this fires on real runs.
+
+    NOT YET CONFIRMED: whether reasoning_effort="none" would restore full
+    parameter support instead (which might be preferable to silently losing
+    temperature control) - that's a real option to revisit if this retry path
+    actually fires on a live call, not assumed here.
+    """
     import openai
 
     api_key = _require_env("OPENAI_API_KEY")
     client = openai.OpenAI(api_key=api_key)
-    resp = client.chat.completions.create(
+    base_kwargs = dict(
         model=model_version,
-        max_tokens=max_tokens,
-        temperature=temperature,
+        max_completion_tokens=max_tokens,
         messages=[{"role": "user", "content": prompt}],
     )
-    return resp.choices[0].message.content or ""
+    temperature_applied = True
+    try:
+        resp = client.chat.completions.create(temperature=temperature, **base_kwargs)
+    except openai.BadRequestError as e:
+        msg = str(e).lower()
+        if "temperature" in msg and ("unsupported" in msg or "not supported" in msg or "does not support" in msg):
+            print(
+                f"[call_gpt] WARNING: {model_version} rejected temperature={temperature} "
+                f"(reasoning-model constraint - see call_gpt's docstring in run_experiments.py). "
+                f"Retrying WITHOUT temperature. This call's actual sampling temperature is "
+                f"the model's own default, NOT {temperature} - recorded as "
+                f"temperature_applied=False in the raw output record and run_config.jsonl.",
+                file=sys.stderr,
+            )
+            resp = client.chat.completions.create(**base_kwargs)
+            temperature_applied = False
+        else:
+            raise
+    return resp.choices[0].message.content or "", temperature_applied
 
 
-def call_opensource(prompt: str, model_version: str, temperature: float, max_tokens: int) -> str:
-    """Supports either documented access path from .env.example:
-    HF hosted inference (HF_TOKEN) or a self-hosted OpenAI-compatible
-    endpoint (OPENSOURCE_BASE_URL + OPENSOURCE_API_KEY). Neither is assumed;
-    whichever is configured in .env is used, and it is an error if neither is.
+def call_opensource(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
+    """Returns (response_text, temperature_applied). Supports either
+    documented access path from .env.example: HF hosted inference (HF_TOKEN)
+    or a self-hosted/third-party OpenAI-compatible endpoint (OPENSOURCE_BASE_URL
+    + OPENSOURCE_API_KEY). Neither is assumed; whichever is configured in .env
+    is used, and it is an error if neither is.
+
+    Deliberately still uses classic `max_tokens` (NOT max_completion_tokens,
+    contrast with call_gpt above): third-party "OpenAI-compatible" inference
+    providers (Together AI, Fireworks, Groq, DeepInfra - see
+    docs/model_tier_recommendation.md) serve open-weight models (DeepSeek,
+    Llama, Qwen, etc.) that are not OpenAI's own o-series/GPT-5 reasoning
+    models and are not known to share this constraint; their compatibility
+    layers may not even recognize max_completion_tokens yet. Switching this
+    without evidence of an actual problem here would risk breaking a path
+    that currently works, for a family of models this restriction wasn't
+    sourced against. Revisit if a real run against the chosen provider proves
+    otherwise.
     """
     base_url = os.environ.get("OPENSOURCE_BASE_URL")
     opensource_key = os.environ.get("OPENSOURCE_API_KEY")
@@ -228,7 +310,7 @@ def call_opensource(prompt: str, model_version: str, temperature: float, max_tok
             temperature=temperature,
             messages=[{"role": "user", "content": prompt}],
         )
-        return resp.choices[0].message.content or ""
+        return resp.choices[0].message.content or "", True
     elif hf_token:
         # Hosted-inference path via huggingface_hub. Deferred import: this
         # dependency is not in requirements.txt yet because the open-source
@@ -237,7 +319,8 @@ def call_opensource(prompt: str, model_version: str, temperature: float, max_tok
         from huggingface_hub import InferenceClient
 
         client = InferenceClient(model=model_version, token=hf_token)
-        return client.text_generation(prompt, max_new_tokens=max_tokens, temperature=max(temperature, 0.01))
+        text = client.text_generation(prompt, max_new_tokens=max_tokens, temperature=max(temperature, 0.01))
+        return text, True
     else:
         raise RuntimeError(
             "Neither OPENSOURCE_BASE_URL nor HF_TOKEN is set in .env - the "
@@ -430,7 +513,7 @@ def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: 
     prompt = render_prompt(prompt_strategy, project_id)
     run_date = datetime.now(timezone.utc).isoformat()
 
-    raw_text = MODEL_DISPATCH[model_label](prompt, model_version, temperature, max_tokens)
+    raw_text, temperature_applied = MODEL_DISPATCH[model_label](prompt, model_version, temperature, max_tokens)
     parsed, parse_error = parse_model_response(raw_text, prompt_strategy)
 
     record = {
@@ -440,6 +523,11 @@ def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: 
         "prompt_strategy": prompt_strategy,
         "run_index": run_index,
         "temperature": temperature,
+        # False only when the provider rejected the temperature parameter
+        # outright and call_gpt() retried without it (see its docstring) -
+        # in that case `temperature` above is the REQUESTED value, not what
+        # was actually used. Always True for claude/opensource today.
+        "temperature_applied": temperature_applied,
         "run_date": run_date,
         "prompt_sha256": prompt_file_sha256(prompt_strategy),
         "raw_response_text": raw_text,
@@ -458,6 +546,7 @@ def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: 
         run_index=run_index,
         run_date=run_date,
         temperature=temperature,
+        temperature_applied=temperature_applied,
         prompt_sha256=record["prompt_sha256"],
         raw_output_path=str(out_path.relative_to(REPO_ROOT)),
         parse_failed=parsed is None,

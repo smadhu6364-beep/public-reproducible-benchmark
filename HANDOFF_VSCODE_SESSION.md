@@ -49,6 +49,34 @@ Progress since the last handoff on both, but neither is actually resolved yet:
    model (DeepSeek V4 Pro) - this part *could* be a small task if asked for,
    but isn't queued right now. `check_env.py` is still ready and tested for
    the moment real keys land.
+1a. **NEW 2026-07-21: `call_gpt()` fixed for a GPT-5.6-Terra compatibility
+    risk found by code review + web search, not yet real-call-verified.**
+    Sourced evidence (checked 2026-07-20/21) says OpenAI's GPT-5 reasoning
+    family rejects the legacy `max_tokens` chat-completions parameter (now
+    `max_completion_tokens`) and may reject `temperature` outright in
+    reasoning mode - directly relevant since Terra is the just-decided GPT
+    slot, and CLAUDE.md requires temperature 0-0.2 uniformly across all 3
+    models. `call_gpt()` in `src/run_experiments.py` now sends
+    `max_completion_tokens` unconditionally and defensively retries without
+    `temperature` if the API specifically rejects it - logging a loud stderr
+    warning and recording `temperature_applied: false` on the raw output
+    record and `run_config.jsonl` line rather than silently pretending
+    uniformity held. Verified with a mocked `openai.OpenAI` client (3
+    scenarios: normal success, temperature-rejected retry, an unrelated 400
+    correctly propagating uncaught) - all pass - but **this is still
+    unverified against a real API call**, since no `OPENAI_API_KEY` has
+    existed at any point. If you're the one who ends up making the first
+    real GPT call: check `results/run_config.jsonl`'s `temperature_applied`
+    field on those first runs before trusting anything downstream of them.
+    `call_opensource()` was deliberately left untouched (still classic
+    `max_tokens`) - third-party OpenAI-compatible endpoints serving open-
+    weight models aren't evidenced to share this constraint, and changing
+    it without evidence risked breaking a path that currently works. Also
+    added a paragraph to the paper draft's Limitations section (V.A)
+    disclosing this as a real, possible deviation from "temperature
+    controlled across all 3 models" if it fires for real. Not committed to
+    `data/` or `.env` - only `src/run_experiments.py`, `.env.example`, this
+    file, and the paper draft.
 2. **Rater recruitment: materials drafted, channels being researched, zero
    raters actually contacted yet.** `docs/rater_recruitment_outreach.md` has
    a ready-to-send invitation and qualifying criteria. Task E (below) is
@@ -177,6 +205,31 @@ Write `docs/rater_recruitment_channels.md` covering:
 This is research and reporting only - do not draft new outreach copy
 (`rater_recruitment_outreach.md` already covers that) and do not contact
 anyone or sign up for anything.
+
+**Task E: done, thank you (independently re-verified before committing).**
+`docs/rater_recruitment_channels.md` is solid - well-scoped (stayed research/
+reporting only, no outreach sent, no signups), correctly prioritized warm/
+targeted asks over broadcast for an n=3-5 recruit, and cited. Spot-checked 3
+load-bearing figures via independent web search rather than trusting them:
+APM's membership count and Respondent.io's incentive ceiling for senior/
+in-person raters were both slightly off (APM understated the corporate
+count; Respondent's incentive range was capped too low for senior/executive
+in-person screens, which also revised the paid-platform budget estimate
+upward for that scenario) - corrected inline, doesn't change the recommended
+sequence.
+
+**One thing to flag, not just silently accept:** you also wrote
+`docs/opensource_slot_options.md` (exact provider/model-ID strings closing
+the open-source slot gap from Task D) - useful, and it says the right things
+about not touching `.env`/`run_experiments.py` and leaving the choice to
+Madhu, but **Task E didn't ask for this and the ground rules say to ask
+before expanding scope further, not after.** This time the content held up
+fine (one real correction needed: the Groq model-ID table conflated two
+separate deprecation announcements, fixed inline), so no harm done, but
+please check back before adding a task's-worth of unrequested scope next
+time, even when it's this useful - that's not a formality, it's how a
+two-session project stays coordinated rather than each side quietly
+expanding in parallel.
 
 ## Ground rules (same as always, from CLAUDE.md)
 
