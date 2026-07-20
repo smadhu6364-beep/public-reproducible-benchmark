@@ -2,7 +2,7 @@
 
 Report-only. No manifest, ground-truth, or processed-text file was modified by this run.
 
-**Summary: 17 PASS / 1 WARN / 3 FAIL** (of 21 included projects)
+**Summary: 19 PASS / 1 WARN / 1 FAIL** (of 21 included projects)
 
 ## P-MAR-SecondIdentityTargetingSocialProtection - FAIL
 - Check 1 (page-range): PASS - declared=[8, 9, 36] found=[8, 36] total_pages=48
@@ -10,19 +10,6 @@ Report-only. No manifest, ground-truth, or processed-text file was modified by t
 - Check 2 (leak check): FAIL
   - [verbatim_phrase] risk=R01: `the first Identity and Targeting for Social Protection`
   - [distinctive_code] risk=R01: `P155198`
-
-## P-PER-ArequipaColca - FAIL
-- Check 1 (page-range): PASS - declared=[7, 8, 34, 35] found=[7, 8, 34] total_pages=42
-  - raw scan detail: {'key_risks_pages': [34], 'sort_table_pages': [7, 8]}
-- Check 2 (leak check): FAIL
-  - [verbatim_phrase] risk=R03: `of prior experience with World Bank or other`
-
-## P-UGA-IntegratedWaterMgmtDev - FAIL
-- Check 1 (page-range): FAIL - declared=[9, 10, 27, 28] found=[10, 27, 78] total_pages=127
-  - pages with a heading/SORT match OUTSIDE the declared excision range: [78]
-  - raw scan detail: {'key_risks_pages': [27, 78], 'sort_table_pages': [10, 27]}
-- Check 2 (leak check): FAIL
-  - [verbatim_phrase] risk=R03: `the lessons learned and mechanisms put in place`
 
 ## P-UK-PadeswoodCCUS - WARN
 - Check 1 (page-range): WARN - declared=[10, 11, 14, 15] found=[9, 10, 14] total_pages=17
@@ -90,6 +77,11 @@ Report-only. No manifest, ground-truth, or processed-text file was modified by t
   - raw scan detail: {'key_risks_pages': [29], 'sort_table_pages': [9]}
 - Check 2 (leak check): PASS
 
+## P-PER-ArequipaColca - PASS
+- Check 1 (page-range): PASS - declared=[7, 8, 32, 33, 34, 35] found=[7, 8, 34] total_pages=42
+  - raw scan detail: {'key_risks_pages': [34], 'sort_table_pages': [7, 8]}
+- Check 2 (leak check): PASS
+
 ## P-SLE-ConnectivityAgMarketInfra - PASS
 - Check 1 (page-range): PASS - declared=[10, 11, 37, 38, 39] found=[10, 11, 38] total_pages=75
   - raw scan detail: {'key_risks_pages': [38], 'sort_table_pages': [10, 11, 38]}
@@ -103,6 +95,11 @@ Report-only. No manifest, ground-truth, or processed-text file was modified by t
 ## P-STP-YouthEmployment - PASS
 - Check 1 (page-range): PASS - declared=[17, 18, 44, 45] found=[18, 44] total_pages=53
   - raw scan detail: {'key_risks_pages': [44], 'sort_table_pages': [18]}
+- Check 2 (leak check): PASS
+
+## P-UGA-IntegratedWaterMgmtDev - PASS
+- Check 1 (page-range): PASS - declared=[9, 10, 27, 28, 78, 79] found=[10, 27, 78] total_pages=127
+  - raw scan detail: {'key_risks_pages': [27, 78], 'sort_table_pages': [10, 27]}
 - Check 2 (leak check): PASS
 
 ## P-UK-FreeBreakfastClubs - PASS
