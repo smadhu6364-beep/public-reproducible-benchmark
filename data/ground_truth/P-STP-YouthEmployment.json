@@ -1,0 +1,48 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "17-18",
+    "key_risks_section_pages": "44-45"
+  },
+  "overall_sort_rating": "Substantial",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections. Success depends on sustained coordination across labor, education, tourism, agriculture, and finance ministries plus private-sector engagement.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Anchor the project within MLSSS (core employment-promotion mandate); strengthen technical ownership at directorate level rather than relying on political leadership; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events), which may weaken labor demand, reduce firms' absorption capacity, and constrain the Government's ability to sustain recurrent-cost interventions (training, stipends, employment services).",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Prioritize low-cost, scalable interventions; combine supply-side investments with direct job-creation support; target sectors with growth potential and external demand linkages (incl. labor mobility); coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination; sustainability risk if new systems/programs are not institutionalized within government structures and budgets.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures (existing MLSSS PIU, coordination committee, AFAP for fiduciary/safeguards); finance targeted TA and staffing; invest in durable institutional assets (labor-market information system, employability portal, strengthened training institutions, formalized service-provider arrangements); use the learning agenda and impact evaluation to identify cost-effective interventions for scale-up."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Agree ToRs and technical specifications between AFAP and the World Bank before initiating any procurement (prior and post-review); reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual; continue and adapt the risk assessment during implementation."
+    }
+  ],
+  "notes": "Text-driven extraction: Section V (paras 66-70) narrates exactly the 4 SORT categories rated Substantial (Political and Governance, Macroeconomic, Institutional Capacity, Fiduciary); the 4 Moderate-rated categories (Sector Strategies, Technical Design, Environment and Social, Stakeholders) are rated in the SORT table but not discussed in the narrative, so are not represented as risk entries here."
+}

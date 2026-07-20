@@ -1,0 +1,57 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "8-9",
+    "key_risks_section_pages": "35-36"
+  },
+  "overall_sort_rating": "Substantial",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is assessed to be Substantial. The uncertain political and governance context provides a challenge to long-term development policy. Adaptive social protection systems are still nascent and will require continued political commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The team, guided by the management, will continue its high-level policy dialogue at central and decentralized levels and ensure continuous advocacy and communication."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed to be Substantial. Fiscal space remains constrained by elevated security spending and tighter financing conditions, which increase the risk of reduced budget allocations and delayed counterpart funding for new priorities and reforms, including social protection and the PAMPV. Macroeconomic risks also arise from exogenous factors, including current conflict in the Middle East which can result in a surge in oil prices and put inflationary pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Other programs such as the International Monetary Fund program and the World Bank's technical assistance on tax expenditure under the Sustainable Development Finance Policy can help expand fiscal space, partially mitigating these risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector strategy and policies risks are considered to be Substantial. Sectoral strategies and policies remain nascent, and the Government's budget allocation to operationalize the PAMPV remains unclear. Also, sectoral decisions are at times taken abruptly and can heavily affect implementation (for example, the suspension of cash transfers in 2023 led to an increased focus on economic inclusion, and the newly emerged priority of the CONASUR/IDPs led to the revision of the fiche de projet of this project).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In parallel with high-level policy dialogue, the project supports strategic communications, adopts an agile approach, and provides technical assistance to promote evidence-based decision-making (with support from SASPP, the Social Protection Response MDTF, and the State and Peacebuilding Fund)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall fiduciary risks are considered as Substantial, as described in section IV.B and annex 2, based on financial assessment and procurement assessment.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project preparation fund (Grant Facility for Project Preparation) has been used not only to prepare mitigation measures to address these risks but will also elevate the project readiness (for example, effectiveness-linked actions including FM and procurement staffing and initiating the procurement packages for the first 18-months' implementation priorities) to improve the project performance."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks related to insecurity are rated as High. The deteriorating and volatile security situation—particularly in regions with high poverty, displacement, and food insecurity that are project intervention areas—will likely be an important risk. The project will also address other risks related to protection of personal data: for Component 2 on social registry and interoperability, activities will be guided by the Information System Security Policy (ISSP) document developed by the ANSSI, to ensure confidentiality of households registered in the RSU.",
+      "category": "other",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project activities will be adjusted based on the security situation (see annex 3), and the PIU will be also staffed with a security specialist and a security management plan will be developed. To remain engaged, the project will also rely on remote delivery/monitoring, partnering with local representation (NGOs, UN agencies). The ST-RSU will conduct capacity-building activities, including training sessions and awareness campaigns, to strengthen users' ability to manage and protect households' personal data."
+    }
+  ],
+  "notes": "Text-driven extraction: overall risk Substantial; 'V. KEY RISKS' (para 91) explicitly frames 5 risk clusters ('political and governance uncertainties, sector strategy delays, fiduciary challenges, macroeconomic pressures, and insecurity issues'), matching the 5 bulleted risks narrated. R05 combines two bullet points under the single 'Other' SORT category (insecurity, rated High and explicitly stated; personal-data-protection, described but not separately rated) since both are introduced with 'other risks' language and the SORT table has only one 'Other' row. The remaining 4 rated-but-unnarrated categories (Technical Design=Moderate, Institutional Capacity=Moderate, Environment and Social=Moderate, Stakeholders=Moderate) are not given entries, consistent with corpus convention. SORT table spans pages 8-9 (rows 9-10, Other/Overall, on page 9) - part of the systemic under-excision bug found and fixed across 8 documents on 2026-07-19."
+}

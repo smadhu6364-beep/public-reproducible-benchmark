@@ -1,0 +1,21 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "8-9",
+    "key_risks_section_pages": "36"
+  },
+  "overall_sort_rating": "Moderate",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Stakeholder risk is assessed as Substantial. Given the complex nature of the operation and the involvement of multiple stakeholders in the implementation of the National Population Register (NPR) and the Social Registry (SR), the Project Management Unit (PMU) will need to put considerable effort into ensuring better coordination to achieve the PDO. The national rollout and the improvement of the NPR and the SR will need strong stakeholder engagement, including citizens concerned by social protection programs who are often poor and vulnerable.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The communication strategy will continue to inform all stakeholders involved in project implementation and will capitalize on lessons learned from the first Identity and Targeting for Social Protection project (P155198). The PMU envisions improving the grievance mechanism at local and national levels and establishing a system to promote citizen engagement and transparency. The Inter-Ministerial Steering Committee is responsible for developing guidelines for the strategic policy for the envisaged reform and ensuring a link with the ongoing social protection reform. Technical work will also cover a process evaluation to identify challenges, propose remedies, and provide recommendations to enhance system implementation at central and local levels."
+    }
+  ],
+  "notes": "Text-driven extraction: overall risk Moderate; only 1 of 9 SORT categories (Stakeholders) is rated Substantial and is the only risk narrated in Section VI (paras 90-91; this document has an extra 'V. GRIEVANCE REDRESS SERVICES' section before Key Risks, same numbering pattern as Sierra Leone/Nigeria). Part of the short-register/hallucination-test subgroup (with P-KHM, P-PAK, P-JOR) per the 2026-07-19 decision in corpus_manifest.csv. SORT table spans pages 8-9 (row 9 'Overall' is on page 9) - originally mis-recorded as page 8 only, caught and fixed 2026-07-19 alongside the same-pattern bugs found in 7 other rows. doc_urls for this project is a third-party mirror (ewsdata.rightsindevelopment.org), not documents1.worldbank.org directly - content matches official WB formatting and template markers, but worth re-locating the direct WB copy before this row is treated as fully authoritative."
+}
