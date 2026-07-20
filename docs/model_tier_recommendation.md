@@ -1,11 +1,24 @@
 # Model-tier options for the experiment grid — a sourced shortlist (Task D)
 
-**This is legwork, not a decision.** CLAUDE.md and the handoff are explicit:
-which paid model to run in each of the three slots (`CLAUDE_MODEL_NAME`,
-`GPT_MODEL_NAME`, `OPENSOURCE_MODEL_NAME` in `.env`) is Madhu's call. This memo
-exists so that call can be made fast from a current, sourced shortlist with real
-cost estimates, instead of from scratch. **Nothing in `.env` or
-`run_experiments.py` was changed.**
+**DECIDED 2026-07-20 (Madhu): the "Mid" triple** — Sonnet 5 (intro pricing)
++ GPT-5.6 Terra + a cheap open model (see the full table below; ~$21 for 2
+runs with batch pricing, under CLAUDE.md's $30 guard, provided the run
+happens before the Sonnet 5 intro rate ends 2026-08-31). The exact,
+independently-verified API model ID strings for the Claude and GPT slots
+are now pre-filled in `.env.example` (`claude-sonnet-5` and
+`gpt-5.6-terra` — note OpenAI's bare `gpt-5.6` alias currently routes to
+Sol, not Terra, so the explicit string matters). The open-source slot still
+needs a specific hosted-provider pick (Together AI / Fireworks / Groq /
+DeepInfra) before its exact model-ID string can be set, since the string
+format differs by provider even for the same model.
+
+**This was legwork, not a unilateral decision.** CLAUDE.md and the handoff
+were explicit that which paid model runs in each slot is Madhu's call; the
+analysis below made that call fast from a sourced shortlist with real cost
+estimates, and Madhu made it via a direct choice, not by default. **Nothing
+in `.env` or `run_experiments.py` was changed by this memo itself** — the
+pre-filled strings now in `.env.example` were added separately, after the
+decision, as a direct consequence of it.
 
 All pricing below was gathered from the web on **2026-07-20** and is dated and
 sourced (pricing drifts — don't reuse a number here without re-checking). It is

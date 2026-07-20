@@ -34,19 +34,27 @@ the real one, committed to disk where you can actually read it.)
 
 ## What's genuinely still blocking a full experiment run
 
-Not corpus work, not pipeline code - two things outside either of our control,
-unchanged since the last handoff:
+Progress since the last handoff on both, but neither is actually resolved yet:
 
-1. `.env` has no API keys configured (Anthropic, OpenAI, and an undecided
-   open-source model access path - HF hosted inference vs. a self-hosted
-   OpenAI-compatible endpoint). This is Madhu's call, not something to fill in
-   guessing at values. (Your `check_env.py` is ready and tested for the moment
-   this changes - verified it runs clean with no `.env` present: reports all
-   three providers "not configured", exits 0, no crash.)
-2. Human expert rater recruitment for Method B (Likert ratings, Fleiss' kappa)
-   - status unknown to either of us as far as I can tell from the repo. Your
-   rater_protocol.md is solid and ready to hand to recruited raters whenever
-   that happens - nothing there is blocking anything.
+1. **Model tier: DECIDED, keys: still missing.** Madhu picked the "Mid"
+   triple (`docs/model_tier_recommendation.md`) - Sonnet 5 intro + GPT-5.6
+   Terra + a cheap open model. `.env.example` now has the confirmed, exact
+   API model ID strings pre-filled for Claude (`claude-sonnet-5`) and GPT
+   (`gpt-5.6-terra` - note the bare `gpt-5.6` alias currently routes to Sol,
+   not Terra). Two things remain: (a) `.env` itself still has no real API
+   keys - that's Madhu's account/billing action, not engineering; (b) the
+   open-source slot needs a specific hosted-provider pick (Together AI /
+   Fireworks / Groq / DeepInfra) before its exact model-ID string can be
+   set, since the string format differs by provider even for the same
+   model (DeepSeek V4 Pro) - this part *could* be a small task if asked for,
+   but isn't queued right now. `check_env.py` is still ready and tested for
+   the moment real keys land.
+2. **Rater recruitment: materials drafted, channels being researched, zero
+   raters actually contacted yet.** `docs/rater_recruitment_outreach.md` has
+   a ready-to-send invitation and qualifying criteria. Task E (below) is
+   researching realistic channels. Neither of these is recruitment itself -
+   that step still needs Madhu/Kruthik reaching a real person, and status
+   there is unchanged: unknown, and the actual bottleneck.
 
 ## Previous tasks (Task 0, Task 1, Task 2) - all done, thank you
 
