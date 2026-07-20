@@ -1,0 +1,21 @@
+{
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "9",
+    "key_risks_section_pages": "30-31"
+  },
+  "overall_sort_rating": "Moderate",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Environment and Social risk is rated Substantial due to (a) limited institutional capacity to manage environmental and social risks and impacts; (b) nationwide implementation of the project's activities; (c) possible exclusion of vulnerable groups (such as poor children, children with disabilities, and indigenous groups); and (d) other risks involving child protection, occupational health and safety, labor issues, and sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project will develop a capacity-building plan for the Environmental and Social Safeguards Office and Project Management Unit, including hiring dedicated environmental and social specialists and providing targeted training. It will establish robust monitoring mechanisms to ensure support for vulnerable groups (universal design in new school/WASH construction, materials adapted for visually impaired students), strict adherence to worker codes of conduct, complaint redress and referral mechanisms, and construction site safety measures to protect school children and communities from labor influx and construction-related risks."
+    }
+  ],
+  "notes": "Text-driven extraction: only ONE of 9 SORT categories (Environment and Social) is rated Substantial, and it is the only risk narrated in Section V (paras 80-81); overall risk rating is Moderate. This is a genuinely thin register, not a truncation artifact - part of the short-register/hallucination-test subgroup (with P-PAK, P-JOR, P-MAR) per the 2026-07-19 decision recorded in corpus_manifest.csv: these 4 documents are included deliberately as a test of whether models over-generate risks beyond what the true register contains, with precision on this subgroup reported separately in Results rather than pooled into headline numbers (see draft methodology Section III.A/F). LEAKAGE BUG FOUND AND FIXED 2026-07-19 (VS Code session spot-check): key_risks_section_pages was previously recorded as just \"31\" (the page with the formal \"V. KEY RISKS\" heading). Page 30 - under a preceding heading, \"C. Environmental, Social and Legal Operational Policies\" - restates the same E&S risk almost verbatim (\"overall Environmental and Social (E&S) Risk is rated Substantial\", \"social risk rating is Substantial ... potential exclusion of vulnerable groups ... child protection, occupational health and safety, labor issues, and Sexual Exploitation and Abuse\") and was confirmed present verbatim in data/processed/P-KHM-BasicEducationImprovement.txt before the fix. Range widened to 30-31 in both this file and corpus_manifest.csv; extract.py re-run and re-verified leak-free (see corpus_manifest.csv notes for this row for the full writeup). No new risk entry was added - page 30 elaborates the same single E&S risk as R01, not a distinct SORT category."
+}

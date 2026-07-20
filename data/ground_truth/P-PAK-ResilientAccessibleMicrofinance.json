@@ -1,0 +1,30 @@
+{
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "8-9",
+    "key_risks_section_pages": "29-30"
+  },
+  "overall_sort_rating": "Substantial",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is Substantial. The political context in Pakistan remains fluid. However, there has been significant decline in political uncertainty and associated policy instability in recent months, especially in the backdrop of the general elections. Given that a new government took the helm recently and the fact that policy priorities are still being defined, political risks, in particular in the context of the project, remain substantial.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In the implementation stage, the risks will be mitigated through frequent monitoring and oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is High. While fiscal consolidation measures have supported short-term stabilization, macroeconomic risks remain high amid a high debt burden (72 percent of GDP), heavy financial sector exposure to government debt, large external financing needs, weak confidence, and little progress with structural reforms. Significant risks include potential worsening of external conditions, further natural disasters, and a slowdown or reversals in policy adjustment.",
+      "category": "external",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Risks are partly mitigated by government commitment to implementation of reforms under the ongoing International Monetary Fund program, World Bank support to structural policy reforms in the fiscal and power sectors, strong government commitment to the reforms supported by the operation, and the availability of dedicated World Bank technical assistance to implement key reforms."
+    }
+  ],
+  "notes": "Text-driven extraction: overall risk Substantial; Section V (paras 56-58) narrates only 2 of 9 SORT categories (Political and Governance=Substantial, Macroeconomic=High) - text explicitly frames these as the complete set ('The main risks and mitigation measures are outlined below'), so this is a genuinely short register, not a truncation artifact. Part of the short-register/hallucination-test subgroup (with P-KHM, P-JOR, P-MAR) per the 2026-07-19 decision in corpus_manifest.csv. SORT table spans pages 8-9 (rows 3-9, i.e. Sector Strategies through Overall, are on page 9) - originally mis-recorded as page 8 only, caught and fixed 2026-07-19 alongside 7 other rows with the same failure mode."
+}

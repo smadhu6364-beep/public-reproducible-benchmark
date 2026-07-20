@@ -1,0 +1,66 @@
+{
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "4",
+    "key_risks_section_pages": "27"
+  },
+  "overall_sort_rating": "Substantial",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Institutional capacity poses challenges to delivering the reform effort, despite very high leadership commitment and fast-paced GoA initiation of reforms.",
+      "category": "organizational",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project Preparation Facility (PPF) is designed to assist capacity building for the implementing agency; the TA part of the loan continues building capacity to deliver, addressing the most pressing capacity needs."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Fiduciary risks related to the new form of financial instrument used in Albania.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the fiduciary risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Technical design risk, named alongside the fiduciary risk as being addressed by the same TA support (fiduciary and budget specialists in the PMU); not separately elaborated beyond this.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the technical design risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Stakeholder risks arising from inter-agency coordination.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by strong emphasis on coordination mechanisms in the design of the operation."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bureaucratic resistance to enhanced transparency and simplification of administrative processes.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated in part through high-level leadership and engagement, and through citizen feedback arrangements that help pinpoint poor performance and corruption."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Political cycle risk from elections coming up in 2017, which could disrupt reform continuity and government commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by making early progress in showing results and ensuring a broad constituency of support for the project's objectives and activities among the leadership of participating institutions and service users."
+    }
+  ],
+  "notes": "Text-driven extraction, NOT rating-driven: unlike the other 4 projects in this batch, Albania's narrative (paras 47-48) names 5 risks explicitly (low capacity, fiduciary, stakeholder/coordination, bureaucratic resistance to transparency, political cycle) plus a 6th (technical design) introduced only via its shared mitigation sentence with fiduciary. Two of these (R05, R06) map to Political and Governance, which the SORT table rates only Moderate - confirming that narration in this PAD is not reliably predicted by SORT severity tier, unlike the other 4 projects in this batch where narrated risks = exactly the Substantial/High rows. The 2 remaining SORT categories (Macroeconomic, Sector Strategies and Policies - both Moderate) and Environment and Social (Low) and Other (blank) are not discussed in the narrative."
+}

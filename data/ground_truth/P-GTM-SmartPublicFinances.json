@@ -1,0 +1,39 @@
+{
+  "project_id": "P-GTM-SmartPublicFinances",
+  "source": "PAD",
+  "register_location": {
+    "sort_table_pages": "8-9",
+    "key_risks_section_pages": "37-38"
+  },
+  "overall_sort_rating": "Substantial",
+  "risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical design risks are considered Substantial. PFM reforms typically require a whole-of-government approach and involve complex, cross-cutting changes that are often difficult to implement; these challenges are further amplified when reforms involve development or integration of sophisticated information systems. Many of the anticipated efficiency gains depend heavily on interoperability of processes and seamless integration of information systems across institutions, and the involvement of multiple stakeholders adds further complexity and increases the potential for misalignment or implementation delays.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project design includes the development and application of well-defined, evidence-based PFM conceptual and governance models, informed by a diagnostic and reform strategy developed through stakeholder consultations, providing a clear and coherent framework expected to foster shared understanding, facilitate collaboration, and reduce fragmentation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risks are Substantial. Given the complexity of PFM reforms, the project requires strong government commitment to ensure effective implementation and safeguard long-term sustainability. Since the project's beneficiaries extend beyond MINFIN, coordination challenges may arise during implementation.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A PIU will be established within the Directorate of Public Treasury (DTP) for faster decision-making and improved coordination across MINFIN directorates. Component 3 will strengthen PIU operations (project management, financial management, procurement, monitoring, E&S risk management capacities); the Bank will provide training to the PIU and relevant stakeholders and facilitate change management mechanisms and a communications strategy. Coordination challenges involving multiple beneficiaries will be addressed through collaboration between MINFIN and SEGEPLAN via the Digital Transformation Commission."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risks are Substantial. This is due to DTP's limited experience with donor-funded projects and lack of recent engagement with World Bank operations; DTP has no prior experience implementing the Bank's procurement regulations, and the low value of anticipated contracts may limit interest from international firms, reducing competition. DTP has basic financial management systems in place but its unfamiliarity with the Bank's FM policies and requirements may pose risks to achieving the PDO, potentially leading to delays in activity execution.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Measures include setting up a PIU with qualified personnel, offering procurement training to PIU and DTP staff, conducting market analysis to find potential providers, and preparing a simplified Project Procurement Strategy for Development (PPSD)."
+    }
+  ],
+  "notes": "STRUCTURAL NOTE (same MPA pattern as São Tomé): this document contains TWO risk narratives - a program-level 'VI. KEY RISKS' paragraph (para 55, page 25, applying to the MPA as a whole) and a separate, more detailed country/project-specific 'V. KEY RISKS' section inside the Guatemala-specific annex (paras 54-57, pages 37-38). Per the 2026-07-19 decision (parallel to P-STP-YouthEmployment), ONLY the country-specific section is used as ground truth here; both locations were excised from data/processed/ for leakage safety regardless. IMPORTANT DISCREPANCY, resolved by following the text as written rather than the SORT table alone: the project-specific narrative (para 54) explicitly states 'The risks assessed as substantial are technical design, institutional capacity for implementation and sustainability, and fiduciary' - a list of exactly 3, deliberately excluding Political and Governance even though the SORT table's row 1 rates Political and Governance as Substantial and the (excluded) program-level paragraph's list of 4 substantial risks does include it. Since Political and Governance is not narrated anywhere within the project-specific section (pages 37-38) used as this study's register, no entry is created for it, consistent with the corpus-wide rule that a rated-but-unnarrated category is not fabricated - even though, unusually, that category's rating is Substantial rather than the more common Moderate/Low. Worth flagging in the paper as a genuine program-level vs. project-level inconsistency within the source document itself, not an extraction artifact. Remaining rated-but-unnarrated categories in the project-specific SORT (Macroeconomic=Moderate, Sector Strategies and Policies=Moderate, Environment and Social=Moderate, Stakeholders=Moderate) also not given entries."
+}

@@ -1,0 +1,1872 @@
+===== SOURCE FILE: hynet-full-business-case.pdf =====
+
+June 2025
+
+Full Business Case for
+HyNet Cluster Carbon
+Capture, Usage & Storage
+(CCUS)
+
+© Crown copyright 2025
+This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated.
+To view this licence, visit nationalarchives.gov.uk/doc/open-government-licence/version/3 or write to the
+Information Policy Team, The National Archives, Kew, London TW9 4DU, or email: psi@nationalarchives.gov.uk.
+Where we have identified any third-party copyright information you will need to obtain permission from the
+copyright holders concerned.
+Any enquiries regarding this publication should be sent to us at:
+ccuscorrespondence@energysecurity.gov.uk
+
+Full Business Case for HyNet Carbon Capture,
+Usage & Storage (CCUS)
+
+APPROVAL HISTORY
+NAME
+ROLE
+DATE BUSINESS CASE
+APPROVED
+VERSION APPROVED
+Alex Milward and Paro
+Konar
+SRO
+13/06/2024
+1.0
+Portfolio and Investment
+Committee
+Approval body (Group or
+Investment Committee)
+11/07/2024
+1.1
+Major Projects Review
+Group
+Approval body (Group or
+Investment Committee)
+02/08/2024
+1.1
+
+SRO: Alex Milward and Paro Konar
+Date: 13/06/2024
+Version Number: 1.1
+
+Purpose
+
+Since April 2021, all infrastructure and construction projects and programmes on the Government Major
+Projects Portfolio (GMPP) have been required to publish their Full Business Cases (FBC). This is to provide
+greater transparency on how HMG FBCs are developed and how decisions are made. This FBC supports
+investment in the HyNet Cluster for the deployment of carbon capture, usage and storage (CCUS).
+[Note: This FBC contains information that, although correct at the point of writing, may now be out of date.
+Furthermore, some content within this FBC has been redacted to comply with HMG publication guidelines.]
+
+CONTENTS
+PURPOSE ........................................................................................................................................................... 2
+ACRONYMS ........................................................................................................................................................ 6
+1. EXECUTIVE SUMMARY ................................................................................................................................... 8
+1.1 WHY CCUS? ................................................................................................................................................ 8
+1.2 LESSONS LEARNED: THE UK’S APPROACH TO CCUS .......................................................................................... 8
+1.3 APPROVAL SOUGHT ........................................................................................................................................ 9
+1.4 VALUE FOR MONEY ...................................................................................................................................... 10
+1.5 FINANCIAL SUMMARY .................................................................................................................................... 11
+1.6 DELIVERABILITY AND RISKS ............................................................................................................................ 11
+1.7 WHY NOW? ................................................................................................................................................. 12
+1.8 HIGH-LEVEL MILESTONES .............................................................................................................................. 12
+2. STRATEGIC CASE ......................................................................................................................................... 13
+2.1      STRATEGIC ASSESSMENT .......................................................................................................................... 13
+2.1.1 Current position .................................................................................................................................... 13
+2.2 RATIONALE FOR INTERVENTION ...................................................................................................................... 14
+2.2.1 Justification .......................................................................................................................................... 14
+2.2.2 Strategic Fit (Departmental) .................................................................................................................. 15
+2.2.3 Wider Government Priorities ................................................................................................................. 15
+2.2.4 Strengthening the UK Union ................................................................................................................. 16
+2.3   AIMS AND OUTCOMES .................................................................................................................................. 16
+2.3.1   Scope ................................................................................................................................................ 16
+2.3.2 T&S Network ....................................................................................................................................... 16
+2.3.3 Objectives ........................................................................................................................................... 17
+2.3.4 Benefits being sought ........................................................................................................................... 17
+2.3.5 Inter-Dependencies, Assumptions & Constraints .................................................................................... 17
+2.4 PUBLIC SECTOR EQUALITIES DUTIES .............................................................................................................. 18
+2.5 IDENTIFY HIGH LEVEL POTENTIAL RISKS ........................................................................................................... 18
+3 ECONOMIC CASE (OPTIONS APPRAISAL) .................................................................................................... 19
+3.1 ECONOMIC RATIONALE FOR INTERVENTION ..................................................................................................... 19
+3.2 POLICY OPTIONS FOR APPRAISAL ................................................................................................................... 19
+3.2.1 Critical Success Factors ....................................................................................................................... 20
+3.2.2 Long-listed Options .............................................................................................................................. 20
+3.2.3 Short-listed Options .............................................................................................................................. 20
+3.2.4 Options for Appraisal ............................................................................................................................ 20
+3.3 APPRAISAL FRAMEWORK .............................................................................................................................. 21
+3.3.1 Identification of Impacts ........................................................................................................................ 21
+3.3.2 Counterfactual ..................................................................................................................................... 21
+3.3.3 Uncertainty and Sensitivities ................................................................................................................. 22
+3.4 MONETISED IMPACTS – NET ZERO COMPLIANT COUNTERFACTUAL ..................................................................... 22
+3.4.1 Central Results – Net Zero Compliant Counterfactual ............................................................................. 22
+3.4.2 Sensitivity Analysis – Net Zero Compliant Counterfactual ........................................................................ 22
+3.4.3 Track-1 and HyNet Expansion Analysis – Net Zero Compliant Counterfactual .......................................... 23
+3.5 MONETISED RESULTS – KNOWN POLICY COUNTERFACTUAL .............................................................................. 24
+3.5.1 Central Results – Known Policy Counterfactual ...................................................................................... 24
+3.5.2 Sensitivity Analysis – Known Policy Counterfactual ................................................................................. 24
+3.5.3 Track-1 and HyNet Expansion Analysis – Known Policy Counterfactual ................................................... 24
+3.6 NON-MONETISED IMPACTS ............................................................................................................................ 25
+3.6.1 Wider Impacts and Place-Based Analysis .............................................................................................. 25
+3.7 RISK APPRAISAL .......................................................................................................................................... 25
+
+3.8 PREFERRED OPTION .................................................................................................................................... 25
+4 COMMERCIAL CASE ...................................................................................................................................... 26
+4.1 OVERALL APPROACH AND BACKGROUND ........................................................................................................ 26
+4.1.1 Overall Process Outline ........................................................................................................................ 26
+4.1.2 Key Commercial Principles ................................................................................................................... 27
+4.1.3 Commercial Model ............................................................................................................................... 27
+4.1.4 Negotiation Strategy ............................................................................................................................. 28
+4.2 OUTCOME OF NEGOTIATIONS ........................................................................................................................ 29
+4.2.1 Agreed Terms for ‘Anchor’ Projects ....................................................................................................... 29
+4.2.2 Interim Terms and Approach for Build-out Projects ................................................................................. 29
+4.2.3 CCS Network Code .............................................................................................................................. 30
+4.2.4 Cluster-level commercial risk assessment .............................................................................................. 30
+4.2.5 Subsidy controls and other legal requirements ........................................................................................ 31
+4.3 CLUSTER AND PROJECT DELIVERABILITY .......................................................................................................... 31
+4.4 CONTRACT MANAGEMENT ............................................................................................................................. 31
+4.4.1 DESNZ Cluster Sponsor Function ......................................................................................................... 32
+4.4.2 Economic Regulator – Ofgem ............................................................................................................... 32
+4.4.3 Contract Counterparty – Low Carbon Contracts Company (LCCC) .......................................................... 32
+4.4.4 DESNZ Central Grants & Loans Team .................................................................................................. 32
+5. FINANCIAL CASE .......................................................................................................................................... 32
+5.1 PURPOSE ................................................................................................................................................... 32
+5.2
+AFFORDABILITY ...................................................................................................................................... 33
+5.3
+FUNDING REQUIRED (NOMINAL) ................................................................................................................ 33
+5.4
+RESOURCE BUDGETS .............................................................................................................................. 33
+5.5
+PROGRAMME FUNDING AND FTE REQUIREMENTS ....................................................................................... 33
+5.6
+SPENDING POWERS AND BUDGET MANAGEMENT ......................................................................................... 34
+5.6.1 Spending powers and application in devolved administrations ............................................................... 34
+5.7 FINANCIAL RISKS .......................................................................................................................................... 34
+5.7.1 Revenue Support Agreement (RSA)...................................................................................................... 35
+5.7.2 Supplementary Compensation Agreement (SCA) ................................................................................... 35
+5.7.3 Discontinuation Agreement ................................................................................................................... 35
+5.7.4 Discontinuation risk for EETH and Protos ............................................................................................... 35
+5.7.5 Decommissioning fund shortfall ............................................................................................................. 35
+5.7.6 Exchequer funding Secretary of State direct agreements (SoSDA) .......................................................... 35
+5.7.7 NSTA and Opred requirements for financial security ............................................................................... 35
+5.7.8 Fraud .................................................................................................................................................. 36
+5.7.9 Financial sensitivities ............................................................................................................................ 36
+5.7.10 Cross-chain and cross-cutting risks ...................................................................................................... 36
+5.7.11 Eni T&S network construction overruns ................................................................................................ 36
+6. MANAGEMENT CASE ................................................................................................................................... 36
+6.1 TEAM STRUCTURE ........................................................................................................................................ 37
+6.1.1 Pre-FID roles and responsibilities .......................................................................................................... 37
+6.1.2 Post-FID roles and responsibilities ......................................................................................................... 37
+6.1.3 Resources ........................................................................................................................................... 38
+6.2 STAKEHOLDER MANAGEMENT AND COMMUNICATIONS ....................................................................................... 38
+6.3 PROJECT GOVERNANCE ................................................................................................................................ 39
+6.3.1 Project Accountability ........................................................................................................................... 39
+6.3.2 Project governance .............................................................................................................................. 39
+6.3.3 Budget monitoring & control .................................................................................................................. 39
+6.4 MILESTONES ............................................................................................................................................... 39
+
+6.4.1 Schedule Overview .............................................................................................................................. 39
+6.4.2 Schedule Delivery Confidence .............................................................................................................. 40
+6.4.3 Schedule Management ........................................................................................................................ 40
+6.5 ASSURANCE & APPROVALS ........................................................................................................................... 40
+6.5.1 Assurance arrangements ...................................................................................................................... 40
+6.5.2 Programme assurance activities ............................................................................................................ 41
+6.5.3 FBC approvals sought .......................................................................................................................... 41
+6.5.4 Exceptions ........................................................................................................................................... 41
+6.6 MONITORING AND EVALUATION OF BENEFITS ................................................................................................... 42
+6.6.1 Monitoring and evaluation resource ....................................................................................................... 42
+6.7 RISK MANAGEMENT ...................................................................................................................................... 42
+6.7.1 Risk and Issue Management ................................................................................................................. 42
+6.7.2 Performance Management & Reporting ................................................................................................. 43
+
+Acronyms
+ALB
+Arm’s Length Body
+AME
+Annual Managed Expenditure
+APDP
+Approved Development Plan
+BCR
+Benefits Cost Ratio
+BECCS
+Bioenergy with Carbon Capture, Use and Storage
+BEIS
+Department for Business Energy and Industrial Strategy
+BM
+Business Model
+BP
+Business Planning
+CAPEX
+Capital Expenditure
+CB6
+Carbon Budget 6
+CBA
+Cost-benefit Analysis
+CCC
+Committee on Climate Change
+CCS
+Carbon Capture and Storage
+CCUS
+Carbon Capture, Usage and Storage
+CDEL
+Capital Departmental Expenditure Limit
+CfD
+Contract for Difference
+CGL
+Central Grants and Loans
+CIF
+CCUS Infrastructure Fund
+CO2
+Carbon Dioxide
+COD
+Commercial Operation Date
+CTP
+Cluster Touchpoint
+CX
+Chancellor of the Exchequer
+DBT
+Department for Business and Trade
+DD
+Deputy Director
+DESNZ
+Department for Energy Security and Net Zero
+DEVEX
+DFT
+DLUHC
+Development Expenditure
+Department for Transport
+Department for Levelling Up Housing and Communities
+DPA
+Dispatchable Power Agreement
+ECC
+East Coast Cluster
+EfW
+Energy from Waste
+ETS
+Emission Trading Scheme
+FBC
+Full Business Case
+FOAK
+First Of A Kind
+FID
+Financial Investment Decision
+GGR
+Greenhouse Gas Removal
+GMPP
+Government Major Projects Portfolio
+GSP
+Government Support Package
+GVA
+Gross Value Added
+GW
+Gigawatt
+H2
+Hydrogen
+HMG
+His Majesty’s Government
+HMT
+His Majesty’s Treasury
+ICC
+Industrial Carbon Capture Usage and Storage
+ICP
+Initial Conditions Precedent
+IDH
+Industrial Decarbonisation and Hydrogen
+IDHRS
+Industrial Decarbonisation and Hydrogen Revenue Support Scheme
+IPA
+Infrastructure and Projects Authority
+LCCC
+Low Carbon Contracts Company
+
+M&E
+Monitoring and Evaluation
+MPRG
+Major Project Review Group
+Mt
+Megatonne
+Mtpa
+Megatonne per Annum
+NDC
+Nationally Determined Contribution
+NDC
+Net Dependable Capacity
+NAO
+National Audit Office
+NFE
+Negotiation Funding Envelope
+NLT
+Negotiation Leadership Team
+NPV
+Net Present Value
+NSTA
+North Sea Transition Authority (formerly the OGA)
+NZHF
+Net Zero Hydrogen Fund
+OBC
+Outline Business Case
+Ofgem
+Office for Gas and Electricity Markets
+ORB
+Online Reporting in BEIS
+OPEX
+Operational Expenditure
+OPRED
+Offshore Petroleum Regulator for Environment and Decommissioning
+PB
+Programme Board
+PIC
+Portfolio and Investment Committee
+PMO
+Project Management Office
+QSRA
+Quantitative Schedule Risk Analysis
+RAB
+Regulated Asset Base
+RAV
+Regulated Asset Value
+RAID
+Risks, Assumptions, Issues, and Dependencies
+RDEL
+Resource Departmental Expenditure Limit
+RSA
+Revenue Support Agreement
+SCA
+Supplementary Compensation Agreement
+SOBC
+Strategic Outline Business Case
+SoP
+Statement of Principles
+SoS
+Secretary of State
+SR
+Spending Review
+SRO
+Senior Responsible Owner
+T1/T2
+Track-1/Track-2
+T1x
+Track-1 expansion
+T1M
+Track-1 Negotiation Mandate
+T1PNL
+Track-1 Project Negotiation List
+T&S
+Transport and Storage
+T&SCo
+Transport and Storage Company
+TDS
+Technical Details Schedule
+TRI
+T&S Regulatory Investment
+VfM
+Value for Money
+UK
+United Kingdom
+UK ETS
+United Kingdom Emission Trading Scheme
+W/ICC
+Waste/Industrial Carbon Capture Usage and Storage
+
+1. Executive Summary
+1.1 Why CCUS?
+CCUS (Carbon Capture, Usage and Storage) is the process of capturing carbon dioxide (CO2) and storing it safely
+underground. CO2 can be captured from industrial plants (e.g. cement, chemicals, energy from waste), hydrogen
+production (blue hydrogen) and power stations, henceforth referred to as ‘capture projects’. CO2 is then transported via
+pipelines, compressed and stored in deep geological formations such as depleted oil and gas fields or saline aquifers
+underground.
+
+CCUS is essential to deliver on the UK’s net zero ambitions, to achieve energy and supply chain security and to enable
+hard-to-abate sectors to decarbonise. For many hard-to-abate sectors, CCUS presents the only feasible method for
+decarbonisation (e.g. cement production) and is currently the most cost-effective and feasible method of
+decarbonisation for various others (e.g. dispatchable power). CCUS will also stimulate innovation and growth across the
+country, protecting existing industry and jobs and creating new ones.
+Carbon capture technologies have been successfully used in the USA since the 1970s, and the Sleipner project in
+Norway has been successfully storing CO2 in the North Sea since 1996. Successful projects are also in operation in
+Canada, UAE and Brazil and deployment in Europe and SE Asia is moving forward at pace with national subsidy
+schemes and legislation proposed or in place to incentivise CCUS. The global market for CCUS is growing (estimated
+to require $120bn p.a. globally by 2050)1 and the UK is well positioned to take advantage of this due to its geology,
+skills, and infrastructure. The UK has up to 78bn tonnes of CO2 storage capacity in the North Sea,2 one of the largest in
+the world. Investing in CCUS now could allow the UK to become a global leader and export its expertise and storage
+services to Europe and beyond, boosting the UK economy by up to £5bn per year in GVA in 2050.3
+1.2 Lessons learned: The UK’s approach to CCUS
+There are multiple market barriers which inhibit the development of a CCUS market in the UK. The Carbon Price is
+currently too low to incentivise deployment, there is a first-mover disadvantage due to high start-up costs and innovation
+spillovers, and developing a CCUS market requires complex investment coordination and substantial risk. Government
+intervention is necessary to address these initial challenges and enable CCUS deployment at scale.
+To achieve its ambition, HMG has co-developed, across multiple industries over several years, a market intervention
+based around a CCUS cluster model. This cluster model focuses on industrial areas of dense co-location of hard-toabate sectors, which are close to potential storage sites. It then aims to address the market barriers above to stimulate
+the growth of a pioneering CCUS industry at scale via sector-specific interventions (the business models). This
+approach has considered lessons learnt from previous failed attempts to launch CCUS in the UK which ended in 2011
+and 2016 respectively. Additionally, government has run various smaller-scale development and demonstration projects
+in recent years, including through the Accelerating CCUS Technologies, CCUS Innovation and the Industrial
+Decarbonisation Challenge programmes. These have built a better understanding of the project pipeline within
+government and have helped to prepare the UK CCUS sector for commercial-scale deployment. This process has
+allowed us to continuously gather information and learn lessons from real-world projects in developing the business
+model agreements.
+The Cluster model has a Transport & Storage Company (T&SCo) operating a CCUS Transport and Storage (T&S)
+network, which takes the CO2 emitted by multiple capture projects and stores it underground. The T&SCo and the
+capture projects have a contractual relationship, with the capture projects paying a fee to the T&SCo to store their CO2
+emissions.
+Currently, the costs of constructing and operating a CO2 capture plant are higher than the costs incurred by emitting
+CO2 into the atmosphere. To address this, HMG provides capture projects with economic incentives through subsidy
+contracts and in some instances capital grants for initial projects. These contracts, which can last up to 15 years, ensure
+that capture projects are economically motivated to build and operate the necessary infrastructure to capture their CO2
+(and pay the storage fee to the T&SCo) rather than emitting it. Cost and plant performance requirements are generally
+fixed under the business models, meaning that the delivery and performance risk sits with the industry.
+
+1 GOV.UK (2023). North Sea ‘treasure map’ to grow the economy and unleash the UK’s carbon capture and storage industry
+2 Internal DESNZ analysis based on the Energy Innovation Needs Assessment (2019) Available at:
+https://assets.publishing.service.gov.uk/media/5dc5872be5274a4f2286fc76/energy-innovation-needs-assessment-ccus.pdf
+3 CCUS Seeking a bankable business model, Deloitte White Paper – Nov 2023
+
+Initially, the T&SCo operates as a monopoly and is therefore regulated by Ofgem through a Regulated Asset Base
+(RAB) model. Under the terms of an economic licence, Ofgem sets a total ‘allowed revenue’ for the T&SCo which is
+recovered from the fees charged to the capture projects. The allowed revenue covers both the T&SCos operating costs
+and capital investment and provides an agreed rate of return. The T&SCo is also subject to several incentive structures,
+whereby its rate of return can be either increased or decreased based on key operational performance measures.
+HMG intervention on the T&SCo side aims to address the initial deployment barriers. If there was a shortfall in demand
+for the network, and aggregate user fees did not meet the T&SCos allowed revenue, government guarantees these
+fees through the exchequer-funded Revenue Support Agreement (RSA). Additionally, government will underwrite
+several key high-impact, low-probability risks – principally relating to CO2 leakage – via the Supplementary
+Compensation Agreement (SCA). In this first deployment, the RSA and SCA are 25-year contracts, to provide investors
+with confidence in the stability of the returns and stimulate growth and investment. However, if support provided
+reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network.
+In addition, HMG covers some of the ‘cross-chain’ risks from the interdependencies between the T&SCo and capture
+projects. Through lengthy negotiations, we have sought to allocate risks to the party most suited to manage them,
+ensuring the private sector can raise private investment and that the model is deliverable.
+This world-leading economic model4 has the potential to establish a self-sustaining CCUS industry in the UK. As the
+costs of emitting CO2 increase, the cost of CO2 capture is anticipated to decrease, fostering increased competition for
+T&SCos and opportunities for reduced HMG intervention and economic regulation. As the market matures, this will
+enable the emergence of a commercial and competitive private sector led CCUS market and a hydrogen economy.
+Approving the HyNet FBC will enable the first steps towards CCUS’ essential contribution to energy security, UK trade,
+and lowest cost pathway to Carbon Budgets.
+1.3 Approval sought
+Previous approval
+Date complete
+Strategic Outline Business Case (SOBC) PIC approval
+29th April 2021
+Cluster Selection Phase 1 outcome
+19th October 2022
+Outline Business Case (OBC) PIC approval
+31st March 2022
+Ministerial announcement of Negotiation Funding Envelope (NFE) & selected projects
+January 2023
+
+The HyNet Cluster is one of the initial Track-1 clusters, alongside the East Coast Cluster, and is located in the
+Northwest of England and North Wales. The initial CO2 network storage capacity of HyNet is of up to 4.7Mtpa, with
+potential for expansion to 10.5Mtpa. The initial configuration of the HyNet Cluster comprises the T&SCo and four
+capture projects across the hydrogen, construction and energy for waste (EfW) industries.
+However, we are only seeking approval through this FBC for the T&SCo and the two capture projects that are
+sufficiently mature to take Final Investment Decisions – the ‘anchor’ scope. The remaining two projects will be
+considered for approval via individual FBCs once they are sufficiently mature; in this business case, we refer to these
+projects as the ‘build-out’.
+The ‘anchor’ configuration for HyNet is comprised of the following projects:
+• Eni – The Transport and Storage network, which will use a mix of existing and newly constructed on-shore and offshore pipes to transport captured CO2 into deep geological storage in Liverpool Bay.
+• Essar Energy Transition Hydrogen (EETH) – set to be the first CCUS-enabled hydrogen production plant in the
+UK. This project is the first plant of EETH’s proposed wider hydrogen production network, with plans for a second
+hydrogen plant.
+• Protos – One of the first CCUS-enabled Energy Recovery Facilities (ERF) of its size globally, treating up to 400,000
+tonnes of non-recyclable waste.
+The build-out projects for HyNet, which we anticipate will take FIDs in 2025 and 2026, are as follows:
+•
+Padeswood – Carbon capture enabled cement works, aiming to become the first example in the UK.
+
+4 https://publications.parliament.uk/pa/cm5803/cmselect/cmsctech/99/summary.html
+
+•
+Viridor – ERF that has been operational since 2014 treating almost a million tonnes of non-recyclable waste each
+year. It generates enough electricity to power the equivalent of 150,000 homes.
+The above anchor and build-out projects are expected to be operational from 2028.
+However, HyNet has considerable potential for expansion. The remaining capacity to 4.7Mtpa will be filled via the
+ongoing HyNet top-up process. Once this 4.7Mtpa capacity is filled, HyNet has the capacity to further expand to
+10.5Mtpa storage capacity (HyNet expansion phase); this could be as early as 2034. There is substantial existing
+demand across the HyNet geography to fill this capacity - the combined CO2 of the top-up expression of interest
+projects plus anchor and build-out already exceeds 10Mtpa.
+This incremental approach, to deploy and build the initial anchor infrastructure first and then fill remaining available T&S
+capacity via ‘build-out’ and network top-up and expansion processes, introduces a risk of network underutilisation and
+revenue support exposure, but represents the most effective way to deploy CCUS. It:
+• Allows HMG to reduce costs by avoiding unnecessary delays to coordinate FIDs, and projects needing to down
+tools (and risk stopping development altogether).
+• Allows effective construction supply chain management, avoiding unnecessary costs and delays.
+• Achieves the earliest date for network operation (including expansion) and therefore optimises benefits, including
+CO2 captured.
+1.4 Value for Money
+Within this business case, we have assessed three potential options to deploy CCUS:
+• Option 0: counterfactual outlines the impact of not investing in HyNet.
+• Option 1 (preferred): Anchor Project Scope asks for the approval of the anchor configuration and would seek further
+approval for the build-out projects later.
+• Option 2: Full T1PNL Scope presents an alternative option where approval is obtained for the T&S network and all
+four anchor and build-out projects.
+We recommend pursuing Option 1: Anchor Project Scope. Analysis suggests that both Option 1 and Option 2 provide
+good value for money (VfM); this indicates that to remain on a pathway to net zero, investing in HyNet provides better
+value than alternative forms of abatement.
+We recommend pursuing Option 1 because it allows us to manage the uncertainty of build-out projects, enabling us to
+take FIDs individually and seek funding once projects reach required maturity and we are reassured they present a
+good VfM proposition. Moreover, this approach enables more mature projects to become operational earlier as
+opposed to waiting for the slowest projects to be ready prior to any CO2 capture, and thus offer the potential (with
+successful delivery) of a more credible deployment pathway to CCUS’ contribution to Carbon Budgets. The initial
+anchor configuration is estimated to have a net present value (NPV) of £0.3bn when appraised against a Net Zero
+Consistent Counterfactual. As the build-out, and then top-up and expansion projects, join the HyNet network, greater
+economic benefit is realised and NPV rises to £4.5bn and £8.8bn respectively.
+HyNet will also deliver benefits and costs that have not been monetised. Benefits include positive environmental
+impacts, productivity, and innovation benefits, as well as supporting economic activity in the Northwest of England and
+Wales. Costs include the potential for CO2 leakage and environmental and air quality impacts.
+
+Gateway 4 Review
+June 2028
+HMG Fiscal Events
+Spring Budgets
+March 2024
+Autumn Budgets
+TBC 2024
+M&E Key Dates
+Process Evaluations
+2024-2026
+Interim Impact Evaluations
+2028-2030
+Final Impact Evaluation
+Post 2030
+
+2. Strategic Case
+2.1      Strategic Assessment
+CCUS (carbon capture, usage and storage) is the process of capturing carbon dioxide (CO2) and storing it safely
+underground. CO2 can be captured from industrial plants (e.g. chemicals, cement, energy from waste), hydrogen
+producers (blue hydrogen) and power stations, henceforth referred to as ‘capture projects’. CO2 is then transported via
+pipelines, compressed and stored in deep geological formations such as depleted oil and gas fields or saline aquifers
+underground.
+For many hard-to-abate sectors, CCUS presents the only feasible method for decarbonisation (e.g. chemicals, cement,
+waste) and is currently the most cost-effective decarbonisation method across other sectors (e.g. power). CCUS can
+enable at-scale deployment of hydrogen (H2) by allowing the production of ‘blue hydrogen’, H2 which is generated via
+natural gas and CO2 is stored. Blue hydrogen can be produced at larger volumes and on a £/MWh basis is significantly
+more cost competitive (over 50% cheaper) than initial electrolytic hydrogen,6 which is being supported via Hydrogen
+Allocation Rounds7. CCUS can also enable low-carbon flexible electricity generation through deployment of Power
+CCUS. In a decarbonising energy system, long-duration flexibility will be critical to ensuring security of electricity supply,
+providing dispatchable power when demand is very high. Power CCUS can support security of supply directly through
+providing dispatchable power, and indirectly by providing a strong signal to investors that there is a future
+decarbonisation route for gas produced power.
+CCUS has been operational globally since the 1970s; the Sleipner project in Norway was the first carbon capture and
+storage project to deploy at commercial scale in the 1990s and carbon capture has been used since the 1970s in the
+USA. Successful projects are also in operation in Canada and Brazil and deployment in Europe is moving forward at
+pace, with national subsidy schemes and legislation proposed or in place to incentivise CCUS.
+2.1.1 Current position
+For the UK to meet its NDC and CB6, total UK emissions need to be reduced by 68% and 77% from 1990 levels
+respectively. To reach these targets, the UK needs to enable widespread decarbonisation of its ‘hard-to-abate’ sectors.
+This is not achievable without CCUS (via storing these emissions directly), or without transitioning these industries into
+alternative low-carbon fuels such as low-carbon hydrogen (including via blue hydrogen) generated through CCUS.  In
+the absence of viable decarbonisation options, manufacturers of critical industrial materials may relocate to more
+favourable jurisdictions due to the escalating costs of emissions; otherwise known as ‘carbon leakage’. As a sector,
+these industries contribute £200 billion of GVA to the UK and support 2.4 million direct jobs.7
+This is why through the Net Zero Strategy,8 and more recently the Carbon Budget Delivery Plan,9 we set the ambition
+to deliver four industrial CCUS clusters by 2030, with at least two clusters delivered (now ‘supported’) by the mid-2020s,
+including up to 6Mt of CO2 from industrial carbon capture sources by 2030, and one CCUS power plant by the mid2020s. In addition, the Hydrogen Production Delivery Roadmap set the ambition to deliver 4GW of low-carbon ‘blue’
+hydrogen by 2030.10
+
+6 https://www.gov.uk/government/publications/net-zero-strategy
+7 https://www.gov.uk/government/publications/carbon-budget-delivery-plan
+8 https://www.gov.uk/government/publications/carbon-capture-usage-and-storage-a-vision-to-establish-a-competitive-market
+9 https://www.carbonmanagementchallenge.org/cmc/
+10 https://www.gov.uk/government/publications/uk-hydrogen-strategy
+
+These initial clusters are the first phase in CCUS deployment in the UK (the market creation phase), as articulated in the
+CCUS Vision, which aims to make the UK a global leader in CCUS and create a self-sustaining CCUS market from
+2035.8 The UK has made substantial progress in the market creation phase, having developed our legislative and
+economic regulatory regime and CCUS business models and announced the first four CCUS clusters. This approach
+will de-risk CCUS, stimulate private sector investment and enable the emergence of a commercial and competitive
+private sector-led CCUS market. There is substantial appetite among investors across the world to back carbon
+capture, as evidenced by 21 countries signing up to the Carbon Management Challenge, co-sponsored by the UK to
+deploy CCUS.11
+Learning lessons from past attempts of deploying CCUS in the UK (2011 and 2016) as well as international examples,
+we chose to deploy CCUS via a cluster approach as first set out in the CCUS Action Plan (November 2018). In October
+2021, we announced that the first UK clusters would be the East Coast Cluster and the HyNet Cluster. In March 2023,
+we announced the successful projects that were being progressed to the Track-1 negotiations phase for these two initial
+clusters. Since then, we have been negotiating investible deals with HyNet’s T&SCo (Eni) and HyNet’s four capture
+projects: Essar Energy Transition Hydrogen (EETH), Protos, Padeswood, and Viridor.
+We have now reached a deliverable and investible position with Eni and two emitters, EETH and Protos, and are ready
+to take an investment decision on all three projects (the ‘anchor’ cluster). Our commercial positions with these projects
+carefully balance benefits and the investment risk profile, where HMG only assumes cross-chain risk that is necessary
+for an investible and cost-effective proposition (see Section 4.7).
+2.2 Rationale for Intervention
+2.2.1 Justification
+Deploying CCUS at scale in the UK is essential to deliver on the UK’s net zero ambitions, to achieve climate, energy,
+consumer and economic security, and to enable hard-to-abate sectors to decarbonise. By enabling the net zero
+transition of industry, CCUS will protect jobs and skills that are vital to a thriving UK economy and improve the long-term
+resilience of UK industrial capacity.
+HyNet is also essential to meet our hydrogen ambition. EETH will deliver CCUS-enabled ‘blue’ hydrogen production
+capacity to the Stanlow area in NW England, supporting decarbonisation of the Stanlow refinery and potentially the
+nearby Encirc glass manufacturer. EETH is a critical component in our twin-track approach to meet the needs of the
+hydrogen economy.12 We expect the latter to become a core production technology long-term, as cost reductions are
+enabled through complementary policy (e.g. HAR).
+Investment in HyNet will help mitigate the risk of carbon leakage and enable a level playing field across vital UK
+industry, supporting the UK’s economy and supply chain security. Protos and Viridor will be the first EfW facilities to
+demonstrate CCUS at scale in the UK, which will be crucial to abating residual waste emissions by 2050, decarbonising
+the power sector, and will be vital in delivering negative emissions, contributing to the 5Mtpa GGR ambition by 2030.
+Padeswood will demonstrate a credible proof of concept for low-carbon cement production. Padeswood, located in
+North Wales and the only non-England capture project so far in Track 1, will be the first at-scale UK cement plant
+incorporating CCS technology. CCUS is currently the only technology available to cement production and EfW facilities
+to achieve deep decarbonisation.
+Furthermore, Eni will be reusing oil and gas assets, which is an important policy approach for CCUS. This is because it
+can reduce construction time and upfront capital expenditure to accelerate deployment whilst improving resource
+efficiency of industry and minimising impact on the local environment
+HyNet will have up to 1.5Mtpa of spare network capacity, and potential to expand to up to 10.5Mtpa. Therefore, HyNet
+has the potential to support the UK’s electricity and consumer security in a decarbonising energy system.
+The HyNet top-up process, which has already been launched, aims to fill this spare network capacity, and means
+HyNet can incorporate additional projects across the sectors eligible for track 1, as well as newly eligible technologies
+
+11 H2T will deliver c.700MW of blue hydrogen in the build-out phase and there are mature blue hydrogen projects expected to apply to T1X, including
+H2H Saltend (Equinor) and H2NE (Kellas)
+12 https://www.gov.uk/government/publications/uk-hydrogen-strategy
+
+for expansion, including greenhouse gas removal (GGR) technologies, direct air capture (DAC) and bio-energy with
+carbon capture and storage (BECCS).
+Depending on shortlisted projects, filling the spare capacity in HyNet could support HMG’s objectives in one or more
+sectors. In addition, the scale up of low-carbon hydrogen is a critical dependency of Hydrogen to Power (H2P). Via
+CCUS-enabled H2, HyNet could therefore play a significant role in supporting our electricity security with further potential
+through HyNet expansion.
+However, whilst CCUS is a necessity to meet our net zero and electricity security ambitions, the private sector is not
+sufficiently incentivised to deploy CCUS technology at the pace and scale needed to do so. There are a number of
+market barriers which inhibit this – for example, it is currently cheaper for companies to emit CO2 than to capture and
+store it, due to a low UK Emissions Trading Scheme (ETS) market price for carbon; project developers for the first
+CCUS projects will bear higher start-up costs to those who join the market later; there are substantial investment risks
+which the market is not willing to bear; and significant coordination failures.
+
+Hence, government intervention is needed for an interim period to overcome these barriers. The business model
+interventions, set out in Section 4.1.3 in the commercial case, support the deployment of CCUS at pace and at scale by
+making CCUS an investible proposition, via a commercial framework that the private sector can invest in long-term. In
+comparison to other international examples, the UK approach is unique in its bankability and scalability globally,12 and
+addresses the failures of past attempts13 by providing regulatory certainty, economic incentives and coverage of key
+cross-chain risks.
+By overcoming these barriers HyNet will create an enabling environment for long-term CCUS deployment, securing a
+pathway to a self-sustaining CCUS market from 2035. This has the potential to crowd in billions of pounds of investment
+to our industrial regions, and could support up to 50,000 jobs in 2030.11 It also has the potential to strengthen the UK
+CCUS and hydrogen supply chain capability, enabling UK companies to export their CCUS and hydrogen expertise to
+support the international decarbonisation effort. There is a potential for £4 billion to £5 billion in Gross Value Added from
+the UK CCUS industry per year in 2050, which includes exporting our expertise and storage services to other
+countries.3
+Our approach will create substantial economic opportunities for the UK and support the Government’s long-term plan
+for growth.14 Moreover, it will protect industry and jobs, stimulate innovation and growth across the country, all whilst
+enabling the UK to achieve its legislated target of net zero by 2050 and meet CB6.
+2.2.2 Strategic Fit (Departmental)
+HyNet is a critical component of our broader departmental strategy to prioritise climate security, energy security,
+consumer security and economic security. As outlined in the sections above, CCUS:
+• Supports multiple pathways to net zero in 2050 and emissions savings required to meet CB6.
+• Supports decarbonisation of hard-to-abate sectors and the UK’s supply chain security.
+• Provides a pathway to establish a UK H2 mass market and kick-start the hydrogen economy.
+• Has the potential to support the UK’s electricity security through expansion (see section 2.2.1).
+• Backs long-term growth and economic security by stimulating private sector investment within industrial areas,
+‘Levelling Up’ the Liverpool Bay region.
+2.2.3 Wider Government Priorities
+Delivery of the HyNet Cluster will make significant contributions toward wider government priorities. Our Project
+Outcome Profile (POP) shows how HyNet and CCUS Track-1 Cluster outputs will directly support departmental
+outcomes across DESNZ, HMT, DfT, DBT, and DLUHC, as well as the metrics we are using to measure this.
+
+3 CCUS Seeking a bankable business model, Deloitte White Paper – Nov 2023
+4  https://publications.parliament.uk/pa/cm5803/cmselect/cmsctech/99/summary.html
+11 H2T will deliver c.700MW of blue hydrogen in the build-out phase and there are mature blue hydrogen projects expected to apply to T1X, including
+H2H Saltend (Equinor) and H2NE (Kellas)
+13 £1.5bn reflects the total expected value of Capacity Market payments that would be made for the equivalent capacity of power CCUS deployment.
+14 https://www.nao.org.uk/reports/carbon-capture-and-storage-lessons-from-the-competition-for-the-first-uk-demonstration/
+
+2.2.4 Strengthening the UK Union
+CCUS policies encompass a range of policy areas, both reserved and devolved. A UK-wide approach is being taken to
+the identification of CCUS projects for HMG financial support, and projects in England, Scotland and Wales will be
+supported through the process of selecting Track-1 and Track-2 projects. The Energy Act 2023 establishes a UK-wide
+financing and regulatory framework for CCUS, and a ministerial forum on CCUS is being established to support the
+development and deployment of CCUS across the UK. This ministerial forum met for the first time in December 2023.
+As outlined in previous sections, HyNet will play a vital role in Levelling Up and driving growth across industrial
+heartlands in the UK. Regional economic impacts are further considered in Section 3.6.
+2.3   Aims and outcomes
+2.3.1   Scope
+The scope of this FBC is for approval of the ‘anchor’ cluster with Eni (T&SCo), EET Hydrogen and Protos, which are
+expected to commission in 2028. This will create a peak network capacity up to 4.7Mtpa, 1.1-1.5Mtpa of which we
+anticipate will be available for the HyNet top-up process (this will depend on agreed obligated network capacity and
+user volumes15).
+The ‘anchor’ configuration for HyNet is comprised of the following projects:
+• Eni – The T&S network, which will use a mix of existing and newly constructed on-shore and off-shore pipes to
+transport captured CO2 into deep geological storage in Liverpool Bay.
+• Essar Energy Transition Hydrogen (EETH) – set to be the first CCUS-enabled hydrogen production plant in the
+UK. This project is the first plant of EETH’s proposed wider hydrogen production network, with plans for a second
+hydrogen plant.
+• Protos – One of the first Energy Recovery Facilities (ERF) of its size globally, treating up to 400,000t of nonrecyclable waste.
+We plan to execute Eni’s FID (T&S FID) first with Protos and EETH taking their FIDs afterwards. This approach, though
+it carries marginally higher risk than aligning the anchor project FIDs, provides the lowest cost and best possible
+affordability position for HMG. This is explained further in Section 4.2.
+The 'build-out’ projects, Padeswood and Viridor, and top-up projects, are not within the scope of this FBC. Approval for
+these projects will be sought via separate FBCs once they reach the required maturity to inform an investment decision.
+This staggered deployment approach, where the T&S network is built alongside anchor projects, and future build-out
+projects join as they reach required levels of maturity, allows us to de-risk and expedite delivery, and accounts for the
+relative complexity of individual projects. Aligning FIDs would have resulted in delays of +18 months to operational
+dates, as well as increased costs and risks of projects walking away due to them needing to down tools and retender.
+Whilst this approach increases the risk of network underutilisation, we have assessed that risk to be low. We have
+obtained mature costs from anchor projects, we are close to agreeing final commercial terms and we have agreed
+commercial principles (SOP) with both Padeswood and Viridor.
+2.3.2 T&S Network
+The T&S network will be constructed in phases as defined in the Approved Project Development Plan (APDP). The
+phases have been scheduled in a way that allows the T&SCo to demonstrate network performance whilst minimising
+costs to users, using a deterministic approach to align commissioning with the first available user. Flexibility in the
+schedule has been enabled to allow for timing uncertainty on when users will commission.
+The onshore T&S network comprises the 'trunk' pipeline, which connects the offshore infrastructure at Point of Ayr to
+Flint via existing pipeline, Flint to Stanlow (where EET Hydrogen is located) and Stanlow to INCE via new pipeline. The
+remaining projects (Protos, Viridor and Padeswood) are connected to the 'trunk' pipeline by 'spurlines'. The offshore
+T&S network starts at the Point of Ayr terminal and runs approximately 35km to the Douglas platform. The Douglas
+platform is the hub for three separate pipelines to injection platforms - Lennox, Hamilton Main (HM) and Hamilton North
+(HN) - where CO2 will be injected into geological stores.
+
+15 https://www.gov.uk/government/publications/build-back-better-our-plan-for-growth
+
+T&S network construction will commence as per Phase 1 of the APDP, including the onshore 'trunk' pipeline, Protos
+'spur' pipeline, and remediation/refurbishing of the existing offshore pipeline network from PoA to HM and HN injection
+sites via the Douglas platform. New injection platform topsides will be constructed at HM and HN including drilling and
+installation of monitoring, sentinel and injection wells. Phase 2 of the APDP includes the expansion of the onshore
+network to include 'spur' pipelines to Padeswood and Viridor, currently expected to be completed in Q1 2028. Offshore,
+the Lennox injection platform will be constructed, including associated monitoring and injection wells. 'Dense phase' is
+included in Phase 2, including compressors at PoA and new pipelines from Douglas to HM and HN. Crucially, the
+licence has protections for Phase 2 that limit cost exposure for HMG if the relevant build-out projects do not reach their
+FID. The network could expand to 10.5Mtpa once dense phase upgrades are complete, however this is dependent on
+additional onshore and offshore infrastructure, which are not part of the APDP nor funded within this business case. No
+further T&S infrastructure is included in Phase 3 of the APDP. If T&S infrastructure is required for the HyNet top-up
+process, this will be managed with the regulator.
+2.3.3 Objectives
+In line with previous business cases, we have chosen to show a tiered approach for objectives. The key objectives for
+this Full Business Case (FBC) – Track-1 SMART objectives – are shown in the lowest tier. Whilst the guidance
+documents for Track-1 Phase 1 and Phase 2 set out objectives, we have refined these to be SMART objectives below.
+CCUS Track-1 Objectives and Metrics
+1.
+Two CCUS clusters supported by the mid-2020s (with combined peak storage capacity of 8.5Mtpa CO2) and 4.7Mtpa
+averaged captured CO2 by 2030, measured by:
+o Combined peak storage capacity of the two clusters (Mtpa) by 2030
+o Average volumes of CO2 captured (Mtpa) by 2030
+2.
+Stimulate the deployment of first of a kind CCUS projects by supporting 2 CO2 T&S networks, 1 gas CCUS power plant
+(MW), up to 3Mt/year of ICC (inc. waste) and at least 1GW of CCUS-enabled hydrogen, measured by:
+o Capacity/capture in operation with government support: CO2 T&S capacity (Mtpa) from 2028, gas CCUS power capacity (MW)
+from 2028, industrial and waste carbon capture (Mt/year) from 2028, CCUS-enabled hydrogen capacity from 2028
+3.
+Stimulate the CCUS supply chain, jobs, and skills, over the support contracts’ lifespans, through the deployment of first of
+a kind projects to establish a competitive CCUS industry which supports and safeguards essential UK industrial sectors,
+measured by:
+o Number of jobs created and supported directly by project by COD
+o Value of spend on supply chains
+o Skills level increases, and salary uplift resulting from upskilling of staff working in CCUS projects
+o Qualitative evidence from industry on safeguarding the sector
+4.
+Establish a commercial framework to stimulate private sector investment in CCUS projects by reducing investor risk and
+overcoming first mover market barriers to enable a pathway to a fully self-sustaining and competitive CCS industry,
+measured by:
+o Number of investors committed to CCUS projects and value of private investment
+o Capital and operating (excluding fuel costs where appropriate) unit costs of CCUS projects
+o Strike prices during Track-1 and Track-2 support windows
+o Number of projects applying to subsequent stages of CCUS deployment
+o Volume of unutilised network capacity (Mtpa) across the clusters by 2030
+2.3.4 Benefits being sought
+We have developed a set of Track-1 core benefits that can be mapped against the SMART objectives above and the
+Track-1 Theory of Change (ToC). We have also considered wider benefits, which are defined as having more
+strategic or long-term impacts. Our ToC maps out how Track-1 resources and inputs are channelled through a set of
+specific activities (e.g. policy/market development, Cluster Sequencing process) to achieve the anticipated outputs (e.g.
+barriers overcome, contracts signed, FID taken, projects delivered), outcomes (e.g. contribution to 2030 capture targets,
+contribution to jobs, increased confidence, lessons learnt), and overall impacts (e.g. contribution to reducing carbon
+emissions, optimised energy system, decreasing costs, wider economic benefits).
+Each core and wider benefit has been assigned indicators from the indicator framework in the Track-1 M&E Plan to
+facilitate monitoring of benefits realisation. All benefits relate and contribute to the Department’s strategic and DESNZ
+Priority Outcomes (energy security, climate security, consumer security and economic security). Practical elements of
+benefits realisation are discussed further within the management case.
+2.3.5 Inter-Dependencies, Assumptions & Constraints
+Interdependencies
+Importance
+Wider policy implementation - The use of carbon pricing through UK ETS to drive private sector action and to increase the cost
+of counterfactual fuels and confidence that the carbon price will rise sufficiently to put us on a net zero trajectory.
+Critical
+
+3.2.1 Critical Success Factors
+Critical Success Factors for CCUS were developed at SOBC stage, based on CCUS programme objectives, market
+failures and barriers to delivery. The success factors include strategic fit, value for money, benefits optimisation, supplier
+capacity and capability, affordability, achievability, timelines, and developing a self-sustaining CCUS industry.
+3.2.2 Long-listed Options
+At SOBC, a long list of options was considered against the Critical Success Factors, from which four viable options
+were considered on a short list. From this, analysis identified for the first stage of deployment, the preferred option was
+to deploy four clusters, financed by both public and private funds.
+3.2.3 Short-listed Options
+Based on the SOBC, agreement was reached to launch the Cluster Sequencing process. Phase 1 of this process
+invited applications from potential cluster organisations, which were assessed against various evaluation criteria
+including deliverability, economic benefits, and cost. As a result of this, HyNet was announced as one of the first
+clusters for the 2020s, along with ECC.
+At OBC stage, options appraisal considered whether the government should continue to deliver Track-1 clusters. The
+binary options of ‘option 0: do nothing’ and ‘option 1: deliver Track-1 ambition’ were appraised; these options were
+chosen to avoid overriding the cluster sequencing process. Within Option 1, a range of scenarios were presented to
+reflect variables at play at that stage of policy development, for instance the scenarios reflected different combinations of
+capture projects given uncertainty over the final shortlist.
+Between OBC and FBC stage, the Department ran a competitive selection process for capture projects for each T1
+cluster. This process produced the Track-1 Project Negotiation List (T1PNL), which were the projects that would
+progress to negotiations as part of Track-1: EET Hydrogen (EETH), Protos, Viridor, Padeswood, and BLN0. See
+Section 4.2.1 for more detail of the selection process and analysis produced to inform selection decisions.
+Following the selection of HyNet capture projects, and in response to greater maturity and understanding of the
+expected costs and benefits associated with capture projects and the cluster, several cluster variations were analysed.
+Options tested the inclusion and exclusion of capture projects in the cluster, and variations of FID and COD dates. The
+culmination of this analysis, at Cluster Touchpoint 2 (CTP2) determined the options for appraisal to be analysed at FBC
+stage. Subsequently, BLN0 has requested to withdraw from the CCUS sequencing process, therefore has not been
+included in options appraisal.
+3.2.4 Options for Appraisal
+Between OBC and FBC stage, extensive optionality regarding the configuration of HyNet was considered and
+appraised. The options considered at CTP2 were designed to test cluster configurations which met certain policy,
+logistic, and affordability constraints. The cross-Whitehall CTP2 process concluded with an agreement to seek approval
+of an anchor project scope. In this section we appraise this preferred option and a secondary option of full project scope
+(see sections 1.3 and 2.3.1 for a description of each project in scope of Option 1 and Option 2):
+•
+Option 1 (preferred): Anchor Project Scope asks for the approval of the anchor configuration (Eni, EETH, Protos)
+and would seek further approval for the build-out projects later.
+•
+Option 2: Full T1PNL Scope shows an alternative option where approval is obtained for the T&S network (Eni) and
+all four anchor and build-out capture projects (EETH, Protos, Viridor and Padeswood).
+This FBC seeks to obtain approval for the “anchor” configuration (Option 1), which will provide the critical infrastructure
+required to deploy the HyNet cluster.
+We plan to seek out approval for “build-out” projects in 2025/2026, once projects reach the level of maturity required to
+take FID. This would then be followed by a “top-up” process by 2030 and an expansion process by 2035. Option 1 does
+not include approval for the build-out projects but allows us to manage the cost and delivery uncertainty for build-out
+projects. This means the NPV option 1 reflects a scenario where build-out projects have not yet joined the network, and
+expansion has not taken place, thus an underutilised network. This is not the trajectory expected to be pursued; it is
+anticipated once build-out projects take FID (via separate FBCs), the NPV of HyNet will match what is outlined in Option
+2. As the network expands, HyNet is estimated to provide the NPV outlined in the “top-up and expansion” figures in
+section 3.4.3.
+
+3.3 Appraisal Framework
+This section provides an overview of cross-cutting elements of the appraisal framework used to monetise HyNet
+impacts.
+3.3.1 Identification of Impacts
+This economic case appraises the economic costs and benefits expected from HyNet. Where possible, impacts have
+been monetised to estimate a net present value (NPV). Impacts which have not been monetised are assessed
+qualitatively. All monetised and non-monetised benefits can be aligned to the core and wider benefits set out in the
+Benefits Realisation Strategy.
+Monetised impacts are analysed by capture project or T&S network and aggregated to provide a cluster level
+assessment. Their treatment as an economic cost differs depending on the counterfactual option assessed against.
+Costs can be categorised by the cost to build new infrastructure, including the T&S network, or the costs to retrofit
+infrastructure with carbon capture (CapEx), financing costs, operating cost (OpEx), fuel costs, development costs
+(DevEx) and decommissioning costs.
+The nature of these costs also varies by project. The cost of EETH reflects the construction and operating costs
+associated with a new-build CCS-enabled hydrogen production facility. The costs of Protos, Viridor and Padeswood
+reflect the incremental investment in building and operating new carbon capture facilities. Benefits for the capture
+projects are primarily driven by the volume of carbon abated relative to the counterfactual – either from the carbon
+capture directly or from the use of low-carbon hydrogen as a substitute for fossil fuels.
+For the T&S network, no monetised benefits are directly attributed to the T&S network; the network, and the
+infrastructure investment required to build and operate the network, acts as an enabler which allows carbon captured by
+capture projects to be transported and permanently stored, therefore abated. Transfers include the flow from
+government to capture projects as support for CapEx investment and revenue support, and from government and
+capture projects to the T&SCo through user fees and the Revenue Support Agreement (RSA) payments.
+3.3.2 Counterfactual
+Impacts are appraised relative to a Net Zero Compliant Counterfactual (NZCC). This counterfactual defines a state of
+the world in which HyNet is not invested in, but where business-as-usual dictates the UK economy continues abating in
+line with a cost-effective pathway to net zero. This implies a NZCC includes costs and benefits of alternative abatement
+for capture projects assessed in options 1 and 2 to maintain a net zero compliant trajectory (option 0).
+For each capture project, we have sought to identify the most plausible alternative abatement options and value the
+costs and benefits associated with these. However, there are deemed to be no direct alternatives to CCUS for HyNet
+capture projects, therefore alternative out-of-sector routes to net zero are considered. For Padeswood, process
+emissions cannot be abated without shutting down the plant; therefore, greater effort is required elsewhere in the
+economy to offset emissions, likely relying on greenhouse gas removals (GGRs). Similarly, for EETH, the low-carbon
+hydrogen is primarily being used to abate emissions at the Stanlow Refinery for which there is no direct abatement
+alternative that doesn’t rely on CCUS. For Protos and Viridor, although energy from waste can be replaced with
+alternative low-carbon power generation, there is no alternative for abating emissions from residual waste; again, it
+would be necessary to abate these emissions using CCUS or GGRs.
+As explained in section 2.2.1 of the strategic case, CCUS is required for the UK to meet its 2050 net zero commitment,
+CB6 and NDC objectives. To reach these targets, the UK economy requires widespread decarbonisation of its ‘hard-toabate’ sectors (e.g. chemicals, cement, and waste industry). This is not achievable without CCUS or transitioning these
+industries into alternative low-carbon fuels such as low-carbon hydrogen.
+A NZCC for T1 assumes CCUS will be needed in the future, even if not built now. Specifically, HyNet T&S would likely
+be required, due to the dependency of HyNet network expansion on Track-1 Eni investment, and the lack of immediate
+substitutes for HyNet given its strategic location close to industry and well-characterised geological carbon stores.
+Therefore, the costs of building Hynet T&S are assumed to be incurred at some point in the future. Although there are
+discounting benefits from delaying expenditure, any savings would likely be offset against cost increases from revisiting
+HyNet investment further in the future. For simplicity, it is assumed the same T&S costs would be incurred in both the
+policy options appraisal and NZCC. We test this assumption through sensitivity analysis.
+
+A secondary Known Policy Counterfactual (KPC) is also presented; this allows analysis in this FBC to be compared to
+previous analyses where a KPC was primarily used. In a KPC, there is assumed to be zero economic impact, thus all
+impacts attributed to HyNet are considered additional.
+Whilst using a NZCC better captures the relevant, monetised impact of HyNet and most effectively informs whether
+HyNet is an economically viable way of reaching legislated net zero commitments, it is important to also consider the
+KPC. Appraisal against the NZCC informs whether HyNet represents good value for money compared to the alternative
+options for remaining on a net zero consistent pathway, the main objective of the policy. Appraisal against the KPC
+allows us to understand whether HyNet represents good value for money to society in isolation, agnostic of HMG’s net
+zero target. Using both counterfactuals allows for robust comparisons of the effectiveness of HyNet relative to other
+abatement options (using the NZCC) and its social value against the status quo (using the KPC).
+3.3.3 Uncertainty and Sensitivities
+Several assumptions made in the analysis are subject to uncertainty. Two sets of sensitivities are presented. The first
+shows how the results are sensitive to the assumption that the cost of building Eni will be required at some point in the
+future and how the scale of these costs might impact the NPV. This sensitivity is only relevant to the impacts measured
+against the NZCC. In addition, to account for uncertainty in costs, high and low value for money scenarios have been
+created using high and low sensitivities around central cost assumptions. This sensitivity is relevant to the impacts
+measured relative to both the NZCC and KPC.
+3.4 Monetised Impacts – Net Zero Compliant Counterfactual
+This section assesses the monetised impacts for HyNet. Impacts are modelled separately for capture projects and the
+T&S network and are then aggregated to form cluster-level metrics.
+This section presents the quantitative cost benefit analysis (CBA) which assesses the monetised costs and benefits of
+HyNet against a NZCC. Impacts of capture projects have been appraised from 2021 until 2053, the end of the T&S
+network’s 25-year lifespan. The appraisal period of the T&S network is extended by an additional 4 years, until 2057, to
+capture decommissioning costs. The Green Book social discount rate of 3.5% has been used to allow for a comparison
+of impacts on a present value basis. Net present value (NPV) is the primary value for money metric presented in this
+economic case. Benefit cost ratios (BCR) are not presented as negative costs and benefits are estimated against a
+NZCC which results in counterintuitive and hard to interpret BCRs. All monetised figures in the following section are
+presented in real (2021 prices), discounted terms. Totals may not sum due to rounding.
+The quantitative cost benefit analysis does not capture the full range of impacts of HyNet. Several impacts, both
+benefits and costs, have not been monetised due to no suitable appraisal method or a lack of evidence; this is not
+uncommon for appraisal of a first of a kind project. The NPVs of Option 1 and Option 2 also do not include the additional
+benefits from HyNet top-up and the option value provided by HyNet and the CCUS programme more widely. In
+addition, CCUS is a crucial component required for the UK economy to achieve CB6 and net zero, therefore, any
+judgement made on the value for money assessment of HyNet should take a holistic view, considering both quantitative
+and qualitative analysis of direct and indirect impacts.
+3.4.1 Central Results – Net Zero Compliant Counterfactual
+Table 1 shows the NPV of HyNet, the T&S network, and each capture project against a NZCC. Here, monetised social
+benefits of HyNet are greater than a net zero compliant alternative for both options. Social costs are greater than the
+NZC counterfactual in Option 1, but lower in Option 2. This results in a positive NPV of £0.3bn for Option 1 and a larger
+NPV of £4.5bn for Option 2. The larger NPV of Option 2 is driven by build-out project inclusion.
+Table 1: CBA Central Results (NZCC, 2021 prices, 2021 present value)
+
+HyNet
+Option 1
+Net Present Value (£bn)
+0.3
+Option 2
+Net Present Value (£bn)
+4.5
+3.4.2 Sensitivity Analysis – Net Zero Compliant Counterfactual
+Table 2 shows the NPV of HyNet when underlying cost assumptions are tested. The figures show that, against a
+NZCC, HyNet Option 2 is likely to maintain a positive NPV within the range of uncertainty expected, whilst Option 1 is
+more sensitive to cost such that uncertainty of assumptions allows for both a positive and negative NPV. Indeed, in a
+
+low-cost scenario, Option 1 NPV increases to £1.4bn, whilst in a high-cost scenario decreases to a NPV of -£1.0bn.
+And for Option 2, NPV increases to £7.3bn with low-cost assumptions, and decreases to £1.6bn with high-cost
+assumptions.
+Table 2: High and Low Value for Money Sensitivities (NZCC, 2021 prices, 2021 present value)
+HyNet NPV (£bn)
+Low
+Central
+High
+Option 1
+-1.0
+0.3
+1.4
+Option 2
+1.6
+4.5
+7.3
+3.4.3 Track-1 and HyNet Expansion Analysis – Net Zero Compliant Counterfactual
+The analysis in this section considers the indicative monetised impacts of HyNet T&S expansion. This analysis
+highlights although there are high upfront costs required to construct a CO2 T&S network, the marginal cost of
+expanding the network should be lower, improving the overall cluster NPV.
+To calculate the benefits associated with network expansion, the size and sector of future emitters joining the expanded
+network is assumed. To determine these, the Department’s intelligence on projects that may join HyNet in the future (for
+example based on HyNet top-up applications) is drawn upon. As a full cost and benefit assessment has not been
+conducted for potential expansion projects, the net benefit of these projects is proxies for using a weighted average
+sectoral NPV per tonne of carbon abated of T1, or the best available alternative evidence.
+The expansion analysis is considered against the T1 baseline T&S network rollout; this involves the initial rollout of the
+onshore network (to connect T1 capture projects), as well as offshore infrastructure (pipelines and stores), both of which
+involve a combination of new infrastructure, and repurposing existing oil and gas infrastructure for CO2 transport. T1
+network rollout also assumes that the CO2 will be initially injected into stores at a lower pressure, but that additional
+costs will be incurred in the 2030s as CO2 is required to be injected at higher pressure (the HyNet dense phase
+transition).
+Expansion of the HyNet T&S network involves:
+• The HyNet top-up process. This process aims to add capture projects as to fully utilise the T1 scope of the HyNet
+T&S network. This requires limited additional development and capital expenditure to build new spurlines which
+connect new capture projects to the network, and additional variable operating costs derived from the additional CO2
+passed through the network.
+• HyNet T&S expansion involves increasing storage capacity of the HyNet network from 4.7Mtpa to 10.5Mtpa, by
+increasing the capacity of the network in areas which constrain the maximum volume of CO2 that can be transported
+and stored (for example, replacing repurposed gas pipelines with higher capacity pipelines to increase the capacity
+of the onshore network).
+Table 3 shows the progression of NPVs for Option 1 and 2 once build-out project, top-up and expansion impacts are
+included. Including build-out projects increases the NPV from £0.3bn to £4.5bn. Against a NZCC, it is again assumed
+that there is no additional T&S cost from HyNet top-up and expansion, thus the addition of capture projects increases
+HyNet NPV. With expansion, the NPV of HyNet is expected to increase to £8.8bn.
+Table 3: HyNet Expansion (NZCC, 2021 prices, 2021 present value)
+
+HyNet w/ Anchor
+Projects Only
+HyNet w/ Build-Out
+Projects
+HyNet w/ Top-Up &
+Expansion
+HyNet NPV (£bn)
+0.3
+4.5
+8.8
+Table 4 shows a variant of the NZCC where T&S costs are included, rather than assumed to be zero against a NZCC.
+Even when T&S costs are included, the NPV for HyNet which includes top-up and expansion is positive (£2.4bn). This
+shows the positive impact of economies of scale; as the network expands, the marginal cost of connecting capture
+projects to the network and expanding capacity decreases. It implies that, even if T&S costs are included, HyNet with
+top-up and expansion is economically viable, and expenditure in T&S can be justified as it enables decarbonisation by
+CCUS more cheaply than using an alternative abatement.
+Table 4: HyNet Expansion (NZCC Sensitivity, 2021 prices, 2021 present value)
+
+HyNet w/ Anchor
+Projects Only
+HyNet w/ Build-Out
+Projects
+HyNet w/ Top-Up &
+Expansion
+
+HyNet NPV (£bn)
+-4.4
+-0.3
+2.4
+3.5 Monetised Results – Known Policy Counterfactual
+This section reproduces the analysis outlined in the previous section using a KPC rather than a NZCC. Appraisal
+against the KPC allows us to understand whether HyNet represents good value for money to society in isolation,
+agnostic of HMG’s net zero target. Using both counterfactuals allows for robust comparisons of the effectiveness of
+HyNet relative to other abatement options (using the NZCC) and its social value against the status quo (using the KPC).
+The social value of carbon is intended to reflect the average social cost (presented as £/tonne) of delivering carbon
+abatement over time, consistent with meeting the UK's share of abatement required to limit global warming to
+1.5°C. Appraising HyNet against a KPC results in a negative NPV. This can be interpreted as the value of non-carbon
+social benefits (i.e. wider economic benefits such as improved productivity) that HyNet would need to deliver to be
+socially beneficial (described by a positive NPV) in a non-net zero compliant world.
+3.5.1 Central Results – Known Policy Counterfactual
+Table 5 shows the NPV of the HyNet cluster, the T&S network, and each capture project against a KPC. The figures
+show that the monetised social benefits are low relative to the monetised social costs for the HyNet cluster. This results
+in a negative NPV of -£5.1bn for Option 1, and a NPV of -£2.2bn for Option 2.
+Table 5: CBA Central Results (KPC, 2021 prices, 2021 present value)
+
+HyNet
+Option 1
+Net Present Value (£bn)
+-5.1
+Option 2
+Net Present Value (£bn)
+-2.2
+In the KPC, there is no cost associated with the business-as-usual outcome; this contrasts to the NZCC whereby
+significant costs are required to maintain a trajectory towards net zero. The notional cost of developing HyNet is high in
+any successful investment outcome, however the net impact varies depending on the counterfactual used. This is the
+main driver explaining the difference of a large negative NPV against a KPC, but a positive NPV against a NZCC.
+3.5.2 Sensitivity Analysis – Known Policy Counterfactual
+Table 6 shows the NPV of HyNet when underlying cost assumptions are tested. The figures show that, against a KPC,
+both options are likely to maintain a negative NPV within the range of uncertainty expected. Option 2 NPV is more
+sensitive to cost scenarios due to the greater scope, thus exposure to cost uncertainties, of the option. In a low-cost
+scenario, Option 1 NPV increases to -£4.3bn, whilst in a high-cost scenario decreases to a NPV of -£7.5bn. And for
+Option 2, NPV increases to -£1.0bn with low-cost assumptions and decreases to -£5.8bn with high-cost assumptions.
+Table 6: High and Low Value for Money Sensitivities (KPC, 2021 prices, 2021 present value)
+HyNet NPV (£bn)
+Low
+Central
+High
+Option 1
+-7.5
+-5.1
+-4.3
+Option 2
+-5.8
+-2.2
+-1.0
+3.5.3 Track-1 and HyNet Expansion Analysis – Known Policy Counterfactual
+Table 7 shows the progression of NPV and BCR for HyNet Option 1 once build-out project and expansion impacts are
+included. With build-out projects, NPV increases from -£5.1bn to -£2.2bn. This again shows the positive impact of
+economies of scale in reducing the marginal cost of T&S networks in expansion scenarios and suggests that the social
+value of HyNet is improved by top-up and expansion.
+Table 7: HyNet Expansion (KPC, 2021 prices, 2021 present value)
+
+HyNet w/ Anchor
+Projects Only
+HyNet w/ Build-Out
+Projects
+HyNet w/ Top-Up &
+Expansion
+HyNet NPV (£bn)
+-5.1
+-2.2
+-1.5
+As with the NZCC, in Option 2, HyNet is identical to Option 1 once build-out projects are included. This implies HyNet
+with expansion impacts included is also identical in both options.
+
+projects are added to the network, more societal value is realised. Option 1 is preferred because it maintains optionality,
+is more aligned with build-out project maturity, as set out in section 1.3, and provides critical infrastructure for further
+capture projects to be added to the cluster, and future expansion benefits to be realised.
+4 Commercial Case
+The purpose of this case is to set out and justify the overall commercial proposition for HyNet as an effective means of
+delivering our objectives. This includes justifying that an effective process has been followed to reach agreed terms with
+industry, that the deals in aggregate represent an efficient allocation of risk and reward between the public and private
+sectors and are compliant with the relevant statutory requirements, that the projects are deliverable by the private
+sector, and that agreements will be managed effectively.
+4.1 Overall Approach and Background
+4.1.1 Overall Process Outline
+As set out in the OBC, a clearly-specified competitive process has been followed in determining the allocation and level
+of subsidy for Track-1 CCUS projects. The key steps in this process are defined as follows:
+Delivery
+Component
+Key Activities
+Delivered By
+Market
+Engagement
+•
+Workshops, forums and consultations to understand market
+requirements
+•
+Promote and explain business model and fund support
+•
+Respond to enquiries
+•
+BEIS cluster sequencing and business model policy
+teams
+Application
+•
+Publish application guidance
+•
+Publish application portal
+•
+Publish template terms and conditions
+•
+BEIS cluster sequencing and business model policy
+teams
+Assessment
+and
+Shortlisting
+•
+Confirmation of application eligibility
+•
+Assessment of applications against assessment criteria
+•
+Technical and commercial due diligence
+•
+Affordability assessment in line with overall funding envelope
+•
+Supplier notification and debriefing unsuccessful applicants
+•
+Range of expertise managed by the CCUS
+programme. Includes skills such as project
+management, financial, business models, technical
+policy teams, analytical, legal teams, commercial,
+HMT, IPA including external technical, legal and
+commercial support.
+Negotiation
+•
+Negotiate the contracts and upfront capital support (where
+relevant) with T&SCos and capture projects
+•
+Review agreed terms and finalise business case for
+investment across preferred projects
+•
+Negotiation Teams – multi-disciplined teams (policy,
+commercial, technical, legal) from both internal and
+external resources
+Contract
+Award
+•
+Final decision on funding
+•
+Sign business model contracts and other capital support
+agreements as applicable
+•
+Payment and administration of subsidy instalments
+•
+Final decision to select projects and sign contracts –
+SROs and other senior officials; DESNZ SoS; CX
+•
+Payment and admin – business model counterparty
+as applicable
+Monitoring and
+Ongoing
+Management
+•
+Monitoring project performance, benefits, cost controls and
+compliance
+•
+Monitoring subsidy payment instalments
+•
+Evaluation of policy design and delivery
+•
+LCCC and Ofgem to hold primary operational
+responsibility (see 4.4.2-4.4.3)
+•
+DESNZ Cluster Sponsor Function to hold a
+coordinating role, and to exercise ongoing SoS
+rights, e.g. contract termination (see 4.4.1)
+•
+DESNZ to retain role in M&E
+Since the approval of the OBC, the following steps in this process have been executed:
+• Further shortlisting: the original 20-project shortlist published in August 2022 was narrowed down to an eight-project
+negotiation shortlist in March 2023, including five projects in HyNet. This process ensured that the projects entering
+detailed negotiations could represent an affordable, operable and VfM cluster configuration.
+• Negotiation: following the announcement of the Project Negotiation List, we have engaged in detailed commercial
+negotiations with each of the shortlisted capture projects, as well as the T&SCo in each cluster. We are now
+finalising price-setting negotiations with the proposed anchor projects (see Section 4.2.1); the process and outputs of
+these negotiations are described in more detail in this case.
+We are now seeking to enter the contract award phase, subject to the satisfactory conclusion of negotiations and FBC
+approval; the programme’s approach to monitoring and ongoing management is described in section 4.4 and in the
+management case.
+
+4.1.2 Key Commercial Principles
+As set out in the OBC, we have designed and negotiated a suite of business model agreements which are suitable for
+the delivery of commercial-scale CCUS, whilst also providing value for money for the taxpayer and energy bill-payer.
+Specifically, these business models have been designed to recognise that ECC and HyNet will represent the UK’s first
+commercial-scale CCUS projects, and that there is therefore a need for the public sector to provide funding and bear
+risk in order to overcome the market barriers facing the sector and ensure that the Track-1 clusters are investible to the
+private sector.
+In particular, learnings from the cancelled second CCUS competition in 2016 showed that private sector developers and
+insurers are not yet ready to bear the ‘cross-chain’ risks which arise at the interface between T&SCos and capture
+projects. The business models have been designed to address this specific challenge (as well as other sector-specific
+challenges), with government largely underwriting cross-chain risks in the network in order to achieve an acceptable
+cost of finance. This principle is also reflected in the fact that key cross-chain risks will not be directly addressed in the
+initial CCUS Network Code, although there is an expectation that this position will evolve as the market develops and
+appropriate insurance products become available.
+Whilst this level of government intervention is necessary to enable first-of-a-kind Track-1 projects to proceed to
+operations, our long-term ambition is to create a self-sustaining CCUS industry in the UK, with government subsidy
+being phased out over time through competitive allocation rounds. The CCUS Vision,7 published in December 2023,
+sets out a pathway to establishing a competitive industry by 2035. The pathway toward commercialisation is covered in
+more detail in the strategic case.
+4.1.3 Commercial Model
+
+The T&S Regulatory Investment (TRI) model has been structured as a Regulated Asset Base (RAB) model, to be
+administered by Ofgem as the economic regulator. This model will entitle the T&SCo to receive an Allowed Revenue,
+compensating ongoing operating expenses whilst repaying its initial capital outlay over the asset’s life (plus an agreed
+rate of return, reviewed periodically by Ofgem). Government has agreed an allowance for the T&SCos capital
+expenditures at the point of Cluster FID, with any overruns against this allowance subject to a cost sharing factor; the
+T&SCo will only recoup 40% of any costs in excess of the agreed level. This principle will also apply to OpEx, with
+allowances to be reviewed by the regulator on an ongoing basis. The T&SCo will collect its allowed revenue principally
+through fees charged to the network’s Users for the service of transporting and storing CO2, with fees being
+administered under the terms of the CCS Network Code.
+In the event that there is a shortfall in demand for the network and aggregate User fees do not meet the T&SCo’s
+allowed revenue, government will ‘top up’ these fees through the exchequer-funded Revenue Support Agreement
+(RSA). Additionally, government will underwrite several key high-impact, low-probably risks – principally relating to CO2
+
+7 https://www.gov.uk/government/publications/carbon-budget-delivery-plan
+
+leakage – via the Supplementary Compensation Agreement (SCA). The T&SCo will also be subject to an Availability
+Incentive, whereby its effective rate of return on capital can be either increased or decreased based on the level of
+network availability for users that it is able to achieve.
+The proposed business models for industrial, waste and hydrogen users are each structured similarly to a Contract for
+Difference (CfD). Revenue support will be paid to cover the difference between an agreed ‘strike price’ (i.e. the level of
+revenue required to cover the ongoing cost of capture – including T&S fees – and provide a reasonable rate of return on
+initial capital investment), and a ‘reference price’. Input costs for the strike price (other than T&S fees) will be treated as
+fixed, with overrun risk sitting solely with the project developers. For industrial and waste projects the reference price will
+be the carbon price under the UK ETS (or, for industrial projects, a pre-agreed projection thereof); for hydrogen projects,
+the reference price will be the higher of either the market natural gas price, or the price at which the project sells the
+hydrogen it produces. Industrial, waste and hydrogen users have also had the opportunity to negotiate for up-front
+capital support from the CCS Infrastructure Fund (CIF) and Net Zero Hydrogen Fund (NZHF), which aims to displace
+more expensive sources of finance and off-set a portion of HMG’s ongoing revenue support obligations.
+Collectively, the business models have been designed to address the key market barriers which would otherwise
+restrict the deployment of CCUS in the UK – including the lack of a sufficient incentive from the carbon price, the high
+initial costs of deployment, and lack of cost-effective private insurance products for the sector.
+4.1.4 Negotiation Strategy
+The programme has followed a well-structured negotiation strategy and detailed plan, involving:
+•
+Negotiation teams engaging with delivery partners at project-level to develop the business model contracts and
+negotiate the level of support needed;
+•
+Supporting negotiation teams internally through robust technical assurance and financial due diligence;
+•
+Putting in place appropriate cluster-level project management, assurance and governance.
+Negotiations delivery has been underpinned by the Track-1 Negotiations Mandate (T1M) which set out a governance
+framework for the negotiations as well as the delegated authority provided to negotiations teams. This mandate has
+been designed to address the various negotiation risks.
+Individual teams have been set up within DESNZ to negotiate business model agreements with the T&SCo and T1PNL
+capture projects, with clear responsibilities and scope of delegated authority for each of these teams established under
+the T1M. This delegated approach has allowed for a high degree of specialisation, with each negotiating team
+developing deep expertise in its relevant business model and in the characteristics of its preferred projects. This
+approach has also allowed for a clear strategic allocation of resources between the various negotiation streams,
+ensuring that negotiation leads have benefitted from sufficient resources and the correct expertise to successfully
+execute negotiations. Resource and expertise have been sourced both internally and from specialist external advisors.
+A key tool in negotiations with hydrogen and industrial capture projects is capital co-funding from the CCS Infrastructure
+Fund (CIF) and Net Zero Hydrogen Fund (NZHF). Capital co-funding plays a key role in the financing of these projects,
+by displacing more expensive sources of finance (thus reducing the overall cost of capital) and allowing HMG to offset
+some of its longer-term revenue support obligations. CIF funding was also available in principle to T&SCos in the event
+that a financing gap was identified which could not be filled by private investors on reasonable terms, however it was
+ultimately determined that this was not the case.
+4.1.4.1 Technical assurance and financial due diligence
+Technical assurance has been used in a targeted manner to test the data, assumptions, costs and risks put forward by
+delivery partners and ensure that decisions are made on the basis of sound technical understanding. Assurance teams
+have also focussed on assessing underlying cost and procurement evidence from each of the negotiation
+counterparties, seeking to ensure that all agreed cost items satisfy the ‘Three Es’: Economy, Efficiency and
+Effectiveness. This approach aims to maximise the VfM of government’s investment in CCUS.
+Cost assurance processes have been integrated with the wider negotiations timeline, allowing DESNZ to consider
+updated cost data at key negotiation review points, including the Cluster Touchpoints. Additionally, financial due
+diligence has been applied to ensure the financial health of projects (and parental undertakings where relevant),
+particularly where grant funding has been offered.
+4.1.4.2 Negotiation management, assurance and governance
+Supporting the negotiation approach outlined above, appropriate commercial assurance and governance has been put
+in place to manage negotiation risks and deliver the best possible cluster-level deal. Key functions have included:
+
+•
+Cluster Lead teams: responsible for monitoring cross-cluster schedule, scope and benefits, holding individual
+negotiation teams to account to ensure effective delivery. Leading on coordination of key cluster-level decision
+points, including Cluster Touchpoints and Gateway Reviews.
+•
+Commercial Integration Team (CIT): responsible for the monitoring and management of key commercial and
+cross-cutting issues which sit either between or across multiple negotiation streams. Close focus on ensuring a
+robust and coordinated approach to the management of cross-chain risk, supporting the NLT at key decision points
+(see below), and ensuring adherence to the T1M.
+Additionally, key decision points in the negotiations process have been subject to a bespoke governance structure,
+allowing for expert oversight and collective decision-making around commercial negotiations. Key governance forums
+have included: Negotiations Leadership Team (NLT): a fortnightly board to consider strategic decisions in individual
+negotiations and monitor progress against the T1M; Track-1 Board (T1B): a DD-level board to consider cross-cutting
+policy decisions; Programme Board (PB): an SRO-level board to consider strategic policy decisions which carry a
+material impact at the programme level; CCUS Senior Board: a cross-government, Perm Sec-level board, bringing
+together senior leaders from key stakeholder organisations (including DESNZ, HMT and IPA) to consider key strategic
+decisions.
+4.2 Outcome of Negotiations
+4.2.1 Agreed Terms for ‘Anchor’ Projects
+As outlined in Section 2.3.1 (Scope), through this FBC we are seeking to enter into agreements with the following
+anchor projects: Eni (T&SCo), EET Hydrogen (EETH – hydrogen) and Protos (Waste ICC).
+Taken in the round, we are confident that the commercial terms which have been negotiated to date are consistent with
+the guiding principles set out in the T1M, and have been appropriately managed by the processes described throughout
+Section 4.1.4. The allocation of commercial risk has been set out throughout the development of the relevant business
+models, and narrowed through our ongoing commercial negotiations as set out above. In parallel, robust technical and
+cost assurance processes have given us confidence in the projects’ deliverability and underlying cost profiles.
+While there has been significant cost escalation since the OBC, this has largely been driven by changes in underlying
+costs, resulting from a combination of scope development at the project level, supply chain cost increases and an
+unwinding of optimism bias. Significant effort has been carried out to assure project costs and procurement processes
+(see section 4.3) and we are satisfied that the costs are a reasonable estimate of the true cost of delivering the project.
+4.2.2 Interim Terms and Approach for Build-out Projects
+This section describes the approach that has been taken to commercial negotiations with the build-out projects, which
+do not fall within the scope of this FBC, and which will be taking FID after the anchor projects. Please see Section 2.3.1
+for a full description of cluster scope.
+The HyNet T&S network has been scoped to cater for both the proposed anchor and build-out capture projects. This
+approach was agreed at the second Cluster Integration Check, with the aim of providing the T&SCo with the certainty
+needed to finalise its technical design and procure supply chain contracts. As discussed throughout this FBC, the buildout projects remain important to the long-term strategic and economic value of the cluster. Therefore, there is a risk that
+if one or more of the build-out projects in HyNet fails to take FID, the network as a whole will be underutilised until
+alternative users are able to join; the consequences of this for the VfM of the cluster are discussed in more detail in the
+economic case.
+To minimise the risk of network under-utilisation for a prolonged time period, we have ensured that build-out projects
+meet a set of requirements at Cluster FID, across key delivery workstreams, which give us sufficient confidence that
+these projects will successfully progress to FID. We have made substantial progress in both commercial negotiations
+and technical and cost due diligence workstreams, building confidence that negotiations can be concluded on
+acceptable terms, and that build-out projects can be delivered on an appropriate timeline and cost profile.
+In addition, there is a risk that the T&SCo may incur some development costs which ultimately prove to be nugatory.
+These costs are small overall and limited to DevEx spend needed to support alignment with emitter timelines, reducing
+the more significant risk of network underutilisation. While we have provisionally provided for T&SCo CapEx spend
+associated with build-out emitters, the risk of a stranded asset is eliminated by the ‘uncertain cost reopener’ in the
+economic license, which will allow the regulator to disallow any T&SCo CapEx if the relevant project has not yet signed
+a business model contract.
+
+4.2.5 Subsidy controls and other legal requirements
+The Track-1 CCUS Cluster Sequencing Process has been developed to align with the UK subsidy control regime under
+the Subsidy Control Act 2022. This has been embedded throughout the process, including the eligibility and
+assessment criteria for the two competitive phases that selected the T&S networks and capture projects. The
+commercial design of the business models and competitive allocation process for all schemes have been designed to
+aid compliance with the 7 principles under the Act, including that support awarded to projects is proportionate, additional
+and minimises domestic or international market distortions. The schemes have also been designed to meet the relevant
+Energy and Environment principles, notably that the subsidies do not to relieve the beneficiary from liabilities as a
+polluter.
+
+A programme-wide approach has been taken to design the schemes in a way which is consistent with the Act and the
+principles under it, both as individual subsidy schemes and as an interlinked programme of support designed to assist
+the creation of CCUS clusters. Government policy and analysts designed the business models along with a range of
+technical, commercial, legal and financial advisors. The schemes have also been designed to align with relevant
+existing environmental support and obligations such as the UK Emissions Trading Scheme (UK ETS).
+
+At least 3 months ahead of the relevant Cluster / project FID, an assessment of each subsidy scheme will be submitted
+by DESNZ to the Subsidy Advice Unit (SAU) for their non-binding advice on whether that assessment, and the analysis
+underpinning it, evidences compliance with the subsidy control principles. At the point of FBC submission the SAU has
+not yet published their formal reports on those assessments. In November 2023 a report by the SAU was published in
+respect of the HPBM scheme (including both electrolytic and CCUS H2 projects), however, we are currently considering
+whether a new referral is needed for the CCUS-enabled projects due to changes made to the contract underpinning the
+HPBM.
+
+We have worked closely with the SAU, Department for Business and Trade (DBT) subsidy control policy team, and
+DESNZ Legal teams to conduct teach-ins and pre-referral discussions for each of these funding streams, with the aim
+of ensuring that any potential issues have been surfaced early in the process.
+4.3 Cluster and project deliverability
+The commercial strategy has been designed to incentivise cluster delivery by largely placing delivery and performance
+risk on the private sector. However, recognising the potential exposure of HMG to cross-chain risks brought about by
+project-level delivery issues, this has been supplemented by thorough programmes of technical and cost assurance,
+and financial due diligence.
+
+Technical and cost assurance has been carried out on all projects contained within the cluster, to confirm that the
+projects are able to deliver within their cost, schedule and benefit envelopes, with an acceptable level of risk. Where
+there is residual divergence in views on the suitability of costs, these have been folded into the final stages of
+negotiations and will be weighed up against other negotiables such as business model features.
+
+In relation to technical assurance, these processes have examined the projects’ technical details, schedules and risk
+registers and found it reasonable that the projects could achieve their stated commissioning dates and benefits. In
+particular, the penalties faced by projects caused by underperformance (i.e. low availability or capture rate) are likely to
+be sufficient incentive to undertake remediation.
+4.4 Contract management
+The suite of agreements we are seeking to enter into to deliver HyNet include the economic licence and other
+agreements for T&S, a suite of sector-specific CfD-type contracts, and grants. No single party is suitable to manage all
+of these agreements, and so contract management responsibilities are dispersed across multiple organisations.
+Nonetheless, it is important that suitable oversight and coordination is maintained by DESNZ to ensure that the
+programme delivers its intended benefits and to manage the risks being taken on. Key delivery partners have been
+included in extensive process mapping and testing exercises led by DESNZ, with the aim of building confidence in their
+capability and capacity to execute their responsibilities post-FID. The roles and capabilities of key individual
+organisations are summarised below.
+
+4.4.1 DESNZ Cluster Sponsor Function
+The CCUS Programme is establishing the DESNZ Cluster Sponsor Function to execute DESNZ’s delivery phase
+responsibilities, as well as proactive management of government-owned cross-chain risks, coordination and integration
+of key decision-makers within the CCUS system, and the removal of barriers to successful delivery. Further detail on
+the Cluster Sponsor Function and related governance is outlined in the management case. The DESNZ Cluster
+Sponsor Function will also perform contract management functions for the GSP contracts, SoS Direct Agreement (see
+4.4.3 below) and Decommissioning Shortfall Agreement.
+4.4.2 Economic Regulator – Ofgem
+Part 1 of the Energy Act 2023 establishes Ofgem as the independent Economic Regulator of the CO2 T&S networks,
+with responsibilities for protecting the interests of current and future users and promoting the efficient and economic
+development and operation of the T&S networks, whilst allowing T&SCos to make an economic return. Ofgem will
+assume their regulatory role upon the issue of the economic licence, and will be responsible for conducting periodic
+reviews of the commercial terms, costs and rate of return embedded in the ERR. The first of these review points will
+take place at the conclusion of the first regulatory period, three to four years following COD. They will also be
+responsible for the granting and, in extremis, the revoking of economic licences for T&SCo.
+
+Government will maintain a close working relationship with Ofgem during the delivery and operations phases. Directly,
+Government will signal its intention to provide Ofgem with a Strategy & Policy Statement on CCUS and agree ways of
+working to differentiate and coordinate responsibilities related to areas of overlap such as finance and HyNet top-up.
+Ofgem will also be invited to represent its views in relevant meetings of the Liaison Committee. Government and Ofgem
+will regularly discuss and coordinate mitigations for cross-chain and system risks in the Sponsor Function Board and
+Inter-Regulator Forum, providing Ofgem with essential cluster-wide context to influence decision-making whilst
+respecting their regulatory independence. Ofgem will own specific risks related to the Economic Regulatory Regime.
+4.4.3 Contract Counterparty – Low Carbon Contracts Company (LCCC)
+LCCC implement and develop electricity market schemes by providing independent expertise, insight and leadership.
+Post-FID, they will (subject to consenting to the designation, in the case of the RSA and ICC / Waste ICC contracts) be
+the designated counterparty to the T&S Revenue Support Agreements (RSA) and capture project support contracts
+(ICC / Waste ICC Contract and LCHA). Business models such as ICC are based on the Contracts for Difference (CfD)
+scheme for renewables which has been managed by LCCC since 2014. As such, LCCC plays a key role in the
+mitigation of the cross-chain risks described above. For the RSA and LCCC contracts, which are exchequer-funded,
+Government will offer those projects a Secretary of State Direct Agreement (SoSDA): a contract between the Secretary
+of State, the LCCC and the project/T&SCo, which enables projects to seek payments under their contracts directly from
+the Secretary of State, if the counterparty does not have the funds required to make, and so defaults on, payments
+under the contracts.
+4.4.4 DESNZ Central Grants & Loans Team
+The DESNZ Central Grants and Loans (CGL) Team will be the delivery partner for all grants awarded. They will ensure
+that grant contracts are managed in compliance with the Grant Funding Agreement, especially in respect to the review
+and payment of grant claims. CGL has a long history of grant delivery within DESNZ and has been working alongside
+the CCUS team throughout the assessment and negotiations phase.
+
+5. Financial Case
+5.1 Purpose
+In this FBC, we are seeking approval to enter into the Hydrogen Business Model Agreement with EETH, the ICC/Waste
+Business Model Agreement with Protos, and award the T&S licence and enter into the necessary support package with
+Eni. The purpose of this section is to: a) assess affordability by comparing the subsidy levels in these contracts to the
+affordability constraints agreed with HMT (section 5.2); b) set out the funding requirements and budget implications of
+these contracts in line with appropriate accounting standards (sections 5.3 to 5.6); c) explain the basis of the spending
+powers and the budget management principles (section 5.7); and d) set out and quantify the financial risks in these
+contracts (section 5.8).
+
+The RAB model through which we are supporting Eni has cost reopeners, with payment levels effectively being settled
+ex post, and so there is a higher degree of estimation, with the ultimate financial implication being dependent on outturn
+costs, as elaborated in Section 5.8.11.
+5.2
+Affordability
+At Spring Budget 2023, the Chancellor announced a Negotiation Funding Envelope (NFE) of ‘up to £20bn’ in Real 2021
+prices. This NFE included the CIF, the NZHF, the IDHRS scheme and Levy funding.
+
+The total subsidy cost for HyNet in Real 2021 prices is £9.1bn. We are also seeking approval for ECC expansion
+DevEx valued at £0.3bn (2021 prices, excluding contingency). The Final Funding Envelope (FFE) will be based
+upon the funding requirements for projects at cluster FID, as set out in the HyNet and ECC FBCs. These funding
+requirements are set to ensure that they are taut and realistic, whilst also ensuring that they can absorb limited
+increases in exogenous factors which may cause funding requirements to change before FID. This announcement will
+be made after FBC approval.
+5.3
+Funding required (nominal)
+We are seeking approval for Capital Departmental Expenditure Limit (CDEL) General Capital, CDEL Financial
+Transactions (FT), Capital Annually Managed Expenditure (CAME), Resource AME, and Resource DEL (RDEL)
+nominal.
+
+Table 10: Budget requirements during initial construction phase (nominal)
+All costs are in nominal terms and presented in £million.
+
+2024-25
+2025-26
+2026-27
+2027-28
+Total
+Total
+4,124
+1,221
+1,471
+7,474
+Table 11: Budget requirements during operational phase (nominal)
+All costs are in nominal terms and presented in £million.
+
+Budget classification
+28/29 -
+31/32 -
+34/35 -
+37/38 -
+40/41 -
+43/44 -
+46/47 -
+49/50 -
+52/53 -
+Total
+Total
+1,496
+1,992
+1,625
+1,294
+1,428
+1,238
+1,179
+1,084
+(200)
+11,136
+5.4
+Resource budgets
+HMT has updated the Financial Reporting Manual (FReM) and CBG to require departments which issue CfD-like
+contracts to recognise the ‘day one loss’ associated with those contracts immediately, rather than deferring them offbalance sheet as previously allowed. The difference payment within the EETH HPBM and OpEx payment within the
+Protos ICC BM are likely to meet the definition of a CfD-like contract. CBG requires departments to recognise these
+‘losses’ in RDEL from the point the contract has been entered into, which would be in 2024/25.
+
+Eni receives three sources of RDEL income to cover its operating costs. These include user charges from EETH and
+Protos T&S user charges in years 16-25 when it is assumed that government support will not be required. The RSA
+income will be paid to Eni by LCCC and LCCC will therefore require RDEL budget cover for this expenditure. HMT have
+confirmed that as this is an intragroup transaction, these transactions will be eliminated at a group level.
+LCCC and Eni will each require a ‘netting off agreement’ approved by the Chief Secretary to the Treasury in order to
+retain the income they receive. The programme will seek approval for these netting off agreements before FID.
+5.5
+Programme funding and FTE requirements
+The programme will execute its responsibilities to proactively manage cross-chain and integration risks to government
+with partners and manage benefits delivery on an ongoing basis through a mix of civil servant FTE and external advisor
+resource. These requirements are set out in more detail in section 4.4 of the commercial case and section 6.1 of the
+management case. The estimated RDEL Programme costs of managing the cluster are provided in Table 12. Ofgem
+will separately need to bid for additional budget cover through its own Estimate (shown separately in Table 12
+below).
+Table 12: CCUS programme resource required for ongoing management of HyNet in £mn
+
+2024-25
+2025-26
+2026-27
+2027-28
+Total
+
+Staff costs
+1.5
+1.6
+1.6
+1.6
+6.3
+
+stakeholders and increase likelihood of successful cluster delivery, the department will establish a Cluster Sponsor
+Function, this is expanded on further below.
+
+6.1 Team structure
+This section provides an overview of the changes in roles and accountability pre- and post-FID. This section covers the
+roles and responsibilities of the organisations who play a key role in the ongoing oversight of cluster delivery. The
+overall stakeholder engagement and communication approach is set out in section 6.2.
+
+6.1.1 Pre-FID roles and responsibilities
+The DESNZ CCUS programme is working closely with cross-Whitehall, industry, and partner organisations, who play
+an essential role in achieving FID, and these roles can be summarised as follows:
+•
+Cross-Whitehall organisations at the centre of government, such as HMT and the IPA, provide strategic policy
+coordination and alignment, decision making in relation to funding, affordability, and value for money.
+•
+DESNZ is the delivery body to FID, and via the DESNZ CCUS programme, provides the design and delivery of the
+CCUS system. This includes the policy and the design of the business and operating models, cluster delivery
+management, assurance of the design and cost of the physical network, the translation of the design of the system
+into contracts, the underpinning legislative framework and programme governance and assurance. Post-FID,
+DESNZ’s role transitions into the Cluster Sponsor Function as outlined below.
+•
+Partner organisations (regulators and ALBs) provide guidance on CCUS development and deployment, and
+capacity of themselves to deliver FID requirements and take on their obligations at FID. They also provide clarity on
+requirements and processes relating to the issue of permits and licences. Post-FID roles are outlined below.
+•
+Industry work with the programme, its supply chain, and investors, to design and cost the network. They also
+conduct negotiations, collaborate on the Network Code and the proposed business and operating models, resulting
+in a CCUS system that industry is confident to invest in, construct, and operate sustainably.
+Post-FID the roles of industry partners will continue as is, however, oversight of their delivery will move from the current
+DESNZ teams to Ofgem, LCCC, and the DESNZ Cluster Sponsor Function.
+6.1.2 Post-FID roles and responsibilities
+Roles and responsibilities in the post-FID operating model are determined by the Economic Regulatory Regime,
+government support (via contracts or grant funding), and other regulations applicable to DESNZ. Roles and
+responsibilities, and management/ownership of risk is allocated to the party deemed best able to manage it. Where the
+government is taking on/owning risk, additional structures have been put in place to support this. Under the economic
+licence the projects are defined as users in relation to the T&SCo (see section 4.2.3 above). The key roles in the postFID operating model are summarised in figure below.
+
+DESNZ’s current role will transition into the DESNZ Cluster Sponsor Function (also covered in Section 4.4) in the
+delivery phase. Its role in the operations phase will be defined prior to COD. The core functions of the Function during
+the delivery phase will include:
+•
+Managing government-owned cross-chain delivery risks and operating model integration risks, including integrated
+planning, alignment of T1 and HyNet Top-up, and stakeholder management.
+
+•
+Overseeing cluster construction schedule, agreement & monitoring of DESNZ budget and business planning.
+•
+Recommending / advising DESNZ SoS on key decisions, such as variation requests under the GSP, remediation
+activities, and commission of new user selections etc.
+•
+Managing business cases and overseeing negotiations for build-out & expansion users, including setting
+negotiation mandates, conducting VfM analysis, and determining the overall assurance approach.
+•
+Supporting partners to take regulatory and contractual decisions informed of the full cluster impact, including reopeners, cost variations etc.
+•
+Coordinating the removal of barriers to successful delivery, including the resolution of regulatory, Network Code,
+and business model issues.
+•
+Representing DESNZ SoS on the Liaison Committee as required.
+•
+Developing a data management strategy, including reviewing relevant data sharing arrangements.
+
+Integrated Processes: The commercial roles of key organisations have been set out in the commercial case (Section
+4.4). In collaboration with these organisations, we have developed a number of Integrated Processes. These set out the
+interface and boundaries between organisations, aligned to each organisation’s accountabilities, roles and
+responsibilities. We have tested our Integrated Processes to achieve confidence in the integration and outcomes of the
+post-FID operating model, in the method and priority order.
+
+Partner organisations’ capacity and capability: To assess capacity and capability of key partner organisations to
+deliver their roles at FID, the CCUS programme commissioned partner organisations with significant responsibility to
+complete Organisational Readiness Statements. Partner organisations have provided an interim readiness statement
+(submitted in March 2024), signed by appropriate responsible individuals, where they have self-assessed that they
+understand their requirements and either have, or have a plan in place to have, the capability and capacity in place to
+operate at FID. They have also identified the actions that are required to improve their assessment ratings and are
+working to do so in advance of the pre-FID readiness checkpoint.
+6.1.3 Resources
+Following the IPA Gateway 0 recommendation, the CCUS programme:
+•
+Developed a Resourcing Strategy based on supply and demand data, and monitored advisor spend against
+programme milestones and contract spend ceilings. Advisor use is closely monitored to align with the activities
+where specialist resource is required and for defined periods and work packages. We are mitigating resourcing risk
+by utilising additional advisor resource and reprioritising existing resource within the programme.
+•
+Recruited a Programme Director and an additional Programme Deputy Director.
+
+Budget for the current FY 23/24 is in place, with budget allocation from the SR for next year. Business planning is
+underway for FY 24/25, the purpose of this exercise is to confirm the allocated budgets for financial year 24/25 which
+includes advisor spend and ALB GIA payments.
+Advisory support: To supplement CCUS capability, additional support has been brought in through the advisory
+contracts. Key advisory support includes:
+•
+PMO contract in procurement progress to bolster the programme functions.
+•
+The financial advisor contract with the purpose to provide financial advice on major capital infrastructure projects,
+some of the work involves advising on business models and government subsidies and understanding of the debt
+and equity investor market in UK infrastructure.
+•
+Legal advisor contract, supporting the ongoing design of work within CCUS and advisory support on legal
+considerations for the programme.
+•
+Technical advisor support.
+CCUS is creating a more strategic overview of required contract support and are currently assessing options for how
+the advisor contracts can best support the future programme.
+6.2 Stakeholder management and communications
+This section covers at a high-level the stakeholder engagement and communications approach. Full details on roles
+and responsibilities have already been covered in the above section.
+
+The CCUS programme undertook a mapping exercise of all key stakeholders as part of the OBC submission and set
+out the categories of identification and prioritisation used to group stakeholders.
+
+Testing has shown awareness of CCUS is growing but with many still undecided of their view. The programme is using
+the key stakeholders identified in the strategy to therefore secure early backing from the public. This is being done
+through sharing best practice for community engagement at advisory boards such as the CCUS Council, and
+encouraging cluster partners to demonstrate local benefits. Simultaneously we are working with ALBs to demonstrate
+safety. Finally, we are using external communications to set narratives on CCUS in the press and media, outlining
+benefits of the technology to meeting our climate commitments and delivering jobs and economic growth.
+
+Data and information flows: The DESNZ Cluster Sponsor Function will, post-FID, define a longer-term data
+management strategy for CCUS to govern data flow definition, amendment, and data storage/access during the
+operation phase of the project.
+6.3 Project governance
+This section sets out the current and post-FID operating model governance structure as well as the project
+accountabilities to enable decision making. The programme needs to refresh its post-FID governance to align with the
+changes in roles and responsibilities as set out above.
+6.3.1 Project Accountability
+The DESNZ Permanent Secretary fulfils Accounting Officer (AO) responsibilities for the programme. The appointed
+SROs have ultimate accountability for the successful delivery of CCUS. A joint SRO arrangement remains in place,
+allowing greater visibility across directorate boundaries, more efficient interface to other teams, encouraging
+constructive challenge from dependent projects and enabling the transparent management of shared project/
+programme management information. The Cluster Sponsor Function is proposed to have a single SRO lead for T1
+delivery, and a sub-programme director, to enable it to have the necessary oversight and influence for the scope of its
+function.
+6.3.2 Project governance
+HyNet governance is contained within the wider CCUS programme governance structure. The governance structure
+has been designed in accordance with DESNZ’s governance framework and best practices to ensure the right level of
+accountability, decisions making and risk escalation. Recognising the challenges that the programme’s evolutionary
+nature adds to the governance, following the IPA Gateway 0, the CCUS programme commissioned an independent
+review on governance. Its recommendations have now been implemented.
+6.3.3 Budget monitoring & control
+For proposed budget monitoring and control in light of Eni being on the government balance sheet, please see section
+5.7.2 of the financial case. We have established monitoring and reporting processes to ensure that budgets and
+forecasts are monitored appropriately, and leverage the standard monthly DESNZ budget management and forecasting
+processes. To ensure effective budgetary control, regular reports are presented to each SRO. Post-FID there are
+integrated processes in place to manage cost variations and additional HMG draw down of funding. The related
+governance required is being developed.
+6.4 Milestones
+An integrated schedule, containing key milestones for all the projects within the cluster, has been developed to provide
+a clear view of cluster readiness to COD. The integrated schedule is made up of several workstreams delivered across
+a number of stakeholders, and the Cluster Sponsor Function role in schedule oversight during the delivery phase is set
+out below. The below also sets out the schedule overview including the roles and responsibilities for schedule
+management and of related schedule risks, and the schedule assurance undertaken to ensure that the programme has
+schedule delivery confidence.
+6.4.1 Schedule Overview
+Schedule content: The high-level milestones are contained in the table within the Executive Summary (section 1.10).
+A number of activities are still ongoing to achieve FID including stage 3 negotiations (concluding in July 2024), FID
+critical secondary legislation, activities to reach financial close, and post-FID operating model implementation.
+
+The overarching schedule risk is ensuring the delivery of a timely cluster COD (and users with a later COD date) to
+avoid any unnecessary draw down on HMG finances (as set out in the financial case section 5.10) and delays to benefit
+realisation. The schedule also contains the relevant milestones from the IAAP and the M&E Plan. The agreed delivery
+
+milestones for the T&SCo will be set out in the Technical Details Schedule (TDS) and will form part of the economic
+licence, and for the projects these will form part of the contract milestone requirements. These will all be formally agreed
+and signed off by the programme as part of the issuing of economic licences for the T&SCo and the contract
+agreements with the projects. The interdependencies, assumptions and constraints are set out in the strategic case in
+section 2.3.4.
+
+Legislation overview: The programme has prioritised secondary legislation that is FID critical. This has been assessed
+by the team and the relevant milestones have been captured in the integrated schedule. In addition, consensus on the
+full form CCS Network Code (‘the Code’, as described in the commercial case section 4.3.6) is expected by the end of
+July 24.
+
+Transition planning: The integrated schedule provides high-level milestones for transition planning. The changes to
+roles and responsibilities are covered in the Team Structure section 6.1. An integrated transition & engagement plan will
+be implemented prior to FID, ensuring that post-FID processes can be executed effectively and minimising the loss of
+institutional knowledge and relationships built throughout the assessment and negotiation phases.
+6.4.2 Schedule Delivery Confidence
+The schedule assurance approach up to FID follows a PERT and QSRA assurance approach. To enable
+confidence in the post-FID schedule, a schedule assurance approach has been agreed. Post-FID the continued
+schedule assurance for T&SCos moves to Ofgem and for users moves to LCCC. The Cluster Sponsor Function will
+oversee the integrated schedule and will work closely with these parties.
+6.4.3 Schedule Management
+For delivery up to FID, the CCUS programme has developed standards for the development of project schedules,
+including a change control process. The Track-1 PMO is responsible for creating and tracking the integrated HyNet
+schedule and have developed the schedule in alignment with this guidance. Post-FID, Ofgem will monitor the progress
+of construction for T&SCos as part of their regulatory oversight and will monitor the milestones against the TDS. LCCC
+will monitor progress of project construction schedules against the contract’s milestone dates. The Cluster Sponsor
+Function will maintain the integrated schedule, identifying opportunities to remove barriers to on-time delivery and
+monitoring cross-chain risks.
+
+Schedule resourcing: At FID, multiple stakeholders will either take on new responsibilities or expand existing
+responsibilities. Each organisation will own their delivery milestones, with each organisation confirming they have the
+capacity (budget, resource, IT) and capability (knowledge, skills) to successfully operate their responsibilities at FID via
+an Organisational Readiness Statement. This is outlined in section 6.1.2 above.
+6.5 Assurance & approvals
+CCUS joined the IPA’s Government Major Project Portfolio (GMPP) in Q2 2021 and is subject to IPA led assurance at
+each stage gate review point. This section sets out the additional assurance approach taken by the programme during
+the negotiations phase. An integrated assurance and approvals plan (IAAP) has been agreed with the IPA and
+incorporates internal and external assurance and approval points relative to the business case. A Risk Potential
+Assessment has been developed to support the assurance activities defined in the IAAP. This document will continue to
+be reviewed and provides a critical assessment of the strategic risks of the project to support good risk management
+practices and delivery assurance activities. GMPP reporting arrangements are covered in the risk section below.
+6.5.1 Assurance arrangements
+The programme has developed the following CCUS Programme Assurance Approach. It is split into three areas, adopts
+the three lines of defence model and has been designed to manage risk, ensure quality, and build confidence that the
+cluster is deliverable, and that it can affordably achieve the desired outcomes.
+•
+Assurance of delivery up to FID: This sets out the controls, systems, and assurance approaches placed to
+ensure effective delivery up to FID. We will still be maturing up to the point we take FID, a programme readiness
+checkpoint will take place in August 2024.
+•
+Assurance approach pre-FID that achieves the desired outcomes in the delivery stage: The approach that
+the programme has taken to test and assure the way in which the CCUS system will operate, including; the physical
+network; the way organisations operate, achieving the desired outcome; reaching a deal with industry; overarching
+approach to clusters; and strategic risk.
+
+•
+Delivery and assurance from FID to COD: Sets out the approach to assurance of activity from FID to COD. The
+three lines of defence are: 1st Line – Within the post-FID operating model, each stakeholder has assigned roles and
+responsibilities and owns the oversight and required delivery or risk management at this level. As part of this line,
+the CCUS programme has undertaken assurance and testing to drive confidence in organisational readiness to
+operate in the delivery phase. 2nd Line – Independent advisors to the CCUS programme provide independent view
+on the appropriateness and completeness of the work undertaken by the programme and on any material risks
+which may impact on the successful delivery and operation of HyNet. Final reports will be submitted pre-FID. PostFID the DESNZ Cluster Sponsor Function will perform 2nd line functions. 3rd Line – The assurance required at this
+level will be provided through IPA assurance points (Gateway 4 pre-COD), GMPP annual reviews and ministerial
+engagement.
+6.5.2 Programme assurance activities
+All conditions from OBC stage have now been discharged, including recommended actions from previous IPA gateway
+reviews. The next IPA assurance activity is expected to be Gateway 4 prior to the commencement of operations for
+HyNet in Q4 2028. To note the CCUS programme will continue to engage IPA and HMT via the governance structure
+outlined above.
+6.5.3 FBC approvals sought
+The approvals sought for this FBC are covered in the Executive Summary; for MPRG to agree that we proceed to FIDs
+with the anchor projects: Eni, EETH and Protos. We are asking for approval for a sequential approach to contract
+signature, where we would take FID with the T&S (Eni) first then with EETH and Protos once they meet their financial
+and permitting conditions precedent.
+
+We propose that MPRG approval allows for a degree of flexibility on the precise timing of FID, so long as the delay (a)
+does not materially impact the funding requirement (as per cost tolerance); and (b) does not materially diminish the
+benefits expected from the investment. SROs would manage any schedule changes through change control
+procedures to assess the impact on the likely Commercial Operating Date (COD). We propose SROs have a tolerance
+of 6 months delay to COD.
+
+It should be noted that uncertainty still exists around key parameters surrounding risks and costs. We are seeking
+approval subject to the key parameters outlined in this FBC and should these be materially altered, will seek to obtain
+the relevant governance sign-off.
+
+Reaching FID requires DESNZ Secretary of State and the Chancellor of the Exchequer approval, including final sign-off
+of the FFE. We are seeking to get approval from MPRG of the business cases and propose that we then immediately
+seek final approvals from DESNZ Secretary of State and the Chancellor of the Exchequer to go to FID.
+
+The agreements that we have negotiated are time-limited. If the approval of the FFE is delayed we would need to
+postpone FID and developers would need to re-negotiate supplier bids. Reopening the supplier bids would be a
+dynamic scenario, and its impact cannot be easily forecast. Given the limited supplier market capability, and loss of
+confidence in the UK CCUS vision, underlying costs are expected to increase. In addition, there is a risk that supplier
+bids cannot be re-negotiated and contracts collapse, requiring retendering, significant delays (+7 months) and cost
+increases.
+
+Therefore, we recommend that MPRG considers progressing to FID ahead of the SR. This would avoid the risk of the
+above funding requirement increases, and limit impacts on benefits and tax or bill payers. Alternatively, if it is the view of
+MPRG that the FFE cannot be decoupled from the spending review, we would ask our delivery partners to engage their
+supply chains to negotiate the required extensions, and propose returning to MPRG and PIC via correspondence to
+agree the revised terms and updated figures.
+6.5.4 Exceptions
+•
+Commercial Assurance Board - It has been agreed with the head of commercial assurance and commercial
+keyholder that this FBC is not in scope of CAB. Commercial keyholder and business partner reviews, board
+member discussions and critical friend reviews from the HICC and IDH directorates will provide steers and
+challenge throughout the commercial case.
+
+•
+Approval from the Industrial Development Advisory Board (IDAB) is not required, as the programme is not using
+the Industrial Development Act (IDA) for its spending powers.
+•
+No specific Cabinet Office (CO) approvals are required, any CO oversight required will form part of MPRG.
+6.6 Monitoring and Evaluation of Benefits
+We have developed an M&E Framework for the CCUS Programme as a whole and within that a specific M&E Plan
+for Track-1, covering both ECC and HyNet, with the support of Ipsos.
+The key objective of the Track-1 M&E Plan is to assess the effectiveness of Track-1 policy support utilising evidence
+produced from process, impact, and value for money (VfM) evaluations. The plan sets out the evaluation data
+collection plan (including relevant monitoring data) and includes an indicator framework that sets out the indicators
+that we will use to track progress against our core and wider benefits, including data sources, collection frequencies and
+options for baseline data. It also describes our intended approach to evaluation and determines appropriate evaluation
+timings. Core suggested evaluation questions and sub-questions are provided but will need to be further developed by
+a future evaluation supplier. Process evaluations are planned for early 2024 (Part 1, up to negotiation stage), early 2025
+(Part 2, following FID) and mid-2026 (Part 3, during construction). Impact and VfM evaluations are planned for late 2028
+(interim, pre-operations), 2030 (interim, including operations) and 2032/33 (final).
+The Track-1 M&E Plan focuses on early evaluation, feedback and learning to improve delivery in the near term, while
+the wider CCUS Programme M&E Framework considers longer term and programme wide evaluation. Evaluation
+findings are and will be used to inform the design of future tracks and phases.
+An evaluation data collection plan includes primary data collection and use of secondary data, including monitoring data
+collected via the counterparties/delivery bodies and wider secondary data sources. The CCUS Programme M&E
+Framework also discusses the potential importance of ‘in-flight monitoring’ to have the ability to make in-flight changes.
+As part of the ongoing post-FID operating model design and implementation work, work is underway to map out the
+monitoring requirements (incl. the need for in-flight monitoring), governance, reporting cycles and integrated planning.
+The processes outlined are consistent with relevant HMG and DESNZ best practice guidance and take on board
+recommendations from a National Audit Office (NAO) review of the then BEIS (DESNZ) business support policies in
+January 2020.
+6.6.1 Monitoring and evaluation resource
+As set out above, early evaluation, feedback and learning will be crucial for Track-1 due to its FOAK nature. Some of the
+planned evaluations will also cover early Hynet expansion and Track-2 processes and impacts (where available at the
+time), rather than undertaking these studies separately. The M&E Framework sets out the full schedule of planned crosscutting evaluation activities. Track-1 evaluation work will be led by a dedicated workstream.
+6.7 Risk management
+The CCUS programme’s treatment of risk is aligned with DESNZ Risk Guidance and Programme Risk Management
+Framework (April 2021) based upon M_o_R™ and HMT’s Orange Book. Project level risks are recorded in the CCUS
+project level risk registers and are escalated to the CCUS Programme RAID, in accordance with the DESNZ Risk
+Guidance and DESNZ Risk Appetite Statement. CCUS escalation processes are established in current reporting
+structures and direct engagement with Senior Project Staff and the SROs.
+6.7.1 Risk and Issue Management
+Pre-FID risk and issue management is undertaken via regular project delivery meetings to identify, monitor, and define
+risks to a successful outcome. A CCUS programme Risk and Issues Management Strategy, including an internal
+monthly RAID review cycle is in place. Regular risk updates are provided from industry and partnership organisations
+that feed into the monthly Track-1 dashboard. These are presented monthly to the T1 Board, with any escalations set
+out in the agenda for the board to review.
+
+Post-FID relevant cross chain and cross cutting risk and issue management will be overseen by the Cluster Sponsor
+Function, in collaboration with partner organisations. Specific roles and responsibilities, including escalation of risks and
+issues, are set out in the post-FID operating model and Integrated Processes. The cross-chain risks are outlined in the
+commercial case. The Cluster Sponsor Function, along with the CCUS programme, will maintain RAID oversight for
+strategic cluster cross-chain risks and anything that impacts DESNZ responsibilities. The risk management approach
+will evolve as the Cluster Sponsor Function matures.
+
+6.7.2 Performance Management & Reporting
+Effective performance data management and reporting will be essential to cluster delivery to COD. Current reporting
+used to support the monitoring and decision making includes:
+• GMPP reporting – As a GMPP programme the regular GMPP reporting cycles are adhered to and will continue to
+do so post-FID.
+• Online Reporting in BEIS (ORB) Report – Per departmental guidance, the programme submits a monthly report,
+signed off by the SROs, and provides a high-level performance snapshot to the portfolio. Post-FID it is expected that
+this reporting will continue.
+• Track-1 Dashboard - A monthly snapshot of cluster performance and risks, compiled by the Track-1 PMO in
+collaboration with the relevant DESNZ, industry and partnership organisations and cleared by the Project Delivery
+Deputy Director, submitted to the T1 Board and Programme Board to communicate progress, plans, raise risks and
+key challenges to the Senior Leadership Team and the SRO.
+
+Post-FID, the Cluster Sponsor Function will facilitate communication of data between partner organisations and
+DESNZ, and coordinate information sharing with the CCUS programme board. DESNZ, Ofgem, LCCC, and CGL will
+circulate regular reporting from the T&SCo and Users at a working-level, for discussion at the Cluster Sponsor Function
+Board and associated governance. The frequency and the reporting data points, including for benefits reporting, are
+being developed in collaboration with relevant partner organisations and will enable the Cluster Sponsor Function to
+fulfil its role of monitoring the integrated schedule and the DESNZ cost envelope.
+
+Data management: Post-FID contracts and relationships contain multiple data flows from T&SCos and Users, with
+overlapping data. There are benefits from taking a holistic, cross-body approach to data management, and a data
+strategy is being developed for the post-FID operating model, including the required data needs across DESNZ and the
+necessary data sharing arrangements to support this.
