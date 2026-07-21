@@ -50,6 +50,17 @@ MODELS = ["claude", "gpt", "opensource"]
 PROMPTS = ["zero_shot", "few_shot", "structured"]
 
 
+def _show(path: Path) -> str:
+    """Repo-relative display where possible, else the absolute path. An
+    --out-dir OUTSIDE the repo is legal (e.g. rendering synthetic figures into
+    a scratch dir) and must not crash the final print after the figures have
+    already been written. Same helper, same reason, as build_rater_packets.py's."""
+    try:
+        return str(Path(path).resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        return str(Path(path).resolve())
+
+
 def _caption(fig, note: str) -> None:
     if note:
         fig.text(0.5, 0.005, note, ha="center", va="bottom", fontsize=8,
@@ -184,11 +195,11 @@ def main() -> int:
     args = ap.parse_args()
 
     metrics = json.loads(Path(args.metrics).read_text(encoding="utf-8"))
-    # .resolve() so the final p.relative_to(REPO_ROOT) below works regardless
-    # of whether --out-dir was passed as relative or absolute - found
-    # 2026-07-21 by re-running this script with a relative --out-dir, which
-    # crashed on that print AFTER the figures were already correctly written
-    # (cosmetic but real: a relative override is a very normal thing to pass).
+    # .resolve() so the final _show(p) below works regardless of whether
+    # --out-dir was passed as relative or absolute - found 2026-07-21 by
+    # re-running this script with a relative --out-dir, which crashed on that
+    # print AFTER the figures were already correctly written (cosmetic but
+    # real: a relative override is a very normal thing to pass).
     out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -198,7 +209,7 @@ def main() -> int:
         fig_rq3(metrics, args.note, out_dir),
     ]
     for p in paths:
-        print(f"[figures] wrote {p.relative_to(REPO_ROOT)}")
+        print(f"[figures] wrote {_show(p)}")
     if args.note:
         print(f"[figures] NOTE stamped on all figures: {args.note!r}")
     return 0
