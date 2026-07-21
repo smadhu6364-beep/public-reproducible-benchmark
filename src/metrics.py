@@ -180,6 +180,77 @@ def short_register_subgroup_report(per_run: list[dict]) -> dict:
     }
 
 
+def pretraining_cutoff_report(per_run: list[dict], model_cutoffs: dict[str, str],
+                              manifest_path: Path = REPO_ROOT / "data" / "corpus_manifest.csv") -> dict:
+    """Supplementary pre/post-training-cutoff contamination check (see
+    paper/methodology_notes.md's Pretraining contamination section).
+
+    NOT wired into compute_all() and NOT run by default - this function only
+    does anything if the CALLER supplies model_cutoffs explicitly. That is
+    deliberate: which date each model's training cutoff falls on is a
+    real-world fact about specific model versions that changes as new models
+    ship, not something to hardcode or guess here (CLAUDE.md: never fabricate
+    data). Pass it in, e.g.:
+        model_cutoffs = {"claude": "2025-XX-XX", "gpt": "2025-XX-XX", "opensource": "2024-XX-XX"}
+    sourced from each provider's own model documentation at run time, not
+    invented by this function.
+
+    Buckets each run by comparing its project's `publication_date`
+    (corpus_manifest.csv) against that run's model's cutoff: "pre_cutoff" (the
+    document predates the model's training data), "post_cutoff" (postdates
+    it - cannot have been memorized), or "undated" (the project has no
+    publication_date on record and is reported separately, never silently
+    dropped or pooled with a bucket it doesn't belong in - see
+    paper/methodology_notes.md's 2026-07-21 note on why publication_date is
+    only populated for 10 of 21 projects, and why the PAD's internal "Expected
+    Approval Date" field is NOT a safe substitute for it).
+    """
+    import csv
+    from datetime import date
+
+    with open(manifest_path, newline="", encoding="utf-8") as f:
+        pub_dates = {}
+        for row in csv.DictReader(f):
+            raw = (row.get("publication_date") or "").strip()
+            if raw:
+                pub_dates[row["project_id"]] = date.fromisoformat(raw)
+
+    def _bucket(run: dict) -> str:
+        cutoff_raw = model_cutoffs.get(run["model"])
+        pub = pub_dates.get(run["project_id"])
+        if cutoff_raw is None or pub is None:
+            return "undated"
+        return "pre_cutoff" if pub < date.fromisoformat(cutoff_raw) else "post_cutoff"
+
+    buckets: dict[str, list[dict]] = defaultdict(list)
+    for r in per_run:
+        buckets[_bucket(r)].append(r)
+
+    return {
+        "model_cutoffs_used": dict(model_cutoffs),
+        "n_runs_undated": len(buckets.get("undated", [])),
+        "undated_projects": sorted({r["project_id"] for r in buckets.get("undated", [])}),
+        "pre_cutoff": {
+            "n_runs": len(buckets.get("pre_cutoff", [])),
+            "mean_recall": _safe_mean([r["recall"] for r in buckets.get("pre_cutoff", [])]),
+            "mean_precision": _safe_mean([r["precision"] for r in buckets.get("pre_cutoff", [])]),
+        },
+        "post_cutoff": {
+            "n_runs": len(buckets.get("post_cutoff", [])),
+            "mean_recall": _safe_mean([r["recall"] for r in buckets.get("post_cutoff", [])]),
+            "mean_precision": _safe_mean([r["precision"] for r in buckets.get("post_cutoff", [])]),
+        },
+        "note": (
+            "A systematic recall/precision gap between pre_cutoff and post_cutoff "
+            "would suggest contamination (the model may have seen the pre_cutoff "
+            "document's real risk register during training). Undated projects "
+            "cannot be classified and are excluded from both buckets, not guessed "
+            "into one - see undated_projects/n_runs_undated above for exactly how "
+            "much of the corpus this leaves out with the current model_cutoffs_used."
+        ),
+    }
+
+
 def compute_all(scored_dir: Path = SCORED_DIR) -> dict:
     match_files = sorted(p for p in scored_dir.glob("*.match.json"))
     if not match_files:
