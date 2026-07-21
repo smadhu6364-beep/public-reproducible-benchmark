@@ -247,7 +247,7 @@ Rater recruitment is the real bottleneck here, not the code — see
 python -m unittest discover -s tests
 ```
 
-320 tests, ~10s, **no network, no API keys, no spend** — the embedding model,
+328 tests, ~12s, **no network, no API keys, no spend** — the embedding model,
 the PDF reader, and all three providers (sync AND batch) are stubbed. One
 test (a real-embedding-model end-to-end check in `test_validate_threshold.py`)
 is skipped by default; opt in with `RUN_SLOW_TESTS=1` if you need it. Run
@@ -268,7 +268,7 @@ invalidate results:
 | `test_metrics.py` | recall/precision guards, subgroup separation, scoping variants, the opt-in pretraining-cutoff contamination check |
 | `test_parsing.py` | model + judge response parsing, incl. the bool-as-int regression |
 | `test_judge_driver.py` | `judge.py`'s CLI/driver layer |
-| `test_rater_packets.py` | sampling determinism, UK stratification, **blinding integrity** |
+| `test_rater_packets.py` | sampling determinism, UK stratification, **blinding integrity**, CLI (`main()`) |
 | `test_run_pipeline.py` | append-only, reproducibility fields, leakage guard, cost estimator |
 | `test_batch.py` | batch request/response shapes vs. real SDK contracts, submit/collect against `_finalize_run`, batch cost discount |
 | `test_figures.py` | figure rendering + the metrics.json ↔ make_figures key contract |

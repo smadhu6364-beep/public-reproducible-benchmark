@@ -36,19 +36,20 @@ data/ground_truth/ or data/risk_source_audit/ - raters must not see the human
 "answer key" (docs/rater_protocol.md section 1). The blinding map (which reveals
 model/prompt) is the one sensitive output and is gitignored.
 
-OPEN DESIGN QUESTIONS surfaced, not silently decided (see docs/rater_protocol.md
-section 3.1, which is marked OPEN and still says "5 of 18 projects" - stale, the
-corpus is now 21 included):
+DESIGN QUESTIONS RESOLVED 2026-07-20/21 (docs/rater_protocol.md section 3.1 now
+says "21 included" throughout, not "18" - this docstring previously repeated
+that stale project count and misstated the --min-uk-per-cell default below;
+both are corrected here rather than left to compound):
   - --sample-per-cell (default 5, per the doc's proposal) x 9 cells = 45
-    registers. The doc's "45" assumed 18 projects; the number of DISTINCT
-    projects drawn now depends on the current 21-project pool, but 5-per-cell
-    is preserved as the proposal.
-  - --min-uk-per-cell (default 0 = the doc's naive random draw). The handoff
-    flagged that a naive draw could miss all 3 UK documents across all 9 cells.
-    Setting this to 1 guarantees >=1 UK register per (model x prompt) cell
-    (>=9 UK registers total) - a describable stratification, left OFF by
-    default because "whether to guarantee UK representation" is a project-owner
-    call, not an engineering default.
+    registers. The doc's original "45" assumed 18 projects; the number of
+    DISTINCT projects drawn now depends on the current 21-project pool, but
+    5-per-cell is preserved as the proposal.
+  - --min-uk-per-cell **default is 1**, DECIDED 2026-07-20 by Madhu (was 0 -
+    the naive random draw - before that decision). A naive draw could miss all
+    3 UK documents across all 9 cells; 1 guarantees >=1 UK register per
+    (model x prompt) cell (>=9 UK registers total, empirically 11 at the
+    default seed - see docs/rater_protocol.md section 3.1). Pass 0 to restore
+    the naive unstratified draw.
   - --exclude-short-register drops the metrics.py SHORT_REGISTER_SUBGROUP
     (thin registers reported separately for Method A) from the eligible pool.
     Default OFF (Method B rates register QUALITY independently of register
@@ -334,12 +335,6 @@ def main() -> int:
             f"{m}/{p}": sorted(r["project_id"] for r in registers if r["cell"] == f"{m}/{p}")
             for m in MODELS for p in PROMPTS
         },
-        "stale_doc_flag": (
-            "docs/rater_protocol.md section 3.1 still says '5 of 18 projects' and '45 registers' "
-            "against an 18-project corpus; the corpus is now 21 included projects. This run used "
-            f"{args.sample_per_cell}/cell against the current pool. The doc text should be updated "
-            "to 21 and its UK-representation question (this script's --min-uk-per-cell) resolved."
-        ),
     }
 
     res = write_outputs(registers, orders, summary, Path(args.out_dir))
