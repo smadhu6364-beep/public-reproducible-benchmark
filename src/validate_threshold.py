@@ -62,6 +62,18 @@ REPORT_PATH = REPO_ROOT / "results" / "threshold_validation_report.md"
 DEFAULT_THRESHOLDS = [0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70]
 
 
+def _show(path: Path) -> str:
+    """Repo-relative display where possible, else the absolute path. A
+    --report path outside the repo is legal and must not crash after the real
+    work is already done - same fix as build_rater_packets.py, make_figures.py,
+    judge.py, and match.py; this project has hit this exact crash class five
+    times now."""
+    try:
+        return str(Path(path).resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        return str(Path(path).resolve())
+
+
 def concat(side: dict) -> str:
     """Same field concatenation match.risk_text() uses: description + mitigation."""
     return f"{side.get('description', '')} {side.get('mitigation') or ''}".strip()
@@ -345,7 +357,7 @@ def main() -> int:
           f"(J={rec_full['best_youden_j']}); best F1 threshold={rec_full['best_f1_threshold']:.2f} "
           f"(F1={rec_full['best_f1']})")
     print(f"[validate] current default MATCH_THRESHOLD={match.MATCH_THRESHOLD}")
-    print(f"[validate] report written to {out_path.relative_to(REPO_ROOT)}")
+    print(f"[validate] report written to {_show(out_path)}")
     return 0
 
 

@@ -42,6 +42,19 @@ RAW_OUTPUTS_DIR = REPO_ROOT / "results" / "raw_outputs"
 PROCESSED_DIR = REPO_ROOT / "data" / "processed"
 SCORED_DIR = REPO_ROOT / "results" / "scored"
 
+
+def _show(path: Path) -> str:
+    """Repo-relative display where possible, else the absolute path. An
+    --out-dir outside the repo is legal (e.g. results/figures_pipeline_report.md's
+    synthetic-data workflow writes into scratch/) and must not crash after the
+    real work is already done - this is the third time this exact crash class
+    has shown up in this repo (build_rater_packets.py, make_figures.py, now
+    here), same helper each time."""
+    try:
+        return str(Path(path).resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        return str(Path(path).resolve())
+
 # Which model acts as judge is itself a design choice worth stating plainly
 # rather than defaulting silently: using one of the three models under test to
 # judge its own (or a competitor's) output risks self-preference bias, a
@@ -237,7 +250,7 @@ def main() -> None:
             json.dump(result, f, indent=2)
         status = "OK" if result["judged"] else f"SKIPPED ({result.get('reason') or result.get('parse_error')})"
         print(f"[judge] {raw_path.name} -> {status}")
-        print(f"  -> wrote {out_path.relative_to(REPO_ROOT)}")
+        print(f"  -> wrote {_show(out_path)}")
 
 
 if __name__ == "__main__":
