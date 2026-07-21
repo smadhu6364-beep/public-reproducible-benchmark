@@ -68,6 +68,19 @@ state: **19 PASS / 1 WARN / 1 FAIL**, where the 1 FAIL (`P-MAR-...`) and 1 WARN
 `results/corpus_audit_review_notes.md` before treating either as a real leak.
 Any *new* FAIL is a genuine stop-the-line event.
 
+> **One check is network-dependent and will vary by environment.**
+> `P-UK-FreeBreakfastClubs` has no PDF, so its Check 1 is replaced by a live
+> re-fetch of the real gov.uk publication (`audit_free_breakfast_clubs_html`).
+> Re-running this in a network-restricted environment (confirmed 2026-07-21: a
+> sandboxed re-run here got `Tunnel connection failed: 403 Forbidden` on that
+> one URL, nothing else) turns its status from PASS to WARN and the summary
+> line from 19/1/1 to 18/2/1. **That is a reachability artifact of the runner,
+> not a corpus finding** — every other project's page-range and leak-check
+> result reproduced byte-for-byte identically in that same run. If you see this
+> specific WARN with this specific error text, don't treat it as a new leak;
+> re-run somewhere with unrestricted outbound access before concluding
+> anything changed.
+
 ## 4. Matching threshold (already settled — informational)
 
 ```bash
