@@ -99,11 +99,11 @@ class TestNoUnguardedRelativeToRepoRoot(unittest.TestCase):
     # so an edit that moves the code doesn't silently keep the allowlist valid
     # for the wrong line.
     ALLOWED = {
-        ("run_experiments.py", 656),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
-        ("run_experiments.py", 880),   # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 983),   # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1169),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
-        ("validate_threshold.py", 188),  # PILOT_PATH -> fixed constant, no CLI override
+        ("run_experiments.py", 724),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("run_experiments.py", 948),   # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1051),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1237),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("validate_threshold.py", 191),  # PILOT_PATH -> fixed constant, no CLI override
     }
 
     def test_no_bare_relative_to_repo_root_outside_a_show_function_or_the_allowlist(self):

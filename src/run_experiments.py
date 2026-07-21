@@ -102,6 +102,7 @@ import json
 import os
 import re
 import sys
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -134,6 +135,13 @@ PROMPT_FILES = {
 DEFAULT_MAX_OUTPUT_TOKENS = 4096
 DEFAULT_TEMPERATURE = 0.1  # within CLAUDE.md's required 0-0.2 range
 COST_GUARD_THRESHOLD_USD = 30.0
+
+# ADDED 2026-07-21: a 189-378-cell grid at real spend shouldn't need a human
+# to notice and manually re-run one flaky timeout/rate-limit/5xx - see
+# _is_transient_provider_error/_call_model_with_retry below. 3 total attempts
+# (1 initial + 2 retries), exponential backoff (1s, then 2s).
+RETRY_MAX_ATTEMPTS = 3
+RETRY_BASE_DELAY_SECONDS = 1.0
 
 # --- Pricing, USD per million tokens (input, output). See module docstring
 # for sourcing/confidence notes. Keyed by the exact model ID string so the
@@ -367,6 +375,66 @@ MODEL_DISPATCH = {
     "gpt": call_gpt,
     "opensource": call_opensource,
 }
+
+
+def _is_transient_provider_error(exc: BaseException) -> bool:
+    """True for network-level/rate-limit/server-side errors worth retrying;
+    False for anything retrying cannot fix (bad request, auth failure, a
+    missing .env key via _require_env's RuntimeError, an unconfigured
+    opensource path, etc.) - retrying one of those just wastes time and
+    money and delays surfacing a real setup problem across a 189-378-cell
+    grid.
+
+    Duck-typed rather than importing anthropic/openai here: both are
+    deferred imports inside call_claude/call_gpt/call_opensource
+    specifically so this module has no hard dependency on either SDK being
+    installed to do anything else, and both SDKs already follow a
+    consistent, documented naming convention for these exception classes
+    (RateLimitError, InternalServerError, APIConnectionError,
+    APITimeoutError, each carrying a numeric status_code except the latter
+    two, which represent a request that never got an HTTP response at all).
+    """
+    # 429 = rate limited, 5xx = the provider's own problem, not ours; every
+    # other 4xx (400 bad request, 401 auth, 403 permission, 404 not found)
+    # is deliberately NOT retried.
+    status_code = getattr(exc, "status_code", None)
+    if isinstance(status_code, int):
+        return status_code == 429 or status_code >= 500
+
+    name = type(exc).__name__
+    if any(marker in name for marker in
+           ("RateLimitError", "InternalServerError", "APIConnectionError", "APITimeoutError")):
+        return True
+    return isinstance(exc, (ConnectionError, TimeoutError))
+
+
+def _call_model_with_retry(model_label: str, prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
+    """Wraps MODEL_DISPATCH[model_label] with up to RETRY_MAX_ATTEMPTS
+    attempts and exponential backoff, but ONLY for errors
+    _is_transient_provider_error recognizes. A non-transient error (bad
+    request, auth failure, missing .env key, an unconfigured opensource
+    path) is re-raised immediately on its FIRST occurrence, at whatever
+    attempt it happens - there is no reason to wait and retry a call that
+    cannot succeed."""
+    fn = MODEL_DISPATCH[model_label]
+    last_exc: BaseException | None = None
+    for attempt in range(RETRY_MAX_ATTEMPTS):
+        try:
+            return fn(prompt, model_version, temperature, max_tokens)
+        except Exception as e:
+            if not _is_transient_provider_error(e):
+                raise
+            last_exc = e
+            if attempt < RETRY_MAX_ATTEMPTS - 1:
+                delay = RETRY_BASE_DELAY_SECONDS * (2 ** attempt)
+                print(
+                    f"[{model_label}] transient error on attempt {attempt + 1}/{RETRY_MAX_ATTEMPTS} "
+                    f"({type(e).__name__}: {e}) - retrying in {delay:.0f}s.",
+                    file=sys.stderr,
+                )
+                time.sleep(delay)
+    assert last_exc is not None  # loop above always assigns it before falling through
+    raise last_exc
 
 
 def resolve_model_version(model_label: str) -> str:
@@ -670,7 +738,7 @@ def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: 
 
     model_version = resolve_model_version(model_label)
     prompt = render_prompt(prompt_strategy, project_id)
-    raw_text, temperature_applied = MODEL_DISPATCH[model_label](prompt, model_version, temperature, max_tokens)
+    raw_text, temperature_applied = _call_model_with_retry(model_label, prompt, model_version, temperature, max_tokens)
     return _finalize_run(
         project_id, model_label, model_version, prompt_strategy, run_index,
         temperature, temperature_applied, raw_text,
