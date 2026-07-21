@@ -54,6 +54,17 @@ RAW_OUTPUTS_DIR = REPO_ROOT / "results" / "raw_outputs"
 GROUND_TRUTH_DIR = REPO_ROOT / "data" / "ground_truth"
 SCORED_DIR = REPO_ROOT / "results" / "scored"
 
+
+def _show(path: Path) -> str:
+    """Repo-relative display where possible, else the absolute path. An
+    --out-dir outside the repo is legal and must not crash after the real work
+    is already done - the same fix as build_rater_packets.py, make_figures.py,
+    and judge.py; this project has hit this exact crash class five times."""
+    try:
+        return str(Path(path).resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        return str(Path(path).resolve())
+
 # See "Known limitations" above. Override via CLI flags for any
 # tuning/sensitivity-analysis pass rather than editing these in place, so the
 # default stays visible in version control.
@@ -297,7 +308,7 @@ def main() -> None:
         n_gen = len(result["gen_risks"])
         flag = " [PARSE FAILED]" if result.get("parse_failed") else ""
         print(f"[match] {raw_path.name} -> {n_matches} matched (gen={n_gen}, gt={n_gt}){flag}")
-        print(f"  -> wrote {out_path.relative_to(REPO_ROOT)}")
+        print(f"  -> wrote {_show(out_path)}")
 
 
 if __name__ == "__main__":
