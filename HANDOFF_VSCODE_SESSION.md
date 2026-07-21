@@ -375,6 +375,51 @@ up something that looks like it needs a decision beyond "write code/tests/
 docs", stop and flag it rather than guessing - same as the Task E lesson
 about unrequested scope creep.
 
+**STATUS UPDATE (same day, a few hours later): F1, F2, F4, F5, F6 are DONE -
+I (Cowork session) took them myself since Madhu asked me to take "the next
+5." F3 was independently already done by you (see below) before I got to
+it - good timing, no duplicated work, I just verified and committed it.
+F7-F11 are still open and unclaimed - genuinely yours if you want them, no
+change to those five.**
+
+- F1: done, commit `8d971e4` - `tests/test_run_experiments_driver.py`, 12
+  tests. Found and fixed 2 real bugs in my own first draft before
+  committing (see the commit message): a missing env-var patch that
+  silently zeroed the cost estimate, and a partial-failure test that keyed
+  on the wrong thing since the stubbed `run_one` never writes a file.
+- F2: done, commit `c678294` - `tests/test_metrics_driver.py`, 9 tests.
+- F3: **you got here first** - verified your `build_rater_packets.py` fix
+  (the `stale_doc_flag`/`--min-uk-per-cell` default corrections + 8 new
+  `TestMainCLI` tests) and committed it, commit `301d675`.
+- F4: done, commit `7bd566e` - `_is_transient_provider_error` +
+  `_call_model_with_retry` in `run_experiments.py`, wired into `run_one()`;
+  `tests/test_retry.py`, 22 tests. Also had to fix
+  `tests/test_show_path_helper.py`'s static-sweep allowlist since adding
+  ~69 lines shifted 4 already-allowlisted line numbers.
+- F5: done, commit `56ce79e` - `analysis/gen_synthetic_cutoff_report.py` +
+  `tests/test_gen_synthetic_cutoff_report.py`, 6 tests. Reuses your
+  `gen_synthetic_scored.py` fixtures rather than duplicating them (imports,
+  doesn't modify - I could see you were mid-edit on that file at the time).
+- F6: done, commit `df63592` - `docs/model_cutoffs.md`, all 3 dates
+  confirmed via direct primary-source fetch (Anthropic's own models page,
+  OpenAI's own model spec page, Meta's own GitHub model card), not just
+  search-result snippets.
+
+Full suite after all 5: 397 tests, all green, in both interpreters if you
+want to re-verify on your end too - I'd genuinely welcome a second look
+given how much landed in one stretch.
+
+One more thing worth flagging: while I was working through these, you were
+concurrently touching `analysis/gen_synthetic_scored.py`,
+`analysis/threshold_validation_pairs.json`, `data/corpus_manifest.csv`,
+`docs/model_tier_recommendation.md`, `src/validate_threshold.py`,
+`tests/test_ground_truth_data.py`, `tests/test_gen_synthetic_scored.py`,
+and `tests/test_validate_threshold.py` - all still uncommitted as I write
+this. I left every one of those alone (didn't read deeply, didn't verify,
+didn't touch) specifically so I wouldn't clobber or race your in-flight
+work - same as always, I'll verify and commit those once they look settled,
+the same way I did for your `build_rater_packets.py` batch above.
+
 **F1 - close the real gap in `run_experiments.py`'s synchronous CLI.**
 Confirmed by grep just now: the only `rx.main()` calls anywhere in the test
 suite are the 4 in `test_batch.py`, and every one of them exercises a
@@ -478,9 +523,10 @@ assumptions) that are now inaccurate given `--batch`/`--batch-check`. Report
 findings; only fix a claim that's actually wrong, don't rewrite sections that
 are still accurate.
 
-All 11 are pre-approved - no need to check back before starting any of them.
-If you finish all 11 and want still more, ask before expanding scope
-further, same rule as always.
+All 11 were pre-approved - no need to check back before starting any of
+them. F1/F2/F3/F4/F5/F6 are now done (see the status update above); F7-F11
+remain open and unclaimed. If you finish those and want still more, ask
+before expanding scope further, same rule as always.
 
 ## Ground rules (same as always, from CLAUDE.md)
 
