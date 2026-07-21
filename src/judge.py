@@ -178,7 +178,30 @@ def _default_judge_caller():
     call_fn = re_mod.MODEL_DISPATCH[judge_model_label]
 
     def _call(prompt: str) -> str:
-        return call_fn(prompt, model_version, temperature=0.0, max_tokens=512)
+        # call_claude/call_gpt/call_opensource all return (text,
+        # temperature_applied) as of 2026-07-21 (see run_experiments.py's
+        # call_gpt docstring) - REGRESSION FOUND AND FIXED 2026-07-21: this
+        # function used to `return call_fn(...)` directly, which returned
+        # the raw 2-tuple instead of the response text. judge_one() would
+        # have passed that tuple straight into parse_judge_response(), whose
+        # first line is `raw_text.strip()` - an AttributeError on a tuple.
+        # Never exercised against a real API call (still no keys), so this
+        # would have surfaced the first time `judge.py --all` actually ran,
+        # not before. If judge_model_label="gpt" and the judge model rejects
+        # temperature=0.0 the way GPT-5.6 Terra's reasoning mode might (see
+        # call_gpt's docstring), that's a lower-stakes issue for Method C
+        # than for the main grid (Method C is supplementary, and its
+        # temperature isn't a CLAUDE.md-controlled variable) - so this is
+        # just logged, not threaded into the judge result record.
+        text, temperature_applied = call_fn(prompt, model_version, temperature=0.0, max_tokens=512)
+        if not temperature_applied:
+            print(
+                f"[judge] NOTE: judge model {model_version} rejected temperature=0.0 "
+                f"and ran at its own default instead (see call_gpt's docstring) - "
+                f"lower-stakes for Method C than the main grid, but noting it.",
+                file=sys.stderr,
+            )
+        return text
 
     return _call
 
