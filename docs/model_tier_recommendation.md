@@ -1,19 +1,35 @@
 # Model-tier options for the experiment grid — a sourced shortlist (Task D)
 
 **DECIDED 2026-07-20 (Madhu): the "Mid" triple** — Sonnet 5 (intro pricing)
-+ GPT-5.6 Terra + a cheap open model (see the full table below; ~$21 for 2
-runs with batch pricing, under CLAUDE.md's $30 guard, provided the run
-happens before the Sonnet 5 intro rate ends 2026-08-31). The exact,
-independently-verified API model ID strings for the Claude and GPT slots
-are now pre-filled in `.env.example` (`claude-sonnet-5` and
-`gpt-5.6-terra` — note OpenAI's bare `gpt-5.6` alias currently routes to
-Sol, not Terra, so the explicit string matters). **UPDATE 2026-07-21
-(Madhu): the open-source slot is now decided too** — Llama 3.3 70B Turbo via
-Together AI (`docs/opensource_slot_options.md` has the sourced provider
-comparison; `.env.example` has the exact `OPENSOURCE_BASE_URL` /
-`OPENSOURCE_MODEL_NAME` / pricing strings pre-filled, same pattern as
-Claude/GPT). All three model slots are now fully specified; only real API
-keys (all three) remain before a real run.
++ GPT-5.6 Terra + a cheap open model. The exact, independently-verified API
+model ID strings for the Claude and GPT slots are pre-filled in
+`.env.example` (`claude-sonnet-5` and `gpt-5.6-terra` — note OpenAI's bare
+`gpt-5.6` alias currently routes to Sol, not Terra, so the explicit string
+matters). **UPDATE 2026-07-21 (Madhu): the open-source slot is now decided
+too** — Llama 3.3 70B Turbo via Together AI (`docs/opensource_slot_options.md`
+has the sourced provider comparison; `.env.example` has the exact
+`OPENSOURCE_BASE_URL` / `OPENSOURCE_MODEL_NAME` / pricing strings pre-filled,
+same pattern as Claude/GPT). All three model slots are fully specified; only
+real API keys (all three) remain before a real run.
+
+**CORRECTION 2026-07-21 — this memo's own cost table below is now stale for
+the decided config, do not quote it.** The table's Mid-triple figures
+(~$19.44/run, ~$38.89 at 2 runs, ~$31.19 batched) priced the open-source slot
+against *DeepSeek Pro*, the option under consideration when this memo was
+written - the slot was subsequently decided as *Llama 3.3 70B Turbo*
+($1.04/$1.04, not DeepSeek Pro's assumed ~$1.34/run-implied rate) and the
+Together AI pricing itself was independently corrected once already (see
+`docs/opensource_slot_options.md`). The authoritative, independently-verified
+numbers for the config actually in `.env.example` (re-derived twice: once by
+hand, once by directly running `run_experiments.estimate_cost()` against the
+real 189-cell grid, both 2026-07-21) are **$21.05/run, $42.11 at 2 runs,
+$63.16 at 3 runs** - all of which exceed the $30 cost guard, a real
+methodology-vs-guard tension not resolved at the time this memo was written;
+see `results/preflight_report.md` and `docs/run_playbook.md` §5 for the full
+picture and the options. This memo's own batch-pricing figure ($31.19) does
+not reconcile with a real per-provider batch calculation either (~$24.02 for
+2 runs if Claude+GPT are batched and the open-source slot is not) - treat the
+batch figures here as illustrative of the *concept*, not as numbers to quote.
 
 **This was legwork, not a unilateral decision.** CLAUDE.md and the handoff
 were explicit that which paid model runs in each slot is Madhu's call; the
