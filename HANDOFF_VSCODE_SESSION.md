@@ -61,7 +61,9 @@ Progress since the last handoff on both, but neither is actually resolved yet:
    above is the re-run estimate with the right number. Small dollar amount,
    but flagging the correction itself: this is exactly why "independently
    verify, don't just relay" applies to my own numbers too, not only
-   VS Code's.
+   VS Code's. **UPDATE 2026-07-21 (later same day): the $30-guard-vs-"2-3
+   runs" conflict this implied is now RESOLVED, not just flagged** - see the
+   new dated section near the bottom of this file for `--batch`.
 1a. **NEW 2026-07-21: `call_gpt()` fixed for a GPT-5.6-Terra compatibility
     risk found by code review + web search, not yet real-call-verified.**
     Sourced evidence (checked 2026-07-20/21) says OpenAI's GPT-5 reasoning
@@ -287,6 +289,66 @@ against the actual figures pipeline (not part of your work - pre-existing in
 on a relative `--out-dir` (`p.relative_to(REPO_ROOT)` needs `p` resolved to
 absolute first) - the figures still wrote correctly before the crash, so this
 was cosmetic but real. Fixed with `.resolve()`, re-verified clean.
+
+## NEW 2026-07-21 (later the same day): pre-flight report landed, batch API added, cost guard conflict resolved
+
+Three more rounds of work since Task E, all verified independently before
+committing, same standard as always:
+
+**Landed `results/preflight_report.md`, `docs/run_playbook.md`,
+`tests/test_run_pipeline.py`, `tests/test_rater_packets.py`.** Re-derived
+every specific numeric claim myself rather than trusting the printed
+output - grid size (189 cells), cost at 1/2/3 runs ($21.05/$42.11/$63.16),
+per-model split, the corpus-manifest cross-check (22 processed files vs. 21
+included, the extra one being the set-aside outlier) - all matched exactly.
+Read both new test files in full (19 + a full blinding-integrity suite), ran
+them for real. The preflight report's central finding is real and was worth
+surfacing: CLAUDE.md asks for both "2-3 runs each" and "stop if cost exceeds
+$30", and at the decided model triple's actual pricing those two requirements
+cannot both hold (2 runs = $42.11, 3 runs = $63.16, both over $30). Good
+catch - thank you.
+
+**Took the guard-conflict finding to Madhu directly** (not picked silently):
+answer was "2 runs, AND build batch-API support first" rather than overriding
+the guard. So I implemented it: `src/run_experiments.py` now has `--batch`
+(submits claude+gpt cells to Anthropic's and OpenAI's batch APIs at their
+~50%-off rate, exits immediately without waiting) and `--batch-check`
+(polls and collects, safe to re-run any number of times - batch jobs can take
+up to 24h). opensource/Together AI is deliberately NOT batched - its
+batch-discount availability was never verified, so it still runs
+synchronously at list price in the same `--batch` invocation. Batched, 2 runs
+comes to ~$24.02, clearing the guard with no override needed. Real SDK method/
+field names (Anthropic `messages.batches.create/retrieve/results`; OpenAI
+`files.create` -> `batches.create` -> `batches.retrieve` -> `files.content`)
+were confirmed via `inspect.signature()` and direct source reads against the
+actually-installed SDK versions, but **the submit/check cycle has never been
+exercised against a live call** - no API key has ever existed for this
+project. `tests/test_batch.py` (27 tests) verifies request/response shapes
+against hand-built fakes matching those confirmed signatures and the full
+submit-then-collect cycle, including failure rows, but a mock is still a
+mock. If you're the one making the first real `--batch` call: read
+`results/batch_jobs.json` and the first few batch-collected
+`results/raw_outputs/*.json` records by hand before trusting anything
+downstream - same discipline as the `call_gpt` temperature-retry path.
+
+**Verified and landed 3 more test files** (`test_audit_corpus.py`,
+`test_extract_excision.py`, `test_figures.py` - 203 tests total now). Found
+one real thing worth knowing while re-running `audit_corpus.py` for real as
+part of that verification: `P-UK-FreeBreakfastClubs`'s Check 1 is a live
+re-fetch of the actual gov.uk publication (no PDF exists for it), and that
+one check is environment-dependent - it got a `403 Forbidden` on the proxy
+tunnel in this sandbox and reported WARN instead of PASS, while every other
+project's page-range and leak-check status reproduced byte-for-byte
+identically to what was already committed. Not a corpus problem, confirmed
+by directly hitting the same URL with a bare `urllib` call and getting the
+same 403. Documented in `run_playbook.md` Sec.3 so it isn't mistaken for a
+new leak if your environment (or a CI runner, later) hits the same thing -
+if you ever see this exact WARN with this exact error text, it's the network,
+not the corpus.
+
+Nothing needed from you on any of this right now - flagging it so the shared
+picture of "what's true about this repo" stays in sync between sessions,
+same reason as every other dated block in this file.
 
 ## Ground rules (same as always, from CLAUDE.md)
 
