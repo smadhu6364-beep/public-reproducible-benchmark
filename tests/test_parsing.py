@@ -125,5 +125,54 @@ class TestNoGroundTruthInJudgePrompt(unittest.TestCase):
         self.assertNotIn("ground-truth", prompt.lower())
 
 
+class TestDefaultJudgeCallerReturnsTextNotTuple(unittest.TestCase):
+    """Regression test for a real bug found 2026-07-21, same day it was
+    introduced: call_claude/call_gpt/call_opensource in run_experiments.py
+    were changed to return (text, temperature_applied) tuples (see
+    call_gpt's docstring), but judge.py's _default_judge_caller()._call()
+    still did `return call_fn(...)` directly - returning the raw tuple
+    instead of just the text. judge_one() would pass that tuple straight
+    into parse_judge_response(), whose first line is `raw_text.strip()` -
+    an AttributeError on a tuple. Never exercised against a real API call
+    (no keys have ever existed), so this would only have surfaced the first
+    time `judge.py --all` actually ran for real. Caught by re-reading
+    judge.py's own model-calling code as a direct follow-up to the
+    call_gpt fix, not by any test - this test exists so it can't recur
+    silently."""
+
+    def _patched_dispatch(self, fake_call):
+        from unittest import mock
+        import os
+
+        env_patch = mock.patch.dict(os.environ, {"CLAUDE_MODEL_NAME": "claude-sonnet-5", "JUDGE_MODEL_LABEL": "claude"})
+        dispatch_patch = mock.patch.object(rx, "MODEL_DISPATCH", {"claude": fake_call, "gpt": fake_call, "opensource": fake_call})
+        return env_patch, dispatch_patch
+
+    def test_caller_returns_plain_string(self):
+        def fake_call(prompt, model_version, temperature, max_tokens):
+            return '{"completeness": 4, "accuracy": 3, "actionability": 5, "overall": 4}', True
+
+        env_patch, dispatch_patch = self._patched_dispatch(fake_call)
+        with env_patch, dispatch_patch:
+            caller = judge._default_judge_caller()
+            result = caller("some prompt")
+        self.assertIsInstance(result, str)  # NOT a tuple - the actual regression
+        # And the returned string must be directly usable by parse_judge_response,
+        # exactly as judge_one() uses it.
+        scores, err = judge.parse_judge_response(result)
+        self.assertIsNone(err)
+        self.assertEqual(scores["accuracy"], 3)
+
+    def test_caller_handles_temperature_rejected_path(self):
+        def fake_call(prompt, model_version, temperature, max_tokens):
+            return '{"completeness": 2, "accuracy": 2, "actionability": 2, "overall": 2}', False
+
+        env_patch, dispatch_patch = self._patched_dispatch(fake_call)
+        with env_patch, dispatch_patch:
+            caller = judge._default_judge_caller()
+            result = caller("some prompt")  # must not raise, and must still be a plain string
+        self.assertIsInstance(result, str)
+
+
 if __name__ == "__main__":
     unittest.main()
