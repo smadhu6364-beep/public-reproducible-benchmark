@@ -445,12 +445,41 @@ def raw_output_path(project_id: str, model_label: str, prompt_strategy: str, run
     return RAW_OUTPUTS_DIR / f"{project_id}__{model_label}__{prompt_strategy}__run{run_index}.json"
 
 
+def _reserved_batch_run_indices(project_id: str, model_label: str, prompt_strategy: str) -> set[int]:
+    """run_indices already claimed by a batch job that has been submitted but
+    not yet collected. These have no file on disk yet - a batch can take up to
+    24h to finish - so a plain filesystem check in next_free_run_index() can't
+    see them. Without this, submitting --batch twice for the same cell before
+    running --batch-check would silently hand out run_index=1 to BOTH batches;
+    whichever finishes and gets collected second would hit _finalize_run's
+    FileExistsError guard and be silently discarded as "already_written" -
+    a real provider call, paid for, whose result is thrown away with no error
+    surfaced beyond a count. Reads BATCH_JOBS_LOG directly rather than via
+    _load_batch_jobs() to avoid a forward-reference ordering dependency."""
+    if not BATCH_JOBS_LOG.exists():
+        return set()
+    with open(BATCH_JOBS_LOG, encoding="utf-8") as f:
+        jobs = json.load(f)
+    reserved = set()
+    for job in jobs:
+        if job.get("status") == "collected":
+            continue
+        for u in job.get("units", []):
+            if (u["project_id"] == project_id and u["model_label"] == model_label
+                    and u["prompt_strategy"] == prompt_strategy):
+                reserved.add(u["run_index"])
+    return reserved
+
+
 def next_free_run_index(project_id: str, model_label: str, prompt_strategy: str) -> int:
     """Append-only: never overwrite an existing run's file. Finds the lowest
-    run_index >= 1 with no existing file, so repeated invocations accumulate
-    runs rather than clobbering prior ones."""
+    run_index >= 1 with no existing file AND not already reserved by a
+    pending (submitted, not yet collected) batch job, so repeated invocations
+    - synchronous or batch, in either order - accumulate runs rather than
+    colliding."""
+    reserved = _reserved_batch_run_indices(project_id, model_label, prompt_strategy)
     idx = 1
-    while raw_output_path(project_id, model_label, prompt_strategy, idx).exists():
+    while raw_output_path(project_id, model_label, prompt_strategy, idx).exists() or idx in reserved:
         idx += 1
     return idx
 
@@ -833,8 +862,19 @@ def submit_batch_grid(cells: list["GridCell"], runs_per_cell: int, temperature: 
         }
         jobs.append(job)
         submitted.append({"provider": provider, "model_label": label, "batch_id": batch_id, "n_requests": len(units)})
+        # Persist after EVERY successful submission, not once at the end of the
+        # loop. claude and gpt are submitted to two different providers in
+        # sequence (sorted(BATCH_ELIGIBLE_LABELS) = ["claude", "gpt"]); if the
+        # claude batch is accepted (money spent, job now running at Anthropic)
+        # and the gpt submission then raises (missing OPENAI_API_KEY, a
+        # transient network error, anything), a save-once-at-the-end design
+        # would lose the claude batch_id entirely - BATCH_JOBS_LOG would have
+        # no record of it, so --batch-check could never find or collect a job
+        # that is actually running and will actually be billed. Saving here
+        # means a partial failure still leaves every already-submitted batch
+        # recorded and collectible.
+        _save_batch_jobs(jobs)
 
-    _save_batch_jobs(jobs)
     return {
         "submitted": submitted,
         "batch_jobs_log": str(BATCH_JOBS_LOG.relative_to(REPO_ROOT)),

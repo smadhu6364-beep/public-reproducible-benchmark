@@ -22,7 +22,7 @@ core failure-mode contribution).
 - `data/` corpus: `raw/` (PDFs, gitignored), `processed/` (text), `ground_truth/` (JSON registers, complete for all 21 included projects - 18 World Bank PADs + 3 UK business cases), `risk_source_audit/` (excised pages, audit-only, gitignored), `corpus_manifest.csv`
 - `prompts/` prompt templates + `output_schema.json` / `ground_truth_schema.json`
 - `src/` `extract.py`, `run_experiments.py` (sync + batch), `match.py`, `metrics.py`, `judge.py`, `check_env.py`, `audit_corpus.py`, `build_rater_packets.py`, `validate_threshold.py` - all implemented; no full experiment run yet (needs `.env` API keys - all 3 model slots are decided and pre-filled in `.env.example`)
-- `tests/` 203 unit tests covering the deterministic logic in `extract.py` (incl. the page-excision partition), `audit_corpus.py` (leakage detection), `match.py`, `metrics.py`, response parsing (`run_experiments.py`/`judge.py`), batch-API request/response shapes and submit/collect (`run_experiments.py`), Method B sampling/blinding (`build_rater_packets.py`), the run driver's append-only + leakage + cost guards, and figure rendering - stubs the embedding model, the PDF reader, and all three model APIs (sync and batch), so it runs in a few seconds with no network/keys/spend. Run `python -m unittest discover -s tests`.
+- `tests/` 265 unit tests covering the deterministic logic in `extract.py` (incl. the page-excision partition), `audit_corpus.py` (leakage detection), `match.py`, `metrics.py` (incl. the opt-in pretraining-cutoff contamination check), response parsing and driver logic (`run_experiments.py`/`judge.py`), batch-API request/response shapes and submit/collect (`run_experiments.py`), Method B sampling/blinding (`build_rater_packets.py`), the run driver's append-only + leakage + cost guards, `check_env.py`'s connectivity checks, `.env.example`/code consistency, git-level leakage guards (gitignore), ground-truth schema conformance, and figure rendering - stubs the embedding model, the PDF reader, and all three model APIs (sync and batch), so it runs in a few seconds with no network/keys/spend. Run `python -m unittest discover -s tests`.
 - `results/` `raw_outputs/` (append-only) + `scored/` + `rater_packets/` (Method B sampling/blinding, packets pending real generations); `analysis/` figures (pipeline in progress); `paper/` (Overleaf-linked)
 
 ## Running the pipeline
@@ -34,7 +34,7 @@ Short version:
 python src/check_env.py                                          # verify .env keys before spending
 python src/audit_corpus.py                                       # leakage audit (after any re-extract)
 python src/run_experiments.py --estimate-only --runs 2 --batch   # projected cost, makes no API calls
-python src/run_experiments.py --runs 2 --batch --confirm-cost    # claude+gpt batched (~50% off); opensource sync
+python src/run_experiments.py --runs 2 --batch                   # claude+gpt batched (~50% off, ~$24, clears the guard); opensource sync
 python src/run_experiments.py --batch-check                      # poll + collect batch jobs (re-run until done)
 python src/match.py --all                                        # -> results/scored/*.match.json
 python src/metrics.py --scored-dir results/scored --out results/metrics.json
@@ -71,17 +71,23 @@ missing `matplotlib`, which fails only at the figures step.
 python -m unittest discover -s tests
 ```
 
-203 tests, a few seconds. No API keys, network, real embedding model, or spend
-needed (the sentence-transformer and all 3 model APIs, sync and batch, are
-stubbed). Coverage is concentrated where this project has actually had bugs, or
-where a silent failure would invalidate results: page-range parsing
-(`extract.py`), greedy semantic matching (`match.py`), recall/precision/category
-aggregation and the RQ-scoping variants (`metrics.py`), model/judge response
-parsing — including a permanent regression test for the bool-as-int scoring bug
-found and fixed 2026-07-20 — Method B sampling determinism and **blinding
-integrity** (`build_rater_packets.py`), the run driver's append-only,
-reproducibility, leakage, and cost guards, and the batch-API request/response
-shapes and submit/collect cycle against `_finalize_run` (`run_experiments.py`).
+265 tests, ~10s. No API keys, network, real embedding model, or spend needed
+(the sentence-transformer and all 3 model APIs, sync and batch, are stubbed).
+Coverage is concentrated where this project has actually had bugs, or where a
+silent failure would invalidate results: page-range parsing (`extract.py`),
+greedy semantic matching (`match.py`), recall/precision/category aggregation,
+the RQ-scoping variants, and the opt-in contamination check (`metrics.py`),
+model/judge response parsing and driver logic — including a permanent
+regression test for the bool-as-int scoring bug found and fixed 2026-07-20, and
+for a real `judge.py` tuple-unpacking regression found and fixed 2026-07-21 —
+Method B sampling determinism and **blinding integrity**
+(`build_rater_packets.py`), the run driver's append-only, reproducibility,
+leakage, and cost guards, the batch-API request/response shapes and
+submit/collect cycle against `_finalize_run` (`run_experiments.py`),
+`check_env.py`'s pre-spend connectivity checks, a static guard keeping
+`.env.example` in sync with what the code actually reads, a git-level check
+that leakage-sensitive paths stay gitignored (and non-sensitive corpus data
+doesn't), and ground-truth schema conformance across all 21 registers.
 
 See `CLAUDE.md` for frozen research questions and methodology rules, and
 `INCLUSION_CRITERIA.md` for corpus selection. Status: corpus (21/21) and

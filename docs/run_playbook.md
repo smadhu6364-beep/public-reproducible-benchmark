@@ -118,14 +118,20 @@ Two ways to run it. Both write identically-shaped records to
 ### 6a. Batched (the decided path — claude+gpt at ~50% off)
 
 ```bash
-python src/run_experiments.py --runs 2 --batch --confirm-cost   # ~$24, still needs --confirm-cost*
-python src/run_experiments.py --batch-check                     # poll + collect, any time, any # of times
+python src/run_experiments.py --runs 2 --batch   # ~$24.01, clears the $30 guard, no --confirm-cost needed
+python src/run_experiments.py --batch-check      # poll + collect, any time, any # of times
 ```
 
-*`--confirm-cost` is still required here even though ~$24 is under $30 — the
-guard check happens before `--batch`'s per-cell decisions are fully applied in
-this invocation; the estimate printed above the guard line is the real,
-batch-discounted number, so confirm after reading it, not blindly.
+**Correction 2026-07-21: `--confirm-cost` is *not* required for this command.**
+A previous version of this doc claimed it was. Verified directly: ran this exact
+command (real 189-cell grid, `--runs 2 --batch`, no `.env`/keys) and it printed
+the real batch-discounted estimate (`estimated_total_usd: 24.01`) and proceeded
+straight past the cost-guard check — it only stopped afterward on the expected
+`ANTHROPIC_API_KEY is not set` error, not on the guard. `main()`'s guard check
+(`estimate_cost(..., batch_labels=BATCH_ELIGIBLE_LABELS if args.batch else
+frozenset())`) already applies the batch discount before comparing to $30, so
+$24.01 correctly clears it without an override. `--confirm-cost` is harmless to
+add anyway (it's a no-op below the threshold) but isn't load-bearing here.
 
 - `--batch` submits claude+gpt cells to Anthropic's and OpenAI's batch APIs
   (~50% off list) and **exits immediately** — it does not wait. Batch jobs can

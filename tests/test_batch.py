@@ -198,6 +198,40 @@ class TestBuildBatchUnits(unittest.TestCase):
             units = rx.build_batch_units([rx.GridCell(REAL_PROJECTS[0], "claude", "zero_shot")], 2, "claude")
         self.assertEqual([u["run_index"] for u in units], [2, 3])
 
+    def test_does_not_collide_with_a_pending_uncollected_batch(self):
+        # Regression test. A batch job can sit "submitted" for up to 24h with
+        # no file on disk yet. Calling build_batch_units again for the same
+        # cell in that window - e.g. a second --batch invocation before
+        # --batch-check ever ran - must NOT hand out the same run_index the
+        # first (still-pending) batch already claimed, or the second batch's
+        # real, paid-for result would be silently discarded at collection time
+        # (FileExistsError -> counted as "already_written", not written).
+        with _SandboxedBatch() as sb:
+            cell = rx.GridCell(REAL_PROJECTS[0], "claude", "zero_shot")
+            first = rx.build_batch_units([cell], 2, "claude")   # would-be run_index 1, 2
+            rx._save_batch_jobs([{
+                "batch_id": "msgbatch_pending", "provider": "anthropic",
+                "model_label": "claude", "status": "submitted", "units": first,
+            }])
+            second = rx.build_batch_units([cell], 2, "claude")
+        self.assertEqual([u["run_index"] for u in first], [1, 2])
+        self.assertEqual([u["run_index"] for u in second], [3, 4])
+
+    def test_a_collected_batchs_indices_are_free_to_reuse_the_check(self):
+        # Once a job is marked "collected" its files DO exist on disk (that's
+        # what collection means), so the plain filesystem check already
+        # covers it - this pins that a "collected" job's units are not ALSO
+        # treated as still-reserved (which would permanently skip indices).
+        with _SandboxedBatch():
+            cell_key = (REAL_PROJECTS[0], "claude", "zero_shot")
+            rx._save_batch_jobs([{
+                "batch_id": "msgbatch_done", "provider": "anthropic", "status": "collected",
+                "units": [{"project_id": cell_key[0], "model_label": cell_key[1],
+                          "prompt_strategy": cell_key[2], "run_index": 1}],
+            }])
+            reserved = rx._reserved_batch_run_indices(*cell_key)
+        self.assertEqual(reserved, set())
+
 
 class TestBatchCustomId(unittest.TestCase):
     def test_format(self):
@@ -296,6 +330,36 @@ class TestSubmitBatchGrid(unittest.TestCase):
                 rx.submit_batch_grid(cells, 1, 0.1, 4096)
             jobs = json.loads((sb.root / "results" / "batch_jobs.json").read_text())
         self.assertEqual({j["batch_id"] for j in jobs}, {"msgbatch_fake001", "msgbatch_fake002"})
+
+    def test_claude_batch_survives_a_gpt_submission_failure(self):
+        # Regression test. sorted(BATCH_ELIGIBLE_LABELS) == ["claude", "gpt"],
+        # so claude submits first. If gpt's submission then raises (bad key,
+        # network blip, anything), a real Anthropic batch is now running and
+        # will be billed - it MUST already be in BATCH_JOBS_LOG, or
+        # --batch-check can never find it and the job is silently orphaned.
+        claude_batches = _FakeAnthropicBatchesAPI()
+        anthropic_mod, _ = _fake_anthropic_module(claude_batches)
+
+        class _ExplodingOpenAI:
+            def __init__(self, api_key=None):
+                raise RuntimeError("simulated: network blip on the gpt submission")
+
+        openai_mod = SimpleNamespace(OpenAI=_ExplodingOpenAI, BadRequestError=Exception)
+
+        with _SandboxedBatch() as sb:
+            cells = [rx.GridCell(REAL_PROJECTS[0], m, "zero_shot") for m in ("claude", "gpt")]
+            with mock.patch.dict(sys.modules, {"anthropic": anthropic_mod, "openai": openai_mod}):
+                with self.assertRaises(RuntimeError):
+                    rx.submit_batch_grid(cells, 1, 0.1, 4096)
+            log_path = sb.root / "results" / "batch_jobs.json"
+            self.assertTrue(log_path.exists(),
+                            "the already-submitted claude batch was never persisted")
+            jobs = json.loads(log_path.read_text())
+
+        self.assertEqual(len(jobs), 1, "the claude batch must survive the later gpt failure")
+        self.assertEqual(jobs[0]["provider"], "anthropic")
+        self.assertEqual(jobs[0]["batch_id"], "msgbatch_fake001")
+        self.assertEqual(jobs[0]["status"], "submitted")
 
 
 class TestCheckClaudeBatch(unittest.TestCase):
@@ -555,6 +619,36 @@ class TestBatchCLIFlags(unittest.TestCase):
 
         self.assertEqual(len(claude_batches.create_calls), 1)
         self.assertEqual(len(gpt_batches.create_calls), 1)
+
+    def test_full_grid_batched_two_runs_does_not_need_confirm_cost(self):
+        # Regression test for a documentation error caught 2026-07-21: an
+        # earlier version of docs/run_playbook.md claimed --confirm-cost was
+        # "still required" for the full-grid --batch --runs 2 invocation even
+        # though its own estimate (~$24.01) is under the $30 guard. Verified by
+        # hand against the real CLI first (no --confirm-cost, real 189-cell
+        # grid, no .env - it proceeded past the guard and only stopped on the
+        # expected missing-API-key error). This pins that behaviour so it can't
+        # silently regress: main()'s guard must apply the batch discount BEFORE
+        # comparing to COST_GUARD_THRESHOLD_USD, and must NOT sys.exit(1) when
+        # the discounted estimate clears $30, with no --confirm-cost passed.
+        claude_batches = _FakeAnthropicBatchesAPI()
+        anthropic_mod, _ = _fake_anthropic_module(claude_batches)
+        gpt_files, gpt_batches = _FakeOpenAIFilesAPI(), _FakeOpenAIBatchesAPI()
+        openai_mod = _fake_openai_module(gpt_files, gpt_batches)
+        opensource_provider = lambda *a, **k: (json.dumps({"project_id": REAL_PROJECTS[0], "risks": []}), True)
+
+        with _SandboxedBatch() as sb:
+            argv = ["run_experiments.py", "--runs", "2", "--batch"]   # deliberately NO --confirm-cost
+            with mock.patch.object(sys, "argv", argv), \
+                 mock.patch.dict(sys.modules, {"anthropic": anthropic_mod, "openai": openai_mod}), \
+                 mock.patch.dict(rx.MODEL_DISPATCH, {"opensource": opensource_provider}):
+                rx.main()   # must NOT raise SystemExit(1) (the cost-guard exit code)
+
+            jobs = json.loads((sb.root / "results" / "batch_jobs.json").read_text())
+
+        self.assertEqual(len(claude_batches.create_calls), 1)
+        self.assertEqual(len(gpt_batches.create_calls), 1)
+        self.assertEqual(len(jobs), 2)
 
 
 if __name__ == "__main__":
