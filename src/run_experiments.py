@@ -3,14 +3,19 @@
 IMPLEMENTED 2026-07-19 with explicit user approval, after the project's own
 10-document ground-truth validation gate was crossed (18/18 non-set-aside
 documents). NOTE: this file is code-complete but CANNOT be run for a real
-experiment yet - .env has no API keys configured as of this writing, and the
-exact model tier for each of the 3 models ("Claude", "GPT", "one open-source
-model") is still an open research-design decision, deliberately NOT picked
-here (see CLAUDE.md: "Never expand scope ... without asking first" - which
-model tier to benchmark is a scope decision, not an engineering one). Set
-CLAUDE_MODEL_NAME / GPT_MODEL_NAME / OPENSOURCE_MODEL_NAME in .env before
-running; the script raises a clear error rather than silently defaulting if
-any of these are unset at run time.
+experiment yet - .env has no real API keys configured as of this writing.
+The model-tier decision this note originally flagged as open (which tier of
+each of the 3 models to benchmark, a research-design/scope decision per
+CLAUDE.md, deliberately not picked in this file) is RESOLVED as of
+2026-07-21 (Madhu) - all three are decided and pre-filled in .env.example
+(Claude Sonnet 5 intro pricing, GPT-5.6 Terra, Llama 3.3 70B Turbo via
+Together AI; see docs/model_tier_recommendation.md and
+docs/opensource_slot_options.md). The only remaining blocker is real API
+keys themselves - copy .env.example to .env and fill in
+ANTHROPIC_API_KEY / OPENAI_API_KEY / OPENSOURCE_API_KEY; the script raises a
+clear error rather than silently defaulting if any of the *_MODEL_NAME vars
+are unset at run time, but that should no longer happen from a fresh
+.env.example copy.
 
 Responsibilities:
   - Load processed planning text per project (data/processed/) - NEVER reads
