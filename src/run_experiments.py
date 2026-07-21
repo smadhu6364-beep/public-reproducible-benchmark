@@ -32,6 +32,25 @@ Responsibilities:
     proceed without --confirm-cost if the estimate exceeds $30 (CLAUDE.md
     cost-guard rule). Use --estimate-only to print the estimate and exit
     without calling any API regardless of size.
+  - ADDED 2026-07-21 (Madhu's decision: build batch support, then run 2 at
+    the cheaper rate - "2-3 runs each" and "$30 guard" conflict at
+    synchronous pricing, see results/preflight_report.md §2): --batch
+    submits claude+gpt cells to Anthropic's and OpenAI's batch APIs (~50%
+    off list) instead of calling synchronously, then exits immediately
+    without waiting - batch jobs can take up to 24h. opensource/Together AI
+    stays on the synchronous path (its batch-discount availability was never
+    verified - see submit_batch_grid's docstring). Run --batch-check
+    afterward, any number of times, to poll and collect finished results,
+    written through the exact same _finalize_run() path a synchronous run
+    uses so match.py/metrics.py/judge.py/build_rater_packets.py need no
+    changes. Real SDK method/field names were confirmed against the actually
+    installed anthropic==0.117.0 / openai==1.109.1 packages, but the
+    submit/check cycle itself has only been exercised against mocked
+    clients (see tests/test_batch.py) - no OPENAI_API_KEY or ANTHROPIC batch
+    call has ever been made for this project. Verify results/batch_jobs.json
+    and the first few batch-sourced raw_outputs records by hand the first
+    time this runs for real, the same way call_gpt's temperature-retry path
+    is flagged for first-real-call verification.
 
 Known limitations, stated plainly:
   - Token estimation is a char-count heuristic (~4 chars/token), not a real
@@ -97,6 +116,14 @@ RAW_OUTPUTS_DIR = REPO_ROOT / "results" / "raw_outputs"
 RUN_CONFIG_LOG = REPO_ROOT / "results" / "run_config.jsonl"
 MANIFEST_PATH = REPO_ROOT / "data" / "corpus_manifest.csv"
 OUTPUT_SCHEMA_PATH = PROMPTS_DIR / "output_schema.json"
+BATCH_JOBS_LOG = REPO_ROOT / "results" / "batch_jobs.json"
+
+# Providers whose batch endpoints are used by --batch. Both offer a
+# documented ~50% discount vs. the synchronous price. opensource/Together AI
+# is deliberately excluded: its batch-discount availability was never
+# verified (see submit_batch_grid's docstring), so that slot always runs
+# synchronously at list price regardless of --batch.
+BATCH_ELIGIBLE_LABELS = frozenset({"claude", "gpt"})
 
 PROMPT_FILES = {
     "zero_shot": PROMPTS_DIR / "zero_shot.txt",
@@ -435,9 +462,24 @@ class GridCell:
     prompt_strategy: str
 
 
-def estimate_cost(cells: list[GridCell], runs_per_cell: int, max_output_tokens: int) -> dict:
+def estimate_cost(
+    cells: list[GridCell],
+    runs_per_cell: int,
+    max_output_tokens: int,
+    batch_labels: frozenset[str] = frozenset(),
+) -> dict:
     """Estimate total cost across the requested grid before any API calls are
-    made. See module docstring for the token-estimation and pricing caveats."""
+    made. See module docstring for the token-estimation and pricing caveats.
+
+    batch_labels: model labels priced at the batch-API discount (both
+    Anthropic and OpenAI publish ~50% off list for batch requests) instead of
+    the synchronous rate. Pass BATCH_ELIGIBLE_LABELS from --batch's estimate
+    so the cost guard evaluates against what will actually be spent, not the
+    synchronous price of a run that was never going to be synchronous.
+    Labels not in PRICING_PER_MTOK's per-provider discount (currently just
+    opensource, which is never in BATCH_ELIGIBLE_LABELS) are unaffected even
+    if passed here.
+    """
     by_model: dict[str, dict] = {}
     total_usd = 0.0
     missing_pricing = set()
@@ -468,6 +510,8 @@ def estimate_cost(cells: list[GridCell], runs_per_cell: int, max_output_tokens: 
             cell_cost = 0.0
         else:
             in_price, out_price = pricing
+            if cell.model_label in batch_labels:
+                in_price, out_price = in_price / 2, out_price / 2
             cell_cost = (input_tokens / 1_000_000) * in_price + (output_tokens / 1_000_000) * out_price
         cell_cost *= runs_per_cell
 
@@ -483,10 +527,16 @@ def estimate_cost(cells: list[GridCell], runs_per_cell: int, max_output_tokens: 
         "estimated_total_usd": round(total_usd, 2),
         "by_model": {k: {"n_cells": v["n_cells"], "estimated_usd": round(v["estimated_usd"], 2)} for k, v in by_model.items()},
         "models_missing_pricing_data": sorted(missing_pricing),
+        "batch_discounted_labels": sorted(batch_labels),
         "note": (
             "Token counts are a ~4 chars/token heuristic, not a real tokenizer, "
             "and output tokens assume the worst case (max_output_tokens) for "
             "every call. Treat this as an upper-bound-ish estimate, not exact."
+            + (
+                f" Labels {sorted(batch_labels)} are priced at the ~50%-off batch "
+                f"rate, not the synchronous rate - see BATCH_ELIGIBLE_LABELS."
+                if batch_labels else ""
+            )
         ),
     }
 
@@ -505,21 +555,37 @@ def log_run_config(**fields) -> None:
 # Driver
 # ---------------------------------------------------------------------------
 
-def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: int, temperature: float, max_tokens: int) -> Path:
+def _finalize_run(
+    project_id: str,
+    model_label: str,
+    model_version: str,
+    prompt_strategy: str,
+    run_index: int,
+    temperature: float,
+    temperature_applied: bool,
+    raw_text: str,
+) -> Path:
+    """Parse raw_text, write the raw-output record, and log to
+    run_config.jsonl - the part of run_one() that is identical regardless of
+    HOW raw_text was obtained. Factored out 2026-07-21 so the batch-API path
+    (check_and_collect_batches, which gets raw_text back from a provider's
+    batch results endpoint, possibly hours after submission) writes records
+    in the EXACT same shape as the synchronous path. Every downstream
+    consumer (match.py, metrics.py, judge.py, build_rater_packets.py) reads
+    results/raw_outputs/*.json and run_config.jsonl without caring which path
+    produced them - this function is the single place that shape is defined.
+    """
     out_path = raw_output_path(project_id, model_label, prompt_strategy, run_index)
     if out_path.exists():
         raise FileExistsError(
             f"{out_path} already exists - raw outputs are append-only and are "
             f"never overwritten. This should not happen if next_free_run_index "
-            f"was used; if calling run_one directly, pick an unused run_index."
+            f"(sync path) or build_batch_units (batch path) was used to assign "
+            f"run_index; if calling this directly, pick an unused run_index."
         )
 
-    model_version = resolve_model_version(model_label)
-    prompt = render_prompt(prompt_strategy, project_id)
-    run_date = datetime.now(timezone.utc).isoformat()
-
-    raw_text, temperature_applied = MODEL_DISPATCH[model_label](prompt, model_version, temperature, max_tokens)
     parsed, parse_error = parse_model_response(raw_text, prompt_strategy)
+    run_date = datetime.now(timezone.utc).isoformat()
 
     record = {
         "project_id": project_id,
@@ -531,7 +597,12 @@ def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: 
         # False only when the provider rejected the temperature parameter
         # outright and call_gpt() retried without it (see its docstring) -
         # in that case `temperature` above is the REQUESTED value, not what
-        # was actually used. Always True for claude/opensource today.
+        # was actually used. Always True for claude/opensource today. For a
+        # batch-sourced GPT record, True here means the batch row succeeded
+        # WITH temperature applied as requested - see _check_gpt_batch for
+        # what happens to a row that errors on temperature instead (it is
+        # recorded as a failure, not silently retried - batch rows cannot be
+        # interactively retried the way the synchronous call_gpt() can).
         "temperature_applied": temperature_applied,
         "run_date": run_date,
         "prompt_sha256": prompt_file_sha256(prompt_strategy),
@@ -557,6 +628,368 @@ def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: 
         parse_failed=parsed is None,
     )
     return out_path
+
+
+def run_one(project_id: str, model_label: str, prompt_strategy: str, run_index: int, temperature: float, max_tokens: int) -> Path:
+    out_path = raw_output_path(project_id, model_label, prompt_strategy, run_index)
+    if out_path.exists():
+        raise FileExistsError(
+            f"{out_path} already exists - raw outputs are append-only and are "
+            f"never overwritten. This should not happen if next_free_run_index "
+            f"was used; if calling run_one directly, pick an unused run_index."
+        )
+
+    model_version = resolve_model_version(model_label)
+    prompt = render_prompt(prompt_strategy, project_id)
+    raw_text, temperature_applied = MODEL_DISPATCH[model_label](prompt, model_version, temperature, max_tokens)
+    return _finalize_run(
+        project_id, model_label, model_version, prompt_strategy, run_index,
+        temperature, temperature_applied, raw_text,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Batch API support (Anthropic + OpenAI only - see BATCH_ELIGIBLE_LABELS).
+#
+# Both providers' batch endpoints are asynchronous (results can take up to
+# 24h), so this is a two-phase, non-blocking design rather than a drop-in
+# replacement for run_one(): `--batch` SUBMITS and exits immediately;
+# `--batch-check` (re-runnable any number of times) polls and, for anything
+# finished, retrieves and writes results through the same _finalize_run()
+# the synchronous path uses. Real SDK method/field names below were
+# confirmed 2026-07-21 via inspect.signature() and direct source reads
+# against the actually-installed anthropic==0.117.0 / openai==1.109.1 - not
+# yet exercised against a live call (no real API key has ever existed for
+# this project); verify against BATCH_JOBS_LOG and a real raw_outputs record
+# the first time a real submit/check cycle runs, the same way call_gpt's
+# temperature-retry path is flagged for first-real-call verification.
+# ---------------------------------------------------------------------------
+
+def build_batch_units(cells: list["GridCell"], runs_per_cell: int, label: str) -> list[dict]:
+    """Expand the cells matching `label` into one unit dict per individual
+    run, assigning run_index via next_free_run_index up front. Fixed at
+    submission time so the (project_id, model_label, prompt_strategy,
+    run_index) mapping stays correct no matter when results actually arrive -
+    unlike the synchronous path, a batch can take up to 24h and results can
+    arrive in any order, well after a fresh next_free_run_index() query would
+    give a different answer for the same combo."""
+    units = []
+    for cell in cells:
+        if cell.model_label != label:
+            continue
+        start = next_free_run_index(cell.project_id, cell.model_label, cell.prompt_strategy)
+        for i in range(runs_per_cell):
+            units.append({
+                "project_id": cell.project_id,
+                "model_label": cell.model_label,
+                "prompt_strategy": cell.prompt_strategy,
+                "run_index": start + i,
+            })
+    return units
+
+
+def _batch_custom_id(label: str, i: int) -> str:
+    """Short and sequential by construction - deliberately NOT encoding
+    project_id/prompt_strategy/run_index directly. Some real project_ids in
+    this corpus (e.g. 'P-MAR-SecondIdentityTargetingSocialProtection')
+    combined with a '__model__prompt__runN' suffix risk exceeding
+    Anthropic's custom_id length limit (~64 chars). The real mapping back to
+    (project_id, model_label, prompt_strategy, run_index) is carried in
+    BATCH_JOBS_LOG's per-job `units` list instead."""
+    return f"req-{label}-{i:05d}"
+
+
+def _load_batch_jobs() -> list[dict]:
+    if not BATCH_JOBS_LOG.exists():
+        return []
+    with open(BATCH_JOBS_LOG, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _save_batch_jobs(jobs: list[dict]) -> None:
+    BATCH_JOBS_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with open(BATCH_JOBS_LOG, "w", encoding="utf-8") as f:
+        json.dump(jobs, f, indent=2)
+
+
+def submit_claude_batch(units: list[dict], model_version: str, temperature: float, max_tokens: int) -> str:
+    """units: from build_batch_units(..., label='claude'), each already
+    carrying a custom_id (set by the caller, submit_batch_grid). Returns the
+    Anthropic batch id.
+
+    Request shape confirmed against anthropic.types.messages.batch_create_params:
+    Request = {"custom_id": str, "params": <same shape as messages.create()>}.
+    """
+    import anthropic
+
+    api_key = _require_env("ANTHROPIC_API_KEY")
+    client = anthropic.Anthropic(api_key=api_key)
+    requests = []
+    for u in units:
+        prompt = render_prompt(u["prompt_strategy"], u["project_id"])
+        requests.append({
+            "custom_id": u["custom_id"],
+            "params": {
+                "model": model_version,
+                "max_tokens": max_tokens,
+                "temperature": temperature,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+        })
+    batch = client.messages.batches.create(requests=requests)
+    return batch.id
+
+
+def submit_gpt_batch(units: list[dict], model_version: str, temperature: float, max_tokens: int) -> str:
+    """units: from build_batch_units(..., label='gpt'), each already carrying
+    a custom_id. Returns the OpenAI batch id.
+
+    Uses max_completion_tokens (not max_tokens) - same reasoning-model
+    finding as the synchronous call_gpt(), see its docstring. UNLIKE
+    call_gpt(), there is deliberately NO defensive temperature retry here: a
+    batch request the API rejects for the same "reasoning models reject
+    temperature" reason fails that one JSONL line (surfaced in
+    _check_gpt_batch as an errored row with a diagnostic hint pointing back
+    here), not a live retry - batch requests are submit-once, and
+    resubmitting a fresh one-line batch per failed row isn't implemented. If
+    EVERY gpt row in a real batch comes back errored mentioning temperature,
+    that is real evidence the sync-path constraint applies to the batch
+    endpoint too and this function needs the same unconditional omission -
+    not knowable without a real batch attempt (no OPENAI_API_KEY has ever
+    existed for this project).
+    """
+    import openai
+
+    api_key = _require_env("OPENAI_API_KEY")
+    client = openai.OpenAI(api_key=api_key)
+    lines = []
+    for u in units:
+        prompt = render_prompt(u["prompt_strategy"], u["project_id"])
+        lines.append(json.dumps({
+            "custom_id": u["custom_id"],
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {
+                "model": model_version,
+                "max_completion_tokens": max_tokens,
+                "temperature": temperature,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+        }))
+    jsonl_bytes = ("\n".join(lines) + "\n").encode("utf-8")
+    uploaded = client.files.create(file=("batch_input.jsonl", jsonl_bytes), purpose="batch")
+    batch = client.batches.create(
+        input_file_id=uploaded.id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h",
+    )
+    return batch.id
+
+
+def submit_batch_grid(cells: list["GridCell"], runs_per_cell: int, temperature: float, max_tokens: int) -> dict:
+    """Submits one Anthropic batch (if any claude cells) and/or one OpenAI
+    batch (if any gpt cells) covering every requested run for those two
+    providers only - see BATCH_ELIGIBLE_LABELS. Does NOT touch opensource
+    cells; the caller (main()) still runs those synchronously via the normal
+    run_one() loop, same as always.
+
+    Appends one job entry per submitted batch to BATCH_JOBS_LOG, each
+    carrying its own `units` list so check_and_collect_batches() can map
+    results back to (project_id, model_label, prompt_strategy, run_index)
+    without recomputing anything. Does NOT wait for anything to finish -
+    batch jobs can take up to 24h; call check_and_collect_batches()
+    (--batch-check) later, any number of times, to poll and collect.
+    """
+    jobs = _load_batch_jobs()
+    submitted = []
+
+    for label in sorted(BATCH_ELIGIBLE_LABELS):
+        units = build_batch_units(cells, runs_per_cell, label)
+        if not units:
+            continue
+        model_version = resolve_model_version(label)
+        for i, u in enumerate(units):
+            u["custom_id"] = _batch_custom_id(label, i)
+
+        if label == "claude":
+            batch_id = submit_claude_batch(units, model_version, temperature, max_tokens)
+            provider = "anthropic"
+        elif label == "gpt":
+            batch_id = submit_gpt_batch(units, model_version, temperature, max_tokens)
+            provider = "openai"
+        else:
+            raise AssertionError(f"BATCH_ELIGIBLE_LABELS contains unhandled label {label!r}")
+
+        job = {
+            "batch_id": batch_id,
+            "provider": provider,
+            "model_label": label,
+            "model_version": model_version,
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+            "submitted_at": datetime.now(timezone.utc).isoformat(),
+            "status": "submitted",
+            "units": units,
+        }
+        jobs.append(job)
+        submitted.append({"provider": provider, "model_label": label, "batch_id": batch_id, "n_requests": len(units)})
+
+    _save_batch_jobs(jobs)
+    return {
+        "submitted": submitted,
+        "batch_jobs_log": str(BATCH_JOBS_LOG.relative_to(REPO_ROOT)),
+        "note": (
+            "Submitted, not completed. Batch jobs can take up to 24h (Anthropic "
+            "often finishes faster; OpenAI's completion_window is fixed at 24h). "
+            "Run `python src/run_experiments.py --batch-check` later - any "
+            "number of times - to poll and collect finished results; "
+            "already-collected jobs are skipped on repeat calls."
+        ),
+    }
+
+
+def _check_claude_batch(batch_id: str) -> tuple[str, list[tuple[str, Optional[str], bool]]]:
+    """Returns (processing_status, results). results is only populated once
+    processing_status == 'ended'; each item is
+    (custom_id, response_text_or_None, ok)."""
+    import anthropic
+
+    api_key = _require_env("ANTHROPIC_API_KEY")
+    client = anthropic.Anthropic(api_key=api_key)
+    batch = client.messages.batches.retrieve(batch_id)
+    if batch.processing_status != "ended":
+        return batch.processing_status, []
+
+    results = []
+    for item in client.messages.batches.results(batch_id):
+        if item.result.type == "succeeded":
+            text = "".join(
+                block.text for block in item.result.message.content
+                if getattr(block, "type", None) == "text"
+            )
+            results.append((item.custom_id, text, True))
+        else:
+            detail = getattr(item.result, "error", None)
+            print(
+                f"[batch] claude {item.custom_id}: {item.result.type}"
+                + (f" - {detail}" if detail is not None else ""),
+                file=sys.stderr,
+            )
+            results.append((item.custom_id, None, False))
+    return "ended", results
+
+
+def _check_gpt_batch(batch_id: str) -> tuple[str, list[tuple[str, Optional[str], bool]]]:
+    """Returns (status, results), same shape as _check_claude_batch. results
+    is only populated once status == 'completed'."""
+    import openai
+
+    api_key = _require_env("OPENAI_API_KEY")
+    client = openai.OpenAI(api_key=api_key)
+    batch = client.batches.retrieve(batch_id)
+    if batch.status != "completed":
+        return batch.status, []
+
+    results = []
+    if batch.output_file_id:
+        content = client.files.content(batch.output_file_id).text
+        for line in content.splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            custom_id = row["custom_id"]
+            resp = row.get("response")
+            if resp and resp.get("status_code") == 200:
+                text = resp["body"]["choices"][0]["message"]["content"] or ""
+                results.append((custom_id, text, True))
+            else:
+                err = row.get("error") or (resp or {}).get("body", {}).get("error")
+                hint = ""
+                if err and "temperature" in json.dumps(err).lower():
+                    hint = (" (mentions temperature - may be the same reasoning-model "
+                            "rejection call_gpt() handles in the sync path; see "
+                            "submit_gpt_batch's docstring)")
+                print(f"[batch] gpt {custom_id}: FAILED - {err}{hint}", file=sys.stderr)
+                results.append((custom_id, None, False))
+    if batch.error_file_id:
+        # Rows OpenAI rejected before attempting (malformed request, etc.) -
+        # surfaced for visibility. Not folded into `results` above since a
+        # clean custom_id -> reason mapping from this file isn't guaranteed;
+        # inspecting it directly is the reliable path if this ever fires.
+        print(
+            f"[batch] gpt batch {batch_id} has an error_file_id "
+            f"({batch.error_file_id}) - some requests were rejected before "
+            f"processing. Inspect via client.files.content({batch.error_file_id!r}) "
+            f"or the OpenAI dashboard.",
+            file=sys.stderr,
+        )
+    return "completed", results
+
+
+def check_and_collect_batches() -> dict:
+    """Reads BATCH_JOBS_LOG, checks every not-yet-collected job's status, and
+    for any that finished, retrieves results and writes them through
+    _finalize_run - the exact same record shape run_one() produces, so
+    match.py/metrics.py/judge.py/build_rater_packets.py need no changes and
+    cannot tell a batch-sourced run from a synchronous one. Safe to call any
+    number of times: already-collected jobs are skipped, and a row already
+    written by an earlier partial collection is treated as done (not a new
+    failure) via the same FileExistsError catch _finalize_run always raises
+    on a re-write attempt."""
+    jobs = _load_batch_jobs()
+    if not jobs:
+        return {
+            "jobs": [],
+            "note": f"{BATCH_JOBS_LOG.relative_to(REPO_ROOT)} has no recorded jobs - "
+                    f"nothing to check. Submit with --batch first.",
+        }
+
+    report = []
+    for job in jobs:
+        if job["status"] == "collected":
+            report.append({"batch_id": job["batch_id"], "provider": job["provider"], "status": "already collected"})
+            continue
+
+        if job["provider"] == "anthropic":
+            status, results = _check_claude_batch(job["batch_id"])
+        elif job["provider"] == "openai":
+            status, results = _check_gpt_batch(job["batch_id"])
+        else:
+            raise AssertionError(f"unknown provider {job['provider']!r} in {BATCH_JOBS_LOG}")
+
+        if status not in ("ended", "completed"):
+            report.append({"batch_id": job["batch_id"], "provider": job["provider"], "status": status})
+            continue
+
+        units_by_custom_id = {u["custom_id"]: u for u in job["units"]}
+        n_ok, n_failed, n_already_written = 0, 0, 0
+        for custom_id, text, ok in results:
+            u = units_by_custom_id.get(custom_id)
+            if u is None:
+                print(f"[batch] WARNING: {job['provider']} batch {job['batch_id']} returned "
+                      f"unrecognized custom_id {custom_id!r} - skipped", file=sys.stderr)
+                continue
+            if not ok:
+                n_failed += 1
+                continue
+            try:
+                _finalize_run(
+                    u["project_id"], u["model_label"], job["model_version"], u["prompt_strategy"],
+                    u["run_index"], job["temperature"], True, text,
+                )
+                n_ok += 1
+            except FileExistsError:
+                n_already_written += 1
+
+        job["status"] = "collected"
+        job["collected_at"] = datetime.now(timezone.utc).isoformat()
+        report.append({
+            "batch_id": job["batch_id"], "provider": job["provider"], "status": "collected",
+            "n_ok": n_ok, "n_failed": n_failed, "n_already_written": n_already_written,
+        })
+
+    _save_batch_jobs(jobs)
+    return {"jobs": report}
 
 
 def all_project_ids() -> list[str]:
@@ -590,7 +1023,36 @@ def main() -> None:
     parser.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_OUTPUT_TOKENS)
     parser.add_argument("--estimate-only", action="store_true", help="Print the cost estimate and exit without calling any API")
     parser.add_argument("--confirm-cost", action="store_true", help=f"Required to proceed if the estimate exceeds ${COST_GUARD_THRESHOLD_USD:.0f}")
+    parser.add_argument(
+        "--batch", action="store_true",
+        help=(
+            f"Submit claude+gpt cells as batch jobs (~50%% off list price) instead of "
+            f"calling synchronously; opensource cells still run synchronously (see "
+            f"BATCH_ELIGIBLE_LABELS). Submits and exits immediately without waiting - "
+            f"batch jobs can take up to 24h. Use --batch-check afterward to collect "
+            f"results. The cost estimate/guard below reflects the batch discount when "
+            f"this flag is set. Mutually exclusive with --batch-check."
+        ),
+    )
+    parser.add_argument(
+        "--batch-check", action="store_true",
+        help=(
+            f"Poll every pending job in results/batch_jobs.json and collect any that "
+            f"finished, writing results through the same code path a synchronous run "
+            f"uses. Ignores --project/--model/--prompt/--runs/--temperature/--max-tokens "
+            f"entirely (each job already recorded what it needs). Safe to re-run any "
+            f"number of times."
+        ),
+    )
     args = parser.parse_args()
+
+    if args.batch and args.batch_check:
+        parser.error("--batch and --batch-check are mutually exclusive: submit with --batch, then check separately with --batch-check.")
+
+    if args.batch_check:
+        report = check_and_collect_batches()
+        print(json.dumps(report, indent=2))
+        return
 
     if not (0.0 <= args.temperature <= 0.2):
         parser.error(f"--temperature must be in [0, 0.2] per CLAUDE.md; got {args.temperature}")
@@ -608,7 +1070,11 @@ def main() -> None:
         for pr in prompts
     ]
 
-    estimate = estimate_cost(cells, args.runs, args.max_tokens)
+    # Cost estimate must reflect what will ACTUALLY be spent: batch-eligible
+    # labels at the discounted rate when --batch is set, so the guard isn't
+    # comparing --confirm-cost against a synchronous price nobody is paying.
+    batch_labels = BATCH_ELIGIBLE_LABELS if args.batch else frozenset()
+    estimate = estimate_cost(cells, args.runs, args.max_tokens, batch_labels=batch_labels)
     print(json.dumps(estimate, indent=2))
 
     if estimate["models_missing_pricing_data"]:
@@ -630,6 +1096,28 @@ def main() -> None:
             file=sys.stderr,
         )
         sys.exit(1)
+
+    if args.batch:
+        batch_cells = [c for c in cells if c.model_label in BATCH_ELIGIBLE_LABELS]
+        sync_cells = [c for c in cells if c.model_label not in BATCH_ELIGIBLE_LABELS]
+
+        if batch_cells:
+            submission = submit_batch_grid(batch_cells, args.runs, args.temperature, args.max_tokens)
+            print(json.dumps(submission, indent=2))
+            for s in submission["submitted"]:
+                print(f"[batch] submitted {s['provider']} batch {s['batch_id']} "
+                      f"({s['n_requests']} requests, model={s['model_label']})")
+        else:
+            print("[batch] no claude/gpt cells in this selection - nothing to submit as a batch.", file=sys.stderr)
+
+        if not sync_cells:
+            print("[batch] no opensource cells in this selection - nothing left to run "
+                  "synchronously. Use --batch-check later to collect the submitted batch(es).")
+            return
+
+        # Non-batch-eligible cells (opensource today) still run synchronously,
+        # exactly like the non-batch path, just restricted to this subset.
+        cells = sync_cells
 
     n_failed = 0
     n_ok = 0
