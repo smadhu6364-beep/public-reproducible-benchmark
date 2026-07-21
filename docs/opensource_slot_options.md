@@ -54,11 +54,11 @@ current ID on that provider's `/models` page (or `GET /models` endpoint) at
 the moment you set `.env`**, and pin it verbatim in the paper for
 reproducibility.
 
-## Paste-ready options (verified 2026-07-20)
+## Paste-ready options (verified 2026-07-20; Together AI row corrected 2026-07-21)
 
 | Provider | `OPENSOURCE_BASE_URL` | Example strong open model → `OPENSOURCE_MODEL_NAME` | ~Price /1M | ~$/run (63 combos)\* |
 |---|---|---|---|---|
-| **Together AI** (recommended) | `https://api.together.xyz/v1` | Llama 3.3 70B → `meta-llama/Llama-3.3-70B-Instruct-Turbo` | ~$0.88 (flat) | ~$2.50 |
+| **Together AI** (recommended) | `https://api.together.xyz/v1` | Llama 3.3 70B → `meta-llama/Llama-3.3-70B-Instruct-Turbo` | **$1.04 (flat)** - corrected 2026-07-21, was ~$0.88 in the 2026-07-20 draft; independently re-verified directly against together.ai/pricing and together.ai/models/llama-3-3-70b | **~$2.96** |
 | Together AI | `https://api.together.xyz/v1` | DeepSeek-V3 → `deepseek-ai/DeepSeek-V3` (V3.1 also hosted) | ~$1.25 (flat) | ~$3.56 |
 | Together AI | `https://api.together.xyz/v1` | Qwen 72B → `Qwen/Qwen2-72B-Instruct` (check for a current Qwen3.x turbo ID) | ~$0.90 | ~$2.56 |
 | **DeepInfra** | `https://api.deepinfra.com/v1/openai` | Llama 3.3 70B → `meta-llama/Llama-3.3-70B-Instruct` | ~$0.59/$0.79 | ~$1.73 |
@@ -83,7 +83,7 @@ as the Task D memo said, so choose it on scientific grounds, not price.
   must still be runnable/citable months later.
 - **Drop-in:** OpenAI-compatible, so it uses `call_opensource()`'s existing
   base-URL path with zero code change — identical to the GPT slot mechanically.
-- Cost is trivial (~$2.50/run, ~$5/2-run grid share), so it doesn't move the
+- Cost is trivial (~$2.96/run, ~$5.92/2-run grid share), so it doesn't move the
   Mid-triple's total against the $30 guard.
 
 **Stronger-but-less-canonical alternative:** Together AI + **DeepSeek-V3**

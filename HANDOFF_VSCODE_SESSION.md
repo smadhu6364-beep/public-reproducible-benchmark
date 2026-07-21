@@ -48,11 +48,20 @@ Progress since the last handoff on both, but neither is actually resolved yet:
    land. **Live-verified the full grid's cost estimate end-to-end** with all
    three slots configured (fake placeholder keys, `--estimate-only` never
    calls a real API): 189 cells, `models_missing_pricing_data` empty (all
-   three price correctly now), **$41.20 for 2 runs** - over the $30 guard,
+   three price correctly now), **$42.11 for 2 runs** - over the $30 guard,
    so a real run will need `--confirm-cost` (consistent with Task D's
    memo's own ~$38.89 non-batch figure, small difference explained by Llama
    3.3 70B Turbo's exact pricing vs. the memo's original DeepSeek-Pro
-   assumption for that slot).
+   assumption for that slot). **Correction 2026-07-21:** this figure was
+   first reported as $41.20 using `opensource_slot_options.md`'s original
+   ~$0.88/MTok Together AI price; independently re-verifying that specific
+   number directly against together.ai/pricing found the real current rate
+   is $1.04/MTok (~18% higher, likely a stale figure in the original
+   research) - `.env.example` and the memo are both corrected, and $42.11
+   above is the re-run estimate with the right number. Small dollar amount,
+   but flagging the correction itself: this is exactly why "independently
+   verify, don't just relay" applies to my own numbers too, not only
+   VS Code's.
 1a. **NEW 2026-07-21: `call_gpt()` fixed for a GPT-5.6-Terra compatibility
     risk found by code review + web search, not yet real-call-verified.**
     Sourced evidence (checked 2026-07-20/21) says OpenAI's GPT-5 reasoning
