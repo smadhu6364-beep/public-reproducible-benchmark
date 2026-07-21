@@ -184,7 +184,12 @@ def main() -> int:
     args = ap.parse_args()
 
     metrics = json.loads(Path(args.metrics).read_text(encoding="utf-8"))
-    out_dir = Path(args.out_dir)
+    # .resolve() so the final p.relative_to(REPO_ROOT) below works regardless
+    # of whether --out-dir was passed as relative or absolute - found
+    # 2026-07-21 by re-running this script with a relative --out-dir, which
+    # crashed on that print AFTER the figures were already correctly written
+    # (cosmetic but real: a relative override is a very normal thing to pass).
+    out_dir = Path(args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
     paths = [

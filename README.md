@@ -20,7 +20,8 @@ core failure-mode contribution).
 ## Layout
 - `data/` corpus: `raw/` (PDFs, gitignored), `processed/` (text), `ground_truth/` (JSON registers, complete for all 21 included projects - 18 World Bank PADs + 3 UK business cases), `risk_source_audit/` (excised pages, audit-only, gitignored), `corpus_manifest.csv`
 - `prompts/` prompt templates + `output_schema.json` / `ground_truth_schema.json`
-- `src/` `extract.py`, `run_experiments.py`, `match.py`, `metrics.py`, `judge.py` - all implemented; no full experiment run yet (needs `.env` API keys + a model-tier decision - see `.env.example`)
+- `src/` `extract.py`, `run_experiments.py`, `match.py`, `metrics.py`, `judge.py`, `check_env.py`, `audit_corpus.py`, `build_rater_packets.py`, `validate_threshold.py` - all implemented; no full experiment run yet (needs `.env` API keys - all 3 model slots are decided and pre-filled in `.env.example`)
+- `tests/` unit tests for the pure/deterministic logic in `extract.py`, `match.py`, `metrics.py`, and response parsing (`run_experiments.py`/`judge.py`) - stubs the embedding model and API calls, so it runs fast with no network/keys. Run `python3 -m unittest discover -s tests`.
 - `results/` `raw_outputs/` (append-only) + `scored/` + `rater_packets/` (Method B sampling/blinding, packets pending real generations); `analysis/` figures (pipeline in progress); `paper/` (Overleaf-linked)
 
 ## Running the pipeline
@@ -40,9 +41,22 @@ pip install -r requirements.txt
 cp .env.example .env   # then fill in API keys
 ```
 
+## Running tests
+```
+python3 -m unittest discover -s tests
+```
+Unit tests only - no API keys, network, or real embedding model needed
+(the sentence-transformer and the 3 model APIs are stubbed). Covers the
+pure logic most prone to silent bugs in this project's own history:
+page-range parsing (`extract.py`), greedy semantic matching (`match.py`),
+recall/precision/category aggregation (`metrics.py`), and model/judge
+response parsing (`run_experiments.py`/`judge.py`) - including a permanent
+regression test for the bool-as-int scoring bug found and fixed 2026-07-20.
+
 See `CLAUDE.md` for frozen research questions and methodology rules, and
 `INCLUSION_CRITERIA.md` for corpus selection. Status: corpus (21/21) and
-pipeline are complete; Method A's matching threshold is validated against a
-hand-labeled set; Method B's sampling/blinding is built. Remaining before a
-full run: a model-tier decision + `.env` API keys, and human-rater
-recruitment for Method B (target: full experiment run by end of August 2026).
+pipeline are complete and unit-tested; Method A's matching threshold is
+validated against a hand-labeled set; Method B's sampling/blinding is built;
+all 3 model slots are decided (`.env.example`). Remaining before a full run:
+real `.env` API keys, and human-rater recruitment for Method B (target:
+full experiment run by end of August 2026).

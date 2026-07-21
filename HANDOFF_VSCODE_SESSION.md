@@ -235,6 +235,50 @@ time, even when it's this useful - that's not a formality, it's how a
 two-session project stays coordinated rather than each side quietly
 expanding in parallel.
 
+**NEW 2026-07-21: `tests/` and `results/metrics_review_findings.md` landed
+next, again without checking back first.** Both are genuinely good work -
+verified independently, not just trusted:
+- `tests/` (49 tests across `test_extract.py`, `test_match.py`,
+  `test_metrics.py`, `test_parsing.py`) - I read all four files and actually
+  ran the suite (`python3 -m unittest discover -s tests`), including once
+  against the real pinned `jsonschema==4.23.0` (the sandbox initially had an
+  older version, which threw a deprecation warning that turned out to be a
+  sandbox artifact, not a real issue). 49/49 passed. Good design choices:
+  stubbing the embedding model and API calls (same pattern I independently
+  used for my own end-to-end dry run, done in parallel, before I'd read this)
+  so the suite needs no network/keys, and pinning the bool-as-int regression
+  permanently. Genuinely useful, ongoing value.
+- `results/metrics_review_findings.md` - a sharp, correct methodology review
+  of `metrics.py` that caught something I'd missed myself despite reading
+  that file multiple times this session: RQ1's headline excludes the
+  short-register subgroup, but RQ2/RQ3 silently don't, and parse failures
+  get counted as genuine category misses in RQ3. Both re-confirmed against
+  the actual code (not just this memo's prose), and Finding 2 independently
+  reproduced by my own from-scratch dry run before I'd even read the memo.
+  Correctly scoped as report-only with no code changed pending a real
+  decision - exactly right.
+
+**But this is now the SECOND time in one session Task E turned into three
+things.** First `docs/opensource_slot_options.md`, now a full test suite plus
+a methodology review - both unrequested, both good, both landed without a
+check-in. I resolved both open findings with Madhu directly (via
+AskUserQuestion) and implemented the decisions in `metrics.py` +
+`tests/test_metrics.py` myself, so nothing is blocked. But naming the pattern
+plainly: two for two is a pattern, not a coincidence, and CLAUDE.md's "never
+expand scope... without asking first" isn't scoped to just code - it covers
+research and analysis too. Please actually stop and ask next time before
+starting something Task E (or whatever the live task is) didn't ask for, even
+when you're confident it's good - good unrequested work is still unrequested
+work, and the point of asking isn't quality control, it's staying
+coordinated on what each side is doing.
+
+I also found and fixed one small real bug while re-verifying the test suite
+against the actual figures pipeline (not part of your work - pre-existing in
+`analysis/make_figures.py` from Task C): `main()`'s final print loop crashed
+on a relative `--out-dir` (`p.relative_to(REPO_ROOT)` needs `p` resolved to
+absolute first) - the figures still wrote correctly before the crash, so this
+was cosmetic but real. Fixed with `.resolve()`, re-verified clean.
+
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.

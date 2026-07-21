@@ -20,6 +20,17 @@ This module computes numbers from whatever match files exist in
 results/scored/ - it does not know or care whether those came from a real
 experiment run or a single pilot generation. It is the caller's responsibility
 not to present pilot-scale numbers as if they were the full-grid result.
+
+RQ2/RQ3 scope, and parse-failure handling in RQ3 (DECIDED 2026-07-21, Madhu -
+see results/metrics_review_findings.md for the original findings): by default
+RQ2 (by_model_and_prompt) and RQ3 (by_category) run over the FULL corpus
+including the short-register subgroup (unlike RQ1's corpus_wide, which
+excludes it) - "*_corpus_wide_only" variants of both are also reported for a
+like-for-like comparison against RQ1. Separately, by_category's default
+counts a parse-failed run's ground-truth categories as "missed" (a model that
+produced no parseable output really did fail to deliver those categories);
+"by_category_excluding_parse_failures" is also reported as the cleaner signal
+of genuine category blind spots, isolated from output-format reliability.
 """
 
 from __future__ import annotations
@@ -183,6 +194,7 @@ def compute_all(scored_dir: Path = SCORED_DIR) -> dict:
         per_run.append(run_metrics(match_result))
 
     corpus_wide = [r for r in per_run if r["project_id"] not in SHORT_REGISTER_SUBGROUP]
+    scoreable = [r for r in per_run if not r["parse_failed"]]
 
     return {
         "n_scored_runs_total": len(per_run),
@@ -194,8 +206,26 @@ def compute_all(scored_dir: Path = SCORED_DIR) -> dict:
             "mean_category_accuracy": _safe_mean([r["category_accuracy_of_matches"] for r in corpus_wide]),
             "note": "Excludes the 5-document short-register subgroup - see short_register_subgroup block.",
         },
+        # DECIDED 2026-07-21 (Madhu, resolving results/metrics_review_findings.md
+        # Finding 1): RQ2/RQ3 default to the FULL 21-document corpus (including
+        # the short-register subgroup) - unlike the RQ1 corpus_wide headline
+        # above, which excludes it. This is intentional (RQ2/RQ3 want
+        # full-corpus behavior), but reported inconsistently with RQ1's
+        # denominator if read carelessly, so a "_corpus_wide_only" variant of
+        # each is also reported for like-for-like comparison against RQ1. See
+        # paper draft Section III.F for the disclosed asymmetry.
         "by_model_and_prompt": aggregate_by_model_prompt(per_run),
+        "by_model_and_prompt_corpus_wide_only": aggregate_by_model_prompt(corpus_wide),
         "by_category": aggregate_by_category(per_run),
+        "by_category_corpus_wide_only": aggregate_by_category(corpus_wide),
+        # DECIDED 2026-07-21 (Madhu, resolving Finding 2): report by_category
+        # both including and excluding parse-failed runs, since a run that
+        # produced no parseable output otherwise counts every one of that
+        # project's ground-truth categories as "missed" - the same bucket as
+        # a genuine category blind spot. by_category above is unchanged
+        # (includes parse failures, as before); this variant is the cleaner
+        # RQ3 signal isolating genuine coverage gaps from format failures.
+        "by_category_excluding_parse_failures": aggregate_by_category(scoreable),
         "short_register_subgroup": short_register_subgroup_report(per_run),
         "per_run": per_run,
     }
