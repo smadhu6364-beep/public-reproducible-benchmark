@@ -350,16 +350,150 @@ Nothing needed from you on any of this right now - flagging it so the shared
 picture of "what's true about this repo" stays in sync between sessions,
 same reason as every other dated block in this file.
 
+## NEW 2026-07-21 (later still): verified your 4 newest driver-test files, all landed
+
+`test_extract_driver.py`, `test_audit_corpus_driver.py`, `test_match_driver.py`,
+`test_validate_threshold.py` - read all 4 in full, ran the whole suite clean
+myself (320 tests, 1 intentionally skipped - the `RUN_SLOW_TESTS`-gated real-
+embedding-model test in the new `validate_threshold` file - `OK (skipped=1)`).
+All 4 were already committed by the time I checked (`git status` clean,
+`git ls-files` confirms all 4 tracked) - nothing left for me to do on this
+batch. Good catches worth calling out: the `audit_project` FAIL-beats-WARN-
+beats-PASS aggregation tests, and pinning `extract.py --all`'s "always exits
+0 regardless of skip count" as a characterization rather than silently
+"fixing" it - that's a real design wart but changing it is a scope decision,
+not a bug fix, and you were right to just document it instead.
+
+## Task F: 11 new tasks, all pre-approved, same ground rules as always
+
+Madhu asked for a fresh batch, at least 10. Below are 11, ordered roughly by
+value. All of these are engineering/testing/documentation only - none of
+them touch rater outreach (that's Task E territory, explicitly on hold until
+Madhu says otherwise), none need real API keys or `.env`, and none invent
+data, dates, or citations. Normal rule still applies: if any of these turns
+up something that looks like it needs a decision beyond "write code/tests/
+docs", stop and flag it rather than guessing - same as the Task E lesson
+about unrequested scope creep.
+
+**F1 - close the real gap in `run_experiments.py`'s synchronous CLI.**
+Confirmed by grep just now: the only `rx.main()` calls anywhere in the test
+suite are the 4 in `test_batch.py`, and every one of them exercises a
+`--batch`/`--batch-check` combination. The plain synchronous grid loop's own
+two exit paths - `sys.exit(2)` when every cell fails, `sys.exit(3)` when some
+(not all) fail - have zero coverage anywhere (`grep -rn "sys.exit(2)\|sys.exit(3)"
+tests/*.py` finds nothing for this path; the one `.code, 2)` hit in
+`test_batch.py` is the argparse mutual-exclusion error, a different thing).
+New `tests/test_run_experiments_driver.py`: cover `--project`/`--model`/
+`--prompt` filtering actually narrowing the grid, `--estimate-only`
+short-circuiting before any `run_one()` call, and all three outcomes (all
+succeed / all fail -> exit 2 / partial fail -> exit 3) with a stubbed
+`run_one`.
+
+**F2 - close `metrics.py`'s zero CLI coverage.** Confirmed: no
+`class Test.*CLI`/`Test.*Main` in `test_metrics.py`, no direct `metrics.main(`
+call anywhere. New `tests/test_metrics_driver.py`: `--scored-dir`/`--out`
+parsing, confirm `--out` actually writes the file (vs. stdout-only when
+omitted), behavior on an empty or missing scored-dir.
+
+**F3 - close `build_rater_packets.py`'s zero CLI coverage.** Confirmed: the
+only "`.main(`" match in `test_rater_packets.py` is the file's own
+`unittest.main()` test-runner boilerplate - all 7 existing test classes test
+the sampling/blinding logic directly, never the CLI entry point itself. Add a
+CLI test class covering `--min-uk-per-cell`/`--raters` parsing, output file
+writes, and exit codes.
+
+**F4 - retry/backoff for transient errors in `call_claude`/`call_gpt`/
+`call_opensource`.** A 189-cell grid at real spend shouldn't need a human to
+notice and manually re-run one flaky timeout/5xx/rate-limit. 2-3 attempts,
+exponential backoff, only for network-level/5xx/rate-limit errors - a genuine
+4xx/auth error should still fail immediately (retrying a bad key wastes time
+and money, and would mask a real setup problem). New tests: a fake provider
+that fails N times then succeeds, and one that fails permanently and still
+surfaces the error. Flagging this one for extra care since it's the actual
+live-request path - go ahead, no need to check back first, just double-check
+the retry doesn't accidentally swallow or mask the auth-error case.
+
+**F5 - synthetic demonstration of `pretraining_cutoff_report()`'s output.**
+Same synthetic-fixture pattern `analysis/gen_synthetic_scored.py` already
+uses. Use CLEARLY-LABELED placeholder cutoff dates (filename prefix + an
+in-file banner comment saying "SYNTHETIC PLACEHOLDER - not a real model
+fact"), not real ones - the only point is showing Madhu/Kruthik the report's
+actual shape before real `model_cutoffs` exist. Must not be mistakable for
+real data anywhere it might get read later.
+
+**F6 - research task (web search, not fabrication): real published training
+cutoff dates for the 3 decided models.** Claude Sonnet 5, GPT-5.6 Terra,
+Llama 3.3 70B Turbo - look these up directly from each provider's own
+documentation. Write findings into a new `docs/model_cutoffs.md` with exact
+source URLs and the date you looked it up. Do NOT wire this into any code -
+reference documentation only, so whoever runs `pretraining_cutoff_report()`
+for real has the sourcing ready without the function ever hardcoding a date.
+If a provider hasn't published an exact cutoff, say that explicitly rather
+than guessing or extrapolating from a model-card release date.
+
+**F7 - `requirements.txt` vs. actual-imports consistency test.** Same spirit
+as the existing `test_env_example.py`, but for Python packages: every
+third-party top-level import used anywhere in `src/`/`analysis/` has a
+pinned line in `requirements.txt`, and every pinned package is actually
+imported somewhere (no stale/unused pins). I spot-checked this by hand just
+now and it currently looks consistent - this task is about building the
+permanent automated guard, not necessarily finding an existing bug.
+
+**F8 - a "CLAUDE.md compliance" self-check test file.** Static assertions
+tying live code/schema constants to CLAUDE.md's actual written numbers, so a
+future silent drift gets caught by CI instead of by someone re-reading both
+documents by hand (how most of this session's real bugs were actually
+found). Concretely: cost-guard threshold == $30 (may partly exist in
+`test_run_pipeline.py` already - extend rather than duplicate), the
+`category` enum in `prompts/output_schema.json` matches CLAUDE.md's exact 8
+categories with no extras or omissions, likelihood/impact are both 1-5, and
+the documented repo-structure directories actually exist on disk.
+
+**F9 - document (don't touch) `proposed_excision_pages`.** I checked this
+myself already: `extract.py` never reads this column (confirmed by grep) -
+it derives excision entirely from `sort_pages` + `section_v_pages`. Reading
+a few rows, `proposed_excision_pages` looks like a deliberate, valuable
+human-readable audit trail (e.g. the Peru p32-33 / Uganda p78-79 entries
+explain *why* each range was added), not dead weight. Please confirm that
+reading holds across all 21 rows and add one short line (manifest header
+comment or a `methodology_notes.md` note) stating explicitly that this
+column is narrative/audit-only and deliberately not machine-read - so nobody
+"cleans it up" later thinking it's vestigial. Do not remove, rename, or
+restructure the column itself.
+
+**F10 - a "playbook smoke test."** A new test file that actually runs every
+command in `docs/run_playbook.md`'s quick-start sequence end-to-end against
+tiny stubbed fixtures (same conventions already established: fake provider
+modules, sandboxed temp-tree run). This exact bug class - doc says X, code
+does Y - has now bitten this project at least 3 times this session alone
+(the `--confirm-cost` doc claim, and two separate `relative_to(REPO_ROOT)`
+crash-on-relative-path bugs). This test should fail loudly the next time a
+code change silently breaks a documented command.
+
+**F11 - stale cross-reference sweep for the batch-API addition.** Check
+whether `docs/rater_protocol.md`, `results/threshold_validation_report.md`,
+`paper/methodology_notes.md`, or any other already-written doc makes claims
+about `run_experiments.py`'s behavior (timing, cost, "one call per cell"
+assumptions) that are now inaccurate given `--batch`/`--batch-check`. Report
+findings; only fix a claim that's actually wrong, don't rewrite sections that
+are still accurate.
+
+All 11 are pre-approved - no need to check back before starting any of them.
+If you finish all 11 and want still more, ask before expanding scope
+further, same rule as always.
+
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.
 - Don't touch the frozen RQs or the leakage rule.
-- Task E is research/reporting only - a new doc file, no code changes, no
-  outreach sent, no signups. If it reveals you need to touch something
-  outside this scope, stop and flag it rather than editing quietly.
+- Task E is done and stays done - rater recruitment outreach itself
+  (actually contacting people) is explicitly on hold until Madhu says
+  otherwise. Don't touch `docs/rater_recruitment_outreach.md` or send
+  anything on Madhu's behalf as part of Task F.
 - The git backlog mentioned in earlier handoffs is resolved - everything's
   committed now, working tree was clean before this round of tasks started.
   I'm still committing your work from the Cowork side as it lands, same as
   before - nothing you need to do differently.
-- Task E is pre-approved - no need to check back before starting it. If you
-  finish it and want still more, ask before expanding scope further.
+- Task F (all 11 items above) is pre-approved - no need to check back before
+  starting any of them. If you finish all 11 and want still more, ask before
+  expanding scope further.

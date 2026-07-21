@@ -247,24 +247,36 @@ Rater recruitment is the real bottleneck here, not the code — see
 python -m unittest discover -s tests
 ```
 
-203 tests, ~3.5s, **no network, no API keys, no spend** — the embedding model,
-the PDF reader, and all three providers (sync AND batch) are stubbed. Run this
-before and after touching anything in `src/`. Coverage is concentrated where
-this project has actually had bugs or where a silent failure would invalidate
-results:
+320 tests, ~10s, **no network, no API keys, no spend** — the embedding model,
+the PDF reader, and all three providers (sync AND batch) are stubbed. One
+test (a real-embedding-model end-to-end check in `test_validate_threshold.py`)
+is skipped by default; opt in with `RUN_SLOW_TESTS=1` if you need it. Run
+this before and after touching anything in `src/`. Coverage is concentrated
+where this project has actually had bugs or where a silent failure would
+invalidate results:
 
 | File | Protects |
 | --- | --- |
 | `test_extract.py` | manifest page-range parsing (source of the Serbia/Uganda bugs) |
 | `test_extract_excision.py` | the excision partition itself — every page in exactly one output, 1-indexing, leakage guards |
+| `test_extract_driver.py` | the `--all` orchestration layer — one project failing doesn't stop the rest, unexpected exceptions aren't swallowed |
 | `test_audit_corpus.py` | the leakage auditor's **false-negative** surface + a real-corpus regression |
+| `test_audit_corpus_driver.py` | the FAIL-beats-WARN-beats-PASS verdict aggregation, the HTML-only special case, CLI exit codes |
 | `test_match.py` | greedy one-to-one matching, threshold boundary |
-| `test_metrics.py` | recall/precision guards, subgroup separation, scoping variants |
+| `test_match_driver.py` | `score_raw_output`'s parse-failed handling + the `--all`/`--file` CLI |
+| `test_validate_threshold.py` | the sweep/recommend/Youden's-J statistics behind the 0.45 threshold decision |
+| `test_metrics.py` | recall/precision guards, subgroup separation, scoping variants, the opt-in pretraining-cutoff contamination check |
 | `test_parsing.py` | model + judge response parsing, incl. the bool-as-int regression |
+| `test_judge_driver.py` | `judge.py`'s CLI/driver layer |
 | `test_rater_packets.py` | sampling determinism, UK stratification, **blinding integrity** |
 | `test_run_pipeline.py` | append-only, reproducibility fields, leakage guard, cost estimator |
 | `test_batch.py` | batch request/response shapes vs. real SDK contracts, submit/collect against `_finalize_run`, batch cost discount |
 | `test_figures.py` | figure rendering + the metrics.json ↔ make_figures key contract |
+| `test_show_path_helper.py` | the out-of-repo relative-path crash fix, across all 5 files it was applied to |
+| `test_check_env.py` | `check_env.py`'s pre-spend connectivity checks |
+| `test_env_example.py` | `.env.example` stays in sync with what the code actually reads |
+| `test_gitignore_leakage.py` | leakage-sensitive paths stay gitignored (and aren't already tracked via `git add -f`) |
+| `test_ground_truth_data.py` | all 21 ground-truth files conform to `ground_truth_schema.json` |
 
 `test_figures.py` needs matplotlib and **skips** (does not fail) on an
 interpreter without it — so `python -m unittest discover -s tests` is green
