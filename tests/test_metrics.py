@@ -14,6 +14,7 @@ level, where the actual filtering decision lives.
 Run: python -m unittest discover -s tests
 """
 
+import csv
 import json
 import sys
 import tempfile
@@ -203,6 +204,98 @@ class TestComputeAllScopeAndParseFailureVariants(unittest.TestCase):
             # category entirely, but keeps the parse-passing run's signal.
             self.assertNotIn("political_regulatory", report["by_category_excluding_parse_failures"])
             self.assertIn("technical", report["by_category_excluding_parse_failures"])
+
+
+class TestPretrainingCutoffReport(unittest.TestCase):
+    """pretraining_cutoff_report() is opt-in (not called from compute_all())
+    and takes model_cutoffs as a caller-supplied argument rather than a
+    hardcoded date - see the function's docstring for why (a model's training
+    cutoff is a real-world fact this codebase must not guess at). These tests
+    use a temp manifest so they don't depend on which of the real 21 projects
+    happen to have publication_date filled in today."""
+
+    def _manifest(self, tmp_path, rows):
+        p = tmp_path / "corpus_manifest.csv"
+        with open(p, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["project_id", "publication_date"])
+            for pid, pub in rows:
+                w.writerow([pid, pub])
+        return p
+
+    def _run(self, project_id, model, recall=0.5, precision=0.5):
+        return metrics.run_metrics(_match_result(
+            project_id, model, "zero_shot", 1,
+            [{"risk_id": "R01", "category": "schedule"}],
+            [{"risk_id": "G01", "category": "schedule"}],
+            [_m("R01", "G01", "schedule", "schedule")] if recall else [],
+        ))
+
+    def test_pre_and_post_cutoff_split_correctly(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            manifest = self._manifest(tmp, [("P-OLD", "2020-01-01"), ("P-NEW", "2026-01-01")])
+            per_run = [self._run("P-OLD", "claude"), self._run("P-NEW", "claude")]
+            report = metrics.pretraining_cutoff_report(
+                per_run, {"claude": "2025-01-01"}, manifest_path=manifest)
+
+        self.assertEqual(report["pre_cutoff"]["n_runs"], 1)
+        self.assertEqual(report["post_cutoff"]["n_runs"], 1)
+        self.assertEqual(report["n_runs_undated"], 0)
+
+    def test_undated_project_is_excluded_from_both_buckets_not_guessed(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            manifest = self._manifest(tmp, [("P-DATED", "2020-01-01"), ("P-UNDATED", "")])
+            per_run = [self._run("P-DATED", "claude"), self._run("P-UNDATED", "claude")]
+            report = metrics.pretraining_cutoff_report(
+                per_run, {"claude": "2025-01-01"}, manifest_path=manifest)
+
+        self.assertEqual(report["pre_cutoff"]["n_runs"], 1)
+        self.assertEqual(report["post_cutoff"]["n_runs"], 0)
+        self.assertEqual(report["n_runs_undated"], 1)
+        self.assertEqual(report["undated_projects"], ["P-UNDATED"])
+
+    def test_model_with_no_cutoff_supplied_is_treated_as_undated(self):
+        # model_cutoffs is caller-supplied and may not cover every model in
+        # the run set (e.g. the open-source slot's cutoff isn't published) -
+        # must not silently assume 0 or crash.
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            manifest = self._manifest(tmp, [("P-X", "2020-01-01")])
+            per_run = [self._run("P-X", "opensource")]
+            report = metrics.pretraining_cutoff_report(
+                per_run, {"claude": "2025-01-01"}, manifest_path=manifest)  # no "opensource" entry
+
+        self.assertEqual(report["n_runs_undated"], 1)
+
+    def test_empty_model_cutoffs_puts_everything_in_undated(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            manifest = self._manifest(tmp, [("P-X", "2020-01-01")])
+            per_run = [self._run("P-X", "claude")]
+            report = metrics.pretraining_cutoff_report(per_run, {}, manifest_path=manifest)
+
+        self.assertEqual(report["n_runs_undated"], 1)
+        self.assertEqual(report["pre_cutoff"]["n_runs"], 0)
+
+    def test_not_wired_into_compute_all_by_default(self):
+        # Confirms this stays opt-in: compute_all()'s output has no
+        # pretraining/cutoff key unless a caller explicitly invokes the
+        # function above and adds it themselves.
+        with tempfile.TemporaryDirectory() as td:
+            tmp_path = Path(td)
+            payload = _match_result(
+                "P-SRB-CompetitivenessJobs", "claude", "zero_shot", 1,
+                [{"risk_id": "R01", "category": "schedule"}],
+                [{"risk_id": "G01", "category": "schedule"}],
+                [_m("R01", "G01", "schedule", "schedule")],
+            )
+            with open(tmp_path / "a.match.json", "w", encoding="utf-8") as f:
+                json.dump(payload, f)
+            report = metrics.compute_all(scored_dir=tmp_path)
+        self.assertNotIn("pretraining_cutoff", report)
+        self.assertNotIn("model_cutoffs_used", report)
 
 
 if __name__ == "__main__":
