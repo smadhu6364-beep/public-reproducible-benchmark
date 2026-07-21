@@ -355,5 +355,84 @@ class TestEligiblePoolCanSatisfyTheDecidedSettings(unittest.TestCase):
                             f"no processed text for sampled project {pid}")
 
 
+class TestMainCLI(unittest.TestCase):
+    """main() itself had zero direct test coverage until now - everything
+    else in this file tests the internal functions main() calls, not the
+    argparse wiring or the final summary/prints. Also regression-covers two
+    real, distinct stale claims found and fixed 2026-07-21 in this module's
+    own docstrings/output: (1) a hardcoded "stale_doc_flag" in the JSON
+    summary telling users docs/rater_protocol.md "still says 5 of 18
+    projects" and "should be updated to 21" - after the doc had ALREADY been
+    updated to 21, making the code's own claim the stale one; (2) the module
+    docstring claiming --min-uk-per-cell's default was 0, when the actual
+    argparse default has been 1 since Madhu's 2026-07-20 decision."""
+
+    def _run_main(self, argv, tmp):
+        with mock.patch.object(sys, "argv", ["build_rater_packets.py"] + argv):
+            brp.main()
+        return json.loads((tmp / "sampling_summary.json").read_text(encoding="utf-8"))
+
+    def test_default_invocation_writes_all_expected_outputs(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            summary = self._run_main(["--out-dir", str(tmp), "--sample-per-cell", "2"], tmp)
+            self.assertTrue((tmp / "blinding_map.csv").exists())
+            self.assertTrue((tmp / "rater_assignments").is_dir())
+            self.assertTrue((tmp / "packets").is_dir())
+        self.assertEqual(summary["sample_per_cell"], 2)
+        self.assertEqual(summary["min_uk_per_cell"], 1)   # the decided default
+
+    def test_summary_json_no_longer_contains_the_stale_doc_flag_key(self):
+        # Regression test for finding (1) above: this key made a false claim
+        # about docs/rater_protocol.md once that doc was corrected, and has
+        # been removed rather than left to keep lying in every run's output.
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            summary = self._run_main(["--out-dir", str(tmp), "--sample-per-cell", "2"], tmp)
+        self.assertNotIn("stale_doc_flag", summary)
+
+    def test_module_docstring_no_longer_claims_min_uk_per_cell_defaults_to_zero(self):
+        # Regression test for finding (2) above.
+        doc = brp.__doc__
+        self.assertNotIn("default 0", doc)
+        self.assertIn("default is 1", doc)
+
+    def test_min_uk_per_cell_flag_is_honored_end_to_end(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            summary = self._run_main(
+                ["--out-dir", str(tmp), "--sample-per-cell", "2", "--min-uk-per-cell", "0"], tmp)
+        self.assertEqual(summary["min_uk_per_cell"], 0)
+
+    def test_exclude_short_register_flag_shrinks_the_eligible_pool(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            with_subgroup = self._run_main(["--out-dir", str(tmp), "--sample-per-cell", "2"], tmp)
+            without_subgroup = self._run_main(
+                ["--out-dir", str(tmp), "--sample-per-cell", "2", "--exclude-short-register"], tmp)
+        self.assertLess(without_subgroup["eligible_pool_size"], with_subgroup["eligible_pool_size"])
+
+    def test_seed_is_reproducible_across_two_invocations(self):
+        with tempfile.TemporaryDirectory() as td1, tempfile.TemporaryDirectory() as td2:
+            s1 = self._run_main(["--out-dir", str(td1), "--sample-per-cell", "2", "--seed", "999"], Path(td1))
+            s2 = self._run_main(["--out-dir", str(td2), "--sample-per-cell", "2", "--seed", "999"], Path(td2))
+        self.assertEqual(s1["distinct_projects_in_sample"], s2["distinct_projects_in_sample"])
+        self.assertEqual(s1["per_cell"], s2["per_cell"])
+
+    def test_raters_flag_controls_number_of_assignment_sheets(self):
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td)
+            self._run_main(["--out-dir", str(tmp), "--sample-per-cell", "2", "--raters", "3"], tmp)
+            sheets = list((tmp / "rater_assignments").glob("*.csv"))
+        self.assertEqual(len(sheets), 3)
+
+    def test_out_dir_outside_the_repo_does_not_crash(self):
+        # Regression coverage for this module's own _show() fix.
+        with tempfile.TemporaryDirectory() as td:
+            tmp = Path(td) / "well" / "outside" / "anywhere"
+            self._run_main(["--out-dir", str(tmp), "--sample-per-cell", "2"], tmp)
+            self.assertTrue((tmp / "sampling_summary.json").exists())
+
+
 if __name__ == "__main__":
     unittest.main()
