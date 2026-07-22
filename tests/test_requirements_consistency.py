@@ -53,31 +53,16 @@ KNOWN_OPTIONAL_UNPINNED_IMPORTS = {
     ),
 }
 
-# Pinned packages that are part of CLAUDE.md's approved library list
-# ("Libraries: PyMuPDF, anthropic, openai, sentence-transformers, pandas,
-# scikit-learn, matplotlib") but that src/ and analysis/ do not currently
-# import anywhere - confirmed by grep 2026-07-22 (Task F7). Reported here
-# rather than silently dropped from requirements.txt or silently ignored:
-# match.py's cosine similarity is implemented directly with numpy
-# (_cosine_matrix(), np.linalg.norm) rather than scikit-learn, and no
-# script currently uses pandas. Being in CLAUDE.md's approved list means
-# neither pin is unrequested scope - but "approved to use" isn't the same
-# as "used," and this is a real, reportable gap between the two documents,
-# not a bug in this test. Madhu's call whether to drop either pin or keep
-# it for planned future use.
-KNOWN_UNUSED_BUT_CLAUDE_MD_APPROVED = {
-    "pandas": (
-        "Named in CLAUDE.md's approved library list; no current src/ or "
-        "analysis/ script imports it. Flagged 2026-07-22 (Task F7), not "
-        "removed unilaterally."
-    ),
-    "scikit-learn": (
-        "Named in CLAUDE.md's approved library list; match.py's cosine "
-        "similarity is implemented directly with numpy instead "
-        "(_cosine_matrix()). Flagged 2026-07-22 (Task F7), not removed "
-        "unilaterally."
-    ),
-}
+# RESOLVED 2026-07-22 (Madhu): pandas and scikit-learn were both flagged
+# here as pinned-but-unused (named in CLAUDE.md's approved library list,
+# but no src/ or analysis/ script actually imported either - match.py's
+# cosine similarity uses numpy directly, _cosine_matrix()). Madhu's call was
+# to drop both pins rather than keep them for speculative future use - see
+# requirements.txt. This allowlist is intentionally empty now; if a future
+# CLAUDE.md-approved library is pinned before anything imports it, add an
+# entry here with the same kind of citation the pandas/scikit-learn entries
+# used to have, don't silently widen test_no_stale_unused_pin's tolerance.
+KNOWN_UNUSED_BUT_CLAUDE_MD_APPROVED: dict[str, str] = {}
 
 STDLIB = set(getattr(sys, "stdlib_module_names", ())) | {"__future__"}
 

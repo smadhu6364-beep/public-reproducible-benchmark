@@ -22,8 +22,13 @@ openai==1.109.1
 sentence-transformers==3.2.1
 
 # Data + ML utilities
-pandas==2.2.3
-scikit-learn==1.5.2
+# DECIDED 2026-07-22 (Madhu): pandas and scikit-learn removed - both were
+# pinned (and named in CLAUDE.md's approved library list) but never actually
+# imported anywhere in src/ or analysis/ (match.py's cosine similarity uses
+# numpy directly - see _cosine_matrix() - and nothing uses pandas). Found via
+# tests/test_requirements_consistency.py (Task F7). Re-add either one, with
+# a real pin, the moment something actually imports it - don't restore
+# speculatively.
 numpy==1.26.4
 
 # Plotting
