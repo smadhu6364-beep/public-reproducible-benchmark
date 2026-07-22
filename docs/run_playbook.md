@@ -247,7 +247,7 @@ Rater recruitment is the real bottleneck here, not the code — see
 python -m unittest discover -s tests
 ```
 
-328 tests, ~12s, **no network, no API keys, no spend** — the embedding model,
+401 tests, ~14s, **no network, no API keys, no spend** — the embedding model,
 the PDF reader, and all three providers (sync AND batch) are stubbed. One
 test (a real-embedding-model end-to-end check in `test_validate_threshold.py`)
 is skipped by default; opt in with `RUN_SLOW_TESTS=1` if you need it. Run
