@@ -41,6 +41,18 @@ before.
    other three checks plus a separate short-register-subgroup judgment call
    - see the paper draft, Section III.A.)
 
+   **Disclosed exception: P-UK-PadeswoodCCUS (13 pages).** `remaining_planning_pages`
+   was recorded stale at 15 (computed before Economic Case Sec 3.4 was added
+   to the excised range alongside Financial Case Sec 5.4); recomputed
+   correctly on 2026-07-21 it is 13, below this threshold. DECISION
+   2026-07-22 (Madhu): keep it included as a documented exception rather than
+   exclude it - it still clears gate checks 1-3 with real, usable risk
+   content, the UK subset is already only 3 projects, and 13 vs. 15 pages is
+   a small margin on a threshold that is itself a judgment call, not a bright
+   line grounded in any external standard. Any future project landing below
+   15 pages still fails this gate by default; this is a named, one-off
+   exception, not a precedent for silently lowering the threshold.
+
 Partial fields in the extracted ground truth are acceptable if `description`
 and `category` are present; note gaps in the ground-truth file's own `notes`
 field rather than fabricating a value for a missing one - `likelihood`,

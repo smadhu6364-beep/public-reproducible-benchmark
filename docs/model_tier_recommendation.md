@@ -197,9 +197,15 @@ unchanged — already trivial), the picture changes materially:
   each provider's capability floor.
 - **Best quality-for-budget:** the **Mid** triple (Sonnet 5 at its intro rate /
   GPT-5.6 Terra / a cheap open model) is the strongest like-for-like mid-tier
-  comparison and comes in at **~$21 for 2 runs with the batch discount** — under
-  the guard — provided the grid runs **before the Sonnet 5 intro rate ends
-  2026-08-31** and batch mode is used. This is the recommended target if a
+  comparison. **Corrected 2026-07-21** (this line previously said "~$21 for 2
+  runs with the batch discount," conflating the ~$21/run SYNCHRONOUS figure
+  with a batched 2-run total): for the actually-decided open-source slot
+  (Llama 3.3 70B Turbo, not this table's DeepSeek Pro placeholder), the real
+  batched cost is **~$21.05/run synchronous, ~$24.02 for 2 runs batched**
+  (claude+gpt batched, opensource stays synchronous — see the correction note
+  at the top of this file and `results/preflight_report.md`) — still under the
+  guard, provided the grid runs **before the Sonnet 5 intro rate ends
+  2026-08-31** and `--batch` is used. This is the recommended target if a
   mid-tier result is wanted.
 - **Flagship (Opus 4.8 / GPT-5.6 Sol / strong open):** the strongest possible
   result, but ~$87 at 2 runs (~$47 with batch) — needs an explicit

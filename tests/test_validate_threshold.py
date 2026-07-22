@@ -11,6 +11,7 @@ Run including the slow real-model test: RUN_SLOW_TESTS=1 python -m unittest disc
 
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -223,6 +224,95 @@ class TestShowHelper(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             shown = vt._show(Path(td) / "report.md")
         self.assertTrue(Path(shown).is_absolute())
+
+
+class TestPairsFixtureGroundTruthIntegrity(unittest.TestCase):
+    """Guards analysis/threshold_validation_pairs.json's own data integrity -
+    this fixture drives the real MATCH_THRESHOLD value live in match.py, so a
+    future edit quietly turning a "ground_truth"-labeled side into fabricated
+    or paraphrased text (rather than real corpus language) would corrupt the
+    justification behind that threshold.
+
+    Corrected 2026-07-21: the fixture's own _meta.honest_scope originally
+    claimed every ground_truth side was "VERBATIM" from the real registers.
+    Checking all 24 programmatically found only 4 were exact full-field
+    matches; most of the rest are excerpts truncated at a clause boundary
+    (sometimes with the cut-point punctuation normalized to a period), and at
+    least one has a short phrase excised from mid-sentence. None were
+    fabricated. _meta and validate_threshold.py's docstring were corrected to
+    say "real excerpt," not "verbatim." This test doesn't demand exact
+    verbatim (that would be re-asserting the false claim) - it demands the
+    weaker, still-meaningful property that actually matters: real text, not
+    invented text. A description passes if it exactly matches, or if it
+    shares a genuine verbatim run of >=40 characters with the real
+    description (long enough that random/paraphrased text could not
+    plausibly match by accident, per difflib's longest-matching-block).
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fixture = json.loads(vt.PAIRS_PATH.read_text(encoding="utf-8"))
+        cls._gt_cache = {}
+
+    def _load_gt(self, project_id):
+        if project_id not in self._gt_cache:
+            path = vt.REPO_ROOT / "data" / "ground_truth" / f"{project_id}.json"
+            self._gt_cache[project_id] = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+        return self._gt_cache[project_id]
+
+    def _register_project(self, register_field):
+        m = re.match(r"(?:WB|UK):(P-[\w-]+)", register_field)
+        return m.group(1) if m else None
+
+    # XPROJ-NEG-02.b is a confirmed, pre-existing exception found 2026-07-21:
+    # labeled "ground_truth R01" but actually reworded ("...implementation
+    # momentum around the 2026 elections" vs. the real R01's "...implementation
+    # momentum; further changes may follow the mid-2026 legislative/
+    # parliamentary elections" - different words, not a truncation of the same
+    # ones). Documented in the fixture's own _meta.honest_scope rather than
+    # silently rewritten (that would be re-authoring research fixture data
+    # already baked into the live MATCH_THRESHOLD justification). Allowlisted
+    # here, once, with the reason on record, so the test stays a real guard
+    # against a NEW instance of this without permanently failing on the one
+    # already-known and disclosed case.
+    KNOWN_REWORDED_NOT_EXCERPTED = {("XPROJ-NEG-02", "b")}
+
+    def test_every_ground_truth_labeled_side_shares_a_real_verbatim_run(self):
+        import difflib
+
+        checked = 0
+        failures = []
+        for pair in self.fixture["pairs"]:
+            default_pid = self._register_project(pair["register"])
+            for side_key in ("a", "b"):
+                side = pair[side_key]
+                src = side.get("source", "")
+                if "generated_style" in src or "ground_truth" not in src:
+                    continue
+                m = re.match(r"(P-[\w-]+)\s+ground_truth", src)
+                pid = m.group(1) if m else default_pid
+                rid_m = re.search(r"\b(R\d+)\b", src)
+                self.assertIsNotNone(pid, f"{pair['pair_id']}.{side_key}: could not resolve project from {src!r}")
+                self.assertIsNotNone(rid_m, f"{pair['pair_id']}.{side_key}: could not resolve risk_id from {src!r}")
+                rid = rid_m.group(1)
+                gt = self._load_gt(pid)
+                self.assertIsNotNone(gt, f"{pair['pair_id']}.{side_key}: no ground-truth file for {pid}")
+                risk = next((r for r in gt["risks"] if r["risk_id"] == rid), None)
+                self.assertIsNotNone(risk, f"{pair['pair_id']}.{side_key}: {pid} has no risk {rid}")
+
+                checked += 1
+                if (pair["pair_id"], side_key) in self.KNOWN_REWORDED_NOT_EXCERPTED:
+                    continue
+                pd, gd = side["description"].strip(), risk["description"].strip()
+                if pd == gd:
+                    continue
+                match = difflib.SequenceMatcher(None, pd, gd).find_longest_match(0, len(pd), 0, len(gd))
+                if match.size < 40:
+                    failures.append(f"{pair['pair_id']}.{side_key}: longest shared run only "
+                                    f"{match.size} chars - looks fabricated/paraphrased, not excerpted")
+
+        self.assertGreater(checked, 15, "sanity check: expected most of the 21 pairs to have >=1 ground_truth side")
+        self.assertEqual(failures, [], "\n".join(failures))
 
 
 if __name__ == "__main__":

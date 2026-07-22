@@ -79,8 +79,6 @@ def build_match_record(project_id: str, model: str, prompt: str, run_index: int)
     n_gt = len(gt_risks)
     skill = MODEL_SKILL[model] * PROMPT_SKILL[prompt]
 
-    # Deterministic per-cell perturbation so run2 differs slightly from run1.
-    jitter = ((hash((project_id, model, prompt, run_index)) % 3) - 1) * 0.0  # keep runs identical-ish
     run_bump = (run_index - 1)  # run2 hallucinates one extra, to make aggregation non-trivial
 
     # --- parse-failure case: weakest cell on the short project ---
