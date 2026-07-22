@@ -125,3 +125,35 @@ structured prompt to JSON-only output and move the reasoning to internal only.)
 > generic structured-prompt parse failure, not specifically "picked the wrong
 > marker" - worth knowing if failure-mode counts for the `structured` prompt
 > condition look surprising in RQ2/RQ3.
+
+## Manifest column note: `proposed_excision_pages` is narrative-only (Task F9)
+
+`data/corpus_manifest.csv`'s `proposed_excision_pages` column is a
+human-readable audit trail, not something any code reads. Confirmed by
+grep across `src/` and `analysis/`: no file references this column name.
+`src/extract.py`'s actual excision logic (`_load_excision_pages()`) derives
+the pages to excise entirely from the `sort_pages` and `section_v_pages`
+columns; if both are blank for a project, extraction is refused outright
+(no excision guesswork).
+
+Checked across all 24 current manifest rows (the count has grown since
+this task was first scoped at "21 rows" - re-verify the current row count
+with `tail -n +2 data/corpus_manifest.csv | wc -l` rather than trusting a
+number written down earlier, including this one):
+
+- 21 rows hold a real page-range string (e.g. `"17-18, 44-45"`) explaining
+  *why* that range was added - the Uganda `78-79` and Peru `32-35` entries
+  are typical examples of this working as intended: a future reader can see
+  the reasoning without re-deriving it from the source PDF.
+- 2 rows (`P-UK-SizewellC`, `P-UK-ConnectToWork`) are blank - both are
+  `inclusion_status=excluded` projects with no `sort_pages`/`section_v_pages`
+  either, so there is nothing to excise and nothing to narrate.
+- 1 row (`P-UK-FreeBreakfastClubs`) holds free text instead of a page
+  range ("Economic Case risk-bullet list only ... HTML source, page numbers
+  not applicable") - direct evidence this column is prose for a human
+  reader, not a machine-parseable field, since no page-range parser could
+  survive that value.
+
+**Do not remove, rename, or restructure this column, and do not "clean up"
+its blank or non-numeric rows** - both are legitimate given the reasons
+above, not data-entry errors.
