@@ -54,11 +54,11 @@ current ID on that provider's `/models` page (or `GET /models` endpoint) at
 the moment you set `.env`**, and pin it verbatim in the paper for
 reproducibility.
 
-## Paste-ready options (verified 2026-07-20; Together AI row corrected 2026-07-21)
+## Paste-ready options (verified 2026-07-20; Together AI row corrected 2026-07-21, re-confirmed unchanged 2026-07-22)
 
 | Provider | `OPENSOURCE_BASE_URL` | Example strong open model → `OPENSOURCE_MODEL_NAME` | ~Price /1M | ~$/run (63 combos)\* |
 |---|---|---|---|---|
-| **Together AI** (recommended) | `https://api.together.xyz/v1` | Llama 3.3 70B → `meta-llama/Llama-3.3-70B-Instruct-Turbo` | **$1.04 (flat)** - corrected 2026-07-21, was ~$0.88 in the 2026-07-20 draft; independently re-verified directly against together.ai/pricing and together.ai/models/llama-3-3-70b | **~$2.96** |
+| **Together AI** (recommended) | `https://api.together.xyz/v1` | Llama 3.3 70B → `meta-llama/Llama-3.3-70B-Instruct-Turbo` | **$1.04 (flat)** - corrected 2026-07-21, was ~$0.88 in the 2026-07-20 draft; independently re-verified directly against together.ai/pricing and together.ai/models/llama-3-3-70b; re-checked again 2026-07-22 (pre-flight, Task G2), both pages still show $1.04/$1.04 and the endpoint is still listed live | **~$2.96** |
 | Together AI | `https://api.together.xyz/v1` | DeepSeek-V3 → `deepseek-ai/DeepSeek-V3` (V3.1 also hosted) | ~$1.25 (flat) | ~$3.56 |
 | Together AI | `https://api.together.xyz/v1` | Qwen 72B → `Qwen/Qwen2-72B-Instruct` (check for a current Qwen3.x turbo ID) | ~$0.90 | ~$2.56 |
 | **DeepInfra** | `https://api.deepinfra.com/v1/openai` | Llama 3.3 70B → `meta-llama/Llama-3.3-70B-Instruct` | ~$0.59/$0.79 | ~$1.73 |
@@ -115,3 +115,23 @@ open-weight model and would muddy the "3 distinct providers" framing).
 - DeepInfra base URL: [AI SDK — DeepInfra](https://ai-sdk.dev/providers/ai-sdk-providers/deepinfra).
 
 *Model IDs and prices change frequently — re-verify at the provider before setting `.env`.*
+
+### Re-check 2026-07-22 (Task G2, pre-flight before the real run)
+
+Re-confirmed directly against `together.ai/models/llama-3-3-70b` and
+`together.ai/pricing`: `meta-llama/Llama-3.3-70B-Instruct-Turbo` is still
+listed live, still $1.04/$1.04 per MTok - no change from the 2026-07-21
+correction above. Both fetched directly from Together's own pages, not a
+search snippet.
+
+**Worth flagging:** a plain web search for this same pricing during this
+re-check surfaced a third-party aggregator (`eesel.ai`) quoting $0.88
+input / $0.06 output for this exact model - the stale, already-corrected
+number, and wrong even on its own terms (not what the 2026-07-20 draft of
+this doc said either). This is a second, independent case of a secondary
+source being wrong on this specific number (the first being this doc's own
+2026-07-20 draft). `aipricing.guru`, cited above, was not re-checked
+against its current live content this round - given one aggregator just
+proved stale, treat all of the Sources links above as directional only and
+always re-verify against `together.ai/pricing` directly, never against an
+aggregator, before a real run.
