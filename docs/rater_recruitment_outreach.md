@@ -3,26 +3,34 @@
 **What this is and isn't.** This drafts the actual outreach message and
 qualifying criteria so recruitment is a send-it action, not a from-scratch
 writing task. It does not recruit anyone — that step needs a real person
-(Madhu/Kruthik) sending this to real contacts. Two decisions are flagged
-below as still open; resolve them before sending, not after.
+(Madhu/Kruthik) sending this to real contacts. Both decisions that used to
+be open (volunteer-vs-paid, spreadsheet-vs-form) are resolved as of
+2026-07-22 — see below.
 
 ---
 
-## Two decisions to make before sending (not mine to make)
+## Both open decisions are now resolved (2026-07-22, Madhu)
 
-1. **Volunteer or paid?** `docs/rater_protocol.md` §6 flags this explicitly
-   and leaves it open. The honest time ask is **4-6 hours per rater** (45
-   registers x ~5-8 min each) — substantial enough that "volunteer" is a real
-   ask, not a formality. If there's any budget for even a small honorarium
-   or a gift card, it will materially widen who says yes and how fast.
-2. **Delivery format:** a spreadsheet (simplest, no new tooling) vs. a
-   Google Form (nicer UX, more setup). `rater_protocol.md` §5 recommends the
-   spreadsheet by default. Pick one before the first invitation goes out, so
-   the message below can say "you'll get a spreadsheet" concretely rather
-   than "we'll figure out the format."
+1. **Volunteer or paid? → Volunteer only.** No budget attached. The honest
+   time ask is still **4-6 hours per rater** (45 registers x ~5-8 min each) —
+   worth being upfront about in the message rather than downplaying it.
+   **Consequence worth naming directly:** this takes the paid-platform
+   fallback (`rater_recruitment_channels.md` §2/§4 step 3 - Respondent.io /
+   User Interviews, ~3-10 days to 3-5 confirmed raters) off the table. The
+   remaining reliable routes are the warm network (§1a, days-2 weeks *if*
+   contacts exist) and targeted LinkedIn outreach (§1d, 1-3 weeks, 20-50+
+   messages for a 5-15% reply rate) - both real, but with more schedule risk
+   than the paid fallback carried, this close to the Aug-2026 deadline. If
+   fewer than ~3 are confirmed after the first 1-2 weeks, revisit
+   volunteer-only rather than let the deadline slip - APM/PMI's chapter
+   routes (§1b/1c) take 2-4+ weeks on their own, too slow as a *fallback*
+   started late, though fine as a parallel warm ask started now.
+2. **Delivery format → Spreadsheet.** Matches `rater_protocol.md` §5's
+   default and needs zero new tooling - `src/build_rater_packets.py`
+   already produces each rater's assignment sheet in exactly this shape.
 
-Everything below assumes these get resolved first; the template has a
-placeholder for both.
+The template below has both filled in - it's send-ready as-is, aside from
+the genuinely per-recipient fields ([Name], [DATE], [Madhu]).
 
 ---
 
@@ -56,9 +64,9 @@ sources, though this is not a strict requirement).
 
 ---
 
-## Ready-to-send invitation (edit the bracketed parts)
+## Ready-to-send invitation (only [Name]/[DATE]/[Madhu] left to fill in)
 
-> Subject: Quick favor — reviewing some project risk registers (~4-6 hrs, [PAID/VOLUNTEER])
+> Subject: Quick favor — reviewing some project risk registers (~4-6 hrs, volunteer)
 >
 > Hi [Name],
 >
@@ -81,13 +89,11 @@ sources, though this is not a strict requirement).
 > in one sitting or spread across a week or two, whatever works for you.
 > I'd need this back by **[DATE]** to stay on schedule.
 >
-> **Format:** you'll get a [spreadsheet / form link] with everything laid
-> out — no special software needed.
+> **Format:** you'll get a spreadsheet with everything laid out — no
+> special software needed.
 >
-> [If paid: There's a [$X / gift card] thank-you for your time.]
-> [If volunteer: This is a volunteer contribution to an academic study — I
-> know that's an ask, and I'd make sure you're acknowledged in the paper if
-> you'd like.]
+> This is a volunteer contribution to an academic study — I know that's an
+> ask, and I'd make sure you're acknowledged in the paper if you'd like.
 >
 > Interested? Happy to answer any questions before you commit. If this
 > isn't for you but you know someone who'd be a good fit, I'd appreciate an

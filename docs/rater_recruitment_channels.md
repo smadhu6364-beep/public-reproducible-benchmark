@@ -17,6 +17,21 @@ Groq model-ID mapping in the companion `opensource_slot_options.md` was
 similarly corrected. None of the corrections change the recommended
 sequence in Section 4.
 
+**UPDATE 2026-07-22 (Madhu decided volunteer-only, no paid budget):** this
+changes the recommended sequence below in one real way, worth stating
+plainly rather than leaving buried in Section 2's table. §2's paid-platform
+route (Respondent.io / User Interviews, ~3-10 days to 3-5 confirmed raters)
+is now off the table entirely - it was the one channel in §3's timeline
+table with both a *short* time-to-confirmed AND low schedule risk. Without
+it, the realistic path is §1a (warm network) and §1d (targeted LinkedIn),
+both of which carry more schedule uncertainty (1a depends on contacts
+actually existing in reach; 1d needs 20-50+ messages at a 5-15% reply rate
+for 1-3 weeks). §1b/§1c (APM/PMI via a chapter contact) remain good
+*parallel* warm asks but are too slow (2-4+ weeks) to serve as a *fallback*
+if started late. Practical read: start 1a and 1d **today**, not after a
+week of waiting to see if they work - there is no fast paid fallback left
+if they stall.
+
 ## The number that changes the strategy: n = 3-5, not 300
 
 CLAUDE.md needs only **3-5 raters**. That is a *small-n, high-match* recruit, not
@@ -90,6 +105,23 @@ The largest global body. Mechanisms:
   third party for anonymity** — it is *not* a "recruit raters for your study"
   service. So PMI = reach members via a chapter, not via an official participant
   pool. Expect 2-4+ weeks and uncertain yield.
+
+### 1c-2. IPMA — International Project Management Association (added 2026-07-22)
+Found while helping identify additional candidate sources after the
+volunteer-only decision removed the paid fallback (see update note above) -
+worth adding because it's more internationally-distributed than either APM
+(UK-only) or PMI (US-centric-but-global), which fits a corpus spanning World
+Bank projects across many countries. IPMA is a federation of **~70 national
+Member Associations** across Europe, Asia, Africa, and the Americas ([IPMA -
+About Us](https://www.ipma.world/about-us), retrieved 2026-07-22) - each MA
+develops PM competence and relationships with practitioners, corporations,
+and government agencies in its own country. Same realistic mechanism as
+APM/PMI: reach a national MA's own contact/volunteer route (most have
+regional or national events and newsletters), not IPMA's central
+secretariat. Worth checking whether any MA sits in a country this corpus's
+projects are drawn from (e.g. Serbia, Peru, Mexico, Albania) for an
+especially on-profile warm ask - same 2-4+ week chapter-cadence caveat as
+APM/PMI applies.
 
 ### 1d. LinkedIn — targeted direct outreach (controllable, labour-intensive)
 The most *controllable* organic channel for hitting the exact profile: search
@@ -169,33 +201,43 @@ this close to the deadline.
 
 ## 4. Recommended sequence (not a decision — a fast default to react to)
 
+**UPDATED 2026-07-22: volunteer-vs-paid is resolved (volunteer only) - step 2
+below is done, and step 3's paid fallback no longer applies. Read this
+sequence as 1, 3(APM parallel), with no deadline-safe fallback left if 1
+stalls - see the update note above §1 for why that changes the risk here.**
+
 1. **Start today, in parallel, both free:** (a) send the outreach-doc message to
    any warm 1a contacts (ex-colleagues, faculty/alumni, MDB/consultancy
    contacts), and (b) begin targeted LinkedIn outreach (1d) to 20-30 on-profile
    people. These cost nothing and have the best profile match; at n=3-5 they may
-   well be sufficient on their own.
-2. **Resolve the outreach doc's volunteer-vs-paid question now, not later** — even
-   a small honorarium attached to (1) speeds conversion and is far cheaper than a
-   paid platform.
-3. **If, after ~1 week, fewer than ~3 are confirmed,** stand up a **paid
-   platform** study (Respondent.io or User Interviews) as the deadline-safe
-   fallback — budget ~$800-$2,800 for the full set typically, but confirm the
-   screener's seniority tier first since a genuinely senior/in-person-only
-   screen can run several times higher (see §2 table above). This is the one
-   route that reliably fills fast regardless of how well-connected the team
-   is.
+   well be sufficient on their own. **With no paid fallback anymore, don't wait
+   a week to see how these perform before also starting §3/APM below - run
+   all of it in parallel from day one.**
+2. ~~Resolve the outreach doc's volunteer-vs-paid question~~ — **done,
+   2026-07-22: volunteer only.**
+3. ~~If, after ~1 week, fewer than ~3 are confirmed, stand up a paid platform
+   study~~ — **no longer available as a fallback** (volunteer-only, no
+   budget). If 1a/1d haven't produced ~3 confirmed raters within 1-2 weeks,
+   the realistic options are: widen 1d's outreach volume, lean harder on
+   APM/PMI (#4, but budget 2-4+ weeks for it to convert), or revisit the
+   volunteer-only decision with Madhu/Kruthik - not something to discover is
+   necessary the week before the deadline.
 4. **APM specifically is worth a parallel warm ask** given the UK third of the
-   corpus — via a regional-network contact, not a cold general inquiry.
+   corpus — via a regional-network contact, not a cold general inquiry. Given
+   #3 is no longer a fast fallback, this is now more load-bearing than it was
+   when this sequence was first written - start it alongside #1, not after.
 
 The genuine bottleneck remains what earlier handoffs already flagged: **only a
 real person (Madhu/Kruthik) can actually send these and recruit.** This memo and
 the outreach doc together mean that when they do, it's a targeted send with a
-costed fallback and a timeline — not a standing start.
+timeline — though, as of the volunteer-only decision, without the paid
+fallback's safety margin this sequence originally assumed.
 
 ---
 
-### Sources (accessed 2026-07-20)
+### Sources (accessed 2026-07-20, IPMA addition accessed 2026-07-22)
 
+- IPMA (international): [IPMA - About Us](https://www.ipma.world/about-us) (federation size/structure).
 - PMI research/participation: [Research at PMI](https://www.pmi.org/learning/thought-leadership/research-at-pmi), [Academic Sponsored Research](https://www.pmi.org/learning/academic-sponsored-research), [Beyond member surveys](https://www.pmi.org/learning/library/beyond-member-surveys-project-success-survey-7477).
 - APM (UK): [APM Community](https://www.apm.org.uk/community/), [Volunteering with APM](https://www.apm.org.uk/community/volunteering/), [About APM](https://www.apm.org.uk/about-us/) (membership size), [APM London Network](https://www.apm.org.uk/community/london-network/).
 - Respondent.io pricing: [Respondent pay-per-study rates 2026 (UserCall)](https://www.usercall.co/post/respondent-pricing), [Respondent.io pricing explained 2026 (CleverX)](https://cleverx.com/blog/respondent-io-pricing-plans-and-costs-explained-2026/).
