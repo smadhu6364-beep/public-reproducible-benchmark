@@ -13,9 +13,12 @@ What it does:
      should-match / should-not-match risk pairs across a WB register
      (P-STP-YouthEmployment) and a UK register (P-UK-HyNetCCUSCluster), plus
      cross-project pairs. See that file's _meta for the honest scope: the
-     ground-truth side of each pair is verbatim from committed registers; the
-     generated side is hand-written to emulate model output (no real model
-     output exists yet - no API keys).
+     ground-truth side of each pair is real text drawn from committed
+     registers, though - corrected 2026-07-21 after checking all 24 sides
+     against the real files - not always the complete verbatim field (most
+     are excerpts truncated at a clause boundary; none are fabricated or
+     paraphrased). The generated side is hand-written to emulate model output
+     (no real model output exists yet - no API keys).
   2. Embeds each side with the SAME model and SAME cosine function match.py
      uses at runtime (imported directly from match.py, not reimplemented), on
      both the description+mitigation concatenation match.py actually embeds
