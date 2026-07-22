@@ -85,8 +85,9 @@ question when the human register itself is imperfect or incomplete.
 > questions are exposed as flags, defaulting to the literal proposal here:
 > `--min-uk-per-cell` (default 0 = the naive draw below; set 1 to guarantee UK
 > representation — see the note after the bullets) and `--exclude-short-register`
-> (default off). Kappa computation (§4) is deliberately NOT implemented yet, per
-> that section.
+> (default off). Kappa computation (§4) is now implemented too —
+> `src/compute_kappa.py`, built 2026-07-22 (Task G1), see that section for
+> details.
 
 The full grid is 3 models × 3 prompts × **21** projects (the corpus grew from
 18 to 21 included projects after this document was first drafted) =
@@ -190,12 +191,24 @@ against each other, not against a converged consensus).
 - Mean Likert scores (not just kappa) should also be reported per model and
   per prompt strategy — kappa tells you whether raters *agree*, the mean
   tells you what they agreed *about*. Both matter for RQ1/RQ2.
-- **Not yet built:** a `results/scored/` → kappa computation script. This
-  document defines the method; writing the actual aggregation code should
-  happen once real ratings exist to test it against (`scipy.stats` and
-  `statsmodels` both have Fleiss' kappa implementations — pick one only when
-  actually needed, don't add a dependency speculatively per CLAUDE.md's
-  "ask before adding anything" rule).
+- **BUILT 2026-07-22 (Task G1):** `src/compute_kappa.py` implements exactly
+  this — reads completed sheets from `results/rater_packets/rater_assignments/`
+  plus `blinding_map.csv`, validates the full-overlap design above, and
+  reports kappa (+ mean Likert scores) overall/by-model/by-prompt-strategy
+  per dimension, plus collects `notable_issues` free text with model/prompt
+  metadata for RQ3. Implemented directly with numpy rather than adding
+  `scipy.stats`/`statsmodels` (neither is pinned in `requirements.txt`) —
+  the formula is short and well-defined enough that a transparent direct
+  implementation avoids a new dependency per CLAUDE.md's "ask before adding
+  anything" rule. Verified against an independently hand-derived worked
+  example in `tests/test_compute_kappa.py` (22 tests) — see that file
+  before trusting a number out of this script on inspection alone. A
+  synthetic demonstration (`analysis/gen_synthetic_kappa_demo.py`, fabricated
+  scores, real code path, `scratch/synthetic_kappa_report.json`) shows the
+  report's shape before real ratings exist, same pattern as
+  `gen_synthetic_scored.py`/`gen_synthetic_cutoff_report.py`. Still and only
+  blocked on real ratings actually existing — recruitment (section 6) is
+  the bottleneck, not this code.
 
 ---
 

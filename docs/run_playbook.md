@@ -241,13 +241,36 @@ python src/build_rater_packets.py --min-uk-per-cell 1 --raters 4
 Rater recruitment is the real bottleneck here, not the code — see
 `docs/rater_recruitment_channels.md` and `docs/rater_protocol.md`.
 
+## 11. Method B — kappa (needs completed rater sheets back)
+
+```bash
+python src/compute_kappa.py --out results/kappa_report.json
+```
+
+- Reads completed sheets from `results/rater_packets/rater_assignments/`
+  (a rater's returned, filled-in CSV is expected to land back in that same
+  directory) plus `blinding_map.csv`, and requires every rater to have
+  scored every sampled register (the full-overlap design, section 3.1 of
+  `docs/rater_protocol.md`) — fails loudly, naming the specific rater/code,
+  if a sheet is incomplete rather than silently computing over a partial
+  set.
+- Reports Fleiss' kappa **and** mean Likert score per dimension
+  (Completeness, Accuracy, Actionability), overall / by-model / by-prompt.
+- `analysis/gen_synthetic_kappa_demo.py` shows the report's shape with
+  fabricated scores before real ratings exist — same synthetic-fixture
+  convention as step 9's `gen_synthetic_scored.py`, output gitignored under
+  `scratch/`.
+- Not yet exercised against real rater data (no ratings exist yet) — same
+  caveat as `--batch`'s "confirmed against real SDK shapes, not a live call"
+  note in section 6a. Spot-check the first real kappa run by hand.
+
 ## Tests
 
 ```bash
 python -m unittest discover -s tests
 ```
 
-401 tests, ~14s, **no network, no API keys, no spend** — the embedding model,
+438 tests, ~14s, **no network, no API keys, no spend** — the embedding model,
 the PDF reader, and all three providers (sync AND batch) are stubbed. One
 test (a real-embedding-model end-to-end check in `test_validate_threshold.py`)
 is skipped by default; opt in with `RUN_SLOW_TESTS=1` if you need it. Run
@@ -277,6 +300,11 @@ invalidate results:
 | `test_env_example.py` | `.env.example` stays in sync with what the code actually reads |
 | `test_gitignore_leakage.py` | leakage-sensitive paths stay gitignored (and aren't already tracked via `git add -f`) |
 | `test_ground_truth_data.py` | all 21 ground-truth files conform to `ground_truth_schema.json` |
+| `test_requirements_consistency.py` | `requirements.txt` vs. actual imports in `src/`/`analysis/`, both directions |
+| `test_claude_md_compliance.py` | category enum + 1-5 scales + repo-structure directories match CLAUDE.md's own text |
+| `test_playbook_smoke.py` | the full `run_experiments.py`->`match.py`->`metrics.py`->`make_figures.py` chain, one shared sandbox |
+| `test_compute_kappa.py` | Fleiss' kappa formula (vs. an independently hand-derived example), CSV validation, full-overlap design, CLI |
+| `test_gen_synthetic_kappa_demo.py` | the kappa synthetic demo runs the real `compute_report()`, output is clearly labeled |
 
 `test_figures.py` needs matplotlib and **skips** (does not fail) on an
 interpreter without it — so `python -m unittest discover -s tests` is green
