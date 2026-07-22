@@ -528,14 +528,70 @@ them. F1/F2/F3/F4/F5/F6 are now done (see the status update above); F7-F11
 remain open and unclaimed. If you finish those and want still more, ask
 before expanding scope further, same rule as always.
 
+## Task G: 2 more tasks, pre-approved (added 2026-07-22 from Cowork)
+
+Same rules as Task F - engineering/testing/docs only, no rater outreach, no
+`.env`/API keys, no fabricated data. Both are genuinely unblocked right now
+- no need to wait for Madhu's API keys or for real raters.
+
+**G1 - build the Fleiss' kappa computation script for Method B.** Confirmed
+via grep: `docs/rater_protocol.md` S4 explicitly says this is "Not yet
+built." CLAUDE.md requires "expert Likert ratings + Fleiss' kappa" for
+Method B, and right now there is no code path from `results/scored/` to an
+actual kappa number - a real gap, not just a nice-to-have. Build it per
+`rater_protocol.md` S4's spec: three separate kappa values (Coverage /
+Accuracy / Actionability - not one pooled score), Fleiss (1971) formula,
+Landis & Koch (1977) bands for interpretation, reported three ways
+mirroring `metrics.py`'s existing subgroup structure (by model, by prompt
+strategy, overall), plus mean Likert scores per model/prompt alongside
+kappa (kappa tells you agreement, the mean tells you the actual rating -
+report both, per S4). Use `scikit-learn` or `statsmodels` (both have Fleiss'
+kappa implementations - pick one, and check CLAUDE.md's "ask before adding
+anything" rule if neither is already in `requirements.txt`). Don't wait for
+real rater data to build and test this - follow the same synthetic-fixture
+pattern already established in `analysis/gen_synthetic_scored.py` /
+`gen_synthetic_cutoff_report.py` (mock rater scores, real code path,
+clearly labeled as synthetic) so the script is proven correct before real
+ratings ever arrive.
+
+**G2 - pre-flight re-check: Together AI model ID + pricing.** Two things
+`.env`'s own inline comments flag as time-sensitive and due for a re-check
+before the real batch run: (1) is `meta-llama/Llama-3.3-70B-Instruct-Turbo`
+still a live model ID on Together's public model list (hosted IDs get
+deprecated - this exact risk is why Groq's equivalent got ruled out
+earlier), (2) is $1.04/MTok input=output still the current price at
+together.ai/pricing (last independently verified 2026-07-21). Web search
+only, no API key needed. Update `docs/opensource_slot_options.md` and
+`.env.example`'s comment only if a number actually changed - otherwise just
+note the re-check date so we know it's current.
+
+Both pre-approved, no need to check back before starting.
+
+## One more thing worth flagging, not a task
+
+The 8 files you've had modified (`git status` currently shows:
+`analysis/gen_synthetic_scored.py`, `analysis/threshold_validation_pairs.json`,
+`data/corpus_manifest.csv`, `docs/model_tier_recommendation.md`,
+`src/validate_threshold.py`, `tests/test_ground_truth_data.py`,
+`tests/test_validate_threshold.py`, and a new untracked
+`tests/test_gen_synthetic_scored.py`) have been sitting uncommitted across
+several checks now from the Cowork side. Not asking you to stop or rush -
+just flagging that Cowork won't touch, verify, or commit any of them until
+they've held steady across two checks (the standing rule: nothing gets
+reviewed or landed while it's still mid-edit). If they're actually finished,
+a note here saying so would let that verification happen sooner rather than
+waiting on another guess-and-check cycle.
+
 ## Ground rules (same as always, from CLAUDE.md)
 
 - Never commit `data/raw/` or `.env`.
 - Don't touch the frozen RQs or the leakage rule.
-- Task E is done and stays done - rater recruitment outreach itself
-  (actually contacting people) is explicitly on hold until Madhu says
-  otherwise. Don't touch `docs/rater_recruitment_outreach.md` or send
-  anything on Madhu's behalf as part of Task F.
+- Task E is done and stays done - both open decisions (volunteer-vs-paid,
+  spreadsheet-vs-form) were resolved 2026-07-22 (Madhu: volunteer-only,
+  spreadsheet) and `docs/rater_recruitment_outreach.md`'s template is now
+  send-ready. Actually contacting people is still Madhu/Kruthik's action,
+  not something either Claude session does - don't send anything on their
+  behalf or touch that file as part of Task F/G.
 - The git backlog mentioned in earlier handoffs is resolved - everything's
   committed now, working tree was clean before this round of tasks started.
   I'm still committing your work from the Cowork side as it lands, same as
