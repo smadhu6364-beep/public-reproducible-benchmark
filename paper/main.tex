@@ -1,0 +1,297 @@
+% main.tex - IEEE conference paper skeleton
+% LLM Risk Register Benchmark
+%
+% STATUS (2026-07-23): Draft skeleton, not a submittable manuscript.
+% Real, non-fabricated content: Sections I (framing/RQs), III (Methodology),
+% and V (Discussion/Limitations) are built from paper/methodology_notes.md,
+% docs/lit_review_foundation.md, and INCLUSION_CRITERIA.md - all real,
+% previously-vetted project content, not invented here.
+%
+% EXPLICIT PLACEHOLDERS - do not fill these with invented numbers:
+%   - Abstract: needs real RQ1-RQ3 headline findings (results/metrics.json
+%     does not exist yet as of this revision - the real experiment grid is
+%     pending on provider account billing, see HANDOFF_VSCODE_SESSION.md).
+%   - Section IV (Results): entirely blocked on real experiment data.
+%   - Section VI (Conclusion): cannot be written before Results exist.
+%   - Section II (Related Work): the THEMES/gap-table content is real
+%     (docs/lit_review_foundation.md), but references.bib still has
+%     "TODO: verify" on most entries - Kruthik's assigned full-text checks
+%     (docs/lit_review_foundation.md, NEXT ACTIONS #2) are not done yet.
+%     Do not treat the \cite{} keys below as submission-ready until those
+%     TODOs are cleared.
+%   - Author affiliations: not specified anywhere in the repo: left as
+%     [AFFILIATION] rather than guessed.
+
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+
+\begin{document}
+
+\title{Evaluating Large Language Models for Automated Risk Register Generation from Project Documentation: A Benchmark Study}
+
+\author{
+\IEEEauthorblockN{Madhu}
+\IEEEauthorblockA{[AFFILIATION] \\ Email: [EMAIL]}
+\and
+\IEEEauthorblockN{Kruthik}
+\IEEEauthorblockA{[AFFILIATION] \\ Email: [EMAIL]}
+}
+
+\maketitle
+
+\begin{abstract}
+\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} This abstract cannot be
+written honestly until Sections IV (Results) exist from a real experiment
+run. Draft shape once real numbers land: state the gap (no prior work
+benchmarks end-to-end risk-register \emph{generation} against real
+published human registers across multiple LLMs), the method (3 models
+$\times$ 3 prompting strategies $\times$ 21 real-world projects, evaluated
+against ground-truth registers via semantic matching, expert Likert
+ratings with Fleiss' $\kappa$, and supplementary LLM-as-judge scoring),
+and the headline RQ1--RQ3 finding.
+\end{abstract}
+
+\section{Introduction}
+
+Large language models are increasingly proposed as tools for project
+management tasks, yet the literature concentrates heavily on predictive
+analytics for time, cost, and quality rather than generative capability
+\cite{aidriven2026usecases}. Within the narrower body of work that does
+study LLMs for project risk work specifically, evaluation has so far relied
+on expert-opinion panels or author judgment rather than comparison against
+real, published human-authored artifacts, has been almost entirely
+single-model (typically ChatGPT only), and has not distinguished the
+\emph{generation} of a full risk register from the narrower task of
+\emph{classifying} already-identified risk items
+\cite{asce2025exploring_chatgpt_risk,buildings2025risk_classification}.
+
+This gap motivates the present study:
+\begin{quote}
+\emph{While recent studies have assessed ChatGPT's ability to discuss
+project risks under expert evaluation, no work has benchmarked multiple
+LLMs on end-to-end risk register generation from real project documents
+against published human-authored registers, leaving both the accuracy and
+the systematic failure modes of this capability unquantified.}
+\end{quote}
+
+We address it with three frozen research questions:
+
+\begin{itemize}
+\item \textbf{RQ1:} How complete and accurate are LLM-generated risk
+  registers compared to human-authored ones?
+\item \textbf{RQ2:} How do results vary across three models (a frontier
+  proprietary model, a competing proprietary model, and an open-weight
+  model) and three prompting strategies (zero-shot, few-shot, and
+  structured reasoning)?
+\item \textbf{RQ3:} Which risk categories do LLMs systematically miss or
+  hallucinate? This failure-mode analysis is the paper's core contribution.
+\end{itemize}
+
+\section{Related Work}
+\label{sec:related}
+
+\textit{Citation note: entries below use provisional \texttt{references.bib}
+keys. Several still carry a "TODO: verify" flag pending full-text
+confirmation of author lists, venues, and page numbers - see
+\texttt{docs/lit\_review\_foundation.md}. Resolve every TODO before
+submission.}
+
+\subsection{AI in Project Management}
+Systematic reviews of AI in project management consistently find that
+generative applications are among the least-studied AI functions in the
+field, with research concentrated instead on predictive analytics for
+schedule, cost, and quality outcomes
+\cite{aidriven2026usecases,aitools2025knowledge}. Adoption itself is
+reported as limited by practitioners' unfamiliarity with the tools rather
+than by demonstrated capability gaps \cite{aitools2025knowledge}.
+
+\subsection{LLMs for Project Risk Management}
+The closest prior work evaluates ChatGPT against expert judgment on
+construction-project risk identification and mitigation, finding strong
+performance on generic, checklist-style risks but weaker performance on
+context-specific risks -- typically the highest-severity ones
+\cite{asce2025exploring_chatgpt_risk}. Related studies report similar
+patterns using GPT-3.5 and GPT-4 under expert or focus-group evaluation
+\cite{aladag2023assessing_chatgpt,ecam2024chatgpt_exceed_humans}, and one
+develops a fine-tuned agent (RiskGPT) evaluated on a small set of case
+studies rather than a public benchmark \cite{wen2025riskgpt}. Across this
+line of work, three limitations recur: single-model evaluation (almost
+always ChatGPT), no comparison against real published ground-truth
+registers, and no publicly released, reproducible benchmark.
+
+\subsection{Risk Classification vs.\ Generation}
+A closely related but distinct task is classifying already-identified risk
+items into categories, which has been benchmarked across NLP and LLM
+methods \cite{buildings2025risk_classification}. This is a materially
+easier task than the one studied here: it presupposes that the risks have
+already been identified, whereas end-to-end register generation requires a
+model to both identify and characterize risks from raw project
+documentation.
+
+\subsection{LLM Evaluation Methodology}
+LLM-as-judge protocols are documented to be unstable across near-identical
+prompts, subject to positional and self-enhancement bias, and poorly
+calibrated in expert-knowledge domains
+\cite{zheng2023judging_llm_judge,iui2025llmjudge_expert,nofreelabels2025}.
+This motivates our decision (Section~\ref{sec:methods}) to treat LLM-as-judge
+scoring as strictly supplementary to semantic matching against ground truth
+and blinded human expert rating, never as a stand-alone measure
+\cite{llmsasjudges2024survey}.
+
+\subsection{Positioning}
+Table~\ref{tab:gap} summarizes how this study differs from the closest
+prior work.
+
+\begin{table}[t]
+\centering
+\caption{Gaps in prior work and how this study addresses them}
+\label{tab:gap}
+\begin{tabular}{@{}p{0.46\linewidth}p{0.46\linewidth}@{}}
+\toprule
+\textbf{Gap in existing work} & \textbf{This study} \\
+\midrule
+Single-model, almost always ChatGPT & 3-model comparison incl.\ an open-weight model (RQ2) \\
+Evaluated against expert opinion, not real ground truth & Semantic matching against published human registers (RQ1) \\
+Construction-sector only & Cross-sector public corpus (World Bank + UK) \\
+No public, reproducible benchmark & Corpus manifest, prompts, and code released \\
+Known weak-category behavior never quantified per category & Per-category recall/precision failure-mode analysis (RQ3) \\
+Non-blind rating designs criticized in prior work & Blinded rating protocol, Fleiss' $\kappa$ reported \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Methodology}
+\label{sec:methods}
+
+\subsection{Corpus}
+The corpus comprises 21 real-world projects with both public planning
+documentation and a published, human-authored risk register: 18 World Bank
+Project Appraisal Documents (PADs) and 3 UK government business cases
+(Five Case Model format). Each candidate project was required to clear four
+gate criteria: (1) a structured, rated risk table is present; (2) a
+substantive, itemized narrative risk discussion beyond the table exists;
+(3) the boundary between planning content and risk content is locatable and
+independently re-verifiable against the source document, not merely a
+previously recorded page range; and (4) at least 15 pages of planning
+content survive excision of the risk content. Two UK candidates and one
+World Bank candidate were read in full and excluded or set aside for
+failing gate (2); one UK project (13 pages of surviving planning content)
+is retained as a disclosed exception to gate (4) rather than silently
+lowering the threshold.
+
+\subsection{Leakage Control}
+Because several source documents contain the human risk register within the
+same file as the planning narrative, we applied a manual leakage-control
+protocol rather than automated section detection, which is unreliable
+across document formats spanning many years. For each project, an author
+located the risk section (e.g., the World Bank SORT risk table) and excised
+it from the text supplied to the models, recording the exact page range
+removed; the remaining planning text was then checked for narrative
+passages that restate the register's risks, which were likewise removed.
+Every excision range was independently re-verified against the source
+document itself before ground truth was finalized -- not merely re-checked
+against the previously recorded range -- which caught three distinct
+under- and over-excision errors during corpus construction. A standing
+audit tool independently re-scans included documents for heading/table
+patterns and greps ground-truth text against processed planning text for
+verbatim or near-verbatim recurrence, run on every corpus change.
+
+\subsection{Experimental Grid}
+Three models -- a frontier proprietary model, a second proprietary model,
+and an open-weight model -- are each evaluated under three prompting
+strategies (zero-shot, few-shot, and structured reasoning) across all 21
+projects, with 2 runs per cell at temperature 0--0.1, yielding a
+189-cell $\times$ 2-run grid. Models receive planning/appraisal
+documentation only; the ground-truth register for a given project never
+enters that project's prompt or any few-shot example (few-shot
+demonstrations are fully synthetic, constructed for this purpose, and never
+drawn from a real corpus project).
+
+\subsection{Output Schema}
+Each generated risk is a fixed JSON object: a stable identifier, a
+description, one of eight categories (technical, financial, schedule,
+stakeholder, political/regulatory, environmental, organizational,
+external), likelihood and impact on 1--5 scales, a required mitigation, and
+a required evidence field citing the specific planning-document passage
+that motivated the risk -- a generated risk with no traceable evidence is
+the operational definition of a hallucination for RQ3. The structured
+reasoning condition additionally emits visible step-by-step reasoning before
+a \texttt{FINAL JSON:} marker; the zero-shot and few-shot conditions emit
+the JSON object only.
+
+\subsection{Evaluation}
+Three methods are used. \textbf{Method A (primary):} sentence-embedding
+semantic matching (\texttt{all-MiniLM-L6-v2}) between generated and
+ground-truth risks within the same project, greedy highest-similarity-first
+one-to-one matching above a validated threshold, yielding per-category
+recall and precision. \textbf{Method B:} blinded expert practitioner
+ratings on completeness, accuracy, and mitigation actionability, with
+inter-rater agreement reported via Fleiss' $\kappa$
+\cite{fleiss1971kappa} and interpreted using standard agreement bands
+\cite{landiskoch1977agreement}. \textbf{Method C (supplementary only):}
+LLM-as-judge scoring on the same three dimensions, reported strictly as a
+correlation against Method B once human ratings exist, per the
+methodological concerns discussed in Section~\ref{sec:related}.
+
+\section{Results}
+\label{sec:results}
+
+\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} This section is blocked on a
+real experiment run. As of this draft revision, \texttt{results/raw\_outputs/}
+contains zero real generations: the model tier and full pipeline are built
+and tested, but the run itself is pending provider-account billing setup.
+Populate this section from \texttt{results/metrics.json} (Method A: RQ1/RQ2
+aggregates) and the Method B rater-agreement output
+(\texttt{src/compute\_kappa.py}) once real data exists. Do not insert
+illustrative or placeholder numbers here under any circumstance.
+
+\section{Discussion and Limitations}
+
+\subsection{Pretraining Contamination}
+The corpus is drawn from public documents, which the evaluated models may
+have encountered during pretraining -- including the risk registers held
+out as ground truth. Excision controls what enters the prompt but cannot
+control what a model already learned. We mitigate this in two ways: the
+corpus deliberately spans both older and more recent documents by
+publication date, and a supplementary analysis (opt-in, not part of the
+headline metrics) compares performance on documents published before versus
+after each model's training-data cutoff
+(Claude: January 2026; the competing proprietary model: February 16, 2026;
+the open-weight model: December 2023). A systematic gap between these
+groups would be a contamination signal, though a suggestive one, not
+dispositive proof either way. \texttt{publication\_date} is populated for
+only 10 of the 21 included projects at present, which limits this
+supplementary analysis to that subset; we report this as a limitation
+rather than backfilling the field from a different, non-equivalent date
+found in the source documents.
+
+\subsection{Provider API Behavior}
+One evaluated model's reasoning mode is documented to reject the
+\texttt{temperature} parameter outright; the experiment runner detects this
+and retries without it, recording \texttt{temperature\_applied=false} on
+the affected records rather than silently claiming uniform temperature
+control across all three models. Any run where this fires is a real,
+disclosed deviation from strict temperature uniformity and is reported as
+such rather than hidden.
+
+\subsection{Threats to Validity}
+Method A's similarity threshold was validated against a hand-labeled set of
+risk-description pairs rather than a real experiment run, since no real
+model output existed at the time of validation; it should be revisited
+against real generations if the corpus or embedding model changes.
+Method C is deliberately never treated as an independent quality measure,
+for the reasons discussed in Section~\ref{sec:related}.
+
+\section{Conclusion}
+
+\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} Conclusions cannot be drawn
+before Section~\ref{sec:results} contains real findings.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
