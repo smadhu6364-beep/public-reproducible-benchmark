@@ -62,6 +62,34 @@ def _fake_openai_module(should_raise=None):
     return SimpleNamespace(OpenAI=FakeOpenAI), calls
 
 
+class _FakeHTTPResponse:
+    def __init__(self, status=200):
+        self.status = status
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        return False
+
+
+def _fake_urlopen(should_raise=None, status=200):
+    """check_opensource() hits {base_url}/models directly over HTTP (not via
+    the openai SDK, since Together AI's /v1/models returns a bare list that
+    crashes the SDK's response parsing - see check_env.py's comment). Records
+    every Request object it was called with, so tests can assert on the URL/
+    headers actually sent, not just that *a* call happened."""
+    calls = []
+
+    def fake(req, timeout=None):
+        calls.append(req)
+        if should_raise:
+            raise should_raise
+        return _FakeHTTPResponse(status)
+
+    return fake, calls
+
+
 def _fake_hf_hub_module(should_raise=None, username="a-real-user"):
     class FakeHfApi:
         def whoami(self, token=None):
@@ -135,14 +163,46 @@ class TestCheckOpensource(unittest.TestCase):
         self.assertIn("neither OPENSOURCE_BASE_URL nor HF_TOKEN", result)
 
     def test_base_url_path_reports_ok(self):
-        fake_mod, calls = _fake_openai_module()
+        fake_urlopen, calls = _fake_urlopen()
         env = {"OPENSOURCE_BASE_URL": "https://api.together.xyz/v1", "OPENSOURCE_API_KEY": "fake"}
         with mock.patch.dict("os.environ", env, clear=True), \
-             mock.patch.dict(sys.modules, {"openai": fake_mod}):
+             mock.patch("urllib.request.urlopen", fake_urlopen):
             label, configured, result = ce.check_opensource()
         self.assertTrue(configured)
         self.assertEqual(result, "OK")
         self.assertIn("together.xyz", label)   # the base_url is surfaced for clarity
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0].full_url, "https://api.together.xyz/v1/models")
+        self.assertEqual(calls[0].get_header("Authorization"), "Bearer fake")
+
+    def test_base_url_path_sends_a_real_user_agent(self):
+        # Found 2026-07-23 on the first real call ever made against a live
+        # OPENSOURCE_BASE_URL: a bare urllib request (Python's default
+        # User-Agent) got a 403 from a proxy/WAF in front of Together AI's
+        # endpoint, while the openai SDK's own request (different UA)
+        # succeeded - so this header isn't cosmetic, a missing/default one
+        # can make a genuinely valid key look like a real failure.
+        fake_urlopen, calls = _fake_urlopen()
+        env = {"OPENSOURCE_BASE_URL": "https://api.together.xyz/v1", "OPENSOURCE_API_KEY": "fake"}
+        with mock.patch.dict("os.environ", env, clear=True), \
+             mock.patch("urllib.request.urlopen", fake_urlopen):
+            ce.check_opensource()
+        user_agent = calls[0].get_header("User-agent")   # urllib title-cases header keys
+        self.assertTrue(user_agent, "no explicit User-Agent was sent")
+        self.assertNotIn("Python-urllib", user_agent)   # i.e. not left at the default
+
+    def test_base_url_path_http_error_reports_fail_not_a_crash(self):
+        import urllib.error
+
+        fake_urlopen, _ = _fake_urlopen(
+            should_raise=urllib.error.HTTPError("url", 401, "Unauthorized", {}, None))
+        env = {"OPENSOURCE_BASE_URL": "https://api.together.xyz/v1", "OPENSOURCE_API_KEY": "bad"}
+        with mock.patch.dict("os.environ", env, clear=True), \
+             mock.patch("urllib.request.urlopen", fake_urlopen):
+            label, configured, result = ce.check_opensource()
+        self.assertTrue(configured)
+        self.assertTrue(result.startswith("FAIL"))
+        self.assertIn("401", result)
 
     def test_hf_token_path_reports_ok_with_username(self):
         fake_hf = _fake_hf_hub_module(username="madhu-test")
@@ -158,13 +218,13 @@ class TestCheckOpensource(unittest.TestCase):
         # checked first, so if both env vars are ever set simultaneously,
         # HF_TOKEN is silently not exercised at all - worth knowing before
         # debugging "why didn't my HF token get checked".
-        fake_openai_mod, openai_calls = _fake_openai_module()
+        fake_urlopen, calls = _fake_urlopen()
         with mock.patch.dict("os.environ", {"OPENSOURCE_BASE_URL": "https://api.together.xyz/v1",
                                             "HF_TOKEN": "hf_fake"}, clear=True), \
-             mock.patch.dict(sys.modules, {"openai": fake_openai_mod}):
+             mock.patch("urllib.request.urlopen", fake_urlopen):
             label, configured, result = ce.check_opensource()
         self.assertIn("self-hosted endpoint", label)
-        self.assertEqual(openai_calls, [True])
+        self.assertEqual(len(calls), 1)   # the HTTP path was used, not HF
 
     def test_hf_hub_not_installed_is_reported_not_a_crash(self):
         with mock.patch.dict("os.environ", {"HF_TOKEN": "hf_fake"}, clear=True), \

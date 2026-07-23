@@ -75,13 +75,43 @@ def check_opensource() -> tuple[str, bool, str]:
 
     if base_url:
         label = f"Open-source (self-hosted endpoint: {base_url})"
-        try:
-            import openai
+        # Deliberately NOT openai.OpenAI(...).models.list() here (unlike
+        # check_anthropic/check_openai above). Found 2026-07-23 on the first
+        # real call ever made against a live OPENSOURCE_BASE_URL: Together
+        # AI's /v1/models returns a bare JSON list (271 entries, no
+        # {"object": "list", "data": [...]} wrapper), which crashes the
+        # openai SDK's response model parsing with a confusing
+        # "'list' object has no attribute '_set_private_attributes'" error -
+        # not an auth failure, a response-shape incompatibility in the
+        # verification path only. run_experiments.py's real call_opensource()
+        # is unaffected: it calls /chat/completions, which Together (and
+        # other OpenAI-compatible hosts) do serve in standard shape - only
+        # this cheapest-possible-check path hit the non-standard /models
+        # shape. Fixed by hitting /models directly over HTTP and checking
+        # only the status code, never parsing/relying on the body shape -
+        # this also sidesteps needing to know which third-party provider's
+        # /models response format is in play. A explicit User-Agent is
+        # required: a bare urllib request (Python's default UA) got a 403
+        # from a proxy/WAF in front of this exact endpoint during
+        # diagnosis, while both the openai SDK (which sets its own UA) and
+        # this explicit header succeeded - without one, a real key can look
+        # like a real failure.
+        import urllib.error
+        import urllib.request
 
-            client = openai.OpenAI(api_key=opensource_key or "unused", base_url=base_url)
-            client.models.list()
-            return (label, True, "OK")
-        except Exception as e:  # noqa: BLE001
+        req = urllib.request.Request(
+            base_url.rstrip("/") + "/models",
+            headers={
+                "Authorization": f"Bearer {opensource_key or 'unused'}",
+                "User-Agent": "llm-risk-register-benchmark/check_env.py",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                return (label, True, "OK")
+        except urllib.error.HTTPError as e:
+            return (label, True, f"FAIL: HTTP {e.code} {e.reason}")
+        except Exception as e:  # noqa: BLE001 - network/timeout/etc.
             return (label, True, f"FAIL: {e}")
     elif hf_token:
         label = "Open-source (HF hosted inference)"
