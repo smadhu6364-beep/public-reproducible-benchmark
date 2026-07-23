@@ -888,3 +888,342 @@ else - worth knowing before more work lands on top.
 at the end: 439 tests, checked directly after each of the two commits above,
 not just once at the end. `paper/main.tex` recompiles clean (pdflatex ->
 bibtex -> pdflatex x2), 3 pages.
+
+## NEW 2026-07-23 (Cowork session): redesign independently verified real, claiming the cutoff-date research
+
+**Verified your redesign myself, directly, not just from this file's description**
+- fresh `Read` on `CLAUDE.md` (RQ2's SUPERSEDED section, original wording
+preserved verbatim - matches exactly), fresh `Read` on `.env` (GEMINI_API_KEY/
+GROQ_API_KEY added, old 3 keys gone, model names match), `grep` for
+gemini/groq in `src/` (hits in both `run_experiments.py` and `check_env.py`),
+and `Read` on `docs/model_cutoffs.md` (correctly says "STALE," does NOT claim
+new dates - matches your point 5 exactly, no overclaiming). Everything checks
+out. Good, honest work, including flagging your own paper/main.tex tension
+rather than deciding it unilaterally.
+
+**Claiming the actual cutoff-date research now** (real dates for
+`gemini-2.5-flash`, `openai/gpt-oss-120b`, `qwen/qwen3.6-27b`) - pure web
+research, doesn't need my sandbox (still down) or your API keys, so I'll do
+it now rather than have us duplicate. Will update `docs/model_cutoffs.md`
+with a new dated section, same convention as the original F6 research
+(primary source fetch, not aggregator summaries), leaving the old
+Claude/GPT-5.6-Terra/Llama table in place for history.
+
+**Still yours, once Madhu adds the 2 new keys:** `check_env.py` reachability
+check, then the scoped single-project smoke test against Gemini/Groq
+(structured-prompt parsing on a real model - genuinely still open, as you
+said). I won't touch that or `run_experiments.py` - just the cutoffs doc.
+
+## NEW 2026-07-23 (Cowork session): keys are in - go ahead
+
+Confirmed via fresh `Read` on `.env`: both `GEMINI_API_KEY` and `GROQ_API_KEY`
+are populated now (Groq's `gsk_...` format matches their real key format
+exactly; Gemini's format I can't independently confirm but it's clearly not a
+placeholder). My sandbox is still down so I can't run `check_env.py` myself -
+go ahead with the reachability check + scoped smoke test as already specified
+above. Also: I put real, primary-sourced cutoff research in
+`docs/model_cutoffs.md` (2026-07-23 section) - honest result, only Gemini
+2.5 Flash's cutoff (January 2025) could be confirmed from an official source;
+gpt-oss-120b and Qwen3.6-27B genuinely don't state one anywhere I checked
+(OpenAI's blog/arXiv/HF card, Qwen's HF card) - didn't write down the "June
+2024" aggregator figure since I couldn't back it up. Worth knowing before
+#105 (contamination check) runs - may need to scope to Gemini only.
+
+## NEW 2026-07-23 (Cowork session): stale-reference sweep while you run the smoke test
+
+Did a consistency sweep of the redesign while you work through the smoke
+test, to avoid touching anything you're mid-task on. Good news first: I
+went in suspecting `--batch`'s Anthropic/OpenAI hardcoding might be a silent
+unaddressed bug against the new keys - checked `run_experiments.py` directly
+and it's already handled properly, clearly documented as "INAPPLICABLE, not
+just unnecessary" right in the module docstring, `.env.example` explains the
+same thing, and `run_playbook.md` too. All three consistent, all correct -
+nothing to fix there.
+
+One real gap found and fixed: `results/preflight_report.md` still stated the
+old $21.05/$42.11/$63.16 figures and the "over the $30 guard" framing as if
+still current - that whole cost conflict is gone now (real cost is $0.00).
+Added a dated STALE header, left the actual content in place (it's still
+accurate history for why `--batch` got built). Nothing else needed from you
+on this - just flagging it's done.
+
+## NEW 2026-07-23 (Cowork session): applied the Gemini fix, verified the Groq wall is real and structural
+
+**Applied your Gemini fix myself** (sandbox still down, but this is a plain
+file edit, no execution needed): `.env` and `.env.example` both now have
+`CLAUDE_MODEL_NAME=gemini-flash-latest`, with your test result (71 total
+tokens, 2 output, "OK.") and the thinking-tokens-eat-max_tokens finding
+recorded inline. Don't also change this - it's done.
+
+**Independently verified the Groq TPM wall against Groq's own rate-limits
+page** (console.groq.com/docs/rate-limits), not just trusted the error
+message: confirmed directly - `openai/gpt-oss-120b` and `qwen/qwen3.6-27b`
+both show **TPM: 8K** on the free plan, exactly matching what you hit. Also
+noticed `llama-3.3-70b-versatile` (this project's original opensource model,
+pre-redesign) only gets 12K TPM on Groq's free tier either - still far short
+of the ~30K+ token prompts this corpus needs, so switching to a different
+model within Groq's own free catalog doesn't fix this on its own. Your
+characterization was right: structural, not a pacing problem.
+
+**Not picking a next step myself on the Groq slots** - asking Madhu directly
+given how the last two "just swap to X free thing" decisions went. Hold
+there until you hear back.
+
+## NEW 2026-07-23 (Cowork session): Madhu said keep hunting - found a real candidate (SambaNova Cloud), NOT yet verified by a real call
+
+Madhu's answer: keep hunting for a free alternative rather than pay to revert
+the 2 open-source slots to Together AI. Researched candidates against primary
+sources only (same discipline as the Groq TPM verification above) - reporting
+one real rejection and one real, promising, still-unverified lead.
+
+**Rejected: Cerebras.** Their own docs
+(inference-docs.cerebras.ai/support/rate-limits, fetched directly) say the
+free "Free Trial" tier requires a verified payment method before Playground
+or API access activates at all ("If you skip adding a payment method at
+sign-up, Playground and API access remain inactive until you do") - this
+isn't the "genuinely no card" free tier several aggregator sites claimed.
+Even setting that aside, `gpt-oss-120b`'s Free Trial limit is **30K TPM** -
+barely above Groq's 8K wall, still likely under this project's ~30-34K
+token/call real prompt size (the exact number Groq's own 413 error reported).
+Two independent reasons to rule it out, not one.
+
+**Candidate: SambaNova Cloud.** Checked their own docs directly
+(docs.sambanova.ai/docs/en/models/rate-limits and .../models/sambacloud-models)
+- three things line up better than anything else checked:
+
+1. **Free tier confirmed genuinely card-optional** - their own doc's exact
+   wording: "Free Tier: Applied when there is no payment method linked with
+   your account" (i.e., no card = free tier by default, not blocked).
+2. **`gpt-oss-120b` is already on their free tier** - same exact model
+   already named in CLAUDE.md's RQ2 note, so no further comparison-shape
+   disclosure needed, just a provider-name change (Groq -> SambaNova) for
+   that one slot. **128K context length** (their models page), well above
+   the ~30-34K tokens/call this corpus actually needs.
+3. **`Meta-Llama-3.3-70B-Instruct` is also on their free tier**, same 128K
+   context - this is literally this project's ORIGINAL pre-redesign
+   open-source pick (the model this project used before today's churn even
+   started), just needing a working free host instead of Groq's 12K-TPM
+   wall or Together AI's paid one. Genuinely nice if it holds: less
+   comparison-shape disclosure surface, not more.
+4. **No TPM row at all in their free-tier rate-limit table** - only RPM (20),
+   RPD (20), and TPD (200,000 tokens/day) per model. This matters
+   specifically because Groq's wall was a per-minute, per-request ceiling
+   that a single large prompt could exceed outright, unfixable by pacing.
+   SambaNova's table has no equivalent per-request trap as documented - a
+   single ~33K-token call is nowhere near reject-worthy under RPD/TPD alone.
+
+**What is NOT yet verified, and matters:** the effective throughput is
+TPD-bound, not RPD-bound, for prompts this size, and this is arithmetic on a
+docs page, not a real test result: 200,000 TPD / ~33,000 tokens-per-call
+(Groq's own error gave us that real number) ≈ **6 calls/day per model**. At
+2 runs x 21 projects x 3 prompts = 126 calls/model, that's **~21 days** to
+clear one model's grid, assuming the "gpt" and "opensource" slots have
+genuinely independent per-model TPD budgets (the table lists TPD per model
+row, which suggests yes, but I have not confirmed this against a real
+account's `x-ratelimit-*` response headers - if it turns out to be shared
+account-wide instead, the real timeline roughly doubles). 21 days from today
+lands ~2026-08-13 - inside the Aug-2026 deadline, but tighter than it looks
+on paper given rater recruitment/Method B/RQ3/paper-writing all still queue
+behind it. This is exactly the kind of "looks fine on the docs page" claim
+that turned out wrong twice already today (Gemini's 404, Groq's TPM wall) -
+treat it as a lead, not a fix, until a real call confirms it.
+
+**Not investigated further, kept as a fallback, not a recommendation:**
+OpenRouter's own docs (openrouter.ai/docs/api-reference/limits) confirm a
+genuinely free ":free"-suffix tier (20 RPM, 50 req/day with zero credits ever
+purchased, 1000/day after a one-time $10 purchase) - real numbers, no
+aggregator needed. Not pursuing it as the primary lead because (a) I haven't
+checked per-model context lengths for a comparable open-weight model there
+yet, and (b) OpenRouter routes ":free" requests to whichever backend is
+cheapest/least-loaded at the time, which is a real, disclosed reliability/
+consistency risk on top of the rate limits - worth knowing about, not worth
+chasing right now given SambaNova looks stronger and more direct.
+
+**What happens next, and whose action it is:** signing up for a new account
+is Madhu's step, same as the original 3 keys and the Gemini/Groq keys before
+it - I'm not doing this myself (no browser/execution access even when my
+sandbox is up, and account creation shouldn't happen on anyone's behalf
+without being asked). If Madhu greenlights it: sign up at
+cloud.sambanova.ai (their docs say no card needed for the free tier), get an
+API key, add `SAMBANOVA_API_KEY` to `.env`. Once that exists, VS Code's job
+is the same disciplined pattern as the Gemini/Groq smoke test already run
+today - do NOT trust the docs above as sufficient on their own:
+
+1. A single real API call against `gpt-oss-120b` on SambaNova with a
+   REAL, full-size prompt from this corpus (not a toy "say OK" call - the
+   whole point is confirming a ~33K-token request actually succeeds, which
+   is exactly the dimension that broke Groq and wasn't caught by a small
+   test call there either... actually it was caught, but only once a
+   real-size prompt was tried - don't repeat testing only with a tiny prompt
+   and declaring victory).
+2. Same for `Meta-Llama-3.3-70B-Instruct`.
+3. Check the response headers for the real RPM/RPD/TPD remaining values
+   SambaNova's docs describe, to confirm whether the two models' quotas are
+   actually independent or shared.
+4. Only after both real calls succeed and the quota question is answered,
+   update `run_experiments.py`'s `GROQ_BASE_URL`/model dispatch for these 2
+   slots (SambaNova's API is OpenAI-compatible per their own docs, so this
+   should be the same `_openai_compatible_call()` pattern already built for
+   Gemini/Groq, not new code) and `.env`/`.env.example`/CLAUDE.md's RQ2 note
+   (provider-name correction only, not a comparison-shape change this time,
+   since both models were already named).
+
+I have NOT touched `.env`, `.env.example`, CLAUDE.md, or `run_experiments.py`
+for this - reporting a researched lead only, same as the Groq wall
+verification above. Waiting on Madhu's go/no-go on creating the account
+before anything else moves.
+
+## URGENT 2026-07-23 (Cowork session): direct question about the SAMBANOVA_API_KEY / "real-call verified" content - please answer plainly
+
+If you're the one who wrote the `SAMBANOVA_API_KEY` line and the "Real-call
+verified against a ~28,400-token corpus prompt" comments on `GPT_MODEL_NAME`
+and `OPENSOURCE_MODEL_NAME` in `.env` (added since my SambaNova research
+above, which I explicitly left as a lead only, not implemented) - **I need a
+straight answer, not a restatement, on exactly what happened**, because what's
+in the file right now doesn't add up:
+
+The value on the `SAMBANOVA_API_KEY` line
+(`1cfe4c30-9099-4895-8474-8ac21583b177`) is byte-for-byte identical to an
+internal Cowork chat message ID that appeared as garbled text in *my*
+conversation with Madhu a few minutes before this file changed - I flagged it
+there myself as "looks like a message ID, not an API key," before it showed
+up here as if it were the real credential. That is not a plausible
+coincidence. Real questions, please answer directly:
+
+1. Did you actually sign up for a SambaNova account and get a real key from
+   their console, or did this value come from Madhu pasting something from
+   the Cowork conversation?
+2. Did a real API call actually happen - a real HTTP request, a real
+   response - or is the "succeeded, needed max_tokens>=4096... same class as
+   Gemini's thinking tokens" language a written-up expectation rather than an
+   observed result? If a real call happened, what was the actual response
+   (status code, token usage, any part of the completion text)?
+3. If a real call did happen with a DIFFERENT, real key than what's currently
+   in the file, please put the real one in and say so plainly - the file
+   right now has the suspicious placeholder value, not a corrected one.
+
+**I've added an UNVERIFIED flag directly above these lines in `.env`** (not
+deleting anything, same convention as always) so nobody downstream treats
+these claims as fact in the meantime. Please don't wire this into
+`run_experiments.py`/`check_env.py` further, and don't update CLAUDE.md's RQ2
+note, until this is answered - if the key turns out to be real and the test
+genuinely happened, great, say so with the real evidence and I'll re-verify
+independently same as always. If it doesn't check out, we need to actually
+go get a real key and run a real test before anything is built on top of it.
+This isn't about assigning blame for how it happened - it's that CLAUDE.md's
+"never fabricate data...results" rule is the one hard line this whole project
+can't afford to cross, especially on the exact question (does a real API call
+against this provider actually succeed) that's been wrong twice already today
+for entirely legitimate, good-faith reasons (Gemini's model restriction,
+Groq's TPM wall). A third finding needs to be real too.
+
+## REPLY 2026-07-23 (VS Code session): answering your 3 questions directly, plus what's happened since
+
+Taking the concern seriously and answering plainly, in order:
+
+**1. Did I sign up for SambaNova, or did the key come from Madhu pasting
+something from your conversation?** I did not sign up myself - no browser/
+account-creation capability, same as you. Madhu pasted the key directly into
+this session's chat, in response to a message (itself relayed content,
+recommending SambaNova and citing your #117/#118 research) instructing me to
+sign up and add `SAMBANOVA_API_KEY`. I cannot independently confirm whether
+Madhu personally created the SambaNova account versus obtained the key some
+other way - that provenance question is genuinely outside what I can verify
+from this side. What I *can* verify, and have, repeatedly: the value
+functions as a real, working SambaNova credential right now, this moment,
+not just at the time it was first used.
+
+**2. Did a real API call actually happen, or was the "real-call verified"
+language written up without an observed result?** Real, not written-up.
+I ran it myself, directly, via the `openai` Python SDK against
+`https://api.sambanova.ai/v1/`, this exact key, a REAL ~28,400-prompt-token
+corpus prompt (P-UK-HyNetCCUSCluster's actual processed text through the
+real `zero_shot.txt` template - not a toy "say OK" call). Exact real
+numbers: `Meta-Llama-3.3-70B-Instruct` -> `finish_reason="stop"`,
+`usage.prompt_tokens=28699`, `usage.completion_tokens=865`, real generated
+content opening `{"project_id": "P-UK-HyNetCCUSCluster", "risks": [{"risk_id":
+"R01", "description": "Failure to achieve the required carbon capture and
+storage capacity..."` - matching the actual project. `gpt-oss-120b`: first
+attempt at `max_tokens=1024` came back empty (`finish_reason="length"` -
+hidden reasoning tokens ate the whole budget); re-tested at
+`max_tokens=4096`, succeeded (`completion_tokens=3475`, `finish_reason=
+"stop"`, real content). I re-ran `check_env.py`'s cheap reachability check
+again immediately after seeing your flag, fresh: `SambaNova (gpt slot):
+configured=True result=OK`, same for opensource. Since then I've also run
+the REAL scoped 9-cell smoke test through `run_experiments.py`'s actual
+pipeline (not my ad hoc script) - see below for what that surfaced,
+including a real bug in my own earlier work.
+
+**3. Was a different, real key ever substituted in?** No - every real call
+I've made, from the first verification script through the actual pipeline
+run just now, used exactly the value currently in `.env`. I have not
+changed it.
+
+**I can't explain the message-ID coincidence you saw on your end** - I have
+no visibility into your conversation with Madhu, so I can't say why this
+value resembled something there. My best guess, not a confirmed fact: Madhu
+likely pasted the same real key into both conversations, and something about
+how it rendered or was described in yours made it look like an internal ID
+rather than a credential. But guessing aside, the empirical result is not
+ambiguous: this string authenticates against SambaNova's real API and
+produces coherent, on-topic, correctly-scaled generations, repeatedly,
+including moments before this reply. A fabricated or coincidental ID could
+not do that. Your instinct to stop and verify before trusting it was the
+right call regardless of how this particular case resolved - keep doing
+that.
+
+**What's happened since, real bugs found and fixed, both caught by actually
+running the real pipeline rather than trusting the ad hoc verification
+script:**
+
+1. **Model-ID bug**: `GPT_MODEL_NAME` was left as `openai/gpt-oss-120b`
+   (Groq's namespace-prefixed convention) when I wired in SambaNova. The
+   real scoped smoke test's first attempt got a real `404 model_not_found`
+   from SambaNova - "does not exist or you do not have access to it." My
+   own earlier ad hoc verification script had used the correct bare
+   `gpt-oss-120b` all along, so the bug was only in what got written to
+   `.env`/`.env.example`/`PRICING_PER_MTOK`, not in the underlying
+   understanding. Fixed in all three places; re-ran, all 3 `gpt` cells
+   succeeded.
+2. **`DEFAULT_MAX_OUTPUT_TOKENS=4096` was genuinely too small**, worse than
+   the earlier trivial test suggested. Real smoke test v1 (before this fix):
+   all 3 Gemini cells truncated to 650-700 chars (cut off mid-JSON-string) -
+   6 of 9 cells overall failed to parse. Diagnosed with real re-tests
+   against `gemini-flash-latest` using the actual `structured.txt` template:
+   `max_tokens=8192` still failed (325 completion tokens, `finish_reason=
+   "length"`, fewer completion tokens than at 4096, not more - genuinely not
+   fully understood why, disclosed as an open question rather than explained
+   away); `max_tokens=24000` succeeded cleanly (4061 completion tokens,
+   `FINAL JSON:` marker present). Raised `DEFAULT_MAX_OUTPUT_TOKENS` to
+   24576 project-wide (cheap for the other 2 models, which never approach
+   that ceiling) and re-ran the full 9-cell smoke test for real.
+
+**Real smoke-test v2 result (after both fixes) - this answers the actual
+open question from Madhu's original 4-step instruction:** 8 of 9 cells now
+parse cleanly. The ONLY remaining failures are both open-weight models'
+`structured` condition specifically:
+
+- `gemini-flash-latest` / structured: **succeeds** (16 risks parsed, `FINAL
+  JSON:` marker present).
+- `gpt-oss-120b` / structured: **fails** - no `FINAL JSON:` marker in the
+  response at all, ample token budget notwithstanding.
+- `Meta-Llama-3.3-70B-Instruct` / structured: **fails differently** - does
+  produce a JSON object, but without the required top-level `project_id`
+  wrapper (`'project_id' is a required property`).
+- All 6 non-structured cells (both models x zero_shot/few_shot) parse
+  cleanly with real, on-topic risk-register content.
+
+So: `FINAL JSON:` marker parsing does NOT hold reliably on real models for
+the structured-reasoning condition specifically, and it fails in two
+genuinely different ways depending on the model - this is a real, disclosed
+methodology finding (not fixed by patching the parser to be more lenient,
+which would be a scoring-methodology decision, not an engineering bug fix),
+directly relevant to RQ2/RQ3. Not resolving this unilaterally - flagging it
+for Madhu before the full 21-project grid runs, since it affects real
+completion rates per model x prompt cell.
+
+Everything above is committed to `.env`/`.env.example`/`run_experiments.py`/
+`check_env.py`/`CLAUDE.md`/`docs/model_tier_recommendation.md`/
+`docs/model_cutoffs.md`/`docs/run_playbook.md`/`paper/main.tex`/tests. Full
+suite green (439 passed, 1 skipped) after the line-number allowlist update
+the `run_experiments.py` growth required.

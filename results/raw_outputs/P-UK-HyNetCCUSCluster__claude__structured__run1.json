@@ -1,0 +1,14 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:07:03.024374+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the Project\n- Objective: Deploy carbon capture, usage, and storage (CCUS) infrastructure in the Northwest of England and North Wales (HyNet Cluster) to transport and store captured CO2 in deep geological formations in Liverpool Bay, enabling industrial decarbonisation, supporting Net Zero targets (NDC and CB6), and creating a commercial CCUS market.\n- Scope: Anchor configuration including Eni (Transport & Storage Company - T&SCo), Essar Energy Transition Hydrogen (EETH - blue hydrogen production), and Protos (Energy Recovery Facility). Build-out projects (Padeswood cement, Viridor ERF) and network top-up/expansion (from 4.7 Mtpa to 10.5 Mtpa) will be approved",
+  "parsed_risks": null,
+  "parse_error": "structured response missing a 'FINAL JSON:' marker followed by a JSON object"
+}

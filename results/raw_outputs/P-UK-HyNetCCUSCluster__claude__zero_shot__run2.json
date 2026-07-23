@@ -1,0 +1,153 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:15:53.108545+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"The UK ETS carbon price is currently too low to incentivize CCUS deployment without subsidy, making emitting carbon cheaper than capturing and storing it.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide long-term business model subsidy contracts (such as 15-year CfD-style strike price agreements) to bridge the financial gap between carbon market prices and capture costs.\",\n      \"evidence\": \"The Carbon Price is currently too low to incentivise deployment, there is a first-mover disadvantage due to high start-up costs\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"CO2 could leak from deep geological storage reservoirs or transportation pipelines, causing environmental damage and financial liabilities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Underwrite low-probability, high-impact leakage risks via the Supplementary Compensation Agreement (SCA) and maintain extensive offshore sentinel and monitoring wells.\",\n      \"evidence\": \"government will underwrite several key high-impact, low-probability risks \u2013 principally relating to CO2 leakage \u2013 via the Supplementary Compensation Agreement (SCA).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Sequential FID timeline across anchor and build-out projects risks T&S network underutilisation if build-out capture projects are delayed or fail to reach FID.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Include uncertain cost reopeners in the economic licence to disallow T&S CapEx for uncommitted projects, while filling excess capacity through the HyNet top-up process.\",\n      \"evidence\": \"This incremental approach... introduces a risk of network underutilisation and revenue support exposure\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Complex cross-chain technical interdependencies between T&S network operations and capture projects could lead to cascading operational outages or stranded volume risks.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish the DESNZ Cluster Sponsor Function to actively manage cross-chain delivery risks and coordinate outage schedules with Ofgem and LCCC.\",\n      \"evidence\": \"In addition, HMG covers some of the \u2018cross-chain\u2019 risks from the interdependencies between the T&SCo and capture projects.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Construction capital expenditure overruns on the T&S network could increase overall infrastructure costs and funding requirements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce a 40/60 cost sharing factor within the RAB economic licence model, ensuring the T&SCo only recoups 40% of CapEx incurred above agreed allowances.\",\n      \"evidence\": \"Eni T&S network construction overruns... the T&SCo will only recoup 40% of any costs in excess of the agreed level.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Decommissioning costs for offshore platforms, wells, and pipelines at end-of-life could exceed accumulated funds, creating a financial deficit.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce mandatory financial security requirements through NSTA and OPRED regulations and execute formal Decommissioning Shortfall Agreements.\",\n      \"evidence\": \"Decommissioning fund shortfall... NSTA and Opred requirements for financial security\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Exchequer exposure reaching pre-defined financial caps could trigger Secretary of State rights to discontinue T&S network support, stranding assets.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement rigorous monthly budget control and monitoring across DESNZ, LCCC, and Ofgem to track cumulative subsidy drawdown against thresholds.\",\n      \"evidence\": \"Discontinuation Agreement... if support provided reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Delays in passing FID-critical secondary legislation or finalizing the CCS Network Code before contract execution could delay project financial close.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritise FID-critical secondary legislation through dedicated parliamentary schedules and conduct pre-referral engagement on the full-form CCS Network Code.\",\n      \"evidence\": \"A number of activities are still ongoing to achieve FID including stage 3 negotiations... FID critical secondary legislation\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Global supply chain constraints and inflation could cause capital cost increases and force re-negotiation of time-limited supplier bids if FID is delayed.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Progress anchor projects to FID expeditiously to secure time-limited supplier bids and perform continuous cost and procurement assurance.\",\n      \"evidence\": \"Reopening the supplier bids would be a dynamic scenario... underlying costs are expected to increase.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Hard-to-abate UK industrial emitters could suffer carbon leakage by relocating manufacturing abroad if decarbonisation costs remain uncompetitive.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Provide predictable 15-year business model revenue support and upfront capital co-funding through the CIF and NZHF to preserve UK industrial competitiveness.\",\n      \"evidence\": \"manufacturers of critical industrial materials may relocate to more favourable jurisdictions due to the escalating costs of emissions; otherwise known as \u2018carbon leakage\u2019.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Key delivery and regulatory partner organisations (such as Ofgem, LCCC, and CGL) may lack sufficient resourcing or capability post-FID to oversee complex contracts.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Require partner organisations to complete formal Organisational Readiness Statements and deploy specialized technical, legal, and PMO advisory support.\",\n      \"evidence\": \"Partner organisations\u2019 capacity and capability... partner organisations with significant responsibility to complete Organisational Readiness Statements.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Local public or community opposition regarding CO2 infrastructure, compression, and pipeline routing could cause planning delays and public resistance.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Proactively engage local communities, share best practices through the CCUS Council, and partner with Arm's Length Bodies to demonstrate safety.\",\n      \"evidence\": \"Testing has shown awareness of CCUS is growing but with many still undecided of their view.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Withdrawal or insolvency of individual anchor or build-out emitters (e.g. EETH or Protos) could breach volume assumptions and increase unit costs for remaining network users.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct rigorous corporate financial due diligence prior to FID and execute the HyNet top-up process to recruit replacement CO2 volume producers.\",\n      \"evidence\": \"Discontinuation risk for EETH and Protos... BLN0 has requested to withdraw from the CCUS sequencing process\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Proposed subsidy structures or capital grant distributions could face legal challenge or adverse assessment under the UK Subsidy Control Act 2022.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Submit formal subsidy assessments to the Subsidy Advice Unit (SAU) at least 3 months prior to FID and conduct thorough pre-referral alignment with DBT.\",\n      \"evidence\": \"Subsidy controls and other legal requirements... assessment of each subsidy scheme will be submitted by DESNZ to the Subsidy Advice Unit\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Operational fraud or misrepresentation in grant funding claims (CIF/NZHF) or ongoing revenue support payments could result in exchequer financial loss.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy the DESNZ Central Grants and Loans (CGL) team and LCCC to enforce strict claim verification, audit rights, and compliance checks under Grant Funding Agreements.\",\n      \"evidence\": \"Fraud... Central Grants and Loans (CGL) Team will be the delivery partner for all grants awarded.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "The UK ETS carbon price is currently too low to incentivize CCUS deployment without subsidy, making emitting carbon cheaper than capturing and storing it.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide long-term business model subsidy contracts (such as 15-year CfD-style strike price agreements) to bridge the financial gap between carbon market prices and capture costs.",
+        "evidence": "The Carbon Price is currently too low to incentivise deployment, there is a first-mover disadvantage due to high start-up costs"
+      },
+      {
+        "risk_id": "R02",
+        "description": "CO2 could leak from deep geological storage reservoirs or transportation pipelines, causing environmental damage and financial liabilities.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Underwrite low-probability, high-impact leakage risks via the Supplementary Compensation Agreement (SCA) and maintain extensive offshore sentinel and monitoring wells.",
+        "evidence": "government will underwrite several key high-impact, low-probability risks \u2013 principally relating to CO2 leakage \u2013 via the Supplementary Compensation Agreement (SCA)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Sequential FID timeline across anchor and build-out projects risks T&S network underutilisation if build-out capture projects are delayed or fail to reach FID.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Include uncertain cost reopeners in the economic licence to disallow T&S CapEx for uncommitted projects, while filling excess capacity through the HyNet top-up process.",
+        "evidence": "This incremental approach... introduces a risk of network underutilisation and revenue support exposure"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Complex cross-chain technical interdependencies between T&S network operations and capture projects could lead to cascading operational outages or stranded volume risks.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish the DESNZ Cluster Sponsor Function to actively manage cross-chain delivery risks and coordinate outage schedules with Ofgem and LCCC.",
+        "evidence": "In addition, HMG covers some of the \u2018cross-chain\u2019 risks from the interdependencies between the T&SCo and capture projects."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Construction capital expenditure overruns on the T&S network could increase overall infrastructure costs and funding requirements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce a 40/60 cost sharing factor within the RAB economic licence model, ensuring the T&SCo only recoups 40% of CapEx incurred above agreed allowances.",
+        "evidence": "Eni T&S network construction overruns... the T&SCo will only recoup 40% of any costs in excess of the agreed level."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Decommissioning costs for offshore platforms, wells, and pipelines at end-of-life could exceed accumulated funds, creating a financial deficit.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Enforce mandatory financial security requirements through NSTA and OPRED regulations and execute formal Decommissioning Shortfall Agreements.",
+        "evidence": "Decommissioning fund shortfall... NSTA and Opred requirements for financial security"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Exchequer exposure reaching pre-defined financial caps could trigger Secretary of State rights to discontinue T&S network support, stranding assets.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement rigorous monthly budget control and monitoring across DESNZ, LCCC, and Ofgem to track cumulative subsidy drawdown against thresholds.",
+        "evidence": "Discontinuation Agreement... if support provided reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Delays in passing FID-critical secondary legislation or finalizing the CCS Network Code before contract execution could delay project financial close.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritise FID-critical secondary legislation through dedicated parliamentary schedules and conduct pre-referral engagement on the full-form CCS Network Code.",
+        "evidence": "A number of activities are still ongoing to achieve FID including stage 3 negotiations... FID critical secondary legislation"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Global supply chain constraints and inflation could cause capital cost increases and force re-negotiation of time-limited supplier bids if FID is delayed.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Progress anchor projects to FID expeditiously to secure time-limited supplier bids and perform continuous cost and procurement assurance.",
+        "evidence": "Reopening the supplier bids would be a dynamic scenario... underlying costs are expected to increase."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Hard-to-abate UK industrial emitters could suffer carbon leakage by relocating manufacturing abroad if decarbonisation costs remain uncompetitive.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Provide predictable 15-year business model revenue support and upfront capital co-funding through the CIF and NZHF to preserve UK industrial competitiveness.",
+        "evidence": "manufacturers of critical industrial materials may relocate to more favourable jurisdictions due to the escalating costs of emissions; otherwise known as \u2018carbon leakage\u2019."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Key delivery and regulatory partner organisations (such as Ofgem, LCCC, and CGL) may lack sufficient resourcing or capability post-FID to oversee complex contracts.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Require partner organisations to complete formal Organisational Readiness Statements and deploy specialized technical, legal, and PMO advisory support.",
+        "evidence": "Partner organisations\u2019 capacity and capability... partner organisations with significant responsibility to complete Organisational Readiness Statements."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Local public or community opposition regarding CO2 infrastructure, compression, and pipeline routing could cause planning delays and public resistance.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Proactively engage local communities, share best practices through the CCUS Council, and partner with Arm's Length Bodies to demonstrate safety.",
+        "evidence": "Testing has shown awareness of CCUS is growing but with many still undecided of their view."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Withdrawal or insolvency of individual anchor or build-out emitters (e.g. EETH or Protos) could breach volume assumptions and increase unit costs for remaining network users.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct rigorous corporate financial due diligence prior to FID and execute the HyNet top-up process to recruit replacement CO2 volume producers.",
+        "evidence": "Discontinuation risk for EETH and Protos... BLN0 has requested to withdraw from the CCUS sequencing process"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Proposed subsidy structures or capital grant distributions could face legal challenge or adverse assessment under the UK Subsidy Control Act 2022.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Submit formal subsidy assessments to the Subsidy Advice Unit (SAU) at least 3 months prior to FID and conduct thorough pre-referral alignment with DBT.",
+        "evidence": "Subsidy controls and other legal requirements... assessment of each subsidy scheme will be submitted by DESNZ to the Subsidy Advice Unit"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Operational fraud or misrepresentation in grant funding claims (CIF/NZHF) or ongoing revenue support payments could result in exchequer financial loss.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Deploy the DESNZ Central Grants and Loans (CGL) team and LCCC to enforce strict claim verification, audit rights, and compliance checks under Grant Funding Agreements.",
+        "evidence": "Fraud... Central Grants and Loans (CGL) Team will be the delivery partner for all grants awarded."
+      }
+    ]
+  },
+  "parse_error": null
+}

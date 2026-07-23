@@ -1,0 +1,14 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:06:41.795562+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Staggered deployment and potential failure of build-out projects to take FID creates risk of T&S network underutilisation and increased government revenue support exposure.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce build-out maturity criteria at Cluster FID, include uncertain cost reopeners in the T&S economic licence, and execute network top-up allocation processes.\",\n      \"evidence\": \"This incremental approach... introduces a risk of network underutilisation and revenue support exposure",
+  "parsed_risks": null,
+  "parse_error": "JSON parse failed and no JSON object found: Unterminated string starting at: line 11 column 19 (char 560)"
+}

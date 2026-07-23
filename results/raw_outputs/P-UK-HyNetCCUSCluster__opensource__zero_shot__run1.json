@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:07:15.955408+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Network underutilisation due to delayed or failed build-out projects\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Close monitoring of build-out project progress and identification of alternative users to fill spare network capacity\",\n      \"evidence\": \"Section 1.4, 2.3.1\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Cost escalation due to changes in underlying costs or supply chain disruptions\",\n      \"category\": \"financial\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Regular cost reviews and negotiations with suppliers to mitigate cost escalation\",\n      \"evidence\": \"Section 4.1.4.1, 4.2.1\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Technical risks associated with the construction and operation of the T&S network\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Robust technical assurance and testing of the T&S network design and construction\",\n      \"evidence\": \"Section 4.1.4.1, 4.3\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Regulatory risks associated with the economic licence and CCS Network Code\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Close engagement with Ofgem and other regulatory bodies to ensure compliance with regulatory requirements\",\n      \"evidence\": \"Section 4.1.3, 4.4.2\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Environmental risks associated with CO2 leakage or other environmental impacts\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implementation of robust environmental monitoring and mitigation measures\",\n      \"evidence\": \"Section 2.2.1, 3.3.2\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Stakeholder risks associated with community engagement and acceptance\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Effective community engagement and communication strategies to build support for the project\",\n      \"evidence\": \"Section 6.2\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Organisational risks associated with the transition to the post-FID operating model\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Robust transition planning and training for personnel involved in the post-FID operating model\",\n      \"evidence\": \"Section 6.1, 6.3\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"External risks associated with changes in government policy or legislation\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Close monitoring of government policy and legislative developments and engagement with relevant stakeholders\",\n      \"evidence\": \"Section 2.2.4, 4.2.5\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Financial risks associated with the Revenue Support Agreement (RSA) and Supplementary Compensation Agreement (SCA)\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Robust financial modelling and risk assessment to ensure the RSA and SCA are effective in managing financial risks\",\n      \"evidence\": \"Section 4.1.3, 5.7.1\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Risk of fraud or other financial irregularities\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implementation of robust financial controls and auditing procedures to prevent and detect fraud\",\n      \"evidence\": \"Section 5.7.8\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Network underutilisation due to delayed or failed build-out projects",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Close monitoring of build-out project progress and identification of alternative users to fill spare network capacity",
+        "evidence": "Section 1.4, 2.3.1"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Cost escalation due to changes in underlying costs or supply chain disruptions",
+        "category": "financial",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Regular cost reviews and negotiations with suppliers to mitigate cost escalation",
+        "evidence": "Section 4.1.4.1, 4.2.1"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Technical risks associated with the construction and operation of the T&S network",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Robust technical assurance and testing of the T&S network design and construction",
+        "evidence": "Section 4.1.4.1, 4.3"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Regulatory risks associated with the economic licence and CCS Network Code",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Close engagement with Ofgem and other regulatory bodies to ensure compliance with regulatory requirements",
+        "evidence": "Section 4.1.3, 4.4.2"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Environmental risks associated with CO2 leakage or other environmental impacts",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implementation of robust environmental monitoring and mitigation measures",
+        "evidence": "Section 2.2.1, 3.3.2"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Stakeholder risks associated with community engagement and acceptance",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Effective community engagement and communication strategies to build support for the project",
+        "evidence": "Section 6.2"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Organisational risks associated with the transition to the post-FID operating model",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Robust transition planning and training for personnel involved in the post-FID operating model",
+        "evidence": "Section 6.1, 6.3"
+      },
+      {
+        "risk_id": "R08",
+        "description": "External risks associated with changes in government policy or legislation",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Close monitoring of government policy and legislative developments and engagement with relevant stakeholders",
+        "evidence": "Section 2.2.4, 4.2.5"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Financial risks associated with the Revenue Support Agreement (RSA) and Supplementary Compensation Agreement (SCA)",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Robust financial modelling and risk assessment to ensure the RSA and SCA are effective in managing financial risks",
+        "evidence": "Section 4.1.3, 5.7.1"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Risk of fraud or other financial irregularities",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implementation of robust financial controls and auditing procedures to prevent and detect fraud",
+        "evidence": "Section 5.7.8"
+      }
+    ]
+  },
+  "parse_error": null
+}

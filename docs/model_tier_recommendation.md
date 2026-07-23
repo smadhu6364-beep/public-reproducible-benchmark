@@ -292,3 +292,89 @@ enabling billing on the same Google Cloud project for any other reason can
 silently move it off the free tier. Whoever sets up `GEMINI_API_KEY` should
 use a clean, billing-free Google account and re-verify this before a real
 run, not assume the third-party sources are exactly right.
+
+## ADDENDUM 2026-07-23 (later the same day): Groq's free tier is structurally too small - moved `gpt`/`opensource` to SambaNova Cloud
+
+The lineup above was never real-call-verified before this addendum - only
+`check_env.py`'s cheap `/models` reachability check had run. The first actual
+scoped smoke test (1 project x 3 models x 3 prompts, 9 real calls) surfaced a
+real, structural problem, not a flaky one:
+
+- **Gemini**: `gemini-2.5-flash` returned `404 - no longer available to new
+  users` (still listed in the catalog, but new accounts are blocked). Fixed
+  same-day - `gemini-flash-latest` verified working; already applied to
+  `.env`/`.env.example`. Does not affect this addendum's subject (Groq).
+- **Groq**: both `openai/gpt-oss-120b` and `qwen/qwen3.6-27b` returned
+  `413 - Request too large ... TPM Limit 8000` - real prompts run ~30-34K
+  tokens (full planning documents in context), ~4x over. Independently
+  confirmed against `console.groq.com/docs/rate-limits` directly (not an
+  aggregator): **8K TPM for both models chosen here**, and even Groq's other
+  free models cap at 12K TPM (`llama-3.3-70b-versatile`) - staying within
+  Groq's free catalog does not fix this. This is a hard per-request ceiling,
+  not a pacing/rate problem - retry/backoff cannot help.
+
+**Two alternatives were researched and compared, primary sources only:**
+
+- **Cerebras** - rejected on two independent grounds: their own docs
+  (`inference-docs.cerebras.ai/support/rate-limits`) require a verified
+  payment method before API access activates at all (not the "genuinely no
+  card" free tier several aggregators claimed), and even setting that aside,
+  `gpt-oss-120b`'s Free Trial limit is 30K TPM - barely above Groq's wall,
+  still likely under this project's real per-call token count.
+- **OpenRouter** - a genuinely free, no-card `:free`-suffix tier exists
+  (confirmed directly via `openrouter.ai/docs/api-reference/limits`: 20
+  RPM, 50-1000 RPD, **no TPM/per-request cap at all** - the opposite
+  problem from Groq), and `openai/gpt-oss-120b:free` (131K context) is
+  real and available there. Not chosen as the primary fix: (a) OpenRouter's
+  own privacy docs describe free-model routing going to whichever backend
+  is cheapest/least-loaded at request time, a real reliability/consistency
+  risk for a benchmark study that cares about stable model behavior across
+  runs, and (b) the `qwen/qwen3.6-27b` model isn't offered free there,
+  which would have required a further Qwen-tier substitution
+  (`qwen/qwen3.6-plus:free`) on top of the provider change.
+- **SambaNova Cloud (chosen)** - checked directly against
+  `docs.sambanova.ai/docs/en/models/rate-limits` and
+  `.../models/sambacloud-models`: genuinely card-optional free tier ("Free
+  Tier: Applied when there is no payment method linked with your account"),
+  **both `openai/gpt-oss-120b` (same exact model, no further RQ2 disclosure
+  needed) and `Meta-Llama-3.3-70B-Instruct` (this project's ORIGINAL
+  pre-redesign open-source pick, before any of today's churn) are already on
+  the free tier**, both at 128K context, and the free-tier rate-limit table
+  has **no TPM row at all** - only RPM (20), RPD (20), and TPD (200,000
+  tokens/day) per model, none of which reject a single ~30-34K-token request
+  outright the way Groq's TPM wall did.
+
+**Real-call verified before wiring this in, not just trusted from the docs
+page** (the exact discipline that caught the Gemini 404 and the Groq wall in
+the first place): sent the actual `zero_shot.txt` template rendered against
+`P-UK-HyNetCCUSCluster`'s real processed text (~28,400 prompt tokens per
+SambaNova's own `usage` field) to both models.
+
+- `Meta-Llama-3.3-70B-Instruct`: succeeded cleanly, `finish_reason="stop"`,
+  real risk-register-shaped JSON content, even at a small `max_tokens`.
+- `openai/gpt-oss-120b`: at `max_tokens=1024`, returned EMPTY content with
+  `finish_reason="length"` - this model spends hidden reasoning tokens out
+  of the `max_tokens` budget before any visible output, the same class of
+  behavior already found for Gemini's "thinking tokens". At
+  `max_tokens=4096` (this project's `DEFAULT_MAX_OUTPUT_TOKENS`), it
+  succeeded cleanly (`completion_tokens=3475`, `finish_reason="stop"`, real
+  content).
+
+**Not resolved, and worth tracking during the real run:** SambaNova's
+responses expose no rate-limit-related headers at all (checked directly -
+only `date`/`content-type`/`inference-id`/`x-request-id`/HSTS, nothing
+`ratelimit`-shaped), so whether the documented 200,000 TPD/model budget is
+genuinely independent per model or shared account-wide cannot be confirmed
+without a real multi-day run. Docs-page arithmetic (200,000 TPD / ~33,000
+tokens-per-call ≈ 6 calls/day/model; 126 calls needed per model at 2 runs x
+21 projects x 3 prompts ⇒ ~21 days to clear one model's grid, assuming
+independent budgets) is a real planning input, not a confirmed fact - "looks
+fine on the docs page" has now been wrong twice today (Gemini, Groq) before
+this addendum even started. Treat the ~21-day estimate as a risk to watch
+against the Aug-2026 deadline, not a solved timeline.
+
+Updated: `run_experiments.py` (`GEMINI_BASE_URL`/`SAMBANOVA_BASE_URL`,
+`call_gpt`/`call_opensource`, `PRICING_PER_MTOK`), `check_env.py`
+(`check_gpt_slot`/`check_opensource_slot`), `.env`/`.env.example`
+(`SAMBANOVA_API_KEY` replaces `GROQ_API_KEY`; `OPENSOURCE_MODEL_NAME` reverts
+to `Meta-Llama-3.3-70B-Instruct`), `CLAUDE.md`'s RQ2 note, and this file.

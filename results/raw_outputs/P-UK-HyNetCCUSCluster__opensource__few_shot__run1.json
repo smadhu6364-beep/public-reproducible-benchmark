@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:07:25.672431+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Failure to achieve the required carbon capture and storage capacity may hinder the UK's ability to meet its net zero targets.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Regular monitoring and evaluation of the project's progress, identification of potential bottlenecks, and implementation of contingency plans.\",\n      \"evidence\": \"Section 2.2.1: Rationale for Intervention\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High upfront costs and lack of cost-effective private insurance products may deter private sector investment in CCUS projects.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Government provision of funding and guarantees to support the development of CCUS projects, and the creation of a commercial framework to reduce investor risk.\",\n      \"evidence\": \"Section 4.1.2: Key Commercial Principles\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Delays in the development and deployment of CCUS technology may hinder the UK's ability to meet its net zero targets.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Regular monitoring and evaluation of the project's progress, identification of potential bottlenecks, and implementation of contingency plans.\",\n      \"evidence\": \"Section 2.2.1: Rationale for Intervention\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Insufficient public awareness and acceptance of CCUS technology may hinder its adoption and deployment.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Public engagement and education campaigns to raise awareness and address concerns about CCUS technology.\",\n      \"evidence\": \"Section 6.2: Stakeholder management and communications\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Changes in government policies or regulations may impact the viability of CCUS projects.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Regular monitoring of government policies and regulations, and engagement with policymakers to ensure that CCUS projects are supported and enabled.\",\n      \"evidence\": \"Section 2.2.4: Strengthening the UK Union\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Technical difficulties or failures in the CCUS system may impact its effectiveness and safety.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Regular monitoring and maintenance of the CCUS system, and implementation of contingency plans in case of technical difficulties or failures.\",\n      \"evidence\": \"Section 3.3.1: Identification of Impacts\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate funding or resource allocation may hinder the development and deployment of CCUS projects.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Secure funding and resource allocation for CCUS projects, and regular monitoring and evaluation of their progress.\",\n      \"evidence\": \"Section 5.2: Affordability\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate stakeholder engagement and communication may hinder the development and deployment of CCUS projects.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Regular stakeholder engagement and communication, and implementation of strategies to address concerns and build support for CCUS projects.\",\n      \"evidence\": \"Section 6.2: Stakeholder management and communications\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate risk management and mitigation strategies may impact the viability and effectiveness of CCUS projects.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implementation of robust risk management and mitigation strategies, and regular monitoring and evaluation of their effectiveness.\",\n      \"evidence\": \"Section 6.7: Risk management\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"External factors such as changes in global energy markets or technological advancements may impact the viability and effectiveness of CCUS projects.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Regular monitoring of external factors, and implementation of strategies to adapt to changes and ensure the continued viability and effectiveness of CCUS projects.\",\n      \"evidence\": \"Section 2.2.1: Rationale for Intervention\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Failure to achieve the required carbon capture and storage capacity may hinder the UK's ability to meet its net zero targets.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Regular monitoring and evaluation of the project's progress, identification of potential bottlenecks, and implementation of contingency plans.",
+        "evidence": "Section 2.2.1: Rationale for Intervention"
+      },
+      {
+        "risk_id": "R02",
+        "description": "High upfront costs and lack of cost-effective private insurance products may deter private sector investment in CCUS projects.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Government provision of funding and guarantees to support the development of CCUS projects, and the creation of a commercial framework to reduce investor risk.",
+        "evidence": "Section 4.1.2: Key Commercial Principles"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in the development and deployment of CCUS technology may hinder the UK's ability to meet its net zero targets.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Regular monitoring and evaluation of the project's progress, identification of potential bottlenecks, and implementation of contingency plans.",
+        "evidence": "Section 2.2.1: Rationale for Intervention"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Insufficient public awareness and acceptance of CCUS technology may hinder its adoption and deployment.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Public engagement and education campaigns to raise awareness and address concerns about CCUS technology.",
+        "evidence": "Section 6.2: Stakeholder management and communications"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Changes in government policies or regulations may impact the viability of CCUS projects.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Regular monitoring of government policies and regulations, and engagement with policymakers to ensure that CCUS projects are supported and enabled.",
+        "evidence": "Section 2.2.4: Strengthening the UK Union"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Technical difficulties or failures in the CCUS system may impact its effectiveness and safety.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Regular monitoring and maintenance of the CCUS system, and implementation of contingency plans in case of technical difficulties or failures.",
+        "evidence": "Section 3.3.1: Identification of Impacts"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate funding or resource allocation may hinder the development and deployment of CCUS projects.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Secure funding and resource allocation for CCUS projects, and regular monitoring and evaluation of their progress.",
+        "evidence": "Section 5.2: Affordability"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate stakeholder engagement and communication may hinder the development and deployment of CCUS projects.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Regular stakeholder engagement and communication, and implementation of strategies to address concerns and build support for CCUS projects.",
+        "evidence": "Section 6.2: Stakeholder management and communications"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate risk management and mitigation strategies may impact the viability and effectiveness of CCUS projects.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implementation of robust risk management and mitigation strategies, and regular monitoring and evaluation of their effectiveness.",
+        "evidence": "Section 6.7: Risk management"
+      },
+      {
+        "risk_id": "R10",
+        "description": "External factors such as changes in global energy markets or technological advancements may impact the viability and effectiveness of CCUS projects.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Regular monitoring of external factors, and implementation of strategies to adapt to changes and ensure the continued viability and effectiveness of CCUS projects.",
+        "evidence": "Section 2.2.1: Rationale for Intervention"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -2,13 +2,17 @@
 paths, so it's possible to confirm every configured provider actually
 authenticates BEFORE running a real grid (src/run_experiments.py).
 
-REDESIGNED 2026-07-23 (Madhu, budget-driven): the originally-decided paid
-triple (Anthropic Claude / OpenAI GPT / Together AI Llama) all hit real
-billing/quota errors on the first actual spend attempt. All 3 slots now
-point at genuinely free-tier providers (Google Gemini + Groq) - see
-CLAUDE.md's RQ2 correction note, docs/model_tier_recommendation.md's dated
-addendum, and run_experiments.py's call_claude/call_gpt/call_opensource
-docstrings for exactly what each slot calls now.
+REDESIGNED 2026-07-23 (Madhu, budget-driven), then REDESIGNED AGAIN
+2026-07-23 (later the same day): the originally-decided paid triple
+(Anthropic Claude / OpenAI GPT / Together AI Llama) all hit real
+billing/quota errors on the first actual spend attempt, so all 3 slots moved
+to free-tier providers (Google Gemini + Groq). Groq's free tier then turned
+out to have a hard 8,000 TPM per-request cap that this project's real
+~30-34K-token prompts exceed ~4x - not fixable by retry/pacing - so the
+"gpt" and "opensource" slots moved again, to SambaNova Cloud. See CLAUDE.md's
+RQ2 correction note, docs/model_tier_recommendation.md's dated addenda, and
+run_experiments.py's call_claude/call_gpt/call_opensource docstrings for
+exactly what each slot calls now.
 
 Standalone - does not import or touch match.py, metrics.py,
 run_experiments.py, or judge.py. Safe to run repeatedly: for each provider it
@@ -32,7 +36,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 ENV_PATH = REPO_ROOT / ".env"
 
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
-GROQ_BASE_URL = "https://api.groq.com/openai/v1"
+SAMBANOVA_BASE_URL = "https://api.sambanova.ai/v1/"
 
 
 def _load_env() -> None:
@@ -89,29 +93,30 @@ def check_claude_slot() -> tuple[str, bool, str]:
 
 
 def check_gpt_slot() -> tuple[str, bool, str]:
-    """Checks the "gpt" MODEL_DISPATCH slot - Groq serving
-    openai/gpt-oss-120b as of the 2026-07-23 free-tier redesign (see
+    """Checks the "gpt" MODEL_DISPATCH slot - SambaNova Cloud serving
+    openai/gpt-oss-120b as of the second 2026-07-23 redesign (Groq's free
+    tier couldn't serve this project's real prompt sizes - see
     run_experiments.py's call_gpt())."""
-    label = "Groq (gpt slot)"
-    key = os.environ.get("GROQ_API_KEY")
+    label = "SambaNova (gpt slot)"
+    key = os.environ.get("SAMBANOVA_API_KEY")
     if not key:
         return (label, False, "not configured")
-    return _check_openai_compatible_endpoint(label, GROQ_BASE_URL, key)
+    return _check_openai_compatible_endpoint(label, SAMBANOVA_BASE_URL, key)
 
 
 def check_opensource_slot() -> tuple[str, bool, str]:
-    """Checks the "opensource" MODEL_DISPATCH slot - Groq serving a second,
-    distinct open-weight model as of the 2026-07-23 free-tier redesign (see
-    run_experiments.py's call_opensource()). Same Groq account/key as the
-    "gpt" slot above (GROQ_API_KEY is shared) - this check is redundant with
-    it in practice, but kept as its own function so check_env.py's output
-    still maps 1:1 onto the 3 real MODEL_DISPATCH slots, same as before this
-    redesign."""
-    label = "Groq (opensource slot)"
-    key = os.environ.get("GROQ_API_KEY")
+    """Checks the "opensource" MODEL_DISPATCH slot - SambaNova Cloud serving
+    Meta-Llama-3.3-70B-Instruct as of the second 2026-07-23 redesign (see
+    run_experiments.py's call_opensource()). Same SambaNova account/key as
+    the "gpt" slot above (SAMBANOVA_API_KEY is shared) - this check is
+    redundant with it in practice, but kept as its own function so
+    check_env.py's output still maps 1:1 onto the 3 real MODEL_DISPATCH
+    slots, same as before this redesign."""
+    label = "SambaNova (opensource slot)"
+    key = os.environ.get("SAMBANOVA_API_KEY")
     if not key:
         return (label, False, "not configured")
-    return _check_openai_compatible_endpoint(label, GROQ_BASE_URL, key)
+    return _check_openai_compatible_endpoint(label, SAMBANOVA_BASE_URL, key)
 
 
 def main() -> int:

@@ -31,20 +31,25 @@ cp .env.example .env      # then fill in the two keys
 python src/check_env.py   # verifies each provider actually answers
 ```
 
-**REDESIGNED 2026-07-23 (Madhu, budget-driven):** the originally-decided paid
-triple (`claude-sonnet-5` / `gpt-5.6-terra` / Llama 3.3 70B Turbo via
-Together AI) all hit real billing/quota errors on the first actual spend
-attempt — see CLAUDE.md's RQ2 correction note and
-`docs/model_tier_recommendation.md`'s dated addendum. `.env.example` is now
-pre-filled with 3 genuinely free-tier models across just **2 real accounts**:
-Google Gemini (`GEMINI_API_KEY`, from
-[aistudio.google.com/apikey](https://aistudio.google.com/apikey)) and Groq
-(`GROQ_API_KEY`, from [console.groq.com/keys](https://console.groq.com/keys),
-shared by both the `gpt` and `opensource` slots). Neither requires a credit
-card as of this writing.
+**REDESIGNED 2026-07-23 (Madhu, budget-driven), then REDESIGNED AGAIN
+2026-07-23 (later the same day):** the originally-decided paid triple
+(`claude-sonnet-5` / `gpt-5.6-terra` / Llama 3.3 70B Turbo via Together AI)
+all hit real billing/quota errors on the first actual spend attempt, so the
+lineup moved to Gemini + Groq. Groq's free tier then turned out to have a
+hard 8,000 TPM per-request cap that this project's real ~30-34K-token
+prompts exceed ~4x — a real smoke test confirmed this outright, not a
+pacing issue — so the `gpt`/`opensource` slots moved again, to SambaNova
+Cloud. See CLAUDE.md's RQ2 correction note and
+`docs/model_tier_recommendation.md`'s dated addenda for the full history.
+`.env.example` is now pre-filled with 3 genuinely free-tier models across
+just **2 real accounts**: Google Gemini (`GEMINI_API_KEY`, from
+[aistudio.google.com/apikey](https://aistudio.google.com/apikey)) and
+SambaNova Cloud (`SAMBANOVA_API_KEY`, from
+[cloud.sambanova.ai](https://cloud.sambanova.ai), shared by both the `gpt`
+and `opensource` slots). Neither requires a credit card as of this writing.
 
 `check_env.py` reports per-slot `CONFIGURED` / `RESULT` (3 rows: Gemini,
-Groq×2). Do not proceed to step 6 until all three say configured and
+SambaNova×2). Do not proceed to step 6 until all three say configured and
 reachable — while every slot is free now, a systemic key failure mid-grid
 still wastes time re-running the affected cells.
 
@@ -125,13 +130,13 @@ python src/run_experiments.py --runs 2
 One synchronous call per (project, model, prompt, run) cell — no `--batch`,
 no `--confirm-cost` needed. **`--batch`/`--batch-check` are now
 INAPPLICABLE, not just unnecessary:** they submit to Anthropic's and
-OpenAI's own native batch APIs specifically, which the current Gemini/Groq
-setup is not wired for, and there's no cost discount left to batch for
-anyway since every slot is free. Passing `--batch` against the current
-`.env` will fail (it still requires `ANTHROPIC_API_KEY`/`OPENAI_API_KEY`,
-which the free-tier `.env.example` no longer sets by default) — see
-`run_experiments.py`'s module docstring if a funded run ever needs to revive
-that path.
+OpenAI's own native batch APIs specifically, which none of
+Gemini/Groq/SambaNova's OpenAI-compatible endpoints are wired for, and
+there's no cost discount left to batch for anyway since every slot is free.
+Passing `--batch` against the current `.env` will fail (it still requires
+`ANTHROPIC_API_KEY`/`OPENAI_API_KEY`, which the free-tier `.env.example` no
+longer sets by default) — see `run_experiments.py`'s module docstring if a
+funded run ever needs to revive that path.
 
 - `--temperature` defaults to 0.1 and is hard-limited to [0, 0.2] per CLAUDE.md.
 - Raw outputs are **append-only**: `next_free_run_index` picks the lowest unused
@@ -142,11 +147,20 @@ that path.
   --model claude --prompt zero_shot --runs 1` is one call, genuinely free.
 - Exit codes: `2` = every call failed (systemic — bad keys/network, treat as "no
   run happened"); `3` = some failed; `1` = cost guard (should not fire at $0.00).
-- Groq's free tier is rate-limited (30 requests/min, 14,400/day, shared
-  across the `gpt` and `opensource` slots since both use the same account);
-  Gemini's is 1,500 requests/day. The full 378-call grid fits comfortably
-  within both, but don't run multiple grids back-to-back the same day
-  without checking the daily counts.
+- SambaNova's free tier is rate-limited per model (20 requests/min, 20
+  requests/day, 200,000 tokens/day), shared across the `gpt` and
+  `opensource` slots only in the sense that both use the same account — it
+  is NOT confirmed whether the 200,000 TPD budget is independent per model
+  or shared account-wide (SambaNova's responses expose no rate-limit
+  headers to check this directly). Docs-page arithmetic suggests ~6 calls/
+  day/model at this project's real ~33K-token prompt size, i.e. **~21 days**
+  to clear one model's share of the full grid if budgets are independent —
+  treat this as a real planning risk against the Aug-2026 deadline, not a
+  solved timeline, and watch actual failure patterns during the real run
+  rather than trusting the docs page alone (this exact "looks fine on the
+  docs page" pattern was already wrong twice today, on Gemini and Groq).
+  Gemini's limit is 1,500 requests/day, comfortably clears its ~126-call
+  share of the grid.
 
 Every run — batched or synchronous — appends `model_version`, `run_date`,
 `temperature`, `temperature_applied`, `prompt_sha256` to
@@ -293,16 +307,23 @@ either way, which is also why §0's venv warning matters.
    still work only against paid Anthropic/OpenAI accounts, which `.env.example`
    no longer configures by default. Use the plain synchronous path.
 3. **`.env` does not exist until you `cp .env.example .env`** — nothing in
-   steps 6/8 can run until it does, and until `GEMINI_API_KEY`/`GROQ_API_KEY`
+   steps 6/8 can run until it does, and until `GEMINI_API_KEY`/`SAMBANOVA_API_KEY`
    are filled in.
 4. **Raw outputs are append-only.** If you want a clean re-run you must move the
    old files aside deliberately; nothing overwrites them for you.
-5. **Model IDs and free-tier terms both churn fast for Gemini/Groq** — the
-   exact strings in `.env.example` were correct as of 2026-07-23. Re-confirm
-   both providers' live model lists before a real run if more than a few
-   weeks have passed (same discipline this project already applied to
-   Together AI's model ID, which got deprecated once already).
+5. **Model IDs and free-tier terms both churn fast for Gemini/SambaNova** —
+   the exact strings in `.env.example` were correct as of 2026-07-23.
+   Re-confirm both providers' live model lists before a real run if more
+   than a few weeks have passed (same discipline this project already
+   applied to Together AI's model ID, which got deprecated once already;
+   Groq's free tier was ruled out entirely mid-project when its 8K TPM
+   per-request cap turned out too small for this project's real prompts).
 6. **Never pass a real corpus project into `prompts/few_shot.txt`.** A startup
    guard trips on this, but the guard only knows about manifest project IDs.
-7. **Groq's free-tier rate limit (30 req/min, 14,400/day) is shared** between
-   the `gpt` and `opensource` slots — both use the same `GROQ_API_KEY`/account.
+7. **SambaNova's free-tier rate limit (20 req/min, 20 req/day, 200,000
+   tokens/day, per model) is shared account-wide only in the sense that the
+   `gpt` and `opensource` slots use the same `SAMBANOVA_API_KEY`/account** —
+   whether the 200,000 TPD token budget itself is independent per model or
+   pooled is NOT confirmed (no rate-limit info in response headers); watch
+   real failure patterns during a multi-day run rather than assuming either
+   way.

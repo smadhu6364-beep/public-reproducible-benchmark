@@ -267,8 +267,17 @@ control what a model already learned. We mitigate this in two ways: the
 corpus deliberately spans both older and more recent documents by
 publication date, and a supplementary analysis (opt-in, not part of the
 headline metrics) compares performance on documents published before versus
-after each model's training-data cutoff -- \textbf{[PLACEHOLDER: cutoff
-dates pending re-research for the current model lineup]}. A systematic gap
+after each model's training-data cutoff. This has been only partially
+resolved as of this draft: the Gemini-slot model's cutoff is confirmed as
+January 2025 from the provider's own documentation, and one of the two
+open-weight models' cutoff is confirmed as December 2023 (Meta's own model
+card), but the other open-weight model (OpenAI's open-weight
+\texttt{gpt-oss-120b}) states no training cutoff in any official source
+checked (see \texttt{docs/model\_cutoffs.md} for the specific sources
+consulted) --
+\textbf{[PLACEHOLDER: this sub-analysis may need to exclude the
+\texttt{gpt-oss-120b} cell, or that one open question resolved, before
+Results are written]}. A systematic gap
 between these groups would be a contamination signal, though a suggestive
 one, not dispositive proof either way. \texttt{publication\_date} is populated for
 only 10 of the 21 included projects at present, which limits this
@@ -291,11 +300,15 @@ The Gemini-slot provider's free-tier terms of service state that unpaid-tier
 input and output may be used to develop and improve the provider's own
 products, and that human reviewers may read submitted content -- a
 protection against training-data use that its paid tier separately
-provides. All planning documents sent as model input in this study are
-already-public World Bank or UK government documents, which substantially
-limits the practical sensitivity of this exposure; nonetheless, this is
-disclosed here as a real property of the experimental setup rather than
-omitted.
+provides. The two open-weight models' free-tier provider (SambaNova Cloud)
+does not state, in its own published privacy policy, whether submitted
+prompts or outputs are used for model training or human review for its
+serverless API -- this is reported here as an open question rather than
+either a confirmed protection or a confirmed risk. All planning documents
+sent as model input in this study are already-public World Bank or UK
+government documents, which substantially limits the practical sensitivity
+of this exposure; nonetheless, this is disclosed here as a real property of
+the experimental setup rather than omitted.
 
 \subsection{Threats to Validity}
 Method A's similarity threshold was validated against a hand-labeled set of

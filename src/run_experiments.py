@@ -54,21 +54,44 @@ Responsibilities:
 
 REDESIGNED 2026-07-23 (Madhu, budget-driven): the paid triple described
 above (Anthropic/OpenAI/Together AI) all hit real billing/quota errors on
-the first actual spend attempt. The model lineup is now 3 genuinely
+the first actual spend attempt. The model lineup moved to 3 genuinely
 free-tier models via Google Gemini and Groq - see CLAUDE.md's RQ2
-correction note, docs/model_tier_recommendation.md's dated addendum, and
-call_claude/call_gpt/call_opensource's own docstrings below for exactly
-what each slot calls now. **--batch/--batch-check are now INAPPLICABLE,
+correction note and docs/model_tier_recommendation.md's dated addendum.
+
+REDESIGNED AGAIN 2026-07-23 (later the same day): Groq's free tier turned
+out to have a hard 8,000 TPM per-request cap on both the "gpt" and
+"opensource" slots (confirmed against console.groq.com/docs/rate-limits) -
+this project's real prompts run ~30-34K tokens, so every real call against
+Groq failed outright, not a pacing/retry problem. Those two slots moved to
+SambaNova Cloud instead (api.sambanova.ai/v1, OpenAI-compatible, no card
+required) - "gpt" keeps the exact same `openai/gpt-oss-120b` model; the
+"opensource" slot reverts to `Meta-Llama-3.3-70B-Instruct`, this project's
+ORIGINAL pre-redesign pick, since it's already on SambaNova's free tier and
+Qwen genuinely is not. Real-call verified with a full-size (~28,400-token)
+corpus prompt against both models before wiring this in - see
+call_gpt/call_opensource's own docstrings below for the exact numbers and
+the one real caveat found (gpt-oss-120b needs max_tokens>=4096 to clear its
+own hidden reasoning-token spend, same class of behavior as Gemini's
+"thinking tokens"). SambaNova's responses expose no rate-limit headers at
+all, so whether its documented 200,000 TPD/model budget is independent per
+model or shared account-wide (materially affecting how long the full
+21-project grid takes to clear) remains genuinely unverified - watch for
+this during a real multi-day run rather than assuming either way.
+SAMBANOVA_API_KEY replaces GROQ_API_KEY for these two slots; the "claude"
+slot (Gemini) is unaffected by this second change.
+
+**--batch/--batch-check remain INAPPLICABLE,
 not just unnecessary:** they submit to Anthropic's and OpenAI's native
 batch APIs specifically (submit_claude_batch/submit_gpt_batch,
-BATCH_ELIGIBLE_LABELS below), which the new Gemini/Groq OpenAI-compatible
-endpoints are not wired for and were never verified to support. Since every
-slot is now free, there is also no cost discount left to batch for - use
-the plain synchronous path (no --batch flag) for a real run; --confirm-cost
-should never be needed either, since the estimate is genuinely $0.00. The
-batch code path itself is left in place, untouched, rather than deleted -
-it remains real, tested (tests/test_batch.py), and would still work if a
-future funded run ever reverts to paid Anthropic/OpenAI accounts.
+BATCH_ELIGIBLE_LABELS below), which none of Gemini/Groq/SambaNova's
+OpenAI-compatible endpoints are wired for or verified to support. Since
+every slot is now free, there is also no cost discount left to batch for -
+use the plain synchronous path (no --batch flag) for a real run;
+--confirm-cost should never be needed either, since the estimate is
+genuinely $0.00. The batch code path itself is left in place, untouched,
+rather than deleted - it remains real, tested (tests/test_batch.py), and
+would still work if a future funded run ever reverts to paid Anthropic/
+OpenAI accounts.
 
 Known limitations, stated plainly:
   - Token estimation is a char-count heuristic (~4 chars/token), not a real
@@ -172,12 +195,12 @@ def _load_env() -> None:
 # synchronously at list price regardless of --batch.
 #
 # INAPPLICABLE as of the 2026-07-23 free-tier redesign (see module
-# docstring): "claude"/"gpt" now call Gemini/Groq, neither of which this
+# docstring): "claude"/"gpt" now call Gemini/SambaNova, neither of which this
 # batch path is wired for. Left as-is (not emptied/removed) since it's real,
 # tested code that would still work if a funded run ever reverts to paid
 # Anthropic/OpenAI accounts - just don't pass --batch against the current
-# free-tier .env, it will fail on GEMINI_API_KEY/GROQ_API_KEY not being the
-# ANTHROPIC_API_KEY/OPENAI_API_KEY this path still explicitly requires.
+# free-tier .env, it will fail on GEMINI_API_KEY/SAMBANOVA_API_KEY not being
+# the ANTHROPIC_API_KEY/OPENAI_API_KEY this path still explicitly requires.
 BATCH_ELIGIBLE_LABELS = frozenset({"claude", "gpt"})
 
 PROMPT_FILES = {
@@ -186,7 +209,29 @@ PROMPT_FILES = {
     "structured": PROMPTS_DIR / "structured.txt",
 }
 
-DEFAULT_MAX_OUTPUT_TOKENS = 4096
+DEFAULT_MAX_OUTPUT_TOKENS = 24576
+# CORRECTED 2026-07-23 (real scoped-smoke-test finding, same day as the
+# Groq->SambaNova switch): 4096 was NOT sufficient - the first real 9-call
+# smoke test showed all 3 Gemini (`claude` slot) cells truncated to
+# 650-700 chars (cut off mid-JSON-string), and 6 of 9 cells overall failed
+# to parse. Gemini's hidden "thinking" tokens (see call_claude()'s docstring)
+# turned out far larger and more variable than the earlier trivial "say OK"
+# test suggested, and the `structured` prompt (which deliberately asks for
+# visible step-by-step reasoning before the `FINAL JSON:` marker) needs
+# dramatically more headroom than zero_shot/few_shot: real re-tests against
+# gemini-flash-latest with the actual structured.txt template and a real
+# corpus prompt (P-UK-HyNetCCUSCluster) showed max_tokens=8192 STILL failing
+# (finish_reason="length", only 325 completion tokens, no FINAL JSON marker
+# reached - notably fewer completion tokens than the 4096 case, not more,
+# which isn't fully understood and is disclosed as an open question, not
+# explained away), while max_tokens=24000 succeeded cleanly
+# (finish_reason="stop", completion_tokens=4061, FINAL JSON present).
+# gpt-oss-120b and Llama-3.3-70B-Instruct did not show this behavior in
+# real-call testing (needed at most ~3500 completion tokens) - this fix is
+# Gemini-specific in cause but applied to all 3 models for simplicity, since
+# a shared constant costs nothing extra for models that don't need it (their
+# real completions stop well short of the ceiling regardless of how high it
+# is set).
 DEFAULT_TEMPERATURE = 0.1  # within CLAUDE.md's required 0-0.2 range
 COST_GUARD_THRESHOLD_USD = 30.0
 
@@ -207,9 +252,45 @@ PRICING_PER_MTOK: dict[str, tuple[float, float]] = {
     # dated addendum). The three models actually configured now are genuinely
     # free-tier - $0.00 per token is a real fact about these endpoints, not a
     # missing-data placeholder. Re-verify if free-tier terms ever change.
-    "gemini-2.5-flash": (0.0, 0.0),        # Google AI Studio free tier, no card
-    "openai/gpt-oss-120b": (0.0, 0.0),     # Groq free tier, no card
-    "qwen/qwen3.6-27b": (0.0, 0.0),        # Groq free tier, no card (shares Groq's daily quota with the row above)
+    "gemini-flash-latest": (0.0, 0.0),     # Google AI Studio free tier, no card
+    #   ^ was "gemini-2.5-flash" - that model ID 404s for new accounts (see
+    #   .env.example's 2026-07-23 smoke-test-finding comment); this key was
+    #   stale until this same pass fixed it alongside the Groq->OpenRouter
+    #   swap below, since it's the same PRICING_PER_MTOK.get(model_version)
+    #   lookup that would otherwise have silently reported "missing pricing
+    #   data" the next time --estimate-only ran against the corrected .env.
+
+    # SECOND REDESIGN 2026-07-23 (later the same day): Groq's free tier has a
+    # hard, structural 8,000 TPM per-request cap on both models below
+    # (confirmed directly against console.groq.com/docs/rate-limits, not an
+    # aggregator) - this project's real prompts run ~30-34K tokens (full
+    # planning documents in context), ~4x over. Not a pacing/retry problem:
+    # a single request this size is rejected outright regardless of backoff.
+    # Even Groq's other free models top out at 12K TPM (llama-3.3-70b-
+    # versatile), so staying within Groq's free catalog doesn't fix this.
+    # Moved both slots to SambaNova Cloud instead (api.sambanova.ai/v1,
+    # OpenAI-compatible) - gpt-oss-120b stays exactly the same model; the
+    # "opensource" slot reverts to Meta-Llama-3.3-70B-Instruct, this
+    # project's ORIGINAL pre-redesign open-source pick, rather than Qwen -
+    # both are already on SambaNova's free tier with no card required
+    # (docs.sambanova.ai/docs/en/models/rate-limits: 20 RPM / 20 RPD /
+    # 200,000 TPD per model, no TPM/per-request cap). REAL-CALL VERIFIED, not
+    # just docs-page arithmetic: a genuine ~28,400-token corpus prompt
+    # (P-UK-HyNetCCUSCluster, zero_shot template) was sent to both models and
+    # both returned finish_reason="stop" with real generated content -
+    # gpt-oss-120b needed max_tokens=4096 (this project's
+    # DEFAULT_MAX_OUTPUT_TOKENS) to clear its hidden reasoning-token spend
+    # first (same pattern as Gemini's "thinking tokens" - a max_tokens=1024
+    # test came back empty, finish_reason="length"); Llama cleared easily at
+    # either budget. NOT verified: SambaNova's responses expose no
+    # rate-limit-related headers at all (checked directly), so whether the
+    # "gpt" and "opensource" slots' 200,000 TPD budgets are independent per
+    # model or shared account-wide - and therefore whether the full 21-project
+    # grid finishes in ~21 days or ~42 - is genuinely unknown until a real
+    # multi-day run is tried. Treat the daily-budget arithmetic as a risk to
+    # watch, not a solved problem.
+    "gpt-oss-120b": (0.0, 0.0),                   # SambaNova free tier, no card (real ID, no "openai/" prefix - see call_gpt()'s docstring for the 404 this caught)
+    "Meta-Llama-3.3-70B-Instruct": (0.0, 0.0),   # SambaNova free tier, no card (shares SambaNova's account, unconfirmed if quota is shared too - see note above)
 
     # Retained for reference only - NOT currently configured in .env.example,
     # since the paid Anthropic/OpenAI slots this project originally decided on
@@ -327,7 +408,7 @@ def _openai_compatible_call(
 
 
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
-GROQ_BASE_URL = "https://api.groq.com/openai/v1"
+SAMBANOVA_BASE_URL = "https://api.sambanova.ai/v1/"
 
 
 def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
@@ -356,41 +437,62 @@ def call_claude(prompt: str, model_version: str, temperature: float, max_tokens:
 def call_gpt(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
     """Returns (response_text, temperature_applied).
 
-    REDESIGNED 2026-07-23 (Madhu, budget-driven): the "gpt" slot now calls
-    Groq's free tier serving `openai/gpt-oss-120b` - OpenAI's own open-weight
-    model family, served by a third party, not OpenAI's paid API, which
-    required real billing this project did not have. GROQ_API_KEY replaces
-    OPENAI_API_KEY for this slot.
+    REDESIGNED 2026-07-23 (Madhu, budget-driven), then REDESIGNED AGAIN
+    2026-07-23 (later the same day): the "gpt" slot originally moved to
+    Groq's free tier serving `openai/gpt-oss-120b`, but Groq's free tier has
+    a hard 8,000 TPM per-request cap (confirmed against
+    console.groq.com/docs/rate-limits) - this project's real prompts run
+    ~30-34K tokens, so every real call failed outright, not fixable by
+    retry/backoff. Moved to SambaNova Cloud instead (same exact gpt-oss-120b
+    model, just a different free host - no further RQ2 comparison-shape
+    disclosure needed for this slot). SAMBANOVA_API_KEY replaces
+    GROQ_API_KEY. IMPORTANT: the model ID STRING also changed, not just the
+    host - Groq's ID was `openai/gpt-oss-120b` (namespace-prefixed); the
+    real scoped smoke test's first attempt sent that same string to
+    SambaNova and got a real 404 model_not_found - SambaNova's own ID is the
+    bare `gpt-oss-120b`, no prefix (see .env.example's GPT_MODEL_NAME).
+    Real-call verified with a genuine ~28,400-token
+    corpus prompt (see PRICING_PER_MTOK's comment above for the exact
+    numbers) - succeeded, but needed max_tokens>=4096 to clear this model's
+    own hidden reasoning-token spend first (same class of issue as Gemini's
+    "thinking tokens"; a too-small max_tokens returns empty content with
+    finish_reason="length", not an error).
 
     The previous version of this function had GPT-5-Terra-specific
     temperature-rejection/max_completion_tokens handling (that model's
     reasoning mode was documented to reject `temperature` outright). REMOVED
-    here, not just left dormant: gpt-oss served via Groq is a different model
-    family on a different serving stack, was never sourced to share that
+    here, not just left dormant: gpt-oss was never sourced to share that
     constraint, and speculative handling for a combination this was never
     verified against is worse than the plain path below. If a real call ever
     demonstrates an equivalent rejection, re-add equivalent handling then,
     sourced against the actual error.
     """
-    api_key = _require_env("GROQ_API_KEY")
-    return _openai_compatible_call(GROQ_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
+    api_key = _require_env("SAMBANOVA_API_KEY")
+    return _openai_compatible_call(SAMBANOVA_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
 
 
 def call_opensource(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
     """Returns (response_text, temperature_applied).
 
-    REDESIGNED 2026-07-23 (Madhu, budget-driven): the "opensource" slot now
-    calls Groq's free tier serving a second, distinct open-weight model
-    (Qwen, by default - see .env.example) - Together AI required real
-    billing this project did not have. GROQ_API_KEY (shared with the "gpt"
-    slot above - same Groq account, different model name) replaces
-    OPENSOURCE_API_KEY/OPENSOURCE_BASE_URL. The HF-hosted-inference path
-    (HF_TOKEN) is retired, not just left dormant - the decided access path
-    is exclusively Gemini + Groq now; see git history before this commit if
-    HF hosted inference is ever reconsidered.
+    REDESIGNED 2026-07-23 (Madhu, budget-driven), then REDESIGNED AGAIN
+    2026-07-23 (later the same day): originally moved to Groq's free tier
+    serving Qwen (`qwen/qwen3.6-27b`), but Groq's free tier's 8-12K TPM
+    per-request cap couldn't serve this project's ~30-34K-token real prompts
+    (see call_gpt()'s docstring - same root cause, same day). Moved to
+    SambaNova Cloud instead, and the model itself reverts to
+    `Meta-Llama-3.3-70B-Instruct` - this project's ORIGINAL pre-redesign
+    open-source pick, back in service because it's already on SambaNova's
+    free tier (Qwen is not) - genuinely less disclosure churn than picking a
+    third new model. SAMBANOVA_API_KEY (shared with the "gpt" slot above -
+    same account, different model name) replaces GROQ_API_KEY. The
+    HF-hosted-inference path (HF_TOKEN) remains retired, not revived - see
+    git history before this commit if HF hosted inference is ever
+    reconsidered. Real-call verified the same way as call_gpt() above -
+    succeeded cleanly at max_tokens=1024 already (no reasoning-token
+    overhead observed for this model).
     """
-    api_key = _require_env("GROQ_API_KEY")
-    return _openai_compatible_call(GROQ_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
+    api_key = _require_env("SAMBANOVA_API_KEY")
+    return _openai_compatible_call(SAMBANOVA_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
 
 
 MODEL_DISPATCH = {
