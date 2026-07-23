@@ -43,6 +43,18 @@ PROCESSED_DIR = REPO_ROOT / "data" / "processed"
 SCORED_DIR = REPO_ROOT / "results" / "scored"
 
 
+def _load_env() -> None:
+    """Same fix as run_experiments.py's _load_env() (2026-07-23): this module
+    also calls into MODEL_DISPATCH (via _default_judge_caller, JUDGE_MODEL_LABEL)
+    and needs that provider's real API key in os.environ, which .env alone
+    does not provide - python-dotenv never auto-loads on import. Only called
+    from main(), not at import time, so importing this module for tests never
+    triggers a real .env read."""
+    from dotenv import load_dotenv
+
+    load_dotenv(REPO_ROOT / ".env", override=False)
+
+
 def _show(path: Path) -> str:
     """Repo-relative display where possible, else the absolute path. An
     --out-dir outside the repo is legal (e.g. results/figures_pipeline_report.md's
@@ -220,6 +232,7 @@ def _default_judge_caller():
 
 
 def main() -> None:
+    _load_env()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--all", action="store_true", help="Judge every file in results/raw_outputs/")
     parser.add_argument("--file", type=str, help="Judge a single raw_outputs/ file")
