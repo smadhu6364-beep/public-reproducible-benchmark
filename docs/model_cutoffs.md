@@ -1,5 +1,20 @@
 # Model training/knowledge cutoff dates (F6 research, 2026-07-21)
 
+> **STALE as of 2026-07-23 - do NOT use these dates for a real contamination
+> check.** The model tier researched below (Claude Sonnet 5, GPT-5.6 Terra,
+> Llama 3.3 70B) was retired the same day this file was written about, for a
+> budget-driven reason unrelated to these dates' accuracy - see CLAUDE.md's
+> RQ2 correction note and `docs/model_tier_recommendation.md`'s dated
+> addendum. The 3 models actually configured now are Google Gemini
+> (`gemini-2.5-flash`), and two Groq-served open-weight models
+> (`openai/gpt-oss-120b`, `qwen/qwen3.6-27b`) - none of which have a
+> researched cutoff date in this file yet. Re-research all three, the same
+> way this file's table below was originally built (direct provider/model-
+> card fetch, not a summary), before ever passing a `model_cutoffs` dict to
+> `metrics.pretraining_cutoff_report()` against real data from the new
+> lineup. Do NOT reuse the dates below for the new models even
+> approximately - they are for entirely different models.
+
 Reference data for `metrics.pretraining_cutoff_report(per_run, model_cutoffs, ...)`.
 That function deliberately does NOT hardcode any cutoff date in code (CLAUDE.md's
 no-fabrication rule, and the function's own docstring) - it requires the caller to
