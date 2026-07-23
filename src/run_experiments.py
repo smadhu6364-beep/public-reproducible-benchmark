@@ -119,6 +119,34 @@ MANIFEST_PATH = REPO_ROOT / "data" / "corpus_manifest.csv"
 OUTPUT_SCHEMA_PATH = PROMPTS_DIR / "output_schema.json"
 BATCH_JOBS_LOG = REPO_ROOT / "results" / "batch_jobs.json"
 
+
+def _load_env() -> None:
+    """Load .env into os.environ before anything below reads it.
+
+    Found 2026-07-23, on the first real attempt to run this script after all
+    three API keys were actually filled into .env: python-dotenv does NOT
+    auto-load on import, and this module - unlike check_env.py, which has its
+    own _load_env() - never called load_dotenv() anywhere. Every call_*/
+    estimate_cost() function reads os.environ.get(...) directly, so without
+    this, CLAUDE_MODEL_NAME/GPT_MODEL_NAME/all three API keys were silently
+    absent from os.environ for any plain `python src/run_experiments.py`
+    invocation - not a crash, a SILENT one: --estimate-only reported
+    models_missing_pricing_data and a $0.00 estimate instead of erroring
+    loudly, which is exactly the dangerous-looking-safe failure mode
+    test_run_pipeline.py's test_unpriced_model_is_reported_not_silently_zero
+    already guards against for a wrong model name - this was the same
+    symptom, different cause (a missing load step, not a bad name). A real
+    grid run in this state would have failed immediately once it tried to
+    actually call a provider with an empty API key. Only called from main()
+    (not at module import time) so importing this module for tests never
+    triggers a real .env read - same convention check_env.py already uses,
+    and why tests patch this to a no-op rather than relying on override=False
+    alone to stay hermetic.
+    """
+    from dotenv import load_dotenv
+
+    load_dotenv(REPO_ROOT / ".env", override=False)
+
 # Providers whose batch endpoints are used by --batch. Both offer a
 # documented ~50% discount vs. the synchronous price. opensource/Together AI
 # is deliberately excluded: its batch-discount availability was never
@@ -1122,6 +1150,7 @@ def all_project_ids() -> list[str]:
 
 
 def main() -> None:
+    _load_env()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--project", action="append", help="Project id (repeatable). Default: all in data/processed/")
     parser.add_argument("--model", action="append", choices=list(MODEL_DISPATCH), help="Model label (repeatable). Default: all three")

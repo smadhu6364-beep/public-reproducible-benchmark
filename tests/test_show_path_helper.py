@@ -99,10 +99,13 @@ class TestNoUnguardedRelativeToRepoRoot(unittest.TestCase):
     # so an edit that moves the code doesn't silently keep the allowlist valid
     # for the wrong line.
     ALLOWED = {
-        ("run_experiments.py", 724),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
-        ("run_experiments.py", 948),   # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1051),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1237),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        # Shifted 2026-07-23 by run_experiments.py's new _load_env() (added
+        # for the .env-not-actually-loaded fix) - same constants, same
+        # justification, just further down the file.
+        ("run_experiments.py", 752),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("run_experiments.py", 976),   # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1079),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1266),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
         ("validate_threshold.py", 191),  # PILOT_PATH -> fixed constant, no CLI override
     }
 
