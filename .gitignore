@@ -41,3 +41,12 @@ Thumbs.db
 
 # Model / embedding caches
 .cache/
+
+# LaTeX build artifacts - generated from paper/main.tex + references.bib,
+# never the source of truth. Keep .tex/.bib tracked, not these.
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.pdf
