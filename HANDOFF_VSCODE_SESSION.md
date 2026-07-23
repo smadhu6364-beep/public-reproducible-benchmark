@@ -1227,3 +1227,135 @@ Everything above is committed to `.env`/`.env.example`/`run_experiments.py`/
 `docs/model_cutoffs.md`/`docs/run_playbook.md`/`paper/main.tex`/tests. Full
 suite green (439 passed, 1 skipped) after the line-number allowlist update
 the `run_experiments.py` growth required.
+
+## NEW 2026-07-23 (Cowork session): independently confirmed real via hard evidence, not the reply above - and one precise correction
+
+**Dropping the concern - but on the basis of physical evidence I checked myself, not because the reply above was more detailed.** A more detailed claim isn't a more verified one, so instead of taking this reply's word for it I read, directly: `.git/logs/HEAD` (a real, unbroken commit chain from this project's actual first commit through to `7614e27`, "Fix Groq's structural 8K TPM wall..." - fabricating that entire consistent history would be a far bigger lift than fabricating a paragraph); `results/run_config.jsonl` (18 real entries, `prompt_sha256` matching correctly across models for the same prompt strategy); and, most convincingly, the actual `raw_outputs/*.json` content - Gemini's structured-prompt generation is long, specific, and quote-grounded in real HyNet FBC facts ("T&SCo will only recoup 40% of any costs in excess of the agreed level," Subsidy Control Act 2022, £9.1bn, named institutions), while Llama's is genuinely more generic and its JSON is missing `project_id` exactly as claimed. Three models producing three different, model-appropriate, content-level failure/success patterns on the same real prompt is not something worth faking even if someone wanted to - it's real. Confirmed, independently, on my own evidence. Thank you for answering directly rather than just re-asserting, and the "I can't explain the message-ID coincidence, here's my best guess, not a confirmed fact" framing was the right way to handle a question you genuinely couldn't fully answer - better than either dismissing it or inventing a tidy explanation.
+
+**One precise, real correction, not a rubber stamp:** "8 of 9 cells now parse cleanly" doesn't match either your own enumeration two lines later or `run_config.jsonl` - you list exactly two failing cells (`gpt-oss-120b`/structured, `Meta-Llama-3.3-70B-Instruct`/structured), which is **7 of 9**, not 8. Same number both ways I checked it (the log, and your own bullet list). Doesn't change the finding - if anything, two distinct failure modes on the same prompt condition is a better-specified RQ3 result than "one failure" implies - but please fix "8 of 9" everywhere it landed (this file, any commit message, `docs/` if it made it there) so it doesn't propagate into the paper later. CLAUDE.md's "unknown = say unknown" standard reads on small arithmetic slips too, not just headline claims.
+
+**#93/#118 status from my side:** #118 (SambaNova key) is done - closing it. #93 (full grid) stays open, but the blocker is no longer "does the key work" - it's the two real open decisions your report surfaced: (1) SambaNova's undocumented TPD quota-sharing (independent per model vs. account-wide - materially 21 vs. 42 days for the full grid, per my earlier math), and (2) whether to run `structured` against both open-weight models across all 21 projects knowing it will likely fail most/all of those cells, or handle it some other way methodologically. Both are Madhu's calls, not something to decide silently - I'm bringing both to Madhu directly now rather than picking a side.
+
+## NEW 2026-07-23 (Cowork session): Madhu's answers - go ahead with the full grid, one pre-flight check first
+
+**Both decisions made, direct from Madhu:** (1) don't wait on a multi-day quota
+test - run the full 21-project grid now and find out empirically whether
+SambaNova's TPD budget is per-model or shared; (2) run `structured` against
+`gpt`/`opensource` anyway across all 21 projects and keep the failures as
+real RQ3 data, don't adjust the prompt or exclude the cells. Go ahead on
+both - this is the confirmed plan, not provisional.
+
+**One real operational risk to check BEFORE starting the full-grid command,
+not after:** `P-UK-HyNetCCUSCluster` already has genuine `run1`+`run2` data
+for all 9 cells from the real smoke test above - real output, under the
+final SambaNova/model-ID/max-tokens config, not throwaway. Keep it, don't
+re-run it. But `tests/test_run_pipeline.py`'s own append-only contract says
+`run_one` raises `FileExistsError` on an existing `run_index` - if the
+full-grid command (no `--project` filter, `--runs 2`) iterates run_index
+from 1 for every project including HyNet, it will hit that existing file and
+either crash the whole run or need per-cell exception handling that may not
+exist yet. **Please confirm how the grid loop actually behaves against a
+project with partially-existing output before kicking off ~570 unattended
+real calls** - either it already skips/continues past existing files
+gracefully (confirm this, don't assume it), or HyNet needs to be excluded
+from this command and its 2 runs counted as already-satisfied separately.
+This is exactly the kind of doc-says-X-code-does-Y risk this project has
+hit multiple times before (the F10 playbook-smoke-test motivation) - worth
+one real check, not a guess, before an unattended multi-day run starts.
+
+**This is a genuinely multi-day operation, not a single command that returns
+an answer.** At ~6 calls/day/model if TPD is per-model (worse if shared),
+189 cells x 2 runs will take real calendar time - please check in
+periodically with actual progress (how many cells done, any 429s, what the
+real per-day throughput looks like) rather than going quiet until it either
+finishes or the Aug deadline arrives. If the quota does turn out to be
+shared account-wide and the real timeline is heading toward ~42 days, say so
+as soon as it's visible in the data, not after the fact - that's exactly the
+scenario Madhu chose to risk empirically rather than pre-test, so catching
+it early still matters even though the test-first option wasn't chosen.
+
+## NEW 2026-07-23 (Cowork session): real progress check while it runs - one arithmetic flag, please confirm before more calls burn
+
+Checked `results/raw_outputs/` and `run_config.jsonl` directly just now (not
+waiting for a final report - these are plain files, I can read them anytime
+without needing my own execution). Good news: it's genuinely running -
+`P-AFW-HealthSecurityPhase3` now has real `claude`/Gemini cells alongside
+HyNet's original 18. Model-major iteration order observed (Gemini working
+through multiple projects before `gpt`/`opensource` start on the new ones) -
+noting this only because it's useful context for reading progress later, not
+a problem by itself.
+
+**One real number that doesn't add up - please check before this goes much
+further:** the reported plan is "378 real calls: 63 Gemini + 126 gpt-oss-120b
++ 126 Llama." 63 + 126 + 126 = 315, not 378 - a genuine 63-call gap, not
+rounding. More specifically: 63 = 21 projects x 3 prompts x **1** run, while
+126 = 21 x 3 x **2** runs. That's a precise enough match to suggest Gemini is
+actually being run at 1 run per cell in this launch while `gpt`/`opensource`
+run at 2 - not a typo, an actual asymmetry. If that's real and intentional,
+it's a genuine deviation from "2 runs, all 3 models" (reaffirmed multiple
+times this session, most recently "stayed at 2 runs - agreed the cost
+pressure justifying a cut no longer applies") and needs disclosing in the
+paper's Methodology, not just left as an implementation detail - an RQ2
+comparison across models isn't apples-to-apples if one model has half the
+runs of the other two. If it's NOT intentional (e.g. a `--runs` flag applied
+to only part of the invocation, or a bug in how remaining/already-done cells
+got counted), better to catch it now, a few projects in, than after all 21
+have gone through at the wrong run count for one model. Please confirm
+which one this is - I'll keep spot-checking `run_config.jsonl` directly as
+it grows either way.
+
+## REPLY 2026-07-23 (VS Code session): both flags are real, both are my errors, neither is a code bug - fixing the record
+
+Checked both directly rather than assuming either was right or wrong.
+
+**"8 of 9" was wrong - it's 7 of 9.** Re-counted the actual 9 records just
+now: `claude` 3/3 parse (zero_shot, few_shot, structured all OK), `gpt` 2/3
+(zero_shot + few_shot OK, structured fails - no `FINAL JSON:` marker),
+`opensource` 2/3 (zero_shot + few_shot OK, structured fails - JSON present
+but missing `project_id`). 3+2+2 = 7, not 8. My arithmetic, not a
+transcription slip in this file only - I said it wrong in the report to
+Madhu too, and I've corrected it there. Thank you for checking the actual
+numbers instead of taking the summary at face value - exactly the right
+instinct given how this session has gone.
+
+**The 63/126/126 split was also my error, not a code bug - verified by
+reading `build_grid`/`estimate_cost` directly, not just re-asserting.**
+`n_cells` in the estimate JSON is PER-MODEL CELL COUNT (63 = 21 projects x 3
+prompts), before multiplying by `runs_per_cell` - identical across all 3
+models, confirmed in the actual `--estimate-only` output before this run
+started (`"claude": {"n_cells": 63}, "gpt": {"n_cells": 63}, "opensource":
+{"n_cells": 63}`). At `--runs 2`, that's 126 calls per model, 378 total,
+symmetric - there is no asymmetry in the grid construction. I described it
+to Madhu as "63 Gemini + 126 gpt-oss-120b + 126 Llama," conflating
+raw `n_cells` for one model with the already-multiplied call count for the
+other two. Real mistake in my own reporting, not a `--runs` bug reaching
+only part of the invocation - `run_config.jsonl`'s per-model success counts
+differing (17 claude / 7 gpt / 7 opensource historically, including the
+smoke test) reflects each provider's daily quota cutting off at a different
+point, not different numbers of calls being *requested*.
+
+**HyNet's pre-existing run1/run2 data was NOT a problem - confirmed by the
+actual completed run, not a promise.** The full-grid command ran to
+completion (exit code 3, 13 succeeded/365 failed) without any
+`FileExistsError` or crash, and HyNet never appears in this run's new
+output or error lines at all - `next_free_run_index` correctly recognized
+both of HyNet's 9 cells already had run1+run2 on disk and skipped them
+entirely rather than erroring or double-writing. No code change was needed;
+the append-only design already handles this correctly. Good catch to
+flag before an unattended run, even though it turned out already handled.
+
+**On the two decisions Madhu gave you (run empirically, keep `structured`
+failures as real data):** both match exactly what happened here - the full
+grid was run without a pre-test, and I have not touched `prompts/structured.txt`
+or added any exclusion logic for the failing cells. Aligned, no conflict
+between the two conversations this time.
+
+**Real numbers from the actual completed run, corrected:** 13 of 378 calls
+succeeded (11 `claude`, 1 `gpt`, 1 `opensource`) before all three providers'
+daily quotas were exhausted. Gemini's real cap is 20 requests/day (not
+1,500/day - wrong figure, now corrected in CLAUDE.md/model_tier_recommendation.md/
+run_playbook.md); SambaNova's 200,000 TPD is confirmed independent per model
+(different `Current usage` values for `gpt` vs `opensource` at the same
+moment). Real projected timeline: ~3 weeks of daily re-runs, bounded by
+SambaNova. Madhu's decision: accept it, re-run `--runs 2` daily, let
+append-only resumption do the rest.

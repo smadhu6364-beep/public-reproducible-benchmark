@@ -119,6 +119,43 @@ RQ3: Which risk categories do LLMs systematically miss or hallucinate?
 > paper's ethics/limitations section as an open question, not as either a
 > confirmed protection or a confirmed risk - unlike Gemini's free tier, where
 > the data-usage terms are at least explicit (if unfavorable).
+>
+> **REAL FULL-GRID ATTEMPT 2026-07-23: the daily-quota question above is now
+> answered, and it's more severe than any prior estimate.** Ran the real
+> 189-cell x 2-run grid (378 calls) for the first time. Result: **13
+> succeeded, 365 failed** - all three providers hit hard daily quotas almost
+> immediately, not a pacing problem retry/backoff can smooth over. Real,
+> disclosed findings, not docs-page arithmetic:
+>
+> - **Gemini's real daily cap is 20 requests/day**, not the 1,500/day
+>   originally researched (that figure was for a different Gemini
+>   generation) - confirmed directly from the real 429 error body:
+>   `quotaId: GenerateRequestsPerDayPerProjectPerModel-FreeTier`,
+>   `quotaValue: '20'`, against whatever model `gemini-flash-latest`
+>   currently resolves to (the error names it `gemini-3.6-flash` - useful,
+>   unplanned confirmation of what that rolling alias points to today,
+>   though `docs/model_cutoffs.md`'s cutoff research still needs re-checking
+>   against that exact name). 11 of 63 needed Gemini cells cleared before the
+>   day's quota was gone.
+> - **SambaNova's 200,000 TPD budget is confirmed independent per model**
+>   (`gpt` and `opensource` reported different `Current usage: X of 200000`
+>   figures at the same wall-clock time) - resolves the "shared vs.
+>   independent" question left open above, in the more favorable direction
+>   (each model gets its own budget, not one pooled between them). Only 1
+>   `gpt` and 1 `opensource` cell cleared today, but that figure is
+>   artificially low: this same session's own earlier real-call verification
+>   and diagnostic testing (confirming the SambaNova fix, finding the
+>   `max_tokens` truncation bug) already consumed most of today's 200K/model
+>   budget before the full-grid attempt even started - a clean day should
+>   clear closer to the ~6-7 calls/model/day the TPD math predicts.
+> - **Real projected timeline: roughly 3 weeks of daily re-runs** to clear
+>   the full grid, bounded by SambaNova's slower models (126 calls needed
+>   each at ~6-7/day) rather than Gemini (63 calls needed at ~11-20/day,
+>   finishes in under a week). Madhu's explicit decision (2026-07-23): accept
+>   this timeline rather than cut runs or pay - re-run
+>   `python src/run_experiments.py --runs 2` daily; the pipeline safely
+>   resumes (raw outputs are append-only, `next_free_run_index` skips
+>   completed cells) rather than needing anything special per re-run.
 
 ## Methodology rules (enforce in all code you write)
 
