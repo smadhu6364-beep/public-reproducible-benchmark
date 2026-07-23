@@ -83,10 +83,10 @@ We address it with three frozen research questions:
 \begin{itemize}
 \item \textbf{RQ1:} How complete and accurate are LLM-generated risk
   registers compared to human-authored ones?
-\item \textbf{RQ2:} How do results vary across three models (a frontier
-  proprietary model, a competing proprietary model, and an open-weight
-  model) and three prompting strategies (zero-shot, few-shot, and
-  structured reasoning)?
+\item \textbf{RQ2:} How do results vary across three models (one
+  general-purpose proprietary model and two distinct open-weight models)
+  and three prompting strategies (zero-shot, few-shot, and structured
+  reasoning)?
 \item \textbf{RQ3:} Which risk categories do LLMs systematically miss or
   hallucinate? This failure-mode analysis is the paper's core contribution.
 \end{itemize}
@@ -201,8 +201,8 @@ patterns and greps ground-truth text against processed planning text for
 verbatim or near-verbatim recurrence, run on every corpus change.
 
 \subsection{Experimental Grid}
-Three models -- a frontier proprietary model, a second proprietary model,
-and an open-weight model -- are each evaluated under three prompting
+Three models -- one general-purpose proprietary model and two distinct
+open-weight models -- are each evaluated under three prompting
 strategies (zero-shot, few-shot, and structured reasoning) across all 21
 projects, with 2 runs per cell at temperature 0--0.1, yielding a
 189-cell $\times$ 2-run grid. Models receive planning/appraisal
@@ -210,6 +210,14 @@ documentation only; the ground-truth register for a given project never
 enters that project's prompt or any few-shot example (few-shot
 demonstrations are fully synthetic, constructed for this purpose, and never
 drawn from a real corpus project).
+
+\textit{Model selection note:} the model tier was originally chosen to
+include a leading proprietary model, a competing proprietary model, and one
+open-weight model. That tier was replaced after all three original provider
+accounts proved unfunded on the first real usage attempt; the tier actually
+reported on in this paper instead pairs one proprietary model with two
+distinct open-weight models, a real and disclosed change to the
+comparison's shape rather than a substitution of equivalent alternatives.
 
 \subsection{Output Schema}
 Each generated risk is a fixed JSON object: a stable identifier, a
@@ -259,24 +267,24 @@ control what a model already learned. We mitigate this in two ways: the
 corpus deliberately spans both older and more recent documents by
 publication date, and a supplementary analysis (opt-in, not part of the
 headline metrics) compares performance on documents published before versus
-after each model's training-data cutoff
-(Claude: January 2026; the competing proprietary model: February 16, 2026;
-the open-weight model: December 2023). A systematic gap between these
-groups would be a contamination signal, though a suggestive one, not
-dispositive proof either way. \texttt{publication\_date} is populated for
+after each model's training-data cutoff -- \textbf{[PLACEHOLDER: cutoff
+dates pending re-research for the current model lineup]}. A systematic gap
+between these groups would be a contamination signal, though a suggestive
+one, not dispositive proof either way. \texttt{publication\_date} is populated for
 only 10 of the 21 included projects at present, which limits this
 supplementary analysis to that subset; we report this as a limitation
 rather than backfilling the field from a different, non-equivalent date
 found in the source documents.
 
 \subsection{Provider API Behavior}
-One evaluated model's reasoning mode is documented to reject the
-\texttt{temperature} parameter outright; the experiment runner detects this
-and retries without it, recording \texttt{temperature\_applied=false} on
-the affected records rather than silently claiming uniform temperature
-control across all three models. Any run where this fires is a real,
-disclosed deviation from strict temperature uniformity and is reported as
-such rather than hidden.
+The experiment runner records a \texttt{temperature\_applied} flag on every
+generation rather than silently assuming uniform temperature control across
+all three models; a real deviation would be reported as such, not hidden.
+An earlier proprietary model considered for this study (since replaced --
+Section~\ref{sec:methods}) was documented to reject the
+\texttt{temperature} parameter outright in its reasoning mode; the models
+actually used in the current lineup have not been sourced to share that
+constraint, but the flag remains in place as a general-purpose safeguard.
 
 \subsection{Threats to Validity}
 Method A's similarity threshold was validated against a hand-labeled set of

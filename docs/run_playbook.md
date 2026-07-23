@@ -27,18 +27,26 @@ Everything below assumes `python` means the venv's python.
 ## 1. Keys
 
 ```bash
-cp .env.example .env      # then fill in the three keys
+cp .env.example .env      # then fill in the two keys
 python src/check_env.py   # verifies each provider actually answers
 ```
 
-`.env.example` is already pre-filled with the decided model triple
-(`claude-sonnet-5`, `gpt-5.6-terra`,
-`meta-llama/Llama-3.3-70B-Instruct-Turbo` via Together AI) — you are filling in
-*keys*, not choosing models. `.env` is gitignored and must stay that way.
+**REDESIGNED 2026-07-23 (Madhu, budget-driven):** the originally-decided paid
+triple (`claude-sonnet-5` / `gpt-5.6-terra` / Llama 3.3 70B Turbo via
+Together AI) all hit real billing/quota errors on the first actual spend
+attempt — see CLAUDE.md's RQ2 correction note and
+`docs/model_tier_recommendation.md`'s dated addendum. `.env.example` is now
+pre-filled with 3 genuinely free-tier models across just **2 real accounts**:
+Google Gemini (`GEMINI_API_KEY`, from
+[aistudio.google.com/apikey](https://aistudio.google.com/apikey)) and Groq
+(`GROQ_API_KEY`, from [console.groq.com/keys](https://console.groq.com/keys),
+shared by both the `gpt` and `opensource` slots). Neither requires a credit
+card as of this writing.
 
-`check_env.py` reports per-provider `CONFIGURED` / `RESULT`. Do not proceed to
-step 6 until all three say configured and reachable — a systemic key failure
-mid-grid wastes real money on the calls that did work.
+`check_env.py` reports per-slot `CONFIGURED` / `RESULT` (3 rows: Gemini,
+Groq×2). Do not proceed to step 6 until all three say configured and
+reachable — while every slot is free now, a systemic key failure mid-grid
+still wastes time re-running the affected cells.
 
 ## 2. Corpus extraction (only if `data/raw/` changed)
 
@@ -92,85 +100,53 @@ justified in `src/match.py`'s docstring + `results/threshold_validation_report.m
 Rerun only if the embedding model changes. `match.py` is the single source of
 truth for the value.
 
-## 5. Cost estimate — always, before spending
+## 5. Cost estimate — always, before running
 
 ```bash
 python src/run_experiments.py --estimate-only --runs 2
-python src/run_experiments.py --estimate-only --runs 2 --batch   # see below
 ```
 
-Prints per-model and total projected cost, makes **no API calls**. Measured
-2026-07-21 for the decided triple: **$21.05 per run** across 189 cells →
-**$42.11 at 2 runs, $63.16 at 3** (synchronous pricing).
-
-**Both 2-run and 3-run configurations exceed CLAUDE.md's $30 cost guard at
-synchronous pricing**, while CLAUDE.md also specifies "2-3 runs each". Decided
-2026-07-21 (Madhu): build batch support, then run 2 at the batched rate — see
-§6a. `results/preflight_report.md` §2 has the full options analysis this
-decision was made from.
+Prints per-model and total projected cost, makes **no API calls**.
+**REDESIGNED 2026-07-23 (Madhu, budget-driven):** the originally-decided paid
+triple all hit real billing/quota errors on the first actual spend attempt
+(see `docs/model_tier_recommendation.md`'s dated addendum) and was replaced
+with 3 genuinely free-tier models. The estimate is now, correctly,
+**`estimated_total_usd: 0.0`** — verified directly, not assumed. CLAUDE.md's
+$30 cost guard and `--confirm-cost` are effectively moot for this lineup
+(nothing will ever exceed $30), but both remain in the code as a safeguard
+if a future funded run reverts to paid providers.
 
 ## 6. The grid
 
-Two ways to run it. Both write identically-shaped records to
-`results/raw_outputs/` and `results/run_config.jsonl` — nothing downstream
-(§7 onward) can tell which path produced a given run.
-
-### 6a. Batched (the decided path — claude+gpt at ~50% off)
-
 ```bash
-python src/run_experiments.py --runs 2 --batch   # ~$24.01, clears the $30 guard, no --confirm-cost needed
-python src/run_experiments.py --batch-check      # poll + collect, any time, any # of times
+python src/run_experiments.py --runs 2
 ```
 
-**Correction 2026-07-21: `--confirm-cost` is *not* required for this command.**
-A previous version of this doc claimed it was. Verified directly: ran this exact
-command (real 189-cell grid, `--runs 2 --batch`, no `.env`/keys) and it printed
-the real batch-discounted estimate (`estimated_total_usd: 24.01`) and proceeded
-straight past the cost-guard check — it only stopped afterward on the expected
-`ANTHROPIC_API_KEY is not set` error, not on the guard. `main()`'s guard check
-(`estimate_cost(..., batch_labels=BATCH_ELIGIBLE_LABELS if args.batch else
-frozenset())`) already applies the batch discount before comparing to $30, so
-$24.01 correctly clears it without an override. `--confirm-cost` is harmless to
-add anyway (it's a no-op below the threshold) but isn't load-bearing here.
+One synchronous call per (project, model, prompt, run) cell — no `--batch`,
+no `--confirm-cost` needed. **`--batch`/`--batch-check` are now
+INAPPLICABLE, not just unnecessary:** they submit to Anthropic's and
+OpenAI's own native batch APIs specifically, which the current Gemini/Groq
+setup is not wired for, and there's no cost discount left to batch for
+anyway since every slot is free. Passing `--batch` against the current
+`.env` will fail (it still requires `ANTHROPIC_API_KEY`/`OPENAI_API_KEY`,
+which the free-tier `.env.example` no longer sets by default) — see
+`run_experiments.py`'s module docstring if a funded run ever needs to revive
+that path.
 
-- `--batch` submits claude+gpt cells to Anthropic's and OpenAI's batch APIs
-  (~50% off list) and **exits immediately** — it does not wait. Batch jobs can
-  take up to 24h (Anthropic is often faster; OpenAI's `completion_window` is a
-  fixed 24h). The opensource/Together AI slot is **not** batched — its
-  batch-discount availability was never verified, so it still runs
-  synchronously in the same invocation, at list price, before `--batch`
-  returns.
-- `--batch-check` polls every job recorded in `results/batch_jobs.json` and
-  collects any that finished. **Safe to re-run any number of times** —
-  already-collected jobs and already-written rows are both skipped, not
-  reprocessed. Run it again later (a new terminal, tomorrow, whenever) until
-  every job shows `"status": "collected"`.
-- `results/batch_jobs.json` is the batch equivalent of a to-do list against the
-  provider APIs — it is how `--batch-check` knows what to look for. Don't
-  delete it until every job is collected.
-- Real SDK shapes were confirmed against the installed `anthropic`/`openai`
-  packages but **never exercised against a live batch call** — see
-  `run_experiments.py`'s module docstring. Spot-check `batch_jobs.json` and the
-  first few batch-sourced `raw_outputs/*.json` records by hand the first time
-  this runs for real.
-
-### 6b. Synchronous (all 3 models, one call per run)
-
-```bash
-python src/run_experiments.py --runs 2 --confirm-cost   # ~$42, needs --confirm-cost
-```
-
-- `--confirm-cost` is **required** whenever the estimate exceeds $30. Without it
-  the run exits 1 having written nothing (verified).
 - `--temperature` defaults to 0.1 and is hard-limited to [0, 0.2] per CLAUDE.md.
 - Raw outputs are **append-only**: `next_free_run_index` picks the lowest unused
   index, and `run_one` refuses to overwrite an existing file. Re-invoking adds
   runs rather than clobbering them — which also means a partial grid is safe to
   resume by just running the command again.
 - Scope it down while smoke-testing: `--project P-SRB-CompetitivenessJobs
-  --model claude --prompt zero_shot --runs 1` is one call, a few cents.
+  --model claude --prompt zero_shot --runs 1` is one call, genuinely free.
 - Exit codes: `2` = every call failed (systemic — bad keys/network, treat as "no
-  run happened"); `3` = some failed; `1` = cost guard.
+  run happened"); `3` = some failed; `1` = cost guard (should not fire at $0.00).
+- Groq's free tier is rate-limited (30 requests/min, 14,400/day, shared
+  across the `gpt` and `opensource` slots since both use the same account);
+  Gemini's is 1,500 requests/day. The full 378-call grid fits comfortably
+  within both, but don't run multiple grids back-to-back the same day
+  without checking the daily counts.
 
 Every run — batched or synchronous — appends `model_version`, `run_date`,
 `temperature`, `temperature_applied`, `prompt_sha256` to
@@ -313,18 +289,20 @@ either way, which is also why §0's venv warning matters.
 ## Things that will bite you
 
 1. **Bare `python` lacks matplotlib.** Activate the venv (§0).
-2. **The $30 guard vs. "2-3 runs" conflict is resolved via `--batch`** (§6a) —
-   but the batch code path has never been exercised against a live provider
-   call. Spot-check the first real `--batch-check` collection by hand.
-3. **`.env` does not exist yet** — nothing in steps 6/8 can run until it does.
+2. **`--batch`/`--batch-check` are retired for the current setup** (§6) — they
+   still work only against paid Anthropic/OpenAI accounts, which `.env.example`
+   no longer configures by default. Use the plain synchronous path.
+3. **`.env` does not exist until you `cp .env.example .env`** — nothing in
+   steps 6/8 can run until it does, and until `GEMINI_API_KEY`/`GROQ_API_KEY`
+   are filled in.
 4. **Raw outputs are append-only.** If you want a clean re-run you must move the
-   old files aside deliberately; nothing overwrites them for you. This applies
-   identically to batch-collected runs.
-5. **Sonnet 5's introductory pricing ends 2026-08-31**, the same month as the
-   project deadline. Slipping past it raises claude's share ~50% either way,
-   batched or not.
+   old files aside deliberately; nothing overwrites them for you.
+5. **Model IDs and free-tier terms both churn fast for Gemini/Groq** — the
+   exact strings in `.env.example` were correct as of 2026-07-23. Re-confirm
+   both providers' live model lists before a real run if more than a few
+   weeks have passed (same discipline this project already applied to
+   Together AI's model ID, which got deprecated once already).
 6. **Never pass a real corpus project into `prompts/few_shot.txt`.** A startup
    guard trips on this, but the guard only knows about manifest project IDs.
-7. **`--batch` submits and returns immediately; it does not wait.** Forgetting
-   to come back with `--batch-check` means the grid never actually lands in
-   `results/raw_outputs/`, even though the terminal shows no error.
+7. **Groq's free-tier rate limit (30 req/min, 14,400/day) is shared** between
+   the `gpt` and `opensource` slots — both use the same `GROQ_API_KEY`/account.

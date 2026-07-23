@@ -13,10 +13,25 @@ submission ~Feb-Mar 2027. IEEE two-column format, 6-8 page limit.
 ## Research questions (FROZEN - never modify or reinterpret)
 
 RQ1: How complete/accurate are LLM-generated risk registers vs. human-authored ones?
-RQ2: How do results vary across 3 models (Claude, GPT, one open-source) and
-3 prompting strategies (zero-shot, few-shot, structured reasoning)?
+RQ2: How do results vary across 3 models (one general-purpose proprietary
+model and two distinct open-weight models) and 3 prompting strategies
+(zero-shot, few-shot, structured reasoning)?
 RQ3: Which risk categories do LLMs systematically miss or hallucinate?
 (Failure-mode analysis = the paper's core contribution.)
+
+> **CORRECTED 2026-07-23 (Madhu), not a silent rewrite:** RQ2 originally
+> named the 3 models as "Claude, GPT, one open-source." On the first real
+> spend attempt, all three originally-decided provider accounts (Anthropic,
+> OpenAI, Together AI) hit real billing/quota errors - none had funded
+> billing. Rather than pay, the model lineup was redesigned to 3 genuinely
+> free-tier models: Google Gemini (proprietary) plus two distinct open-weight
+> models served via Groq's free tier (`openai/gpt-oss-120b` and
+> `qwen/qwen3.6-27b`) - see `docs/model_tier_recommendation.md`'s dated
+> addendum for the full reasoning and exact model IDs/base URLs. This is a
+> real, disclosed change to the comparison's shape (2 proprietary + 1
+> open-weight became 1 proprietary + 2 open-weight), not a relabeling of the
+> same categories - state it explicitly in the paper's Methodology/
+> Limitations sections, not only here.
 
 ## Methodology rules (enforce in all code you write)
 

@@ -37,21 +37,17 @@ IMPORT_TO_PACKAGE = {
 
 # Third-party imports that are conditional/optional at the call site, with
 # the reasoning already documented inline in the source - deliberately NOT
-# pinned. Verified 2026-07-22: both call sites below say so explicitly.
-KNOWN_OPTIONAL_UNPINNED_IMPORTS = {
-    "huggingface_hub": (
-        "Conditional HF-hosted-inference path: imported inside `elif "
-        "hf_token:` in run_experiments.py's call_opensource(), and inside "
-        "a try/except ImportError in check_env.py's open-source check. "
-        "Both sites say inline this is deliberately unpinned unless that "
-        "path is chosen. It wasn't: DECIDED 2026-07-21 (Madhu) was the "
-        "Together AI base-URL path instead (see .env's OPENSOURCE_BASE_URL "
-        "and docs/opensource_slot_options.md). This branch stays live code "
-        "for flexibility, just not the configured path - add "
-        "huggingface_hub to requirements.txt only if that path is ever "
-        "actually chosen instead."
-    ),
-}
+# pinned. Intentionally empty as of 2026-07-23: the previous entry here
+# (huggingface_hub, for an HF-hosted-inference path in run_experiments.py's
+# call_opensource() and check_env.py's open-source check) was REMOVED, not
+# just unused - the 2026-07-23 free-tier redesign (Gemini + Groq, see
+# CLAUDE.md's RQ2 correction note) retired that code path entirely rather
+# than leaving it dormant, so there is no longer a real conditional import
+# to document. Add a new entry here, with the same kind of citation the
+# huggingface_hub one used to have, if a genuinely new conditional import
+# is introduced - don't silently widen test_every_third_party_import_is_pinned's
+# tolerance instead.
+KNOWN_OPTIONAL_UNPINNED_IMPORTS: dict[str, str] = {}
 
 # RESOLVED 2026-07-22 (Madhu): pandas and scikit-learn were both flagged
 # here as pinned-but-unused (named in CLAUDE.md's approved library list,
@@ -127,8 +123,8 @@ class TestRequirementsMatchActualImports(unittest.TestCase):
             f"name, in requirements.txt). If this is a genuinely new "
             f"dependency, CLAUDE.md requires asking before adding it - if "
             f"it's conditional/optional, add it to "
-            f"KNOWN_OPTIONAL_UNPINNED_IMPORTS with the same kind of citation "
-            f"already there for huggingface_hub."
+            f"KNOWN_OPTIONAL_UNPINNED_IMPORTS with a real citation of the "
+            f"conditional call site."
         )
 
     def test_no_stale_unused_pin(self):
@@ -147,8 +143,8 @@ class TestRequirementsMatchActualImports(unittest.TestCase):
         )
 
     def test_known_optional_imports_still_actually_appear_unpinned(self):
-        # If huggingface_hub ever gets added to requirements.txt (e.g. the
-        # HF-hosted path gets chosen after all), this allowlist entry
+        # Mirror check: if any future KNOWN_OPTIONAL_UNPINNED_IMPORTS entry's
+        # package ever gets added to requirements.txt, this allowlist entry
         # becomes stale and should be deleted, not left dangling.
         pinned = _pinned_packages()
         for import_name in KNOWN_OPTIONAL_UNPINNED_IMPORTS:

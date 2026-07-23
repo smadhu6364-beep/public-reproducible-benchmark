@@ -230,3 +230,65 @@ output-token assumptions after the first few real calls.
 
 *Pricing changes frequently; every figure here is dated 2026-07-20 and should be
 re-verified at the source before a real run.*
+
+---
+
+## ADDENDUM 2026-07-23 (Madhu, budget-driven): the paid triple above was replaced
+
+Everything above this line is historical record, not the live decision -
+kept for transparency about how the original choice was reached, not deleted
+or silently rewritten.
+
+**What happened:** on the first real attempt to spend against all three
+decided accounts (Anthropic, OpenAI, Together AI - all three keys
+independently verified reachable via `check_env.py` beforehand), every
+single one rejected the actual spend-incurring call:
+- Anthropic: `400 - Your credit balance is too low to access the Anthropic API`
+- OpenAI: `429 - insufficient_quota, you exceeded your current quota`
+- Together AI: `402 - Credit limit exceeded`
+
+None of the three accounts had funded billing. Faced with a real budget
+constraint, Madhu chose to redesign the model lineup around genuinely
+free-tier providers rather than pay - see CLAUDE.md's RQ2 correction note
+for why this is a real, disclosed change to the comparison's shape, not a
+relabeling.
+
+**The new lineup**, researched via live web search on 2026-07-23 (not
+assumed from training knowledge - free-tier terms and model IDs both churn
+quickly, same discipline this file already used for pricing):
+
+| Slot | Provider | Model | Free-tier limit (as researched 2026-07-23) |
+| --- | --- | --- | --- |
+| `claude` (kept as MODEL_DISPATCH's role label) | Google Gemini, via its documented OpenAI-compatible endpoint | `gemini-2.5-flash` | 1,500 requests/day, no credit card |
+| `gpt` | Groq | `openai/gpt-oss-120b` (OpenAI's own open-weight model family, served by a third party) | shares Groq's free pool |
+| `opensource` | Groq | `qwen/qwen3.6-27b` | 14,400 requests/day org-wide, 30 requests/min, no credit card |
+
+Grid math: 378 total calls (189 cells x 2 runs), ~252 of them on Groq (well
+under its 14,400/day budget) and ~126 on Gemini (well under its 1,500/day
+budget) - comfortably fits in under a day, genuinely $0.
+
+**Real, disclosed consequences of this change, not smoothed over:**
+- RQ2's comparison shape changed from 2 proprietary + 1 open-weight to 1
+  proprietary + 2 open-weight. State this explicitly in the paper.
+- `--batch`/`--batch-check` (src/run_experiments.py) are now inapplicable -
+  they submit to Anthropic's and OpenAI's own native batch APIs specifically,
+  which the Gemini/Groq OpenAI-compatible endpoints were never verified to
+  support, and there is no cost discount left to batch for anyway. The batch
+  code path is left in place, untouched, not deleted - see that file's module
+  docstring.
+- `docs/model_cutoffs.md`'s researched training-cutoff dates are for the
+  RETIRED paid triple (Claude Sonnet 5, GPT-5.6 Terra, Llama 3.3 70B) and do
+  NOT apply to the new 3 models - that file is flagged as needing
+  re-research, not silently reused, before the opt-in pretraining-
+  contamination check (`metrics.pretraining_cutoff_report()`) is ever run
+  against real data from the new lineup.
+- `docs/opensource_slot_options.md` (the research that originally chose
+  Together AI/Llama) is now superseded for the `opensource` slot's provider
+  choice, though its comparison methodology may still be useful reference.
+
+**Not resolved here:** the Gemini free tier is documented (by third-party
+sources, not Google's own pricing page directly) to have a "billing trap" -
+enabling billing on the same Google Cloud project for any other reason can
+silently move it off the free tier. Whoever sets up `GEMINI_API_KEY` should
+use a clean, billing-free Google account and re-verify this before a real
+run, not assume the third-party sources are exactly right.

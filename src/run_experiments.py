@@ -52,6 +52,24 @@ Responsibilities:
     time this runs for real, the same way call_gpt's temperature-retry path
     is flagged for first-real-call verification.
 
+REDESIGNED 2026-07-23 (Madhu, budget-driven): the paid triple described
+above (Anthropic/OpenAI/Together AI) all hit real billing/quota errors on
+the first actual spend attempt. The model lineup is now 3 genuinely
+free-tier models via Google Gemini and Groq - see CLAUDE.md's RQ2
+correction note, docs/model_tier_recommendation.md's dated addendum, and
+call_claude/call_gpt/call_opensource's own docstrings below for exactly
+what each slot calls now. **--batch/--batch-check are now INAPPLICABLE,
+not just unnecessary:** they submit to Anthropic's and OpenAI's native
+batch APIs specifically (submit_claude_batch/submit_gpt_batch,
+BATCH_ELIGIBLE_LABELS below), which the new Gemini/Groq OpenAI-compatible
+endpoints are not wired for and were never verified to support. Since every
+slot is now free, there is also no cost discount left to batch for - use
+the plain synchronous path (no --batch flag) for a real run; --confirm-cost
+should never be needed either, since the estimate is genuinely $0.00. The
+batch code path itself is left in place, untouched, rather than deleted -
+it remains real, tested (tests/test_batch.py), and would still work if a
+future funded run ever reverts to paid Anthropic/OpenAI accounts.
+
 Known limitations, stated plainly:
   - Token estimation is a char-count heuristic (~4 chars/token), not a real
     tokenizer - Anthropic's own pricing FAQ describes this as "a rough
@@ -152,6 +170,14 @@ def _load_env() -> None:
 # is deliberately excluded: its batch-discount availability was never
 # verified (see submit_batch_grid's docstring), so that slot always runs
 # synchronously at list price regardless of --batch.
+#
+# INAPPLICABLE as of the 2026-07-23 free-tier redesign (see module
+# docstring): "claude"/"gpt" now call Gemini/Groq, neither of which this
+# batch path is wired for. Left as-is (not emptied/removed) since it's real,
+# tested code that would still work if a funded run ever reverts to paid
+# Anthropic/OpenAI accounts - just don't pass --batch against the current
+# free-tier .env, it will fail on GEMINI_API_KEY/GROQ_API_KEY not being the
+# ANTHROPIC_API_KEY/OPENAI_API_KEY this path still explicitly requires.
 BATCH_ELIGIBLE_LABELS = frozenset({"claude", "gpt"})
 
 PROMPT_FILES = {
@@ -175,11 +201,24 @@ RETRY_BASE_DELAY_SECONDS = 1.0
 # for sourcing/confidence notes. Keyed by the exact model ID string so the
 # script can price whichever specific model the .env config points at.
 PRICING_PER_MTOK: dict[str, tuple[float, float]] = {
-    # Anthropic - fetched directly from platform.claude.com/docs, 2026-07-19.
+    # REDESIGNED 2026-07-23 (Madhu, budget-driven - all 3 provider accounts
+    # hit real billing/quota errors on the first actual spend attempt; see
+    # CLAUDE.md's RQ2 correction note and docs/model_tier_recommendation.md's
+    # dated addendum). The three models actually configured now are genuinely
+    # free-tier - $0.00 per token is a real fact about these endpoints, not a
+    # missing-data placeholder. Re-verify if free-tier terms ever change.
+    "gemini-2.5-flash": (0.0, 0.0),        # Google AI Studio free tier, no card
+    "openai/gpt-oss-120b": (0.0, 0.0),     # Groq free tier, no card
+    "qwen/qwen3.6-27b": (0.0, 0.0),        # Groq free tier, no card (shares Groq's daily quota with the row above)
+
+    # Retained for reference only - NOT currently configured in .env.example,
+    # since the paid Anthropic/OpenAI slots this project originally decided on
+    # (docs/model_tier_recommendation.md) required real billing this project's
+    # accounts didn't have. Real prices as fetched 2026-07-19; harmless to
+    # leave here if a future funded run reverts to them.
     "claude-opus-4-8": (5.00, 25.00),
     "claude-sonnet-5": (2.00, 10.00),  # introductory rate through 2026-08-31
     "claude-haiku-4-5-20251001": (1.00, 5.00),
-    # OpenAI - web-search summary only, 2026-07-19, re-verify before trusting.
     "gpt-5.5": (5.00, 30.00),
     "gpt-5.6-sol": (5.00, 30.00),
     "gpt-5.6-terra": (2.50, 15.00),
@@ -266,136 +305,92 @@ def _require_env(name: str) -> str:
     return value
 
 
-def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
-    """Returns (response_text, temperature_applied). Anthropic's Messages API
-    has no known reasoning-mode restriction on temperature, so this always
-    returns True - see call_gpt for why that second value isn't always True
-    for every provider."""
-    import anthropic
+def _openai_compatible_call(
+    base_url: str, api_key: str, model_version: str, prompt: str, temperature: float, max_tokens: int
+) -> tuple[str, bool]:
+    """Shared implementation for all 3 free-tier slots below - each is called
+    through an OpenAI-compatible /chat/completions endpoint (Google's Gemini
+    API documents its own such endpoint; Groq's is the same shape this
+    project's original opensource slot already used for Together AI), so one
+    real function replaces 3 near-duplicates rather than copy-pasting the
+    request/response handling three times."""
+    import openai
 
-    api_key = _require_env("ANTHROPIC_API_KEY")
-    client = anthropic.Anthropic(api_key=api_key)
-    resp = client.messages.create(
+    client = openai.OpenAI(api_key=api_key, base_url=base_url)
+    resp = client.chat.completions.create(
         model=model_version,
         max_tokens=max_tokens,
         temperature=temperature,
         messages=[{"role": "user", "content": prompt}],
     )
-    text = "".join(block.text for block in resp.content if getattr(block, "type", None) == "text")
-    return text, True
+    return resp.choices[0].message.content or "", True
+
+
+GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
+
+
+def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
+    """Returns (response_text, temperature_applied).
+
+    REDESIGNED 2026-07-23 (Madhu, budget-driven - see CLAUDE.md's RQ2
+    correction note and docs/model_tier_recommendation.md's dated addendum):
+    the "claude" slot now calls Google's Gemini API via its documented
+    OpenAI-compatibility endpoint (ai.google.dev/gemini-api/docs/openai), not
+    Anthropic's Claude API - the original paid Claude slot required real
+    account billing this project did not have. GEMINI_API_KEY replaces
+    ANTHROPIC_API_KEY for this slot. The "claude" MODEL_DISPATCH key name is
+    kept as-is (an internal role label used throughout metrics.py, tests, and
+    rater packets - renaming it would be pure churn with no behavior change)
+    even though it no longer calls Anthropic.
+
+    No known temperature restriction on this endpoint, so temperature_applied
+    is always True - unverified against a real call at the time of this
+    rewrite; re-check results/run_config.jsonl's temperature_applied field on
+    the first real run.
+    """
+    api_key = _require_env("GEMINI_API_KEY")
+    return _openai_compatible_call(GEMINI_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
 
 
 def call_gpt(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
     """Returns (response_text, temperature_applied).
 
-    FINDING sourced 2026-07-20 (web search, not yet exercised against a real
-    call - no OPENAI_API_KEY has existed at any point this was written; verify
-    on the first real run): OpenAI's GPT-5-family "reasoning" models -
-    plausibly including gpt-5.6-terra, the model this project has selected -
-    are documented to (a) reject the legacy `max_tokens` parameter on
-    chat.completions.create() in favor of `max_completion_tokens` (this is
-    now the OpenAI-recommended parameter broadly, not model-specific, so it's
-    switched below unconditionally), and (b) reject `temperature` outright
-    when reasoning_effort != "none" (see developers.openai.com/api/docs/guides/
-    reasoning#reasoning-mode per the search result that surfaced this).
+    REDESIGNED 2026-07-23 (Madhu, budget-driven): the "gpt" slot now calls
+    Groq's free tier serving `openai/gpt-oss-120b` - OpenAI's own open-weight
+    model family, served by a third party, not OpenAI's paid API, which
+    required real billing this project did not have. GROQ_API_KEY replaces
+    OPENAI_API_KEY for this slot.
 
-    (b) directly conflicts with CLAUDE.md's "temperature 0-0.2 across all 3
-    models" requirement, which was written before this constraint was known.
-    Handled defensively, not silently: try the call with temperature as
-    requested; if the API specifically rejects it, retry without temperature
-    (the only sane recovery - there is no other way to get a response at
-    all), print a loud stderr warning, and return temperature_applied=False
-    so run_one() can record - not hide - that this call's actual sampling
-    temperature was the model's own default, not the requested value. See the
-    paper draft's Limitations section (V.A) for the disclosed methodological
-    consequence if this fires on real runs.
-
-    NOT YET CONFIRMED: whether reasoning_effort="none" would restore full
-    parameter support instead (which might be preferable to silently losing
-    temperature control) - that's a real option to revisit if this retry path
-    actually fires on a live call, not assumed here.
+    The previous version of this function had GPT-5-Terra-specific
+    temperature-rejection/max_completion_tokens handling (that model's
+    reasoning mode was documented to reject `temperature` outright). REMOVED
+    here, not just left dormant: gpt-oss served via Groq is a different model
+    family on a different serving stack, was never sourced to share that
+    constraint, and speculative handling for a combination this was never
+    verified against is worse than the plain path below. If a real call ever
+    demonstrates an equivalent rejection, re-add equivalent handling then,
+    sourced against the actual error.
     """
-    import openai
-
-    api_key = _require_env("OPENAI_API_KEY")
-    client = openai.OpenAI(api_key=api_key)
-    base_kwargs = dict(
-        model=model_version,
-        max_completion_tokens=max_tokens,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    temperature_applied = True
-    try:
-        resp = client.chat.completions.create(temperature=temperature, **base_kwargs)
-    except openai.BadRequestError as e:
-        msg = str(e).lower()
-        if "temperature" in msg and ("unsupported" in msg or "not supported" in msg or "does not support" in msg):
-            print(
-                f"[call_gpt] WARNING: {model_version} rejected temperature={temperature} "
-                f"(reasoning-model constraint - see call_gpt's docstring in run_experiments.py). "
-                f"Retrying WITHOUT temperature. This call's actual sampling temperature is "
-                f"the model's own default, NOT {temperature} - recorded as "
-                f"temperature_applied=False in the raw output record and run_config.jsonl.",
-                file=sys.stderr,
-            )
-            resp = client.chat.completions.create(**base_kwargs)
-            temperature_applied = False
-        else:
-            raise
-    return resp.choices[0].message.content or "", temperature_applied
+    api_key = _require_env("GROQ_API_KEY")
+    return _openai_compatible_call(GROQ_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
 
 
 def call_opensource(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
-    """Returns (response_text, temperature_applied). Supports either
-    documented access path from .env.example: HF hosted inference (HF_TOKEN)
-    or a self-hosted/third-party OpenAI-compatible endpoint (OPENSOURCE_BASE_URL
-    + OPENSOURCE_API_KEY). Neither is assumed; whichever is configured in .env
-    is used, and it is an error if neither is.
+    """Returns (response_text, temperature_applied).
 
-    Deliberately still uses classic `max_tokens` (NOT max_completion_tokens,
-    contrast with call_gpt above): third-party "OpenAI-compatible" inference
-    providers (Together AI, Fireworks, Groq, DeepInfra - see
-    docs/model_tier_recommendation.md) serve open-weight models (DeepSeek,
-    Llama, Qwen, etc.) that are not OpenAI's own o-series/GPT-5 reasoning
-    models and are not known to share this constraint; their compatibility
-    layers may not even recognize max_completion_tokens yet. Switching this
-    without evidence of an actual problem here would risk breaking a path
-    that currently works, for a family of models this restriction wasn't
-    sourced against. Revisit if a real run against the chosen provider proves
-    otherwise.
+    REDESIGNED 2026-07-23 (Madhu, budget-driven): the "opensource" slot now
+    calls Groq's free tier serving a second, distinct open-weight model
+    (Qwen, by default - see .env.example) - Together AI required real
+    billing this project did not have. GROQ_API_KEY (shared with the "gpt"
+    slot above - same Groq account, different model name) replaces
+    OPENSOURCE_API_KEY/OPENSOURCE_BASE_URL. The HF-hosted-inference path
+    (HF_TOKEN) is retired, not just left dormant - the decided access path
+    is exclusively Gemini + Groq now; see git history before this commit if
+    HF hosted inference is ever reconsidered.
     """
-    base_url = os.environ.get("OPENSOURCE_BASE_URL")
-    opensource_key = os.environ.get("OPENSOURCE_API_KEY")
-    hf_token = os.environ.get("HF_TOKEN")
-
-    if base_url:
-        import openai
-
-        client = openai.OpenAI(api_key=opensource_key or "unused", base_url=base_url)
-        resp = client.chat.completions.create(
-            model=model_version,
-            max_tokens=max_tokens,
-            temperature=temperature,
-            messages=[{"role": "user", "content": prompt}],
-        )
-        return resp.choices[0].message.content or "", True
-    elif hf_token:
-        # Hosted-inference path via huggingface_hub. Deferred import: this
-        # dependency is not in requirements.txt yet because the open-source
-        # access path has not been decided - add `huggingface_hub` to
-        # requirements.txt if this path is the one actually chosen.
-        from huggingface_hub import InferenceClient
-
-        client = InferenceClient(model=model_version, token=hf_token)
-        text = client.text_generation(prompt, max_new_tokens=max_tokens, temperature=max(temperature, 0.01))
-        return text, True
-    else:
-        raise RuntimeError(
-            "Neither OPENSOURCE_BASE_URL nor HF_TOKEN is set in .env - the "
-            "open-source model access path has not been configured. This is "
-            "a decision for the project owners, not a default this script "
-            "should pick silently (see module docstring)."
-        )
+    api_key = _require_env("GROQ_API_KEY")
+    return _openai_compatible_call(GROQ_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
 
 
 MODEL_DISPATCH = {

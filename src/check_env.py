@@ -1,12 +1,20 @@
 """check_env.py - one-command connectivity check for the three model-API
 paths, so it's possible to confirm every configured provider actually
-authenticates BEFORE spending real money on a full grid run
-(src/run_experiments.py).
+authenticates BEFORE running a real grid (src/run_experiments.py).
+
+REDESIGNED 2026-07-23 (Madhu, budget-driven): the originally-decided paid
+triple (Anthropic Claude / OpenAI GPT / Together AI Llama) all hit real
+billing/quota errors on the first actual spend attempt. All 3 slots now
+point at genuinely free-tier providers (Google Gemini + Groq) - see
+CLAUDE.md's RQ2 correction note, docs/model_tier_recommendation.md's dated
+addendum, and run_experiments.py's call_claude/call_gpt/call_opensource
+docstrings for exactly what each slot calls now.
 
 Standalone - does not import or touch match.py, metrics.py,
 run_experiments.py, or judge.py. Safe to run repeatedly: for each provider it
-makes only the cheapest possible real request that still proves auth works
-(a models-list / whoami call), never a real generation.
+hits only the cheapest possible real request that still proves auth works
+(an authenticated GET against the provider's /models endpoint), never a real
+generation.
 
 Usage:
   python src/check_env.py
@@ -16,10 +24,15 @@ from __future__ import annotations
 
 import os
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENV_PATH = REPO_ROOT / ".env"
+
+GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 
 def _load_env() -> None:
@@ -30,113 +43,75 @@ def _load_env() -> None:
     load_dotenv(ENV_PATH, override=False)
 
 
-def check_anthropic() -> tuple[str, bool, str]:
-    label = "Anthropic (Claude)"
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        return (label, False, "not configured")
+def _check_openai_compatible_endpoint(label: str, base_url: str, api_key: str) -> tuple[str, bool, str]:
+    """Shared check for any OpenAI-compatible /models endpoint - status code
+    only, deliberately NEVER parsed via the openai SDK's response-model
+    parsing. Found 2026-07-23, on the first real call ever made against a
+    live third-party OpenAI-compatible endpoint: Together AI's /v1/models
+    returned a bare JSON list (no {"object": "list", "data": [...]}
+    wrapper), which crashed the SDK's response parsing with a confusing,
+    non-auth-looking error ("'list' object has no attribute
+    '_set_private_attributes'") - looked like a broken key, wasn't one. A
+    bare urllib request (Python's default User-Agent) separately got a 403
+    from something in front of that same endpoint. Both problems are
+    avoided here: hit /models directly with an explicit User-Agent and
+    check only the HTTP status, never the body shape - this also means one
+    function works for any OpenAI-compatible provider regardless of that
+    provider's specific /models response format.
+    """
+    req = urllib.request.Request(
+        base_url.rstrip("/") + "/models",
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "User-Agent": "llm-risk-register-benchmark/check_env.py",
+        },
+    )
     try:
-        import anthropic
-
-        client = anthropic.Anthropic(api_key=key)
-        client.models.list(limit=1)
-        return (label, True, "OK")
+        with urllib.request.urlopen(req, timeout=20):
+            return (label, True, "OK")
+    except urllib.error.HTTPError as e:
+        return (label, True, f"FAIL: HTTP {e.code} {e.reason}")
     except Exception as e:  # noqa: BLE001 - report and move on to the next provider
         return (label, True, f"FAIL: {e}")
 
 
-def check_openai() -> tuple[str, bool, str]:
-    label = "OpenAI (GPT)"
-    key = os.environ.get("OPENAI_API_KEY")
+def check_claude_slot() -> tuple[str, bool, str]:
+    """Checks the "claude" MODEL_DISPATCH slot's actually-configured
+    provider - Google Gemini via its documented OpenAI-compatible endpoint
+    as of the 2026-07-23 free-tier redesign (see run_experiments.py's
+    call_claude()). The slot name is kept for continuity even though it no
+    longer calls Anthropic."""
+    label = "Gemini (claude slot)"
+    key = os.environ.get("GEMINI_API_KEY")
     if not key:
         return (label, False, "not configured")
-    try:
-        import openai
-
-        client = openai.OpenAI(api_key=key)
-        client.models.list()
-        return (label, True, "OK")
-    except Exception as e:  # noqa: BLE001
-        return (label, True, f"FAIL: {e}")
+    return _check_openai_compatible_endpoint(label, GEMINI_BASE_URL, key)
 
 
-def check_opensource() -> tuple[str, bool, str]:
-    """Mirrors run_experiments.py's call_opensource() dispatch: whichever of
-    the two documented access paths is configured in .env gets checked - a
-    self-hosted OpenAI-compatible endpoint (OPENSOURCE_BASE_URL), or HF
-    hosted inference (HF_TOKEN). Neither is assumed; it's an error condition
-    (reported as "not configured", not a crash) if neither is set, same as
-    run_experiments.py's own error message for this case.
-    """
-    label = "Open-source model"
-    base_url = os.environ.get("OPENSOURCE_BASE_URL")
-    opensource_key = os.environ.get("OPENSOURCE_API_KEY")
-    hf_token = os.environ.get("HF_TOKEN")
+def check_gpt_slot() -> tuple[str, bool, str]:
+    """Checks the "gpt" MODEL_DISPATCH slot - Groq serving
+    openai/gpt-oss-120b as of the 2026-07-23 free-tier redesign (see
+    run_experiments.py's call_gpt())."""
+    label = "Groq (gpt slot)"
+    key = os.environ.get("GROQ_API_KEY")
+    if not key:
+        return (label, False, "not configured")
+    return _check_openai_compatible_endpoint(label, GROQ_BASE_URL, key)
 
-    if base_url:
-        label = f"Open-source (self-hosted endpoint: {base_url})"
-        # Deliberately NOT openai.OpenAI(...).models.list() here (unlike
-        # check_anthropic/check_openai above). Found 2026-07-23 on the first
-        # real call ever made against a live OPENSOURCE_BASE_URL: Together
-        # AI's /v1/models returns a bare JSON list (271 entries, no
-        # {"object": "list", "data": [...]} wrapper), which crashes the
-        # openai SDK's response model parsing with a confusing
-        # "'list' object has no attribute '_set_private_attributes'" error -
-        # not an auth failure, a response-shape incompatibility in the
-        # verification path only. run_experiments.py's real call_opensource()
-        # is unaffected: it calls /chat/completions, which Together (and
-        # other OpenAI-compatible hosts) do serve in standard shape - only
-        # this cheapest-possible-check path hit the non-standard /models
-        # shape. Fixed by hitting /models directly over HTTP and checking
-        # only the status code, never parsing/relying on the body shape -
-        # this also sidesteps needing to know which third-party provider's
-        # /models response format is in play. A explicit User-Agent is
-        # required: a bare urllib request (Python's default UA) got a 403
-        # from a proxy/WAF in front of this exact endpoint during
-        # diagnosis, while both the openai SDK (which sets its own UA) and
-        # this explicit header succeeded - without one, a real key can look
-        # like a real failure.
-        import urllib.error
-        import urllib.request
 
-        req = urllib.request.Request(
-            base_url.rstrip("/") + "/models",
-            headers={
-                "Authorization": f"Bearer {opensource_key or 'unused'}",
-                "User-Agent": "llm-risk-register-benchmark/check_env.py",
-            },
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                return (label, True, "OK")
-        except urllib.error.HTTPError as e:
-            return (label, True, f"FAIL: HTTP {e.code} {e.reason}")
-        except Exception as e:  # noqa: BLE001 - network/timeout/etc.
-            return (label, True, f"FAIL: {e}")
-    elif hf_token:
-        label = "Open-source (HF hosted inference)"
-        try:
-            from huggingface_hub import HfApi
-
-            who = HfApi().whoami(token=hf_token)
-            username = who.get("name", "?") if isinstance(who, dict) else "?"
-            return (f"{label}, user={username}", True, "OK")
-        except ImportError:
-            return (
-                label,
-                True,
-                "FAIL: huggingface_hub not installed (it's a transitive dep of "
-                "sentence-transformers here, not a direct one - add it to "
-                "requirements.txt if HF hosted inference is the chosen path)",
-            )
-        except Exception as e:  # noqa: BLE001
-            return (label, True, f"FAIL: {e}")
-    else:
-        return (
-            label,
-            False,
-            "not configured (neither OPENSOURCE_BASE_URL nor HF_TOKEN set)",
-        )
+def check_opensource_slot() -> tuple[str, bool, str]:
+    """Checks the "opensource" MODEL_DISPATCH slot - Groq serving a second,
+    distinct open-weight model as of the 2026-07-23 free-tier redesign (see
+    run_experiments.py's call_opensource()). Same Groq account/key as the
+    "gpt" slot above (GROQ_API_KEY is shared) - this check is redundant with
+    it in practice, but kept as its own function so check_env.py's output
+    still maps 1:1 onto the 3 real MODEL_DISPATCH slots, same as before this
+    redesign."""
+    label = "Groq (opensource slot)"
+    key = os.environ.get("GROQ_API_KEY")
+    if not key:
+        return (label, False, "not configured")
+    return _check_openai_compatible_endpoint(label, GROQ_BASE_URL, key)
 
 
 def main() -> int:
@@ -144,7 +119,7 @@ def main() -> int:
         print(f"NOTE: {ENV_PATH} does not exist yet - copy .env.example to .env and fill in keys.\n", file=sys.stderr)
     _load_env()
 
-    checks = [check_anthropic(), check_openai(), check_opensource()]
+    checks = [check_claude_slot(), check_gpt_slot(), check_opensource_slot()]
 
     name_width = max(len(name) for name, _, _ in checks)
     print(f"{'PROVIDER':<{name_width}}  {'CONFIGURED':<11}  RESULT")
