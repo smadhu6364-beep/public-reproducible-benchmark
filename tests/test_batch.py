@@ -631,6 +631,15 @@ class TestBatchCLIFlags(unittest.TestCase):
         # silently regress: main()'s guard must apply the batch discount BEFORE
         # comparing to COST_GUARD_THRESHOLD_USD, and must NOT sys.exit(1) when
         # the discounted estimate clears $30, with no --confirm-cost passed.
+        #
+        # Pins `--max-tokens 4096` explicitly (2026-07-21's original figure)
+        # rather than relying on DEFAULT_MAX_OUTPUT_TOKENS - that constant was
+        # raised to 24576 on 2026-07-23 for the free-tier Gemini/SambaNova
+        # models' real reasoning-token headroom needs (see run_experiments.py's
+        # own comment on the constant), which would otherwise silently 6x this
+        # paid-tier-pricing scenario's estimate and push it over $30, breaking
+        # this specific regression pin for a reason unrelated to what it's
+        # actually testing (the batch-discount-before-guard-comparison logic).
         claude_batches = _FakeAnthropicBatchesAPI()
         anthropic_mod, _ = _fake_anthropic_module(claude_batches)
         gpt_files, gpt_batches = _FakeOpenAIFilesAPI(), _FakeOpenAIBatchesAPI()
@@ -638,7 +647,7 @@ class TestBatchCLIFlags(unittest.TestCase):
         opensource_provider = lambda *a, **k: (json.dumps({"project_id": REAL_PROJECTS[0], "risks": []}), True)
 
         with _SandboxedBatch() as sb:
-            argv = ["run_experiments.py", "--runs", "2", "--batch"]   # deliberately NO --confirm-cost
+            argv = ["run_experiments.py", "--runs", "2", "--batch", "--max-tokens", "4096"]   # deliberately NO --confirm-cost
             with mock.patch.object(sys, "argv", argv), \
                  mock.patch.dict(sys.modules, {"anthropic": anthropic_mod, "openai": openai_mod}), \
                  mock.patch.dict(rx.MODEL_DISPATCH, {"opensource": opensource_provider}):

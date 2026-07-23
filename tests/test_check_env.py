@@ -142,16 +142,16 @@ class TestPerSlotWrappers(unittest.TestCase):
         self.assertFalse(configured)
         self.assertEqual(calls, [])
 
-    def test_gpt_slot_uses_groq_api_key_and_base_url(self):
+    def test_gpt_slot_uses_sambanova_api_key_and_base_url(self):
         fake_urlopen, calls = _fake_urlopen()
-        with mock.patch.dict("os.environ", {"GROQ_API_KEY": "fake-groq-key"}, clear=True), \
+        with mock.patch.dict("os.environ", {"SAMBANOVA_API_KEY": "fake-sambanova-key"}, clear=True), \
              mock.patch("urllib.request.urlopen", fake_urlopen):
             label, configured, result = ce.check_gpt_slot()
         self.assertTrue(configured)
         self.assertEqual(result, "OK")
-        self.assertIn("Groq", label)
-        self.assertEqual(calls[0].get_header("Authorization"), "Bearer fake-groq-key")
-        self.assertTrue(calls[0].full_url.startswith(ce.GROQ_BASE_URL))
+        self.assertIn("SambaNova", label)
+        self.assertEqual(calls[0].get_header("Authorization"), "Bearer fake-sambanova-key")
+        self.assertTrue(calls[0].full_url.startswith(ce.SAMBANOVA_BASE_URL))
 
     def test_opensource_slot_not_configured_when_key_missing_and_makes_no_call(self):
         fake_urlopen, calls = _fake_urlopen()
@@ -161,18 +161,18 @@ class TestPerSlotWrappers(unittest.TestCase):
         self.assertFalse(configured)
         self.assertEqual(calls, [])
 
-    def test_opensource_slot_shares_groq_api_key_with_gpt_slot(self):
-        # Both slots use the SAME Groq account/key, different model names
-        # (the model name itself isn't part of this connectivity check).
+    def test_opensource_slot_shares_sambanova_api_key_with_gpt_slot(self):
+        # Both slots use the SAME SambaNova account/key, different model
+        # names (the model name itself isn't part of this connectivity check).
         fake_urlopen, calls = _fake_urlopen()
-        with mock.patch.dict("os.environ", {"GROQ_API_KEY": "fake-groq-key"}, clear=True), \
+        with mock.patch.dict("os.environ", {"SAMBANOVA_API_KEY": "fake-sambanova-key"}, clear=True), \
              mock.patch("urllib.request.urlopen", fake_urlopen):
             label, configured, result = ce.check_opensource_slot()
         self.assertTrue(configured)
         self.assertEqual(result, "OK")
-        self.assertIn("Groq", label)
-        self.assertEqual(calls[0].get_header("Authorization"), "Bearer fake-groq-key")
-        self.assertTrue(calls[0].full_url.startswith(ce.GROQ_BASE_URL))
+        self.assertIn("SambaNova", label)
+        self.assertEqual(calls[0].get_header("Authorization"), "Bearer fake-sambanova-key")
+        self.assertTrue(calls[0].full_url.startswith(ce.SAMBANOVA_BASE_URL))
 
     def test_auth_failure_reported_not_raised(self):
         import urllib.error
@@ -197,7 +197,7 @@ class TestMainExitCodes(unittest.TestCase):
         self.assertEqual(self._run_main(env={}), 0)
 
     def test_all_configured_and_ok_returns_zero(self):
-        code = self._run_main(env={"GEMINI_API_KEY": "a", "GROQ_API_KEY": "b"})
+        code = self._run_main(env={"GEMINI_API_KEY": "a", "SAMBANOVA_API_KEY": "b"})
         self.assertEqual(code, 0)
 
     def test_any_fail_returns_one(self):

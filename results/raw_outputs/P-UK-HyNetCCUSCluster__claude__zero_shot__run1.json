@@ -1,0 +1,14 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:06:23.198050+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Proceeding with anchor projects prior to build-out projects risks T&S network underutilisation, increasing government exposure under the Revenue Support Agreement.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Execute the HyNet top-up process to fill spare network capacity and apply economic licence protections that limit Phase 2 T&S cost exposure until build-out FIDs occur.\",\n      \"evidence\": \"This incremental approach... introduces a risk of network underutilisation and revenue",
+  "parsed_risks": null,
+  "parse_error": "JSON parse failed and no JSON object found: Unterminated string starting at: line 11 column 19 (char 556)"
+}

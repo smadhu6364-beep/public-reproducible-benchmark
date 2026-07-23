@@ -1,5 +1,22 @@
 # Pre-flight report — full-grid run readiness
 
+> **STALE as of 2026-07-23 - the dollar figures below no longer apply.**
+> This report was written for the original paid model triple (Anthropic
+> Claude / OpenAI GPT / Together AI Llama), which was replaced after all
+> three provider accounts hit real billing/quota errors on the first spend
+> attempt - see `CLAUDE.md`'s RQ2 correction note and
+> `docs/model_tier_recommendation.md`'s dated addendum. The current lineup
+> (Gemini + 2 SambaNova-served open-weight models, all free-tier - moved off
+> Groq the same day after its free tier proved unable to serve this
+> project's real prompt sizes) has an
+> estimated real cost of **$0.00**, not the $21-63 figures below - the
+> entire cost-guard conflict this report exists to document no longer
+> applies to a real run. Left in place, not deleted: the grid-composition
+> checks (Section 1) and the `--batch` mechanics this report validated are
+> still real, accurate history for how that decision was reached, and the
+> batch code itself is still intact (see `run_experiments.py`'s module
+> docstring) in case a future funded run reverts to paid accounts.
+
 Run 2026-07-21, before any API spend. Everything below was executed against the
 real repo with the provider calls either stubbed or not reached (`--estimate-only`).
 **No API calls were made, no `.env` was created or modified, nothing was written

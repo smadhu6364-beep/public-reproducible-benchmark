@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:18:30.999820+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Network underutilisation due to delayed or failed build-out projects\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Close monitoring of build-out project progress and identification of alternative users to fill spare network capacity\",\n      \"evidence\": \"Section 2.3.1: 'build-out\u2019 projects, Padeswood and Viridor, and top-up projects, are not within the scope of this FBC'\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Cost escalation due to changes in underlying costs, supply chain cost increases, and unwinding of optimism bias\",\n      \"category\": \"financial\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Regular cost reviews and updates, and implementation of cost assurance processes\",\n      \"evidence\": \"Section 4.2.1: 'While there has been significant cost escalation since the OBC, this has largely been driven by changes in underlying costs'\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Failure to achieve expected benefits due to lack of alternative abatement options for capture projects\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Identification of alternative abatement options and development of contingency plans\",\n      \"evidence\": \"Section 3.3.2: 'For each capture project, we have sought to identify the most plausible alternative abatement options'\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Regulatory risks due to uncertainty around subsidy control principles and compliance with the Subsidy Control Act 2022\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Close engagement with the Subsidy Advice Unit and compliance with subsidy control principles\",\n      \"evidence\": \"Section 4.2.5: 'The Track-1 CCUS Cluster Sequencing Process has been developed to align with the UK subsidy control regime'\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Cross-chain risks due to interdependencies between T&SCo and capture projects\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Identification and allocation of cross-chain risks to the party most suited to manage them\",\n      \"evidence\": \"Section 4.1.3: 'The business models have been designed to address the key market barriers which would otherwise restrict the deployment of CCUS'\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Technical risks due to complexity of CCUS technology and lack of commercial-scale deployment experience\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implementation of technical assurance processes and identification of technical risks\",\n      \"evidence\": \"Section 4.1.4.1: 'Technical assurance has been used in a targeted manner to test the data, assumptions, costs and risks put forward by delivery partners'\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Financial risks due to uncertainty around funding requirements and budget implications\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Regular budget reviews and updates, and identification of financial risks\",\n      \"evidence\": \"Section 5.1: 'The purpose of this section is to: a) assess affordability by comparing the subsidy levels in these contracts to the affordability constraints agreed with HMT'\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Stakeholder risks due to lack of public awareness and understanding of CCUS technology\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implementation of stakeholder engagement and communication strategies\",\n      \"evidence\": \"Section 6.2: 'The CCUS programme undertook a mapping exercise of all key stakeholders as part of the OBC submission'\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Environmental risks due to potential CO2 leakage and environmental impacts\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implementation of environmental monitoring and mitigation measures\",\n      \"evidence\": \"Section 3.6.1: 'Wider Impacts and Place-Based Analysis'\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Governance risks due to complexity of post-FID operating model and need for effective coordination\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implementation of effective governance structures and coordination mechanisms\",\n      \"evidence\": \"Section 6.3: 'The programme needs to refresh its post-FID governance to align with the changes in roles and responsibilities'\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Network underutilisation due to delayed or failed build-out projects",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Close monitoring of build-out project progress and identification of alternative users to fill spare network capacity",
+        "evidence": "Section 2.3.1: 'build-out\u2019 projects, Padeswood and Viridor, and top-up projects, are not within the scope of this FBC'"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Cost escalation due to changes in underlying costs, supply chain cost increases, and unwinding of optimism bias",
+        "category": "financial",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Regular cost reviews and updates, and implementation of cost assurance processes",
+        "evidence": "Section 4.2.1: 'While there has been significant cost escalation since the OBC, this has largely been driven by changes in underlying costs'"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Failure to achieve expected benefits due to lack of alternative abatement options for capture projects",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Identification of alternative abatement options and development of contingency plans",
+        "evidence": "Section 3.3.2: 'For each capture project, we have sought to identify the most plausible alternative abatement options'"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Regulatory risks due to uncertainty around subsidy control principles and compliance with the Subsidy Control Act 2022",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Close engagement with the Subsidy Advice Unit and compliance with subsidy control principles",
+        "evidence": "Section 4.2.5: 'The Track-1 CCUS Cluster Sequencing Process has been developed to align with the UK subsidy control regime'"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Cross-chain risks due to interdependencies between T&SCo and capture projects",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Identification and allocation of cross-chain risks to the party most suited to manage them",
+        "evidence": "Section 4.1.3: 'The business models have been designed to address the key market barriers which would otherwise restrict the deployment of CCUS'"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Technical risks due to complexity of CCUS technology and lack of commercial-scale deployment experience",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implementation of technical assurance processes and identification of technical risks",
+        "evidence": "Section 4.1.4.1: 'Technical assurance has been used in a targeted manner to test the data, assumptions, costs and risks put forward by delivery partners'"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Financial risks due to uncertainty around funding requirements and budget implications",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Regular budget reviews and updates, and identification of financial risks",
+        "evidence": "Section 5.1: 'The purpose of this section is to: a) assess affordability by comparing the subsidy levels in these contracts to the affordability constraints agreed with HMT'"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Stakeholder risks due to lack of public awareness and understanding of CCUS technology",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implementation of stakeholder engagement and communication strategies",
+        "evidence": "Section 6.2: 'The CCUS programme undertook a mapping exercise of all key stakeholders as part of the OBC submission'"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Environmental risks due to potential CO2 leakage and environmental impacts",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implementation of environmental monitoring and mitigation measures",
+        "evidence": "Section 3.6.1: 'Wider Impacts and Place-Based Analysis'"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Governance risks due to complexity of post-FID operating model and need for effective coordination",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implementation of effective governance structures and coordination mechanisms",
+        "evidence": "Section 6.3: 'The programme needs to refresh its post-FID governance to align with the changes in roles and responsibilities'"
+      }
+    ]
+  },
+  "parse_error": null
+}

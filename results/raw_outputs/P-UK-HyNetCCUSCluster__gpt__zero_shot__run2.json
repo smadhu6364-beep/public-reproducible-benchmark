@@ -1,0 +1,189 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:17:16.804032+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Network capacity may be under\u2011utilised, reducing user fees and triggering reliance on the Revenue Support Agreement (RSA).\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure additional anchor or top\u2011up users early, include flexible capacity clauses and monitor utilisation to trigger alternative revenue sources.\",\n      \"evidence\": \"Section 2.3.1 \u2013 risk of network underutilisation and revenue support exposure.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"CO\u2082 leakage from storage sites could cause environmental harm and trigger compensation claims.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement rigorous site characterisation, continuous monitoring, and rely on the Supplementary Compensation Agreement (SCA) for high\u2011impact, low\u2011probability events.\",\n      \"evidence\": \"Section 1.3 \u2013 government will underwrite CO\u2082 leakage risks via the SCA.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Construction cost overruns on the T&S network could exceed the allowed revenue cap.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply cost\u2011sharing caps (40% recovery beyond allowance), enforce strict procurement controls and regular cost reporting to Ofgem.\",\n      \"evidence\": \"Section 4.1.3 \u2013 T&SCo will only recoup 40% of any costs in excess of the agreed level.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Discontinuation of the EETH hydrogen plant or Protos ERF would reduce CO\u2082 volumes and revenue.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Include performance milestones and termination penalties in contracts; maintain contingency users for the network.\",\n      \"evidence\": \"Section 5.7.4 \u2013 Discontinuation risk for EETH and Protos.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Insufficient funds for de\u2011commissioning could leave a financial shortfall at end\u2011of\u2011life.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a dedicated de\u2011commissioning fund with regular contributions and escrow arrangements.\",\n      \"evidence\": \"Section 5.7.5 \u2013 Decommissioning fund shortfall.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Cross\u2011chain risks between the T&SCo and capture projects may be poorly allocated, increasing overall project risk.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Allocate specific risks to the party best able to manage them via the commercial agreements and maintain a cross\u2011chain risk register.\",\n      \"evidence\": \"Section 4.1.2 \u2013 government largely underwriting cross\u2011chain risks.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Regulatory changes or licence revocation by Ofgem could disrupt network operation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Maintain close liaison with Ofgem, comply with the CCS Network Code, and monitor regulatory developments.\",\n      \"evidence\": \"Section 4.4.2 \u2013 Ofgem as economic regulator with licence powers.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Non\u2011compliance with the Subsidy Control Act could lead to legal challenges or loss of funding.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Submit subsidy assessments to the Subsidy Advice Unit early and embed compliance checks in contract design.\",\n      \"evidence\": \"Section 4.2.5 \u2013 Subsidy controls and legal requirements.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Delays in delivering the T&S network could push back the Commercial Operating Date (COD) of anchor projects.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Use phased delivery, buffer periods, and QSRA/PERT schedule assurance to monitor critical path activities.\",\n      \"evidence\": \"Section 6.4.1 \u2013 overarching schedule risk to ensure timely COD.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Supply\u2011chain capacity constraints may cause construction delays and cost inflation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Early engagement with key suppliers, secure long\u2011term contracts, and maintain contingency stock for critical materials.\",\n      \"evidence\": \"Section 4.1.4 \u2013 cost escalation driven by supply\u2011chain cost increases.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Current low UK ETS carbon price makes capture uneconomic without subsidies, risking project viability.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide long\u2011term revenue support via RSA and CfD\u2011type contracts to bridge the price gap.\",\n      \"evidence\": \"Section 1.1 \u2013 costs of capture higher than emitting due to low carbon price.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Potential fraud in subsidy payments could lead to financial loss and reputational damage.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement robust financial controls, regular audits, and fraud detection systems for all grant and subsidy flows.\",\n      \"evidence\": \"Section 5.7.8 \u2013 Fraud.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Changes in government policy or funding envelope (NFE) could reduce available subsidies.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure multi\u2011year legislative commitments and embed flexibility in contracts to adjust to funding variations.\",\n      \"evidence\": \"Section 5.2 \u2013 NFE of up to \u00a320bn and reliance on exchequer funding.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Dense\u2011phase upgrade (Phase\u202f2) may encounter technical challenges and higher than expected costs.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct detailed engineering studies, allocate contingency budget, and schedule upgrade after anchor COD to spread risk.\",\n      \"evidence\": \"Section 2.3.2 \u2013 dense phase upgrades included in Phase\u202f2.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Geological uncertainty could limit storage capacity or increase leakage risk.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Perform comprehensive site characterisation, modelling, and continuous monitoring of injection wells.\",\n      \"evidence\": \"Section 1.1 \u2013 CO\u2082 stored in deep geological formations such as depleted fields or saline aquifers.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Long\u2011term RSA and SCA contracts may become unaffordable if cost assumptions change.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Include periodic review clauses, cost\u2011cap mechanisms, and shared\u2011risk provisions in the agreements.\",\n      \"evidence\": \"Section 4.1.3 \u2013 RSA and SCA are 25\u2011year contracts providing revenue stability.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"If build\u2011out projects fail to take FID, the T&S network could become a stranded asset.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Tie network construction to firm user commitments, use the \u2018uncertain cost reopener\u2019 to limit CapEx exposure.\",\n      \"evidence\": \"Section 4.2.2 \u2013 risk of network under\u2011utilisation if build\u2011out projects do not take FID.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"RAB model cost reopeners may lead to higher than forecasted payments to the T&SCo.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement rigorous cost monitoring, apply the 40% cost\u2011sharing rule, and conduct regular regulator reviews.\",\n      \"evidence\": \"Section 5.1 \u2013 RAB model with cost reopeners settled ex post.\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"Inadequate data management could impair performance monitoring and decision\u2011making.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a comprehensive data\u2011management strategy, define data flows, and assign clear ownership for data quality.\",\n      \"evidence\": \"Section 6.6 \u2013 data and information flows and data\u2011management strategy.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Network capacity may be under\u2011utilised, reducing user fees and triggering reliance on the Revenue Support Agreement (RSA).",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure additional anchor or top\u2011up users early, include flexible capacity clauses and monitor utilisation to trigger alternative revenue sources.",
+        "evidence": "Section 2.3.1 \u2013 risk of network underutilisation and revenue support exposure."
+      },
+      {
+        "risk_id": "R02",
+        "description": "CO\u2082 leakage from storage sites could cause environmental harm and trigger compensation claims.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement rigorous site characterisation, continuous monitoring, and rely on the Supplementary Compensation Agreement (SCA) for high\u2011impact, low\u2011probability events.",
+        "evidence": "Section 1.3 \u2013 government will underwrite CO\u2082 leakage risks via the SCA."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Construction cost overruns on the T&S network could exceed the allowed revenue cap.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply cost\u2011sharing caps (40% recovery beyond allowance), enforce strict procurement controls and regular cost reporting to Ofgem.",
+        "evidence": "Section 4.1.3 \u2013 T&SCo will only recoup 40% of any costs in excess of the agreed level."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Discontinuation of the EETH hydrogen plant or Protos ERF would reduce CO\u2082 volumes and revenue.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Include performance milestones and termination penalties in contracts; maintain contingency users for the network.",
+        "evidence": "Section 5.7.4 \u2013 Discontinuation risk for EETH and Protos."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Insufficient funds for de\u2011commissioning could leave a financial shortfall at end\u2011of\u2011life.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a dedicated de\u2011commissioning fund with regular contributions and escrow arrangements.",
+        "evidence": "Section 5.7.5 \u2013 Decommissioning fund shortfall."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Cross\u2011chain risks between the T&SCo and capture projects may be poorly allocated, increasing overall project risk.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Allocate specific risks to the party best able to manage them via the commercial agreements and maintain a cross\u2011chain risk register.",
+        "evidence": "Section 4.1.2 \u2013 government largely underwriting cross\u2011chain risks."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Regulatory changes or licence revocation by Ofgem could disrupt network operation.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Maintain close liaison with Ofgem, comply with the CCS Network Code, and monitor regulatory developments.",
+        "evidence": "Section 4.4.2 \u2013 Ofgem as economic regulator with licence powers."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Non\u2011compliance with the Subsidy Control Act could lead to legal challenges or loss of funding.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Submit subsidy assessments to the Subsidy Advice Unit early and embed compliance checks in contract design.",
+        "evidence": "Section 4.2.5 \u2013 Subsidy controls and legal requirements."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Delays in delivering the T&S network could push back the Commercial Operating Date (COD) of anchor projects.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Use phased delivery, buffer periods, and QSRA/PERT schedule assurance to monitor critical path activities.",
+        "evidence": "Section 6.4.1 \u2013 overarching schedule risk to ensure timely COD."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Supply\u2011chain capacity constraints may cause construction delays and cost inflation.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Early engagement with key suppliers, secure long\u2011term contracts, and maintain contingency stock for critical materials.",
+        "evidence": "Section 4.1.4 \u2013 cost escalation driven by supply\u2011chain cost increases."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Current low UK ETS carbon price makes capture uneconomic without subsidies, risking project viability.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide long\u2011term revenue support via RSA and CfD\u2011type contracts to bridge the price gap.",
+        "evidence": "Section 1.1 \u2013 costs of capture higher than emitting due to low carbon price."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Potential fraud in subsidy payments could lead to financial loss and reputational damage.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement robust financial controls, regular audits, and fraud detection systems for all grant and subsidy flows.",
+        "evidence": "Section 5.7.8 \u2013 Fraud."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Changes in government policy or funding envelope (NFE) could reduce available subsidies.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure multi\u2011year legislative commitments and embed flexibility in contracts to adjust to funding variations.",
+        "evidence": "Section 5.2 \u2013 NFE of up to \u00a320bn and reliance on exchequer funding."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Dense\u2011phase upgrade (Phase\u202f2) may encounter technical challenges and higher than expected costs.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct detailed engineering studies, allocate contingency budget, and schedule upgrade after anchor COD to spread risk.",
+        "evidence": "Section 2.3.2 \u2013 dense phase upgrades included in Phase\u202f2."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Geological uncertainty could limit storage capacity or increase leakage risk.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Perform comprehensive site characterisation, modelling, and continuous monitoring of injection wells.",
+        "evidence": "Section 1.1 \u2013 CO\u2082 stored in deep geological formations such as depleted fields or saline aquifers."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Long\u2011term RSA and SCA contracts may become unaffordable if cost assumptions change.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Include periodic review clauses, cost\u2011cap mechanisms, and shared\u2011risk provisions in the agreements.",
+        "evidence": "Section 4.1.3 \u2013 RSA and SCA are 25\u2011year contracts providing revenue stability."
+      },
+      {
+        "risk_id": "R17",
+        "description": "If build\u2011out projects fail to take FID, the T&S network could become a stranded asset.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Tie network construction to firm user commitments, use the \u2018uncertain cost reopener\u2019 to limit CapEx exposure.",
+        "evidence": "Section 4.2.2 \u2013 risk of network under\u2011utilisation if build\u2011out projects do not take FID."
+      },
+      {
+        "risk_id": "R18",
+        "description": "RAB model cost reopeners may lead to higher than forecasted payments to the T&SCo.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement rigorous cost monitoring, apply the 40% cost\u2011sharing rule, and conduct regular regulator reviews.",
+        "evidence": "Section 5.1 \u2013 RAB model with cost reopeners settled ex post."
+      },
+      {
+        "risk_id": "R19",
+        "description": "Inadequate data management could impair performance monitoring and decision\u2011making.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Develop a comprehensive data\u2011management strategy, define data flows, and assign clear ownership for data quality.",
+        "evidence": "Section 6.6 \u2013 data and information flows and data\u2011management strategy."
+      }
+    ]
+  },
+  "parse_error": null
+}

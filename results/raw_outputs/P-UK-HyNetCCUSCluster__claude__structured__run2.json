@@ -1,0 +1,162 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:17:06.392773+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: Deploy the HyNet Carbon Capture, Usage & Storage (CCUS) Cluster to capture CO2 from industrial, hydrogen, and waste facilities, transport it via pipelines, and permanently store it in offshore geological formations. This supports net zero targets (Carbon Budget 6, NDC) and establishes a competitive UK CCUS market.\n- Scope: Anchor project approval for Eni (Transport & Storage Company), Essar Energy Transition Hydrogen (EETH), and Protos (Energy Recovery Facility). Excludes build-out projects (Padeswood, Viridor) and top-up/expansion phases, which will be submitted via future FBCs.\n- Components: Onshore trunk and spur pipelines (Point of Ayr to Flint, Flint to Stanlow, Stanlow to Ince), offshore Point of Ayr terminal, Douglas platform, offshore depleted gas fields (Hamilton Main, Hamilton North, Lennox), blue hydrogen plant (EETH), waste-to-energy capture plant (Protos).\n- Delivery Model: Regulated Asset Base (RAB) model for T&SCo administered by Ofgem; CfD-style revenue support contracts (ICC, HPBM) managed by Low Carbon Contracts Company (LCCC); government underwriting via Revenue Support Agreement (RSA), Supplementary Compensation Agreement (SCA), and Government Support Package (GSP).\n- Timeline: Anchor initial operational dates targeted from 2028; cluster FIDs in 2024; operational support contracts lasting 15 to 25 years (up to 2053/2057).\n- Budget: Total subsidy cost estimated at \u00a39.1bn (2021 real prices) drawn from the \u00a320bn Negotiation Funding Envelope (NFE).\n- Key Stakeholders: Department for Energy Security and Net Zero (DESNZ / Cluster Sponsor Function), Ofgem, LCCC, Eni, EETH, Protos, NSTA, OPRED, local communities.\n- External Dependencies: UK ETS carbon price trajectory, private sector finance availability, UK subsidy control clearance, supply chain capacity.\n\nStep 2 - Category sweep\n1. Technical:\n   - CO2 leakage from offshore geological stores (\"underwrite several key high-impact, low-probability risks \u2013 principally relating to CO2 leakage\").\n   - Capture plant operational underperformance in availability or capture rate (\"penalties faced by projects caused by underperformance (i.e. low availability or capture rate)\").\n   - Refurbishment failure/complications in existing oil and gas pipelines (\"remediation/refurbishing of the existing offshore pipeline network from PoA to HM and HN injection sites\").\n2. Financial:\n   - CapEx overrun risk during Eni T&S network construction (\"Eni T&S network construction overruns\").\n   - Network underutilisation leading to RSA revenue shortfall exposure (\"introduces a risk of network underutilisation and revenue support exposure\").\n   - Decommissioning fund shortfall at end of asset life (\"Decommissioning fund shortfall\").\n   - Discontinuation risk if government support threshold is reached (\"if support provided reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network\").\n3. Schedule:\n   - Delay in final funding approval leading to supplier bid expiration, retendering, and project collapse (\"If the approval of the FFE is delayed we would need to postpone FID and developers would need to re-negotiate supplier bids\").\n   - Misalignment of operational schedules (CODs) between T&S network and capture plants leading to premature financial drawdown (\"delivery of a timely cluster COD... to avoid any unnecessary draw down on HMG finances\").\n4. Stakeholder:\n   - Local community uncertainty or opposition regarding onshore pipelines and CCUS infrastructure (\"awareness of CCUS is growing but with many still undecided of their view.\").\n5. Political / Regulatory:\n   - Low or volatile UK ETS carbon price undercutting market incentives (\"Carbon Price is currently too low to incentivise deployment\").\n   - Subsidy Control Act compliance risk or legal challenge (\"Cluster Sequencing Process has been developed to align with the UK subsidy control regime under the Subsidy Control Act 2022.\").\n6. Environmental:\n   - Environmental and air quality impacts from construction and industrial carbon capture operations (\"Costs include the potential for CO2 leakage and environmental and air quality impacts.\").\n7. Organizational:\n   - Capability and capacity constraints within partner ALBs/delivery bodies post-FID (\"Assess capacity and capability of key partner organisations to deliver their roles at FID\").\n   - Loss of institutional knowledge during transition to the DESNZ Cluster Sponsor Function (\"integrated transition & engagement plan will be implemented prior to FID... minimising the loss of institutional knowledge\").\n8. External:\n   - Inflationary pressures and supply chain capacity bottlenecks leading to cost escalation (\"supply chain cost increases and an unwinding of optimism bias.\").\n\nStep 3 - Evidence filter\nAll candidate risks are directly grounded in explicit statements in the FBC text. Unsubstantiated generic risks have been excluded.\n\nStep 4 - Assess\nEach risk is evaluated for likelihood (1-5) and impact (1-5) based on the business case context, with tailored concrete mitigations.\n\nStep 5 - Consolidate\nConsolidated into 16 distinct, fully grounded risk objects spanning all 8 specified risk categories.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"CO2 leakage from deep offshore geological storage sites during operations.\",\n      \"category\": \"technical\",\n      \"likelihood\": 1,\n      \"impact\": 5,\n      \"mitigation\": \"Government underwrites high-impact CO2 leakage risks via the Supplementary Compensation Agreement (SCA) while T&SCo installs sentinel and monitoring wells.\",\n      \"evidence\": \"underwrite several key high-impact, low-probability risks \u2013 principally relating to CO2 leakage\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Capture plant operational underperformance through low plant availability or low carbon capture rates.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce financial performance penalties and availability incentive structures under the business model contracts.\",\n      \"evidence\": \"penalties faced by projects caused by underperformance (i.e. low availability or capture rate)\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Structural failure or refurbishment delays when repurposing existing offshore gas pipelines.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct rigorous technical assurance and remediation of the Point of Ayr offshore pipeline network during Phase 1 APDP execution.\",\n      \"evidence\": \"remediation/refurbishing of the existing offshore pipeline network from PoA to HM and HN injection sites\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Construction capital expenditure overruns incurred by the T&SCo during network build-out.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply a cost-sharing factor limiting T&SCo cost recovery to 40% for overruns and utilize Ofgem uncertain cost reopeners.\",\n      \"evidence\": \"T&SCo will only recoup 40% of any costs in excess of the agreed level\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Underutilisation of the T&S network causing aggregate user fees to fall short of allowed revenue.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide top-up payments via the exchequer-funded Revenue Support Agreement (RSA) while accelerating top-up and build-out onboarding.\",\n      \"evidence\": \"introduces a risk of network underutilisation and revenue support exposure\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Shortfall in funds accumulated for long-term network decommissioning obligations.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a formal Decommissioning Shortfall Agreement managed by the DESNZ Cluster Sponsor Function.\",\n      \"evidence\": \"Decommissioning fund shortfall\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Revenue support liabilities reaching defined cap thresholds, triggering network discontinuation rights.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Maintain tight budget envelopes, perform ongoing cost assurance, and manage cross-chain risk through the Sponsor Function Board.\",\n      \"evidence\": \"if support provided reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Delays in Final Funding Envelope approval forcing postponement of FID and renegotiation or collapse of supplier bids.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Progress to FID ahead of the Spending Review or coordinate with delivery partners to negotiate time-limited supplier bid extensions.\",\n      \"evidence\": \"If the approval of the FFE is delayed we would need to postpone FID and developers would need to re-negotiate supplier bids\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Schedule misalignment between T&SCo and capture plant Commercial Operation Dates leading to premature financial drawdown.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Track the integrated cluster delivery schedule and enforce target commissioning dates through the Technical Details Schedule and CfD contracts.\",\n      \"evidence\": \"delivery of a timely cluster COD... to avoid any unnecessary draw down on HMG finances\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Public undecidedness and local community opposition regarding CCUS infrastructure and onshore pipelines.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Execute stakeholder communications plans, demonstrate local economic benefits, and share community engagement best practices.\",\n      \"evidence\": \"awareness of CCUS is growing but with many still undecided of their view.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"UK ETS carbon prices remaining too low to incentivize private sector decarbonisation without subsidies.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide long-term (15-25 year) business model support contracts linked to carbon price references to bridge the commercial gap.\",\n      \"evidence\": \"Carbon Price is currently too low to incentivise deployment\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Legal challenges or non-compliance regarding government funding under the Subsidy Control Act 2022.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Submit comprehensive subsidy scheme assessments to the Subsidy Advice Unit (SAU) prior to contract execution.\",\n      \"evidence\": \"Cluster Sequencing Process has been developed to align with the UK subsidy control regime under the Subsidy Control Act 2022.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Adverse environmental and local air quality impacts from construction activities and plant operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce strict environmental permitting controls through OPRED and local planning authorities during delivery.\",\n      \"evidence\": \"Costs include the potential for CO2 leakage and environmental and air quality impacts.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Capacity and capability deficits within delivery partners (Ofgem, LCCC) restricting effective post-FID execution.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Require partner organisations to complete self-assessed Organisational Readiness Statements prior to FID.\",\n      \"evidence\": \"Assess capacity and capability of key partner organisations to deliver their roles at FID\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Loss of institutional knowledge during transition from negotiation teams to the post-FID operating model.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement an integrated transition and engagement plan and establish the DESNZ Cluster Sponsor Function prior to FID.\",\n      \"evidence\": \"integrated transition & engagement plan will be implemented prior to FID... minimising the loss of institutional knowledge\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Global supply chain inflation and limited market capacity causing procurement bottlenecks and price escalation.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Perform rigorous technical and cost assurance on procurement evidence and conduct early supply chain engagement.\",\n      \"evidence\": \"supply chain cost increases and an unwinding of optimism bias.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "CO2 leakage from deep offshore geological storage sites during operations.",
+        "category": "technical",
+        "likelihood": 1,
+        "impact": 5,
+        "mitigation": "Government underwrites high-impact CO2 leakage risks via the Supplementary Compensation Agreement (SCA) while T&SCo installs sentinel and monitoring wells.",
+        "evidence": "underwrite several key high-impact, low-probability risks \u2013 principally relating to CO2 leakage"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Capture plant operational underperformance through low plant availability or low carbon capture rates.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Enforce financial performance penalties and availability incentive structures under the business model contracts.",
+        "evidence": "penalties faced by projects caused by underperformance (i.e. low availability or capture rate)"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Structural failure or refurbishment delays when repurposing existing offshore gas pipelines.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Conduct rigorous technical assurance and remediation of the Point of Ayr offshore pipeline network during Phase 1 APDP execution.",
+        "evidence": "remediation/refurbishing of the existing offshore pipeline network from PoA to HM and HN injection sites"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Construction capital expenditure overruns incurred by the T&SCo during network build-out.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply a cost-sharing factor limiting T&SCo cost recovery to 40% for overruns and utilize Ofgem uncertain cost reopeners.",
+        "evidence": "T&SCo will only recoup 40% of any costs in excess of the agreed level"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Underutilisation of the T&S network causing aggregate user fees to fall short of allowed revenue.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide top-up payments via the exchequer-funded Revenue Support Agreement (RSA) while accelerating top-up and build-out onboarding.",
+        "evidence": "introduces a risk of network underutilisation and revenue support exposure"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Shortfall in funds accumulated for long-term network decommissioning obligations.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Establish a formal Decommissioning Shortfall Agreement managed by the DESNZ Cluster Sponsor Function.",
+        "evidence": "Decommissioning fund shortfall"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Revenue support liabilities reaching defined cap thresholds, triggering network discontinuation rights.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Maintain tight budget envelopes, perform ongoing cost assurance, and manage cross-chain risk through the Sponsor Function Board.",
+        "evidence": "if support provided reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Delays in Final Funding Envelope approval forcing postponement of FID and renegotiation or collapse of supplier bids.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Progress to FID ahead of the Spending Review or coordinate with delivery partners to negotiate time-limited supplier bid extensions.",
+        "evidence": "If the approval of the FFE is delayed we would need to postpone FID and developers would need to re-negotiate supplier bids"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Schedule misalignment between T&SCo and capture plant Commercial Operation Dates leading to premature financial drawdown.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Track the integrated cluster delivery schedule and enforce target commissioning dates through the Technical Details Schedule and CfD contracts.",
+        "evidence": "delivery of a timely cluster COD... to avoid any unnecessary draw down on HMG finances"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Public undecidedness and local community opposition regarding CCUS infrastructure and onshore pipelines.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Execute stakeholder communications plans, demonstrate local economic benefits, and share community engagement best practices.",
+        "evidence": "awareness of CCUS is growing but with many still undecided of their view."
+      },
+      {
+        "risk_id": "R11",
+        "description": "UK ETS carbon prices remaining too low to incentivize private sector decarbonisation without subsidies.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide long-term (15-25 year) business model support contracts linked to carbon price references to bridge the commercial gap.",
+        "evidence": "Carbon Price is currently too low to incentivise deployment"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Legal challenges or non-compliance regarding government funding under the Subsidy Control Act 2022.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Submit comprehensive subsidy scheme assessments to the Subsidy Advice Unit (SAU) prior to contract execution.",
+        "evidence": "Cluster Sequencing Process has been developed to align with the UK subsidy control regime under the Subsidy Control Act 2022."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Adverse environmental and local air quality impacts from construction activities and plant operations.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Enforce strict environmental permitting controls through OPRED and local planning authorities during delivery.",
+        "evidence": "Costs include the potential for CO2 leakage and environmental and air quality impacts."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Capacity and capability deficits within delivery partners (Ofgem, LCCC) restricting effective post-FID execution.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Require partner organisations to complete self-assessed Organisational Readiness Statements prior to FID.",
+        "evidence": "Assess capacity and capability of key partner organisations to deliver their roles at FID"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Loss of institutional knowledge during transition from negotiation teams to the post-FID operating model.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement an integrated transition and engagement plan and establish the DESNZ Cluster Sponsor Function prior to FID.",
+        "evidence": "integrated transition & engagement plan will be implemented prior to FID... minimising the loss of institutional knowledge"
+      },
+      {
+        "risk_id": "R16",
+        "description": "Global supply chain inflation and limited market capacity causing procurement bottlenecks and price escalation.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Perform rigorous technical and cost assurance on procurement evidence and conduct early supply chain engagement.",
+        "evidence": "supply chain cost increases and an unwinding of optimism bias."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -72,6 +72,53 @@ RQ3: Which risk categories do LLMs systematically miss or hallucinate?
 > actual free tier isn't clear from the page alone. Verify directly in the
 > Groq console once a real account exists - don't trust either source
 > blindly before a real run.
+>
+> **FURTHER UPDATE 2026-07-23 (later the same day) - the Groq question above
+> is now resolved, and the answer forced a second change:** the first real
+> scoped smoke test (not a toy call - a genuine ~30K-token corpus prompt)
+> confirmed Groq's free tier has a hard, structural 8,000 TPM per-request cap
+> on both `openai/gpt-oss-120b` and `qwen/qwen3.6-27b` (verified directly
+> against console.groq.com/docs/rate-limits, not an aggregator) - this
+> project's real prompts run ~30-34K tokens, ~4x over. Not a pacing/retry
+> problem: a single request this size is rejected outright regardless of
+> backoff, and even Groq's other free models cap at 12K TPM, so staying
+> within Groq's catalog doesn't fix it. The `gpt` and `opensource` slots
+> moved to **SambaNova Cloud** instead (api.sambanova.ai, OpenAI-compatible,
+> no card required, confirmed via docs.sambanova.ai/docs/en/models/rate-limits:
+> 20 RPM / 20 RPD / 200,000 TPD per model, no TPM/per-request wall). `gpt`
+> keeps the exact same `openai/gpt-oss-120b` model (no further comparison-
+> shape disclosure needed for that slot); `opensource` reverts from Qwen to
+> **`Meta-Llama-3.3-70B-Instruct`** - this project's ORIGINAL pre-redesign
+> open-source pick, back in service because it's already on SambaNova's free
+> tier and Qwen genuinely is not. RQ2's actual wording above ("two distinct
+> open-weight models") still holds unchanged - this is a provider and
+> specific-model correction, not a further change to the comparison's shape.
+> Real-call verified before this was wired in, not just docs-page arithmetic:
+> a genuine ~28,400-token corpus prompt succeeded against both models
+> (`Meta-Llama-3.3-70B-Instruct` cleanly; `openai/gpt-oss-120b` needed
+> `max_tokens>=4096` to clear its own hidden reasoning-token spend first, the
+> same class of behavior as Gemini's "thinking tokens" below). Two candidate
+> alternatives (Cerebras, OpenRouter) were checked against primary sources and
+> ruled out first - see `docs/model_tier_recommendation.md`'s dated addendum
+> for why. **Not resolved:** SambaNova's responses expose no rate-limit
+> headers at all, so whether its 200,000 TPD/model budget is independent per
+> model or shared account-wide - materially affecting whether the full
+> 21-project grid takes ~21 or ~42 days - remains genuinely unknown until a
+> real multi-day run is tried.
+>
+> **SambaNova free-tier data-usage: genuinely unaddressed, not confirmed
+> either way.** Checked SambaNova's own privacy policy directly
+> (sambanova.ai/privacy-policy) - it does not specifically state whether
+> prompts/outputs sent to SambaNova Cloud's serverless API (particularly the
+> free tier) are used for model training/improvement or human review.
+> Marketing material makes a general "we don't collect your data" claim, but
+> that framing appears tied to their dedicated/enterprise offering, not
+> clearly to the public free-tier Cloud API, and SambaNova's own developer
+> community has an open, unanswered request asking the company to clarify
+> exactly this point for serverless inference. State this honestly in the
+> paper's ethics/limitations section as an open question, not as either a
+> confirmed protection or a confirmed risk - unlike Gemini's free tier, where
+> the data-usage terms are at least explicit (if unfavorable).
 
 ## Methodology rules (enforce in all code you write)
 

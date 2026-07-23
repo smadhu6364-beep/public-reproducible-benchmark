@@ -1,0 +1,135 @@
+{
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-23T08:16:30.895444+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-UK-HyNetCCUSCluster\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Incremental deployment of initial anchor projects leaves spare storage capacity, creating a risk of T&S network underutilisation and revenue support exposure.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Run the HyNet top-up process to recruit additional industrial emitters and fill remaining network storage capacity.\",\n      \"evidence\": \"introduces a risk of network underutilisation and revenue support exposure, but represents the most effective way to deploy CCUS.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Executing T&S FID prior to anchor capture projects achieving FID creates financial exposure and schedule mismatch risks if capture projects fail to close.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce strict financial and permitting conditions precedent on anchor projects prior to contract finalisation.\",\n      \"evidence\": \"We plan to execute Eni\u2019s FID (T&S FID) first with Protos and EETH taking their FIDs afterwards.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Low UK ETS carbon market prices fail to provide adequate private sector incentive to invest in carbon capture without long-term government subsidies.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide long-term CfD-style revenue support contracts to guarantee strike price coverage over key operational periods.\",\n      \"evidence\": \"The Carbon Price is currently too low to incentivise deployment, there is a first-mover disadvantage due to high start-up costs\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Risk of CO2 leakage from deep offshore geological storage reservoirs in Liverpool Bay causing environmental harm and financial liabilities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Underwrite key leakage liabilities via the Supplementary Compensation Agreement and install offshore sentinel and monitoring wells.\",\n      \"evidence\": \"government will underwrite several key high-impact, low-probably risks \u2013 principally relating to CO2 leakage \u2013 via the Supplementary Compensation Agreement (SCA).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Capital expenditure overruns during Eni's construction of the onshore and offshore T&S network could inflate cluster deployment costs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply a regulatory cost-sharing mechanism where the T&SCo recoups only 40% of expenditure exceeding the agreed regulatory capital baseline.\",\n      \"evidence\": \"overruns against this allowance subject to a cost sharing factor; the T&SCo will only recoup 40% of any costs in excess of the agreed level.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Escalating costs of industrial emissions without available CCUS infrastructure could force energy-intensive manufacturers to relocate outside the UK.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate CCUS cluster deployment and industrial business model subsidies to safeguard domestic industrial competitiveness.\",\n      \"evidence\": \"manufacturers of critical industrial materials may relocate to more favourable jurisdictions due to the escalating costs of emissions; otherwise known as \u2018carbon leakage\u2019.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Delays in final funding approval beyond time-limited supplier bids force developers to re-negotiate vendor contracts, driving up costs and causing schedule slippage.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Progress approvals ahead of the Spending Review or negotiate bid extensions directly with supply chain partners.\",\n      \"evidence\": \"If the approval of the FFE is delayed we would need to postpone FID and developers would need to re-negotiate supplier bids.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Complex cross-chain interdependencies between the T&SCo and capture projects risk financial and operational disruption if network downtime or outages occur.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide targeted government underwriting for cross-chain risks and establish oversight via the DESNZ Cluster Sponsor Function.\",\n      \"evidence\": \"learnings from the cancelled second CCUS competition in 2016 showed that private sector developers and insurers are not yet ready to bear the \u2018cross-chain\u2019 risks\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Dispersing post-FID contract management across DESNZ, Ofgem, LCCC, and CGL introduces governance coordination risks and operational friction.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish the DESNZ Cluster Sponsor Function to coordinate cross-body operations and execute defined Integrated Processes.\",\n      \"evidence\": \"No single party is suitable to manage all of these agreements, and so contract management responsibilities are dispersed across multiple organisations.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Shortfalls in network demand or user fees trigger exchequer payout liabilities under the Revenue Support Agreement to cover T&S allowed revenues.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Regular monitoring by LCCC and DESNZ alongside top-up emitter onboarding to maintain adequate T&S network flow volumes.\",\n      \"evidence\": \"If there was a shortfall in demand for the network, and aggregate user fees did not meet the T&SCos allowed revenue, government guarantees these fees\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Build-out projects (Padeswood and Viridor) failing or delaying taking FID results in prolonged T&S network underutilisation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Agree Statements of Principles early and enforce delivery maturity requirements prior to individual build-out FBC approvals.\",\n      \"evidence\": \"risk that if one or more of the build-out projects in HyNet fails to take FID, the network as a whole will be underutilised\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Partner ALBs and regulators may lack the staffing capacity and specialized capability required for effective post-FID administration.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Require Organisational Readiness Statements and run pre-FID checkpoints to identify and resolve resource or skill gaps.\",\n      \"evidence\": \"To assess capacity and capability of key partner organisations to deliver their roles at FID, the CCUS programme commissioned partner organisations... Organisational Readiness Statements.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Constraints in supply chain capacity and specialized vendor availability drive up equipment procurement costs and delay delivery dates.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Leverage external technical advisors, manage procurement schedules incrementally, and engage key vendors early.\",\n      \"evidence\": \"Given the limited supplier market capability, and loss of confidence in the UK CCUS vision, underlying costs are expected to increase.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-HyNetCCUSCluster",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Incremental deployment of initial anchor projects leaves spare storage capacity, creating a risk of T&S network underutilisation and revenue support exposure.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Run the HyNet top-up process to recruit additional industrial emitters and fill remaining network storage capacity.",
+        "evidence": "introduces a risk of network underutilisation and revenue support exposure, but represents the most effective way to deploy CCUS."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Executing T&S FID prior to anchor capture projects achieving FID creates financial exposure and schedule mismatch risks if capture projects fail to close.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce strict financial and permitting conditions precedent on anchor projects prior to contract finalisation.",
+        "evidence": "We plan to execute Eni\u2019s FID (T&S FID) first with Protos and EETH taking their FIDs afterwards."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Low UK ETS carbon market prices fail to provide adequate private sector incentive to invest in carbon capture without long-term government subsidies.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide long-term CfD-style revenue support contracts to guarantee strike price coverage over key operational periods.",
+        "evidence": "The Carbon Price is currently too low to incentivise deployment, there is a first-mover disadvantage due to high start-up costs"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Risk of CO2 leakage from deep offshore geological storage reservoirs in Liverpool Bay causing environmental harm and financial liabilities.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Underwrite key leakage liabilities via the Supplementary Compensation Agreement and install offshore sentinel and monitoring wells.",
+        "evidence": "government will underwrite several key high-impact, low-probably risks \u2013 principally relating to CO2 leakage \u2013 via the Supplementary Compensation Agreement (SCA)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Capital expenditure overruns during Eni's construction of the onshore and offshore T&S network could inflate cluster deployment costs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply a regulatory cost-sharing mechanism where the T&SCo recoups only 40% of expenditure exceeding the agreed regulatory capital baseline.",
+        "evidence": "overruns against this allowance subject to a cost sharing factor; the T&SCo will only recoup 40% of any costs in excess of the agreed level."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Escalating costs of industrial emissions without available CCUS infrastructure could force energy-intensive manufacturers to relocate outside the UK.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Accelerate CCUS cluster deployment and industrial business model subsidies to safeguard domestic industrial competitiveness.",
+        "evidence": "manufacturers of critical industrial materials may relocate to more favourable jurisdictions due to the escalating costs of emissions; otherwise known as \u2018carbon leakage\u2019."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delays in final funding approval beyond time-limited supplier bids force developers to re-negotiate vendor contracts, driving up costs and causing schedule slippage.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Progress approvals ahead of the Spending Review or negotiate bid extensions directly with supply chain partners.",
+        "evidence": "If the approval of the FFE is delayed we would need to postpone FID and developers would need to re-negotiate supplier bids."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Complex cross-chain interdependencies between the T&SCo and capture projects risk financial and operational disruption if network downtime or outages occur.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide targeted government underwriting for cross-chain risks and establish oversight via the DESNZ Cluster Sponsor Function.",
+        "evidence": "learnings from the cancelled second CCUS competition in 2016 showed that private sector developers and insurers are not yet ready to bear the \u2018cross-chain\u2019 risks"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Dispersing post-FID contract management across DESNZ, Ofgem, LCCC, and CGL introduces governance coordination risks and operational friction.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish the DESNZ Cluster Sponsor Function to coordinate cross-body operations and execute defined Integrated Processes.",
+        "evidence": "No single party is suitable to manage all of these agreements, and so contract management responsibilities are dispersed across multiple organisations."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Shortfalls in network demand or user fees trigger exchequer payout liabilities under the Revenue Support Agreement to cover T&S allowed revenues.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Regular monitoring by LCCC and DESNZ alongside top-up emitter onboarding to maintain adequate T&S network flow volumes.",
+        "evidence": "If there was a shortfall in demand for the network, and aggregate user fees did not meet the T&SCos allowed revenue, government guarantees these fees"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Build-out projects (Padeswood and Viridor) failing or delaying taking FID results in prolonged T&S network underutilisation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Agree Statements of Principles early and enforce delivery maturity requirements prior to individual build-out FBC approvals.",
+        "evidence": "risk that if one or more of the build-out projects in HyNet fails to take FID, the network as a whole will be underutilised"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Partner ALBs and regulators may lack the staffing capacity and specialized capability required for effective post-FID administration.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Require Organisational Readiness Statements and run pre-FID checkpoints to identify and resolve resource or skill gaps.",
+        "evidence": "To assess capacity and capability of key partner organisations to deliver their roles at FID, the CCUS programme commissioned partner organisations... Organisational Readiness Statements."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Constraints in supply chain capacity and specialized vendor availability drive up equipment procurement costs and delay delivery dates.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Leverage external technical advisors, manage procurement schedules incrementally, and engage key vendors early.",
+        "evidence": "Given the limited supplier market capability, and loss of confidence in the UK CCUS vision, underlying costs are expected to increase."
+      }
+    ]
+  },
+  "parse_error": null
+}
