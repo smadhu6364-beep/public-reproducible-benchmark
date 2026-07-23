@@ -19,19 +19,59 @@ model and two distinct open-weight models) and 3 prompting strategies
 RQ3: Which risk categories do LLMs systematically miss or hallucinate?
 (Failure-mode analysis = the paper's core contribution.)
 
-> **CORRECTED 2026-07-23 (Madhu), not a silent rewrite:** RQ2 originally
-> named the 3 models as "Claude, GPT, one open-source." On the first real
-> spend attempt, all three originally-decided provider accounts (Anthropic,
-> OpenAI, Together AI) hit real billing/quota errors - none had funded
-> billing. Rather than pay, the model lineup was redesigned to 3 genuinely
-> free-tier models: Google Gemini (proprietary) plus two distinct open-weight
-> models served via Groq's free tier (`openai/gpt-oss-120b` and
-> `qwen/qwen3.6-27b`) - see `docs/model_tier_recommendation.md`'s dated
-> addendum for the full reasoning and exact model IDs/base URLs. This is a
-> real, disclosed change to the comparison's shape (2 proprietary + 1
+> **SUPERSEDED 2026-07-23 (Madhu) - this is the first change to this frozen
+> section in the project's history, so the original is preserved here
+> verbatim, not silently dropped:**
+>
+> > RQ2: How do results vary across 3 models (Claude, GPT, one open-source) and
+> > 3 prompting strategies (zero-shot, few-shot, structured reasoning)?
+>
+> **Why it changed:** on the first real spend attempt, all three
+> originally-decided provider accounts (Anthropic, OpenAI, Together AI) hit
+> real billing/quota errors - none had funded billing (`400` credit-balance-
+> too-low, `429` insufficient_quota, `402` credit-limit-exceeded
+> respectively). Rather than pay, Madhu chose to redesign the model lineup
+> around 3 genuinely free-tier models instead: Google Gemini
+> (`gemini-2.5-flash`, a lighter/Flash-tier model, not Google's flagship -
+> named plainly since the original slot was a flagship-tier model) plus two
+> distinct open-weight models served via Groq's free tier
+> (`openai/gpt-oss-120b` and `qwen/qwen3.6-27b`) - see
+> `docs/model_tier_recommendation.md`'s dated addendum for the full reasoning
+> and exact model IDs/base URLs. **This decision briefly produced two
+> conflicting instructions given to two different Claude sessions within
+> minutes of each other** (this free-tier swap vs. a separate "keep the paid
+> triple, cut to 1 run" instruction given in parallel) - flagged directly,
+> and Madhu gave one final, singular answer: proceed with the free swap. Not
+> a rubber-stamp - given with full knowledge of the real concerns raised
+> (rate limits and ToS sourced from aggregator sites rather than primary
+> documentation at the time of the original proposal, since corrected;
+> `gpt-oss-120b` being OpenAI's open-weight model rather than proprietary GPT
+> access, so the "GPT slot" name is a role label, not a literal claim of
+> equivalence; Gemini's free-tier data-usage terms, below).
+>
+> **Real, disclosed change to the comparison's shape** (2 proprietary + 1
 > open-weight became 1 proprietary + 2 open-weight), not a relabeling of the
 > same categories - state it explicitly in the paper's Methodology/
 > Limitations sections, not only here.
+>
+> **Gemini free-tier data-usage note, primary source
+> (ai.google.dev/gemini-api/terms), not an aggregator:** Google states it uses
+> "Unpaid Services" (free-tier) input/output "to provide, improve, and develop
+> Google products and services," and that human reviewers may read/annotate
+> API input and output; this protection against training-use does NOT extend
+> to the free tier the way it does to paid tiers. Since the planning documents
+> sent as input are already-public World Bank/UK documents, this is a lower-
+> stakes concern than it would be for confidential data, but it is a real,
+> disclosable fact for the paper's ethics/limitations section, not something
+> to silently accept.
+>
+> **Groq rate limits: genuinely unresolved, not asserted as fact.**
+> Aggregator sources claimed 14,400 requests/day org-wide; Groq's own
+> models-list page shows different, model-specific numbers for the exact
+> models chosen here under a "Developer Plan" label whose relationship to the
+> actual free tier isn't clear from the page alone. Verify directly in the
+> Groq console once a real account exists - don't trust either source
+> blindly before a real run.
 
 ## Methodology rules (enforce in all code you write)
 
