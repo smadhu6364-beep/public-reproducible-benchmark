@@ -378,3 +378,36 @@ Updated: `run_experiments.py` (`GEMINI_BASE_URL`/`SAMBANOVA_BASE_URL`,
 (`check_gpt_slot`/`check_opensource_slot`), `.env`/`.env.example`
 (`SAMBANOVA_API_KEY` replaces `GROQ_API_KEY`; `OPENSOURCE_MODEL_NAME` reverts
 to `Meta-Llama-3.3-70B-Instruct`), `CLAUDE.md`'s RQ2 note, and this file.
+
+## ADDENDUM 2026-07-23 (later the same day): the real full-grid attempt confirms the ~21-day estimate, and reveals Gemini has the same problem
+
+Ran the real 189-cell x 2-run grid (378 calls) for the first time, rather
+than continuing to estimate from docs pages. Result: **13 succeeded, 365
+failed** in one pass - both providers hit hard daily quotas almost
+immediately, confirming this is a real structural wall, not the "~21 days,
+assuming independent budgets" hedge above.
+
+- **Gemini's real free-tier daily cap is 20 requests/day**, not the
+  1,500/day this file's original table cited - that number was wrong for
+  the model actually in use (`gemini-flash-latest`, which the real 429
+  error identifies as currently resolving to `gemini-3.6-flash`; the
+  1,500/day figure was likely researched against an older Gemini
+  generation and never re-verified against this specific model). 11 of the
+  63 needed Gemini cells cleared before the daily quota was exhausted.
+- **SambaNova's 200,000 TPD budget is confirmed independent per model** -
+  `gpt` and `opensource` reported different `Current usage` figures at the
+  same moment, resolving the "shared vs. independent" question in the
+  addendum above in the favorable direction. Only 1 `gpt` and 1
+  `opensource` cell cleared today, but this is an undercount: this same
+  session's own earlier real-call verification (confirming the SambaNova
+  fix worked, diagnosing the `max_tokens` truncation bug) already spent
+  most of today's 200K/model budget before the full-grid attempt started.
+  A day without that prior testing should clear closer to the ~6-7
+  calls/model/day the TPD arithmetic predicts.
+- **Real projected timeline: ~3 weeks of daily re-runs**, bounded by
+  SambaNova (126 calls needed per model at ~6-7/day) rather than Gemini (63
+  calls needed at ~11-20/day, clears in under a week). Madhu's explicit
+  decision (2026-07-23): accept this timeline - re-run
+  `python src/run_experiments.py --runs 2` once daily; append-only raw
+  outputs and `next_free_run_index` make this safe to just repeat without
+  any special resume logic.

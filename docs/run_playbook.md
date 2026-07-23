@@ -147,20 +147,21 @@ funded run ever needs to revive that path.
   --model claude --prompt zero_shot --runs 1` is one call, genuinely free.
 - Exit codes: `2` = every call failed (systemic — bad keys/network, treat as "no
   run happened"); `3` = some failed; `1` = cost guard (should not fire at $0.00).
-- SambaNova's free tier is rate-limited per model (20 requests/min, 20
-  requests/day, 200,000 tokens/day), shared across the `gpt` and
-  `opensource` slots only in the sense that both use the same account — it
-  is NOT confirmed whether the 200,000 TPD budget is independent per model
-  or shared account-wide (SambaNova's responses expose no rate-limit
-  headers to check this directly). Docs-page arithmetic suggests ~6 calls/
-  day/model at this project's real ~33K-token prompt size, i.e. **~21 days**
-  to clear one model's share of the full grid if budgets are independent —
-  treat this as a real planning risk against the Aug-2026 deadline, not a
-  solved timeline, and watch actual failure patterns during the real run
-  rather than trusting the docs page alone (this exact "looks fine on the
-  docs page" pattern was already wrong twice today, on Gemini and Groq).
-  Gemini's limit is 1,500 requests/day, comfortably clears its ~126-call
-  share of the grid.
+- **REAL FULL-GRID ATTEMPT 2026-07-23 confirmed both providers hit hard
+  daily quotas fast.** Ran the actual 378-call grid: 13 succeeded, 365
+  failed, in one pass. SambaNova's 200,000 TPD budget IS confirmed
+  independent per model (`gpt` and `opensource` showed different `Current
+  usage` figures at the same moment) - real ~6-7 calls/model/day at this
+  project's ~30-34K-token prompt size, so **~21 days** to clear one model's
+  126-call share. **Gemini's real limit is 20 requests/day, NOT 1,500/day**
+  - that figure was wrong for `gemini-flash-latest` (confirmed via the real
+    429 error body, which names the resolved model `gemini-3.6-flash` and
+    states `quotaValue: '20'`); Gemini clears its 63-call share in under a
+  week at that rate. **Real projected timeline for the full grid: ~3 weeks
+  of daily re-runs**, bounded by SambaNova. Madhu's decision (2026-07-23):
+  accept this timeline rather than cut runs or pay - just re-run
+  `python src/run_experiments.py --runs 2` once a day; append-only raw
+  outputs make repeating the exact same command safe every time.
 
 Every run — batched or synchronous — appends `model_version`, `run_date`,
 `temperature`, `temperature_applied`, `prompt_sha256` to
