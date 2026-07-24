@@ -1,0 +1,220 @@
+{
+  "run_file": "P-UK-HyNetCCUSCluster__claude__structured__run2.json",
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R03",
+      "similarity": 0.688,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R02",
+      "similarity": 0.471,
+      "gen_category": "stakeholder",
+      "gt_category": "organizational",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R04",
+      "similarity": 0.456,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "CO2 leakage from deep offshore geological storage sites during operations.",
+      "category": "technical",
+      "likelihood": 1,
+      "impact": 5,
+      "mitigation": "Government underwrites high-impact CO2 leakage risks via the Supplementary Compensation Agreement (SCA) while T&SCo installs sentinel and monitoring wells.",
+      "evidence": "underwrite several key high-impact, low-probability risks \u2013 principally relating to CO2 leakage"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Capture plant operational underperformance through low plant availability or low carbon capture rates.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Enforce financial performance penalties and availability incentive structures under the business model contracts.",
+      "evidence": "penalties faced by projects caused by underperformance (i.e. low availability or capture rate)"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Structural failure or refurbishment delays when repurposing existing offshore gas pipelines.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Conduct rigorous technical assurance and remediation of the Point of Ayr offshore pipeline network during Phase 1 APDP execution.",
+      "evidence": "remediation/refurbishing of the existing offshore pipeline network from PoA to HM and HN injection sites"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Construction capital expenditure overruns incurred by the T&SCo during network build-out.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Apply a cost-sharing factor limiting T&SCo cost recovery to 40% for overruns and utilize Ofgem uncertain cost reopeners.",
+      "evidence": "T&SCo will only recoup 40% of any costs in excess of the agreed level"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Underutilisation of the T&S network causing aggregate user fees to fall short of allowed revenue.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide top-up payments via the exchequer-funded Revenue Support Agreement (RSA) while accelerating top-up and build-out onboarding.",
+      "evidence": "introduces a risk of network underutilisation and revenue support exposure"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Shortfall in funds accumulated for long-term network decommissioning obligations.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Establish a formal Decommissioning Shortfall Agreement managed by the DESNZ Cluster Sponsor Function.",
+      "evidence": "Decommissioning fund shortfall"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Revenue support liabilities reaching defined cap thresholds, triggering network discontinuation rights.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Maintain tight budget envelopes, perform ongoing cost assurance, and manage cross-chain risk through the Sponsor Function Board.",
+      "evidence": "if support provided reaches a defined threshold, DESNZ SoS has the right to discontinue the T&S network"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Delays in Final Funding Envelope approval forcing postponement of FID and renegotiation or collapse of supplier bids.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Progress to FID ahead of the Spending Review or coordinate with delivery partners to negotiate time-limited supplier bid extensions.",
+      "evidence": "If the approval of the FFE is delayed we would need to postpone FID and developers would need to re-negotiate supplier bids"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Schedule misalignment between T&SCo and capture plant Commercial Operation Dates leading to premature financial drawdown.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Track the integrated cluster delivery schedule and enforce target commissioning dates through the Technical Details Schedule and CfD contracts.",
+      "evidence": "delivery of a timely cluster COD... to avoid any unnecessary draw down on HMG finances"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Public undecidedness and local community opposition regarding CCUS infrastructure and onshore pipelines.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Execute stakeholder communications plans, demonstrate local economic benefits, and share community engagement best practices.",
+      "evidence": "awareness of CCUS is growing but with many still undecided of their view."
+    },
+    {
+      "risk_id": "R11",
+      "description": "UK ETS carbon prices remaining too low to incentivize private sector decarbonisation without subsidies.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide long-term (15-25 year) business model support contracts linked to carbon price references to bridge the commercial gap.",
+      "evidence": "Carbon Price is currently too low to incentivise deployment"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Legal challenges or non-compliance regarding government funding under the Subsidy Control Act 2022.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Submit comprehensive subsidy scheme assessments to the Subsidy Advice Unit (SAU) prior to contract execution.",
+      "evidence": "Cluster Sequencing Process has been developed to align with the UK subsidy control regime under the Subsidy Control Act 2022."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Adverse environmental and local air quality impacts from construction activities and plant operations.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Enforce strict environmental permitting controls through OPRED and local planning authorities during delivery.",
+      "evidence": "Costs include the potential for CO2 leakage and environmental and air quality impacts."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Capacity and capability deficits within delivery partners (Ofgem, LCCC) restricting effective post-FID execution.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Require partner organisations to complete self-assessed Organisational Readiness Statements prior to FID.",
+      "evidence": "Assess capacity and capability of key partner organisations to deliver their roles at FID"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Loss of institutional knowledge during transition from negotiation teams to the post-FID operating model.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement an integrated transition and engagement plan and establish the DESNZ Cluster Sponsor Function prior to FID.",
+      "evidence": "integrated transition & engagement plan will be implemented prior to FID... minimising the loss of institutional knowledge"
+    },
+    {
+      "risk_id": "R16",
+      "description": "Global supply chain inflation and limited market capacity causing procurement bottlenecks and price escalation.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Perform rigorous technical and cost assurance on procurement evidence and conduct early supply chain engagement.",
+      "evidence": "supply chain cost increases and an unwinding of optimism bias."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets. [Strategic Case risk T1SR1, Section 2.5 'Identify high level potential risks', p.20-21; source rating: High/Possible.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Contractual mechanisms ensure HMG only takes on specific risks where appropriate, with liability limited and counterparties incentivised to control costs; governance mechanisms monitor costs and provide early warning of overruns; contingent liability exposure is accurately monitored."
+    },
+    {
+      "risk_id": "R02",
+      "description": "There is a risk that the programme does not realise its intended benefits for Track-1. [Strategic Case risk T1SR3, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Projects undergo detailed technical assurance and financial due diligence; projects must meet Initial Conditions Precedent (ICPs) before contracts take effect and Operational CPs thereafter, with LCCC able to terminate and avoid paying for an underperforming project; contractual mechanisms allocate performance-related risk to the private sector; continued engagement with the global Carbon Management Challenge to expand CCUS use and deliver UK trade benefits."
+    },
+    {
+      "risk_id": "R03",
+      "description": "There is a risk that the post-FID operating model across public and private sector parties will not operate successfully. [Strategic Case risk T1SR4, Section 2.5, p.20-21; source rating: Medium/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Progress of arm's-length bodies' (ALBs') capacity (funding, resource) and capability (knowledge, skills) to operate successfully post-FID is monitored through the Delivery Board; a DESNZ Cluster Sponsor Function will be set up between FID and Commercial Operations Date (COD) to mitigate risks to cluster delivery and system integration; readiness-testing mechanisms are in place ahead of FID; FY24/25 funding for the ALBs to fulfil their roles has been secured."
+    },
+    {
+      "risk_id": "R04",
+      "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework. [Strategic Case risk T1SR5, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "political_regulatory",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Key planned developments include amendments to the process for granting economic licences, a move toward a competitive allocation process for capture contracts, and evolution of transport & storage business models to reflect an increased private-sector role in managing cross-chain risks; cost-reduction levers (UK ETS pricing, CBAMs) are intended to help cultivate a self-sustaining industry and enable an HMG exit path."
+    }
+  ]
+}

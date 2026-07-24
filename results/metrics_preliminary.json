@@ -1,0 +1,1496 @@
+{
+  "n_scored_runs_total": 44,
+  "n_parse_failed_total": 10,
+  "corpus_wide": {
+    "n_runs": 44,
+    "mean_recall": 0.425,
+    "mean_precision": 0.189,
+    "mean_category_accuracy": 0.371,
+    "note": "Excludes the 5-document short-register subgroup - see short_register_subgroup block."
+  },
+  "by_model_and_prompt": {
+    "claude / few_shot": {
+      "n_runs": 8,
+      "n_parse_failed": 1,
+      "mean_recall": 0.5,
+      "mean_precision": 0.216,
+      "mean_category_accuracy": 0.25
+    },
+    "claude / structured": {
+      "n_runs": 7,
+      "n_parse_failed": 1,
+      "mean_recall": 0.412,
+      "mean_precision": 0.175,
+      "mean_category_accuracy": 0.417
+    },
+    "claude / zero_shot": {
+      "n_runs": 8,
+      "n_parse_failed": 1,
+      "mean_recall": 0.454,
+      "mean_precision": 0.177,
+      "mean_category_accuracy": 0.131
+    },
+    "gpt / few_shot": {
+      "n_runs": 4,
+      "n_parse_failed": 1,
+      "mean_recall": 0.438,
+      "mean_precision": 0.154,
+      "mean_category_accuracy": 0.667
+    },
+    "gpt / structured": {
+      "n_runs": 4,
+      "n_parse_failed": 3,
+      "mean_recall": 0.2,
+      "mean_precision": 0.286,
+      "mean_category_accuracy": 0.5
+    },
+    "gpt / zero_shot": {
+      "n_runs": 5,
+      "n_parse_failed": 1,
+      "mean_recall": 0.54,
+      "mean_precision": 0.169,
+      "mean_category_accuracy": 0.479
+    },
+    "opensource / few_shot": {
+      "n_runs": 2,
+      "n_parse_failed": 0,
+      "mean_recall": 0.625,
+      "mean_precision": 0.25,
+      "mean_category_accuracy": 0.834
+    },
+    "opensource / structured": {
+      "n_runs": 2,
+      "n_parse_failed": 2,
+      "mean_recall": 0.0,
+      "mean_precision": null,
+      "mean_category_accuracy": null
+    },
+    "opensource / zero_shot": {
+      "n_runs": 4,
+      "n_parse_failed": 0,
+      "mean_recall": 0.425,
+      "mean_precision": 0.175,
+      "mean_category_accuracy": 0.333
+    }
+  },
+  "by_model_and_prompt_corpus_wide_only": {
+    "claude / few_shot": {
+      "n_runs": 8,
+      "n_parse_failed": 1,
+      "mean_recall": 0.5,
+      "mean_precision": 0.216,
+      "mean_category_accuracy": 0.25
+    },
+    "claude / structured": {
+      "n_runs": 7,
+      "n_parse_failed": 1,
+      "mean_recall": 0.412,
+      "mean_precision": 0.175,
+      "mean_category_accuracy": 0.417
+    },
+    "claude / zero_shot": {
+      "n_runs": 8,
+      "n_parse_failed": 1,
+      "mean_recall": 0.454,
+      "mean_precision": 0.177,
+      "mean_category_accuracy": 0.131
+    },
+    "gpt / few_shot": {
+      "n_runs": 4,
+      "n_parse_failed": 1,
+      "mean_recall": 0.438,
+      "mean_precision": 0.154,
+      "mean_category_accuracy": 0.667
+    },
+    "gpt / structured": {
+      "n_runs": 4,
+      "n_parse_failed": 3,
+      "mean_recall": 0.2,
+      "mean_precision": 0.286,
+      "mean_category_accuracy": 0.5
+    },
+    "gpt / zero_shot": {
+      "n_runs": 5,
+      "n_parse_failed": 1,
+      "mean_recall": 0.54,
+      "mean_precision": 0.169,
+      "mean_category_accuracy": 0.479
+    },
+    "opensource / few_shot": {
+      "n_runs": 2,
+      "n_parse_failed": 0,
+      "mean_recall": 0.625,
+      "mean_precision": 0.25,
+      "mean_category_accuracy": 0.834
+    },
+    "opensource / structured": {
+      "n_runs": 2,
+      "n_parse_failed": 2,
+      "mean_recall": 0.0,
+      "mean_precision": null,
+      "mean_category_accuracy": null
+    },
+    "opensource / zero_shot": {
+      "n_runs": 4,
+      "n_parse_failed": 0,
+      "mean_recall": 0.425,
+      "mean_precision": 0.175,
+      "mean_category_accuracy": 0.333
+    }
+  },
+  "by_category": {
+    "environmental": {
+      "missed_count": 3,
+      "hallucinated_count": 58
+    },
+    "external": {
+      "missed_count": 0,
+      "hallucinated_count": 26
+    },
+    "financial": {
+      "missed_count": 27,
+      "hallucinated_count": 81
+    },
+    "organizational": {
+      "missed_count": 36,
+      "hallucinated_count": 40
+    },
+    "political_regulatory": {
+      "missed_count": 34,
+      "hallucinated_count": 18
+    },
+    "schedule": {
+      "missed_count": 0,
+      "hallucinated_count": 37
+    },
+    "stakeholder": {
+      "missed_count": 2,
+      "hallucinated_count": 63
+    },
+    "technical": {
+      "missed_count": 16,
+      "hallucinated_count": 68
+    }
+  },
+  "by_category_corpus_wide_only": {
+    "environmental": {
+      "missed_count": 3,
+      "hallucinated_count": 58
+    },
+    "external": {
+      "missed_count": 0,
+      "hallucinated_count": 26
+    },
+    "financial": {
+      "missed_count": 27,
+      "hallucinated_count": 81
+    },
+    "organizational": {
+      "missed_count": 36,
+      "hallucinated_count": 40
+    },
+    "political_regulatory": {
+      "missed_count": 34,
+      "hallucinated_count": 18
+    },
+    "schedule": {
+      "missed_count": 0,
+      "hallucinated_count": 37
+    },
+    "stakeholder": {
+      "missed_count": 2,
+      "hallucinated_count": 63
+    },
+    "technical": {
+      "missed_count": 16,
+      "hallucinated_count": 68
+    }
+  },
+  "by_category_excluding_parse_failures": {
+    "environmental": {
+      "missed_count": 2,
+      "hallucinated_count": 58
+    },
+    "external": {
+      "missed_count": 0,
+      "hallucinated_count": 26
+    },
+    "financial": {
+      "missed_count": 17,
+      "hallucinated_count": 81
+    },
+    "organizational": {
+      "missed_count": 17,
+      "hallucinated_count": 40
+    },
+    "political_regulatory": {
+      "missed_count": 24,
+      "hallucinated_count": 18
+    },
+    "schedule": {
+      "missed_count": 0,
+      "hallucinated_count": 37
+    },
+    "stakeholder": {
+      "missed_count": 2,
+      "hallucinated_count": 63
+    },
+    "technical": {
+      "missed_count": 15,
+      "hallucinated_count": 68
+    }
+  },
+  "short_register_subgroup": {
+    "n_runs": 0,
+    "mean_precision": null,
+    "mean_recall": null,
+    "by_project": {}
+  },
+  "per_run": [
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 13,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.231,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "financial",
+        "stakeholder",
+        "stakeholder",
+        "technical",
+        "environmental",
+        "environmental",
+        "technical",
+        "stakeholder",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.214,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "financial",
+        "organizational",
+        "environmental",
+        "stakeholder",
+        "stakeholder",
+        "organizational",
+        "schedule",
+        "technical",
+        "environmental",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 3,
+      "parse_failed": false,
+      "n_generated": 13,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.154,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "organizational",
+        "environmental",
+        "stakeholder",
+        "environmental",
+        "stakeholder",
+        "technical",
+        "stakeholder",
+        "financial",
+        "technical",
+        "schedule"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 4,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.143,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "financial",
+        "organizational",
+        "environmental",
+        "stakeholder",
+        "stakeholder",
+        "technical",
+        "organizational",
+        "external",
+        "technical",
+        "technical",
+        "schedule"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 12,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.25,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "financial",
+        "financial",
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "environmental",
+        "environmental",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.133,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "technical",
+        "financial",
+        "schedule",
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "political_regulatory",
+        "environmental",
+        "environmental",
+        "organizational",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 3,
+      "parse_failed": false,
+      "n_generated": 13,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.154,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "financial",
+        "technical",
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "environmental",
+        "environmental",
+        "organizational",
+        "organizational",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 4,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.143,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "financial",
+        "schedule",
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "political_regulatory",
+        "environmental",
+        "environmental",
+        "organizational",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.214,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "schedule",
+        "environmental",
+        "environmental",
+        "stakeholder",
+        "stakeholder",
+        "technical",
+        "organizational",
+        "organizational",
+        "environmental",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.188,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "technical",
+        "environmental",
+        "stakeholder",
+        "environmental",
+        "stakeholder",
+        "external",
+        "schedule",
+        "financial",
+        "technical",
+        "technical",
+        "technical",
+        "stakeholder"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 3,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 5,
+      "n_matched": 1,
+      "precision": 0.067,
+      "recall": 0.2,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "financial",
+        "financial",
+        "organizational",
+        "stakeholder",
+        "environmental",
+        "technical",
+        "organizational",
+        "stakeholder",
+        "technical",
+        "schedule",
+        "external",
+        "political_regulatory",
+        "stakeholder"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 4,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.133,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "environmental",
+        "schedule",
+        "organizational",
+        "stakeholder",
+        "technical",
+        "financial",
+        "external",
+        "technical",
+        "stakeholder",
+        "organizational",
+        "schedule",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.2,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "technical",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "organizational",
+        "technical",
+        "external",
+        "environmental",
+        "stakeholder",
+        "environmental",
+        "financial",
+        "stakeholder",
+        "organizational",
+        "technical",
+        "stakeholder",
+        "stakeholder"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 18,
+      "n_ground_truth": 5,
+      "n_matched": 2,
+      "precision": 0.111,
+      "recall": 0.4,
+      "category_accuracy_of_matches": 1.0,
+      "missed_ground_truth_categories": [
+        "technical",
+        "financial",
+        "environmental"
+      ],
+      "unsupported_generated_categories": [
+        "schedule",
+        "technical",
+        "financial",
+        "stakeholder",
+        "stakeholder",
+        "environmental",
+        "financial",
+        "technical",
+        "technical",
+        "stakeholder",
+        "organizational",
+        "external",
+        "stakeholder",
+        "political_regulatory",
+        "financial",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 5,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational",
+        "financial",
+        "environmental"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 5,
+      "n_matched": 4,
+      "precision": 0.286,
+      "recall": 0.8,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "schedule",
+        "financial",
+        "financial",
+        "schedule",
+        "stakeholder",
+        "environmental",
+        "environmental",
+        "external",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 18,
+      "n_ground_truth": 5,
+      "n_matched": 4,
+      "precision": 0.222,
+      "recall": 0.8,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "technical"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "financial",
+        "financial",
+        "environmental",
+        "stakeholder",
+        "external",
+        "stakeholder",
+        "technical",
+        "technical",
+        "schedule",
+        "financial",
+        "technical",
+        "stakeholder",
+        "environmental"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 25,
+      "n_ground_truth": 5,
+      "n_matched": 4,
+      "precision": 0.16,
+      "recall": 0.8,
+      "category_accuracy_of_matches": 0.25,
+      "missed_ground_truth_categories": [
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "organizational",
+        "financial",
+        "environmental",
+        "stakeholder",
+        "environmental",
+        "financial",
+        "schedule",
+        "external",
+        "technical",
+        "stakeholder",
+        "stakeholder",
+        "schedule",
+        "organizational",
+        "technical",
+        "technical",
+        "environmental",
+        "financial",
+        "financial",
+        "schedule",
+        "organizational",
+        "environmental"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "gpt",
+      "prompt_strategy": "zero_shot",
+      "run_index": 3,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 5,
+      "n_matched": 3,
+      "precision": 0.188,
+      "recall": 0.6,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "technical",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "organizational",
+        "technical",
+        "financial",
+        "environmental",
+        "stakeholder",
+        "environmental",
+        "financial",
+        "stakeholder",
+        "organizational",
+        "schedule",
+        "stakeholder",
+        "financial",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "opensource",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 5,
+      "n_matched": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational",
+        "financial",
+        "environmental"
+      ],
+      "unsupported_generated_categories": [
+        "stakeholder",
+        "financial",
+        "schedule",
+        "environmental",
+        "technical",
+        "technical",
+        "technical",
+        "stakeholder",
+        "stakeholder",
+        "environmental"
+      ]
+    },
+    {
+      "project_id": "P-AFW-HealthSecurityPhase3",
+      "model": "opensource",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 5,
+      "n_matched": 1,
+      "precision": 0.1,
+      "recall": 0.2,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "technical",
+        "organizational",
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "stakeholder",
+        "financial",
+        "schedule",
+        "environmental",
+        "environmental",
+        "stakeholder",
+        "technical",
+        "organizational",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-ALB-CitizenServiceDelivery",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 6,
+      "n_matched": 3,
+      "precision": 0.214,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "financial",
+        "technical",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "organizational",
+        "organizational",
+        "financial",
+        "stakeholder",
+        "schedule",
+        "technical",
+        "external",
+        "financial",
+        "technical",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-ALB-CitizenServiceDelivery",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 12,
+      "n_ground_truth": 6,
+      "n_matched": 3,
+      "precision": 0.25,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "financial",
+        "technical",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "organizational",
+        "schedule",
+        "stakeholder",
+        "environmental",
+        "financial",
+        "technical",
+        "financial",
+        "technical",
+        "financial"
+      ]
+    },
+    {
+      "project_id": "P-ALB-CitizenServiceDelivery",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 11,
+      "n_ground_truth": 6,
+      "n_matched": 2,
+      "precision": 0.182,
+      "recall": 0.333,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "financial",
+        "technical",
+        "stakeholder",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "political_regulatory",
+        "technical",
+        "financial",
+        "environmental",
+        "financial",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-ALB-CitizenServiceDelivery",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 12,
+      "n_ground_truth": 6,
+      "n_matched": 1,
+      "precision": 0.083,
+      "recall": 0.167,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [
+        "organizational",
+        "financial",
+        "technical",
+        "stakeholder",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "organizational",
+        "schedule",
+        "stakeholder",
+        "environmental",
+        "financial",
+        "organizational",
+        "technical",
+        "political_regulatory",
+        "financial",
+        "external",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-ALB-CitizenServiceDelivery",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 6,
+      "n_matched": 4,
+      "precision": 0.286,
+      "recall": 0.667,
+      "category_accuracy_of_matches": 0.25,
+      "missed_ground_truth_categories": [
+        "financial",
+        "technical"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "organizational",
+        "stakeholder",
+        "technical",
+        "technical",
+        "financial",
+        "financial",
+        "financial",
+        "political_regulatory",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 13,
+      "n_ground_truth": 4,
+      "n_matched": 4,
+      "precision": 0.308,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.25,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "financial",
+        "environmental",
+        "financial",
+        "schedule",
+        "technical",
+        "organizational",
+        "financial",
+        "schedule",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.188,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "technical",
+        "technical",
+        "financial",
+        "financial",
+        "financial",
+        "financial",
+        "schedule",
+        "schedule",
+        "political_regulatory",
+        "environmental",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 4,
+      "n_matched": 4,
+      "precision": 0.267,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "environmental",
+        "technical",
+        "financial",
+        "financial",
+        "political_regulatory",
+        "external",
+        "organizational",
+        "stakeholder",
+        "financial",
+        "political_regulatory",
+        "financial"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "gpt",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "gpt",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 20,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.15,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "financial",
+        "financial",
+        "environmental",
+        "political_regulatory",
+        "organizational",
+        "financial",
+        "political_regulatory",
+        "political_regulatory",
+        "stakeholder",
+        "organizational",
+        "technical",
+        "financial",
+        "environmental",
+        "external",
+        "financial",
+        "organizational"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "gpt",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "gpt",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "gpt",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "gpt",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 19,
+      "n_ground_truth": 4,
+      "n_matched": 2,
+      "precision": 0.105,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "financial",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "financial",
+        "environmental",
+        "financial",
+        "financial",
+        "financial",
+        "political_regulatory",
+        "political_regulatory",
+        "schedule",
+        "technical",
+        "external",
+        "financial",
+        "political_regulatory",
+        "technical",
+        "environmental",
+        "financial",
+        "financial",
+        "organizational"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "opensource",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 4,
+      "n_matched": 2,
+      "precision": 0.2,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 1.0,
+      "missed_ground_truth_categories": [
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "schedule",
+        "stakeholder",
+        "political_regulatory",
+        "technical",
+        "financial",
+        "stakeholder",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "opensource",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.3,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "schedule",
+        "financial",
+        "technical",
+        "political_regulatory",
+        "organizational",
+        "technical",
+        "environmental"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "opensource",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "opensource",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": true,
+      "n_generated": 0,
+      "n_ground_truth": 4,
+      "n_matched": 0,
+      "precision": null,
+      "recall": 0.0,
+      "category_accuracy_of_matches": null,
+      "missed_ground_truth_categories": [
+        "financial",
+        "organizational",
+        "organizational",
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": []
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "opensource",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.3,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "schedule",
+        "financial",
+        "technical",
+        "environmental",
+        "stakeholder",
+        "external",
+        "financial"
+      ]
+    },
+    {
+      "project_id": "P-UK-HyNetCCUSCluster",
+      "model": "opensource",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.3,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "schedule",
+        "financial",
+        "technical",
+        "environmental",
+        "stakeholder",
+        "financial",
+        "financial"
+      ]
+    }
+  ]
+}

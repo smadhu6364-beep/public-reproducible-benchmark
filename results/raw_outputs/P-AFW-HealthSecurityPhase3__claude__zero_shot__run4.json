@@ -1,0 +1,153 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 4,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:20:42.665529+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\"project_id\": \"P-AFW-HealthSecurityPhase3\", \"risks\": [{\"risk_id\": \"R01\", \"description\": \"Macro-fiscal constraints, declining government revenues, and high national debt burdens in participating countries could reduce counterpart allocations and jeopardize the long-term financial sustainability of health security investments.\", \"category\": \"financial\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Technical assistance will be provided to help ministries of finance and health integrate health security into Medium-Term Expenditure Frameworks, track budgets, and explore public-private partnerships.\", \"evidence\": \"declining oil revenues and structural economic challenges... high debt burden limits public investment in health\"}, {\"risk_id\": \"R02\", \"description\": \"Ongoing armed conflict, active insurgency, and socio-political violence in FCV regions (such as Lake Chad Basin, CAR, and NW/SW Cameroon) could restrict field access, threaten personnel safety, and interrupt health activities.\", \"category\": \"external\", \"likelihood\": 4, \"impact\": 5, \"mitigation\": \"Prepare and implement country-specific Security Risk Assessments (SRAs) and Security Management Plans (SMPs), alongside flexible implementation modalities in FCV zones.\", \"evidence\": \"Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements.\"}, {\"risk_id\": \"R03\", \"description\": \"Increased laboratory diagnostic activities and civil works could generate hazardous healthcare, chemical, biological, and construction waste, posing serious environmental and community health hazards if mismanaged.\", \"category\": \"environmental\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Implement updated National Healthcare Waste Management Plans, site-specific ESMPs, and biosafety guidelines across all project-supported laboratory and health facilities.\", \"evidence\": \"laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used.\"}, {\"risk_id\": \"R04\", \"description\": \"Procurement bottlenecks, limited local vendor competition in FCV environments, and complex multi-country procurement could lead to significant project implementation delays.\", \"category\": \"schedule\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Deploy hands-on procurement coaching, utilize STEP for tracking, conduct early market engagement, and explore joint regional bulk procurement options where appropriate.\", \"evidence\": \"Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings.\"}, {\"risk_id\": \"R05\", \"description\": \"Delays in recruiting and onboarding critical PIU technical, financial, M&E, and environmental/social specialists could hamper project startup and operational execution.\", \"category\": \"organizational\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Enforce legal covenants requiring specialist recruitment within 1-3 months of effectiveness and leverage existing experienced PIU structures where available.\", \"evidence\": \"The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit\"}, {\"risk_id\": \"R06\", \"description\": \"Inconsistent cross-border protocols, regulatory barriers, and inter-institutional coordination frictions among CEMAC, WAHO, and national authorities could slow real-time data sharing and rapid emergency response.\", \"category\": \"political_regulatory\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Establish formal legal MoUs and utilize the Regional Coordination Committee (RCC) facilitated by CEMAC and WAHO to harmonize data-sharing standards and cross-border SOPs.\", \"evidence\": \"disease outbreaks often cross borders, making coordinated cross-border collaboration essential, as fragmented efforts hinder effective response.\"}, {\"risk_id\": \"R07\", \"description\": \"Expanded frontline health deployments, community outreach, and labor influx for infrastructure works create substantial risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).\", \"category\": \"stakeholder\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Enforce worker codes of conduct, recruit dedicated GBV specialists, establish survivor-centered Grievance Redress Mechanisms, and execute country-specific SEA/SH Action Plans.\", \"evidence\": \"The overall project SEA/SH risks are judged to be substantial... increased presence of new health workforce... may create concerns\"}, {\"risk_id\": \"R08\", \"description\": \"Persistent baseline gaps in laboratory diagnostic infrastructure, quality management, and genomic sequencing capacity could impede timely detection and characterization of dangerous pathogens.\", \"category\": \"technical\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Invest in SLIPTA quality accreditation, establish regional reference laboratory networks, upgrade biosafety/biosecurity systems, and operationalize LIMS and genomic sequencing capabilities.\", \"evidence\": \"the region commonly faces significant gaps in laboratory diagnostic capabilities, disease surveillance and information systems\"}, {\"risk_id\": \"R09\", \"description\": \"Substantial financial management residual risks, including weak internal controls and decentralized activities in remote areas, could lead to financial non-compliance or questionable expenditures.\", \"category\": \"financial\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Customize accounting software within three months of effectiveness, conduct regular internal audit risk reviews, deploy standardized procedure manuals, and perform independent external audits.\", \"evidence\": \"The overall FM residual risk rating is assessed as Substantial... activities at risk to generate questionable expenditures in remote areas\"}, {\"risk_id\": \"R10\", \"description\": \"Severe climate shocks such as frequent flooding, extreme heatwaves, and droughts could destroy healthcare infrastructure and trigger widespread outbreaks of climate-sensitive vector-borne and waterborne diseases.\", \"category\": \"external\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Integrate climate adaptation and resilient green infrastructure criteria into health facility refurbishments and link public health surveillance to climate early-warning systems.\", \"evidence\": \"Climate change contributed to at least 50 percent of natural disasters... mostly constituted of floods, epidemics, and droughts.\"}, {\"risk_id\": \"R11\", \"description\": \"Severe public health emergencies risk overstretching national health systems, causing resources to be diverted away from routine primary care and interrupting essential maternal and child health services.\", \"category\": \"technical\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Develop and adopt national service continuity plans, strengthen primary healthcare contingency capacity, and monitor routine service delivery indicators during crises.\", \"evidence\": \"health emergencies... disrupt services like maternal and child health, immunization, and chronic disease management weakening population health\"}, {\"risk_id\": \"R12\", \"description\": \"Inadequate community engagement and communication barriers could result in the exclusion of vulnerable groups, such as IDPs, refugees, rural women, and indigenous communities, from emergency services.\", \"category\": \"stakeholder\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Implement inclusive Stakeholder Engagement Plans (SEPs), deploy targeted Risk Communication and Community Engagement (RCCE) strategies, and monitor functional Grievance Redress Mechanisms.\", \"evidence\": \"Potential social risks are substantial and relate to... the exclusion of vulnerable or disadvantaged groups\"}, {\"risk_id\": \"R13\", \"description\": \"Gender bias and societal constraints limiting female participation in advanced technical training (FETP/FELTP/ISAVET) could perpetuate workforce gender gaps and reduce community-level response efficacy.\", \"category\": \"organizational\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Incorporate explicit gender targets, offer flexible training formats, and proactively recruit female health and veterinary workers into field epidemiology programs.\", \"evidence\": \"women remain underrepresented in formal epidemiological training and decision-making... underrepresented in key technical roles\"}, {\"risk_id\": \"R14\", \"description\": \"Delays in procuring and customizing dedicated multi-project accounting software across national PIUs could delay financial reporting and jeopardize timely grant/credit disbursements.\", \"category\": \"schedule\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Include software customization as a key legal covenant with strict 3-month post-effectiveness deadlines and provide dedicated FM technical assistance during rollout.\", \"evidence\": \"customize the existing accounting software to include the bookkeeping for the Project... no later than three (3) months after the Effective Date\"}, {\"risk_id\": \"R15\", \"description\": \"Weak supply chain infrastructure and logistics bottlenecks in remote and conflict-affected zones could lead to critical stockouts of essential diagnostic kits, personal protective equipment, and vaccines.\", \"category\": \"technical\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Strengthen emergency supply chains, establish national and regional stockpiles, deploy digital logistics tracking systems, and utilize solar-powered cold chains.\", \"evidence\": \"supply chain infrastructure and management... frequent drug stock out... difficulties in deploying timely responses\"}]}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Macro-fiscal constraints, declining government revenues, and high national debt burdens in participating countries could reduce counterpart allocations and jeopardize the long-term financial sustainability of health security investments.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Technical assistance will be provided to help ministries of finance and health integrate health security into Medium-Term Expenditure Frameworks, track budgets, and explore public-private partnerships.",
+        "evidence": "declining oil revenues and structural economic challenges... high debt burden limits public investment in health"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Ongoing armed conflict, active insurgency, and socio-political violence in FCV regions (such as Lake Chad Basin, CAR, and NW/SW Cameroon) could restrict field access, threaten personnel safety, and interrupt health activities.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Prepare and implement country-specific Security Risk Assessments (SRAs) and Security Management Plans (SMPs), alongside flexible implementation modalities in FCV zones.",
+        "evidence": "Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Increased laboratory diagnostic activities and civil works could generate hazardous healthcare, chemical, biological, and construction waste, posing serious environmental and community health hazards if mismanaged.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement updated National Healthcare Waste Management Plans, site-specific ESMPs, and biosafety guidelines across all project-supported laboratory and health facilities.",
+        "evidence": "laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Procurement bottlenecks, limited local vendor competition in FCV environments, and complex multi-country procurement could lead to significant project implementation delays.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Deploy hands-on procurement coaching, utilize STEP for tracking, conduct early market engagement, and explore joint regional bulk procurement options where appropriate.",
+        "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays in recruiting and onboarding critical PIU technical, financial, M&E, and environmental/social specialists could hamper project startup and operational execution.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce legal covenants requiring specialist recruitment within 1-3 months of effectiveness and leverage existing experienced PIU structures where available.",
+        "evidence": "The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inconsistent cross-border protocols, regulatory barriers, and inter-institutional coordination frictions among CEMAC, WAHO, and national authorities could slow real-time data sharing and rapid emergency response.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish formal legal MoUs and utilize the Regional Coordination Committee (RCC) facilitated by CEMAC and WAHO to harmonize data-sharing standards and cross-border SOPs.",
+        "evidence": "disease outbreaks often cross borders, making coordinated cross-border collaboration essential, as fragmented efforts hinder effective response."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Expanded frontline health deployments, community outreach, and labor influx for infrastructure works create substantial risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce worker codes of conduct, recruit dedicated GBV specialists, establish survivor-centered Grievance Redress Mechanisms, and execute country-specific SEA/SH Action Plans.",
+        "evidence": "The overall project SEA/SH risks are judged to be substantial... increased presence of new health workforce... may create concerns"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Persistent baseline gaps in laboratory diagnostic infrastructure, quality management, and genomic sequencing capacity could impede timely detection and characterization of dangerous pathogens.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Invest in SLIPTA quality accreditation, establish regional reference laboratory networks, upgrade biosafety/biosecurity systems, and operationalize LIMS and genomic sequencing capabilities.",
+        "evidence": "the region commonly faces significant gaps in laboratory diagnostic capabilities, disease surveillance and information systems"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Substantial financial management residual risks, including weak internal controls and decentralized activities in remote areas, could lead to financial non-compliance or questionable expenditures.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Customize accounting software within three months of effectiveness, conduct regular internal audit risk reviews, deploy standardized procedure manuals, and perform independent external audits.",
+        "evidence": "The overall FM residual risk rating is assessed as Substantial... activities at risk to generate questionable expenditures in remote areas"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Severe climate shocks such as frequent flooding, extreme heatwaves, and droughts could destroy healthcare infrastructure and trigger widespread outbreaks of climate-sensitive vector-borne and waterborne diseases.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate adaptation and resilient green infrastructure criteria into health facility refurbishments and link public health surveillance to climate early-warning systems.",
+        "evidence": "Climate change contributed to at least 50 percent of natural disasters... mostly constituted of floods, epidemics, and droughts."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Severe public health emergencies risk overstretching national health systems, causing resources to be diverted away from routine primary care and interrupting essential maternal and child health services.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and adopt national service continuity plans, strengthen primary healthcare contingency capacity, and monitor routine service delivery indicators during crises.",
+        "evidence": "health emergencies... disrupt services like maternal and child health, immunization, and chronic disease management weakening population health"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Inadequate community engagement and communication barriers could result in the exclusion of vulnerable groups, such as IDPs, refugees, rural women, and indigenous communities, from emergency services.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement inclusive Stakeholder Engagement Plans (SEPs), deploy targeted Risk Communication and Community Engagement (RCCE) strategies, and monitor functional Grievance Redress Mechanisms.",
+        "evidence": "Potential social risks are substantial and relate to... the exclusion of vulnerable or disadvantaged groups"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Gender bias and societal constraints limiting female participation in advanced technical training (FETP/FELTP/ISAVET) could perpetuate workforce gender gaps and reduce community-level response efficacy.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate explicit gender targets, offer flexible training formats, and proactively recruit female health and veterinary workers into field epidemiology programs.",
+        "evidence": "women remain underrepresented in formal epidemiological training and decision-making... underrepresented in key technical roles"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Delays in procuring and customizing dedicated multi-project accounting software across national PIUs could delay financial reporting and jeopardize timely grant/credit disbursements.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Include software customization as a key legal covenant with strict 3-month post-effectiveness deadlines and provide dedicated FM technical assistance during rollout.",
+        "evidence": "customize the existing accounting software to include the bookkeeping for the Project... no later than three (3) months after the Effective Date"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Weak supply chain infrastructure and logistics bottlenecks in remote and conflict-affected zones could lead to critical stockouts of essential diagnostic kits, personal protective equipment, and vaccines.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Strengthen emergency supply chains, establish national and regional stockpiles, deploy digital logistics tracking systems, and utilize solar-powered cold chains.",
+        "evidence": "supply chain infrastructure and management... frequent drug stock out... difficulties in deploying timely responses"
+      }
+    ]
+  },
+  "parse_error": null
+}

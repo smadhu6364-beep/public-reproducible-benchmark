@@ -1,0 +1,135 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 3,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:22:10.822446+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: Increase regional collaboration and health system capacities to prevent, detect, and respond to health emergencies in Western and Central Africa (PrDO/PDO).\n- Scope/Components: Component 1: Prevention of Health Emergencies ($21.77M); Component 2: Detection of Health Emergencies ($127.26M); Component 3: Health Emergency Response ($109.97M); Component 4: Program Management and Institutional Capacity ($31.00M); Component 5: Contingent Emergency Response Component ($0.00).\n- Delivery Model: Investment Project Financing (IPF) under a Multiphase Programmatic Approach (MPA). Implemented nationally via Project Implementation Units (PIUs) under Ministries of Health in Cameroon, Central African Republic (CAR), Chad, Republic of Congo (RoC), and regionally via the PCIU under the CEMAC Commission.\n- Timeline: Expected Board Approval Date: October 29, 2025; Expected Project Closing Date: December 31, 2030 (Program closing: January 31, 2032).\n- Budget: Total Operation Cost US$290.00 million (US$280.00 million IDA Credit/Grant, US$10.00 million GFF Grant for Cameroon).\n- Key Stakeholders: Governments/Borrowers of Cameroon, CAR, Chad, RoC, and CEMAC Commission; Technical partners including WAHO, WOAH, WHO, Africa CDC, FAO, and UNICEF.\n- External Dependencies: Cross-border cooperation between member states, security conditions in Fragility, Conflict, and Violence (FCV) zones, and formal agreements with regional technical agencies (e.g., CEMAC MoU with WOAH).\n\nStep 2 - Category sweep\n- technical:\n  1. Limited supplier competition and procurement bottlenecks for specialized lab equipment and medical supplies in fragile/FCV settings (Section IV.B, para 64).\n  2. Gaps in laboratory biosafety, biosecurity, and diagnostic quality management systems (Section I.B, para 10 / Section II.B, para 30).\n- financial:\n  1. Weak financial management controls leading to questionable expenditures/documentation gaps in remote/decentralized activities (Annex 2, para 21).\n  2. Macro-fiscal shocks, declining oil revenues, and low domestic health budgets threatening financial sustainability post-project (Strategic Context, para 2 / Annex 2, para 2 / Annex 5, para 17).\n- schedule:\n  1. Startup delays due to delayed staffing of PIUs, accounting software customization, POM adoption, or MoU execution under strict legal covenants (Legal Covenants / Effectiveness Conditions).\n- stakeholder:\n  1. Exclusion of vulnerable/disadvantaged groups (IDPs, refugees, rural women) and inadequate stakeholder engagement (Section IV.D, para 65).\n  2. Substantial Sexual Exploitation and Abuse/Sexual Harassment (SEA/SH) risks from labor influx and frontline workforce deployment (Section IV.D, para 72).\n- political_regulatory:\n  1. Political and administrative inefficiencies causing delays in adopting sub-regional harmonized health regulations and protocols (Annex 1, para 16 / Annex 5, para 17).\n- environmental:\n  1. Improper handling and disposal of hazardous healthcare, chemical, and laboratory waste from expanded testing and facilities (Section IV.D, para 66).\n  2. Climate change shocks (floods, extreme heat) causing infrastructure damage and triggering disease outbreaks (Strategic Context, para 11).\n- organizational:\n  1. Weak multi-sectoral One Health coordination across human, animal, and environmental ministries (Section I.B, para 10).\n  2. Gender disparities and underrepresentation of female health workers in formal field epidemiology (FETP) and veterinary training (Section IV.D Gender, paras 75-76).\n- external:\n  1. Armed conflict, civil unrest, and security instability in FCV zones impeding physical access and service delivery (Section I.A, para 3 / Section IV.D, para 65 / Annex 2, para 22 / Annex 3, para 3).\n\nStep 3 - Evidence filter\nAll identified candidate risks are directly anchored in explicit statements from the provided PAD document (including main text and annexes). No external or assumed risks were introduced.\n\nStep 4 - Assess\n1. R01 (external): Security instability in FCV zones (Likelihood: 4, Impact: 4)\n2. R02 (financial): FM controls and questionable expenditures in remote areas (Likelihood: 3, Impact: 4)\n3. R03 (financial): Macro-fiscal constraints & budget sustainability (Likelihood: 4, Impact: 3)\n4. R04 (technical): Procurement delays & limited market competition in FCV settings (Likelihood: 4, Impact: 3)\n5. R05 (schedule): Initial implementation delays from legal covenant compliance (Likelihood: 3, Impact: 3)\n6. R06 (stakeholder): Exclusion of vulnerable populations & inadequate engagement (Likelihood: 3, Impact: 4)\n7. R07 (stakeholder): SEA/SH risks from workforce deployment (Likelihood: 3, Impact: 4)\n8. R08 (environmental): Hazardous healthcare and laboratory waste management (Likelihood: 3, Impact: 4)\n9. R09 (environmental): Climate change shocks damaging infrastructure and amplifying disease outbreaks (Likelihood: 4, Impact: 3)\n10. R10 (organizational): Multi-sectoral One Health coordination bottlenecks (Likelihood: 4, Impact: 3)\n11. R11 (political_regulatory): Political/administrative delays in harmonizing regional health policies (Likelihood: 3, Impact: 3)\n12. R12 (organizational): Gender disparities in technical epidemiology training (Likelihood: 3, Impact: 3)\n13. R13 (technical): Laboratory biosafety and diagnostic quality gaps (Likelihood: 3, Impact: 4)\n\nStep 5 - Consolidate\nMerged related elements; retained 13 distinct, well-supported risks across all 8 mandatory categories. Checked JSON schema requirements and word count limits (evidence <= 25 words per risk).\n\nFINAL JSON:\n{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Security instability and armed conflict in FCV zones impeding project access, service delivery, and physical monitoring.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare, consult upon, disclose, and implement country-specific Security Risk Assessments (SRAs) and Security Management Plans (SMPs) in FCV areas.\",\n      \"evidence\": \"Political instability, particularly in the North-West and South-West regions, may disrupt service delivery\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inadequate financial management controls leading to questionable expenditures or documentation gaps in remote/decentralized project activities.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Adapt standard financial management manuals for local partners, customize accounting software within three months, and deploy internal/external auditors.\",\n      \"evidence\": \"several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Macro-fiscal pressures, low domestic budget allocations, and declining oil revenues threatening long-term financial sustainability of health security investments.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Assist governments in integrating health security into Medium-Term Expenditure Frameworks, tracking budgets, and exploring domestic resource mobilization and PPP models.\",\n      \"evidence\": \"The country\u2019s macroeconomic stability has been impacted by declining oil revenues and structural economic challenges... domestic funding for health per capita was just US$10.79\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Procurement delays, governance bottlenecks, weak contract management, and limited supplier competition in fragile/FCV market settings.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit qualified procurement specialists, utilize STEP real-time tracking, adopt flexible procurement in FCV areas, and conduct early market engagement.\",\n      \"evidence\": \"Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Delays in project startup due to delayed PIU staffing, accounting software customization, POM adoption, or execution of inter-agency MoUs.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Monitor compliance with legal covenants, establish PCIU/PIUs prior to or upon effectiveness, and utilize technical assistance for rapid onboarding.\",\n      \"evidence\": \"The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit an accountant... environmental specialist\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Exclusion of vulnerable or disadvantaged groups (e.g., IDPs, refugees, rural women) and inadequate stakeholder engagement in project activities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement country-adapted Stakeholder Engagement Plans (SEPs), deploy citizen engagement feedback channels, and maintain accessible Grievance Redress Mechanisms.\",\n      \"evidence\": \"Potential social risks are substantial and relate to: (i) inadequate stakeholder engagement... (ii) the exclusion of vulnerable or disadvantaged groups\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH) linked to labor influx and frontline healthcare worker deployment in communities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop country-specific SEA/SH Action Plans within two months, recruit dedicated GBV specialists, enforce codes of conduct, and establish GBV-sensitive GRMs.\",\n      \"evidence\": \"The overall project SEA/SH risks are judged to be substantial... lack of institutional codes of conduct for health service providers\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Environmental contamination and community health hazards resulting from improper management, handling, and disposal of hazardous healthcare and laboratory waste.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Update and implement Biomedical Waste Management Plans (BMWMP), enforce biosafety/biosecurity guidelines, and apply site-specific ESMPs.\",\n      \"evidence\": \"laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used, all of which could pose community health risks\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Climate change impacts (floods, extreme heat waves) damaging health infrastructure and triggering vector- and water-borne disease outbreaks.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate climate resilience and EDGE level 1 energy efficiency standards in health facility refurbishments, and link climate alerts with health surveillance.\",\n      \"evidence\": \"Climate change contributed to at least 50 percent of natural disasters registered in Cameroon, CAR, Chad, and RoC since they were mostly constituted of floods\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Weak institutional capacity and coordination bottlenecks across multi-sectoral line ministries (health, livestock/veterinary, environment) under One Health.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish and operationalize National Steering Committees, multisectoral One Health platforms, and sign collaborative agreements (e.g., CEMAC-WOAH MoU).\",\n      \"evidence\": \"gaps are primarily due to limited domestic and regional resources, weak institutional capacities and governance mechanisms, and insufficient multisectoral coordination\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Administrative and political governance inefficiencies causing delays in adopting regionally harmonized health regulations, sample transport policies, and data sharing protocols.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Leverage CEMAC's political mandate and direct communication lines with decision-makers to advocate and draft sub-regional conventions, supported by Regional Coordination Committee coordination.\",\n      \"evidence\": \"Political and administrative inefficiencies could slow project execution.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Gender disparity and underrepresentation of female health workers in specialized field epidemiology (FETP) and veterinary epidemiology training.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct targeted female outreach, implement flexible training formats, establish minimum 30 percent gender targets for cohorts, and track gender gaps.\",\n      \"evidence\": \"women dominate low-paid frontline roles but are largely absent from technical positions... partly due to limited access to training programs\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Gaps in laboratory biosafety, biosecurity, and diagnostic quality management systems leading to testing delays or biohazard risks during pathogen handling.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement WHO SLIPTA quality improvement processes, establish regional laboratory protocols, upgrade lab infrastructure, and conduct biosafety/biosecurity training.\",\n      \"evidence\": \"region commonly faces significant gaps in laboratory diagnostic capabilities, disease surveillance and information systems\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Security instability and armed conflict in FCV zones impeding project access, service delivery, and physical monitoring.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prepare, consult upon, disclose, and implement country-specific Security Risk Assessments (SRAs) and Security Management Plans (SMPs) in FCV areas.",
+        "evidence": "Political instability, particularly in the North-West and South-West regions, may disrupt service delivery"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inadequate financial management controls leading to questionable expenditures or documentation gaps in remote/decentralized project activities.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Adapt standard financial management manuals for local partners, customize accounting software within three months, and deploy internal/external auditors.",
+        "evidence": "several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Macro-fiscal pressures, low domestic budget allocations, and declining oil revenues threatening long-term financial sustainability of health security investments.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Assist governments in integrating health security into Medium-Term Expenditure Frameworks, tracking budgets, and exploring domestic resource mobilization and PPP models.",
+        "evidence": "The country\u2019s macroeconomic stability has been impacted by declining oil revenues and structural economic challenges... domestic funding for health per capita was just US$10.79"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Procurement delays, governance bottlenecks, weak contract management, and limited supplier competition in fragile/FCV market settings.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit qualified procurement specialists, utilize STEP real-time tracking, adopt flexible procurement in FCV areas, and conduct early market engagement.",
+        "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays in project startup due to delayed PIU staffing, accounting software customization, POM adoption, or execution of inter-agency MoUs.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Monitor compliance with legal covenants, establish PCIU/PIUs prior to or upon effectiveness, and utilize technical assistance for rapid onboarding.",
+        "evidence": "The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit an accountant... environmental specialist"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Exclusion of vulnerable or disadvantaged groups (e.g., IDPs, refugees, rural women) and inadequate stakeholder engagement in project activities.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement country-adapted Stakeholder Engagement Plans (SEPs), deploy citizen engagement feedback channels, and maintain accessible Grievance Redress Mechanisms.",
+        "evidence": "Potential social risks are substantial and relate to: (i) inadequate stakeholder engagement... (ii) the exclusion of vulnerable or disadvantaged groups"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH) linked to labor influx and frontline healthcare worker deployment in communities.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop country-specific SEA/SH Action Plans within two months, recruit dedicated GBV specialists, enforce codes of conduct, and establish GBV-sensitive GRMs.",
+        "evidence": "The overall project SEA/SH risks are judged to be substantial... lack of institutional codes of conduct for health service providers"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Environmental contamination and community health hazards resulting from improper management, handling, and disposal of hazardous healthcare and laboratory waste.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Update and implement Biomedical Waste Management Plans (BMWMP), enforce biosafety/biosecurity guidelines, and apply site-specific ESMPs.",
+        "evidence": "laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used, all of which could pose community health risks"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Climate change impacts (floods, extreme heat waves) damaging health infrastructure and triggering vector- and water-borne disease outbreaks.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Integrate climate resilience and EDGE level 1 energy efficiency standards in health facility refurbishments, and link climate alerts with health surveillance.",
+        "evidence": "Climate change contributed to at least 50 percent of natural disasters registered in Cameroon, CAR, Chad, and RoC since they were mostly constituted of floods"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Weak institutional capacity and coordination bottlenecks across multi-sectoral line ministries (health, livestock/veterinary, environment) under One Health.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish and operationalize National Steering Committees, multisectoral One Health platforms, and sign collaborative agreements (e.g., CEMAC-WOAH MoU).",
+        "evidence": "gaps are primarily due to limited domestic and regional resources, weak institutional capacities and governance mechanisms, and insufficient multisectoral coordination"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Administrative and political governance inefficiencies causing delays in adopting regionally harmonized health regulations, sample transport policies, and data sharing protocols.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Leverage CEMAC's political mandate and direct communication lines with decision-makers to advocate and draft sub-regional conventions, supported by Regional Coordination Committee coordination.",
+        "evidence": "Political and administrative inefficiencies could slow project execution."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Gender disparity and underrepresentation of female health workers in specialized field epidemiology (FETP) and veterinary epidemiology training.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct targeted female outreach, implement flexible training formats, establish minimum 30 percent gender targets for cohorts, and track gender gaps.",
+        "evidence": "women dominate low-paid frontline roles but are largely absent from technical positions... partly due to limited access to training programs"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Gaps in laboratory biosafety, biosecurity, and diagnostic quality management systems leading to testing delays or biohazard risks during pathogen handling.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement WHO SLIPTA quality improvement processes, establish regional laboratory protocols, upgrade lab infrastructure, and conduct biosafety/biosecurity training.",
+        "evidence": "region commonly faces significant gaps in laboratory diagnostic capabilities, disease surveillance and information systems"
+      }
+    ]
+  },
+  "parse_error": null
+}

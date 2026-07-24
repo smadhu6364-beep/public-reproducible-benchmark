@@ -1,0 +1,162 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 3,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:23:08.968381+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delay in recruiting required specialists (accountant, environmental, gender\u2011based violence, etc.) may postpone PIU set\u2011up and hinder project start\u2011up.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare a recruitment timetable, offer competitive contracts, and assign senior staff to monitor hiring progress.\",\n      \"evidence\": \"CEMAC financing agreement (Section I.A.1b) requires appointment of specialists within 1 month of effective date.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Failure to customize accounting software within three months could impair financial tracking and reporting.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage IT vendor early, set clear milestones, and conduct weekly progress reviews.\",\n      \"evidence\": \"Financing agreements (e.g., CEMAC Section I.A.1c, Cameroon Section I.A.2b) mandate software customization within 3 months.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement delays and weak contract management in fragile settings may cause cost overruns and missed deadlines.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced procurement specialists, provide World Bank procurement training, and use flexible procurement methods for FCV contexts.\",\n      \"evidence\": \"Procurement Risks include delays, governance issues, weak contract management; mitigation measures listed in section 64\u201166.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental hazards from construction and laboratory waste could affect surrounding communities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement site\u2011specific ESMPs, follow the National Healthcare Waste Management Plan, and monitor waste disposal.\",\n      \"evidence\": \"Environmental risks listed as substantial (sections 65\u201166); waste, dust, emissions, occupational health mentioned.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Sexual exploitation and abuse (SEA/SH) risk due to increased community health workers and frontline staff.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct GBV/SEA risk assessments, recruit GBV specialists, and train all staff on SEA/SH protocols.\",\n      \"evidence\": \"SEA/SH risks judged substantial; mitigation includes GBV specialists and action plans (sections 72\u201173).\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Political instability and conflict in Cameroon, CAR, Chad and RoC may disrupt service delivery and field activities.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop security risk assessments, maintain flexible implementation schedules, and coordinate closely with the Regional Coordination Committee.\",\n      \"evidence\": \"Regional context notes conflict, FCV, IDPs (section 2\u20113); annexes describe ongoing insecurity.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Climate\u2011related shocks (floods, heat) could damage health facilities and increase disease burden.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Design health\u2011facility upgrades with green, resilient standards and integrate climate data into surveillance systems.\",\n      \"evidence\": \"Climate change impacts described in sections 11\u201112 and 37; green\u2011resilient approaches required.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Limited domestic fiscal space may reduce long\u2011term sustainability of health\u2011security investments.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Support medium\u2011term expenditure frameworks, domestic resource mobilization, and public\u2011private partnership pilots.\",\n      \"evidence\": \"Sustainability discussion highlights need for domestic budgeting and resource tracking (section 48\u201149).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate cross\u2011border data sharing could limit early detection of outbreaks.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen the RCC, finalize MoUs with WAHO, and adopt standardized data\u2011exchange protocols.\",\n      \"evidence\": \"Regional coordination mechanisms and MoU requirements outlined in sections 30\u201131 and 57.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Gender gap in technical health workforce may reduce effectiveness of surveillance and response.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Implement gender\u2011targeted recruitment, flexible training formats, and mentorship for women in epidemiology and veterinary fields.\",\n      \"evidence\": \"Gender analysis and actions described in sections 75\u201177.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Security threats to staff operating in conflict\u2011affected zones could cause injuries or project stoppage.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Prepare Security Risk Assessments, Security Management Plans, and provide safety training and evacuation procedures.\",\n      \"evidence\": \"Security Risk Assessment and SMP to be prepared (section 73\u201174).\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Late submission of annual work plans and budgets may delay fund disbursement.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set internal deadlines 30 days before the World Bank deadline and use a tracking tool for approvals.\",\n      \"evidence\": \"Legal covenants require draft work plan by Nov\u202f30 each year (Section I.C.1).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Inadequate stakeholder engagement could exclude vulnerable groups and generate grievances.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy the Umbrella Stakeholder Engagement Plan, conduct community consultations, and operate functional GRMs.\",\n      \"evidence\": \"Stakeholder engagement risks noted in sections 65\u201166 and 71\u201174.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Substantial fiduciary risk (FM residual risk rated Substantial) may lead to mis\u2011allocation of funds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Update FM manuals, recruit internal and external auditors, and conduct quarterly internal audits.\",\n      \"evidence\": \"FM residual risk assessed as Substantial; mitigation actions listed in sections 58\u201160.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Limited procurement capacity (only one specialist) may hinder timely acquisition of goods and services.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide procurement capacity\u2011building workshops and consider joint procurement to share workload.\",\n      \"evidence\": \"Procurement capacity described in section 62\u201164; only one specialist and assistant noted.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Laboratory capacity shortfalls (accreditation, equipment) could delay pathogen detection and response.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement SLIPTA quality improvement, QMS mentoring, and procure essential equipment per sub\u2011component 2.2 plans.\",\n      \"evidence\": \"Laboratory quality and capacity sub\u2011component details (sections 30\u201133) and SLIPTA targets.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delay in recruiting required specialists (accountant, environmental, gender\u2011based violence, etc.) may postpone PIU set\u2011up and hinder project start\u2011up.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prepare a recruitment timetable, offer competitive contracts, and assign senior staff to monitor hiring progress.",
+        "evidence": "CEMAC financing agreement (Section I.A.1b) requires appointment of specialists within 1 month of effective date."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Failure to customize accounting software within three months could impair financial tracking and reporting.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage IT vendor early, set clear milestones, and conduct weekly progress reviews.",
+        "evidence": "Financing agreements (e.g., CEMAC Section I.A.1c, Cameroon Section I.A.2b) mandate software customization within 3 months."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement delays and weak contract management in fragile settings may cause cost overruns and missed deadlines.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire experienced procurement specialists, provide World Bank procurement training, and use flexible procurement methods for FCV contexts.",
+        "evidence": "Procurement Risks include delays, governance issues, weak contract management; mitigation measures listed in section 64\u201166."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental hazards from construction and laboratory waste could affect surrounding communities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement site\u2011specific ESMPs, follow the National Healthcare Waste Management Plan, and monitor waste disposal.",
+        "evidence": "Environmental risks listed as substantial (sections 65\u201166); waste, dust, emissions, occupational health mentioned."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Sexual exploitation and abuse (SEA/SH) risk due to increased community health workers and frontline staff.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct GBV/SEA risk assessments, recruit GBV specialists, and train all staff on SEA/SH protocols.",
+        "evidence": "SEA/SH risks judged substantial; mitigation includes GBV specialists and action plans (sections 72\u201173)."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Political instability and conflict in Cameroon, CAR, Chad and RoC may disrupt service delivery and field activities.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop security risk assessments, maintain flexible implementation schedules, and coordinate closely with the Regional Coordination Committee.",
+        "evidence": "Regional context notes conflict, FCV, IDPs (section 2\u20113); annexes describe ongoing insecurity."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Climate\u2011related shocks (floods, heat) could damage health facilities and increase disease burden.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Design health\u2011facility upgrades with green, resilient standards and integrate climate data into surveillance systems.",
+        "evidence": "Climate change impacts described in sections 11\u201112 and 37; green\u2011resilient approaches required."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Limited domestic fiscal space may reduce long\u2011term sustainability of health\u2011security investments.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Support medium\u2011term expenditure frameworks, domestic resource mobilization, and public\u2011private partnership pilots.",
+        "evidence": "Sustainability discussion highlights need for domestic budgeting and resource tracking (section 48\u201149)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate cross\u2011border data sharing could limit early detection of outbreaks.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen the RCC, finalize MoUs with WAHO, and adopt standardized data\u2011exchange protocols.",
+        "evidence": "Regional coordination mechanisms and MoU requirements outlined in sections 30\u201131 and 57."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Gender gap in technical health workforce may reduce effectiveness of surveillance and response.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Implement gender\u2011targeted recruitment, flexible training formats, and mentorship for women in epidemiology and veterinary fields.",
+        "evidence": "Gender analysis and actions described in sections 75\u201177."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Security threats to staff operating in conflict\u2011affected zones could cause injuries or project stoppage.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Prepare Security Risk Assessments, Security Management Plans, and provide safety training and evacuation procedures.",
+        "evidence": "Security Risk Assessment and SMP to be prepared (section 73\u201174)."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Late submission of annual work plans and budgets may delay fund disbursement.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set internal deadlines 30 days before the World Bank deadline and use a tracking tool for approvals.",
+        "evidence": "Legal covenants require draft work plan by Nov\u202f30 each year (Section I.C.1)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Inadequate stakeholder engagement could exclude vulnerable groups and generate grievances.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy the Umbrella Stakeholder Engagement Plan, conduct community consultations, and operate functional GRMs.",
+        "evidence": "Stakeholder engagement risks noted in sections 65\u201166 and 71\u201174."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Substantial fiduciary risk (FM residual risk rated Substantial) may lead to mis\u2011allocation of funds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Update FM manuals, recruit internal and external auditors, and conduct quarterly internal audits.",
+        "evidence": "FM residual risk assessed as Substantial; mitigation actions listed in sections 58\u201160."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Limited procurement capacity (only one specialist) may hinder timely acquisition of goods and services.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide procurement capacity\u2011building workshops and consider joint procurement to share workload.",
+        "evidence": "Procurement capacity described in section 62\u201164; only one specialist and assistant noted."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Laboratory capacity shortfalls (accreditation, equipment) could delay pathogen detection and response.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement SLIPTA quality improvement, QMS mentoring, and procure essential equipment per sub\u2011component 2.2 plans.",
+        "evidence": "Laboratory quality and capacity sub\u2011component details (sections 30\u201133) and SLIPTA targets."
+      }
+    ]
+  },
+  "parse_error": null
+}

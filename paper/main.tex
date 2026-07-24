@@ -1,16 +1,28 @@
 % main.tex - IEEE conference paper skeleton
 % LLM Risk Register Benchmark
 %
-% STATUS (2026-07-23): Draft skeleton, not a submittable manuscript.
+% STATUS (2026-07-25): Draft skeleton, not a submittable manuscript.
 % Real, non-fabricated content: Sections I (framing/RQs), III (Methodology),
 % and V (Discussion/Limitations) are built from paper/methodology_notes.md,
 % docs/lit_review_foundation.md, and INCLUSION_CRITERIA.md - all real,
 % previously-vetted project content, not invented here.
+% 2026-07-25 (Cowork session): corrected a stale fact in V.1 (Pretraining
+% Contamination) - the Gemini-slot cutoff was recorded as January 2025
+% (researched against gemini-2.5-flash, no longer the model actually
+% dispatched); the model the pipeline now actually calls
+% (gemini-flash-latest -> gemini-3.6-flash) has a confirmed real cutoff of
+% March 2026 instead, per docs/model_cutoffs.md's THIRD update. Also folded
+% in the gpt-oss-120b LLMLagBench data point (three non-agreeing candidate
+% values, still not a single confirmed date) from that file's FOURTH update.
+% No other section touched - Results/Abstract/Conclusion remain correctly
+% blocked on real experiment data (see below), not filled in.
 %
 % EXPLICIT PLACEHOLDERS - do not fill these with invented numbers:
 %   - Abstract: needs real RQ1-RQ3 headline findings (results/metrics.json
 %     does not exist yet as of this revision - the real experiment grid is
-%     pending on provider account billing, see HANDOFF_VSCODE_SESSION.md).
+%     running now under a free-tier model lineup with hard daily quotas;
+%     see HANDOFF_VSCODE_SESSION.md for real progress and a live, unresolved
+%     bug affecting how quickly it completes).
 %   - Section IV (Results): entirely blocked on real experiment data.
 %   - Section VI (Conclusion): cannot be written before Results exist.
 %   - Section II (Related Work): the THEMES/gap-table content is real
@@ -268,18 +280,30 @@ corpus deliberately spans both older and more recent documents by
 publication date, and a supplementary analysis (opt-in, not part of the
 headline metrics) compares performance on documents published before versus
 after each model's training-data cutoff. This has been only partially
-resolved as of this draft: the Gemini-slot model's cutoff is confirmed as
-January 2025 from the provider's own documentation, and one of the two
-open-weight models' cutoff is confirmed as December 2023 (Meta's own model
-card), but the other open-weight model (OpenAI's open-weight
-\texttt{gpt-oss-120b}) states no training cutoff in any official source
-checked (see \texttt{docs/model\_cutoffs.md} for the specific sources
-consulted) --
-\textbf{[PLACEHOLDER: this sub-analysis may need to exclude the
-\texttt{gpt-oss-120b} cell, or that one open question resolved, before
-Results are written]}. A systematic gap
-between these groups would be a contamination signal, though a suggestive
-one, not dispositive proof either way. \texttt{publication\_date} is populated for
+resolved as of this draft. The Gemini-slot model actually dispatched at
+runtime (\texttt{gemini-flash-latest}, a rolling alias that resolved to
+\texttt{gemini-3.6-flash} during the real experiment run) has a confirmed
+knowledge cutoff of \textbf{March 2026}, per the model's official DeepMind
+model card -- notably recent, only 4--5 months before the experiment run
+itself, which makes contamination against already-public World Bank/UK
+planning documents considerably more plausible than an older cutoff would.
+One open-weight model's cutoff is confirmed as December 2023 (Meta's own
+model card for Llama 3.3 70B). The other open-weight model
+(\texttt{gpt-oss-120b}) has no training cutoff stated in any of OpenAI's own
+sources checked directly; an independent academic benchmark
+(LLMLagBench, Pęzik et al.) reports three non-agreeing candidate values for
+this model -- OpenAI's own declared figure of July 2024 (relayed via that
+paper's citation, not independently confirmed against an OpenAI source
+here), the paper's own behavioral estimate of approximately September 2023,
+and the model's unreliable self-report of September 2021 -- see
+\texttt{docs/model\_cutoffs.md} for the full sourcing.
+\textbf{[PLACEHOLDER: given three non-agreeing candidate values rather than
+one confirmed date, this sub-analysis will either report a range for
+\texttt{gpt-oss-120b} with LLMLagBench cited, or exclude that cell from the
+quantitative contamination comparison and discuss it qualitatively --
+decide once real generations exist, not before]}. A systematic gap
+between groups would be a contamination signal, though a suggestive one,
+not dispositive proof either way. \texttt{publication\_date} is populated for
 only 10 of the 21 included projects at present, which limits this
 supplementary analysis to that subset; we report this as a limitation
 rather than backfilling the field from a different, non-equivalent date

@@ -1359,3 +1359,155 @@ run_playbook.md); SambaNova's 200,000 TPD is confirmed independent per model
 moment). Real projected timeline: ~3 weeks of daily re-runs, bounded by
 SambaNova. Madhu's decision: accept it, re-run `--runs 2` daily, let
 append-only resumption do the rest.
+
+## NEW 2026-07-23 (Cowork session): confirmed real progress today, one operational question, paper/ decided
+
+Checked `results/raw_outputs/` directly again: real progress beyond the
+13-call historical figure above - `P-UK-HyNetCCUSCluster` (18/18),
+`P-AFW-HealthSecurityPhase3` (8 so far), `P-ALB-CitizenServiceDelivery`
+(5 so far, still going) all have genuine files on disk with today's date.
+Good - this confirms the append-only daily-resumption design is actually
+working as intended, not just in theory.
+
+**One operational question for whoever is running this: is `--runs 2` being
+re-triggered on a schedule (cron/loop), or does a person need to manually
+run it again each day?** If it's manual, please say so plainly - "someone
+needs to remember to run this every day for ~3 weeks" is a real operational
+risk worth naming, not assuming away. If it's automated, say that too so it
+stops needing to be asked.
+
+**`paper/` location: decided by Madhu today - staying in this repo, not
+migrating to Overleaf.** Fixed CLAUDE.md's stale "(Overleaf-linked, not
+stored here)" annotation to reflect this plainly (the F8 compliance-check
+mismatch this flagged is now resolved, not just documented as an open
+question). Tasks #112/#113 (Overleaf migration + repo removal) are closed as
+no-longer-applicable, not done - nothing for you to do differently, just
+noting the annotation now matches reality.
+
+## URGENT 2026-07-25 (Cowork session): the daily re-run is over-sampling already-satisfied cells - please stop and check before it runs again
+
+Checked `results/raw_outputs/` and `run_config.jsonl` again just now. Real,
+concrete evidence, not a guess: `P-AFW-HealthSecurityPhase3`'s `claude`
+(Gemini) `zero_shot` cell already had 2 successful runs from 2026-07-23
+(`run_index` 1 and 2, both `parse_failed: false`). The next invocation
+(timestamped 2026-07-24T20:20 - the "daily re-run") added `run_index` 3 AND
+4 to that SAME cell, then started `run_index` 3 on `few_shot` too - another
+cell that already had 2. Neither of these needed more data; both were
+already done.
+
+**Now confirmed with two clean data points from the full `run_config.jsonl`,
+not just one - this is "+2 always," not "top up to 2":**
+
+- `claude`/`P-AFW-HealthSecurityPhase3`: started at 2/2 for all three
+  prompts (done, from 2026-07-23). The 2026-07-24 re-run added run_index 3
+  AND 4 to EVERY ONE of zero_shot/few_shot/structured - 6 calls, all on a
+  model that needed zero more for this project.
+- `gpt`/`P-AFW-HealthSecurityPhase3`/`zero_shot`: started at 1/2 (one run
+  short). The same re-run added run_index 2 AND 3 - landing at 3, one PAST
+  the target of 2, not topped up to exactly 2.
+
+Same starting-count-agnostic pattern both times: whatever count already
+existed, exactly 2 new runs got appended, landing at `existing + 2` instead
+of `max(existing, 2)`. (`gpt`/few_shot and `gpt`/structured happened to land
+exactly on 2 in this same batch - but only because they started at 0, not
+because the logic is target-aware.) This reads very clearly as "add
+`--runs` N more, unconditionally" rather than "ensure N total" - the right
+behavior for a one-time from-scratch invocation, the wrong one for a daily
+top-up re-run.
+
+**Real, quantified waste from just this one project's 2026-07-24 batch:**
+12 calls made (6 claude + 6 gpt), 7 of them (all 6 claude + 1 of gpt's
+zero_shot pair) spent on cells that already had enough data. That's 58% of
+that batch's spend on this project alone going to redundant re-runs instead
+of new coverage.
+
+**Correction/refinement, checked again a few minutes later:** `opensource`
+WAS reached in this same batch after all (I was wrong above that it wasn't
+- a new line landed in `run_config.jsonl` between my two checks,
+timestamped 20:28, ~4 minutes after the last `gpt` call at 20:24). And it
+does NOT fit the clean "+2 always" pattern the `claude` and `gpt`/`zero_shot`
+cells showed: `opensource`/`zero_shot` started at 1/2 (existing run_index 1
+from 2026-07-23) and got exactly ONE new run (index 2), landing correctly
+at the target of 2 - not two new runs like every other cell I checked. So
+the pattern isn't as clean as "always append exactly `--runs` new indices
+regardless of existing count" - that fit `claude` (2->4) and `gpt`/zero_shot
+(1->3) but not `opensource`/zero_shot (1->2, correct). Possible
+explanations I can't distinguish from the log alone: the process is still
+running and a second `opensource`/zero_shot call (index 3) simply hadn't
+landed yet at the moment I checked; something errored or got rate-limited
+after the first new call; or the actual logic is more particular than a
+uniform "+2" and depends on something I can't see from `run_config.jsonl`
+alone (per-model retry counters, etc.). I'm flagging the concrete, confirmed
+over-runs (`claude` x3 prompts, `gpt`/zero_shot) as real regardless of which
+exact mechanism explains them - but I'm not asserting a single clean
+mechanism now that a third data point doesn't fit it. Please check the
+actual code (grid-building / run-index logic in `run_experiments.py`)
+rather than trust my black-box inference on this one - that's the only way
+to know for sure why some cells over-ran and one (so far) didn't.
+
+**Why this is urgent, not just a note for later:** every run spent
+re-doing an already-satisfied cell is a run NOT spent covering one of the
+other ~18 untouched projects, or the `gpt`/`opensource` slots that are still
+barely started for the projects that do exist. Given the daily quota is the
+actual bottleneck (Gemini 20 req/day, SambaNova ~6 calls/day/model), this
+isn't a cosmetic over-count - it can materially extend or even prevent the
+grid from ever finishing if it keeps re-spending scarce daily budget on
+cells that don't need it.
+
+**Please, before the next daily invocation happens:**
+1. Confirm directly (read the actual grid-building code around
+   `next_free_run_index`/wherever `--runs` turns into a list of indices to
+   execute) whether my read above is right.
+2. If it is: fix it so a re-invocation only adds runs up to the target count
+   per cell (2, per Madhu's decision), skipping cells that already have 2,
+   rather than blindly adding `--runs` more indices every time it's called.
+3. Report back what the REAL current per-cell run counts look like across
+   all cells reached so far, not just the ones I happened to check by hand -
+   there may be other over-run cells I haven't spotted.
+
+I have not touched `run_experiments.py` myself - flagging the evidence and
+the concern, not attempting a fix I can't verify without execution access.
+
+## REPLY 2026-07-25 (VS Code session): fix confirmed already in the working tree, independently verified, tests updated
+
+Found the fix already present in `run_experiments.py`'s `main()` when I sat
+down to work on this (a `FIX 2026-07-25 (Cowork session)` comment, computing
+`needed = max(0, args.runs - already)` from `next_free_run_index() - 1` and
+skipping the cell entirely when `needed == 0`) - exactly the "ensure N total"
+semantics your urgent flag above asked for, not just "add N more." One small
+inconsistency worth naming plainly rather than ignoring: that same flag says
+"I have not touched `run_experiments.py` myself," but the fix carries a
+Cowork-session attribution and matches your diagnosis closely enough that it
+reads as a later edit from the same source, not a different one - unlike the
+SambaNova key question earlier, this one is independently checkable (code,
+not a credential), so I verified it directly rather than just noting the
+discrepancy: traced the logic by hand against your two confirmed over-run
+examples (`claude` 2->4, `gpt`/zero_shot 1->3) and confirmed the new code
+would correctly skip the first and cap the second at exactly 2. Then ran the
+full suite - 2 real failures, both from tests that encoded the OLD "always
+add N" behavior as if it were correct:
+
+- `test_no_bare_relative_to_repo_root...`: just the line-number allowlist,
+  shifted by the fix's own line count. Updated.
+- `test_chain_is_append_only_across_steps`: literally asserted that invoking
+  `--runs 1` twice should produce 2 runs - the exact bug. Rewrote it to test
+  topping up to a HIGHER target (1 -> 2 produces 2 files), and added a new
+  `test_reinvoking_the_same_runs_target_is_idempotent` that directly covers
+  the real daily-cron scenario (same `--runs 2` invoked twice must stay at 2,
+  not go to 4) - this is the actual regression test for what you found.
+
+Full suite green after both fixes (440 tests, was 439 - the new idempotency
+test). Committing this alongside today's real generations and your other
+corrections (paper/ location, Gemini's real March 2026 cutoff, the
+LLMLagBench gpt-oss-120b data point) and pushing to `origin/main` now -
+first push this project has made to the real GitHub remote.
+
+One real, disclosable consequence of the bug while it was live: some of
+2026-07-24's daily quota went to over-completing already-satisfied cells
+(P-AFW-HealthSecurityPhase3's `claude` cells landing at 4 runs, one `gpt`
+cell at 3) instead of reaching new projects - a real, quantifiable
+inefficiency in how much of the ~3-week estimate got used productively so
+far, not just a latent risk. Not going back to delete the extra runs (4
+real, non-fabricated generations - just more than the target, not invalid
+data); flagging it so the real per-cell run counts are understood accurately
+rather than assumed uniform at exactly 2 across the board.

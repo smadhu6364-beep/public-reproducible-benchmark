@@ -265,29 +265,57 @@ class TestPlaybookChainRunsEndToEnd(unittest.TestCase):
                 )
 
     def test_chain_is_append_only_across_steps(self):
-        # Running steps 6 then 6 again (as the playbook explicitly documents
-        # as safe - "a partial grid is safe to resume by just running the
-        # command again") should add runs, not clobber run1, and match.py
-        # --all should then see both.
+        # Running steps 6 then 6 again with a HIGHER --runs target (as the
+        # playbook explicitly documents as safe - "a partial grid is safe to
+        # resume by just running the command again") should top up to the
+        # new target, not clobber run1, and match.py --all should then see
+        # both.
         with _SandboxedPlaybook() as box:
-            argv = ["run_experiments.py", "--project", REAL_PROJECT,
-                    "--model", "claude", "--prompt", "zero_shot", "--runs", "1"]
-            with mock.patch.object(sys, "argv", argv):
+            argv1 = ["run_experiments.py", "--project", REAL_PROJECT,
+                     "--model", "claude", "--prompt", "zero_shot", "--runs", "1"]
+            with mock.patch.object(sys, "argv", argv1):
                 rx.main()
-            with mock.patch.object(sys, "argv", argv):
-                rx.main()  # re-invoke, same cell
+
+            argv2 = ["run_experiments.py", "--project", REAL_PROJECT,
+                     "--model", "claude", "--prompt", "zero_shot", "--runs", "2"]
+            with mock.patch.object(sys, "argv", argv2):
+                rx.main()  # re-invoke, same cell, higher target -> tops up
 
             written = sorted(box.raw_outputs.glob("*.json"))
             self.assertEqual(
                 len(written), 2,
-                f"Re-running the same cell should add run2, not overwrite run1: "
-                f"found {[p.name for p in written]}"
+                f"Re-running with a higher --runs target should top up to "
+                f"run2, not clobber run1: found {[p.name for p in written]}"
             )
 
             argv = ["match.py", "--all"]
             with mock.patch.object(sys, "argv", argv):
                 match.main()
             self.assertEqual(len(list(box.scored.glob("*.match.json"))), 2)
+
+    def test_reinvoking_the_same_runs_target_is_idempotent(self):
+        # FIX 2026-07-25 (Cowork session): this is the actual daily-resumption
+        # scenario (re-running `--runs 2` once a day until the grid clears) -
+        # a cell already satisfied at the requested --runs target must NOT
+        # get more runs piled on top just because the same command ran again.
+        # Before this fix, `main()` unconditionally looped `range(args.runs)`
+        # every invocation, so re-running `--runs 2` daily kept adding 2 MORE
+        # runs to every cell forever, wasting scarce daily quota on
+        # already-satisfied cells instead of reaching untouched ones.
+        with _SandboxedPlaybook() as box:
+            argv = ["run_experiments.py", "--project", REAL_PROJECT,
+                    "--model", "claude", "--prompt", "zero_shot", "--runs", "2"]
+            with mock.patch.object(sys, "argv", argv):
+                rx.main()
+            with mock.patch.object(sys, "argv", argv):
+                rx.main()  # re-invoke, same target - must be a no-op
+
+            written = sorted(box.raw_outputs.glob("*.json"))
+            self.assertEqual(
+                len(written), 2,
+                f"Re-invoking the same --runs target should be idempotent, "
+                f"not add more runs: found {[p.name for p in written]}"
+            )
 
 
 if __name__ == "__main__":

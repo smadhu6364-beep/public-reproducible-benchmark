@@ -1355,8 +1355,29 @@ def main() -> None:
 
     n_failed = 0
     n_ok = 0
+    n_skipped_cells = 0
     for cell in cells:
-        for _ in range(args.runs):
+        # FIX 2026-07-25 (Cowork session): this used to be `for _ in
+        # range(args.runs):` unconditionally, which re-invoking `--runs 2`
+        # daily (the project's actual resumption plan - see CLAUDE.md's RQ2
+        # note) turned into "add 2 MORE runs every time", not "ensure 2
+        # total" - confirmed for real via run_config.jsonl: a cell already
+        # at 2/2 got run_index 3+4 appended (2026-07-24 re-run), and a cell
+        # at 1/2 got run_index 2+3 appended (landing at 3, one past target)
+        # instead of being topped up to exactly 2 or skipped outright. Every
+        # wasted call here is quota that doesn't reach an untouched cell,
+        # which matters a lot under Gemini's 20 req/day and SambaNova's
+        # ~6-7 calls/model/day real caps. next_free_run_index() - 1 is the
+        # count of runs already on disk (or reserved by a pending batch) for
+        # this exact combo, reusing the same append-only/batch-aware check
+        # already used to assign indices, so this doesn't duplicate or
+        # diverge from that logic.
+        already = next_free_run_index(cell.project_id, cell.model_label, cell.prompt_strategy) - 1
+        needed = max(0, args.runs - already)
+        if needed == 0:
+            n_skipped_cells += 1
+            continue
+        for _ in range(needed):
             run_index = next_free_run_index(cell.project_id, cell.model_label, cell.prompt_strategy)
             try:
                 out_path = run_one(cell.project_id, cell.model_label, cell.prompt_strategy, run_index, args.temperature, args.max_tokens)
@@ -1366,7 +1387,8 @@ def main() -> None:
                 print(f"[run] FAILED {cell.project_id} / {cell.model_label} / {cell.prompt_strategy} run{run_index}: {e}", file=sys.stderr)
                 n_failed += 1
 
-    print(f"\n[run_experiments] {n_ok} succeeded, {n_failed} failed.", file=sys.stderr)
+    print(f"\n[run_experiments] {n_ok} succeeded, {n_failed} failed, "
+          f"{n_skipped_cells} cell(s) already had >= --runs and were skipped.", file=sys.stderr)
     if n_failed and not n_ok:
         # Every single call failed - almost certainly a systemic problem (bad
         # keys, no network, etc.), not per-call noise. Exit non-zero so this

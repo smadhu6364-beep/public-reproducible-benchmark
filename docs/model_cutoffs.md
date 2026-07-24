@@ -112,3 +112,61 @@ aliases to; `Meta-Llama-3.3-70B-Instruct` reuses existing, solid research).
 Only `openai/gpt-oss-120b` remains genuinely unresolved - resolve it or
 explicitly exclude it from `pretraining_cutoff_report()`, per CLAUDE.md's
 "unknown = say unknown" rule, before running the real contamination check.
+
+## THIRD update (2026-07-23, Cowork session): `gemini-flash-latest` re-checked - real cutoff is materially different, not January 2025
+
+CLAUDE.md's own RQ2 note (the "REAL FULL-GRID ATTEMPT" addendum) already
+recorded, from a real 429 error body during an actual full-grid attempt,
+that `gemini-flash-latest` currently resolves to **`gemini-3.6-flash`** - not
+`gemini-2.5-flash`, the model the January 2025 date above was researched
+against. Re-researched directly rather than assume the old date carries over:
+
+| Project slug | Real model | Cutoff | Confidence |
+| --- | --- | --- | --- |
+| `claude` | `gemini-flash-latest` -> resolves to `gemini-3.6-flash` (confirmed via CLAUDE.md's real 429 error, not re-derived here) | **March 2026** | **Confirmed** - fetched `ai.google.dev/gemini-api/docs/models/gemini-3.6-flash` directly, which points to the model's official card at `deepmind.google/models/model-cards/gemini-3-6-flash/` (a real PDF, Published July 2026). States plainly under "Known Limitations": "The knowledge cutoff date for Gemini 3.6 Flash was March 2026." Do NOT confuse this with the page's separate "Latest update: July 2026" field - that is a release/refresh date, not a training cutoff, same distinction this file has flagged before for Qwen's announcement date. |
+
+**This supersedes the January 2025 figure in the very first table above for
+the `claude` slot specifically** - that figure was real and correctly sourced
+at the time, but for a different, now-unused model. January 2025 does NOT
+apply to what `.env` actually calls today. March 2026 is barely 4-5 months
+before this project's real run - worth flagging plainly in the contamination
+analysis, not softened: a cutoff this recent makes contamination against
+already-public World Bank/UK planning documents considerably more plausible
+than a January-2025 cutoff would have, depending on each document's
+publication date (check `corpus_manifest.csv` publication dates against
+March 2026 per-project, not just as one aggregate cutoff-vs-corpus
+comparison).
+
+## FOURTH update (2026-07-23, Cowork session): `gpt-oss-120b` - still not confirmed by OpenAI directly, one new data point, reported with the right caveats
+
+Checked further while other cutoff gaps were being closed. Found a real,
+legitimate academic source this time (not an aggregator blog) -
+[LLMLagBench (arXiv:2511.12116)](https://arxiv.org/abs/2511.12116), Pęzik et
+al., submitted 15 Nov 2025 - a peer-citable empirical benchmark specifically
+built to estimate LLM training cutoffs from behavior, cross-validated against
+publicly released information. It reports three different numbers for this
+exact model, not one:
+
+- **OpenAI's own declared cutoff: July 2024** (per the paper's own citation of
+  OpenAI's stated figure - this is the closest thing to a primary-source
+  number found so far, but it is being relayed via this paper's citation, not
+  independently confirmed here against an actual OpenAI page. The 3 OpenAI
+  sources checked directly in the earlier F6-era research - the model-card
+  blog post, the arXiv abstract, the Hugging Face card - still did not surface
+  this figure in the content actually retrieved here.)
+- **The paper's own benchmark-estimated boundary: ~September 2023** - notably
+  earlier than OpenAI's declared date, per the paper's empirical testing.
+- **The model's own self-reported cutoff when asked directly: September
+  2021** - the paper flags this as unreliable, well earlier than either other
+  figure.
+
+**Still not treating any single one of these as settled fact.** "Not
+confirmed" from the earlier table stands - what's changed is there's now a
+citable, real academic source with three candidate numbers instead of zero,
+which is more useful for a Limitations-section discussion of the genuine
+uncertainty here than pretending a clean single date exists. If this becomes
+load-bearing for the real contamination check, the responsible move is
+probably to report a range (Sept 2021-July 2024) with this paper cited,
+rather than pick one number, or to exclude this specific model from the
+quantitative contamination sub-analysis and discuss it qualitatively instead
+- a real methodology decision, not something to resolve by guessing.

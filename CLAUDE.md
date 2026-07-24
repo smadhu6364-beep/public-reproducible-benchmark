@@ -188,7 +188,13 @@ RQ3: Which risk categories do LLMs systematically miss or hallucinate?
     results/raw_outputs/ (append-only)
     results/scored/
     analysis/figures/
-    paper/               (Overleaf-linked, not stored here)
+    paper/               (tracked in this repo - corrected 2026-07-23, Madhu:
+                          the original "Overleaf-linked, not stored here"
+                          annotation was wrong as of F8's compliance check,
+                          which found real paper/main.tex content already
+                          committed here. Decision: keep it in the repo,
+                          fix the note rather than migrate - stays this way
+                          unless a future migration to Overleaf is decided.)
 
 ## Coding standards
 

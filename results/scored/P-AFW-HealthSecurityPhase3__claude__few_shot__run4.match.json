@@ -1,0 +1,203 @@
+{
+  "run_file": "P-AFW-HealthSecurityPhase3__claude__few_shot__run4.json",
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 4,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R05",
+      "similarity": 0.552,
+      "gen_category": "external",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R04",
+      "similarity": 0.465,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Armed conflicts, civil unrest, and security crises in FCV regions (such as North-West/South-West Cameroon and CAR) threaten project execution and health service delivery.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Prepare and implement country-specific Security Risk Assessments and Security Management Plans, adapt flexible operational protocols, and closely coordinate with local authorities.",
+      "evidence": "Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Recurrent climate shocks, including major flooding events and extreme weather, increase vulnerability to waterborne disease outbreaks and damage health infrastructure.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate climate adaptation and green/resilient standards into facility refurbishments, establish early warning systems, and update emergency preparedness plans.",
+      "evidence": "Climate change contributed to at least 50 percent of natural disasters registered in Cameroon, CAR, Chad, and RoC... mostly constituted of floods"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Challenging macro-fiscal conditions, heavy national debt burdens, and low domestic health budget allocations risk delaying project co-funding and long-term financial sustainability.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide technical assistance to strengthen Domestic Resource Mobilization, establish Medium-Term Expenditure Frameworks, and explore public-private partnerships.",
+      "evidence": "A challenging macro-fiscal outlook and high poverty levels make the region particularly vulnerable to shocks"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Weak institutional procurement capacity and limited market competition in fragile settings create substantial contract management delays and market bottlenecks.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Deploy qualified procurement specialists, provide fiduciary training, adopt fit-for-purpose flexible procurement in FCV areas, and utilize STEP for real-time tracking.",
+      "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings."
+    },
+    {
+      "risk_id": "R05",
+      "description": "High volume of decentralized workshops, local training sessions, and field operations creates risks of questionable or undocumented financial expenditures.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Disseminate standardized financial manuals down to local implementation partners, customize accounting software, and conduct regular internal and external financial audits.",
+      "evidence": "several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures in Cameroon."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Expansion of laboratory diagnostics and healthcare interventions risks generating hazardous medical waste, toxic chemical residues, and biological contamination.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Update and implement healthcare waste management plans, mandate biosafety and biosecurity protocols, and train laboratory personnel on safe waste disposal.",
+      "evidence": "laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Expanded deployment of health workers and community-level staff in target areas carries substantial risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit dedicated GBV specialists, enforce strict institutional codes of conduct, establish GBV-sensitive grievance redress mechanisms, and execute country SEA/SH Action Plans.",
+      "evidence": "The increased presence of new health workforce such as Community Health Workers... may create concerns of Sexual exploitation and abuse within communities."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate stakeholder engagement during project rollout risks excluding vulnerable, mobile, or marginalized populations (such as IDPs, refugees, and indigenous groups).",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement country-tailored Stakeholder Engagement Plans, deploy accessible Grievance Redress Mechanisms, and conduct targeted community outreach.",
+      "evidence": "Potential social risks are substantial and relate to: (i) inadequate stakeholder engagement... (ii) the exclusion of vulnerable or disadvantaged groups"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Outbreaks of public health emergencies risk diverting resources and medical personnel, causing severe disruptions in routine essential primary healthcare services.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Formulate and update health facility contingency plans, expand epidemic-ready primary healthcare networks, and routinely monitor routine service utilization indicators.",
+      "evidence": "after Cameroon's first COVID-19 case in March 2020, outpatient visits fell by 7 percent, immunizations dropped 5-7 percent"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Systemic gender barriers, mobility constraints, and domestic responsibilities restrict women's access to technical field epidemiology (FETP/FELTP) and veterinary training.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement proactive female candidate recruitment, offer flexible modular training formats, set gender targets, and conduct gender gap assessments across IHR core capacities.",
+      "evidence": "women dominate low-paid frontline roles but are largely absent from technical positions... partly due to limited access to training programs"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Highly porous borders coupled with refugee movements and migration create significant risks of unchecked cross-border transmission of infectious diseases.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Execute regional agreements for cross-border data sharing, establish surveillance and health facilities at Points of Entry (PoEs), and conduct joint cross-border simulations.",
+      "evidence": "HeSP-3 countries... face similar health security challenges driven by porous borders, displacement and frequent cross-border movement"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Rapid escalation of Antimicrobial Resistance (AMR) due to improper antibiotic usage threatens treatment efficacy and elevates mortality across human and animal health.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Operationalize National Action Plans for AMR, establish stewardship programs in health facilities, enforce regulatory guidelines on antibiotic use, and improve AMR surveillance.",
+      "evidence": "Central Africa is also significantly burdened by antimicrobial resistance (AMR). For instance, in CAR, the mortality rate associated with AMR is among the highest"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Interoperable digital disease surveillance platforms and cross-border information sharing pose risks regarding personal data protection breaches and ethical data security.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear legal guidelines and technical standards for processing personal health data in alignment with national privacy laws and international best practices.",
+      "evidence": "inadequate attention to ensure that guidelines established under the Program include considerations for and ethical data security protocols;"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Time-sensitive legal covenants requiring staffing, accounting software customization, and external auditor recruitment within tight post-effectiveness windows risk non-compliance delays.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Initiate early recruitment processes during project preparation, utilize Project Preparation Advances where available, and closely track legal covenant compliance.",
+      "evidence": "The Recipient shall, no later than six (6) months after the Effective Date, recruit an external auditor... customize existing accounting software"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk (Moderate), considering fragility, socio-political instability, violence and weak governance of beneficiary countries.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close engagement by the World Bank to coordinate activities with other key partners."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical design risk (Substantial), considering the complexities of coordinating national-level and regional-level activities to align and build on each other, and the different levels of readiness at country-level.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Exploring the possibility of a coordinated implementation arrangement with CEMAC as the lead technical coordination body for regional activities."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Weak institutional capacity for implementation and sustainability (Substantial), combined with overstretched or nonexistent PIUs in respective countries.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthening the existing PIUs and intensive capacity building and targeted TA for newly established PIUs."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk (Substantial) due to weak governance structures and inadequate FM systems.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on fiduciary processes."
+    },
+    {
+      "risk_id": "R05",
+      "description": "E&S risk (Substantial) given the security risks associated with service delivery in FCV (fragility, conflict, and violence) settings.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on managing E&S risks."
+    }
+  ]
+}

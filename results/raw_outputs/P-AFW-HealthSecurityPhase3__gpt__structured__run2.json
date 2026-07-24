@@ -1,0 +1,144 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:24:08.992801+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep\u202f1 \u2013 Frame the project  \n- **Objective / PDO:** \u201cIncrease regional collaboration and health system capacities to prevent, detect and respond to health emergencies in Western and Central Africa.\u201d (p.\u202f11\u201112)  \n- **Scope & Components:** Five countries (Cameroon, CAR, Chad, Republic of Congo, CEMAC) implementing five components (Prevention, Detection, Response, Program Management, Contingent Emergency Response). (p.\u202f11\u201113,\u202f15\u201116)  \n- **Delivery model:** Multiphase Programmatic Approach (MPA) with a Project Implementation Unit (PIU) in each country and a regional PC\u202fIU under CEMAC. (p.\u202f17\u201118,\u202f44\u201145)  \n- **Timeline:** Expected approval\u202f29\u2011Oct\u20112025; Expected closing\u202f31\u2011Dec\u20112030; Program closing\u202f31\u2011Jan\u20112032. (p.\u202f6\u20117)  \n- **Budget / Financing:** Total operation cost\u202fUS$\u202f290\u202fmillion; IDA financing\u202fUS$\u202f280\u202fmillion (150\u202fcredit\u202f+\u202f130\u202fgrant) plus trust\u2011fund and GFF grants. (p.\u202f7\u20119,\u202f36\u201138)  \n- **Key stakeholders:** World Bank, ministries of health (Cameroon, CAR, Chad, RoC), CEMAC, regional bodies (WAHO, Africa\u202fCDC), implementing agencies, donors (GFF, trust funds). (p.\u202f44\u201148,\u202f56\u201158)  \n- **External dependencies:** Regional coordination (RCC), cross\u2011border data sharing, climate\u2011change impacts, conflict/FCV, macro\u2011economic stability, donor funding streams. (p.\u202f2\u20114,\u202f22\u201124,\u202f31\u201133)\n\nStep\u202f2 \u2013 Category sweep (candidate risks with supporting text)  \n\n| # | Category | Candidate risk | Evidence (\u226425\u202fwords) |\n|---|----------|----------------|----------------------|\n| 1 | technical | Weak laboratory and surveillance capacity may limit detection/response. | \u201cHealth systems \u2026 are fragile, with limited laboratory diagnostic capabilities and weak surveillance capacity.\u201d |\n| 2 | schedule | Delays in recruiting required PIU staff and specialists. | \u201cLegal covenants require recruitment of specialists within 1\u20116\u202fmonths after Effective Date.\u201d |\n| 3 | financial | Fiduciary risk \u2013 overall financial\u2011management (FM) residual risk is substantial. | \u201cThe overall FM residual risk is assessed as Substantial.\u201d |\n| 4 | financial | Procurement risk \u2013 substantial due to delays, governance issues, weak contract management. | \u201cProcurement risk is rated Substantial due to delays, governance issues, weak contract management.\u201d |\n| 5 | financial | Currency\u2011exchange risk \u2013 DA will be in XAF while financing is in USD. | \u201cDesignated Accounts will be opened in XAF for receipt of funds.\u201d |\n| 6 | schedule | Conflict/FCV may disrupt field activities and timelines. | \u201cFragility, Conflict and Violence lead to large displacements and may disrupt service delivery.\u201d |\n| 7 | stakeholder | Inadequate stakeholder engagement could exclude vulnerable groups. | \u201cPotential social risks \u2026 relate to inadequate stakeholder engagement and exclusion of vulnerable groups.\u201d |\n| 8 | stakeholder | Coordination challenges among multiple ministries and regional bodies. | \u201cImplementation arrangements require coordination among multiple ministries; governance challenges identified as key risk.\u201d |\n| 9 | political_regulatory | Political instability (e.g., Cameroon\u2019s Northwest/South\u2011West) may halt services. | \u201cPolitical instability, particularly in the North\u2011West and South\u2011West regions, may disrupt service delivery.\u201d |\n|10| environmental | Civil\u2011works may generate waste, dust, emissions, occupational hazards. | \u201cEnvironmental risks are substantial and include waste, dust, emission, occupational health and safety.\u201d |\n|11| environmental | Climate change may increase floods and disease outbreaks, stressing infrastructure. | \u201cClimate change is a primary driver of health emergencies, increasing floods and disease outbreaks.\u201d |\n|12| external | Large IDP flows and security challenges threaten implementation. | \u201cFragility, Conflict and Violence resulted in 1.1\u202fmillion new IDPs in the region.\u201d |\n|13| political_regulatory | Non\u2011compliance with ESS/ESCP could trigger sanctions. | \u201cProject prepared under ESF; ESS1,2,3,4,5,10 relevant; compliance essential.\u201d |\n|14| external | Macroeconomic constraints and low domestic health funding create financing gaps. | \u201cMacroeconomic outlook challenging; low domestic health funding; high reliance on external aid.\u201d |\n\nStep\u202f3 \u2013 Evidence filter  \nAll 14 risks are directly supported by the cited statements; none are removed.\n\nStep\u202f4 \u2013 Assess & mitigate  \n\n| ID | Likelihood (1\u20115) | Impact (1\u20115) | Mitigation (concise) |\n|----|------------------|--------------|----------------------|\n| R01 | 4 | 5 | Accelerate lab upgrades, procure equipment, train staff, establish regional lab network, monitor SLIPTA ratings. |\n| R02 | 3 | 4 | Set a recruitment tracker, use accelerated hiring, provide incentives, and have standby consultants for critical roles. |\n| R03 | 4 | 4 | Update FM manuals, recruit external auditor, conduct quarterly internal audits, provide FM capacity\u2011building workshops. |\n| R04 | 3 | 4 | Hire experienced procurement specialists, conduct early market engagement, use STEP for real\u2011time tracking, strengthen contract\u2011management training. |\n| R05 | 2 | 3 | Open multi\u2011currency DA, include exchange\u2011rate buffer in budget, monitor FX movements, adjust disbursements as needed. |\n| R06 | 3 | 4 | Pre\u2011position supplies, use CERC funds for rapid response, adopt remote training, develop contingency work plans. |\n| R07 | 3 | 3 | Implement the Umbrella Stakeholder Engagement Plan, conduct regular community consultations, strengthen GRM and gender\u2011sensitive outreach. |\n| R08 | 3 | 3 | Formalise RCC terms of reference, schedule monthly coordination meetings, share joint work plans, use a single project\u2011wide information system. |\n| R09 | 3 | 4 | Monitor political developments, maintain liaison with local authorities, design flexible activity schedules, earmark contingency funds. |\n| R10 | 3 | 3 | Prepare site\u2011specific ESMPs, enforce waste\u2011management protocols, train workers on OHS, conduct regular environmental monitoring. |\n| R11 | 4 | 4 | Integrate climate\u2011resilient designs (green building, solar power), embed early\u2011warning climate data into surveillance, update NAPHS with climate scenarios. |\n| R12 | 4 | 4 | Conduct Security Risk Assessments, develop Security Management Plans, hire security specialists, coordinate with UN/NGO security units. |\n| R13 | 2 | 3 | Ensure ESCP is fully operational, train staff on ESS requirements, perform periodic compliance audits, embed ESS checks in M&E. |\n| R14 | 3 | 4 | Support domestic resource mobilisation (budget coding, medium\u2011term expenditure frameworks), align health\u2011security spending with national plans, seek additional donor pledges. |\n\nStep\u202f5 \u2013 Consolidate  \nAll 14 risks are retained; no duplicates identified.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient laboratory and surveillance capacity may limit detection and response to health emergencies.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Accelerate lab upgrades, procure equipment, train staff, establish regional lab network, monitor SLIPTA ratings.\",\n      \"evidence\": \"Health systems \u2026 are fragile, with limited laboratory diagnostic capabilities and weak surveillance capacity.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Delays in recruiting required PIU staff and specialists could postpone implementation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set a recruitment tracker, use accelerated hiring, provide incentives, and have standby consultants for critical roles.\",\n      \"evidence\": \"Legal covenants require recruitment of specialists within 1\u20116 months after Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Fiduciary risk due to substantial overall financial\u2011management residual risk.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Update FM manuals, recruit external auditor, conduct quarterly internal audits, provide FM capacity\u2011building workshops.\",\n      \"evidence\": \"The overall FM residual risk is assessed as Substantial.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Procurement risk rated substantial because of possible delays, weak contract management and governance issues.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced procurement specialists, conduct early market engagement, use STEP for real\u2011time tracking, strengthen contract\u2011management training.\",\n      \"evidence\": \"Procurement risk is rated Substantial due to delays, governance issues, weak contract management.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Currency\u2011exchange fluctuations may affect budgeting as disbursements are in XAF while financing is USD.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Open multi\u2011currency DA, include exchange\u2011rate buffer in budget, monitor FX movements, adjust disbursements as needed.\",\n      \"evidence\": \"Designated Accounts will be opened in XAF for receipt of funds.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Conflict and fragility could disrupt field activities and delay the schedule.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Pre\u2011position supplies, use CERC funds for rapid response, adopt remote training, develop contingency work plans.\",\n      \"evidence\": \"Fragility, Conflict and Violence lead to large displacements and may disrupt service delivery.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate stakeholder engagement may exclude vulnerable or disadvantaged groups.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement Umbrella Stakeholder Engagement Plan, conduct regular community consultations, strengthen GRM and gender\u2011sensitive outreach.\",\n      \"evidence\": \"Potential social risks \u2026 relate to inadequate stakeholder engagement and exclusion of vulnerable groups.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Coordination challenges among multiple ministries and regional bodies could cause implementation inefficiencies.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Formalise RCC terms of reference, schedule monthly coordination meetings, share joint work plans, use a single project\u2011wide information system.\",\n      \"evidence\": \"Implementation arrangements require coordination among multiple ministries; governance challenges identified as key risk.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Political instability in certain regions (e.g., Cameroon Northwest/South\u2011West) may halt service delivery.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor political developments, maintain liaison with local authorities, design flexible activity schedules, earmark contingency funds.\",\n      \"evidence\": \"Political instability, particularly in the North\u2011West and South\u2011West regions, may disrupt service delivery.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Civil\u2011works may generate waste, dust, emissions and occupational health hazards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare site\u2011specific ESMPs, enforce waste\u2011management protocols, train workers on OHS, conduct regular environmental monitoring.\",\n      \"evidence\": \"Environmental risks are substantial and include waste, dust, emission, occupational health and safety.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Climate change could increase floods and disease outbreaks, stressing health infrastructure.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate\u2011resilient designs (green building, solar power), embed early\u2011warning climate data into surveillance, update NAPHS with climate scenarios.\",\n      \"evidence\": \"Climate change is a primary driver of health emergencies, increasing floods and disease outbreaks.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Large IDP flows and security challenges may threaten project implementation.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct Security Risk Assessments, develop Security Management Plans, hire security specialists, coordinate with UN/NGO security units.\",\n      \"evidence\": \"Fragility, Conflict and Violence resulted in 1.1 million new IDPs in the region.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Non\u2011compliance with Environmental and Social Standards could trigger sanctions or project delays.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Ensure ESCP is fully operational, train staff on ESS requirements, perform periodic compliance audits, embed ESS checks in M&E.\",\n      \"evidence\": \"Project prepared under ESF; ESS1,2,3,4,5,10 relevant; compliance essential.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Macroeconomic constraints and low domestic health funding may create financing gaps.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Support domestic resource mobilisation (budget coding, medium\u2011term expenditure frameworks), align health\u2011security spending with national plans, seek additional donor pledges.\",\n      \"evidence\": \"Macroeconomic outlook challenging; low domestic health funding; high reliance on external aid.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient laboratory and surveillance capacity may limit detection and response to health emergencies.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Accelerate lab upgrades, procure equipment, train staff, establish regional lab network, monitor SLIPTA ratings.",
+        "evidence": "Health systems \u2026 are fragile, with limited laboratory diagnostic capabilities and weak surveillance capacity."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delays in recruiting required PIU staff and specialists could postpone implementation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set a recruitment tracker, use accelerated hiring, provide incentives, and have standby consultants for critical roles.",
+        "evidence": "Legal covenants require recruitment of specialists within 1\u20116 months after Effective Date."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Fiduciary risk due to substantial overall financial\u2011management residual risk.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Update FM manuals, recruit external auditor, conduct quarterly internal audits, provide FM capacity\u2011building workshops.",
+        "evidence": "The overall FM residual risk is assessed as Substantial."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Procurement risk rated substantial because of possible delays, weak contract management and governance issues.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire experienced procurement specialists, conduct early market engagement, use STEP for real\u2011time tracking, strengthen contract\u2011management training.",
+        "evidence": "Procurement risk is rated Substantial due to delays, governance issues, weak contract management."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Currency\u2011exchange fluctuations may affect budgeting as disbursements are in XAF while financing is USD.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Open multi\u2011currency DA, include exchange\u2011rate buffer in budget, monitor FX movements, adjust disbursements as needed.",
+        "evidence": "Designated Accounts will be opened in XAF for receipt of funds."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Conflict and fragility could disrupt field activities and delay the schedule.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Pre\u2011position supplies, use CERC funds for rapid response, adopt remote training, develop contingency work plans.",
+        "evidence": "Fragility, Conflict and Violence lead to large displacements and may disrupt service delivery."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate stakeholder engagement may exclude vulnerable or disadvantaged groups.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement Umbrella Stakeholder Engagement Plan, conduct regular community consultations, strengthen GRM and gender\u2011sensitive outreach.",
+        "evidence": "Potential social risks \u2026 relate to inadequate stakeholder engagement and exclusion of vulnerable groups."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Coordination challenges among multiple ministries and regional bodies could cause implementation inefficiencies.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Formalise RCC terms of reference, schedule monthly coordination meetings, share joint work plans, use a single project\u2011wide information system.",
+        "evidence": "Implementation arrangements require coordination among multiple ministries; governance challenges identified as key risk."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Political instability in certain regions (e.g., Cameroon Northwest/South\u2011West) may halt service delivery.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor political developments, maintain liaison with local authorities, design flexible activity schedules, earmark contingency funds.",
+        "evidence": "Political instability, particularly in the North\u2011West and South\u2011West regions, may disrupt service delivery."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Civil\u2011works may generate waste, dust, emissions and occupational health hazards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prepare site\u2011specific ESMPs, enforce waste\u2011management protocols, train workers on OHS, conduct regular environmental monitoring.",
+        "evidence": "Environmental risks are substantial and include waste, dust, emission, occupational health and safety."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Climate change could increase floods and disease outbreaks, stressing health infrastructure.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate\u2011resilient designs (green building, solar power), embed early\u2011warning climate data into surveillance, update NAPHS with climate scenarios.",
+        "evidence": "Climate change is a primary driver of health emergencies, increasing floods and disease outbreaks."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Large IDP flows and security challenges may threaten project implementation.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct Security Risk Assessments, develop Security Management Plans, hire security specialists, coordinate with UN/NGO security units.",
+        "evidence": "Fragility, Conflict and Violence resulted in 1.1 million new IDPs in the region."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Non\u2011compliance with Environmental and Social Standards could trigger sanctions or project delays.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Ensure ESCP is fully operational, train staff on ESS requirements, perform periodic compliance audits, embed ESS checks in M&E.",
+        "evidence": "Project prepared under ESF; ESS1,2,3,4,5,10 relevant; compliance essential."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Macroeconomic constraints and low domestic health funding may create financing gaps.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Support domestic resource mobilisation (budget coding, medium\u2011term expenditure frameworks), align health\u2011security spending with national plans, seek additional donor pledges.",
+        "evidence": "Macroeconomic outlook challenging; low domestic health funding; high reliance on external aid."
+      }
+    ]
+  },
+  "parse_error": null
+}

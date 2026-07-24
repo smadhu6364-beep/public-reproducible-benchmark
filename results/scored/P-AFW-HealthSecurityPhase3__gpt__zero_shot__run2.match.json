@@ -1,0 +1,318 @@
+{
+  "run_file": "P-AFW-HealthSecurityPhase3__gpt__zero_shot__run2.json",
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R05",
+      "similarity": 0.586,
+      "gen_category": "external",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R04",
+      "similarity": 0.577,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R02",
+      "similarity": 0.485,
+      "gen_category": "political_regulatory",
+      "gt_category": "technical",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.473,
+      "gen_category": "organizational",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Escalating conflict and violence in the region may disrupt project activities, limit access to target areas and endanger staff.",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Maintain security liaison, develop flexible implementation plans, pre\u2011position supplies, and activate contingency protocols with local authorities.",
+      "evidence": "Fragility in AFW is exacerbated by conflict and violence\u2026 regional conflicts, such as Boko Haram attacks in Cameroon and ongoing unrest in CAR (Section A2)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays in recruiting required PIU specialists (accountant, environmental, gender\u2011based violence, etc.) could stall project start\u2011up.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Launch early recruitment drives, use temporary contracts, and provide incentives to attract qualified staff before the effectiveness date.",
+      "evidence": "Recipient shall appoint, assign, or recruit an accountant, a knowledge management\u2026 specialist no later than one (1) month after the Effective Date (Legal Covenants)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Weak financial management capacity leads to inaccurate reporting, misallocation of funds and audit findings.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Update FM manuals, customize accounting software, recruit internal and external auditors, and provide World Bank\u2011led FM training and supervision.",
+      "evidence": "The overall FM residual risk rating is Substantial\u2026 FM risk assessment at concept for the project\u2026 rated as Substantial (Section 58\u201159)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Procurement delays, weak contract management and limited market competition in fragile settings may cause cost overruns and schedule slips.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Hire experienced procurement specialists, conduct early market engagement, use STEP for real\u2011time monitoring, and strengthen contract\u2011management training.",
+      "evidence": "Procurement Risks include delays, governance issues, weak contract management\u2026 mitigation measures include hiring experienced procurement specialists (Section 64\u201165)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Construction and civil works generate waste, dust, emissions and occupational hazards that could affect nearby communities.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Prepare site\u2011specific ESMPs, enforce waste\u2011management plans, monitor air quality and provide PPE to workers.",
+      "evidence": "Environmental risks are considered Substantial\u2026 impacts on water quality; disposal of building/construction wastes; occupational health and safety (Section 66)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Increased community health workforce raises risk of sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct GBV/SEA risk assessments, recruit dedicated GBV specialists, train all staff on codes of conduct and establish reporting mechanisms.",
+      "evidence": "Overall project SEA/SH risks are judged to be substantial\u2026 increased presence of new health workforce such as CHWs may create concerns of Sexual exploitation and abuse (Section 72\u201173)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Climate change will increase vector\u2011borne diseases and flood\u2011related outbreaks, stressing health services and facilities.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate climate\u2011resilient designs in health infrastructure, embed climate data into surveillance systems, and develop climate\u2011adaptation response plans.",
+      "evidence": "Climate change contributed to at least 50\u202f% of natural disasters\u2026 increasing temperatures expanding malaria\u2011transmitting mosquitoes (Section 11)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Low domestic health financing and high out\u2011of\u2011pocket spending threaten long\u2011term sustainability of interventions.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Support domestic resource mobilization, integrate health security into national budgets, and assist governments in developing medium\u2011term expenditure frameworks.",
+      "evidence": "Cameroon\u2019s domestic funding for health per capita was US$10.79\u2026 high reliance on out\u2011of\u2011pocket payments (61\u202f%) (Annex\u202f2)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Governance weaknesses at national level may slow decision\u2011making and impede coordinated implementation.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthen steering committees, provide governance capacity\u2011building, and establish clear reporting lines and timelines.",
+      "evidence": "Key risks to successful implementation\u2026 governance challenges, economic constraints, and environmental vulnerabilities (Section\u202f16)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Failure to sign the MoU with WOAH within 90\u202fdays could limit regional animal health coordination.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Set internal deadline reminders, monitor compliance, and engage legal support to expedite MoU finalisation.",
+      "evidence": "Recipient shall, no later than ninety (90) days after the Effective Date, enter into a Memorandum of Understanding with WOAH (Legal Covenants)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Disruptions in global supply chains may delay delivery of vaccines, diagnostics and PPE needed for emergencies.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish buffer stocks, diversify suppliers, and develop logistics contingency plans with regional hubs.",
+      "evidence": "Support to access countermeasures through strengthening emergency logistics and supply chains, including stockpiling (Component\u202f3.1)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Fragmented data systems across human, animal and environmental sectors hinder real\u2011time surveillance and decision\u2011making.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop an interoperable digital platform, adopt common data standards, and train staff on integrated use of DHIS2 and LIMS.",
+      "evidence": "Developing interoperable digital platform\u2026 integration of OH data using DHIS2 (Annex\u202f1, Subcomponent\u202f2.1)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Under\u2011representation of women in technical epidemiology and veterinary roles limits gender\u2011responsive capacity.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Set gender quotas, conduct outreach to female candidates, and provide flexible training formats.",
+      "evidence": "Women remain underrepresented\u2026 project targets women training in FETP and veterinary fields (Section\u202f75\u201176)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Inadequate stakeholder engagement may exclude vulnerable groups, leading to grievances and project delays.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement robust GRM, conduct inclusive consultations, and adapt the Umbrella Stakeholder Engagement Plan to national contexts.",
+      "evidence": "Potential exclusion of vulnerable or disadvantaged groups\u2026 citizen engagement mechanisms such as consultations and GRMs (Section\u202f71\u201174)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Security threats to staff operating in FCV zones could cause injuries or evacuation, halting activities.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Prepare country\u2011specific Security Risk Assessments and Management Plans, provide security training and insurance, and adjust field schedules as needed.",
+      "evidence": "PIUs of FCV countries will also prepare a country\u2011specific Security Risk Assessment (SRA) and Security Risk Management Plan (SMP) (Section\u202f73)."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Customising existing accounting software after the effectiveness date may be delayed, affecting financial reporting.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Award IT contract early, set milestone\u2011based delivery schedule, and conduct user\u2011acceptance testing before go\u2011live.",
+      "evidence": "Customize the existing accounting software\u2026 no later than three (3) months after the Effective Date (Legal Covenants)."
+    },
+    {
+      "risk_id": "R17",
+      "description": "High turnover of health workers due to displacement and insecurity reduces programme continuity.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Offer retention incentives, remote training options, and establish backup staffing pools.",
+      "evidence": "Over 1.5\u202fmillion IDPs and refugees\u2026 internal displacement affecting health workforce (Section\u202f3)."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Poor quality or untimely M&E data could impede performance tracking and decision\u2011making.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Strengthen M&E capacity, conduct regular data quality audits, and use standardized reporting templates.",
+      "evidence": "PIUs will be responsible for M&E\u2026 ensure data harmonized and comparable (Section\u202fB)."
+    },
+    {
+      "risk_id": "R19",
+      "description": "Inadequate biosafety in laboratories may cause accidental pathogen exposure or contamination.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement biosafety training, certify labs to SLIPTA standards, and enforce strict SOPs for sample handling.",
+      "evidence": "Laboratory Quality and Capacity subcomponent includes biosafety & biosecurity (Section\u202f30)."
+    },
+    {
+      "risk_id": "R20",
+      "description": "Non\u2011compliance with ESF safeguards could trigger World Bank suspensions or project delays.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Finalize ESCP, LMP and SEP early, conduct regular E&S monitoring, and remediate any non\u2011compliance promptly.",
+      "evidence": "Project prepared under ESF\u2026 environmental risks substantial\u2026 site\u2011specific ESMPs required (Section\u202f65\u201166)."
+    },
+    {
+      "risk_id": "R21",
+      "description": "Macroeconomic instability may limit government ability to meet co\u2011financing commitments.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Negotiate flexible financing arrangements, maintain contingency reserves, and coordinate with development partners for supplemental funding.",
+      "evidence": "Challenging macro\u2011fiscal outlook and high poverty levels make the region vulnerable to shocks (Section\u202fA2)."
+    },
+    {
+      "risk_id": "R22",
+      "description": "Procurement fraud or corruption could erode trust and waste resources.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Apply World Bank Anti\u2011Fraud and Corruption Guidelines, conduct independent audits, and enforce strict vendor vetting.",
+      "evidence": "Procurement will follow World Bank Procurement Regulations\u2026 Anti\u2011Fraud and Corruption Guidelines (Section\u202f62)."
+    },
+    {
+      "risk_id": "R23",
+      "description": "Delay in preparing the Contingent Emergency Response Component (CERC) manual and emergency action plan may hinder rapid fund deployment.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Develop CERC manual and EAP within the first six months, obtain Bank approval early, and train staff on activation procedures.",
+      "evidence": "CERC component\u2026 Government will prepare a CERC Manual, submit an emergency action plan (Section\u202f35)."
+    },
+    {
+      "risk_id": "R24",
+      "description": "Weak coordination among multiple ministries and agencies can cause duplication and inefficiencies.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear terms of reference for the National Steering Committee and Technical Committee, and hold regular joint coordination meetings.",
+      "evidence": "Implementation under respective Ministries\u2026 PIU will coordinate\u2026 national steering committee and technical committee will oversee (Section\u202f44\u201145)."
+    },
+    {
+      "risk_id": "R25",
+      "description": "Improper handling of medical and laboratory waste may contaminate the environment and pose health hazards.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Adopt the National Healthcare Waste Management Plan, train staff on waste segregation, and monitor disposal practices.",
+      "evidence": "Project will take advantage of the existing National Healthcare Waste Management Plan\u2026 (Section\u202f23)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk (Moderate), considering fragility, socio-political instability, violence and weak governance of beneficiary countries.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close engagement by the World Bank to coordinate activities with other key partners."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical design risk (Substantial), considering the complexities of coordinating national-level and regional-level activities to align and build on each other, and the different levels of readiness at country-level.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Exploring the possibility of a coordinated implementation arrangement with CEMAC as the lead technical coordination body for regional activities."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Weak institutional capacity for implementation and sustainability (Substantial), combined with overstretched or nonexistent PIUs in respective countries.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthening the existing PIUs and intensive capacity building and targeted TA for newly established PIUs."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk (Substantial) due to weak governance structures and inadequate FM systems.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on fiduciary processes."
+    },
+    {
+      "risk_id": "R05",
+      "description": "E&S risk (Substantial) given the security risks associated with service delivery in FCV (fragility, conflict, and violence) settings.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on managing E&S risks."
+    }
+  ]
+}

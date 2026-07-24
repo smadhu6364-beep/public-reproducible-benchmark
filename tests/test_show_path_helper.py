@@ -106,7 +106,7 @@ class TestNoUnguardedRelativeToRepoRoot(unittest.TestCase):
         ("run_experiments.py", 849),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
         ("run_experiments.py", 1073),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
         ("run_experiments.py", 1176),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1363),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("run_experiments.py", 1384),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
         ("validate_threshold.py", 191),  # PILOT_PATH -> fixed constant, no CLI override
     }
 

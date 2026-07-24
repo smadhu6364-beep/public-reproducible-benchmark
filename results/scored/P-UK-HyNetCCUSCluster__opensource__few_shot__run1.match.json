@@ -1,0 +1,158 @@
+{
+  "run_file": "P-UK-HyNetCCUSCluster__opensource__few_shot__run1.json",
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R02",
+      "similarity": 0.636,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.494,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Failure to achieve the required carbon capture and storage capacity may hinder the UK's ability to meet its net zero targets.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Regular monitoring and evaluation of the project's progress, identification of potential bottlenecks, and implementation of contingency plans.",
+      "evidence": "Section 2.2.1: Rationale for Intervention"
+    },
+    {
+      "risk_id": "R02",
+      "description": "High upfront costs and lack of cost-effective private insurance products may deter private sector investment in CCUS projects.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Government provision of funding and guarantees to support the development of CCUS projects, and the creation of a commercial framework to reduce investor risk.",
+      "evidence": "Section 4.1.2: Key Commercial Principles"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in the development and deployment of CCUS technology may hinder the UK's ability to meet its net zero targets.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Regular monitoring and evaluation of the project's progress, identification of potential bottlenecks, and implementation of contingency plans.",
+      "evidence": "Section 2.2.1: Rationale for Intervention"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Insufficient public awareness and acceptance of CCUS technology may hinder its adoption and deployment.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Public engagement and education campaigns to raise awareness and address concerns about CCUS technology.",
+      "evidence": "Section 6.2: Stakeholder management and communications"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Changes in government policies or regulations may impact the viability of CCUS projects.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Regular monitoring of government policies and regulations, and engagement with policymakers to ensure that CCUS projects are supported and enabled.",
+      "evidence": "Section 2.2.4: Strengthening the UK Union"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Technical difficulties or failures in the CCUS system may impact its effectiveness and safety.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Regular monitoring and maintenance of the CCUS system, and implementation of contingency plans in case of technical difficulties or failures.",
+      "evidence": "Section 3.3.1: Identification of Impacts"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate funding or resource allocation may hinder the development and deployment of CCUS projects.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Secure funding and resource allocation for CCUS projects, and regular monitoring and evaluation of their progress.",
+      "evidence": "Section 5.2: Affordability"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate stakeholder engagement and communication may hinder the development and deployment of CCUS projects.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Regular stakeholder engagement and communication, and implementation of strategies to address concerns and build support for CCUS projects.",
+      "evidence": "Section 6.2: Stakeholder management and communications"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Inadequate risk management and mitigation strategies may impact the viability and effectiveness of CCUS projects.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implementation of robust risk management and mitigation strategies, and regular monitoring and evaluation of their effectiveness.",
+      "evidence": "Section 6.7: Risk management"
+    },
+    {
+      "risk_id": "R10",
+      "description": "External factors such as changes in global energy markets or technological advancements may impact the viability and effectiveness of CCUS projects.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Regular monitoring of external factors, and implementation of strategies to adapt to changes and ensure the continued viability and effectiveness of CCUS projects.",
+      "evidence": "Section 2.2.1: Rationale for Intervention"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets. [Strategic Case risk T1SR1, Section 2.5 'Identify high level potential risks', p.20-21; source rating: High/Possible.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Contractual mechanisms ensure HMG only takes on specific risks where appropriate, with liability limited and counterparties incentivised to control costs; governance mechanisms monitor costs and provide early warning of overruns; contingent liability exposure is accurately monitored."
+    },
+    {
+      "risk_id": "R02",
+      "description": "There is a risk that the programme does not realise its intended benefits for Track-1. [Strategic Case risk T1SR3, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Projects undergo detailed technical assurance and financial due diligence; projects must meet Initial Conditions Precedent (ICPs) before contracts take effect and Operational CPs thereafter, with LCCC able to terminate and avoid paying for an underperforming project; contractual mechanisms allocate performance-related risk to the private sector; continued engagement with the global Carbon Management Challenge to expand CCUS use and deliver UK trade benefits."
+    },
+    {
+      "risk_id": "R03",
+      "description": "There is a risk that the post-FID operating model across public and private sector parties will not operate successfully. [Strategic Case risk T1SR4, Section 2.5, p.20-21; source rating: Medium/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Progress of arm's-length bodies' (ALBs') capacity (funding, resource) and capability (knowledge, skills) to operate successfully post-FID is monitored through the Delivery Board; a DESNZ Cluster Sponsor Function will be set up between FID and Commercial Operations Date (COD) to mitigate risks to cluster delivery and system integration; readiness-testing mechanisms are in place ahead of FID; FY24/25 funding for the ALBs to fulfil their roles has been secured."
+    },
+    {
+      "risk_id": "R04",
+      "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework. [Strategic Case risk T1SR5, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "political_regulatory",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Key planned developments include amendments to the process for granting economic licences, a move toward a competitive allocation process for capture contracts, and evolution of transport & storage business models to reflect an increased private-sector role in managing cross-chain risks; cost-reduction levers (UK ETS pricing, CBAMs) are intended to help cultivate a self-sustaining industry and enable an HMG exit path."
+    }
+  ]
+}
