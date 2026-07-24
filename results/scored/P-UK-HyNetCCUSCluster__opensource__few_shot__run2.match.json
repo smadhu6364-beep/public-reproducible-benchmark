@@ -1,0 +1,166 @@
+{
+  "run_file": "P-UK-HyNetCCUSCluster__opensource__few_shot__run2.json",
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R03",
+      "similarity": 0.635,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R02",
+      "similarity": 0.566,
+      "gen_category": "stakeholder",
+      "gt_category": "organizational",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R01",
+      "similarity": 0.558,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Network underutilisation due to delayed or failed build-out projects",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Close monitoring of build-out project progress and identification of alternative users to fill spare network capacity",
+      "evidence": "Section 2.3.1: 'build-out\u2019 projects, Padeswood and Viridor, and top-up projects, are not within the scope of this FBC'"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Cost escalation due to changes in underlying costs, supply chain cost increases, and unwinding of optimism bias",
+      "category": "financial",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Regular cost reviews and updates, and implementation of cost assurance processes",
+      "evidence": "Section 4.2.1: 'While there has been significant cost escalation since the OBC, this has largely been driven by changes in underlying costs'"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Failure to achieve expected benefits due to lack of alternative abatement options for capture projects",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Identification of alternative abatement options and development of contingency plans",
+      "evidence": "Section 3.3.2: 'For each capture project, we have sought to identify the most plausible alternative abatement options'"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Regulatory risks due to uncertainty around subsidy control principles and compliance with the Subsidy Control Act 2022",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Close engagement with the Subsidy Advice Unit and compliance with subsidy control principles",
+      "evidence": "Section 4.2.5: 'The Track-1 CCUS Cluster Sequencing Process has been developed to align with the UK subsidy control regime'"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Cross-chain risks due to interdependencies between T&SCo and capture projects",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Identification and allocation of cross-chain risks to the party most suited to manage them",
+      "evidence": "Section 4.1.3: 'The business models have been designed to address the key market barriers which would otherwise restrict the deployment of CCUS'"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Technical risks due to complexity of CCUS technology and lack of commercial-scale deployment experience",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implementation of technical assurance processes and identification of technical risks",
+      "evidence": "Section 4.1.4.1: 'Technical assurance has been used in a targeted manner to test the data, assumptions, costs and risks put forward by delivery partners'"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Financial risks due to uncertainty around funding requirements and budget implications",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Regular budget reviews and updates, and identification of financial risks",
+      "evidence": "Section 5.1: 'The purpose of this section is to: a) assess affordability by comparing the subsidy levels in these contracts to the affordability constraints agreed with HMT'"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Stakeholder risks due to lack of public awareness and understanding of CCUS technology",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implementation of stakeholder engagement and communication strategies",
+      "evidence": "Section 6.2: 'The CCUS programme undertook a mapping exercise of all key stakeholders as part of the OBC submission'"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Environmental risks due to potential CO2 leakage and environmental impacts",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Implementation of environmental monitoring and mitigation measures",
+      "evidence": "Section 3.6.1: 'Wider Impacts and Place-Based Analysis'"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Governance risks due to complexity of post-FID operating model and need for effective coordination",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implementation of effective governance structures and coordination mechanisms",
+      "evidence": "Section 6.3: 'The programme needs to refresh its post-FID governance to align with the changes in roles and responsibilities'"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets. [Strategic Case risk T1SR1, Section 2.5 'Identify high level potential risks', p.20-21; source rating: High/Possible.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Contractual mechanisms ensure HMG only takes on specific risks where appropriate, with liability limited and counterparties incentivised to control costs; governance mechanisms monitor costs and provide early warning of overruns; contingent liability exposure is accurately monitored."
+    },
+    {
+      "risk_id": "R02",
+      "description": "There is a risk that the programme does not realise its intended benefits for Track-1. [Strategic Case risk T1SR3, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Projects undergo detailed technical assurance and financial due diligence; projects must meet Initial Conditions Precedent (ICPs) before contracts take effect and Operational CPs thereafter, with LCCC able to terminate and avoid paying for an underperforming project; contractual mechanisms allocate performance-related risk to the private sector; continued engagement with the global Carbon Management Challenge to expand CCUS use and deliver UK trade benefits."
+    },
+    {
+      "risk_id": "R03",
+      "description": "There is a risk that the post-FID operating model across public and private sector parties will not operate successfully. [Strategic Case risk T1SR4, Section 2.5, p.20-21; source rating: Medium/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Progress of arm's-length bodies' (ALBs') capacity (funding, resource) and capability (knowledge, skills) to operate successfully post-FID is monitored through the Delivery Board; a DESNZ Cluster Sponsor Function will be set up between FID and Commercial Operations Date (COD) to mitigate risks to cluster delivery and system integration; readiness-testing mechanisms are in place ahead of FID; FY24/25 funding for the ALBs to fulfil their roles has been secured."
+    },
+    {
+      "risk_id": "R04",
+      "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework. [Strategic Case risk T1SR5, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "political_regulatory",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Key planned developments include amendments to the process for granting economic licences, a move toward a competitive allocation process for capture contracts, and evolution of transport & storage business models to reflect an increased private-sector role in managing cross-chain risks; cost-reduction levers (UK ETS pricing, CBAMs) are intended to help cultivate a self-sustaining industry and enable an HMG exit path."
+    }
+  ]
+}

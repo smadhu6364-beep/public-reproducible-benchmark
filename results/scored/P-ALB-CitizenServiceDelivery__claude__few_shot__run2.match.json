@@ -1,0 +1,202 @@
+{
+  "run_file": "P-ALB-CitizenServiceDelivery__claude__few_shot__run2.json",
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R05",
+      "similarity": 0.612,
+      "gen_category": "stakeholder",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R04",
+      "similarity": 0.54,
+      "gen_category": "organizational",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R01",
+      "similarity": 0.532,
+      "gen_category": "financial",
+      "gt_category": "organizational",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "ADISA is a newly created agency lacking experience with World Bank fiduciary requirements, creating high procurement and implementation risks.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a dedicated PMU staffed with experienced procurement and financial management specialists, supported by continuous capacity-building and Bank oversight.",
+      "evidence": "ADISA is a newly-created agency and the PMU is not yet fully set up, the procurement risk rating is high."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The ambitious and compressed reform timeline creates schedule pressure that could lead to implementation delays across multiple agencies.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Phase implementation across a five-year horizon, structure results-based financing incentives tied to DLIs through 2020, and provide targeted technical assistance.",
+      "evidence": "The compressed implementation timeline is a potential risk, which is mitigated by the project's span and incentives to deliver up to 2020."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Focusing heavily on digital e-services and centralized urban service centers risks excluding poor, rural, elderly, and vulnerable populations with limited internet access.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish assisted digital access points, deploy non-digital information campaigns via grassroots groups, upgrade regional front offices, and monitor usage via user surveys.",
+      "evidence": "risk that the focus on state-of-the-art means for service delivery, such as online services or high-end urban CSCs, will diminish access of the poor and vulnerable"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Construction of the Citizen Service Center (CSC) building in Tirana may cause localized environmental impacts including dust, noise, waste, and worker safety hazards.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Enforce the Environmental Management Plan (EMP) as part of bidding and construction contracts, conduct regular site monitoring, and maintain regulatory permit compliance.",
+      "evidence": "Potential environmental impacts that are associated with new construction include dust and noise, waste generation, material supply, use of machinery on site"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Reforming administrative services across more than ten government agencies presents significant inter-agency coordination challenges.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Utilize governance bodies including the Inter-Ministerial Public Services Committee, Project Steering Committee, and Prime Minister's Delivery Unit to align agency activities.",
+      "evidence": "Inter-sectoral reforms, especially those that involve more than a dozen government agencies, necessarily entail complex coordination."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Civil servants and line agency managers may resist surrendering front-office responsibilities or changing entrenched administrative workflows.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Deploy a dedicated change management and communication program, engage key reform champions early, and align institutional performance incentives.",
+      "evidence": "Ministries, agencies and individual civil servants may not welcome ceding the front office function to CSC. Bureaucratic resistance could stifle efforts to improve back-office functions."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Ongoing operation, maintenance, and software licensing costs for new IT systems and CSC facilities could impose long-term financial sustainability challenges.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Incorporate system lifecycle and maintenance costs into long-term budget planning, offset by operational efficiency gains achieved through business process re-engineering.",
+      "evidence": "Ongoing operating costs are expected to include licenses and system operation and maintenance."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Incomplete legacy database digitization, missing ID numbers, and legal title disputes at IPRO could delay automated service delivery.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Re-engineer business processes, mandate National ID integration, and connect agency databases to the Government Interoperability Platform.",
+      "evidence": "National ID number is missing for most records, only 45 to 50 percent of the archive is digitized, and legal issues over ownership remain"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Failure to complete global prerequisite DLI #5 (Reform Policy Document approval and baseline survey) would prevent all RBF loan disbursements.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Prioritize and fast-track the Reform Policy Document approval and baseline survey completion during project preparation using PPF funds.",
+      "evidence": "This is a \u201cglobal\u201d DLI, which means that no disbursements under the RBF component will be made until DLI#5 is met."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Manual payroll systems and fragmented controls across participating agencies create risks of error in reporting Eligible Expenditure Programs (EEPs).",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct internal audits on payroll linkages, enforce dual signatures, and accelerate integration with the national HRMIS.",
+      "evidence": "payroll systems remain by and large manual systems, and the associated controls are manually based as well. System cannot communicate with each other."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Inadequate financial management software and lack of donor-project experience at ADISA could cause delays in financial reporting and audit compliance.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Recruit two finance specialists, procure dedicated accounting software during the PPF phase, and adopt a detailed Financial Management Manual.",
+      "evidence": "Neither MIPA, nor the recently constituted ADISA have previous experience in implementation of large donor funded operations, therefore capacity strengthening would be recommended"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Failure to achieve and verify agreed Disbursement-Linked Indicators (DLIs) will result in withheld loan disbursements under the Results-Based Financing component.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide targeted technical assistance for business process re-engineering, software deployment, and front-office upgrades, backed by third-party verification.",
+      "evidence": "Where achievement of a DLI cannot be verified, an amount equivalent to the price of that DLI will be withheld."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Institutional capacity poses challenges to delivering the reform effort, despite very high leadership commitment and fast-paced GoA initiation of reforms.",
+      "category": "organizational",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project Preparation Facility (PPF) is designed to assist capacity building for the implementing agency; the TA part of the loan continues building capacity to deliver, addressing the most pressing capacity needs."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Fiduciary risks related to the new form of financial instrument used in Albania.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the fiduciary risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Technical design risk, named alongside the fiduciary risk as being addressed by the same TA support (fiduciary and budget specialists in the PMU); not separately elaborated beyond this.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the technical design risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Stakeholder risks arising from inter-agency coordination.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by strong emphasis on coordination mechanisms in the design of the operation."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bureaucratic resistance to enhanced transparency and simplification of administrative processes.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated in part through high-level leadership and engagement, and through citizen feedback arrangements that help pinpoint poor performance and corruption."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Political cycle risk from elections coming up in 2017, which could disrupt reform continuity and government commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by making early progress in showing results and ensuring a broad constituency of support for the project's objectives and activities among the leadership of participating institutions and service users."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:28:11.677598+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate stakeholder engagement may lead to ineffective project implementation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a stakeholder engagement plan to ensure active participation and feedback\",\n      \"evidence\": \"Section V. GRIEVANCE REDRESS SERVICES\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial management risks may lead to inefficient use of project funds\",\n      \"category\": \"financial\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust financial management systems and conduct regular audits\",\n      \"evidence\": \"Section IV. B. Fiduciary\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement risks may lead to delays or inefficiencies in project implementation\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a comprehensive procurement plan and conduct regular monitoring\",\n      \"evidence\": \"Section IV. B. (ii) Procurement\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental and social risks may lead to negative impacts on local communities\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct environmental and social impact assessments and develop mitigation plans\",\n      \"evidence\": \"Section D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Health security risks may lead to outbreaks or epidemics\",\n      \"category\": \"technical\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust health security measures, including surveillance and emergency response plans\",\n      \"evidence\": \"Section I. STRATEGIC CONTEXT\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Climate change may exacerbate health security risks\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate change considerations into health security planning and implementation\",\n      \"evidence\": \"Section C. Relevance to Higher Level Objectives\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate gender considerations may lead to ineffective project implementation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate gender considerations into project planning and implementation\",\n      \"evidence\": \"Section 75. Analysis\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate laboratory capacity may lead to delays in disease diagnosis and response\",\n      \"category\": \"technical\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Strengthen laboratory capacity, including equipment and training\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION, Component 2\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate human resources may lead to ineffective project implementation\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a comprehensive human resources plan, including training and capacity building\",\n      \"evidence\": \"Section III. IMPLEMENTATION ARRANGEMENTS\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate contingency planning may lead to ineffective response to health emergencies\",\n      \"category\": \"technical\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop comprehensive contingency plans, including emergency response protocols\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION, Component 3\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate stakeholder engagement may lead to ineffective project implementation",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a stakeholder engagement plan to ensure active participation and feedback",
+        "evidence": "Section V. GRIEVANCE REDRESS SERVICES"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial management risks may lead to inefficient use of project funds",
+        "category": "financial",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Implement robust financial management systems and conduct regular audits",
+        "evidence": "Section IV. B. Fiduciary"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement risks may lead to delays or inefficiencies in project implementation",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a comprehensive procurement plan and conduct regular monitoring",
+        "evidence": "Section IV. B. (ii) Procurement"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental and social risks may lead to negative impacts on local communities",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Conduct environmental and social impact assessments and develop mitigation plans",
+        "evidence": "Section D. Environmental and Social"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Health security risks may lead to outbreaks or epidemics",
+        "category": "technical",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Implement robust health security measures, including surveillance and emergency response plans",
+        "evidence": "Section I. STRATEGIC CONTEXT"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Climate change may exacerbate health security risks",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate change considerations into health security planning and implementation",
+        "evidence": "Section C. Relevance to Higher Level Objectives"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate gender considerations may lead to ineffective project implementation",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate gender considerations into project planning and implementation",
+        "evidence": "Section 75. Analysis"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate laboratory capacity may lead to delays in disease diagnosis and response",
+        "category": "technical",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Strengthen laboratory capacity, including equipment and training",
+        "evidence": "Section II. PROJECT DESCRIPTION, Component 2"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate human resources may lead to ineffective project implementation",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a comprehensive human resources plan, including training and capacity building",
+        "evidence": "Section III. IMPLEMENTATION ARRANGEMENTS"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate contingency planning may lead to ineffective response to health emergencies",
+        "category": "technical",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop comprehensive contingency plans, including emergency response protocols",
+        "evidence": "Section II. PROJECT DESCRIPTION, Component 3"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,50 @@
+{
+  "run_file": "P-UK-HyNetCCUSCluster__claude__zero_shot__run1.json",
+  "project_id": "P-UK-HyNetCCUSCluster",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "There is a risk that government (HMG) is exposed to increased costs for Track-1 post-Financial Investment Decision (FID), and that cost pressures are unaffordable within delegated budgets. [Strategic Case risk T1SR1, Section 2.5 'Identify high level potential risks', p.20-21; source rating: High/Possible.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Contractual mechanisms ensure HMG only takes on specific risks where appropriate, with liability limited and counterparties incentivised to control costs; governance mechanisms monitor costs and provide early warning of overruns; contingent liability exposure is accurately monitored."
+    },
+    {
+      "risk_id": "R02",
+      "description": "There is a risk that the programme does not realise its intended benefits for Track-1. [Strategic Case risk T1SR3, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Projects undergo detailed technical assurance and financial due diligence; projects must meet Initial Conditions Precedent (ICPs) before contracts take effect and Operational CPs thereafter, with LCCC able to terminate and avoid paying for an underperforming project; contractual mechanisms allocate performance-related risk to the private sector; continued engagement with the global Carbon Management Challenge to expand CCUS use and deliver UK trade benefits."
+    },
+    {
+      "risk_id": "R03",
+      "description": "There is a risk that the post-FID operating model across public and private sector parties will not operate successfully. [Strategic Case risk T1SR4, Section 2.5, p.20-21; source rating: Medium/Possible.]",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Progress of arm's-length bodies' (ALBs') capacity (funding, resource) and capability (knowledge, skills) to operate successfully post-FID is monitored through the Delivery Board; a DESNZ Cluster Sponsor Function will be set up between FID and Commercial Operations Date (COD) to mitigate risks to cluster delivery and system integration; readiness-testing mechanisms are in place ahead of FID; FY24/25 funding for the ALBs to fulfil their roles has been secured."
+    },
+    {
+      "risk_id": "R04",
+      "description": "There is a risk of an unclear exit path for HMG from its role in the Track-1 commercial framework. [Strategic Case risk T1SR5, Section 2.5, p.20-21; source rating: High/Possible.]",
+      "category": "political_regulatory",
+      "sort_rating": null,
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Key planned developments include amendments to the process for granting economic licences, a move toward a competitive allocation process for capture contracts, and evolution of transport & storage business models to reflect an increased private-sector role in managing cross-chain risks; cost-reduction levers (UK ETS pricing, CBAMs) are intended to help cultivate a self-sustaining industry and enable an HMG exit path."
+    }
+  ]
+}

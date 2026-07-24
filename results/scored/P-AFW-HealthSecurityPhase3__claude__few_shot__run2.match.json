@@ -1,0 +1,211 @@
+{
+  "run_file": "P-AFW-HealthSecurityPhase3__claude__few_shot__run2.json",
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R05",
+      "similarity": 0.575,
+      "gen_category": "external",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R04",
+      "similarity": 0.568,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R02",
+      "similarity": 0.475,
+      "gen_category": "organizational",
+      "gt_category": "technical",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Armed conflict, civil unrest, and socio-political instability in participating countries could disrupt project execution and health service delivery.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Adopt flexible implementation strategies tailored to FCV areas, conduct Security Risk Assessments, and establish Security Risk Management Plans.",
+      "evidence": "Political instability, particularly in the North-West and South-West regions, may disrupt service delivery"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Extreme climate shocks, such as severe flooding and droughts, risk damaging health infrastructure and driving outbreaks of waterborne and vector-borne diseases.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate green, resilient design standards for health infrastructure and integrate climate shock alerts into digital health surveillance systems.",
+      "evidence": "More frequent flooding events in CAR and Chad drive recurrent cholera outbreaks and other waterborne diseases"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Macroeconomic instability, constrained fiscal space, and declining oil revenues in beneficiary countries pose risks to long-term domestic health security funding.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide technical assistance to integrate health security into Medium-Term Expenditure Frameworks and establish domestic health security budget tracking.",
+      "evidence": "macroeconomic constraints pose challenges for the long-term sustainability of health investments."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary weaknesses and decentralized project activities create risks of questionable expenditures and non-compliant financial management.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Customize project accounting software, mandate internal/external audits within statutory deadlines, and update procedures manuals for local partners.",
+      "evidence": "several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Limited market competition in fragile settings and weak contract management capacities could result in severe procurement delays and execution bottlenecks.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Recruit qualified procurement specialists, utilize STEP tracking in real-time, engage suppliers early, and apply flexible FCV procurement frameworks.",
+      "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Expanded laboratory operations and diagnostic testing generate chemical, biological, and medical waste that poses environmental and community safety hazards.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Update and implement Healthcare and Biomedical Waste Management Plans with strict protocols for hazardous waste handling, treatment, and disposal.",
+      "evidence": "laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Increased community health worker deployment and civil works generate risks of Sexual Exploitation and Abuse, Sexual Harassment, and Gender-Based Violence.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prepare country-specific SEA/SH Action Plans, recruit dedicated GBV specialists, train health workers, and establish GBV-sensitive grievance mechanisms.",
+      "evidence": "The overall project SEA/SH risks are judged to be substantial."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Marginalized and vulnerable populations, including IDPs, refugees, and rural communities, face potential exclusion from project benefits and health communications.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adapt Stakeholder Engagement Plans to national contexts, implement inclusive risk communication strategies, and establish operational local Grievance Redress Mechanisms.",
+      "evidence": "Potential social risks are substantial and relate to... the exclusion of vulnerable or disadvantaged groups"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Insufficient multisectoral coordination across human, animal, and environmental health sectors risks delaying disease outbreak detection and containment.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Operationalize subnational, national, and regional One Health coordination platforms and execute cross-border information-sharing agreements.",
+      "evidence": "Central African countries struggle to prevent, detect, and respond to health emergencies due to... insufficient multisectoral coordination."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Gender disparities and societal barriers limit female health workers' access to advanced field epidemiology and veterinary epidemiology training programs.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Conduct targeted outreach for female health workers, establish gender targets in FETP/ISAVET programs, and offer flexible training formats.",
+      "evidence": "In AFW, women dominate low-paid frontline roles but are largely absent from technical positions"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Delays in recruiting and establishing fully staffed Project Implementation Units could derail initial project launch and activity schedules.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Enforce strict legal covenant deadlines for key PIU specialist recruitment and utilize Project Preparation Advances where available.",
+      "evidence": "The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit an accountant... environmental specialist"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Inadequate data security and privacy protocols during digital surveillance and cross-border data sharing could compromise sensitive health information.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish ethical data governance guidelines and data security protocols for digital surveillance systems in compliance with national laws and best practices.",
+      "evidence": "inadequate attention to ensure that guidelines established under the Program include considerations for and ethical data security protocols"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Civil works for laboratory construction and health facility rehabilitation may lead to involuntary land acquisition or land use restrictions.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Perform environmental and social screening for all civil works, prepare site-specific Resettlement Plans as needed, and exclude physical displacement.",
+      "evidence": "Potential social risks are substantial and relate to... land acquisition impacts associated with new constructions"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Public health emergencies threaten to overwhelm health facilities and divert resources away from routine primary care and maternal and child services.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop essential health service contingency plans, deploy epidemic-ready primary health care networks, and routinely monitor service delivery metrics.",
+      "evidence": "Prior epidemics show that future health emergencies could further strain health systems... disrupt services like maternal and child health"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk (Moderate), considering fragility, socio-political instability, violence and weak governance of beneficiary countries.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close engagement by the World Bank to coordinate activities with other key partners."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical design risk (Substantial), considering the complexities of coordinating national-level and regional-level activities to align and build on each other, and the different levels of readiness at country-level.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Exploring the possibility of a coordinated implementation arrangement with CEMAC as the lead technical coordination body for regional activities."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Weak institutional capacity for implementation and sustainability (Substantial), combined with overstretched or nonexistent PIUs in respective countries.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthening the existing PIUs and intensive capacity building and targeted TA for newly established PIUs."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk (Substantial) due to weak governance structures and inadequate FM systems.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on fiduciary processes."
+    },
+    {
+      "risk_id": "R05",
+      "description": "E&S risk (Substantial) given the security risks associated with service delivery in FCV (fragility, conflict, and violence) settings.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on managing E&S risks."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 3,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:20:19.343062+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Conflict, violent insurgency, and armed instability in project areas (such as Northwest/Southwest Cameroon, CAR, and Lake Chad Basin) can disrupt service delivery, restrict access for project staff, and delay implementation.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement Security Risk Management Plans (SMPs), utilize flexible implementation strategies tailored for FCV settings, and work with local community actors.\",\n      \"evidence\": \"Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Climate shocks, including recurrent severe floods and extreme heatwaves, can damage health infrastructure, displace populations, and trigger vector-borne and waterborne disease outbreaks.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construct and rehabilitate health infrastructure using climate-resilient and green solutions (e.g., EDGE level 1 standards, solar power) and integrate climate shock alerts with disease surveillance.\",\n      \"evidence\": \"Climate change contributed to at least 50 percent of natural disasters registered in Cameroon, CAR, Chad, and RoC... mostly constituted of floods, epidemics, and droughts.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Decentralized project activities involving workshops, trainings, and local-level capacity building risk generating questionable or undocumented expenditures, compromising fiduciary compliance.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adapt and enforce clear financial management procedures manuals, customize accounting software for project bookkeeping, and conduct regular internal and external audits.\",\n      \"evidence\": \"Several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures in Cameroon.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Macroeconomic pressures, public debt burdens, and declining revenues across participating countries may cause domestic co-financing shortfalls and hinder long-term financial sustainability of health security systems.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide technical assistance to ministries of finance for medium-term expenditure frameworks, budget coding for health security, and pilot public-private partnership models.\",\n      \"evidence\": \"A challenging macro-fiscal outlook and high poverty levels make the region particularly vulnerable to shocks\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Procurement delays, weak contract management, and limited supplier competition in fragile/FCV environments can hamper the timely acquisition of laboratory equipment, medical supplies, and civil works contracts.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Hire qualified procurement specialists, conduct early market engagement, utilize STEP in real-time, and explore joint regional procurement arrangements.\",\n      \"evidence\": \"Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"The deployment of project workers and community health personnel into local communities risks increasing Sexual Exploitation and Abuse/Sexual Harassment (SEA/SH) incidents, exacerbated by weak institutional reporting mechanisms.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and execute country-specific SEA/SH Action Plans, recruit dedicated GBV specialists, enforce worker codes of conduct, and establish GBV-sensitive grievance redress mechanisms.\",\n      \"evidence\": \"The overall project SEA/SH risks are judged to be substantial... lack of training programs on SEA/SH prevention, management in health sector\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Increased laboratory testing, disease surveillance, and facility operations generate hazardous biomedical, chemical, and healthcare waste that poses environmental and community health contamination risks if improperly managed.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Update and implement Biomedical and Healthcare Waste Management Plans, provide bio-safety/biosecurity training, and equip facilities with adequate waste management systems.\",\n      \"evidence\": \"laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Incompatible national health surveillance platforms, lack of standardized protocols, and delayed cross-border communication can prevent early detection and coordinated response to transboundary epidemics.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish regional signed agreements, standardize data protocols via CEMAC and WAHO, and deploy interoperable digital disease surveillance platforms (e.g., DHIS2, COHIS).\",\n      \"evidence\": \"Disease outbreaks often cross borders, making coordinated cross-border collaboration essential, as fragmented efforts hinder effective response.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Chronic shortages and skill gaps among frontline epidemiologists, laboratory technicians, and veterinary health workers could hamper disease prevention, surveillance, and emergency outbreak response.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Roll out multi-level Field Epidemiology Training Programs (FETP/FELTP) and In-Service Applied Veterinary Epidemiology Training (ISAVET), and implement multidisciplinary workforce plans.\",\n      \"evidence\": \"The region commonly faces significant gaps in... the health workforce's ability to perform disease surveillance, preparedness, and response functions.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Gender disparities and systemic barriers prevent women health workers from accessing formal epidemiology and veterinary training, resulting in gender-blind emergency response strategies.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct proactive recruitment outreach, offer flexible training formats, set gender targets (e.g. 30%+ female trainees), and perform systematic gender gap assessments across IHR capacities.\",\n      \"evidence\": \"women remain underrepresented in formal epidemiological training and decision-making.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"The diversion of health facility resources, staff, and supplies to epidemic response during major health crises risks causing severe drops in routine primary care, maternal, and child health service coverage.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and update contingency plans for essential health service delivery, establish referral networks, deploy mobile health units, and routinely monitor PHC service utilization.\",\n      \"evidence\": \"Reductions in the provision of care and care-seeking behaviors... decreased the effective delivery of essential health services for other health conditions\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Failure to recruit key PIU personnel (specialists in FM, procurement, E&S, internal audit) within covenant deadlines (1-3 months post-effectiveness) can delay project disbursement and activity startup.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize Project Preparation Advances (PPAs) where available, prioritize early recruitment processes, and receive operational support from World Bank task teams.\",\n      \"evidence\": \"The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"High regional Antimicrobial Resistance (AMR) burden and improper antibiotic usage across human and animal health sectors could lead to treatment-resistant pathogens and increased mortality during outbreaks.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement National Action Plans on AMR, establish regional AMR surveillance standards, enforce antibiotic stewardship guidelines, and promote One Health IPC practices.\",\n      \"evidence\": \"Central Africa is also significantly burdened by antimicrobial resistance (AMR)... mortality rate associated with AMR is among the highest\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Construction and expansion of public health laboratories, emergency operation centers, or health facilities may require land acquisition or cause temporary economic displacement.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct Environmental and Social Screening, screen out activities requiring physical relocation, and prepare site-specific Resettlement Plans when land acquisition is unavoidable.\",\n      \"evidence\": \"Potential social risks are substantial and relate to... land acquisition impacts associated with new constructions\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Inadequate community outreach and lack of targeted communication platforms may lead to the exclusion of IDPs, refugees, indigenous peoples, and remote rural populations from disease surveillance and emergency care.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop inclusive Stakeholder Engagement Plans (SEPs) and Risk Communication and Community Engagement (RCCE) strategies tailored for mobile, indigenous, and vulnerable populations.\",\n      \"evidence\": \"inadequate stakeholder engagement to properly inform design and implementation; (ii) the exclusion of vulnerable or disadvantaged groups\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Conflict, violent insurgency, and armed instability in project areas (such as Northwest/Southwest Cameroon, CAR, and Lake Chad Basin) can disrupt service delivery, restrict access for project staff, and delay implementation.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement Security Risk Management Plans (SMPs), utilize flexible implementation strategies tailored for FCV settings, and work with local community actors.",
+        "evidence": "Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Climate shocks, including recurrent severe floods and extreme heatwaves, can damage health infrastructure, displace populations, and trigger vector-borne and waterborne disease outbreaks.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct and rehabilitate health infrastructure using climate-resilient and green solutions (e.g., EDGE level 1 standards, solar power) and integrate climate shock alerts with disease surveillance.",
+        "evidence": "Climate change contributed to at least 50 percent of natural disasters registered in Cameroon, CAR, Chad, and RoC... mostly constituted of floods, epidemics, and droughts."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Decentralized project activities involving workshops, trainings, and local-level capacity building risk generating questionable or undocumented expenditures, compromising fiduciary compliance.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adapt and enforce clear financial management procedures manuals, customize accounting software for project bookkeeping, and conduct regular internal and external audits.",
+        "evidence": "Several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures in Cameroon."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Macroeconomic pressures, public debt burdens, and declining revenues across participating countries may cause domestic co-financing shortfalls and hinder long-term financial sustainability of health security systems.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide technical assistance to ministries of finance for medium-term expenditure frameworks, budget coding for health security, and pilot public-private partnership models.",
+        "evidence": "A challenging macro-fiscal outlook and high poverty levels make the region particularly vulnerable to shocks"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Procurement delays, weak contract management, and limited supplier competition in fragile/FCV environments can hamper the timely acquisition of laboratory equipment, medical supplies, and civil works contracts.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Hire qualified procurement specialists, conduct early market engagement, utilize STEP in real-time, and explore joint regional procurement arrangements.",
+        "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings."
+      },
+      {
+        "risk_id": "R06",
+        "description": "The deployment of project workers and community health personnel into local communities risks increasing Sexual Exploitation and Abuse/Sexual Harassment (SEA/SH) incidents, exacerbated by weak institutional reporting mechanisms.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop and execute country-specific SEA/SH Action Plans, recruit dedicated GBV specialists, enforce worker codes of conduct, and establish GBV-sensitive grievance redress mechanisms.",
+        "evidence": "The overall project SEA/SH risks are judged to be substantial... lack of training programs on SEA/SH prevention, management in health sector"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Increased laboratory testing, disease surveillance, and facility operations generate hazardous biomedical, chemical, and healthcare waste that poses environmental and community health contamination risks if improperly managed.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Update and implement Biomedical and Healthcare Waste Management Plans, provide bio-safety/biosecurity training, and equip facilities with adequate waste management systems.",
+        "evidence": "laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Incompatible national health surveillance platforms, lack of standardized protocols, and delayed cross-border communication can prevent early detection and coordinated response to transboundary epidemics.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish regional signed agreements, standardize data protocols via CEMAC and WAHO, and deploy interoperable digital disease surveillance platforms (e.g., DHIS2, COHIS).",
+        "evidence": "Disease outbreaks often cross borders, making coordinated cross-border collaboration essential, as fragmented efforts hinder effective response."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Chronic shortages and skill gaps among frontline epidemiologists, laboratory technicians, and veterinary health workers could hamper disease prevention, surveillance, and emergency outbreak response.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Roll out multi-level Field Epidemiology Training Programs (FETP/FELTP) and In-Service Applied Veterinary Epidemiology Training (ISAVET), and implement multidisciplinary workforce plans.",
+        "evidence": "The region commonly faces significant gaps in... the health workforce's ability to perform disease surveillance, preparedness, and response functions."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Gender disparities and systemic barriers prevent women health workers from accessing formal epidemiology and veterinary training, resulting in gender-blind emergency response strategies.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Conduct proactive recruitment outreach, offer flexible training formats, set gender targets (e.g. 30%+ female trainees), and perform systematic gender gap assessments across IHR capacities.",
+        "evidence": "women remain underrepresented in formal epidemiological training and decision-making."
+      },
+      {
+        "risk_id": "R11",
+        "description": "The diversion of health facility resources, staff, and supplies to epidemic response during major health crises risks causing severe drops in routine primary care, maternal, and child health service coverage.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and update contingency plans for essential health service delivery, establish referral networks, deploy mobile health units, and routinely monitor PHC service utilization.",
+        "evidence": "Reductions in the provision of care and care-seeking behaviors... decreased the effective delivery of essential health services for other health conditions"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Failure to recruit key PIU personnel (specialists in FM, procurement, E&S, internal audit) within covenant deadlines (1-3 months post-effectiveness) can delay project disbursement and activity startup.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize Project Preparation Advances (PPAs) where available, prioritize early recruitment processes, and receive operational support from World Bank task teams.",
+        "evidence": "The Recipient shall, not later than one (1) month after the Effective Date, appoint, assign, or recruit"
+      },
+      {
+        "risk_id": "R13",
+        "description": "High regional Antimicrobial Resistance (AMR) burden and improper antibiotic usage across human and animal health sectors could lead to treatment-resistant pathogens and increased mortality during outbreaks.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement National Action Plans on AMR, establish regional AMR surveillance standards, enforce antibiotic stewardship guidelines, and promote One Health IPC practices.",
+        "evidence": "Central Africa is also significantly burdened by antimicrobial resistance (AMR)... mortality rate associated with AMR is among the highest"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Construction and expansion of public health laboratories, emergency operation centers, or health facilities may require land acquisition or cause temporary economic displacement.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Conduct Environmental and Social Screening, screen out activities requiring physical relocation, and prepare site-specific Resettlement Plans when land acquisition is unavoidable.",
+        "evidence": "Potential social risks are substantial and relate to... land acquisition impacts associated with new constructions"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Inadequate community outreach and lack of targeted communication platforms may lead to the exclusion of IDPs, refugees, indigenous peoples, and remote rural populations from disease surveillance and emergency care.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop inclusive Stakeholder Engagement Plans (SEPs) and Risk Communication and Community Engagement (RCCE) strategies tailored for mobile, indigenous, and vulnerable populations.",
+        "evidence": "inadequate stakeholder engagement to properly inform design and implementation; (ii) the exclusion of vulnerable or disadvantaged groups"
+      }
+    ]
+  },
+  "parse_error": null
+}

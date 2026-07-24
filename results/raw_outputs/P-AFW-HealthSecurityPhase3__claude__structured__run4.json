@@ -1,0 +1,144 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 4,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:22:42.886555+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project.\n- Objective: To increase regional collaboration and health system capacities to prevent, detect, and respond to health emergencies in Western and Central Africa (PrDO / PDO).\n- Scope / Components:\n  \u2022 Component 1: Prevention of Health Emergencies (US$21.77M)\n  \u2022 Component 2: Detection of Health Emergencies (US$127.26M)\n  \u2022 Component 3: Health Emergency Response (US$109.97M)\n  \u2022 Component 4: Program Management and Institutional Capacity (US$31.00M)\n  \u2022 Component 5: Contingent Emergency Response Component (US$0.00M)\n- Delivery Model: Investment Project Financing (IPF) under a Multiphase Programmatic Approach (MPA). Implemented via PIUs within Ministries of Health in Cameroon, Central African Republic (CAR), Chad, and Republic of Congo (RoC), along with regional implementation by the CEMAC Commission.\n- Timeline: Board approval expected October 29, 2025; Project closing December 31, 2030 (MPA Program closing January 31, 2032).\n- Budget: Total financing US$290M (US$280M IDA Credits/Grants + US$10M GFF Grant for Cameroon).\n- Key Stakeholders: Governments of Cameroon, CAR, Chad, RoC; CEMAC Commission; regional/international partners (WAHO, WOAH, WHO, Africa CDC); healthcare and veterinary personnel; local communities and vulnerable populations (IDPs, refugees).\n- External Dependencies: Inter-agency MoUs (WOAH, WAHO); security/FCV conditions in project areas; regional climate/flooding conditions.\n\nStep 2 - Category sweep.\n- Technical: Hazardous medical waste generation and lab safety risks; delays/challenges in integrating digital health surveillance systems (DHIS2, LIMS) across sectors.\n- Financial: Fiduciary risks and questionable expenditures in decentralized/remote activities; macro-fiscal strain and low domestic health spending impacting long-term financial sustainability.\n- Schedule: Delays in recruiting key PIU specialists (auditors, E&S, GBV experts) within strict post-effectiveness covenant deadlines (1-6 months); delays in signing mandatory inter-institutional MoUs (WOAH, WAHO).\n- Stakeholder: Risk of excluding vulnerable or marginalized groups (IDPs, refugees, indigenous peoples, rural women); Sexual Exploitation and Abuse / Sexual Harassment (SEA/SH) risks linked to civil works and health worker deployment.\n- Political / Regulatory: Active conflict, FCV, and insurgency disrupting project implementation in high-risk zones; delays/friction in ratifying cross-border data-sharing agreements and harmonized health policies.\n- Environmental: Severe climate shocks (floods, extreme heat) damaging healthcare infrastructure and driving disease outbreaks; localized environmental impacts from facility construction/refurbishment.\n- Organizational: Weak institutional capacity and cross-sectoral coordination mechanisms for One Health (human, animal, environmental); gender disparities restricting female participation in formal technical epidemiology/veterinary training.\n- External: Spillover of cross-border infectious disease outbreaks and large-scale refugee/IDP movements straining national healthcare capacity.\n\nStep 3 - Evidence filter.\n- R01 (Technical): Grounded in Section IV.D and Annexes noting medical waste generation from reagents, chemicals, and testing equipment.\n- R02 (Financial): Grounded in Annex 2 FM assessment highlighting risks of questionable expenditures in workshops, training, and local capacity-building.\n- R03 (Financial): Grounded in Section IV.A, Annex 2, and Annex 5 noting low domestic health funding, high out-of-pocket spending, and macro-fiscal constraints.\n- R04 (Schedule): Grounded in Legal Covenants requiring auditor recruitment and software customization within 1 to 6 months post-effectiveness.\n- R05 (Schedule): Grounded in CEMAC Legal Covenants mandating an MoU with WOAH within 90 days and WAHO collaboration within 30 days.\n- R06 (Stakeholder): Grounded in Section IV.D highlighting social risks related to the exclusion of vulnerable or disadvantaged groups.\n- R07 (Stakeholder): Grounded in Section IV.D classifying overall project SEA/SH risk as Substantial due to worker deployment and community presence.\n- R08 (Political/Regulatory): Grounded in Section I.A and Section IV.B(ii) citing conflict, Boko Haram attacks, and unrest in CAR/Chad.\n- R09 (Political/Regulatory): Grounded in Section I.D and Results Framework citing the baseline gap in formal cross-border data-sharing agreements.\n- R10 (Environmental): Grounded in Section I.B and Section IV.D detailing high climate vulnerability, flooding, and climate-sensitive disease outbreaks.\n- R11 (Environmental): Grounded in Section IV.D listing civil works impacts including construction waste, dust, noise, and occupational health and safety risks.\n- R12 (Organizational): Grounded in Section I.B citing weak institutional capacities and insufficient multi-sectoral One Health coordination.\n- R13 (Organizational): Grounded in Section IV.D (Gender) documenting female underrepresentation in epidemiological decision-making and technical training.\n- R14 (External): Grounded in Section I.A citing porous borders and over 1.5 million refugees/IDPs in Chad heightening cross-border health threats.\n\nStep 4 - Assess.\n- Each risk assigned Likelihood (1-5) and Impact (1-5) based on appraisal findings, accompanied by a grounded mitigation strategy.\n\nStep 5 - Consolidate.\n- 14 distinct, non-overlapping risks consolidated across all eight categories.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate handling, storage, and disposal of hazardous laboratory reagents, chemicals, and healthcare waste could cause environmental contamination and community health hazards.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Update and implement National Healthcare Waste Management Plans, provide laboratory biosafety training, and mandate standard waste management protocols across all supported facilities.\",\n      \"evidence\": \"laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Fiduciary risks and questionable expenditures arising from decentralized project activities, local-level capacity building, workshops, and emergency procurements in remote areas.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Adapt and disseminate financial management procedure manuals down to local implementation partners, customize accounting software, and mandate regular internal and external financial audits.\",\n      \"evidence\": \"several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Fiscal constraints, declining oil revenues, and low domestic health budget allocations in participating countries threaten the long-term financial sustainability of health security investments.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide technical assistance to integrate health security into Medium-Term Expenditure Frameworks, establish budget coding, and promote domestic resource mobilization and public-private partnerships.\",\n      \"evidence\": \"low government funding... led to a high reliance on household's out-of-pocket payments\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays in recruiting key PIU specialists (auditors, environmental, social, and GBV experts) and customizing accounting software within mandated legal covenant deadlines post-effectiveness.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize Project Preparation Advances (PPAs), fast-track recruitment procedures, and leverage qualified specialists from existing World Bank project implementation units.\",\n      \"evidence\": \"Recruit an external auditor... recruit an internal auditor... customize existing accounting software no later than three to six months after Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Delays in executing mandatory institutional agreements (such as CEMAC's MoU with WOAH within 90 days and WAHO collaboration within 30 days) delaying regional activity implementation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Initiate MoU drafting and inter-agency consultations during early project preparation, with close progress tracking by the Regional Coordination Committee.\",\n      \"evidence\": \"enter into a Memorandum of Understanding (the 'MoU') with the WOAH... no later than ninety (90) days after the Effective Date\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Exclusion of vulnerable or disadvantaged populations (IDPs, refugees, indigenous groups, rural women, and mobile populations) from emergency healthcare and health communication.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement country-specific Stakeholder Engagement Plans, Indigenous Peoples Plans, and tailored, inclusive Risk Communication and Community Engagement (RCCE) strategies.\",\n      \"evidence\": \"Potential social risks... relate to: (ii) the exclusion of vulnerable or disadvantaged groups\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Substantial risk of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH) associated with civil works labor influx and community deployment of health/community workers.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement country-specific SEA/SH Action Plans within two months of effectiveness, recruit dedicated GBV specialists, enforce worker codes of conduct, and establish GBV-sensitive GRMs.\",\n      \"evidence\": \"The overall project SEA/SH risks are judged to be substantial... increased presence of new health workforce... may create concerns\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Active armed conflict, FCV conditions, and political instability (e.g., Boko Haram attacks, regional unrest) obstructing project execution and access in fragile zones.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Prepare Security Risk Assessments and Security Management Plans, apply flexible procurement arrangements in FCV areas, and utilize third-party monitoring where direct access is constrained.\",\n      \"evidence\": \"Fragility in AFW is exacerbated by conflict and violence... Boko Haram attacks in Cameroon and ongoing unrest in CAR\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Regulatory bottlenecks and lack of cross-border agreements impeding real-time epidemiological data sharing, biological specimen transport, and synchronized regional outbreak responses.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Finance CEMAC to facilitate harmonized regional health security policies, establish standardized biological specimen transportation protocols, and execute formal cross-border data-sharing agreements.\",\n      \"evidence\": \"Regional signed agreements for cross-border information sharing on health security guided by the One Health principles.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Severe climate shocks such as flooding and extreme heat damaging health/laboratory infrastructure and triggering outbreaks of climate-sensitive vector- and waterborne diseases.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate green and resilient infrastructure design standards (EDGE certification), install solar backup power in laboratories, and integrate climate shock alerts into surveillance systems.\",\n      \"evidence\": \"More frequent flooding events in CAR and Chad drive recurrent cholera outbreaks... climate-sensitive disease risks\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Environmental degradation, occupational hazards, and community nuisances (dust, noise, construction waste) resulting from the construction and rehabilitation of laboratories and health facilities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Prepare site-specific Environmental and Social Management Plans (ESMPs) prior to civil works, enforce contractor safety standards, and implement proper waste disposal guidelines.\",\n      \"evidence\": \"Potential risks and impacts can include: (ii) disposal and management of building/construction wastes; (iii) occupational health and safety risks\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Weak institutional capacity and inter-ministerial coordination constraints across human, animal, and environmental health sectors impeding operationalization of the One Health approach.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish multi-sectoral National Steering Committees, provide fiduciary and operational coaching to PIU staff, and resource dedicated One Health coordination platforms.\",\n      \"evidence\": \"gaps are primarily due to... weak institutional capacities and governance mechanisms, and insufficient multisectoral coordination\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Gender disparities restricting female health professionals' access to formal advanced technical training programs (FETP/FELTP, ISAVET) and technical decision-making positions.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement targeted outreach and gender quotas to encourage female recruitment into field epidemiology and veterinary training, utilizing flexible training formats.\",\n      \"evidence\": \"women remain underrepresented in formal epidemiological training and decision-making\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Large cross-border influxes of refugees and internally displaced persons straining border health posts and local health service capacity during infectious disease outbreaks.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen point-of-entry (PoE) disease surveillance, establish cross-border emergency response mechanisms, and allocate health service delivery resources to refugee and host community facilities.\",\n      \"evidence\": \"Chad currently hosts over 1.5 million IDPs and refugees... Porous borders, migration... heighten cross-border health threats\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate handling, storage, and disposal of hazardous laboratory reagents, chemicals, and healthcare waste could cause environmental contamination and community health hazards.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Update and implement National Healthcare Waste Management Plans, provide laboratory biosafety training, and mandate standard waste management protocols across all supported facilities.",
+        "evidence": "laboratories will be supplied with reagents, chemicals, and equipment that may constitute medical waste once used."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Fiduciary risks and questionable expenditures arising from decentralized project activities, local-level capacity building, workshops, and emergency procurements in remote areas.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Adapt and disseminate financial management procedure manuals down to local implementation partners, customize accounting software, and mandate regular internal and external financial audits.",
+        "evidence": "several activities under the project like workshops, trainings and the local-level capacity building are at risk to generate questionable expenditures"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Fiscal constraints, declining oil revenues, and low domestic health budget allocations in participating countries threaten the long-term financial sustainability of health security investments.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide technical assistance to integrate health security into Medium-Term Expenditure Frameworks, establish budget coding, and promote domestic resource mobilization and public-private partnerships.",
+        "evidence": "low government funding... led to a high reliance on household's out-of-pocket payments"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays in recruiting key PIU specialists (auditors, environmental, social, and GBV experts) and customizing accounting software within mandated legal covenant deadlines post-effectiveness.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize Project Preparation Advances (PPAs), fast-track recruitment procedures, and leverage qualified specialists from existing World Bank project implementation units.",
+        "evidence": "Recruit an external auditor... recruit an internal auditor... customize existing accounting software no later than three to six months after Effective Date."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays in executing mandatory institutional agreements (such as CEMAC's MoU with WOAH within 90 days and WAHO collaboration within 30 days) delaying regional activity implementation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Initiate MoU drafting and inter-agency consultations during early project preparation, with close progress tracking by the Regional Coordination Committee.",
+        "evidence": "enter into a Memorandum of Understanding (the 'MoU') with the WOAH... no later than ninety (90) days after the Effective Date"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Exclusion of vulnerable or disadvantaged populations (IDPs, refugees, indigenous groups, rural women, and mobile populations) from emergency healthcare and health communication.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement country-specific Stakeholder Engagement Plans, Indigenous Peoples Plans, and tailored, inclusive Risk Communication and Community Engagement (RCCE) strategies.",
+        "evidence": "Potential social risks... relate to: (ii) the exclusion of vulnerable or disadvantaged groups"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Substantial risk of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH) associated with civil works labor influx and community deployment of health/community workers.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement country-specific SEA/SH Action Plans within two months of effectiveness, recruit dedicated GBV specialists, enforce worker codes of conduct, and establish GBV-sensitive GRMs.",
+        "evidence": "The overall project SEA/SH risks are judged to be substantial... increased presence of new health workforce... may create concerns"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Active armed conflict, FCV conditions, and political instability (e.g., Boko Haram attacks, regional unrest) obstructing project execution and access in fragile zones.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Prepare Security Risk Assessments and Security Management Plans, apply flexible procurement arrangements in FCV areas, and utilize third-party monitoring where direct access is constrained.",
+        "evidence": "Fragility in AFW is exacerbated by conflict and violence... Boko Haram attacks in Cameroon and ongoing unrest in CAR"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Regulatory bottlenecks and lack of cross-border agreements impeding real-time epidemiological data sharing, biological specimen transport, and synchronized regional outbreak responses.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Finance CEMAC to facilitate harmonized regional health security policies, establish standardized biological specimen transportation protocols, and execute formal cross-border data-sharing agreements.",
+        "evidence": "Regional signed agreements for cross-border information sharing on health security guided by the One Health principles."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Severe climate shocks such as flooding and extreme heat damaging health/laboratory infrastructure and triggering outbreaks of climate-sensitive vector- and waterborne diseases.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Incorporate green and resilient infrastructure design standards (EDGE certification), install solar backup power in laboratories, and integrate climate shock alerts into surveillance systems.",
+        "evidence": "More frequent flooding events in CAR and Chad drive recurrent cholera outbreaks... climate-sensitive disease risks"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Environmental degradation, occupational hazards, and community nuisances (dust, noise, construction waste) resulting from the construction and rehabilitation of laboratories and health facilities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Prepare site-specific Environmental and Social Management Plans (ESMPs) prior to civil works, enforce contractor safety standards, and implement proper waste disposal guidelines.",
+        "evidence": "Potential risks and impacts can include: (ii) disposal and management of building/construction wastes; (iii) occupational health and safety risks"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Weak institutional capacity and inter-ministerial coordination constraints across human, animal, and environmental health sectors impeding operationalization of the One Health approach.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish multi-sectoral National Steering Committees, provide fiduciary and operational coaching to PIU staff, and resource dedicated One Health coordination platforms.",
+        "evidence": "gaps are primarily due to... weak institutional capacities and governance mechanisms, and insufficient multisectoral coordination"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Gender disparities restricting female health professionals' access to formal advanced technical training programs (FETP/FELTP, ISAVET) and technical decision-making positions.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement targeted outreach and gender quotas to encourage female recruitment into field epidemiology and veterinary training, utilizing flexible training formats.",
+        "evidence": "women remain underrepresented in formal epidemiological training and decision-making"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Large cross-border influxes of refugees and internally displaced persons straining border health posts and local health service capacity during infectious disease outbreaks.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Strengthen point-of-entry (PoE) disease surveillance, establish cross-border emergency response mechanisms, and allocate health service delivery resources to refugee and host community facilities.",
+        "evidence": "Chad currently hosts over 1.5 million IDPs and refugees... Porous borders, migration... heighten cross-border health threats"
+      }
+    ]
+  },
+  "parse_error": null
+}

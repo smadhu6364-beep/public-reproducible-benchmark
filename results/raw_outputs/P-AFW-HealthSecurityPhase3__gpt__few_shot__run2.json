@@ -1,0 +1,180 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:23:33.409361+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delay in recruiting required specialist staff (accountant, environmental, gender\u2011based violence, etc.) within the one\u2011month deadline.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop an accelerated recruitment plan, use temporary contracts, and monitor hiring milestones weekly.\",\n      \"evidence\": \"CEMAC Financing Agreement: appoint, assign, or recruit an accountant, environmental specialist, gender\u2011based violence consultant not later than one month after Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Failure to customize accounting software for the project within three months of effectiveness.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage an IT vendor before project start, allocate dedicated budget, and set clear deliverable dates with penalties for delay.\",\n      \"evidence\": \"CEMAC Financing Agreement: customize existing accounting software no later than three months after the Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement delays caused by weak market competition and limited contract management capacity in fragile settings.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced procurement specialists, conduct early market engagement, and adopt flexible procurement methods approved by the Bank.\",\n      \"evidence\": \"Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate stakeholder engagement leading to community opposition and project delays.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the Umbrella Stakeholder Engagement Plan, hold early consultations, and maintain transparent grievance redress mechanisms.\",\n      \"evidence\": \"Potential social risks are substantial and relate to inadequate stakeholder engagement to properly inform design and implementation.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Sexual exploitation and abuse (SEA/SH) risks arising from the expanded community health workforce.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct GBV/SEA risk assessments, recruit a dedicated GBV specialist, and train all staff on SEA/SH protocols.\",\n      \"evidence\": \"Overall project SEA/SH risks are substantial; increased presence of Community Health Workers may create concerns of sexual exploitation and abuse.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Political instability and conflict in Cameroon, CAR and Chad disrupting implementation and access to target areas.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop security risk assessments, flexible work plans, and contingency budgets; coordinate closely with UN/NGO security teams.\",\n      \"evidence\": \"Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements; Boko Haram attacks in Cameroon, unrest in CAR.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Climate\u2011related events (floods, extreme heat) damaging health facilities and laboratory infrastructure.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Apply green and resilient construction standards, elevate critical equipment, and incorporate climate\u2011risk assessments in design.\",\n      \"evidence\": \"Climate change contributed to at least 50\u202f% of natural disasters; floods raise risk of cholera; project includes green and resilient approaches.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient domestic financing after project completion threatening sustainability of health security gains.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Support development of medium\u2011term expenditure frameworks, track health\u2011security budgeting, and mobilize private\u2011sector partnerships.\",\n      \"evidence\": \"Securing financial sustainability will be supported to integrate health security into national budgeting processes and domestic resource mobilization.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"High turnover or capacity gaps in Project Implementation Units (PIUs) leading to implementation delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Offer retention incentives, clear terms of reference, and continuous capacity\u2011building programmes for PIU staff.\",\n      \"evidence\": \"PIUs will be led by a dedicated coordinator; staff recruitment and capacity building are required for effective implementation.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Laboratory biosafety incidents due to handling of high\u2011risk pathogens.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement strict biosafety and biosecurity SOPs, certify labs to international standards, and conduct regular training drills.\",\n      \"evidence\": \"Laboratory Quality and Capacity subcomponent includes strengthening biosafety & biosecurity and establishing a quality management system.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Data interoperability failures across human, animal and environmental surveillance systems.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a common data standards framework, deploy interoperable digital platforms, and provide joint training for data managers.\",\n      \"evidence\": \"Subcomponent 2.1 aims to integrate OH data using an interoperable digital platform and develop dashboards for decision\u2011making.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Delay in establishing the Regional Coordination Committee (RCC) and formal MoUs with regional bodies.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set a firm deadline of 30\u202fdays post\u2011effective date for MoU signing and monitor progress through quarterly reports.\",\n      \"evidence\": \"CEMAC Financing Agreement: establish collaboration measures with WAHO no later than thirty days after the Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Weak monitoring and evaluation leading to poor visibility of results and corrective actions.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen M&E teams, adopt real\u2011time reporting tools, and conduct independent mid\u2011term evaluations.\",\n      \"evidence\": \"PIUs are responsible for M&E of specific project activities and will report progress in accordance with the Results Framework.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Supply\u2011chain disruptions for medical countermeasures during an emergency response.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Pre\u2011position essential stockpiles, develop logistics contingency plans, and establish agreements with regional suppliers.\",\n      \"evidence\": \"Subcomponent 3.1 includes strengthening emergency logistics and stockpiling to ensure access to countermeasures.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Persistent gender gaps in epidemiology and veterinary training limiting workforce capacity.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set gender\u2011balanced training targets, conduct outreach to women candidates, and provide flexible learning formats.\",\n      \"evidence\": \"HeSP\u20113 aims to close the gender gap in technical roles; women currently under\u2011represented in epidemiology and veterinary fields.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Delays in meeting legal conditions of effectiveness (e.g., adoption of Project Operations Manual).\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Assign a legal compliance officer to track all conditions and submit required documents ahead of deadlines.\",\n      \"evidence\": \"Effectiveness conditions require the Recipient to prepare and adopt the Project Operations Manual within specified timeframes.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Bottlenecks in external audit procurement causing late financial reporting.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Identify and pre\u2011qualify multiple audit firms, schedule audit timelines early, and maintain a backup auditor list.\",\n      \"evidence\": \"Recipient must recruit an external auditor no later than six months after the Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Resurgence of COVID\u201119 or another pandemic disrupting training, travel and field activities.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop virtual training modules, enforce health safety protocols, and maintain flexible timelines for field work.\",\n      \"evidence\": \"COVID\u201119 pandemic exacerbated service delivery challenges; project includes digital platforms and remote training to mitigate such disruptions.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delay in recruiting required specialist staff (accountant, environmental, gender\u2011based violence, etc.) within the one\u2011month deadline.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop an accelerated recruitment plan, use temporary contracts, and monitor hiring milestones weekly.",
+        "evidence": "CEMAC Financing Agreement: appoint, assign, or recruit an accountant, environmental specialist, gender\u2011based violence consultant not later than one month after Effective Date."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Failure to customize accounting software for the project within three months of effectiveness.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage an IT vendor before project start, allocate dedicated budget, and set clear deliverable dates with penalties for delay.",
+        "evidence": "CEMAC Financing Agreement: customize existing accounting software no later than three months after the Effective Date."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement delays caused by weak market competition and limited contract management capacity in fragile settings.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire experienced procurement specialists, conduct early market engagement, and adopt flexible procurement methods approved by the Bank.",
+        "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate stakeholder engagement leading to community opposition and project delays.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement the Umbrella Stakeholder Engagement Plan, hold early consultations, and maintain transparent grievance redress mechanisms.",
+        "evidence": "Potential social risks are substantial and relate to inadequate stakeholder engagement to properly inform design and implementation."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Sexual exploitation and abuse (SEA/SH) risks arising from the expanded community health workforce.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct GBV/SEA risk assessments, recruit a dedicated GBV specialist, and train all staff on SEA/SH protocols.",
+        "evidence": "Overall project SEA/SH risks are substantial; increased presence of Community Health Workers may create concerns of sexual exploitation and abuse."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Political instability and conflict in Cameroon, CAR and Chad disrupting implementation and access to target areas.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop security risk assessments, flexible work plans, and contingency budgets; coordinate closely with UN/NGO security teams.",
+        "evidence": "Fragility in AFW is exacerbated by conflict and violence, leading to large population displacements; Boko Haram attacks in Cameroon, unrest in CAR."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Climate\u2011related events (floods, extreme heat) damaging health facilities and laboratory infrastructure.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Apply green and resilient construction standards, elevate critical equipment, and incorporate climate\u2011risk assessments in design.",
+        "evidence": "Climate change contributed to at least 50\u202f% of natural disasters; floods raise risk of cholera; project includes green and resilient approaches."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient domestic financing after project completion threatening sustainability of health security gains.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Support development of medium\u2011term expenditure frameworks, track health\u2011security budgeting, and mobilize private\u2011sector partnerships.",
+        "evidence": "Securing financial sustainability will be supported to integrate health security into national budgeting processes and domestic resource mobilization."
+      },
+      {
+        "risk_id": "R09",
+        "description": "High turnover or capacity gaps in Project Implementation Units (PIUs) leading to implementation delays.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Offer retention incentives, clear terms of reference, and continuous capacity\u2011building programmes for PIU staff.",
+        "evidence": "PIUs will be led by a dedicated coordinator; staff recruitment and capacity building are required for effective implementation."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Laboratory biosafety incidents due to handling of high\u2011risk pathogens.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement strict biosafety and biosecurity SOPs, certify labs to international standards, and conduct regular training drills.",
+        "evidence": "Laboratory Quality and Capacity subcomponent includes strengthening biosafety & biosecurity and establishing a quality management system."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Data interoperability failures across human, animal and environmental surveillance systems.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a common data standards framework, deploy interoperable digital platforms, and provide joint training for data managers.",
+        "evidence": "Subcomponent 2.1 aims to integrate OH data using an interoperable digital platform and develop dashboards for decision\u2011making."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Delay in establishing the Regional Coordination Committee (RCC) and formal MoUs with regional bodies.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set a firm deadline of 30\u202fdays post\u2011effective date for MoU signing and monitor progress through quarterly reports.",
+        "evidence": "CEMAC Financing Agreement: establish collaboration measures with WAHO no later than thirty days after the Effective Date."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Weak monitoring and evaluation leading to poor visibility of results and corrective actions.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Strengthen M&E teams, adopt real\u2011time reporting tools, and conduct independent mid\u2011term evaluations.",
+        "evidence": "PIUs are responsible for M&E of specific project activities and will report progress in accordance with the Results Framework."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Supply\u2011chain disruptions for medical countermeasures during an emergency response.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Pre\u2011position essential stockpiles, develop logistics contingency plans, and establish agreements with regional suppliers.",
+        "evidence": "Subcomponent 3.1 includes strengthening emergency logistics and stockpiling to ensure access to countermeasures."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Persistent gender gaps in epidemiology and veterinary training limiting workforce capacity.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set gender\u2011balanced training targets, conduct outreach to women candidates, and provide flexible learning formats.",
+        "evidence": "HeSP\u20113 aims to close the gender gap in technical roles; women currently under\u2011represented in epidemiology and veterinary fields."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Delays in meeting legal conditions of effectiveness (e.g., adoption of Project Operations Manual).",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Assign a legal compliance officer to track all conditions and submit required documents ahead of deadlines.",
+        "evidence": "Effectiveness conditions require the Recipient to prepare and adopt the Project Operations Manual within specified timeframes."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Bottlenecks in external audit procurement causing late financial reporting.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Identify and pre\u2011qualify multiple audit firms, schedule audit timelines early, and maintain a backup auditor list.",
+        "evidence": "Recipient must recruit an external auditor no later than six months after the Effective Date."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Resurgence of COVID\u201119 or another pandemic disrupting training, travel and field activities.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop virtual training modules, enforce health safety protocols, and maintain flexible timelines for field work.",
+        "evidence": "COVID\u201119 pandemic exacerbated service delivery challenges; project includes digital platforms and remote training to mitigate such disruptions."
+      }
+    ]
+  },
+  "parse_error": null
+}

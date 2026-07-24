@@ -1,0 +1,255 @@
+{
+  "run_file": "P-AFW-HealthSecurityPhase3__gpt__zero_shot__run1.json",
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R04",
+      "similarity": 0.598,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R01",
+      "similarity": 0.5,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R16",
+      "gt_risk_id": "R05",
+      "similarity": 0.489,
+      "gen_category": "external",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R03",
+      "similarity": 0.457,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delay in recruiting required specialist staff for PIUs (accountant, M&E, environmental, gender\u2011based violence, etc.) may postpone implementation.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Prepare an accelerated recruitment plan, pre\u2011qualify candidates, use temporary consultants, and monitor hiring milestones weekly.",
+      "evidence": "CEMAC Financing Agreement (Schedule 2, Sec I.A.1b): recruit specialist staff within one month of Effective Date."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Failure to customize accounting software within three months could impair financial tracking and reporting.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage IT vendor early, allocate dedicated resources, set clear milestones, and conduct fortnightly progress reviews.",
+      "evidence": "CEMAC Financing Agreement (Schedule 2, Sec I.A.1c): customize accounting software no later than three months after Effective Date."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Procurement delays caused by weak market competition and governance issues in fragile settings.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Hire experienced procurement specialists, conduct early market engagement, adopt flexible procurement methods, and apply World Bank supervision.",
+      "evidence": "Procurement Risks include delays, governance issues, weak contract management, and limited market competition in fragile settings (Sec 64\u201166)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall financial management (FM) residual risk rated substantial, risking inaccurate reporting and fund misuse.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Update FM manuals, recruit internal and external auditors, implement quarterly internal audits, and ensure World Bank monitoring missions.",
+      "evidence": "FM residual risk rating is Substantial; FM risks will be monitored during World Bank biannual missions (Sec 58\u201159)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Environmental hazards from construction waste, laboratory chemicals, and occupational safety could affect communities.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prepare site\u2011specific ESMPs, enforce waste\u2011management plans, train workers on safety, and conduct regular environmental monitoring.",
+      "evidence": "Environmental risks are Substantial: construction, waste, dust, emissions, occupational health and safety (Sec 65\u201166)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "SEA/SH risks due to increased community health workforce and limited training may lead to sexual exploitation or abuse.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop SEA/SH Action Plans, recruit GBV specialists, train all staff on conduct, and strengthen grievance redress mechanisms.",
+      "evidence": "Project SEA/SH risks are substantial; increased CHWs may create concerns of sexual exploitation and abuse (Sec 72\u201173)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Political instability and conflict in Cameroon, CAR, Chad and RoC could disrupt service delivery and project activities.",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement flexible implementation schedules, conduct security risk assessments, maintain contingency funds, and coordinate with local security authorities.",
+      "evidence": "Fragility in AFW is exacerbated by conflict and violence; regional conflicts such as Boko Haram attacks in Cameroon and unrest in CAR (Sec 3)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Climate\u2011related floods and extreme weather may damage health infrastructure and increase disease outbreaks.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Design facilities with climate\u2011resilient standards, integrate climate data into surveillance, and include climate shocks in emergency preparedness plans.",
+      "evidence": "Climate change contributed to at least 50\u202f% of natural disasters; floods in CAR and Chad drive cholera outbreaks (Sec 11\u201112)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Weak cross\u2011border coordination could lead to fragmented surveillance and delayed outbreak response.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthen the Regional Coordination Committee, hold regular joint meetings, adopt common SOPs, and establish shared data platforms.",
+      "evidence": "Regional cross\u2011border collaboration is essential; RCC facilitated by CEMAC will support alignment (Sec 20\u201121)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Insufficient laboratory capacity and quality may delay pathogen detection and response.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Invest in lab upgrades, pursue SLIPTA accreditation, provide biosafety training, and create a regional lab network for sample sharing.",
+      "evidence": "Subcomponent 2.2 aims for labs achieving 3\u2011star SLIPTA rating; focus on quality and capacity (Sec 30\u201131)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Shortage of trained epidemiologists and veterinarians, especially women, limits workforce capacity for health emergencies.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Offer gender\u2011targeted training scholarships, flexible learning formats, outreach to women candidates, and mentorship programs.",
+      "evidence": "Women are under\u2011represented; HeSP\u20113 targets a 10\u202f% increase in female epidemiologists (Sec 75\u201176)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Delays in preparing and approving annual work plans and budgets may stall project activities.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Set internal draft deadlines, conduct early stakeholder consultations, and track approval timelines against a project calendar.",
+      "evidence": "Recipient must submit draft annual program by November\u202f30 each year; final plan by December\u202f31 (Financing Agreements Sec I.C)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Reliance on external donor funding and weak domestic fiscal space could threaten long\u2011term sustainability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Integrate health security into national budgets, develop medium\u2011term expenditure frameworks, and explore public\u2011private partnership pilots.",
+      "evidence": "Sustainability will be enhanced by integrating health security into national budgeting and domestic resource mobilization (Sec 48\u201149)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Data interoperability challenges across human, animal and environmental sectors may hinder integrated surveillance.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop interoperable digital platforms, adopt DHIS2 and LIMS standards, and provide technical training on data sharing.",
+      "evidence": "Subcomponent 2.1 will integrate human, animal, plant and environmental health data via interoperable system and DHIS2 (Sec 9)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Governance weaknesses at CEMAC could affect fiduciary oversight and fund flow management.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear governance structures, regular reporting to CEMAC, conduct external audits, and provide capacity\u2011building for FM staff.",
+      "evidence": "CEMAC will provide leadership on FM; FM residual risk is Substantial; external auditor to be appointed (Sec 15\u201116)."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Security threats to staff operating in conflict\u2011affected areas may limit field activities.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prepare country\u2011specific Security Risk Assessments and Management Plans, hire security specialists, and provide safety training.",
+      "evidence": "PIUs will prepare Security Risk Assessment (SRA) and Security Management Plan (SMP) for FCV countries (Sec 73)."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Risk of excluding vulnerable groups (IDPs, refugees, women, children) from project benefits.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement targeted outreach, gender\u2011sensitive RCCE, and robust grievance redress mechanisms to ensure inclusion.",
+      "evidence": "Project will benefit entire populations, especially women and children in border districts; includes IDPs and refugees (Annex 2, Sec 38)."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Non\u2011compliance with environmental and social safeguards could cause project delays or penalties.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Finalize ESCP, LMP, and SEP within two months of effective date; train staff on ESF requirements; monitor compliance continuously.",
+      "evidence": "U\u2011SEP and U\u2011ESMF prepared; PIUs must adapt within two months after effective date (Sec 71\u201174)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk (Moderate), considering fragility, socio-political instability, violence and weak governance of beneficiary countries.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close engagement by the World Bank to coordinate activities with other key partners."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical design risk (Substantial), considering the complexities of coordinating national-level and regional-level activities to align and build on each other, and the different levels of readiness at country-level.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Exploring the possibility of a coordinated implementation arrangement with CEMAC as the lead technical coordination body for regional activities."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Weak institutional capacity for implementation and sustainability (Substantial), combined with overstretched or nonexistent PIUs in respective countries.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthening the existing PIUs and intensive capacity building and targeted TA for newly established PIUs."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk (Substantial) due to weak governance structures and inadequate FM systems.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on fiduciary processes."
+    },
+    {
+      "risk_id": "R05",
+      "description": "E&S risk (Substantial) given the security risks associated with service delivery in FCV (fragility, conflict, and violence) settings.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on managing E&S risks."
+    }
+  ]
+}
