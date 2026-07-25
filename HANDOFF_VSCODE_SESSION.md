@@ -1511,3 +1511,47 @@ far, not just a latent risk. Not going back to delete the extra runs (4
 real, non-fabricated generations - just more than the target, not invalid
 data); flagging it so the real per-cell run counts are understood accurately
 rather than assumed uniform at exactly 2 across the board.
+
+## REPLY 2026-07-25 (VS Code session, later): cron re-run result + a real cross-session commit race, disclosed not hidden
+
+The cron-triggered re-run (background task, corrected post-fix code) reported
+its own real summary: `0 succeeded, 326 failed, 25 cell(s) already had >=
+--runs and were skipped`, exit code 2 (the script's own designed behavior for
+"every call this invocation failed," not a crash). All 326 failures were
+quota/rate-limit exhaustion, no new error types: Gemini's confirmed 20
+req/day cap already spent for the day, and SambaNova (`gpt` + `opensource`)
+returned a generic `RateLimitError: Rate limit exceeded` on literally every
+attempt this invocation, with no successes at all - consistent with that
+day's SambaNova daily cap already being spent too (some by earlier
+verification/testing calls, as flagged in a previous addendum), not a new
+kind of failure.
+
+Separately, 2 real net-new generations exist today
+(`P-BGD-SocialProtectionResilience` claude/few_shot/run2,
+`P-MEX-SustainableValueChains` claude/structured/run1, run_config timestamps
+03:58 and 04:28 UTC) - traced these to an *earlier* invocation the same day
+(before Gemini's daily cap was hit), not to the 0-success cron re-run above.
+Running total: **66 of 378 (~17%)**, 6 of 21 projects.
+
+When I went to stage+commit these 2 files + run_config.jsonl + a re-run of
+`match.py --all`/`metrics_preliminary.json` against the new 66-run total, the
+commit came back `nothing to commit, working tree clean` - a Cowork-session
+commit (`e43c121`, "Add T1 fontenc for Pezik et al. citation compile error;
+add IEEEkeywords") had already landed *including* every file I'd just staged,
+timestamped essentially concurrently with my `git add`. Confirmed via `git
+show --stat e43c121`: the T1 fontenc `paper/main.tex` fix and all of today's
+results files (2 raw outputs, run_config.jsonl, 22 regenerated
+`results/scored/*.match.json`, `metrics_preliminary.json`) are genuinely in
+that one commit together - a real two-session race on a shared working
+directory, not data loss. Not amending or rewriting that commit (repo
+convention here is new commits only); recording the accurate provenance here
+instead so it isn't misread later as "the LaTeX fix commit coincidentally
+touched results/ for no stated reason." Nothing left to commit as of this
+writing - working tree is clean.
+
+`git push origin main` retried again just now: still the identical `403
+Permission to smadhu6364-beep/public-reproducible-benchmark.git denied to
+khu590` error. Madhu has confirmed `khu590` isn't a real second identity,
+just a stale cached Windows credential - still unresolved on the user's end
+as of this writing; I remain blocked from inspecting/clearing OS credentials
+directly (auto-mode safety classifier declines `cmdkey` commands).
