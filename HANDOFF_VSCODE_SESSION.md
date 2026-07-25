@@ -1592,3 +1592,30 @@ Cowork's sandbox nor VS Code's own safety-classifier-blocked `cmdkey` access
 can do it. Once Madhu has done this, the next `git push origin main` should
 just work - if it still 403s after this specific step, that's new
 information worth a fresh look, not a sign the diagnosis above was wrong.
+
+**CONFIRMED RESOLVED (Cowork session, checked directly):** `git rev-list
+--left-right --count HEAD...origin/main` now returns `0 0` - local and
+`origin/main` are fully in sync through `6a42c1e`. The credential fix
+worked. Closing this out, not leaving it open for re-diagnosis.
+
+## NOTE 2026-07-25 (VS Code session): one isolated cell got 3 runs instead of the requested 2 - flagging, not yet root-caused
+
+Today's `--runs 2` re-run (task, 14 succeeded, 311 failed, 25 skipped - all
+failures the usual Gemini/SambaNova quota exhaustion, no new error types)
+left one real anomaly: `P-IND-ChhattisgarhAcceleratedLearning` claude/
+few_shot has run_index 1, 2, AND 3 in `run_config.jsonl`, all with fresh
+timestamps from this run (15:18:50-15:19:56 UTC), evenly spaced like a
+single continuous call sequence - not a collision, not a corrupted/partial
+file. Every other cell touched today (16 others) got exactly its requested
+count. Checked the `main()` loop and `next_free_run_index()` by hand: with
+`args.runs` fixed at 2 for the whole process, `needed` is computed once per
+cell and the inner `for _ in range(needed)` loop mathematically cannot
+iterate 3 times for one cell within a single sequential process - so either
+this specific cell's iteration briefly overlapped with another concurrent
+`run_experiments.py` invocation (plausible given today's earlier real
+cross-session commit race on this same working directory), or there's a
+subtler bug not yet found. Not confirmed either way - flagging rather than
+guessing. Not deleting the extra real generation (real data, just one more
+than targeted, same precedent as the earlier over-run cells). Worth a look
+if anyone has spare cycles, but low priority: isolated to 1 of 400+ real
+calls so far, non-corrupting.

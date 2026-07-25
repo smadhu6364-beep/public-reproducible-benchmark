@@ -1,0 +1,153 @@
+{
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T15:10:07.197319+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-GTM-SmartPublicFinances\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"PFM digital systems (such as Guatecompras and SICOIN) face cybersecurity threats and cyberattacks, which can compromise sensitive financial data and disrupt operations.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement an Information Security Management System (ISMS) based on ISO 27000, establish a CSIRT, and deploy a Security Operation Center (SOC).\",\n      \"evidence\": \"The digital portals of the State Contracting and Acquisitions Information System, Guatecompras and SICOIN, faced attacks in 2023.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High public sector talent turnover and the absence of structured career paths for data professionals risk eroding institutional technical capacity and analytical sustainability.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish structured career paths for data analysts, deliver permanent capacity-building programs, and operationalize dedicated data analytics units across agencies.\",\n      \"evidence\": \"Governments also struggle to build and retain analytical capacity due to the lack of structured career paths for data professionals\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"A potential decline in remittance inflows could significantly reduce Value-Added Tax (VAT) revenue collections, constricting government fiscal space and program funding.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen medium-term fiscal frameworks (MTEF), improve tax administration integration with SAT, and conduct sectoral spending reviews to maximize expenditure productivity.\",\n      \"evidence\": \"A decline in these inflows could considerably reduce Value-Added Tax (VAT) collections, which account for 49 percent of the government\u2019s net income\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Changes in political leadership or lack of sustained institutional commitment within implementing agencies could cause project implementation delays and reform scope reductions.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Anchor project implementation within the Technical Budget Directorate (DTP) under clear ministerial mandate and establish an Interinstitutional Committee to ensure governance.\",\n      \"evidence\": \"A common reason for the failure of PFM reforms in previous projects in Guatemala is the lack of adequate preparation and institutional stability\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Core PFM systems suffer from fragmentation and limited interoperability, causing data silos, reliance on manual processes, and duplicate record-keeping across entities.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Formulate an integrated PFM Conceptual Model, adopt a PFM Enterprise Architecture, and deploy an interoperability platform across core and peripheral systems.\",\n      \"evidence\": \"Core PFM information systems suffer from fragmentation, obsolescence, and weak institutional support. Limited interoperability between systems has led to manual processes\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Extreme weather events and climate hazards (e.g., floods, landslides) pose risks of physical damage to IT infrastructure and service disruption for critical government operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a Business Continuity Management System (BCMS) following ISO 22301, implement a cloud adoption strategy, and procure resilient, energy-efficient equipment.\",\n      \"evidence\": \"Extreme weather events pose an additional risk that can cause significant infrastructure damage and economic losses.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Weak ex-ante evaluation and lifecycle project monitoring in public investment management lead to poor project prioritization, frequent discontinuities, and cost overruns.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Redesign SEGEPLAN's planning and investment management processes, strengthen ex-ante evaluation tools including climate criteria, and build a multi-year public investment plan.\",\n      \"evidence\": \"significant weaknesses impact the effectiveness of investment management, including inadequate prioritization due to poor alignment with financial constraints, frequent project discontinuities\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"High employee compensation costs representing a large share of total government spending create fiscal rigidities and resource allocation inefficiencies across the budget.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Perform strategic workforce planning, execute payroll audits, upgrade the Payroll and Pensions Management System, and define methodologies for public employment fiscal management.\",\n      \"evidence\": \"Employee compensation is estimated to represent 40.9 percent of the country's total government expenditure for the 2024-2028 period\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Delays in establishing a fully staffed Project Implementation Unit (PIU) or developing the Project Operational Manual (POM) could defer loan effectiveness and disbursements.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Draft the POM prior to effectiveness and expedite recruitment of specialized technical and fiduciary staff within the DTP.\",\n      \"evidence\": \"No withdrawal shall be made under Category 1 until the Borrower has established the PIU, satisfactory to the Bank.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Weak integration of the Gender-Based Budget Classifier (CPEG) into subnational financial management systems limits monitoring and accountability of gender-related expenditures.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Upgrade local government management systems to link municipal budgets with CPEG and deliver gender-responsive budgeting training in partnership with SEPREM.\",\n      \"evidence\": \"weak integration into the FMIS (only 112 municipalities out of 340 linked their budget to the CPEG) limits monitoring and accountability.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Complex procurement requirements for multi-component ICT system upgrades and data platforms risk protracted bidding cycles, vendor disputes, or procurement stalls.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Standardize technical specifications, utilize World Bank Procurement Regulations, and leverage peer country bidding documentation to streamline procurement.\",\n      \"evidence\": \"IFMIS reform projects tend to be costly and lengthy and should be realistically appraised and adequate lending instruments be chosen\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Resistance to results-based budgeting and data analytics across government ministries may lead to superficial administrative compliance without real operational adoption.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a robust change management strategy, conduct full-cycle citizen consultations on the budget, and facilitate peer learning through the Smart PFM CoP.\",\n      \"evidence\": \"Entities comply with reporting requirements but do not apply a results-oriented approach due to the complexity of input-output design.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Migrating from legacy systems to new IFMIS platforms without adequate technical support risks transactional errors and operational disruptions in financial management.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide transitional technical support for legacy applications, deploy systems in phased modules, and deliver intensive user training across government entities.\",\n      \"evidence\": \"providing transitional support for existing PFM applications during implementation of the new systems;\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"State asset management subsystems lack integration into PFM and clear regulatory frameworks, resulting in unrecorded state properties and missed real estate revenues.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Review the governance framework for public assets, deploy a modernized public asset management system, and integrate georeferenced property data into the fiscal cadaster.\",\n      \"evidence\": \"the HR and State Assets subsystems are not integrated into PFM, lacking clear regulations and institutionalized operational frameworks.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"External socioeconomic shocks, such as declining official development assistance or increased return migration, could increase pressure on domestic public safety nets and spending.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply data analytics platforms and spending reviews in priority sectors (health, education, social protection) to improve expenditure productivity during economic shocks.\",\n      \"evidence\": \"increased return migration flows may strain labor markets and resources for reintegration, overseas development assistance are decreasing\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-GTM-SmartPublicFinances",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "PFM digital systems (such as Guatecompras and SICOIN) face cybersecurity threats and cyberattacks, which can compromise sensitive financial data and disrupt operations.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement an Information Security Management System (ISMS) based on ISO 27000, establish a CSIRT, and deploy a Security Operation Center (SOC).",
+        "evidence": "The digital portals of the State Contracting and Acquisitions Information System, Guatecompras and SICOIN, faced attacks in 2023."
+      },
+      {
+        "risk_id": "R02",
+        "description": "High public sector talent turnover and the absence of structured career paths for data professionals risk eroding institutional technical capacity and analytical sustainability.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish structured career paths for data analysts, deliver permanent capacity-building programs, and operationalize dedicated data analytics units across agencies.",
+        "evidence": "Governments also struggle to build and retain analytical capacity due to the lack of structured career paths for data professionals"
+      },
+      {
+        "risk_id": "R03",
+        "description": "A potential decline in remittance inflows could significantly reduce Value-Added Tax (VAT) revenue collections, constricting government fiscal space and program funding.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen medium-term fiscal frameworks (MTEF), improve tax administration integration with SAT, and conduct sectoral spending reviews to maximize expenditure productivity.",
+        "evidence": "A decline in these inflows could considerably reduce Value-Added Tax (VAT) collections, which account for 49 percent of the government\u2019s net income"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Changes in political leadership or lack of sustained institutional commitment within implementing agencies could cause project implementation delays and reform scope reductions.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Anchor project implementation within the Technical Budget Directorate (DTP) under clear ministerial mandate and establish an Interinstitutional Committee to ensure governance.",
+        "evidence": "A common reason for the failure of PFM reforms in previous projects in Guatemala is the lack of adequate preparation and institutional stability"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Core PFM systems suffer from fragmentation and limited interoperability, causing data silos, reliance on manual processes, and duplicate record-keeping across entities.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Formulate an integrated PFM Conceptual Model, adopt a PFM Enterprise Architecture, and deploy an interoperability platform across core and peripheral systems.",
+        "evidence": "Core PFM information systems suffer from fragmentation, obsolescence, and weak institutional support. Limited interoperability between systems has led to manual processes"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Extreme weather events and climate hazards (e.g., floods, landslides) pose risks of physical damage to IT infrastructure and service disruption for critical government operations.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a Business Continuity Management System (BCMS) following ISO 22301, implement a cloud adoption strategy, and procure resilient, energy-efficient equipment.",
+        "evidence": "Extreme weather events pose an additional risk that can cause significant infrastructure damage and economic losses."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Weak ex-ante evaluation and lifecycle project monitoring in public investment management lead to poor project prioritization, frequent discontinuities, and cost overruns.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Redesign SEGEPLAN's planning and investment management processes, strengthen ex-ante evaluation tools including climate criteria, and build a multi-year public investment plan.",
+        "evidence": "significant weaknesses impact the effectiveness of investment management, including inadequate prioritization due to poor alignment with financial constraints, frequent project discontinuities"
+      },
+      {
+        "risk_id": "R08",
+        "description": "High employee compensation costs representing a large share of total government spending create fiscal rigidities and resource allocation inefficiencies across the budget.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Perform strategic workforce planning, execute payroll audits, upgrade the Payroll and Pensions Management System, and define methodologies for public employment fiscal management.",
+        "evidence": "Employee compensation is estimated to represent 40.9 percent of the country's total government expenditure for the 2024-2028 period"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Delays in establishing a fully staffed Project Implementation Unit (PIU) or developing the Project Operational Manual (POM) could defer loan effectiveness and disbursements.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Draft the POM prior to effectiveness and expedite recruitment of specialized technical and fiduciary staff within the DTP.",
+        "evidence": "No withdrawal shall be made under Category 1 until the Borrower has established the PIU, satisfactory to the Bank."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Weak integration of the Gender-Based Budget Classifier (CPEG) into subnational financial management systems limits monitoring and accountability of gender-related expenditures.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Upgrade local government management systems to link municipal budgets with CPEG and deliver gender-responsive budgeting training in partnership with SEPREM.",
+        "evidence": "weak integration into the FMIS (only 112 municipalities out of 340 linked their budget to the CPEG) limits monitoring and accountability."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Complex procurement requirements for multi-component ICT system upgrades and data platforms risk protracted bidding cycles, vendor disputes, or procurement stalls.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Standardize technical specifications, utilize World Bank Procurement Regulations, and leverage peer country bidding documentation to streamline procurement.",
+        "evidence": "IFMIS reform projects tend to be costly and lengthy and should be realistically appraised and adequate lending instruments be chosen"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Resistance to results-based budgeting and data analytics across government ministries may lead to superficial administrative compliance without real operational adoption.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Implement a robust change management strategy, conduct full-cycle citizen consultations on the budget, and facilitate peer learning through the Smart PFM CoP.",
+        "evidence": "Entities comply with reporting requirements but do not apply a results-oriented approach due to the complexity of input-output design."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Migrating from legacy systems to new IFMIS platforms without adequate technical support risks transactional errors and operational disruptions in financial management.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide transitional technical support for legacy applications, deploy systems in phased modules, and deliver intensive user training across government entities.",
+        "evidence": "providing transitional support for existing PFM applications during implementation of the new systems;"
+      },
+      {
+        "risk_id": "R14",
+        "description": "State asset management subsystems lack integration into PFM and clear regulatory frameworks, resulting in unrecorded state properties and missed real estate revenues.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Review the governance framework for public assets, deploy a modernized public asset management system, and integrate georeferenced property data into the fiscal cadaster.",
+        "evidence": "the HR and State Assets subsystems are not integrated into PFM, lacking clear regulations and institutionalized operational frameworks."
+      },
+      {
+        "risk_id": "R15",
+        "description": "External socioeconomic shocks, such as declining official development assistance or increased return migration, could increase pressure on domestic public safety nets and spending.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply data analytics platforms and spending reviews in priority sectors (health, education, social protection) to improve expenditure productivity during economic shocks.",
+        "evidence": "increased return migration flows may strain labor markets and resources for reintegration, overseas development assistance are decreasing"
+      }
+    ]
+  },
+  "parse_error": null
+}

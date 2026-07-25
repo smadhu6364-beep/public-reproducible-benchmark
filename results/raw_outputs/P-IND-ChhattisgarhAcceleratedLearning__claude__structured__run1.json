@@ -1,0 +1,171 @@
+{
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T15:20:06.172254+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: To improve the quality of school education and access to science and commerce senior secondary education in Chhattisgarh.\n- Scope: A blended operation consisting of a Program-for-Results (PforR; US$535.8M) and an Investment Project Financing (IPF-TA; US$21.75M) component. It spans four Results Areas: (1) Improved in-service teacher professional development; (2) Improved diagnostic and assessment systems; (3) Decentralized model composite school development and management; and (4) School leadership development.\n- Delivery Model: PforR results-based disbursements supported by IPF Technical Assistance for expert agency support. Key agencies include Department of School Education (DoSE), State Implementation Society for Samagra Shiksha (SIS-SS), State Council of Educational Research and Training (SCERT), SCERT Assessment Cell (SAC), State Institute of Education Management and Training (SIEMAT), Public Works Department (PWD), and Rural Engineering Services (RES).\n- Timeline: July 2023 to December 2028 (Closing date: September 29, 2028).\n- Budget: Total Operation Cost US$558.30M (IBRD Loan US$300M, Counterpart Funding US$258.30M). Total overarching Government Program US$9,764.5M.\n- Key Stakeholders: GoCG, DoSE, SIS-SS, SCERT, SIEMAT, SAC, PWD, RES, DIETs, teachers, principals, students (especially SC, ST, OBC, and adolescent boys), School Management Committees (SMCs), World Bank.\n- External Dependencies: Central government releases under Samagra Shiksha (SS), commercial banking network integration with Public Financial Management System (PFMS) / Single Nodal Account (SNA), state construction capacity (PWD/RES), and extreme weather conditions.\n\nStep 2 - Category sweep\n- technical:\n  1. Lack of subject-specialized STEM teachers resulting in Language teachers teaching Math/Science (Para 11).\n  2. Severe capacity/staffing constraints at SCERT Assessment Cell (SAC) managing state assessments (Para 13, Annex 3 Para 3b).\n  3. Inexperience of SIS-SS in processing World Bank IPF procurement regulations for technical assistance (Annex 8 Para 3).\n- financial:\n  4. Multiple tiers of planning and limited local FM capacity leading to budget execution delays (Para 59, Annex 4 Para 4).\n  5. Lapses in internal controls, including poor tracking of advances and long-standing capital work-in-progress (Annex 4 Para 15).\n  6. Accumulation of unaddressed statutory audit observations dating back to FY 2009-10 (Annex 4 Para 17).\n  7. Technical and operational friction between PFMS and banking networks under SNA (Annex 4 Para 11).\n- schedule:\n  8. Delayed annual approval of Annual Work Plan & Budget (AWP&B) until 3rd-5th month of FY (Annex 4 Para 4).\n- stakeholder:\n  9. Socio-economic pressure and farm harvest work causing high dropout rates among adolescent boys (Para 6).\n  10. Absence of a dedicated online procurement complaint handling mechanism (Annex 4 Para 18).\n- political_regulatory:\n  11. Enactment or changes in national Personal Data protection legislation impacting student EMIS data processing (Datasheet Legal Covenants, Schedule 2).\n- environmental:\n  12. Extreme climate events (heat waves, erratic monsoons, floods) causing unplanned school closures (Para 3, Para 28).\n  13. Environmental and safety hazards from civil works construction and waste management across school sites (Para 68, Annex 5 Para 4).\n- organizational:\n  14. Significant staffing vacancies at primary implementing entity SIS-SS (~30% vacant) (Annex 4 Para 14).\n  15. Fragmented network of small, low-enrolment schools leading to multigrade teaching and high per-pupil expenditures (Para 9, Annex 3 Para 2).\n- external:\n  16. Socio-economic disruption for communities in coal blocks due to long-term coal mine closures (Para 34, Para 72).\n  17. Topographic barriers in remote/forested tribal areas limiting physical access to secondary schools (Para 6, Annex 5 Para 8).\n\nStep 3 - Evidence filter\nAll 17 identified candidate risks have direct, explicit textual citations in the provided PAD document and are retained.\n\nStep 4 - Assess\n- R01 (Technical): Likelihood 4, Impact 4. High prevalence of non-subject teachers weakens learning outcomes. Mitigation: Deploy structured lesson plans and modular need-based subject training while recruiting specialist faculty.\n- R02 (Technical): Likelihood 4, Impact 4. SAC has only 4-5 staff, threatening assessment validity. Mitigation: Engage a technical support agency via IPF-TA to restructure SAC and competitively recruit core staff.\n- R03 (Technical): Likelihood 3, Impact 3. First-time use of IPF regulations risks procurement delays. Mitigation: Utilize STEP tracking, Bank handholding, and embed procurement experts in the PMC.\n- R04 (Financial): Likelihood 4, Impact 3. Decentralized budget preparation gaps cause low execution. Mitigation: Conduct an FM study, roll out a multi-tier FM orientation module, and establish internal control monitoring.\n- R05 (Financial): Likelihood 3, Impact 3. Deviations in advance tracking and capital work-in-progress risk disallowances. Mitigation: Form an internal control monitoring cell and set up an Audit Committee.\n- R06 (Financial): Likelihood 4, Impact 3. Backlog of audit observations since FY 2009-10 creates compliance drag. Mitigation: Organize block and district clearance camps to systematically resolve historical statutory audit findings.\n- R07 (Financial): Likelihood 3, Impact 3. Interface errors between PFMS and banks interrupt fund flows. Mitigation: Conduct banking staff training and optimize PFMS-banking digital interface protocols.\n- R08 (Schedule): Likelihood 4, Impact 3. Approval in month 3-5 compresses execution timelines. Mitigation: Pre-finance program activities through state budget channels and streamline joint AWP&B review schedules.\n- R09 (Stakeholder): Likelihood 4, Impact 4. Economic pull into informal labor drives male dropouts. Mitigation: Establish model composite schools offering STEM/commerce, add boys' residential facilities, and deliver targeted remediation.\n- R10 (Stakeholder): Likelihood 3, Impact 3. Lack of procurement grievance channels risks legal disputes. Mitigation: Operationalize an online procurement complaint redressal portal with clear timelines.\n- R11 (Political/Regulatory): Likelihood 3, Impact 2. New data protection laws may necessitate IT adjustments. Mitigation: Perform technical privacy reviews and ensure EMIS data platforms comply with national standards.\n- R12 (Environmental): Likelihood 4, Impact 3. Heatwaves and floods reduce instructional days. Mitigation: Deploy digital diagnostic/remedial tools and implement climate-resilient building standards.\n- R13 (Environmental): Likelihood 3, Impact 3. Upgradations generate dust, noise, e-waste, and safety risks. Mitigation: Enforce EHS clauses in tender documents and follow environmental waste management guidelines.\n- R14 (Organizational): Likelihood 4, Impact 3. SIS-SS operates at ~70% capacity, risking administrative overload. Mitigation: Contract a PMC to augment core operational functions and execute a state staffing plan.\n- R15 (Organizational): Likelihood 4, Impact 3. Low-enrolment schools force multigrade teaching. Mitigation: Upgrade central schools into model composite hubs and provide multigrade TaRL training to primary teachers.\n- R16 (External): Likelihood 3, Impact 4. Net-zero energy transition threatens coal block livelihoods. Mitigation: Upgrade at least 5% of model composite schools in coal mining blocks to offer STEM and commerce education.\n- R17 (External): Likelihood 4, Impact 3. Complex terrain blocks access to secondary schooling. Mitigation: Develop composite schools with residential hostels in topographically challenging areas.\n\nStep 5 - Consolidate\n17 distinct risks consolidated across all required categories. All evidence quotes formatted to be strictly <= 25 words.\n\nFINAL JSON:\n{\"project_id\":\"P-IND-ChhattisgarhAcceleratedLearning\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Lack of subject-specialized STEM teachers forces Language teachers to deliver Mathematics and Science instruction, impairing learning quality.\",\"category\":\"technical\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Deploy structured grade and subject-specific lesson plans, offer need-based modular teacher training, and recruit subject specialist teachers.\",\"evidence\":\"lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences.\"},{\"risk_id\":\"R02\",\"description\":\"Severe staffing and technical capacity constraints at the SCERT Assessment Cell (SAC) hinder the execution of diagnostic assessments and SLAS.\",\"category\":\"technical\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Engage a specialized technical support agency via the IPF component to define SAC structure, conduct competitive hiring, and build staff capacity.\",\"evidence\":\"SAC has limited capacity and experience in these areas\"},{\"risk_id\":\"R03\",\"description\":\"Inexperience of SIS-SS in processing World Bank IPF procurement regulations risks procurement delays for technical assistance contracts.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Utilize STEP tracking, provide extensive Bank handholding and training, and embed experienced procurement specialists within the PMC.\",\"evidence\":\"inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations which may lead to delays in procurement.\"},{\"risk_id\":\"R04\",\"description\":\"Multiple tiers of planning and limited local financial management capacity cause budget preparation bottlenecks and lower execution rates.\",\"category\":\"financial\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Conduct an FM study to strengthen decentralized planning, roll out a multi-tier FM orientation module, and establish internal control monitoring.\",\"evidence\":\"multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting\"},{\"risk_id\":\"R05\",\"description\":\"Weaknesses in internal financial controls, including inadequate tracking of advances and long-standing capital work-in-progress, risk misallocation.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish a state-level internal control monitoring cell, strengthen internal audit ToRs, and set up an Audit Committee for compliance.\",\"evidence\":\"deviations are observed in the implementation of the laid-out controls like inadequate control over advances; long-standing capital work in progress\"},{\"risk_id\":\"R06\",\"description\":\"Long-standing unresolved statutory audit observations dating back to FY 2009-10 threaten financial compliance and accounting accuracy.\",\"category\":\"financial\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Organize district and block-level clearance camps to systematically address and resolve historical statutory audit observations.\",\"evidence\":\"unresolved/ addressed statutory observations since FY 2009-10\"},{\"risk_id\":\"R07\",\"description\":\"Technical and operational friction between PFMS and commercial banking networks under the Single Nodal Account (SNA) causes fund transfer delays.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Train banking personnel, improve IT interface protocols between PFMS and banks, and establish dedicated CHALK SNA monitoring.\",\"evidence\":\"lack of effective information interface between the PFMS system and the Banking network\"},{\"risk_id\":\"R08\",\"description\":\"Late annual approval of the Annual Work Plan & Budget (AWP&B) compresses the operational timeframe for executing quality interventions.\",\"category\":\"schedule\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Pre-finance program activities via state budget mechanisms and streamline annual planning timelines between DoSE and MoE.\",\"evidence\":\"AWP&B gets approved only by the third to the fifth month of the financial year.\"},{\"risk_id\":\"R09\",\"description\":\"Socio-economic imperatives and informal labor market opportunities lead adolescent boys to drop out of secondary and senior secondary grades.\",\"category\":\"stakeholder\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Expand model composite schools offering science/commerce, introduce residential facilities for boys, and roll out targeted remedial programs.\",\"evidence\":\"adolescent boys in secondary and senior secondary grades find it economically beneficial to drop out and take up informal jobs\"},{\"risk_id\":\"R10\",\"description\":\"Absence of a dedicated online procurement complaint handling mechanism risks unaddressed bidder grievances and procedural disputes.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish a comprehensive online procurement complaint redressal system with defined response timelines and escalation protocols.\",\"evidence\":\"Currently, there is no dedicated mechanism in place to treat procurement-related complaints promptly.\"},{\"risk_id\":\"R11\",\"description\":\"Enactment of new national personal data protection legislation during project execution may require operational and software re-alignments.\",\"category\":\"political_regulatory\",\"likelihood\":3,\"impact\":2,\"mitigation\":\"Conduct technical impact assessments upon new legislation enactment and ensure student EMIS anonymizes personal data.\",\"evidence\":\"approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation\"},{\"risk_id\":\"R12\",\"description\":\"Severe weather events such as heatwaves, droughts, and floods cause unplanned school closures and student learning disruptions.\",\"category\":\"environmental\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Implement digitally enabled diagnostic and remedial learning systems, and climate-proof infrastructure designs for disaster resilience.\",\"evidence\":\"state is vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions of the annual school summer break\"},{\"risk_id\":\"R13\",\"description\":\"Infrastructure redevelopment for composite schools generates dust, noise, construction waste, e-waste, and occupational safety hazards.\",\"category\":\"environmental\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Screen all civil works for E&S risks, enforce EHS obligations in standard bidding documents, and implement waste management guidelines.\",\"evidence\":\"Environmental risks and impacts associated with... dust and disposal of construction waste, resource utilization during construction, improper disposal of solid waste, lack of proper e-waste management\"},{\"risk_id\":\"R14\",\"description\":\"Staffing vacancies at key implementing entity SIS-SS (~30% vacant) overload existing personnel and slow down operation delivery.\",\"category\":\"organizational\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Hire a Project Management Consultant (PMC) to supplement core functions and execute a time-bound state staffing plan.\",\"evidence\":\"On average, SIS-SS is functioning at approximately 70 percent of the sanctioned strength.\"},{\"risk_id\":\"R15\",\"description\":\"Fragmented network of small, low-enrolment primary schools results in pervasive multigrade teaching and operational inefficiencies.\",\"category\":\"organizational\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Consolidate upper grades into model composite schools using a hub-and-spoke model while delivering TaRL multigrade training to primary teachers.\",\"evidence\":\"fragmented school functioning have led to multi-grade teaching and higher per-pupil expenditure.\"},{\"risk_id\":\"R16\",\"description\":\"Projected long-term closure of coal mines threatens local economies and livelihoods unless youth are equipped with non-coal job skills.\",\"category\":\"external\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Target at least 5 percent of model composite schools in coal mining blocks to expand senior secondary science and commerce education.\",\"evidence\":\"gradual closure of coal mines that produce 85 percent of the country's coal over the next 20 to 30 years\"},{\"risk_id\":\"R17\",\"description\":\"Remote, hilly, or forested topography in tribal districts impedes student physical access to secondary and senior secondary schools.\",\"category\":\"external\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Construct model composite schools with residential hostel facilities for students and teachers in isolated, topographically complex areas.\",\"evidence\":\"in some areas, students face topographic challenges in accessing senior secondary schools\"}]}",
+  "parsed_risks": {
+    "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Lack of subject-specialized STEM teachers forces Language teachers to deliver Mathematics and Science instruction, impairing learning quality.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Deploy structured grade and subject-specific lesson plans, offer need-based modular teacher training, and recruit subject specialist teachers.",
+        "evidence": "lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Severe staffing and technical capacity constraints at the SCERT Assessment Cell (SAC) hinder the execution of diagnostic assessments and SLAS.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Engage a specialized technical support agency via the IPF component to define SAC structure, conduct competitive hiring, and build staff capacity.",
+        "evidence": "SAC has limited capacity and experience in these areas"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inexperience of SIS-SS in processing World Bank IPF procurement regulations risks procurement delays for technical assistance contracts.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize STEP tracking, provide extensive Bank handholding and training, and embed experienced procurement specialists within the PMC.",
+        "evidence": "inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations which may lead to delays in procurement."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Multiple tiers of planning and limited local financial management capacity cause budget preparation bottlenecks and lower execution rates.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Conduct an FM study to strengthen decentralized planning, roll out a multi-tier FM orientation module, and establish internal control monitoring.",
+        "evidence": "multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Weaknesses in internal financial controls, including inadequate tracking of advances and long-standing capital work-in-progress, risk misallocation.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a state-level internal control monitoring cell, strengthen internal audit ToRs, and set up an Audit Committee for compliance.",
+        "evidence": "deviations are observed in the implementation of the laid-out controls like inadequate control over advances; long-standing capital work in progress"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Long-standing unresolved statutory audit observations dating back to FY 2009-10 threaten financial compliance and accounting accuracy.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Organize district and block-level clearance camps to systematically address and resolve historical statutory audit observations.",
+        "evidence": "unresolved/ addressed statutory observations since FY 2009-10"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Technical and operational friction between PFMS and commercial banking networks under the Single Nodal Account (SNA) causes fund transfer delays.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Train banking personnel, improve IT interface protocols between PFMS and banks, and establish dedicated CHALK SNA monitoring.",
+        "evidence": "lack of effective information interface between the PFMS system and the Banking network"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Late annual approval of the Annual Work Plan & Budget (AWP&B) compresses the operational timeframe for executing quality interventions.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Pre-finance program activities via state budget mechanisms and streamline annual planning timelines between DoSE and MoE.",
+        "evidence": "AWP&B gets approved only by the third to the fifth month of the financial year."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Socio-economic imperatives and informal labor market opportunities lead adolescent boys to drop out of secondary and senior secondary grades.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Expand model composite schools offering science/commerce, introduce residential facilities for boys, and roll out targeted remedial programs.",
+        "evidence": "adolescent boys in secondary and senior secondary grades find it economically beneficial to drop out and take up informal jobs"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Absence of a dedicated online procurement complaint handling mechanism risks unaddressed bidder grievances and procedural disputes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a comprehensive online procurement complaint redressal system with defined response timelines and escalation protocols.",
+        "evidence": "Currently, there is no dedicated mechanism in place to treat procurement-related complaints promptly."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Enactment of new national personal data protection legislation during project execution may require operational and software re-alignments.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Conduct technical impact assessments upon new legislation enactment and ensure student EMIS anonymizes personal data.",
+        "evidence": "approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Severe weather events such as heatwaves, droughts, and floods cause unplanned school closures and student learning disruptions.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Implement digitally enabled diagnostic and remedial learning systems, and climate-proof infrastructure designs for disaster resilience.",
+        "evidence": "state is vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions of the annual school summer break"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Infrastructure redevelopment for composite schools generates dust, noise, construction waste, e-waste, and occupational safety hazards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Screen all civil works for E&S risks, enforce EHS obligations in standard bidding documents, and implement waste management guidelines.",
+        "evidence": "Environmental risks and impacts associated with... dust and disposal of construction waste, resource utilization during construction, improper disposal of solid waste, lack of proper e-waste management"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Staffing vacancies at key implementing entity SIS-SS (~30% vacant) overload existing personnel and slow down operation delivery.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Hire a Project Management Consultant (PMC) to supplement core functions and execute a time-bound state staffing plan.",
+        "evidence": "On average, SIS-SS is functioning at approximately 70 percent of the sanctioned strength."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Fragmented network of small, low-enrolment primary schools results in pervasive multigrade teaching and operational inefficiencies.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Consolidate upper grades into model composite schools using a hub-and-spoke model while delivering TaRL multigrade training to primary teachers.",
+        "evidence": "fragmented school functioning have led to multi-grade teaching and higher per-pupil expenditure."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Projected long-term closure of coal mines threatens local economies and livelihoods unless youth are equipped with non-coal job skills.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Target at least 5 percent of model composite schools in coal mining blocks to expand senior secondary science and commerce education.",
+        "evidence": "gradual closure of coal mines that produce 85 percent of the country's coal over the next 20 to 30 years"
+      },
+      {
+        "risk_id": "R17",
+        "description": "Remote, hilly, or forested topography in tribal districts impedes student physical access to secondary and senior secondary schools.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Construct model composite schools with residential hostel facilities for students and teachers in isolated, topographically complex areas.",
+        "evidence": "in some areas, students face topographic challenges in accessing senior secondary schools"
+      }
+    ]
+  },
+  "parse_error": null
+}

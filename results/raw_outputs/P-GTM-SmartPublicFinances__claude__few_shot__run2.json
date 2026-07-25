@@ -1,0 +1,108 @@
+{
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T15:11:30.067530+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-GTM-SmartPublicFinances\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Cyberattacks and ransomware targeting critical government systems could cause prolonged operational outages and loss of sensitive financial data.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Establish an Information Security Management System (ISMS), deploy a CSIRT and Security Operations Center, and upgrade resilience infrastructure.\",\n      \"evidence\": \"The digital portals of the State Contracting and Acquisitions Information System known as Guatecompras and SICOIN stopped working, attributed to a cyber-attack.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"A decline in remittance inflows could diminish VAT tax revenue, constraining government spending capacity and fiscal sustainability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen medium-term fiscal planning (MTEF) instruments and enhance revenue management integration to manage revenue volatility.\",\n      \"evidence\": \"any decline in these inflows could reduce Value-Added Tax (VAT) collections, which currently generate 47.8 percent of the government\u2019s net income\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Extreme weather events and natural disasters could disrupt government ICT systems and physical infrastructure, threatening administrative continuity.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a Business Continuity Management System (BCMS) following ISO 22301 and implement cloud adoption strategies and resilient hardware.\",\n      \"evidence\": \"Guatemala ranks ninth globally for exposure to climate change impacts, driven by deforestation, land degradation, and pressure on water resources.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Fragmentation and obsolescence of existing PFM systems create data silos and hinder automated transactional execution across entities.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Define an Integrated PFM Conceptual Model and deploy a unified enterprise architecture with a subnational and central interoperability platform.\",\n      \"evidence\": \"fragmentation between central and decentralized entities impedes efficiency, including Treasury Single Account management and information consolidation.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"High turnover and lack of career development structures for public sector data and ICT specialists could impair ongoing system operationalization.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish structured career paths, institutionalize data analytics units, and deliver continuous, permanent training programs in PFM and analytics.\",\n      \"evidence\": \"Governments also struggle to build and retain analytical capacity due to the lack of structured career paths for data professionals, insufficient training opportunities\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Institutional instability and loss of reform leadership within implementing bodies could cause project implementation delays and loss of momentum.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Anchor project implementation within the Technical Budget Directorate (DTP) and establish clear interinstitutional governance committees.\",\n      \"evidence\": \"A common reason for the failure of PFM reforms in previous projects in Guatemala is the lack of adequate preparation and institutional stability\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Weak public procurement competitiveness and contract monitoring controls may result in execution delays and project cost overruns.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Modernize the National Procurement and Contracting System and integrate transactional procurement tracking with budget execution controls.\",\n      \"evidence\": \"weaknesses impact the effectiveness of investment management, including... weak procurement competitiveness, lack of lifecycle project monitoring, and insufficient data on total costs\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Low adoption rate of gender budget tagging (CPEG) by municipal governments could restrict comprehensive monitoring of social equity spending.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy upgraded municipal financial management systems and conduct targeted technical assistance and training in coordination with SEPREM.\",\n      \"evidence\": \"only 112 municipalities out of 340 linked their budget to the CPEG\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"High informal economy levels and low public spending volume constrain structural domestic revenue mobilization and state capacity.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Enhance revenue management systems, streamline property tax tools, and optimize public spending productivity across core public service sectors.\",\n      \"evidence\": \"the informal economy accounted for 23.3 percent of GDP, with 71.1 percent of the workforce employed in informal sectors.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Weak prioritization and poor alignment between public investment planning and medium-term expenditure limits lead to project discontinuities and maintenance deficits.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Redesign SEGEPLAN's planning and investment evaluation methodologies and establish a multi-year public investment plan linked to the MTEF.\",\n      \"evidence\": \"inadequate prioritization due to poor alignment with financial constraints, frequent project discontinuities, underfunded maintenance\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-GTM-SmartPublicFinances",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Cyberattacks and ransomware targeting critical government systems could cause prolonged operational outages and loss of sensitive financial data.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Establish an Information Security Management System (ISMS), deploy a CSIRT and Security Operations Center, and upgrade resilience infrastructure.",
+        "evidence": "The digital portals of the State Contracting and Acquisitions Information System known as Guatecompras and SICOIN stopped working, attributed to a cyber-attack."
+      },
+      {
+        "risk_id": "R02",
+        "description": "A decline in remittance inflows could diminish VAT tax revenue, constraining government spending capacity and fiscal sustainability.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen medium-term fiscal planning (MTEF) instruments and enhance revenue management integration to manage revenue volatility.",
+        "evidence": "any decline in these inflows could reduce Value-Added Tax (VAT) collections, which currently generate 47.8 percent of the government\u2019s net income"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Extreme weather events and natural disasters could disrupt government ICT systems and physical infrastructure, threatening administrative continuity.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a Business Continuity Management System (BCMS) following ISO 22301 and implement cloud adoption strategies and resilient hardware.",
+        "evidence": "Guatemala ranks ninth globally for exposure to climate change impacts, driven by deforestation, land degradation, and pressure on water resources."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Fragmentation and obsolescence of existing PFM systems create data silos and hinder automated transactional execution across entities.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Define an Integrated PFM Conceptual Model and deploy a unified enterprise architecture with a subnational and central interoperability platform.",
+        "evidence": "fragmentation between central and decentralized entities impedes efficiency, including Treasury Single Account management and information consolidation."
+      },
+      {
+        "risk_id": "R05",
+        "description": "High turnover and lack of career development structures for public sector data and ICT specialists could impair ongoing system operationalization.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish structured career paths, institutionalize data analytics units, and deliver continuous, permanent training programs in PFM and analytics.",
+        "evidence": "Governments also struggle to build and retain analytical capacity due to the lack of structured career paths for data professionals, insufficient training opportunities"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Institutional instability and loss of reform leadership within implementing bodies could cause project implementation delays and loss of momentum.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Anchor project implementation within the Technical Budget Directorate (DTP) and establish clear interinstitutional governance committees.",
+        "evidence": "A common reason for the failure of PFM reforms in previous projects in Guatemala is the lack of adequate preparation and institutional stability"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Weak public procurement competitiveness and contract monitoring controls may result in execution delays and project cost overruns.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Modernize the National Procurement and Contracting System and integrate transactional procurement tracking with budget execution controls.",
+        "evidence": "weaknesses impact the effectiveness of investment management, including... weak procurement competitiveness, lack of lifecycle project monitoring, and insufficient data on total costs"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Low adoption rate of gender budget tagging (CPEG) by municipal governments could restrict comprehensive monitoring of social equity spending.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy upgraded municipal financial management systems and conduct targeted technical assistance and training in coordination with SEPREM.",
+        "evidence": "only 112 municipalities out of 340 linked their budget to the CPEG"
+      },
+      {
+        "risk_id": "R09",
+        "description": "High informal economy levels and low public spending volume constrain structural domestic revenue mobilization and state capacity.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Enhance revenue management systems, streamline property tax tools, and optimize public spending productivity across core public service sectors.",
+        "evidence": "the informal economy accounted for 23.3 percent of GDP, with 71.1 percent of the workforce employed in informal sectors."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Weak prioritization and poor alignment between public investment planning and medium-term expenditure limits lead to project discontinuities and maintenance deficits.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Redesign SEGEPLAN's planning and investment evaluation methodologies and establish a multi-year public investment plan linked to the MTEF.",
+        "evidence": "inadequate prioritization due to poor alignment with financial constraints, frequent project discontinuities, underfunded maintenance"
+      }
+    ]
+  },
+  "parse_error": null
+}

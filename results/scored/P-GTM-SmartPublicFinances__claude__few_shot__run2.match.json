@@ -1,0 +1,149 @@
+{
+  "run_file": "P-GTM-SmartPublicFinances__claude__few_shot__run2.json",
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R01",
+      "similarity": 0.588,
+      "gen_category": "technical",
+      "gt_category": "technical",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R02",
+      "similarity": 0.544,
+      "gen_category": "political_regulatory",
+      "gt_category": "organizational",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Cyberattacks and ransomware targeting critical government systems could cause prolonged operational outages and loss of sensitive financial data.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish an Information Security Management System (ISMS), deploy a CSIRT and Security Operations Center, and upgrade resilience infrastructure.",
+      "evidence": "The digital portals of the State Contracting and Acquisitions Information System known as Guatecompras and SICOIN stopped working, attributed to a cyber-attack."
+    },
+    {
+      "risk_id": "R02",
+      "description": "A decline in remittance inflows could diminish VAT tax revenue, constraining government spending capacity and fiscal sustainability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthen medium-term fiscal planning (MTEF) instruments and enhance revenue management integration to manage revenue volatility.",
+      "evidence": "any decline in these inflows could reduce Value-Added Tax (VAT) collections, which currently generate 47.8 percent of the government\u2019s net income"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Extreme weather events and natural disasters could disrupt government ICT systems and physical infrastructure, threatening administrative continuity.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a Business Continuity Management System (BCMS) following ISO 22301 and implement cloud adoption strategies and resilient hardware.",
+      "evidence": "Guatemala ranks ninth globally for exposure to climate change impacts, driven by deforestation, land degradation, and pressure on water resources."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fragmentation and obsolescence of existing PFM systems create data silos and hinder automated transactional execution across entities.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Define an Integrated PFM Conceptual Model and deploy a unified enterprise architecture with a subnational and central interoperability platform.",
+      "evidence": "fragmentation between central and decentralized entities impedes efficiency, including Treasury Single Account management and information consolidation."
+    },
+    {
+      "risk_id": "R05",
+      "description": "High turnover and lack of career development structures for public sector data and ICT specialists could impair ongoing system operationalization.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Establish structured career paths, institutionalize data analytics units, and deliver continuous, permanent training programs in PFM and analytics.",
+      "evidence": "Governments also struggle to build and retain analytical capacity due to the lack of structured career paths for data professionals, insufficient training opportunities"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Institutional instability and loss of reform leadership within implementing bodies could cause project implementation delays and loss of momentum.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Anchor project implementation within the Technical Budget Directorate (DTP) and establish clear interinstitutional governance committees.",
+      "evidence": "A common reason for the failure of PFM reforms in previous projects in Guatemala is the lack of adequate preparation and institutional stability"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Weak public procurement competitiveness and contract monitoring controls may result in execution delays and project cost overruns.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Modernize the National Procurement and Contracting System and integrate transactional procurement tracking with budget execution controls.",
+      "evidence": "weaknesses impact the effectiveness of investment management, including... weak procurement competitiveness, lack of lifecycle project monitoring, and insufficient data on total costs"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Low adoption rate of gender budget tagging (CPEG) by municipal governments could restrict comprehensive monitoring of social equity spending.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Deploy upgraded municipal financial management systems and conduct targeted technical assistance and training in coordination with SEPREM.",
+      "evidence": "only 112 municipalities out of 340 linked their budget to the CPEG"
+    },
+    {
+      "risk_id": "R09",
+      "description": "High informal economy levels and low public spending volume constrain structural domestic revenue mobilization and state capacity.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Enhance revenue management systems, streamline property tax tools, and optimize public spending productivity across core public service sectors.",
+      "evidence": "the informal economy accounted for 23.3 percent of GDP, with 71.1 percent of the workforce employed in informal sectors."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Weak prioritization and poor alignment between public investment planning and medium-term expenditure limits lead to project discontinuities and maintenance deficits.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Redesign SEGEPLAN's planning and investment evaluation methodologies and establish a multi-year public investment plan linked to the MTEF.",
+      "evidence": "inadequate prioritization due to poor alignment with financial constraints, frequent project discontinuities, underfunded maintenance"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical design risks are considered Substantial. PFM reforms typically require a whole-of-government approach and involve complex, cross-cutting changes that are often difficult to implement; these challenges are further amplified when reforms involve development or integration of sophisticated information systems. Many of the anticipated efficiency gains depend heavily on interoperability of processes and seamless integration of information systems across institutions, and the involvement of multiple stakeholders adds further complexity and increases the potential for misalignment or implementation delays.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project design includes the development and application of well-defined, evidence-based PFM conceptual and governance models, informed by a diagnostic and reform strategy developed through stakeholder consultations, providing a clear and coherent framework expected to foster shared understanding, facilitate collaboration, and reduce fragmentation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risks are Substantial. Given the complexity of PFM reforms, the project requires strong government commitment to ensure effective implementation and safeguard long-term sustainability. Since the project's beneficiaries extend beyond MINFIN, coordination challenges may arise during implementation.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A PIU will be established within the Directorate of Public Treasury (DTP) for faster decision-making and improved coordination across MINFIN directorates. Component 3 will strengthen PIU operations (project management, financial management, procurement, monitoring, E&S risk management capacities); the Bank will provide training to the PIU and relevant stakeholders and facilitate change management mechanisms and a communications strategy. Coordination challenges involving multiple beneficiaries will be addressed through collaboration between MINFIN and SEGEPLAN via the Digital Transformation Commission."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risks are Substantial. This is due to DTP's limited experience with donor-funded projects and lack of recent engagement with World Bank operations; DTP has no prior experience implementing the Bank's procurement regulations, and the low value of anticipated contracts may limit interest from international firms, reducing competition. DTP has basic financial management systems in place but its unfamiliarity with the Bank's FM policies and requirements may pose risks to achieving the PDO, potentially leading to delays in activity execution.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Measures include setting up a PIU with qualified personnel, offering procurement training to PIU and DTP staff, conducting market analysis to find potential providers, and preparing a simplified Project Procurement Strategy for Development (PPSD)."
+    }
+  ]
+}
