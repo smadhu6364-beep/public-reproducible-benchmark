@@ -1,0 +1,135 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T21:08:36.791309+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"High insecurity and ongoing conflict in target regions may restrict access to project locations, disrupt service delivery, and hinder direct field supervision.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Adopt adaptive implementation modalities, including remote monitoring via GEMS, third-party monitoring, remote delivery channels, and partnerships with local CBOs and NGOs.\",\n      \"evidence\": \"high insecurity in some of the areas in which project activities will be conducted\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Targeting vulnerable populations in fragile settings creates a heightened risk of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement an SEA/SH Action Plan, enforce strict codes of conduct, recruit a dedicated GBV/SEA/SH specialist, and set up a sensitive grievance mechanism with referral pathways.\",\n      \"evidence\": \"SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The implementing ministry currently lacks a functional PIU with established financial management systems, software, and World Bank project experience.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified financial management specialists before effectiveness, acquire approved accounting software, prepare a financial procedures manual, and establish internal audit oversight.\",\n      \"evidence\": \"The assessment found that the MFS currently does not have a PIU with FM arrangements in place\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Public administrative routines and multi-layered approval processes may cause significant procurement delays and impede implementation timelines.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Define maximum review and approval delays per procurement stage in the Project Implementation Manual and provide dedicated training to bid committees.\",\n      \"evidence\": \"administrative routines may result in procurement delays, potentially affecting project implementation\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Procurement in fragile or insecure zones with limited active suppliers risks restricting market competition, inflating prices, and increasing collusion risks.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Apply flexible World Bank procurement procedures tailored for fragile situations and phase activity launches starting in accessible communes.\",\n      \"evidence\": \"procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Insufficient technical capacity within the PIU and bid committees may result in weak contract administration and poor oversight of major procurement contracts.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit an experienced full-time procurement specialist, establish formal contract management plans in STEP, and conduct capacity-building workshops.\",\n      \"evidence\": \"insufficient capacity can lead to poor contract management and administration of big contracts\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Civil works for constructing 28 warehouses and rehabilitating 10 regional centers could cause soil and water pollution and worker safety hazards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Screen subprojects using E&S procedures, prepare site-specific ESIAs/ESMPs, and mandate compliance with occupational health and safety standards.\",\n      \"evidence\": \"key E&S risks and impacts include water and soil pollution from solid and liquid waste at construction and rehabilitation sites\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Connecting the Unique Social Registry with national ID and payment systems creates data privacy and cybersecurity vulnerabilities regarding beneficiary data.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce national data protection laws under CIL oversight and adopt security and data-exchange protocols approved by the National Cybersecurity Agency (ANSSI).\",\n      \"evidence\": \"follow the security procedures elaborated by the National Cybersecurity Agency (ANSSI)\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The fluid national political environment in Burkina Faso may cause institutional shifts, policy changes, or governance bottlenecks during project execution.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Anchor project activities within the broader national PAMPV strategy and utilize the multi-sectoral Steering Committee to maintain institutional alignment.\",\n      \"evidence\": \"the country's current fluid political situation.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Severe fragmentation across social protection actors and ministries risks creating coordination bottlenecks, operational overlap, and communication failures.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a functional inter-ministerial Steering Committee and formalize operational protocols and data-sharing frameworks across participating institutions.\",\n      \"evidence\": \"Burkina Faso\u2019s social assistance system is highly fragmented, with more than 200 interventions implemented by 50 agencies.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Flaws in targeting or social barriers could lead to the exclusion of marginalized groups, such as IDPs, women, youth, and persons with disabilities, from economic benefits.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Utilize RSU proxy means testing combined with community validation assemblies, enforce gender quotas, and deploy an accessible Grievance Redress Mechanism.\",\n      \"evidence\": \"exclusion from the project\u2019s benefits of certain categories of people such as vulnerable groups including women, youth, people with disabilities\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Land acquisition or site clearing for warehouse construction and provincial intake center upgrades could result in localized economic displacement.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritize available public land, screen all construction sites for resettlement impacts, and formulate Resettlement Action Plans or Livelihood Restoration Plans as needed.\",\n      \"evidence\": \"ESS 5: Land Acquisition, Restrictions on Land Use and Involuntary Resettlement... economic displacement.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Delays in fulfilling post-effectiveness legal covenants, such as recruiting mandatory key specialists, could slow down overall project initiation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Initiate recruitment processes early during preparation and closely track legal covenant compliance deadlines post-effectiveness.\",\n      \"evidence\": \"The PIU shall include the following additional key staff... no later than three (3) months after the Effective Date\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "High insecurity and ongoing conflict in target regions may restrict access to project locations, disrupt service delivery, and hinder direct field supervision.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Adopt adaptive implementation modalities, including remote monitoring via GEMS, third-party monitoring, remote delivery channels, and partnerships with local CBOs and NGOs.",
+        "evidence": "high insecurity in some of the areas in which project activities will be conducted"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Targeting vulnerable populations in fragile settings creates a heightened risk of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement an SEA/SH Action Plan, enforce strict codes of conduct, recruit a dedicated GBV/SEA/SH specialist, and set up a sensitive grievance mechanism with referral pathways.",
+        "evidence": "SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population"
+      },
+      {
+        "risk_id": "R03",
+        "description": "The implementing ministry currently lacks a functional PIU with established financial management systems, software, and World Bank project experience.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit qualified financial management specialists before effectiveness, acquire approved accounting software, prepare a financial procedures manual, and establish internal audit oversight.",
+        "evidence": "The assessment found that the MFS currently does not have a PIU with FM arrangements in place"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Public administrative routines and multi-layered approval processes may cause significant procurement delays and impede implementation timelines.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Define maximum review and approval delays per procurement stage in the Project Implementation Manual and provide dedicated training to bid committees.",
+        "evidence": "administrative routines may result in procurement delays, potentially affecting project implementation"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Procurement in fragile or insecure zones with limited active suppliers risks restricting market competition, inflating prices, and increasing collusion risks.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Apply flexible World Bank procurement procedures tailored for fragile situations and phase activity launches starting in accessible communes.",
+        "evidence": "procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Insufficient technical capacity within the PIU and bid committees may result in weak contract administration and poor oversight of major procurement contracts.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit an experienced full-time procurement specialist, establish formal contract management plans in STEP, and conduct capacity-building workshops.",
+        "evidence": "insufficient capacity can lead to poor contract management and administration of big contracts"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Civil works for constructing 28 warehouses and rehabilitating 10 regional centers could cause soil and water pollution and worker safety hazards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Screen subprojects using E&S procedures, prepare site-specific ESIAs/ESMPs, and mandate compliance with occupational health and safety standards.",
+        "evidence": "key E&S risks and impacts include water and soil pollution from solid and liquid waste at construction and rehabilitation sites"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Connecting the Unique Social Registry with national ID and payment systems creates data privacy and cybersecurity vulnerabilities regarding beneficiary data.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce national data protection laws under CIL oversight and adopt security and data-exchange protocols approved by the National Cybersecurity Agency (ANSSI).",
+        "evidence": "follow the security procedures elaborated by the National Cybersecurity Agency (ANSSI)"
+      },
+      {
+        "risk_id": "R09",
+        "description": "The fluid national political environment in Burkina Faso may cause institutional shifts, policy changes, or governance bottlenecks during project execution.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Anchor project activities within the broader national PAMPV strategy and utilize the multi-sectoral Steering Committee to maintain institutional alignment.",
+        "evidence": "the country's current fluid political situation."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Severe fragmentation across social protection actors and ministries risks creating coordination bottlenecks, operational overlap, and communication failures.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a functional inter-ministerial Steering Committee and formalize operational protocols and data-sharing frameworks across participating institutions.",
+        "evidence": "Burkina Faso\u2019s social assistance system is highly fragmented, with more than 200 interventions implemented by 50 agencies."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Flaws in targeting or social barriers could lead to the exclusion of marginalized groups, such as IDPs, women, youth, and persons with disabilities, from economic benefits.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Utilize RSU proxy means testing combined with community validation assemblies, enforce gender quotas, and deploy an accessible Grievance Redress Mechanism.",
+        "evidence": "exclusion from the project\u2019s benefits of certain categories of people such as vulnerable groups including women, youth, people with disabilities"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Land acquisition or site clearing for warehouse construction and provincial intake center upgrades could result in localized economic displacement.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Prioritize available public land, screen all construction sites for resettlement impacts, and formulate Resettlement Action Plans or Livelihood Restoration Plans as needed.",
+        "evidence": "ESS 5: Land Acquisition, Restrictions on Land Use and Involuntary Resettlement... economic displacement."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Delays in fulfilling post-effectiveness legal covenants, such as recruiting mandatory key specialists, could slow down overall project initiation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Initiate recruitment processes early during preparation and closely track legal covenant compliance deadlines post-effectiveness.",
+        "evidence": "The PIU shall include the following additional key staff... no later than three (3) months after the Effective Date"
+      }
+    ]
+  },
+  "parse_error": null
+}

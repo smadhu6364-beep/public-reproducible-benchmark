@@ -1,0 +1,153 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T21:09:06.686161+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"High insecurity and active conflict in project regions may severely restrict field access, threaten community safety, and disrupt intervention activities.\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Utilize remote monitoring tools (GEMS, PDM), delegate implementation to local CSOs/NGOs/UN partners, and adopt security SOPs adapted to zone threat levels.\",\n      \"evidence\": \"high insecurity in some of the areas in which project activities will be conducted\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Burkina Faso's fluid political context could affect operational continuity, institutional leadership, and strategic policy commitments.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Anchor implementation within permanent ministry directorates (MFS), establish a clear Project Implementation Manual, and maintain continuous World Bank supervision.\",\n      \"evidence\": \"the country's current fluid political situation.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Lack of an established PIU with financial management capacity, accounting software, and dedicated FM personnel in MFS risks financial non-compliance and reporting delays.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified FM specialists before effectiveness, adopt an FM procedures manual, install accounting software, and engage internal/external independent auditors.\",\n      \"evidence\": \"The assessment found that the MFS currently does not have a PIU with FM arrangements in place, including the absence of FM staff\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Administrative routines and untrained bid committee members in World Bank procurement procedures may lead to substantial procurement process delays.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit an experienced procurement specialist, establish business standards with defined approval timelines in the PIM, and deliver procurement training to committee members.\",\n      \"evidence\": \"administrative routines may result in procurement delays, potentially affecting project implementation\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Limited market competition in insecure and fragile project areas risks collusive bidding, cost inflation, and failure to award contracts.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Apply World Bank procurement flexibilities for fragile situations, initiate procurement in accessible areas, and adjust market approach strategies.\",\n      \"evidence\": \"procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Insufficient institutional capacity and experience with major civil works contracts may lead to weak oversight and poor administration of warehouse construction.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop mandatory contract management plans in STEP for prior-review contracts and provide continuous hands-on contract management training.\",\n      \"evidence\": \"insufficient capacity can lead to poor contract management and administration of big contracts.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"High contextual vulnerability and intervention delivery in fragile settings pose substantial risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement an SEA/SH Action Plan, enforce codes of conduct, hire a GBV specialist, and integrate confidential GM channels linked to survivor support services.\",\n      \"evidence\": \"SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Marginalized populations including IDPs, female-headed households, and persons with disabilities face potential exclusion from program selection and benefits.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Employ community-validated PMT targeting via the RSU, implement gender-sensitive outreach, and establish an operational Grievance Redress Mechanism within 6 months.\",\n      \"evidence\": \"exclusion from the project's benefits of certain categories of people such as vulnerable groups including women, youth, people with disabilities, internal displaced populations\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Construction of 28 warehouses and rehabilitation of 10 regional centers present occupational health and safety hazards, as well as localized soil/water pollution.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct E&S screening, prepare site-specific ESIAs and Labor Management Plans, and recruit dedicated full-time environmental and social specialists in the PIU.\",\n      \"evidence\": \"key E&S risks and impacts include water and soil pollution from solid and liquid waste at construction and rehabilitation sites; occupational health and safety\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Recurrent climate shocks such as severe droughts and flooding may destroy productive assets and undermine income-generating activities of vulnerable households.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Promote climate-resilient off-farm IGAs, deliver climate adaptation awareness modules, and maintain a CERC for rapid reallocation of emergency funds.\",\n      \"evidence\": \"5 out of 10 Burkinabe in rural areas affected at least once by droughts or irregular rainfall patterns\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Lack of current interoperability among existing social protection databases (RSU, CONASUR, Faso Arzeka, WURI ID) can hinder real-time data exchange and targeting efficiency.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Define an interoperability architecture strategy in Year 1, establish secure API links with ANSSI/CIL oversight, and update data sharing regulations.\",\n      \"evidence\": \"Systems not interoperable\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Interministerial fragmentation and involvement of multiple government entities across social protection, disaster management, and agriculture could delay unified program delivery.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a multi-sectoral Steering Committee, operationalize interagency collaboration protocols, and convene regular inter-ministerial planning meetings.\",\n      \"evidence\": \"Building adaptive social protection that can respond to the needs of the poor as well as to shocks involves multiple government actors\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Delays in adopting the Productive Grants Manual or executing grant agreements could block disbursements for economic inclusion activities.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritize the drafting, approval, and adoption of the Productive Grants Manual prior to initiating grant disbursement activities.\",\n      \"evidence\": \"no withdrawal shall be made... until and unless the Recipient has: (i) adopted the Productive Grants Manual\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Sharp reductions in external humanitarian funding increase the strain on national emergency structures and shock-responsive social protection systems.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Expand RSU coverage, reinforce CONASUR's logistical/warehouse capacity, and operationalize the HDP triple nexus framework.\",\n      \"evidence\": \"Recent cuts in humanitarian funding have reduced support for IDPs.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Lack of required national identification documents (KYC requirements) among poor beneficiaries, especially female IDPs, may prevent MFI account opening and grant transfers.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Partner with the ministry responsible for security and the WURI project to facilitate National Identity Card issuance and cover account opening fees.\",\n      \"evidence\": \"obtaining ID document for KYC requirement in opening accounts\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "High insecurity and active conflict in project regions may severely restrict field access, threaten community safety, and disrupt intervention activities.",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Utilize remote monitoring tools (GEMS, PDM), delegate implementation to local CSOs/NGOs/UN partners, and adopt security SOPs adapted to zone threat levels.",
+        "evidence": "high insecurity in some of the areas in which project activities will be conducted"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Burkina Faso's fluid political context could affect operational continuity, institutional leadership, and strategic policy commitments.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Anchor implementation within permanent ministry directorates (MFS), establish a clear Project Implementation Manual, and maintain continuous World Bank supervision.",
+        "evidence": "the country's current fluid political situation."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Lack of an established PIU with financial management capacity, accounting software, and dedicated FM personnel in MFS risks financial non-compliance and reporting delays.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit qualified FM specialists before effectiveness, adopt an FM procedures manual, install accounting software, and engage internal/external independent auditors.",
+        "evidence": "The assessment found that the MFS currently does not have a PIU with FM arrangements in place, including the absence of FM staff"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Administrative routines and untrained bid committee members in World Bank procurement procedures may lead to substantial procurement process delays.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit an experienced procurement specialist, establish business standards with defined approval timelines in the PIM, and deliver procurement training to committee members.",
+        "evidence": "administrative routines may result in procurement delays, potentially affecting project implementation"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Limited market competition in insecure and fragile project areas risks collusive bidding, cost inflation, and failure to award contracts.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Apply World Bank procurement flexibilities for fragile situations, initiate procurement in accessible areas, and adjust market approach strategies.",
+        "evidence": "procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Insufficient institutional capacity and experience with major civil works contracts may lead to weak oversight and poor administration of warehouse construction.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop mandatory contract management plans in STEP for prior-review contracts and provide continuous hands-on contract management training.",
+        "evidence": "insufficient capacity can lead to poor contract management and administration of big contracts."
+      },
+      {
+        "risk_id": "R07",
+        "description": "High contextual vulnerability and intervention delivery in fragile settings pose substantial risks of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH).",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement an SEA/SH Action Plan, enforce codes of conduct, hire a GBV specialist, and integrate confidential GM channels linked to survivor support services.",
+        "evidence": "SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Marginalized populations including IDPs, female-headed households, and persons with disabilities face potential exclusion from program selection and benefits.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Employ community-validated PMT targeting via the RSU, implement gender-sensitive outreach, and establish an operational Grievance Redress Mechanism within 6 months.",
+        "evidence": "exclusion from the project's benefits of certain categories of people such as vulnerable groups including women, youth, people with disabilities, internal displaced populations"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Construction of 28 warehouses and rehabilitation of 10 regional centers present occupational health and safety hazards, as well as localized soil/water pollution.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct E&S screening, prepare site-specific ESIAs and Labor Management Plans, and recruit dedicated full-time environmental and social specialists in the PIU.",
+        "evidence": "key E&S risks and impacts include water and soil pollution from solid and liquid waste at construction and rehabilitation sites; occupational health and safety"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Recurrent climate shocks such as severe droughts and flooding may destroy productive assets and undermine income-generating activities of vulnerable households.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Promote climate-resilient off-farm IGAs, deliver climate adaptation awareness modules, and maintain a CERC for rapid reallocation of emergency funds.",
+        "evidence": "5 out of 10 Burkinabe in rural areas affected at least once by droughts or irregular rainfall patterns"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Lack of current interoperability among existing social protection databases (RSU, CONASUR, Faso Arzeka, WURI ID) can hinder real-time data exchange and targeting efficiency.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Define an interoperability architecture strategy in Year 1, establish secure API links with ANSSI/CIL oversight, and update data sharing regulations.",
+        "evidence": "Systems not interoperable"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Interministerial fragmentation and involvement of multiple government entities across social protection, disaster management, and agriculture could delay unified program delivery.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a multi-sectoral Steering Committee, operationalize interagency collaboration protocols, and convene regular inter-ministerial planning meetings.",
+        "evidence": "Building adaptive social protection that can respond to the needs of the poor as well as to shocks involves multiple government actors"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Delays in adopting the Productive Grants Manual or executing grant agreements could block disbursements for economic inclusion activities.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritize the drafting, approval, and adoption of the Productive Grants Manual prior to initiating grant disbursement activities.",
+        "evidence": "no withdrawal shall be made... until and unless the Recipient has: (i) adopted the Productive Grants Manual"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Sharp reductions in external humanitarian funding increase the strain on national emergency structures and shock-responsive social protection systems.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Expand RSU coverage, reinforce CONASUR's logistical/warehouse capacity, and operationalize the HDP triple nexus framework.",
+        "evidence": "Recent cuts in humanitarian funding have reduced support for IDPs."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Lack of required national identification documents (KYC requirements) among poor beneficiaries, especially female IDPs, may prevent MFI account opening and grant transfers.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Partner with the ministry responsible for security and the WURI project to facilitate National Identity Card issuance and cover account opening fees.",
+        "evidence": "obtaining ID document for KYC requirement in opening accounts"
+      }
+    ]
+  },
+  "parse_error": null
+}

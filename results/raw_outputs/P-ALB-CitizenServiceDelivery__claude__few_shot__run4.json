@@ -1,0 +1,126 @@
+{
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 4,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T21:00:08.442052+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-ALB-CitizenServiceDelivery\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"ADISA's lack of operational history and implementation experience may lead to execution delays and operational management inefficiencies.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced PMU staff, provide continuous technical assistance, and establish structured operational procedures under MIPA supervision.\",\n      \"evidence\": \"ADISA has a limited track record of implementation experience, but some members of the project team have relevant experience.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High procurement risk at ADISA and PMU could result in procurement delays for critical technical assistance and ICT contracts.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Use CFCU for initial PPF procurement, hire dedicated procurement specialists, and require World Bank prior review for key contracts.\",\n      \"evidence\": \"Since ADISA is a newly-created agency and the PMU is not yet fully set up, the procurement risk rating is high.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Substantial financial management risk due to lack of prior experience with Bank-funded operations at MIPA and ADISA.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire qualified financial specialists, establish a Financial Management Manual, purchase accounting software, and conduct annual audits.\",\n      \"evidence\": \"Neither MIPA, nor the recently constituted ADISA have previous experience in implementation of large donor funded operations\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Physical construction of the Citizen Service Center building may cause localized environmental impacts including dust, noise, and waste.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce compliance with a project-specific Environmental Management Plan (EMP) integrated into civil works construction contracts.\",\n      \"evidence\": \"Potential environmental impacts that are associated with new construction include dust and noise, waste generation, material supply, use of machinery\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Focusing on digital services and urban CSCs risks excluding rural, poor, elderly, and minority citizens with low digital literacy.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish assisted digital outreach points, maintain existing local access points, conduct targeted non-digital communication, and monitor vulnerable user access.\",\n      \"evidence\": \"There is a risk that the focus on state-of-the-art means for service delivery... will diminish access of the poor and vulnerable\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Complex coordination requirements across more than a dozen agencies could impede business process re-engineering and system integration.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Leverage Inter-Ministerial Committees and the Prime Minister's Delivery Unit to enforce agency cooperation and track reform milestones.\",\n      \"evidence\": \"Inter-sectoral reforms, especially those that involve more than a dozen government agencies, necessarily entail complex coordination.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Compressed reform timeline and ambitious targets for legal amendments and service re-engineering may lead to schedule slippage.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize a phased approach, focus early on quick wins, and link financial disbursements to DLIs spread through 2020.\",\n      \"evidence\": \"The compressed implementation timeline is a potential risk, which is mitigated by the project's span and incentives to deliver up to 2020.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Resistance from agency officials and civil servants reluctant to yield front-office authority could delay front-office integration.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement change management programs, conduct internal stakeholder outreach, and secure top-level political mandate via the Prime Minister.\",\n      \"evidence\": \"Ministries, agencies and individual civil servants may not welcome ceding the front office function to CSC. Bureaucratic resistance could stifle efforts\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Incomplete database digitization and missing personal ID numbers in agency registers hinder database interoperability and service automation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide TA for database cleanup, standardize data formats, and connect agency databases to the Government Interoperability Platform.\",\n      \"evidence\": \"Property and pension records, for example, are only partially digitized... The National ID number is missing for most records\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inaccuracies in administrative tracking data may mask actual processing delays experienced by citizens.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy independent third-party verification, periodic citizen surveys, and proactive text-message beneficiary feedback collection.\",\n      \"evidence\": \"The data submitted by the IPRO office on the other hand routinely records that almost all applications are processed within the required six days.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Delays in achieving Disbursement Linked Indicators or meeting condition DLI#5 could freeze results-based loan disbursements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritize completion of institutional prerequisites, perform regular DLI tracking, and engage third-party verification early.\",\n      \"evidence\": \"No disbursements under RBF will be made until DLI#5 is achieved... disbursements under RBF are contingent upon achieving DLIs.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Inadequate long-term budget provision for software licensing, maintenance, and periodic upgrades could jeopardize e-service operations.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Factor ongoing ICT licenses and maintenance costs into long-term fiscal planning using budget savings realized through administrative re-engineering.\",\n      \"evidence\": \"Ongoing operating costs are expected to include licenses and system operation and maintenance... cost of such upgrades should also be appropriately factored\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-ALB-CitizenServiceDelivery",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "ADISA's lack of operational history and implementation experience may lead to execution delays and operational management inefficiencies.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire experienced PMU staff, provide continuous technical assistance, and establish structured operational procedures under MIPA supervision.",
+        "evidence": "ADISA has a limited track record of implementation experience, but some members of the project team have relevant experience."
+      },
+      {
+        "risk_id": "R02",
+        "description": "High procurement risk at ADISA and PMU could result in procurement delays for critical technical assistance and ICT contracts.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Use CFCU for initial PPF procurement, hire dedicated procurement specialists, and require World Bank prior review for key contracts.",
+        "evidence": "Since ADISA is a newly-created agency and the PMU is not yet fully set up, the procurement risk rating is high."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Substantial financial management risk due to lack of prior experience with Bank-funded operations at MIPA and ADISA.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire qualified financial specialists, establish a Financial Management Manual, purchase accounting software, and conduct annual audits.",
+        "evidence": "Neither MIPA, nor the recently constituted ADISA have previous experience in implementation of large donor funded operations"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Physical construction of the Citizen Service Center building may cause localized environmental impacts including dust, noise, and waste.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce compliance with a project-specific Environmental Management Plan (EMP) integrated into civil works construction contracts.",
+        "evidence": "Potential environmental impacts that are associated with new construction include dust and noise, waste generation, material supply, use of machinery"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Focusing on digital services and urban CSCs risks excluding rural, poor, elderly, and minority citizens with low digital literacy.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish assisted digital outreach points, maintain existing local access points, conduct targeted non-digital communication, and monitor vulnerable user access.",
+        "evidence": "There is a risk that the focus on state-of-the-art means for service delivery... will diminish access of the poor and vulnerable"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Complex coordination requirements across more than a dozen agencies could impede business process re-engineering and system integration.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Leverage Inter-Ministerial Committees and the Prime Minister's Delivery Unit to enforce agency cooperation and track reform milestones.",
+        "evidence": "Inter-sectoral reforms, especially those that involve more than a dozen government agencies, necessarily entail complex coordination."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Compressed reform timeline and ambitious targets for legal amendments and service re-engineering may lead to schedule slippage.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Utilize a phased approach, focus early on quick wins, and link financial disbursements to DLIs spread through 2020.",
+        "evidence": "The compressed implementation timeline is a potential risk, which is mitigated by the project's span and incentives to deliver up to 2020."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Resistance from agency officials and civil servants reluctant to yield front-office authority could delay front-office integration.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement change management programs, conduct internal stakeholder outreach, and secure top-level political mandate via the Prime Minister.",
+        "evidence": "Ministries, agencies and individual civil servants may not welcome ceding the front office function to CSC. Bureaucratic resistance could stifle efforts"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Incomplete database digitization and missing personal ID numbers in agency registers hinder database interoperability and service automation.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide TA for database cleanup, standardize data formats, and connect agency databases to the Government Interoperability Platform.",
+        "evidence": "Property and pension records, for example, are only partially digitized... The National ID number is missing for most records"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inaccuracies in administrative tracking data may mask actual processing delays experienced by citizens.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Deploy independent third-party verification, periodic citizen surveys, and proactive text-message beneficiary feedback collection.",
+        "evidence": "The data submitted by the IPRO office on the other hand routinely records that almost all applications are processed within the required six days."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Delays in achieving Disbursement Linked Indicators or meeting condition DLI#5 could freeze results-based loan disbursements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritize completion of institutional prerequisites, perform regular DLI tracking, and engage third-party verification early.",
+        "evidence": "No disbursements under RBF will be made until DLI#5 is achieved... disbursements under RBF are contingent upon achieving DLIs."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Inadequate long-term budget provision for software licensing, maintenance, and periodic upgrades could jeopardize e-service operations.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Factor ongoing ICT licenses and maintenance costs into long-term fiscal planning using budget savings realized through administrative re-engineering.",
+        "evidence": "Ongoing operating costs are expected to include licenses and system operation and maintenance... cost of such upgrades should also be appropriately factored"
+      }
+    ]
+  },
+  "parse_error": null
+}

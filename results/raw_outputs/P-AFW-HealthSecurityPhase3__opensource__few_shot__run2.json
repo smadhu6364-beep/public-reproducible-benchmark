@@ -1,0 +1,153 @@
+{
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T20:54:38.600138+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-AFW-HealthSecurityPhase3\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate stakeholder engagement may lead to exclusion of vulnerable or disadvantaged groups\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a strong, adequately budgeted, and operational Grievance Redress Mechanism (GRM) to track and respond to grievances from target populations\",\n      \"evidence\": \"Section V. GRIEVANCE REDRESS SERVICES\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial management risks may lead to inaccurate or untimely information on project status\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Update existing financial management manuals, upgrade accounting software, and recruit an external auditor\",\n      \"evidence\": \"Section IV. B. Fiduciary\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement risks may lead to delays, governance issues, or limited market competition\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced procurement specialists, conduct early market engagement, and adopt flexible procurement approaches\",\n      \"evidence\": \"Section IV. B. Procurement\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental risks may lead to community health risks, occupational health and safety risks, or nuisances related to air and noise emissions\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare an Umbrella Environmental and Social Management Framework (U-ESMF) and adapt it to country context\",\n      \"evidence\": \"Section IV. D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Sexual Exploitation and Abuse (SEA) risks may lead to harm to beneficiaries or staff\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Prepare country-specific Gender-Based Violence (GBV) and SEA risk assessments and develop corresponding SEA Action Plans\",\n      \"evidence\": \"Section IV. D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Climate change may lead to increased health risks, particularly for vulnerable populations\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate change considerations into project design and implementation, including climate-resilient infrastructure and health services\",\n      \"evidence\": \"Section C. Relevance to Higher Level Objectives\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Fragility, conflict, and violence may lead to disruptions in health services or increased health risks\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop contingency plans and establish emergency response mechanisms to address potential disruptions\",\n      \"evidence\": \"Section A. Regional Context\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate health infrastructure may lead to reduced access to health services or increased health risks\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Invest in health infrastructure upgrades, including green and resilient solutions, to improve access to health services\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate human resources for health may lead to reduced capacity to respond to health emergencies\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement human resources for health plans, including training and capacity-building programs\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate laboratory capacity may lead to reduced ability to detect and respond to health emergencies\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Invest in laboratory upgrades, including equipment and training, to improve capacity for disease detection and response\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Inadequate risk communication and community engagement may lead to reduced effectiveness of health emergency response\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement risk communication and community engagement strategies, including training and capacity-building programs\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Inadequate gender considerations may lead to reduced effectiveness of health emergency response\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate gender considerations into project design and implementation, including training and capacity-building programs\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Inadequate environmental and social considerations may lead to negative impacts on communities or the environment\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare and implement environmental and social management plans, including stakeholder engagement and monitoring\",\n      \"evidence\": \"Section IV. D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Inadequate governance and institutional capacity may lead to reduced effectiveness of health emergency response\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement governance and institutional capacity-building programs, including training and capacity-building programs\",\n      \"evidence\": \"Section III. IMPLEMENTATION ARRANGEMENTS\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Inadequate financial management and procurement may lead to reduced effectiveness of health emergency response\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement financial management and procurement plans, including training and capacity-building programs\",\n      \"evidence\": \"Section IV. B. Fiduciary\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-AFW-HealthSecurityPhase3",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate stakeholder engagement may lead to exclusion of vulnerable or disadvantaged groups",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a strong, adequately budgeted, and operational Grievance Redress Mechanism (GRM) to track and respond to grievances from target populations",
+        "evidence": "Section V. GRIEVANCE REDRESS SERVICES"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial management risks may lead to inaccurate or untimely information on project status",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Update existing financial management manuals, upgrade accounting software, and recruit an external auditor",
+        "evidence": "Section IV. B. Fiduciary"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement risks may lead to delays, governance issues, or limited market competition",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire experienced procurement specialists, conduct early market engagement, and adopt flexible procurement approaches",
+        "evidence": "Section IV. B. Procurement"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental risks may lead to community health risks, occupational health and safety risks, or nuisances related to air and noise emissions",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prepare an Umbrella Environmental and Social Management Framework (U-ESMF) and adapt it to country context",
+        "evidence": "Section IV. D. Environmental and Social"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Sexual Exploitation and Abuse (SEA) risks may lead to harm to beneficiaries or staff",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Prepare country-specific Gender-Based Violence (GBV) and SEA risk assessments and develop corresponding SEA Action Plans",
+        "evidence": "Section IV. D. Environmental and Social"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Climate change may lead to increased health risks, particularly for vulnerable populations",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate change considerations into project design and implementation, including climate-resilient infrastructure and health services",
+        "evidence": "Section C. Relevance to Higher Level Objectives"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Fragility, conflict, and violence may lead to disruptions in health services or increased health risks",
+        "category": "political_regulatory",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop contingency plans and establish emergency response mechanisms to address potential disruptions",
+        "evidence": "Section A. Regional Context"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate health infrastructure may lead to reduced access to health services or increased health risks",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Invest in health infrastructure upgrades, including green and resilient solutions, to improve access to health services",
+        "evidence": "Section II. PROJECT DESCRIPTION"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate human resources for health may lead to reduced capacity to respond to health emergencies",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement human resources for health plans, including training and capacity-building programs",
+        "evidence": "Section II. PROJECT DESCRIPTION"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate laboratory capacity may lead to reduced ability to detect and respond to health emergencies",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Invest in laboratory upgrades, including equipment and training, to improve capacity for disease detection and response",
+        "evidence": "Section II. PROJECT DESCRIPTION"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Inadequate risk communication and community engagement may lead to reduced effectiveness of health emergency response",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement risk communication and community engagement strategies, including training and capacity-building programs",
+        "evidence": "Section II. PROJECT DESCRIPTION"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Inadequate gender considerations may lead to reduced effectiveness of health emergency response",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate gender considerations into project design and implementation, including training and capacity-building programs",
+        "evidence": "Section II. PROJECT DESCRIPTION"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Inadequate environmental and social considerations may lead to negative impacts on communities or the environment",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prepare and implement environmental and social management plans, including stakeholder engagement and monitoring",
+        "evidence": "Section IV. D. Environmental and Social"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Inadequate governance and institutional capacity may lead to reduced effectiveness of health emergency response",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement governance and institutional capacity-building programs, including training and capacity-building programs",
+        "evidence": "Section III. IMPLEMENTATION ARRANGEMENTS"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Inadequate financial management and procurement may lead to reduced effectiveness of health emergency response",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement financial management and procurement plans, including training and capacity-building programs",
+        "evidence": "Section IV. B. Fiduciary"
+      }
+    ]
+  },
+  "parse_error": null
+}
