@@ -1576,3 +1576,19 @@ khu590` error. Madhu has confirmed `khu590` isn't a real second identity,
 just a stale cached Windows credential - still unresolved on the user's end
 as of this writing; I remain blocked from inspecting/clearing OS credentials
 directly (auto-mode safety classifier declines `cmdkey` commands).
+
+## SETTLED 2026-07-25 (Madhu, directly): the fix for the `khu590` push error - singular instruction, don't re-diagnose
+
+Madhu confirmed directly, plainly, a second time: `khu590` is not a real
+identity of theirs in any form - just a stale Windows-cached credential.
+**The fix, as the one settled instruction, not one option among several:**
+open Windows Credential Manager, find the entry for `git:https://github.com`
+specifically (not some other git-related entry), remove it, then let the
+next `git push` prompt for fresh sign-in and authenticate as
+`smadhu6364-beep`. Nothing more exotic than that - no need to inspect other
+cached credentials, PATs, SSH keys, or `git config` remotes as alternate
+causes. This has to happen on Madhu's actual Windows machine; neither
+Cowork's sandbox nor VS Code's own safety-classifier-blocked `cmdkey` access
+can do it. Once Madhu has done this, the next `git push origin main` should
+just work - if it still 403s after this specific step, that's new
+information worth a fresh look, not a sign the diagnosis above was wrong.
