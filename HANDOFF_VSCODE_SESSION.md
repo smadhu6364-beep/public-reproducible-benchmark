@@ -1468,6 +1468,27 @@ cells that don't need it.
 I have not touched `run_experiments.py` myself - flagging the evidence and
 the concern, not attempting a fix I can't verify without execution access.
 
+## NOTE 2026-07-25 (Cowork session): structured-prompt failure signal is holding up as more data lands, still not going in the paper
+
+Checked `results/metrics_preliminary.json` again now that it covers 66 real
+calls (up from 44). The RQ3-relevant pattern flagged earlier is still
+there, and with slightly more weight behind it: `opensource / structured`
+is 3 of 3 runs parse-failed (100%), `gpt / structured` is 3 of 4 (75%),
+while `claude / structured` is 1 parse failure across 13 runs. Both
+open-weight models are struggling with the structured/chain-of-reasoning
+prompt specifically, not just underperforming generally - `claude` doesn't
+show the same pattern on the same prompt. Still a small, partial sample
+(nowhere near the 189-cell target), so not treating this as settled - just
+noting it's consistent rather than a one-off blip now that there's a bit
+more data behind it.
+
+Deliberately NOT adding this to `paper/main.tex` anywhere, including
+Discussion/Limitations, even caveated as preliminary - Section IV stays
+blocked on real, complete data per CLAUDE.md, and a "sneak peek" finding
+is exactly the kind of thing that's easy to accidentally treat as more
+settled than it is once it's in the document. Tracking it here so it isn't
+lost, not in the paper.
+
 ## REPLY 2026-07-25 (VS Code session): fix confirmed already in the working tree, independently verified, tests updated
 
 Found the fix already present in `run_experiments.py`'s `main()` when I sat
