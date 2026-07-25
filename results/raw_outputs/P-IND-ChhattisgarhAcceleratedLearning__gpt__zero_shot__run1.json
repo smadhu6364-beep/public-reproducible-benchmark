@@ -1,0 +1,180 @@
+{
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:42:12.986593+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-IND-ChhattisgarhAcceleratedLearning\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Climate\u2011induced extreme weather (droughts, floods, heat waves) may force extensions of school summer breaks, reducing instructional days and delaying learning outcomes.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate\u2011resilient school calendars and build buffer days; develop contingency learning plans (e.g., remote/online modules) for weather\u2011related closures.\",\n      \"evidence\": \"Section B.3: state vulnerable to droughts and floods that can force extensions of the annual school summer break.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inadequate in\u2011service professional development for teachers may limit adoption of TaRL and climate\u2011change pedagogy, compromising learning gains.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement the 60\u2011day multi\u2011year training programme with clear milestones; monitor teacher participation and competency through regular assessments.\",\n      \"evidence\": \"RA\u20111 description and DLI\u20114 baseline stating lack of structured long\u2011term in\u2011service training on TaRL.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Shortage of subject\u2011specialist teachers leads to multi\u2011grade teaching and reduced instructional quality, especially in science and commerce streams.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate recruitment of subject specialists; use the need\u2011based training system to upskill existing teachers; prioritize hiring in model composite schools.\",\n      \"evidence\": \"Paragraph 11: many teachers lack subject expertise, leading to language teachers teaching maths, English and sciences.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays in verification of Disbursement Linked Indicators may postpone fund releases, affecting programme cash flow and timelines.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a fast\u2011track verification protocol with the IVA; set internal deadlines for data submission and pre\u2011verification checks before Bank review.\",\n      \"evidence\": \"Section V, paragraph 44: funds disbursed on achievement of DLI verified by an IVA.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Weak fiduciary controls and systemic gaps could lead to misallocation of funds and low budget execution rates.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen internal audit, adopt risk\u2011based audit approach, and implement the recommended FM staffing plan and audit committee by June\u202f2024.\",\n      \"evidence\": \"Annex\u202f4, paragraph\u202f56\u201157: IFSA rates fiduciary risk as \u2018Substantial\u2019 and notes systemic gaps.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Absence of an annual procurement plan may cause untimely tendering and contract award, delaying civil works for model schools.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Mandate preparation of a detailed annual procurement plan within one month of AWP&B approval; publish it on the e\u2011GP portal for transparency.\",\n      \"evidence\": \"Annex\u202f4, paragraph\u202f4: procurement planning not practiced; no annual procurement plan with timelines.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Limited institutional capacity for environmental and social management could result in non\u2011compliance with waste, fire safety and green\u2011building standards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct E&S capacity\u2011building workshops for SIS\u2011SS, PWD and RES; embed EHS clauses in all bidding documents and monitor compliance onsite.\",\n      \"evidence\": \"Paragraph 67\u201168: weak institutional capacity for E&S; gaps in fire safety, waste management, green design.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"School\u2011related gender\u2011based violence (SRGBV) in residential facilities may deter enrolment and increase dropout, especially for boys.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Roll out mandatory SRGBV training for all school leaders; establish clear reporting channels and integrate SRGBV modules into the leadership development curriculum.\",\n      \"evidence\": \"RA\u20114 and paragraph\u202f74: training on SRGBV for school principals; SRGBV identified as a key risk.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Insufficient or unreliable EMIS data could impair monitoring, decision\u2011making and DLI verification.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate EMIS development to be operational by Year\u202f3; conduct data quality audits quarterly and provide remedial training to data entry staff.\",\n      \"evidence\": \"Section III.B, paragraph\u202f48: EMIS to be developed by Year\u202f3 as single source for results tracking.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"High dropout rates among adolescent boys due to economic pressure and lack of residential schools for boys may limit achievement of senior secondary enrolment targets.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construct residential facilities for boys in model composite schools; provide conditional cash transfers linked to attendance for vulnerable households.\",\n      \"evidence\": \"Paragraph\u202f6\u20117: boys drop out to work; no residential schools for boys; CHALK will finance residential facilities for boys.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Fiscal constraints may restrict hiring of additional teachers, undermining the planned increase in subject\u2011specific staff.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Leverage the projected per\u2011pupil cost reduction from model schools to re\u2011allocate savings for teacher recruitment; seek supplemental state budget allocations.\",\n      \"evidence\": \"Paragraph\u202f11: limited fiscal space to hire new teachers despite market availability.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Corruption or fraud in procurement could erode project credibility and lead to cost overruns.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Apply World Bank Anti\u2011Corruption Guidelines to all contracts; require public disclosure of award notices; strengthen the vigilance commission\u2019s monitoring role.\",\n      \"evidence\": \"Paragraph\u202f64\u201165: anti\u2011corruption guidelines applicable; vigilance commission processes complaints.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Construction of model composite schools may be delayed by climate\u2011related disasters (floods, landslides), affecting schedule and budget.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate disaster\u2011resilient design standards; schedule construction in low\u2011risk seasons; maintain contingency funds for weather\u2011related interruptions.\",\n      \"evidence\": \"RA\u20113 description and paragraph\u202f71: disaster\u2011resilient designs and climate risks noted.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Weak grievance redress mechanisms could lead to community dissatisfaction and reduced participation in school reforms.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen GRM with clear escalation pathways, publish response timelines, and conduct periodic community awareness sessions on grievance filing.\",\n      \"evidence\": \"Paragraph\u202f70\u201171: need to strengthen grievance redress mechanism; GRM currently limited.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Technical assistance agencies may lack long\u2011term funding, causing interruptions in training delivery and capacity\u2011building activities.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Negotiate multi\u2011year contracts with performance\u2011based milestones; allocate a reserve within the IPF\u2011TA budget to cover shortfalls.\",\n      \"evidence\": \"Paragraph\u202f4\u20115 of Annex\u202f3: TA agencies often under\u2011funded and short\u2011term, risking continuity.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"New personal data protection legislation could impose additional compliance requirements on data collection and storage activities.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct a legal gap analysis if new legislation emerges; update data handling SOPs and train staff on revised privacy standards.\",\n      \"evidence\": \"Section V, paragraph\u202f4(b): need to assess impact of any new personal data protection legislation.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Failure to achieve Disbursement Linked Results on schedule may trigger funding shortfalls and stall program components.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a rolling DLI tracking dashboard; conduct monthly reviews with implementing agencies to address shortfalls early.\",\n      \"evidence\": \"Section V, paragraph\u202f44\u201145: disbursements linked to DLI achievement; no time\u2011bound targets may affect cash flow.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Inadequate safety measures in school infrastructure (fire, electrical) could cause accidents, harming students and staff.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate fire\u2011safety and electrical safety standards into all design specifications; conduct third\u2011party safety audits before school opening.\",\n      \"evidence\": \"Paragraph\u202f67: gap in following fire safety norms in schools.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Climate\u2011induced extreme weather (droughts, floods, heat waves) may force extensions of school summer breaks, reducing instructional days and delaying learning outcomes.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate\u2011resilient school calendars and build buffer days; develop contingency learning plans (e.g., remote/online modules) for weather\u2011related closures.",
+        "evidence": "Section B.3: state vulnerable to droughts and floods that can force extensions of the annual school summer break."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inadequate in\u2011service professional development for teachers may limit adoption of TaRL and climate\u2011change pedagogy, compromising learning gains.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement the 60\u2011day multi\u2011year training programme with clear milestones; monitor teacher participation and competency through regular assessments.",
+        "evidence": "RA\u20111 description and DLI\u20114 baseline stating lack of structured long\u2011term in\u2011service training on TaRL."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Shortage of subject\u2011specialist teachers leads to multi\u2011grade teaching and reduced instructional quality, especially in science and commerce streams.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Accelerate recruitment of subject specialists; use the need\u2011based training system to upskill existing teachers; prioritize hiring in model composite schools.",
+        "evidence": "Paragraph 11: many teachers lack subject expertise, leading to language teachers teaching maths, English and sciences."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays in verification of Disbursement Linked Indicators may postpone fund releases, affecting programme cash flow and timelines.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a fast\u2011track verification protocol with the IVA; set internal deadlines for data submission and pre\u2011verification checks before Bank review.",
+        "evidence": "Section V, paragraph 44: funds disbursed on achievement of DLI verified by an IVA."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Weak fiduciary controls and systemic gaps could lead to misallocation of funds and low budget execution rates.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen internal audit, adopt risk\u2011based audit approach, and implement the recommended FM staffing plan and audit committee by June\u202f2024.",
+        "evidence": "Annex\u202f4, paragraph\u202f56\u201157: IFSA rates fiduciary risk as \u2018Substantial\u2019 and notes systemic gaps."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Absence of an annual procurement plan may cause untimely tendering and contract award, delaying civil works for model schools.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate preparation of a detailed annual procurement plan within one month of AWP&B approval; publish it on the e\u2011GP portal for transparency.",
+        "evidence": "Annex\u202f4, paragraph\u202f4: procurement planning not practiced; no annual procurement plan with timelines."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Limited institutional capacity for environmental and social management could result in non\u2011compliance with waste, fire safety and green\u2011building standards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct E&S capacity\u2011building workshops for SIS\u2011SS, PWD and RES; embed EHS clauses in all bidding documents and monitor compliance onsite.",
+        "evidence": "Paragraph 67\u201168: weak institutional capacity for E&S; gaps in fire safety, waste management, green design."
+      },
+      {
+        "risk_id": "R08",
+        "description": "School\u2011related gender\u2011based violence (SRGBV) in residential facilities may deter enrolment and increase dropout, especially for boys.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Roll out mandatory SRGBV training for all school leaders; establish clear reporting channels and integrate SRGBV modules into the leadership development curriculum.",
+        "evidence": "RA\u20114 and paragraph\u202f74: training on SRGBV for school principals; SRGBV identified as a key risk."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Insufficient or unreliable EMIS data could impair monitoring, decision\u2011making and DLI verification.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Accelerate EMIS development to be operational by Year\u202f3; conduct data quality audits quarterly and provide remedial training to data entry staff.",
+        "evidence": "Section III.B, paragraph\u202f48: EMIS to be developed by Year\u202f3 as single source for results tracking."
+      },
+      {
+        "risk_id": "R10",
+        "description": "High dropout rates among adolescent boys due to economic pressure and lack of residential schools for boys may limit achievement of senior secondary enrolment targets.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct residential facilities for boys in model composite schools; provide conditional cash transfers linked to attendance for vulnerable households.",
+        "evidence": "Paragraph\u202f6\u20117: boys drop out to work; no residential schools for boys; CHALK will finance residential facilities for boys."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Fiscal constraints may restrict hiring of additional teachers, undermining the planned increase in subject\u2011specific staff.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Leverage the projected per\u2011pupil cost reduction from model schools to re\u2011allocate savings for teacher recruitment; seek supplemental state budget allocations.",
+        "evidence": "Paragraph\u202f11: limited fiscal space to hire new teachers despite market availability."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Corruption or fraud in procurement could erode project credibility and lead to cost overruns.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Apply World Bank Anti\u2011Corruption Guidelines to all contracts; require public disclosure of award notices; strengthen the vigilance commission\u2019s monitoring role.",
+        "evidence": "Paragraph\u202f64\u201165: anti\u2011corruption guidelines applicable; vigilance commission processes complaints."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Construction of model composite schools may be delayed by climate\u2011related disasters (floods, landslides), affecting schedule and budget.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Incorporate disaster\u2011resilient design standards; schedule construction in low\u2011risk seasons; maintain contingency funds for weather\u2011related interruptions.",
+        "evidence": "RA\u20113 description and paragraph\u202f71: disaster\u2011resilient designs and climate risks noted."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Weak grievance redress mechanisms could lead to community dissatisfaction and reduced participation in school reforms.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Strengthen GRM with clear escalation pathways, publish response timelines, and conduct periodic community awareness sessions on grievance filing.",
+        "evidence": "Paragraph\u202f70\u201171: need to strengthen grievance redress mechanism; GRM currently limited."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Technical assistance agencies may lack long\u2011term funding, causing interruptions in training delivery and capacity\u2011building activities.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Negotiate multi\u2011year contracts with performance\u2011based milestones; allocate a reserve within the IPF\u2011TA budget to cover shortfalls.",
+        "evidence": "Paragraph\u202f4\u20115 of Annex\u202f3: TA agencies often under\u2011funded and short\u2011term, risking continuity."
+      },
+      {
+        "risk_id": "R16",
+        "description": "New personal data protection legislation could impose additional compliance requirements on data collection and storage activities.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct a legal gap analysis if new legislation emerges; update data handling SOPs and train staff on revised privacy standards.",
+        "evidence": "Section V, paragraph\u202f4(b): need to assess impact of any new personal data protection legislation."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Failure to achieve Disbursement Linked Results on schedule may trigger funding shortfalls and stall program components.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement a rolling DLI tracking dashboard; conduct monthly reviews with implementing agencies to address shortfalls early.",
+        "evidence": "Section V, paragraph\u202f44\u201145: disbursements linked to DLI achievement; no time\u2011bound targets may affect cash flow."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Inadequate safety measures in school infrastructure (fire, electrical) could cause accidents, harming students and staff.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Integrate fire\u2011safety and electrical safety standards into all design specifications; conduct third\u2011party safety audits before school opening.",
+        "evidence": "Paragraph\u202f67: gap in following fire safety norms in schools."
+      }
+    ]
+  },
+  "parse_error": null
+}

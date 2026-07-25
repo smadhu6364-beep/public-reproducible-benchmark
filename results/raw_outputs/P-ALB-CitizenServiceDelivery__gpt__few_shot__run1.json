@@ -1,0 +1,153 @@
+{
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T17:42:02.064455+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-ALB-CitizenServiceDelivery\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Very weak procurement capacity at ADISA, a newly created agency, may cause delays and non\u2011compliance with World Bank procurement rules.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit experienced procurement specialists, provide bank\u2011led training, develop a detailed procurement manual and use bank technical assistance to review all procurement documents.\",\n      \"evidence\": \"Section 66: \\\"Very weak procurement capacity at ADISA as a newly created agency.\\\"\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Limited financial management experience in ADISA and MIPA could lead to fiduciary weaknesses and audit findings.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Hire qualified finance specialists, conduct on\u2011the\u2011job FM training, implement a Project Operations Manual with clear internal controls, and ensure regular bank supervision and audits.\",\n      \"evidence\": \"Section 62\u201164: \\\"...ADISA and MIPA have limited experience... capacity strengthening would be recommended...\\\"\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Disbursements under the Results\u2011Based Financing are contingent on achieving DLIs; failure to meet DLIs could create funding shortfalls.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Establish robust monitoring of DLI progress, provide targeted technical assistance for early\u2011win activities, and set up contingency plans for partial DLI achievement.\",\n      \"evidence\": \"Section 31\u201132: \\\"No disbursements under RBF will be made until DLI#5 is achieved.\\\"\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Complex coordination among multiple ministries and agencies may cause implementation delays and inconsistent reforms.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Activate the Inter\u2011ministerial Public Services Committee and the Project Steering Committee with clear terms of reference, schedule weekly/monthly coordination meetings, and document MoUs for each agency.\",\n      \"evidence\": \"Section 58\u201159: \\\"Inter\u2011sectoral reforms... necessarily entail complex coordination... the Prime Minister\u2019s office and the DU will play an important role...\\\"\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Focus on state\u2011of\u2011the\u2011art digital services and the urban CSC may marginalise poor, rural, women and Roma populations.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Deploy assisted internet access points, maintain non\u2011digital service channels, and run targeted outreach campaigns for disadvantaged groups as outlined in Table\u202f3.\",\n      \"evidence\": \"Section 27\u201128 and Table\u202f3: \\\"risk that the focus on state\u2011of\u2011the\u2011art means... could diminish access of the poor and vulnerable... assisted digital access, improving existing service access points...\\\"\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Construction of the new Citizen Service Center may generate dust, noise, waste and traffic impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the Environmental Management Plan, enforce construction best practices, monitor emissions and waste, and obtain all required environmental permits.\",\n      \"evidence\": \"Section 70\u201171: \\\"Potential environmental impacts... dust and noise, waste generation... mitigated through sound construction practices and implementation of a project specific EMP.\\\"\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Lack of existing IT systems and interoperability among key agencies could hinder automation and e\u2011service delivery.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a phased integration architecture, conduct thorough testing, leverage NAIS as the interoperability platform, and provide ICT advisory support to agencies.\",\n      \"evidence\": \"Section 11\u201112: \\\"Seven institutions have no IT system... need to improve inter\u2011operability of electronic registers... NAIS is working to connect existing online registries...\\\"\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Delays in passing the omnibus legislation required for regulatory reforms could stall business\u2011process re\u2011engineering.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare draft legislation early, maintain continuous dialogue with the Parliament\u2019s legislative committee, and track approval milestones in the project schedule.\",\n      \"evidence\": \"Section 19\u201120: \\\"Reform of government services and repeal of licenses... will be implemented through omnibus legislation, expected to be passed by the end of 2016.\\\"\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Operating and maintenance costs of the CSC may exceed budgeted amounts, threatening financial sustainability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct a detailed cost\u2011benefit analysis, explore PPP or concession models for building management, and set aside a reserve for recurring operational expenses.\",\n      \"evidence\": \"Section 50\u201151: \\\"Significant upfront financial costs... operating costs for the CSC will likely be offset... Ongoing operating costs are expected to include licenses and system operation and maintenance.\\\"\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Front\u2011office staff may resist changes to service delivery processes, reducing reform effectiveness.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a change\u2011management program with training, performance incentives, and clear communication of benefits to staff.\",\n      \"evidence\": \"Section 58\u201159: \\\"Bureaucratic resistance could stifle efforts... diagnostics of the political economy of reforms and a focus on change management can help identify and mitigate these risks.\\\"\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Baseline surveys and performance data may be of poor quality, compromising DLI verification.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Use third\u2011party validation for surveys, pilot test instruments, and establish clear data\u2011collection protocols before full rollout.\",\n      \"evidence\": \"Section 44\u201145: \\\"The project supports the DU... verification protocols... where appropriate, third party validations will be deployed to verify DLI results.\\\"\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Macroeconomic shocks could increase payment arrears and strain the government\u2019s ability to meet salary\u2011related EEPs.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain fiscal buffers, monitor macro indicators, and adjust disbursement schedules if necessary.\",\n      \"evidence\": \"Section 49: \\\"Inadequate commitment controls and excessive growth in payment arrears emerged as a serious problem in recent years.\\\"\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Citizen Feedback Mechanism may not be fully utilized, limiting its value for performance management.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a dedicated CFM analytics team, set minimum response\u2011rate targets, and integrate feedback results into quarterly performance reports.\",\n      \"evidence\": \"Section 39\u201142: \\\"A citizen feedback mechanism will be rolled out... The DU will analyze and present the data...\\\"\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Changes in political leadership could reduce high\u2011level commitment to the reform agenda.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Secure formal legislative endorsements, embed reforms in the National Strategy for Development and Integration, and maintain continuous engagement with the Prime Minister\u2019s office.\",\n      \"evidence\": \"Section 45: \\\"High level political commitment and push, which is a great asset...\\\"\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Overall procurement risk remains high because the PMU is not yet fully staffed and lacks consolidated finance\u2011procurement procedures.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate recruitment of procurement and finance specialists, adopt standard World Bank procurement templates, and use bank procurement specialists for early reviews.\",\n      \"evidence\": \"Section 66\u201167: \\\"Procurement risk rating is High... PMU not yet fully set up...\\\"\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-ALB-CitizenServiceDelivery",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Very weak procurement capacity at ADISA, a newly created agency, may cause delays and non\u2011compliance with World Bank procurement rules.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit experienced procurement specialists, provide bank\u2011led training, develop a detailed procurement manual and use bank technical assistance to review all procurement documents.",
+        "evidence": "Section 66: \"Very weak procurement capacity at ADISA as a newly created agency.\""
+      },
+      {
+        "risk_id": "R02",
+        "description": "Limited financial management experience in ADISA and MIPA could lead to fiduciary weaknesses and audit findings.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Hire qualified finance specialists, conduct on\u2011the\u2011job FM training, implement a Project Operations Manual with clear internal controls, and ensure regular bank supervision and audits.",
+        "evidence": "Section 62\u201164: \"...ADISA and MIPA have limited experience... capacity strengthening would be recommended...\""
+      },
+      {
+        "risk_id": "R03",
+        "description": "Disbursements under the Results\u2011Based Financing are contingent on achieving DLIs; failure to meet DLIs could create funding shortfalls.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Establish robust monitoring of DLI progress, provide targeted technical assistance for early\u2011win activities, and set up contingency plans for partial DLI achievement.",
+        "evidence": "Section 31\u201132: \"No disbursements under RBF will be made until DLI#5 is achieved.\""
+      },
+      {
+        "risk_id": "R04",
+        "description": "Complex coordination among multiple ministries and agencies may cause implementation delays and inconsistent reforms.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Activate the Inter\u2011ministerial Public Services Committee and the Project Steering Committee with clear terms of reference, schedule weekly/monthly coordination meetings, and document MoUs for each agency.",
+        "evidence": "Section 58\u201159: \"Inter\u2011sectoral reforms... necessarily entail complex coordination... the Prime Minister\u2019s office and the DU will play an important role...\""
+      },
+      {
+        "risk_id": "R05",
+        "description": "Focus on state\u2011of\u2011the\u2011art digital services and the urban CSC may marginalise poor, rural, women and Roma populations.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deploy assisted internet access points, maintain non\u2011digital service channels, and run targeted outreach campaigns for disadvantaged groups as outlined in Table\u202f3.",
+        "evidence": "Section 27\u201128 and Table\u202f3: \"risk that the focus on state\u2011of\u2011the\u2011art means... could diminish access of the poor and vulnerable... assisted digital access, improving existing service access points...\""
+      },
+      {
+        "risk_id": "R06",
+        "description": "Construction of the new Citizen Service Center may generate dust, noise, waste and traffic impacts.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement the Environmental Management Plan, enforce construction best practices, monitor emissions and waste, and obtain all required environmental permits.",
+        "evidence": "Section 70\u201171: \"Potential environmental impacts... dust and noise, waste generation... mitigated through sound construction practices and implementation of a project specific EMP.\""
+      },
+      {
+        "risk_id": "R07",
+        "description": "Lack of existing IT systems and interoperability among key agencies could hinder automation and e\u2011service delivery.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a phased integration architecture, conduct thorough testing, leverage NAIS as the interoperability platform, and provide ICT advisory support to agencies.",
+        "evidence": "Section 11\u201112: \"Seven institutions have no IT system... need to improve inter\u2011operability of electronic registers... NAIS is working to connect existing online registries...\""
+      },
+      {
+        "risk_id": "R08",
+        "description": "Delays in passing the omnibus legislation required for regulatory reforms could stall business\u2011process re\u2011engineering.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prepare draft legislation early, maintain continuous dialogue with the Parliament\u2019s legislative committee, and track approval milestones in the project schedule.",
+        "evidence": "Section 19\u201120: \"Reform of government services and repeal of licenses... will be implemented through omnibus legislation, expected to be passed by the end of 2016.\""
+      },
+      {
+        "risk_id": "R09",
+        "description": "Operating and maintenance costs of the CSC may exceed budgeted amounts, threatening financial sustainability.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct a detailed cost\u2011benefit analysis, explore PPP or concession models for building management, and set aside a reserve for recurring operational expenses.",
+        "evidence": "Section 50\u201151: \"Significant upfront financial costs... operating costs for the CSC will likely be offset... Ongoing operating costs are expected to include licenses and system operation and maintenance.\""
+      },
+      {
+        "risk_id": "R10",
+        "description": "Front\u2011office staff may resist changes to service delivery processes, reducing reform effectiveness.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement a change\u2011management program with training, performance incentives, and clear communication of benefits to staff.",
+        "evidence": "Section 58\u201159: \"Bureaucratic resistance could stifle efforts... diagnostics of the political economy of reforms and a focus on change management can help identify and mitigate these risks.\""
+      },
+      {
+        "risk_id": "R11",
+        "description": "Baseline surveys and performance data may be of poor quality, compromising DLI verification.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Use third\u2011party validation for surveys, pilot test instruments, and establish clear data\u2011collection protocols before full rollout.",
+        "evidence": "Section 44\u201145: \"The project supports the DU... verification protocols... where appropriate, third party validations will be deployed to verify DLI results.\""
+      },
+      {
+        "risk_id": "R12",
+        "description": "Macroeconomic shocks could increase payment arrears and strain the government\u2019s ability to meet salary\u2011related EEPs.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Maintain fiscal buffers, monitor macro indicators, and adjust disbursement schedules if necessary.",
+        "evidence": "Section 49: \"Inadequate commitment controls and excessive growth in payment arrears emerged as a serious problem in recent years.\""
+      },
+      {
+        "risk_id": "R13",
+        "description": "Citizen Feedback Mechanism may not be fully utilized, limiting its value for performance management.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a dedicated CFM analytics team, set minimum response\u2011rate targets, and integrate feedback results into quarterly performance reports.",
+        "evidence": "Section 39\u201142: \"A citizen feedback mechanism will be rolled out... The DU will analyze and present the data...\""
+      },
+      {
+        "risk_id": "R14",
+        "description": "Changes in political leadership could reduce high\u2011level commitment to the reform agenda.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Secure formal legislative endorsements, embed reforms in the National Strategy for Development and Integration, and maintain continuous engagement with the Prime Minister\u2019s office.",
+        "evidence": "Section 45: \"High level political commitment and push, which is a great asset...\""
+      },
+      {
+        "risk_id": "R15",
+        "description": "Overall procurement risk remains high because the PMU is not yet fully staffed and lacks consolidated finance\u2011procurement procedures.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Accelerate recruitment of procurement and finance specialists, adopt standard World Bank procurement templates, and use bank procurement specialists for early reviews.",
+        "evidence": "Section 66\u201167: \"Procurement risk rating is High... PMU not yet fully set up...\""
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,166 @@
+{
+  "run_file": "P-BGD-SocialProtectionResilience__opensource__zero_shot__run2.json",
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R01",
+      "similarity": 0.5,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R03",
+      "similarity": 0.471,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R04",
+      "similarity": 0.451,
+      "gen_category": "external",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conduct periodic reviews of benefit levels to ensure they are commensurate with the poverty line, and adjust them accordingly.",
+      "evidence": "Section II.B, Theory of Change and PDO Indicators"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Exclusion and inclusion errors in social protection programs may lead to inadequate coverage of poor households.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce exclusion and inclusion errors.",
+      "evidence": "Section II.D, Project Components"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Climate change may exacerbate poverty and vulnerability, particularly for women, the elderly, and persons with disabilities.",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Integrate climate change adaptation measures into social protection programs, such as the DSR, to enhance resilience and adaptive capacity.",
+      "evidence": "Section I.A, Project Strategic Context"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Strengthen institutional capacity and coordination through training, technical assistance, and the establishment of a Project Implementation Unit (PIU).",
+      "evidence": "Section III.A, Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Fiduciary risks, such as inadequate financial management and internal controls, may compromise the integrity of social protection programs.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement robust financial management and internal control systems, including the use of the Integrated Budgeting and Accounting System (iBAS++) and regular audits.",
+      "evidence": "Section IV.B, Fiduciary"
+    },
+    {
+      "risk_id": "R06",
+      "description": "The project's reliance on digital technologies, such as the DSR, may be vulnerable to cyber risks and data breaches.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Implement robust cybersecurity measures, including data encryption, firewalls, and access controls, to protect the integrity of the DSR and other digital systems.",
+      "evidence": "Section II.D, Project Components"
+    },
+    {
+      "risk_id": "R07",
+      "description": "The project's success may be dependent on the effective coordination and collaboration with development partners and other stakeholders.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish a coordination mechanism, such as the Social Protection Development Partners' Coordination Platform, to facilitate collaboration and information sharing among stakeholders.",
+      "evidence": "Section II.E, Role of Partners"
+    },
+    {
+      "risk_id": "R08",
+      "description": "The project's implementation may be affected by political and regulatory risks, such as changes in government policies or regulations.",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Monitor political and regulatory developments, and engage with relevant stakeholders to ensure that the project is aligned with government policies and regulations.",
+      "evidence": "Section I.A, Project Strategic Context"
+    },
+    {
+      "risk_id": "R09",
+      "description": "The project's focus on social protection and livelihoods support may not be sufficient to address the root causes of poverty and vulnerability.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Ensure that the project is aligned with the government's National Social Security Strategy (NSSS) and other relevant policies, and that it addresses the root causes of poverty and vulnerability.",
+      "evidence": "Section II.A, Project Development Objective"
+    },
+    {
+      "risk_id": "R10",
+      "description": "The project's implementation may be affected by external factors, such as natural disasters or economic shocks.",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop a contingency plan to address potential external risks, and ensure that the project is flexible and adaptable to changing circumstances.",
+      "evidence": "Section II.D, Project Components"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is Substantial. Safety and security concerns persist, despite the priority placed by the interim government on law and order. The interim government is implementing critical reforms before holding elections; reaching a consensus on reforms and the announcement of the election date could heighten political tensions among political parties and the interim government.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated during implementation through continuous engagement with all relevant government and nongovernmental entities, and dialogue with other stakeholders."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is Substantial. Downside risks have increased, related to uncertainties in the political process and the security situation which affects the recovery of economic activities. The financial sector remains vulnerable with deviations from international regulatory and supervisory standards and weak corporate governance. Despite recent improvements, the balance of payments remained in deficit and FX reserves remained under pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The macroeconomic risks are partially mitigated by the GoB's reform program, supported by International Monetary Fund arrangements, as well as ongoing World Bank and other development partners' policy lending. Data show consistent budgetary and political commitment to spending on safety nets across regimes in Bangladesh, with strong stakeholder consensus on ensuring a ring-fenced core budget for social assistance and livelihoods programs for the poorest."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Fiduciary risk is rated Substantial due to the involvement of multiple implementing agencies (the DSS and FD), the complexity of activity selection, and intervention modalities. The project's residual procurement risk specifically is also rated Substantial, due to the complexity of procurement activities, multiagency coordination, and capacity limitations (para 56, part of the Fiduciary appraisal-summary discussion immediately preceding the Key Risks section).",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigation measures include hiring additional capacity, training, and close monitoring; considering satisfactory implementation of these measures, the residual fiduciary risk is assessed as Substantial and will be managed through proactive and continuous supervision and close dialogue with the GoB. Procurement-specific mitigation: hiring full-time procurement consultants for the DSS and FD; training on World Bank Procurement Regulations, STEP, and contract management; defining clear roles and streamlining approval processes; engaging IT procurement specialists and conducting early market assessments; using performance-based KPIs in contracts and including procurement consultants on bid evaluation committees; and establishing complaint registers at both agencies, with procurement not prior-reviewed by the Bank subject to regular fiduciary reviews and post-procurement review/audit by FAPAD."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project presents a low environmental risk and a moderate social risk, resulting in an overall moderate environmental and social (ES) risk classification. Minor environmental concerns relate to potential e-waste generation from IT equipment and increased energy use. Social risks include potential exclusion of beneficiaries, inadequate consultation, and challenges in reaching remote and marginalized communities, including those who lack IT knowledge; there is also the likelihood of sexual exploitation and abuse/sexual harassment (SEA/SH) cases given the cash transfer modalities of the project and the interaction between service providers and beneficiaries.",
+      "category": "environmental",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Waste management protocols and resource efficiency measures will prevent localized pollution. The project will establish a Digital Social Registry (DSR) to improve targeting and coverage, complemented by a robust outreach and monitoring program, and will include Stakeholder Engagement Plan provisions requiring community consultation and disclosure measures. The existing DSS grievance redress mechanism (GRM) will address complaints. An SEA/SH Action Plan will be developed including code of conduct, awareness raising, and GRM to address potential incidents. The project will partially rely on the borrower's ES management framework supplemented by gap-filling measures included in the POM."
+    }
+  ]
+}

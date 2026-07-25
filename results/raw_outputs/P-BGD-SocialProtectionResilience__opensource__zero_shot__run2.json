@@ -1,0 +1,108 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:23:58.129080+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct periodic reviews of benefit levels to ensure they are commensurate with the poverty line, and adjust them accordingly.\",\n      \"evidence\": \"Section II.B, Theory of Change and PDO Indicators\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Exclusion and inclusion errors in social protection programs may lead to inadequate coverage of poor households.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce exclusion and inclusion errors.\",\n      \"evidence\": \"Section II.D, Project Components\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Climate change may exacerbate poverty and vulnerability, particularly for women, the elderly, and persons with disabilities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate change adaptation measures into social protection programs, such as the DSR, to enhance resilience and adaptive capacity.\",\n      \"evidence\": \"Section I.A, Project Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Strengthen institutional capacity and coordination through training, technical assistance, and the establishment of a Project Implementation Unit (PIU).\",\n      \"evidence\": \"Section III.A, Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Fiduciary risks, such as inadequate financial management and internal controls, may compromise the integrity of social protection programs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust financial management and internal control systems, including the use of the Integrated Budgeting and Accounting System (iBAS++) and regular audits.\",\n      \"evidence\": \"Section IV.B, Fiduciary\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"The project's reliance on digital technologies, such as the DSR, may be vulnerable to cyber risks and data breaches.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust cybersecurity measures, including data encryption, firewalls, and access controls, to protect the integrity of the DSR and other digital systems.\",\n      \"evidence\": \"Section II.D, Project Components\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The project's success may be dependent on the effective coordination and collaboration with development partners and other stakeholders.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Establish a coordination mechanism, such as the Social Protection Development Partners' Coordination Platform, to facilitate collaboration and information sharing among stakeholders.\",\n      \"evidence\": \"Section II.E, Role of Partners\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The project's implementation may be affected by political and regulatory risks, such as changes in government policies or regulations.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Monitor political and regulatory developments, and engage with relevant stakeholders to ensure that the project is aligned with government policies and regulations.\",\n      \"evidence\": \"Section I.A, Project Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The project's focus on social protection and livelihoods support may not be sufficient to address the root causes of poverty and vulnerability.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure that the project is aligned with the government's National Social Security Strategy (NSSS) and other relevant policies, and that it addresses the root causes of poverty and vulnerability.\",\n      \"evidence\": \"Section II.A, Project Development Objective\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The project's implementation may be affected by external factors, such as natural disasters or economic shocks.\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a contingency plan to address potential external risks, and ensure that the project is flexible and adaptable to changing circumstances.\",\n      \"evidence\": \"Section II.D, Project Components\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct periodic reviews of benefit levels to ensure they are commensurate with the poverty line, and adjust them accordingly.",
+        "evidence": "Section II.B, Theory of Change and PDO Indicators"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Exclusion and inclusion errors in social protection programs may lead to inadequate coverage of poor households.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce exclusion and inclusion errors.",
+        "evidence": "Section II.D, Project Components"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Climate change may exacerbate poverty and vulnerability, particularly for women, the elderly, and persons with disabilities.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate change adaptation measures into social protection programs, such as the DSR, to enhance resilience and adaptive capacity.",
+        "evidence": "Section I.A, Project Strategic Context"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Strengthen institutional capacity and coordination through training, technical assistance, and the establishment of a Project Implementation Unit (PIU).",
+        "evidence": "Section III.A, Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Fiduciary risks, such as inadequate financial management and internal controls, may compromise the integrity of social protection programs.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement robust financial management and internal control systems, including the use of the Integrated Budgeting and Accounting System (iBAS++) and regular audits.",
+        "evidence": "Section IV.B, Fiduciary"
+      },
+      {
+        "risk_id": "R06",
+        "description": "The project's reliance on digital technologies, such as the DSR, may be vulnerable to cyber risks and data breaches.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implement robust cybersecurity measures, including data encryption, firewalls, and access controls, to protect the integrity of the DSR and other digital systems.",
+        "evidence": "Section II.D, Project Components"
+      },
+      {
+        "risk_id": "R07",
+        "description": "The project's success may be dependent on the effective coordination and collaboration with development partners and other stakeholders.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Establish a coordination mechanism, such as the Social Protection Development Partners' Coordination Platform, to facilitate collaboration and information sharing among stakeholders.",
+        "evidence": "Section II.E, Role of Partners"
+      },
+      {
+        "risk_id": "R08",
+        "description": "The project's implementation may be affected by political and regulatory risks, such as changes in government policies or regulations.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Monitor political and regulatory developments, and engage with relevant stakeholders to ensure that the project is aligned with government policies and regulations.",
+        "evidence": "Section I.A, Project Strategic Context"
+      },
+      {
+        "risk_id": "R09",
+        "description": "The project's focus on social protection and livelihoods support may not be sufficient to address the root causes of poverty and vulnerability.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Ensure that the project is aligned with the government's National Social Security Strategy (NSSS) and other relevant policies, and that it addresses the root causes of poverty and vulnerability.",
+        "evidence": "Section II.A, Project Development Objective"
+      },
+      {
+        "risk_id": "R10",
+        "description": "The project's implementation may be affected by external factors, such as natural disasters or economic shocks.",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop a contingency plan to address potential external risks, and ensure that the project is flexible and adaptable to changing circumstances.",
+        "evidence": "Section II.D, Project Components"
+      }
+    ]
+  },
+  "parse_error": null
+}

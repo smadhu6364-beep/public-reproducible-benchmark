@@ -1,0 +1,162 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:04:15.558046+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n**Step\u202f1 \u2013 Frame the project**  \n- **Objective:** Increase access to economic opportunities for poor and vulnerable households and strengthen the adaptive social protection system.  \n- **Scope & Components:** (1) Socio\u2011economic empowerment support (US$76.5\u202fM); (2) Strengthening adaptive social\u2011protection information system (US$10.1\u202fM); (3) Institutional capacity building & learning (US$27.4\u202fM); (4) Project coordination & management (US$6\u202fM); plus a zero\u2011cost Contingent Emergency Response Component.  \n- **Delivery model:** Implemented by the Ministry of Family and Solidarity (MFS) through a Project Implementation Unit (PIU); partners include NGOs/CBOs, MFIs, other ministries, UN agencies, and a donor working group.  \n- **Timeline:** Expected approval\u202f15\u202fJun\u202f2026; closing\u202f30\u202fJun\u202f2031 (\u22485\u202fyears).  \n- **Budget:** Total US$120\u202fM (US$100\u202fM IDA credit\u202f+\u202fUS$20\u202fM SASPP grant).  \n- **Key stakeholders:** Borrower (Burkina\u202fFaso), World Bank/IDA, SASPP Trust Fund, MFS, PIU staff, NGOs/CBOs, MFIs, ministries of Finance, Agriculture, Health, CONASUR, donor agencies (WFP, UNICEF, EU), and beneficiary communities (including IDPs).  \n- **External dependencies:** Security situation & conflict intensity, climate\u2011related shocks, IDP flows, national data\u2011protection authority, National Cybersecurity Agency (ANSSI), procurement regulations, and donor funding continuity.\n\n**Step\u202f2 \u2013 Category sweep (candidate risks with supporting evidence)**  \n\n| Category | Candidate risk | Evidence |\n|---|---|---|\n| technical | Interoperability of the Unique Social Registry (RSU) with other databases may face integration delays. | \u201cThe project will support the development of interoperable framework/platform where different databases and individual systems communicate\u2026\u201d (Sec\u202f34). |\n| technical | Cyber\u2011security breach of the social\u2011protection information system. | \u201cThe project will apply the security procedures elaborated by the National Cybersecurity Agency (ANSSI)\u201d (Sec\u202f34). |\n| financial | Inadequate fiduciary capacity of the PIU (no FM staff, procedures, software). | \u201cThe assessment found that the MFS currently does not have a PIU with FM arrangements\u2026 Substantial risk expected to be reduced to Moderate\u201d (Sec\u202f82). |\n| financial | Procurement capacity weaknesses leading to delays and higher costs. | \u201cThe procurement risk is rated Substantial\u2026 administrative routines may result in procurement delays, potentially affecting project implementation\u201d (Sec\u202f85). |\n| schedule | Procurement delays could push the overall implementation timeline. | Same as above (Sec\u202f85). |\n| schedule | Security\u2011related disruptions (low\u2011 to high\u2011intensity conflict) may halt activities or force suspension. | Annex\u202f3 describes \u201cLow\u2011intensity conflict \u2026 could affect timing of payments\u201d and \u201cHigh\u2011intensity conflict \u2026 could lead to suspension.\u201d |\n| stakeholder | SEA/SH (sexual exploitation, abuse, harassment) risk is substantial. | \u201cSEA/SH risk is Substantial\u2026 mitigation includes grievance mechanism, community consultations, code of conduct\u201d (Sec\u202f87). |\n| stakeholder | Grievance Redress Mechanism may be overwhelmed, leading to unresolved complaints. | Indicator\u202f16 tracks \u201cGrievance addressed within the stipulated timeframe\u201d (Sec\u202f16). |\n| political_regulatory | Government suspension of cash transfers & food vouchers could affect project design. | \u201cThe Government\u2019s decision in 2023 to suspend cash transfers and food vouchers led the PAMPV to focus on in\u2011kind support\u201d (Sec\u202f5). |\n| political_regulatory | Legal covenant requires steering committee establishment within 3\u202fmonths; delay could breach agreement. | \u201cRecipient shall, not later than three (3) months after the Effective Date, establish \u2026 a committee (the \u2018Steering Committee\u2019)\u201d (Legal). |\n| environmental | Water and soil pollution from construction/rehabilitation sites. | \u201cKey E&S risks include water and soil pollution from solid and liquid waste at construction and rehabilitation sites\u201d (Sec\u202f87). |\n| environmental | Occupational health & safety risks for workers at warehouses and construction sites. | Same as above (Sec\u202f87). |\n| organizational | Recruitment of key PIU staff (GBV specialist, security specialist, external auditor) may be delayed. | \u201cPIU shall include \u2026 a gender\u2011based violence specialist, a security specialist, an external auditor \u2026 no later than three (3) months after the Effective Date\u201d (Legal). |\n| organizational | Need for a qualified procurement specialist within the PIU. | Annex\u202f2 \u201cNeed for qualified procurement specialist within the PIU \u2013 Recruit competitively a full\u2011time procurement specialist\u201d (Annex\u202f2). |\n| external | Climate\u2011related shocks (droughts, floods) could undermine beneficiary livelihoods. | \u201cClimate change also severely undermines food security\u2026 shocks undermine food and income security\u201d (Strategic Context). |\n| external | Declining humanitarian funding reduces support for IDPs and could strain project resources. | \u201cRecent cuts in humanitarian funding have reduced support for IDPs\u201d (Strategic Context). |\n\n**Step\u202f3 \u2013 Evidence filter**  \nAll listed risks are directly supported by quoted statements; none are removed.\n\n**Step\u202f4 \u2013 Assess & mitigate**  \n\n| Risk ID | Likelihood (1\u20115) | Impact (1\u20115) | Justification | Mitigation (concrete) |\n|---|---|---|---|---|\n| R01 | 3 | 4 | New interoperable platform, but technical complexity is moderate. | Develop detailed technical specifications, pilot integration in one region, assign a dedicated IT lead, conduct regular system testing and SRA updates. |\n| R02 | 2 | 4 | ANSSI procedures are in place, reducing likelihood, but breach would be severe. | Implement full SRA, enforce ANSSI security standards, encrypt all data, conduct quarterly penetration tests, train staff on data protection. |\n| R03 | 3 | 4 | Current FM staff and systems are absent; risk of mis\u2011management is high. | Recruit qualified FM specialist & accountant within 3\u202fmonths, adopt a FM manual, engage an external auditor, establish internal audit with IGF, conduct monthly fiduciary reviews. |\n| R04 | 3 | 3 | Procurement capacity gaps identified; delays likely moderate. | Hire a full\u2011time procurement specialist, finalize a Procurement Manual (PIM) before effectiveness, train DMP/DCMEF and bid committees, use STEP for real\u2011time tracking, set maximum stage durations. |\n| R05 | 3 | 3 | Procurement delays directly affect schedule. | Fast\u2011track high\u2011value procurements, define clear approval timelines in PIM, monitor via STEP, hold weekly procurement coordination meetings. |\n| R06 | 3 | 4 | Security situation is volatile; disruptions could halt field work. | Develop a Security Management Plan (SMP), conduct regular security risk assessments, adopt remote delivery (mobile payments, radio training) for high\u2011risk zones, maintain contingency budget for activity relocation. |\n| R07 | 2 | 5 | SEA/SH incidents are rare but have very high consequences. | Implement SEA/SH Action Plan, mandatory training for all staff and partners, enforce a strict code of conduct, strengthen grievance mechanism with confidential reporting, conduct regular audits. |\n| R08 | 3 | 3 | Grievance volume may exceed capacity, leading to delays. | Expand GM team, set a 15\u2011day response SLA, use a case\u2011management system, publish regular GM performance reports, provide GBV\u2011specific referral pathways. |\n| R09 | 2 | 3 | Policy change (cash\u2011transfer suspension) is possible but not certain. | Design flexible in\u2011kind support packages, maintain dialogue with Ministry of Finance, embed contingency clauses in the PIM to switch modalities quickly. |\n| R10 | 2 | 3 | Legal deadline is clear; non\u2011compliance would be a breach. | Include steering\u2011committee establishment as a monitoring milestone, send reminder notices, link compliance to disbursement approvals. |\n| R11 | 2 | 3 | Pollution risk exists but can be mitigated with proper E&S plans. | Prepare an Environmental Management Plan, enforce waste\u2011segregation, train contractors on spill prevention, conduct site inspections, require contractors to obtain waste\u2011disposal permits. |\n| R12 | 2 | 3 | Occupational safety can be managed with standards. | Develop an Occupational Health & Safety Plan, provide PPE, conduct safety briefings, appoint a safety officer, perform regular site safety audits. |\n| R13 | 3 | 3 | Staffing of specialized PIU roles may lag. | Initiate accelerated recruitment, use temporary contracts if needed, partner with NGOs for interim expertise, monitor hiring progress weekly. |\n| R14 | 3 | 3 | Procurement specialist recruitment is essential. | Publish competitive vacancy, set a 30\u2011day hiring window, involve World Bank procurement advisors in selection, provide onboarding on World Bank procedures. |\n| R15 | 4 | 4 | Climate shocks are frequent and intensifying. | Integrate climate\u2011resilient practices (drought\u2011tolerant crops, water harvesting), link with Early Warning System, allow rapid re\u2011targeting of assistance, allocate emergency buffer funds. |\n| R16 | 3 | 3 | Humanitarian funding declines could create financing gaps. | Diversify donor base, strengthen domestic budget allocations, embed cost\u2011recovery mechanisms, conduct quarterly financing gap analysis. |\n\n**Step\u202f5 \u2013 Consolidate**  \nDuplicates merged (e.g., procurement capacity and schedule delays combined under R04/R05). The final register contains 16 material risks supported by the appraisal document.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in achieving interoperability between the Unique Social Registry and other government databases.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop detailed technical specs, pilot integration in one region, assign dedicated IT lead, conduct regular system testing and security risk assessments.\",\n      \"evidence\": \"The project will support the development of interoperable framework/platform where different databases and individual systems communicate...\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Cyber\u2011security breach of the social\u2011protection information system.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Implement full SRA, enforce ANSSI security standards, encrypt data, conduct quarterly penetration tests, train staff on data protection.\",\n      \"evidence\": \"The project will apply the security procedures elaborated by the National Cybersecurity Agency (ANSSI).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inadequate fiduciary capacity of the PIU (no FM staff, procedures, software).\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified FM specialist and accountant within 3 months, adopt FM manual, engage external auditor, set up internal audit with IGF, conduct monthly fiduciary reviews.\",\n      \"evidence\": \"The assessment found that the MFS currently does not have a PIU with FM arrangements... Substantial risk expected to be reduced to Moderate.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Procurement capacity weaknesses leading to delays and higher costs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Hire full\u2011time procurement specialist, finalize Procurement Manual (PIM) before effectiveness, train DMP/DCMEF and bid committees, use STEP for real\u2011time tracking, set maximum stage durations.\",\n      \"evidence\": \"The procurement risk is rated Substantial; administrative routines may result in procurement delays, potentially affecting project implementation.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Procurement delays could push the overall implementation timeline.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Fast\u2011track high\u2011value procurements, define clear approval timelines in PIM, monitor via STEP, hold weekly procurement coordination meetings.\",\n      \"evidence\": \"Administrative routines may result in procurement delays, potentially affecting project implementation.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Security\u2011related disruptions (conflict, violence) may halt field activities or force suspension.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop Security Management Plan, conduct regular security risk assessments, adopt remote delivery (mobile payments, radio training) for high\u2011risk zones, maintain contingency budget for activity relocation.\",\n      \"evidence\": \"Low\u2011intensity conflict ... could affect timing of payments; High\u2011intensity conflict ... could lead to suspension.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"SEA/SH (sexual exploitation, abuse, harassment) risk is substantial.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement SEA/SH Action Plan, mandatory training for all staff and partners, enforce strict code of conduct, strengthen grievance mechanism with confidential reporting, conduct regular audits.\",\n      \"evidence\": \"SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Grievance Redress Mechanism may be overwhelmed, leading to unresolved complaints.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Expand GM team, set 15\u2011day response SLA, use case\u2011management system, publish regular GM performance reports, provide GBV\u2011specific referral pathways.\",\n      \"evidence\": \"Grievance addressed within the stipulated timeframe (indicator 16).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Government suspension of cash transfers and food vouchers could affect project design.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Design flexible in\u2011kind support packages, maintain dialogue with Ministry of Finance, embed contingency clauses in PIM to switch modalities quickly.\",\n      \"evidence\": \"The Government\u2019s decision in 2023 to suspend cash transfers and food vouchers led the PAMPV to focus on in\u2011kind support.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Failure to establish the Steering Committee within 3\u202fmonths could breach legal covenants.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Include steering\u2011committee establishment as a monitoring milestone, send reminder notices, link compliance to disbursement approvals.\",\n      \"evidence\": \"Recipient shall, not later than three (3) months after the Effective Date, establish \u2026 a committee (the \u201cSteering Committee\u201d).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Water and soil pollution from construction/rehabilitation sites.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare Environmental Management Plan, enforce waste\u2011segregation, train contractors on spill prevention, conduct site inspections, require waste\u2011disposal permits.\",\n      \"evidence\": \"Key E&S risks include water and soil pollution from solid and liquid waste at construction and rehabilitation sites.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Occupational health and safety risks for workers at warehouses and construction sites.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Develop Occupational Health & Safety Plan, provide PPE, conduct safety briefings, appoint safety officer, perform regular site safety audits.\",\n      \"evidence\": \"Key E&S risks include water and soil pollution ... and occupational health and safety of workers.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Delay in recruiting key PIU specialists (GBV, security, external auditor).\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Initiate accelerated recruitment, use temporary contracts if needed, partner with NGOs for interim expertise, monitor hiring progress weekly.\",\n      \"evidence\": \"PIU shall include \u2026 a gender\u2011based violence specialist, a security specialist, an external auditor \u2026 no later than three (3) months after the Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Absence of a qualified procurement specialist within the PIU.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Publish competitive vacancy, set 30\u2011day hiring window, involve World Bank procurement advisors in selection, provide onboarding on World Bank procedures.\",\n      \"evidence\": \"Need for qualified procurement specialist within the PIU \u2013 Recruit competitively a full\u2011time procurement specialist.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Climate\u2011related shocks (droughts, floods) could undermine beneficiary livelihoods.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate\u2011resilient practices (drought\u2011tolerant crops, water harvesting), link with Early Warning System, allow rapid re\u2011targeting of assistance, allocate emergency buffer funds.\",\n      \"evidence\": \"Climate change also severely undermines food security\u2026 shocks undermine food and income security.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Declining humanitarian funding reduces support for IDPs and could strain project resources.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Diversify donor base, strengthen domestic budget allocations, embed cost\u2011recovery mechanisms, conduct quarterly financing gap analysis.\",\n      \"evidence\": \"Recent cuts in humanitarian funding have reduced support for IDPs.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in achieving interoperability between the Unique Social Registry and other government databases.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop detailed technical specs, pilot integration in one region, assign dedicated IT lead, conduct regular system testing and security risk assessments.",
+        "evidence": "The project will support the development of interoperable framework/platform where different databases and individual systems communicate..."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Cyber\u2011security breach of the social\u2011protection information system.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Implement full SRA, enforce ANSSI security standards, encrypt data, conduct quarterly penetration tests, train staff on data protection.",
+        "evidence": "The project will apply the security procedures elaborated by the National Cybersecurity Agency (ANSSI)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inadequate fiduciary capacity of the PIU (no FM staff, procedures, software).",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit qualified FM specialist and accountant within 3 months, adopt FM manual, engage external auditor, set up internal audit with IGF, conduct monthly fiduciary reviews.",
+        "evidence": "The assessment found that the MFS currently does not have a PIU with FM arrangements... Substantial risk expected to be reduced to Moderate."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Procurement capacity weaknesses leading to delays and higher costs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Hire full\u2011time procurement specialist, finalize Procurement Manual (PIM) before effectiveness, train DMP/DCMEF and bid committees, use STEP for real\u2011time tracking, set maximum stage durations.",
+        "evidence": "The procurement risk is rated Substantial; administrative routines may result in procurement delays, potentially affecting project implementation."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Procurement delays could push the overall implementation timeline.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Fast\u2011track high\u2011value procurements, define clear approval timelines in PIM, monitor via STEP, hold weekly procurement coordination meetings.",
+        "evidence": "Administrative routines may result in procurement delays, potentially affecting project implementation."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Security\u2011related disruptions (conflict, violence) may halt field activities or force suspension.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop Security Management Plan, conduct regular security risk assessments, adopt remote delivery (mobile payments, radio training) for high\u2011risk zones, maintain contingency budget for activity relocation.",
+        "evidence": "Low\u2011intensity conflict ... could affect timing of payments; High\u2011intensity conflict ... could lead to suspension."
+      },
+      {
+        "risk_id": "R07",
+        "description": "SEA/SH (sexual exploitation, abuse, harassment) risk is substantial.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement SEA/SH Action Plan, mandatory training for all staff and partners, enforce strict code of conduct, strengthen grievance mechanism with confidential reporting, conduct regular audits.",
+        "evidence": "SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Grievance Redress Mechanism may be overwhelmed, leading to unresolved complaints.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Expand GM team, set 15\u2011day response SLA, use case\u2011management system, publish regular GM performance reports, provide GBV\u2011specific referral pathways.",
+        "evidence": "Grievance addressed within the stipulated timeframe (indicator 16)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Government suspension of cash transfers and food vouchers could affect project design.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Design flexible in\u2011kind support packages, maintain dialogue with Ministry of Finance, embed contingency clauses in PIM to switch modalities quickly.",
+        "evidence": "The Government\u2019s decision in 2023 to suspend cash transfers and food vouchers led the PAMPV to focus on in\u2011kind support."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Failure to establish the Steering Committee within 3\u202fmonths could breach legal covenants.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Include steering\u2011committee establishment as a monitoring milestone, send reminder notices, link compliance to disbursement approvals.",
+        "evidence": "Recipient shall, not later than three (3) months after the Effective Date, establish \u2026 a committee (the \u201cSteering Committee\u201d)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Water and soil pollution from construction/rehabilitation sites.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Prepare Environmental Management Plan, enforce waste\u2011segregation, train contractors on spill prevention, conduct site inspections, require waste\u2011disposal permits.",
+        "evidence": "Key E&S risks include water and soil pollution from solid and liquid waste at construction and rehabilitation sites."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Occupational health and safety risks for workers at warehouses and construction sites.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Develop Occupational Health & Safety Plan, provide PPE, conduct safety briefings, appoint safety officer, perform regular site safety audits.",
+        "evidence": "Key E&S risks include water and soil pollution ... and occupational health and safety of workers."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Delay in recruiting key PIU specialists (GBV, security, external auditor).",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Initiate accelerated recruitment, use temporary contracts if needed, partner with NGOs for interim expertise, monitor hiring progress weekly.",
+        "evidence": "PIU shall include \u2026 a gender\u2011based violence specialist, a security specialist, an external auditor \u2026 no later than three (3) months after the Effective Date."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Absence of a qualified procurement specialist within the PIU.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Publish competitive vacancy, set 30\u2011day hiring window, involve World Bank procurement advisors in selection, provide onboarding on World Bank procedures.",
+        "evidence": "Need for qualified procurement specialist within the PIU \u2013 Recruit competitively a full\u2011time procurement specialist."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Climate\u2011related shocks (droughts, floods) could undermine beneficiary livelihoods.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate\u2011resilient practices (drought\u2011tolerant crops, water harvesting), link with Early Warning System, allow rapid re\u2011targeting of assistance, allocate emergency buffer funds.",
+        "evidence": "Climate change also severely undermines food security\u2026 shocks undermine food and income security."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Declining humanitarian funding reduces support for IDPs and could strain project resources.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Diversify donor base, strengthen domestic budget allocations, embed cost\u2011recovery mechanisms, conduct quarterly financing gap analysis.",
+        "evidence": "Recent cuts in humanitarian funding have reduced support for IDPs."
+      }
+    ]
+  },
+  "parse_error": null
+}

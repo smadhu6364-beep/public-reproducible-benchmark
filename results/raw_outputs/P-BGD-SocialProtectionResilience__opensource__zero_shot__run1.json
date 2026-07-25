@@ -1,0 +1,108 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:23:25.748521+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct periodic reviews of benefit levels and adjust them according to the poverty line to ensure adequate protection.\",\n      \"evidence\": \"Section II.B, Theory of Change and PDO Indicators\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Exclusion and inclusion errors in social assistance programs may limit their impact on poverty reduction.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce errors.\",\n      \"evidence\": \"Section II.D, Project Components\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited coverage of social protection programs may leave many poor households without support.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Expand coverage of social protection programs, particularly to climate-vulnerable areas, and prioritize poor households in the targeting process.\",\n      \"evidence\": \"Section I.B, Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Climate change may exacerbate poverty and vulnerability, particularly for women, the elderly, and persons with disabilities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate change adaptation measures into social protection programs and prioritize support to vulnerable groups.\",\n      \"evidence\": \"Section I.A, Project Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen institutional capacity and coordination among relevant government agencies and stakeholders.\",\n      \"evidence\": \"Section III.A, Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Limited access to financing options and lack of knowledge and skills may constrain the ability of women to develop and scale livelihoods and entrepreneurship activities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and support to women to enhance their skills and access to financing options.\",\n      \"evidence\": \"Section II.D, Project Components\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The project's reliance on digital platforms and technology may be vulnerable to disruptions, including those caused by climate-related disasters.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement disaster recovery measures and ensure that digital platforms are resilient to disruptions.\",\n      \"evidence\": \"Section II.D, Project Components\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The project's success may be affected by the country's economic and political stability, including the impact of climate change on the economy.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Monitor economic and political developments and adjust the project's implementation strategy as needed.\",\n      \"evidence\": \"Section I.A, Project Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The project's environmental and social safeguards may not be adequate to mitigate potential negative impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough environmental and social impact assessments and implement measures to mitigate potential negative impacts.\",\n      \"evidence\": \"Section V, Grievance Redress\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The project's implementation may be delayed or hindered by external factors, including climate-related disasters.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a contingency plan to address potential delays or disruptions, including those caused by climate-related disasters.\",\n      \"evidence\": \"Section IV, Project Appraisal Summary\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct periodic reviews of benefit levels and adjust them according to the poverty line to ensure adequate protection.",
+        "evidence": "Section II.B, Theory of Change and PDO Indicators"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Exclusion and inclusion errors in social assistance programs may limit their impact on poverty reduction.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce errors.",
+        "evidence": "Section II.D, Project Components"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited coverage of social protection programs may leave many poor households without support.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Expand coverage of social protection programs, particularly to climate-vulnerable areas, and prioritize poor households in the targeting process.",
+        "evidence": "Section I.B, Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Climate change may exacerbate poverty and vulnerability, particularly for women, the elderly, and persons with disabilities.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate change adaptation measures into social protection programs and prioritize support to vulnerable groups.",
+        "evidence": "Section I.A, Project Strategic Context"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Strengthen institutional capacity and coordination among relevant government agencies and stakeholders.",
+        "evidence": "Section III.A, Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Limited access to financing options and lack of knowledge and skills may constrain the ability of women to develop and scale livelihoods and entrepreneurship activities.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and support to women to enhance their skills and access to financing options.",
+        "evidence": "Section II.D, Project Components"
+      },
+      {
+        "risk_id": "R07",
+        "description": "The project's reliance on digital platforms and technology may be vulnerable to disruptions, including those caused by climate-related disasters.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement disaster recovery measures and ensure that digital platforms are resilient to disruptions.",
+        "evidence": "Section II.D, Project Components"
+      },
+      {
+        "risk_id": "R08",
+        "description": "The project's success may be affected by the country's economic and political stability, including the impact of climate change on the economy.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Monitor economic and political developments and adjust the project's implementation strategy as needed.",
+        "evidence": "Section I.A, Project Strategic Context"
+      },
+      {
+        "risk_id": "R09",
+        "description": "The project's environmental and social safeguards may not be adequate to mitigate potential negative impacts.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct thorough environmental and social impact assessments and implement measures to mitigate potential negative impacts.",
+        "evidence": "Section V, Grievance Redress"
+      },
+      {
+        "risk_id": "R10",
+        "description": "The project's implementation may be delayed or hindered by external factors, including climate-related disasters.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop a contingency plan to address potential delays or disruptions, including those caused by climate-related disasters.",
+        "evidence": "Section IV, Project Appraisal Summary"
+      }
+    ]
+  },
+  "parse_error": null
+}

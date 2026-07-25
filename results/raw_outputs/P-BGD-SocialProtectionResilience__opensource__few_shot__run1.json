@@ -1,0 +1,108 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:24:40.213750+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate benefit levels of social protection programs may hinder their effectiveness in protecting the poor and vulnerable.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct regular assessments of benefit levels and adjust them according to the poverty line.\",\n      \"evidence\": \"Social protection benefits received by the bottom 40 percent of the income distribution reduced from 51 percent in 2016 to about 44 percent in 2022.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Exclusion and inclusion errors in social protection programs may lead to inadequate coverage of the poor and vulnerable.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a robust targeting system, such as the Dynamic Social Registry, to improve the accuracy of beneficiary selection.\",\n      \"evidence\": \"Exclusion and inclusion errors remain a challenge, with nearly half (47 percent) of the poor households not covered by any social assistance program.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Climate change may exacerbate the vulnerability of the poor and vulnerable, making them more susceptible to shocks and disasters.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate change adaptation and resilience measures into social protection programs, such as the Dynamic Social Registry.\",\n      \"evidence\": \"Bangladesh faces a high level of vulnerability to the effects of climate change, with more than 90 million Bangladeshis likely to live in \u2018high climate exposure areas\u2019.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate capacity and institutional coordination may hinder the effective implementation of social protection programs.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen the capacity of implementing agencies, such as the Department of Social Services, and improve institutional coordination.\",\n      \"evidence\": \"The Department of Social Services has a strong mandate from the National Social Security Strategy, but there is scope for improved capacities and institutional coordination.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"The project's reliance on a single implementing agency, the Department of Social Services, may concentrate delivery and continuity risk.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify implementing agencies and ensure that the Department of Social Services has a robust project implementation unit.\",\n      \"evidence\": \"The Department of Social Services will be the nodal agency with key fiduciary responsibilities, and the project implementation unit will be set up at the Department of Social Services.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"The project's financial management may be complex due to the intricacy of activity selection and various implementing agencies and finances.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire additional capacity, provide training, and conduct close monitoring to mitigate financial management-related risks.\",\n      \"evidence\": \"The project design is complex due to the intricacy of activity selection and various implementing agencies and finances, including a mixed nature of costs, grants, cash transfers, and so on.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The project's procurement process may be affected by corruption and fraud risks.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct procurement in accordance with the World Bank Procurement Regulations and ensure that the project's procurement strategy is aligned with the World Bank's Anticorruption Guidelines.\",\n      \"evidence\": \"The project will adhere to the World Bank's Anticorruption Guidelines and ensure that procurement is conducted in accordance with the World Bank Procurement Regulations.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The project's implementation may be affected by political and regulatory risks, including changes in government policies and priorities.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project is aligned with the government's policies and priorities, and maintain close communication with relevant government agencies.\",\n      \"evidence\": \"The project is consistent with the World Bank Country Partnership Framework FY23\u201327 and the government's National Social Security Strategy.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The project's implementation may be affected by stakeholder-related risks, including inadequate engagement with beneficiaries and other stakeholders.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project has a robust stakeholder engagement plan, including a communications strategy and a grievance redress mechanism.\",\n      \"evidence\": \"The project will have a Stakeholder Engagement Plan, which will detail the grievance redress mechanism and monitoring mechanisms.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The project's implementation may be affected by environmental risks, including climate change and natural disasters.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure that the project is designed and implemented to be resilient to environmental risks, including climate change and natural disasters.\",\n      \"evidence\": \"The project will contribute to Bangladesh's national climate adaptation strategies and will be designed and implemented to be resilient to environmental risks.\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate benefit levels of social protection programs may hinder their effectiveness in protecting the poor and vulnerable.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct regular assessments of benefit levels and adjust them according to the poverty line.",
+        "evidence": "Social protection benefits received by the bottom 40 percent of the income distribution reduced from 51 percent in 2016 to about 44 percent in 2022."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Exclusion and inclusion errors in social protection programs may lead to inadequate coverage of the poor and vulnerable.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement a robust targeting system, such as the Dynamic Social Registry, to improve the accuracy of beneficiary selection.",
+        "evidence": "Exclusion and inclusion errors remain a challenge, with nearly half (47 percent) of the poor households not covered by any social assistance program."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Climate change may exacerbate the vulnerability of the poor and vulnerable, making them more susceptible to shocks and disasters.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate change adaptation and resilience measures into social protection programs, such as the Dynamic Social Registry.",
+        "evidence": "Bangladesh faces a high level of vulnerability to the effects of climate change, with more than 90 million Bangladeshis likely to live in \u2018high climate exposure areas\u2019."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate capacity and institutional coordination may hinder the effective implementation of social protection programs.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Strengthen the capacity of implementing agencies, such as the Department of Social Services, and improve institutional coordination.",
+        "evidence": "The Department of Social Services has a strong mandate from the National Social Security Strategy, but there is scope for improved capacities and institutional coordination."
+      },
+      {
+        "risk_id": "R05",
+        "description": "The project's reliance on a single implementing agency, the Department of Social Services, may concentrate delivery and continuity risk.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Diversify implementing agencies and ensure that the Department of Social Services has a robust project implementation unit.",
+        "evidence": "The Department of Social Services will be the nodal agency with key fiduciary responsibilities, and the project implementation unit will be set up at the Department of Social Services."
+      },
+      {
+        "risk_id": "R06",
+        "description": "The project's financial management may be complex due to the intricacy of activity selection and various implementing agencies and finances.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire additional capacity, provide training, and conduct close monitoring to mitigate financial management-related risks.",
+        "evidence": "The project design is complex due to the intricacy of activity selection and various implementing agencies and finances, including a mixed nature of costs, grants, cash transfers, and so on."
+      },
+      {
+        "risk_id": "R07",
+        "description": "The project's procurement process may be affected by corruption and fraud risks.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct procurement in accordance with the World Bank Procurement Regulations and ensure that the project's procurement strategy is aligned with the World Bank's Anticorruption Guidelines.",
+        "evidence": "The project will adhere to the World Bank's Anticorruption Guidelines and ensure that procurement is conducted in accordance with the World Bank Procurement Regulations."
+      },
+      {
+        "risk_id": "R08",
+        "description": "The project's implementation may be affected by political and regulatory risks, including changes in government policies and priorities.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure that the project is aligned with the government's policies and priorities, and maintain close communication with relevant government agencies.",
+        "evidence": "The project is consistent with the World Bank Country Partnership Framework FY23\u201327 and the government's National Social Security Strategy."
+      },
+      {
+        "risk_id": "R09",
+        "description": "The project's implementation may be affected by stakeholder-related risks, including inadequate engagement with beneficiaries and other stakeholders.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure that the project has a robust stakeholder engagement plan, including a communications strategy and a grievance redress mechanism.",
+        "evidence": "The project will have a Stakeholder Engagement Plan, which will detail the grievance redress mechanism and monitoring mechanisms."
+      },
+      {
+        "risk_id": "R10",
+        "description": "The project's implementation may be affected by environmental risks, including climate change and natural disasters.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Ensure that the project is designed and implemented to be resilient to environmental risks, including climate change and natural disasters.",
+        "evidence": "The project will contribute to Bangladesh's national climate adaptation strategies and will be designed and implemented to be resilient to environmental risks."
+      }
+    ]
+  },
+  "parse_error": null
+}

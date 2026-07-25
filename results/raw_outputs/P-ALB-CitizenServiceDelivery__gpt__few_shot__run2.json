@@ -1,0 +1,153 @@
+{
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T17:44:00.379093+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-ALB-CitizenServiceDelivery\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Weak procurement capacity at ADISA may cause delays, non\u2011compliance, and cost overruns.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire qualified procurement specialist, provide bank technical assistance, use sample TORs, and enforce close bank oversight of procurement processes.\",\n      \"evidence\": \"Procurement risk rating is High. Very weak procurement capacity at ADISA as a newly created agency. (Section 66)\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Overall financial management risk is substantial due to limited experience of ADISA and MIPA with large donor\u2011funded operations.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Deliver targeted fiduciary training, adopt a detailed Financial Management Manual, hire finance specialists, and implement robust internal controls with bank supervision.\",\n      \"evidence\": \"Overall financial management risk is rated as Substantial. ADISA and MIPA lack experience with large donor\u2011funded operations. (Section 62)\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Ambitious timeline for constructing the central Citizen Service Center may be missed.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Create a realistic construction schedule with contingency buffers, monitor milestones regularly, consider PPP financing options, and secure timely approvals.\",\n      \"evidence\": \"Central CSC building to be constructed in Tirana by first half of 2017; timeline described as very ambitious. (Section 7)\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Lack of existing IT systems and fragmented registers hinder integration and achievement of Level\u202f3 automation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a phased IT implementation plan, allocate resources for system development, enforce interoperability standards, pilot test services, and coordinate with NAIS for integration.\",\n      \"evidence\": \"Seven institutions have no IT system; legacy registers are paper; integration required for Level\u202f3 automation. (Section 10)\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Bureaucratic resistance from ministries and staff may impede front\u2011office reforms and service redesign.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a change\u2011management program, involve staff in redesign, provide training on new processes, communicate benefits, and create incentives for adoption.\",\n      \"evidence\": \"Bureaucratic resistance could stifle efforts to improve back\u2011office functions; ministries may not welcome ceding front\u2011office function. (Section 58)\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Delay in passing omnibus legislation needed for regulatory reforms could stall service re\u2011engineering.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate legislative drafting, set clear parliamentary timelines, engage legal experts, monitor progress, and prepare contingency measures for partial implementation.\",\n      \"evidence\": \"Reform of government services will be implemented through omnibus legislation expected to be passed by end of 2016. (Section 19)\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Construction of the CSC may cause dust, noise, waste and other environmental impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Implement the Environmental Management Plan, enforce construction best practices, conduct regular site inspections, and maintain a community liaison for grievance handling.\",\n      \"evidence\": \"Potential environmental impacts of new CSC construction include dust, noise, waste; mitigated by EMP. (Section 70)\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Emphasis on digital services could marginalize poor and vulnerable citizens with low internet access.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain non\u2011digital service points, provide assisted internet access, run targeted outreach campaigns, and ensure information is available via posters, call centres, and community centres.\",\n      \"evidence\": \"Risk that focus on state\u2011of\u2011the\u2011art online services may diminish access of the poor and vulnerable due to low internet penetration. (Section 6)\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Delay in recruiting procurement and administrative specialists for the PMU may weaken project implementation.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Fast\u2011track recruitment, use interim consultants if needed, define clear TORs, and obtain bank assistance for procurement support.\",\n      \"evidence\": \"Procurement and Administrative Specialist positions have been readvertised; PMU staff not yet fully set up. (Section 66)\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Results\u2011Based Financing disbursements are blocked until DLI#5 (strategic plan approval and baseline survey) is achieved.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritize completion of the strategic plan and baseline survey, allocate dedicated resources, and provide technical assistance to meet DLI#5 on schedule.\",\n      \"evidence\": \"No disbursements under RBF will be made until DLI#5 is achieved. (Section 31)\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Complex coordination among multiple ministries, agencies, and inter\u2011ministerial committees may cause delays and misalignment.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish clear coordination mechanisms, regular steering\u2011committee meetings, assign a dedicated coordination officer, and use project\u2011management tools to track responsibilities.\",\n      \"evidence\": \"Multiple inter\u2011ministerial committees and working groups; coordination among many agencies is required and may be complex. (Section 58)\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"ADISA, as a newly created agency, has limited implementation experience and capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide intensive capacity\u2011building, hire experienced managers, leverage technical assistance, and monitor performance against clear milestones.\",\n      \"evidence\": \"ADISA created in Oct\u202f2014; limited track record; capacity strengthening needed. (Section 41)\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Improved service access may increase demand, creating budget pressures amid existing fiscal constraints.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct demand forecasting, adjust budget allocations, explore additional financing sources, and implement cost\u2011recovery where appropriate.\",\n      \"evidence\": \"Improved access may increase demand for services, with budget implications; fiscal constraints noted. (Section 49)\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"High levels of perceived corruption may persist, undermining public trust in the reform outcomes.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen anti\u2011corruption controls, enforce front\u2011office separation, monitor bribery reports via citizen feedback, and run public awareness campaigns.\",\n      \"evidence\": \"Corruption remains high; 30% of citizens exposed to bribery; risk reforms may not fully reduce it. (Sections 1\u20113)\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Low response rate (\u224822%) to the citizen feedback mechanism may limit data quality for performance monitoring.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Increase outreach, diversify feedback channels, offer incentives for participation, and supplement with periodic surveys to improve data completeness.\",\n      \"evidence\": \"Citizen feedback mechanism response rate about 22%; limited data may affect performance monitoring. (Sections 40\u201141)\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-ALB-CitizenServiceDelivery",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Weak procurement capacity at ADISA may cause delays, non\u2011compliance, and cost overruns.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire qualified procurement specialist, provide bank technical assistance, use sample TORs, and enforce close bank oversight of procurement processes.",
+        "evidence": "Procurement risk rating is High. Very weak procurement capacity at ADISA as a newly created agency. (Section 66)"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Overall financial management risk is substantial due to limited experience of ADISA and MIPA with large donor\u2011funded operations.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deliver targeted fiduciary training, adopt a detailed Financial Management Manual, hire finance specialists, and implement robust internal controls with bank supervision.",
+        "evidence": "Overall financial management risk is rated as Substantial. ADISA and MIPA lack experience with large donor\u2011funded operations. (Section 62)"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Ambitious timeline for constructing the central Citizen Service Center may be missed.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Create a realistic construction schedule with contingency buffers, monitor milestones regularly, consider PPP financing options, and secure timely approvals.",
+        "evidence": "Central CSC building to be constructed in Tirana by first half of 2017; timeline described as very ambitious. (Section 7)"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Lack of existing IT systems and fragmented registers hinder integration and achievement of Level\u202f3 automation.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a phased IT implementation plan, allocate resources for system development, enforce interoperability standards, pilot test services, and coordinate with NAIS for integration.",
+        "evidence": "Seven institutions have no IT system; legacy registers are paper; integration required for Level\u202f3 automation. (Section 10)"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Bureaucratic resistance from ministries and staff may impede front\u2011office reforms and service redesign.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a change\u2011management program, involve staff in redesign, provide training on new processes, communicate benefits, and create incentives for adoption.",
+        "evidence": "Bureaucratic resistance could stifle efforts to improve back\u2011office functions; ministries may not welcome ceding front\u2011office function. (Section 58)"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Delay in passing omnibus legislation needed for regulatory reforms could stall service re\u2011engineering.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Accelerate legislative drafting, set clear parliamentary timelines, engage legal experts, monitor progress, and prepare contingency measures for partial implementation.",
+        "evidence": "Reform of government services will be implemented through omnibus legislation expected to be passed by end of 2016. (Section 19)"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Construction of the CSC may cause dust, noise, waste and other environmental impacts.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Implement the Environmental Management Plan, enforce construction best practices, conduct regular site inspections, and maintain a community liaison for grievance handling.",
+        "evidence": "Potential environmental impacts of new CSC construction include dust, noise, waste; mitigated by EMP. (Section 70)"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Emphasis on digital services could marginalize poor and vulnerable citizens with low internet access.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Maintain non\u2011digital service points, provide assisted internet access, run targeted outreach campaigns, and ensure information is available via posters, call centres, and community centres.",
+        "evidence": "Risk that focus on state\u2011of\u2011the\u2011art online services may diminish access of the poor and vulnerable due to low internet penetration. (Section 6)"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Delay in recruiting procurement and administrative specialists for the PMU may weaken project implementation.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Fast\u2011track recruitment, use interim consultants if needed, define clear TORs, and obtain bank assistance for procurement support.",
+        "evidence": "Procurement and Administrative Specialist positions have been readvertised; PMU staff not yet fully set up. (Section 66)"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Results\u2011Based Financing disbursements are blocked until DLI#5 (strategic plan approval and baseline survey) is achieved.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritize completion of the strategic plan and baseline survey, allocate dedicated resources, and provide technical assistance to meet DLI#5 on schedule.",
+        "evidence": "No disbursements under RBF will be made until DLI#5 is achieved. (Section 31)"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Complex coordination among multiple ministries, agencies, and inter\u2011ministerial committees may cause delays and misalignment.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish clear coordination mechanisms, regular steering\u2011committee meetings, assign a dedicated coordination officer, and use project\u2011management tools to track responsibilities.",
+        "evidence": "Multiple inter\u2011ministerial committees and working groups; coordination among many agencies is required and may be complex. (Section 58)"
+      },
+      {
+        "risk_id": "R12",
+        "description": "ADISA, as a newly created agency, has limited implementation experience and capacity.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide intensive capacity\u2011building, hire experienced managers, leverage technical assistance, and monitor performance against clear milestones.",
+        "evidence": "ADISA created in Oct\u202f2014; limited track record; capacity strengthening needed. (Section 41)"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Improved service access may increase demand, creating budget pressures amid existing fiscal constraints.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct demand forecasting, adjust budget allocations, explore additional financing sources, and implement cost\u2011recovery where appropriate.",
+        "evidence": "Improved access may increase demand for services, with budget implications; fiscal constraints noted. (Section 49)"
+      },
+      {
+        "risk_id": "R14",
+        "description": "High levels of perceived corruption may persist, undermining public trust in the reform outcomes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen anti\u2011corruption controls, enforce front\u2011office separation, monitor bribery reports via citizen feedback, and run public awareness campaigns.",
+        "evidence": "Corruption remains high; 30% of citizens exposed to bribery; risk reforms may not fully reduce it. (Sections 1\u20113)"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Low response rate (\u224822%) to the citizen feedback mechanism may limit data quality for performance monitoring.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Increase outreach, diversify feedback channels, offer incentives for participation, and supplement with periodic surveys to improve data completeness.",
+        "evidence": "Citizen feedback mechanism response rate about 22%; limited data may affect performance monitoring. (Sections 40\u201141)"
+      }
+    ]
+  },
+  "parse_error": null
+}

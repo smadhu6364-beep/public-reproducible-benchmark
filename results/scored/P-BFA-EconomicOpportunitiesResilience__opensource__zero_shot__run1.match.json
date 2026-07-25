@@ -1,0 +1,175 @@
+{
+  "run_file": "P-BFA-EconomicOpportunitiesResilience__opensource__zero_shot__run1.json",
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R04",
+      "similarity": 0.763,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.592,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R05",
+      "similarity": 0.538,
+      "gen_category": "external",
+      "gt_category": "other",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insecurity and conflict may disrupt project activities and affect beneficiary access",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Implement flexible and adaptive project design, partner with local organizations, and maintain regular communication with beneficiaries and stakeholders",
+      "evidence": "Section I.A.2, 'Project Strategic Context'"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Climate change and natural disasters may exacerbate poverty and vulnerability among target populations",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Integrate climate-resilient measures into project design, support climate-smart agricultural practices, and enhance emergency preparedness and response",
+      "evidence": "Section I.A.3, 'Project Strategic Context'"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited access to financial services and markets may hinder economic inclusion and empowerment of beneficiaries",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Partner with microfinance institutions, support financial literacy and education, and facilitate access to markets and productive inputs",
+      "evidence": "Section II.A, 'Project Development Objective'"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate institutional capacity and coordination may impede project implementation and effectiveness",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen institutional capacity through training and technical assistance, establish clear coordination mechanisms, and foster partnerships with key stakeholders",
+      "evidence": "Section III.A, 'Institutional and Implementation Arrangements'"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Social and cultural barriers may limit beneficiary participation and empowerment, particularly among women and vulnerable groups",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implement gender-sensitive and inclusive project design, support awareness-raising and community engagement activities, and facilitate access to social services and support",
+      "evidence": "Section II.C, 'Project Beneficiaries'"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Limited availability of data and information may hinder project monitoring, evaluation, and learning",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish a robust monitoring and evaluation system, support data collection and analysis, and facilitate information sharing and coordination among stakeholders",
+      "evidence": "Section IV.B, 'Results Monitoring, Evaluation, and Verification Arrangements'"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Fiduciary and financial management risks may compromise project resources and effectiveness",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement robust financial management and control systems, ensure transparency and accountability, and provide training and technical assistance to project staff",
+      "evidence": "Section IV.B, 'Fiduciary'"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Environmental and social risks may arise from project activities, particularly related to infrastructure development and social registry management",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct environmental and social impact assessments, develop and implement mitigation measures, and ensure compliance with relevant policies and regulations",
+      "evidence": "Section IV.C, 'Environmental, Social and Legal Operational Policies'"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Political and regulatory risks may affect project implementation and effectiveness, particularly related to government policies and institutional frameworks",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain regular communication with government stakeholders, monitor policy and regulatory developments, and adapt project design and implementation as needed",
+      "evidence": "Section I.B, 'Sectoral and Institutional Context'"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Capacity constraints and limited resources may hinder project implementation and effectiveness, particularly among local partners and stakeholders",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide training and technical assistance, support capacity-building initiatives, and facilitate partnerships and collaborations among stakeholders",
+      "evidence": "Section III.A, 'Institutional and Implementation Arrangements'"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is assessed to be Substantial. The uncertain political and governance context provides a challenge to long-term development policy. Adaptive social protection systems are still nascent and will require continued political commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The team, guided by the management, will continue its high-level policy dialogue at central and decentralized levels and ensure continuous advocacy and communication."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed to be Substantial. Fiscal space remains constrained by elevated security spending and tighter financing conditions, which increase the risk of reduced budget allocations and delayed counterpart funding for new priorities and reforms, including social protection and the PAMPV. Macroeconomic risks also arise from exogenous factors, including current conflict in the Middle East which can result in a surge in oil prices and put inflationary pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Other programs such as the International Monetary Fund program and the World Bank's technical assistance on tax expenditure under the Sustainable Development Finance Policy can help expand fiscal space, partially mitigating these risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector strategy and policies risks are considered to be Substantial. Sectoral strategies and policies remain nascent, and the Government's budget allocation to operationalize the PAMPV remains unclear. Also, sectoral decisions are at times taken abruptly and can heavily affect implementation (for example, the suspension of cash transfers in 2023 led to an increased focus on economic inclusion, and the newly emerged priority of the CONASUR/IDPs led to the revision of the fiche de projet of this project).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In parallel with high-level policy dialogue, the project supports strategic communications, adopts an agile approach, and provides technical assistance to promote evidence-based decision-making (with support from SASPP, the Social Protection Response MDTF, and the State and Peacebuilding Fund)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall fiduciary risks are considered as Substantial, as described in section IV.B and annex 2, based on financial assessment and procurement assessment.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project preparation fund (Grant Facility for Project Preparation) has been used not only to prepare mitigation measures to address these risks but will also elevate the project readiness (for example, effectiveness-linked actions including FM and procurement staffing and initiating the procurement packages for the first 18-months' implementation priorities) to improve the project performance."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks related to insecurity are rated as High. The deteriorating and volatile security situation\u2014particularly in regions with high poverty, displacement, and food insecurity that are project intervention areas\u2014will likely be an important risk. The project will also address other risks related to protection of personal data: for Component 2 on social registry and interoperability, activities will be guided by the Information System Security Policy (ISSP) document developed by the ANSSI, to ensure confidentiality of households registered in the RSU.",
+      "category": "other",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project activities will be adjusted based on the security situation (see annex 3), and the PIU will be also staffed with a security specialist and a security management plan will be developed. To remain engaged, the project will also rely on remote delivery/monitoring, partnering with local representation (NGOs, UN agencies). The ST-RSU will conduct capacity-building activities, including training sessions and awareness campaigns, to strengthen users' ability to manage and protect households' personal data."
+    }
+  ]
+}

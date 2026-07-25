@@ -1,0 +1,202 @@
+{
+  "run_file": "P-GTM-SmartPublicFinances__gpt__zero_shot__run2.json",
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R01",
+      "similarity": 0.596,
+      "gen_category": "stakeholder",
+      "gt_category": "technical",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R03",
+      "similarity": 0.593,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R02",
+      "similarity": 0.51,
+      "gen_category": "schedule",
+      "gt_category": "organizational",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delay in establishing the Project Implementation Unit (PIU) and Project Operational Manual (POM) could block disbursements.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Set a fast\u2011track recruitment schedule, assign senior Bank liaison to monitor PIU set\u2011up, and link milestone payments to PIU approval.",
+      "evidence": "No withdrawal shall be made ... until the Borrower has established the PIU, satisfactory to the Bank."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Cyber\u2011attacks on government portals may disrupt the PFM information ecosystem and compromise data integrity.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement the ISMS and SOC as planned, conduct regular penetration testing, and provide staff training on incident response.",
+      "evidence": "Superintendency of Tax Administration faced over 8,000 cyberattacks in 2021; Guatecompras and SICOIN stopped working due to a cyber\u2011attack in Nov 2023."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fragmented legacy PFM systems and limited interoperability could cause implementation delays and data inconsistencies.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Adopt the defined enterprise architecture, phase integration of core and peripheral systems, and enforce common data standards.",
+      "evidence": "Core PFM information systems suffer from fragmentation, obsolescence, and weak institutional support; limited interoperability leads to manual processes."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Insufficient institutional capacity and high staff turnover may jeopardize reform sustainability.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Launch a structured capacity\u2011building program, create career paths for data analysts, and offer retention incentives for key staff.",
+      "evidence": "A common reason for failure ... is the lack of adequate preparation and institutional stability within the implementing agency."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Low adoption of gender\u2011responsive budgeting limits inclusive outcomes and may not meet gender objectives.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Strengthen gender\u2011budget tagging guidelines, provide training to municipalities, and tie funding incentives to gender\u2011tagged budget adoption.",
+      "evidence": "Only 0.6% of the national budget was tagged with a gender focus; only 112 of 340 municipalities linked their budget to the CPEG."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Extreme weather events could damage ICT infrastructure and interrupt PFM services.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deploy climate\u2011resilient data centers, establish backup sites, and integrate BCMS procedures for disaster response.",
+      "evidence": "75% of the population at risk from floods, droughts, landslides; climate\u2011related hazards may affect capacity of systems."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Coordination failures with IMF and IDB partners may delay IPSAS implementation and data integration.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Create a joint steering committee, formalize MoUs, and hold monthly coordination meetings to track progress.",
+      "evidence": "IMF is leading IPSAS strategy; IDB is improving data quality and integration within SIAF."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Underestimation of ICT procurement costs could lead to budget overruns.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Prepare detailed cost estimates, include a contingency reserve, and enforce competitive bidding with life\u2011cycle cost analysis.",
+      "evidence": "Minor climate risks ... procurement of hardware may arise; project will incorporate life\u2011cycle requirements and energy efficiency standards."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Limited analytical capacity hampers effective use of data analytics for decision\u2011making.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a dedicated data analytics unit, deliver training programs, and define career pathways for data professionals.",
+      "evidence": "Guatemala\u2019s use of analytics is limited; lack of structured career development for data analysts in the public sector."
+    },
+    {
+      "risk_id": "R10",
+      "description": "A decline in remittance flows could reduce VAT revenue, tightening fiscal space.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversify revenue sources, strengthen tax administration, and build fiscal buffers to absorb external shocks.",
+      "evidence": "Remittances represent 19.4% of GDP; any decline could reduce VAT collections, which generate 47.8% of net income."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Complex World Bank procurement procedures and limited local capacity may cause procurement delays.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop early procurement plans, provide capacity\u2011building workshops for staff, and use streamlined procedures where permissible.",
+      "evidence": "Procurement will be carried out following World Bank procedure; procurement arrangements, capacity assessment, risks, and mitigation are detailed in Annex 1."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Erosion of political commitment could undermine reform continuity.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Secure a high\u2011level champion, embed reforms in legal statutes, and link performance incentives to reform milestones.",
+      "evidence": "Need strong, sustained commitment from senior government leadership; lack of preparation and institutional stability cited as failure reasons."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Inadequate monitoring and evaluation may prevent timely detection of implementation issues.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement a robust M&E framework with real\u2011time dashboards and conduct independent mid\u2011term evaluations.",
+      "evidence": "PIU will establish a project monitoring system; semiannual progress reports will guide adjustments."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Business Continuity Management System (BCMS) may not be fully operational, risking service interruption during disasters.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop BCMS per ISO 22301, conduct regular drills, and update continuity plans after each test.",
+      "evidence": "Subcomponent 2.5 will develop a BCMS following ISO 22301 to ensure response to disruptive incidents, including climate\u2011related events."
+    },
+    {
+      "risk_id": "R15",
+      "description": "PFM governance framework may remain ineffective, leading to fragmented decision\u2011making.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Define clear governance roles, hold regular coordination meetings, and enforce accountability mechanisms.",
+      "evidence": "Formal PFM Governance framework established (Yes/No) \u2013 target Yes by 2025."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical design risks are considered Substantial. PFM reforms typically require a whole-of-government approach and involve complex, cross-cutting changes that are often difficult to implement; these challenges are further amplified when reforms involve development or integration of sophisticated information systems. Many of the anticipated efficiency gains depend heavily on interoperability of processes and seamless integration of information systems across institutions, and the involvement of multiple stakeholders adds further complexity and increases the potential for misalignment or implementation delays.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project design includes the development and application of well-defined, evidence-based PFM conceptual and governance models, informed by a diagnostic and reform strategy developed through stakeholder consultations, providing a clear and coherent framework expected to foster shared understanding, facilitate collaboration, and reduce fragmentation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risks are Substantial. Given the complexity of PFM reforms, the project requires strong government commitment to ensure effective implementation and safeguard long-term sustainability. Since the project's beneficiaries extend beyond MINFIN, coordination challenges may arise during implementation.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A PIU will be established within the Directorate of Public Treasury (DTP) for faster decision-making and improved coordination across MINFIN directorates. Component 3 will strengthen PIU operations (project management, financial management, procurement, monitoring, E&S risk management capacities); the Bank will provide training to the PIU and relevant stakeholders and facilitate change management mechanisms and a communications strategy. Coordination challenges involving multiple beneficiaries will be addressed through collaboration between MINFIN and SEGEPLAN via the Digital Transformation Commission."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risks are Substantial. This is due to DTP's limited experience with donor-funded projects and lack of recent engagement with World Bank operations; DTP has no prior experience implementing the Bank's procurement regulations, and the low value of anticipated contracts may limit interest from international firms, reducing competition. DTP has basic financial management systems in place but its unfamiliarity with the Bank's FM policies and requirements may pose risks to achieving the PDO, potentially leading to delays in activity execution.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Measures include setting up a PIU with qualified personnel, offering procurement training to PIU and DTP staff, conducting market analysis to find potential providers, and preparing a simplified Project Procurement Strategy for Development (PPSD)."
+    }
+  ]
+}

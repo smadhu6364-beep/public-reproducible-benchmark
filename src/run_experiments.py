@@ -432,18 +432,21 @@ OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 # models this project needs. Real, disclosed cost - this is a paid call,
 # however small, not a free-tier trick.
 #
-# Genuinely unconfirmed: the exact mechanism letting a $0-lifetime-purchase
-# ("is_free_tier": true per openrouter.ai/api/v1/key) account pay for a
-# non-free model at all - OpenRouter's own /credits endpoint showed
-# total_credits=0 alongside real, succeeded, billed usage. Some kind of
-# small default trial allowance not exposed by that endpoint is the likely
-# explanation but not confirmed - if real calls start failing on insufficient
-# balance, that is the likely cause, not a bug here. Also unconfirmed:
-# whether OpenRouter's documented 50-requests/day cap (0-tier, no lifetime
-# purchases; openrouter.ai/docs/api-reference/limits, checked 2026-07-25)
-# applies to paid-model calls on a free-tier-labeled account the same way it
-# applies to :free-suffixed models - real behavior will show this, not
-# guessed in advance.
+# RESOLVED 2026-07-25 (same day, after a real grid run): the mechanism
+# letting a $0-lifetime-purchase account pay for a non-free model is a
+# small implicit trial balance OpenRouter grants new accounts, not exposed
+# by /api/v1/credits (which shows purchased credits only) but visible in
+# /api/v1/key's `usage` field, watched climbing $0 -> $0.1814 across 46 real
+# calls in one grid run before a genuine 402 Payment Required ("can only
+# afford N tokens") - a real, hard stop once that trial balance is spent,
+# not a rate limit and not a bug here. Adding real funds at
+# openrouter.ai/settings/credits is required to keep using this path
+# further; at the confirmed per-token rates above, a few real dollars would
+# likely clear the entire remaining gpt+opensource grid. Separately still
+# unconfirmed: whether OpenRouter's documented 50-requests/day free-tier cap
+# would also apply once real funds are added, or only the credit balance
+# matters at that point - not tested, since the trial balance ran out on
+# credits first, before 50 requests were reached in a single day.
 OPENROUTER_MODEL_ID = {
     "gpt-oss-120b": "openai/gpt-oss-120b",
     "Meta-Llama-3.3-70B-Instruct": "meta-llama/llama-3.3-70b-instruct",

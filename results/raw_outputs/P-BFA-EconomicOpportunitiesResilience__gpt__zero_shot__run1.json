@@ -1,0 +1,198 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T17:57:14.674547+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Escalating insecurity and armed conflict may force suspension of field activities, causing project delays and loss of beneficiary reach.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop and regularly update security SOPs, shift to remote delivery (radio, phone) in high\u2011risk zones, and pre\u2011position staff and resources in safer areas.\",\n      \"evidence\": \"Annex\u202f3: Adaptation of Project Activities to Insecurity \u2013 Red/Black security risk descriptions\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Procurement processes may be delayed by administrative routines and limited bidder competition in fragile regions, affecting timely implementation.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit a qualified procurement specialist, adopt fast\u2011track procurement procedures in the PIM, and provide targeted training to DMP and bid committees.\",\n      \"evidence\": \"Key Risks \u2013 procurement delays; Annex\u202f2 Procurement Action Plan \u2013 need for qualified procurement specialist\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The newly created PIU lacks experienced financial management staff and systems, increasing risk of mis\u2011allocation of funds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire FM specialist within three months, implement accounting software, and establish internal audit with IGF and ASCELC oversight.\",\n      \"evidence\": \"Fiduciary \u2013 FM assessment notes absence of FM staff, procedures, and software\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Cybersecurity breaches or data protection failures could compromise the Unique Social Registry and interoperable platforms.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Engage ANSSI for security risk assessment, implement encryption and access controls per CIL guidelines, and conduct regular penetration testing.\",\n      \"evidence\": \"Component\u202f2.2 \u2013 security procedures with ANSSI and CIL mentioned\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Construction of warehouses and logistics hubs may cause water and soil pollution from solid and liquid waste.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Apply ESS\u202f3 (Resource Efficiency) standards, require waste management plans in contracts, and monitor compliance through site inspections.\",\n      \"evidence\": \"Key Risks \u2013 water and soil pollution from construction sites\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Sexual exploitation, abuse, and harassment (SEA/SH) risks are substantial given the vulnerable target groups and conflict context.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implement an SEA/SH Action Plan, train all staff on code of conduct, and ensure the grievance mechanism can refer survivors to GBV services.\",\n      \"evidence\": \"Key Risks \u2013 SEA/SH risk is Substantial; ESCP requires SEA/SH Action Plan\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Gender\u2011based violence (GBV) may increase among women beneficiaries, undermining project outcomes and safety.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit a GBV specialist, integrate GBV risk assessments into all activities, and provide safe spaces and referral pathways for survivors.\",\n      \"evidence\": \"Legal Covenants \u2013 requirement for GBV specialist in PIU\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Climate\u2011related shocks (droughts, floods) could damage newly built warehouses and disrupt supply chains.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Site warehouses in low\u2011flood zones, incorporate climate\u2011resilient design standards, and develop emergency repair protocols.\",\n      \"evidence\": \"Strategic Context \u2013 climate change undermines food security; Component\u202f3.1 \u2013 warehouses built in high\u2011risk areas\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate coordination among multiple ministries and partners may lead to fragmented implementation and duplication of effort.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a formal inter\u2011ministerial coordination committee, define clear roles in the PIM, and hold quarterly joint review meetings.\",\n      \"evidence\": \"Section\u202fB \u2013 multiple ministries listed; Lessons Learned \u2013 need for stronger coordination\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Delays in meeting pre\u2011conditions for disbursement (e.g., adoption of Productive Grants Manual) could stall cash flows to beneficiaries.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Create a disbursement readiness checklist, monitor milestones weekly, and provide technical assistance to finalize manuals ahead of deadlines.\",\n      \"evidence\": \"Disbursement Arrangements \u2013 withdrawals contingent on Productive Grants Manual adoption\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Limited mobile network coverage and low phone penetration may hinder digital payments and remote monitoring.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct a telecom coverage mapping, supplement with cash points and agent networks, and retain paper\u2011based backup mechanisms.\",\n      \"evidence\": \"Component\u202f2.2 \u2013 payment platform considerations include mobile network coverage\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Exclusion of vulnerable groups (women, youth, persons with disabilities, IDPs) from benefits due to targeting errors.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply gender\u2011sensitive targeting criteria, conduct community validation workshops, and monitor inclusion indicators quarterly.\",\n      \"evidence\": \"Component\u202f1.1 \u2013 gender\u2011sensitive targeting; Key Risks \u2013 exclusion of vulnerable groups\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Corruption or fraud in procurement and cash transfers could erode project credibility and financial resources.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement strict procurement oversight via ASCELC, use e\u2011procurement (STEP), and conduct independent audits of grant payments.\",\n      \"evidence\": \"Procurement \u2013 ASCELC oversight; Fiduciary \u2013 anti\u2011corruption guidelines\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Insufficient capacity of social workers and field staff may limit effective delivery of economic inclusion services.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide comprehensive training, allocate operational budgets for transport and communication, and monitor performance through M&E dashboards.\",\n      \"evidence\": \"Component\u202f3.2 \u2013 need for training and operating budget for social workers\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Remote monitoring tools (GEMS, PDM, IBM) may face data quality issues in insecure or low\u2011connectivity areas.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Combine remote tools with periodic in\u2011person verification, establish data validation protocols, and train local partners on data entry standards.\",\n      \"evidence\": \"Annex\u202f3 \u2013 remote monitoring adaptations; Monitoring section \u2013 use of GEMS, PDM\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Delays in rolling out the Unique Social Registry (RSU) to cover all poor households could limit targeting efficiency.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Set phased rollout milestones, allocate additional field teams for census sweeps, and monitor coverage percentages monthly.\",\n      \"evidence\": \"Component\u202f2.1 \u2013 RSU currently covers ~1/4 of poor households; goal to reach all\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"High turnover or inability to recruit key PIU staff (e.g., gender\u2011based violence specialist, security specialist) may weaken project governance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Offer competitive contracts, define clear terms of reference, and maintain a backup pool of qualified consultants.\",\n      \"evidence\": \"Legal Covenants \u2013 requirement to recruit GBV and security specialists within 3\u20116 months\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Inadequate grievance redress mechanism performance could lead to unresolved complaints and reputational damage.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Establish clear SLA for grievance response, train staff on handling SEA/SH cases, and publish quarterly grievance handling statistics.\",\n      \"evidence\": \"ESCP \u2013 grievance mechanism to be established within 6 months; Key Risks \u2013 grievance handling\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"Funding reductions from donor partners or humanitarian agencies may create resource gaps for IDP support.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure multi\u2011year commitments in the trust fund, build contingency buffers in the budget, and explore private\u2011sector co\u2011financing for specific components.\",\n      \"evidence\": \"Strategic Context \u2013 recent cuts in humanitarian funding; Funding data shows 0 financing gap but reliance on trust funds\"\n    },\n    {\n      \"risk_id\": \"R20\",\n      \"description\": \"Climate\u2011related supply chain disruptions (e.g., delayed delivery of inputs for IGAs) could affect beneficiary outcomes.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Identify alternative local suppliers, pre\u2011position critical inputs, and incorporate climate risk buffers in procurement timelines.\",\n      \"evidence\": \"Component\u202f1.1 \u2013 reliance on market\u2011based inputs; Climate change noted as a shock factor\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Escalating insecurity and armed conflict may force suspension of field activities, causing project delays and loss of beneficiary reach.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop and regularly update security SOPs, shift to remote delivery (radio, phone) in high\u2011risk zones, and pre\u2011position staff and resources in safer areas.",
+        "evidence": "Annex\u202f3: Adaptation of Project Activities to Insecurity \u2013 Red/Black security risk descriptions"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Procurement processes may be delayed by administrative routines and limited bidder competition in fragile regions, affecting timely implementation.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit a qualified procurement specialist, adopt fast\u2011track procurement procedures in the PIM, and provide targeted training to DMP and bid committees.",
+        "evidence": "Key Risks \u2013 procurement delays; Annex\u202f2 Procurement Action Plan \u2013 need for qualified procurement specialist"
+      },
+      {
+        "risk_id": "R03",
+        "description": "The newly created PIU lacks experienced financial management staff and systems, increasing risk of mis\u2011allocation of funds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire FM specialist within three months, implement accounting software, and establish internal audit with IGF and ASCELC oversight.",
+        "evidence": "Fiduciary \u2013 FM assessment notes absence of FM staff, procedures, and software"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Cybersecurity breaches or data protection failures could compromise the Unique Social Registry and interoperable platforms.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Engage ANSSI for security risk assessment, implement encryption and access controls per CIL guidelines, and conduct regular penetration testing.",
+        "evidence": "Component\u202f2.2 \u2013 security procedures with ANSSI and CIL mentioned"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Construction of warehouses and logistics hubs may cause water and soil pollution from solid and liquid waste.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Apply ESS\u202f3 (Resource Efficiency) standards, require waste management plans in contracts, and monitor compliance through site inspections.",
+        "evidence": "Key Risks \u2013 water and soil pollution from construction sites"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Sexual exploitation, abuse, and harassment (SEA/SH) risks are substantial given the vulnerable target groups and conflict context.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implement an SEA/SH Action Plan, train all staff on code of conduct, and ensure the grievance mechanism can refer survivors to GBV services.",
+        "evidence": "Key Risks \u2013 SEA/SH risk is Substantial; ESCP requires SEA/SH Action Plan"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Gender\u2011based violence (GBV) may increase among women beneficiaries, undermining project outcomes and safety.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit a GBV specialist, integrate GBV risk assessments into all activities, and provide safe spaces and referral pathways for survivors.",
+        "evidence": "Legal Covenants \u2013 requirement for GBV specialist in PIU"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Climate\u2011related shocks (droughts, floods) could damage newly built warehouses and disrupt supply chains.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Site warehouses in low\u2011flood zones, incorporate climate\u2011resilient design standards, and develop emergency repair protocols.",
+        "evidence": "Strategic Context \u2013 climate change undermines food security; Component\u202f3.1 \u2013 warehouses built in high\u2011risk areas"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate coordination among multiple ministries and partners may lead to fragmented implementation and duplication of effort.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a formal inter\u2011ministerial coordination committee, define clear roles in the PIM, and hold quarterly joint review meetings.",
+        "evidence": "Section\u202fB \u2013 multiple ministries listed; Lessons Learned \u2013 need for stronger coordination"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Delays in meeting pre\u2011conditions for disbursement (e.g., adoption of Productive Grants Manual) could stall cash flows to beneficiaries.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Create a disbursement readiness checklist, monitor milestones weekly, and provide technical assistance to finalize manuals ahead of deadlines.",
+        "evidence": "Disbursement Arrangements \u2013 withdrawals contingent on Productive Grants Manual adoption"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Limited mobile network coverage and low phone penetration may hinder digital payments and remote monitoring.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct a telecom coverage mapping, supplement with cash points and agent networks, and retain paper\u2011based backup mechanisms.",
+        "evidence": "Component\u202f2.2 \u2013 payment platform considerations include mobile network coverage"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Exclusion of vulnerable groups (women, youth, persons with disabilities, IDPs) from benefits due to targeting errors.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply gender\u2011sensitive targeting criteria, conduct community validation workshops, and monitor inclusion indicators quarterly.",
+        "evidence": "Component\u202f1.1 \u2013 gender\u2011sensitive targeting; Key Risks \u2013 exclusion of vulnerable groups"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Corruption or fraud in procurement and cash transfers could erode project credibility and financial resources.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement strict procurement oversight via ASCELC, use e\u2011procurement (STEP), and conduct independent audits of grant payments.",
+        "evidence": "Procurement \u2013 ASCELC oversight; Fiduciary \u2013 anti\u2011corruption guidelines"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Insufficient capacity of social workers and field staff may limit effective delivery of economic inclusion services.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide comprehensive training, allocate operational budgets for transport and communication, and monitor performance through M&E dashboards.",
+        "evidence": "Component\u202f3.2 \u2013 need for training and operating budget for social workers"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Remote monitoring tools (GEMS, PDM, IBM) may face data quality issues in insecure or low\u2011connectivity areas.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Combine remote tools with periodic in\u2011person verification, establish data validation protocols, and train local partners on data entry standards.",
+        "evidence": "Annex\u202f3 \u2013 remote monitoring adaptations; Monitoring section \u2013 use of GEMS, PDM"
+      },
+      {
+        "risk_id": "R16",
+        "description": "Delays in rolling out the Unique Social Registry (RSU) to cover all poor households could limit targeting efficiency.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Set phased rollout milestones, allocate additional field teams for census sweeps, and monitor coverage percentages monthly.",
+        "evidence": "Component\u202f2.1 \u2013 RSU currently covers ~1/4 of poor households; goal to reach all"
+      },
+      {
+        "risk_id": "R17",
+        "description": "High turnover or inability to recruit key PIU staff (e.g., gender\u2011based violence specialist, security specialist) may weaken project governance.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Offer competitive contracts, define clear terms of reference, and maintain a backup pool of qualified consultants.",
+        "evidence": "Legal Covenants \u2013 requirement to recruit GBV and security specialists within 3\u20116 months"
+      },
+      {
+        "risk_id": "R18",
+        "description": "Inadequate grievance redress mechanism performance could lead to unresolved complaints and reputational damage.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Establish clear SLA for grievance response, train staff on handling SEA/SH cases, and publish quarterly grievance handling statistics.",
+        "evidence": "ESCP \u2013 grievance mechanism to be established within 6 months; Key Risks \u2013 grievance handling"
+      },
+      {
+        "risk_id": "R19",
+        "description": "Funding reductions from donor partners or humanitarian agencies may create resource gaps for IDP support.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure multi\u2011year commitments in the trust fund, build contingency buffers in the budget, and explore private\u2011sector co\u2011financing for specific components.",
+        "evidence": "Strategic Context \u2013 recent cuts in humanitarian funding; Funding data shows 0 financing gap but reliance on trust funds"
+      },
+      {
+        "risk_id": "R20",
+        "description": "Climate\u2011related supply chain disruptions (e.g., delayed delivery of inputs for IGAs) could affect beneficiary outcomes.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Identify alternative local suppliers, pre\u2011position critical inputs, and incorporate climate risk buffers in procurement timelines.",
+        "evidence": "Component\u202f1.1 \u2013 reliance on market\u2011based inputs; Climate change noted as a shock factor"
+      }
+    ]
+  },
+  "parse_error": null
+}

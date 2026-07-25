@@ -1,0 +1,180 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:11:11.519789+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-BGD-SSPIRIT\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Political transition and lingering instability may reduce macro\u2011economic growth and fiscal space, jeopardizing project financing and implementation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain close liaison with the interim government; embed flexibility in budget lines; secure multi\u2011year commitments from the Finance Division and monitor fiscal indicators quarterly.\",\n      \"evidence\": \"Strategic Context, paragraph 1: \u2018Real GDP grew by 4.2\u202f% in FY24\u2026significant downside risks\u2026interim government\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High inflation (\u22489.9\u202f% Jan\u202f2025) erodes real value of cash\u2011transfer benefits, risking benefit adequacy and poverty\u2011reduction impact.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the benefit\u2011adequacy framework with index\u2011linking to CPI or HIES\u2011based inflation basket; schedule annual reviews and adjust transfers promptly.\",\n      \"evidence\": \"Strategic Context, paragraph 1: \u2018Inflation remained elevated, reaching 9.9\u202f% in January\u202f2025.\u2019\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Foreign\u2011exchange reserves cover only ~3.3\u202fmonths of imports, limiting ability to import goods or finance emergency draws.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Negotiate standby FX lines with development partners; prioritize procurement of locally\u2011sourced goods; monitor reserve levels monthly.\",\n      \"evidence\": \"Strategic Context, paragraph 1: \u2018FX reserves stood at US$19.9\u202fbn (\u22483.3\u202fmonths of prospective imports).\u2019\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"The six\u2011month (PIU, DSR units) and two\u2011month (DSR Steering Committee) establishment deadlines may be missed, delaying rollout of the Dynamic Social Registry.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a detailed implementation schedule with milestone\u2011based payments; assign a dedicated project\u2011lead to track unit set\u2011up; use interim reporting to flag delays early.\",\n      \"evidence\": \"Legal Covenants, Section I.A: \u2018The Recipient shall establish \u2026 the PIU \u2026 within six (6) months\u2026 and a DSR Steering Committee within two (2) months.\u2019\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Data quality and integration risks for the DSR due to past failures of the National Household Database (incomplete/out\u2011of\u2011date data).\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a data\u2011quality audit before migration; adopt hybrid online/offline collection; allocate resources for data cleaning and validation; engage third\u2011party data specialists.\",\n      \"evidence\": \"Sectoral Context, paragraph 5: \u2018Past attempts \u2026 did not materialize due to incomplete and outdated data\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Persistent inclusion/exclusion errors (\u224860\u202f% targeting error) may limit coverage of the poorest and reduce program effectiveness.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Scale proxy\u2011means testing (PMT) across all cash\u2011transfer programs; embed real\u2011time validation rules in the DSR; conduct periodic independent audits of targeting outcomes.\",\n      \"evidence\": \"Sectoral Context, paragraph 7: \u2018Inclusion and exclusion errors are approximately 60\u202f%\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Bangladesh\u2019s high climate exposure (floods, cyclones) can disrupt beneficiary access, damage field operations, and increase demand for emergency assistance.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Prioritize climate\u2011vulnerable locations in DSR rollout; pre\u2011position emergency cash\u2011plus kits; ensure MIS servers are housed in disaster\u2011resilient data centres; integrate climate\u2011risk modules into beneficiary selection.\",\n      \"evidence\": \"Strategic Context, paragraph 4: \u2018Bangladesh ranks 7th in Global Climate Risk Index\u2026 recurring flooding affects >1\u202fmillion people annually.\u2019\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient training of DSS personnel and Upazila staff on DSR processes may hinder effective registration and service delivery.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a cascade\u2011training programme with certification; allocate dedicated budget for refresher courses; monitor training completion rates and performance metrics.\",\n      \"evidence\": \"PBC 4.4 description: \u2018Each Upazila \u2026 has at least one DSS personnel who has been trained on the updated business processes\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Complex fiduciary arrangements (multiple IAs, DA accounts, iBAS++) increase risk of financial mismanagement or audit findings.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire certified FM consultants for each PIU; enforce quarterly internal audits; use iBAS++ for real\u2011time tracking and segregation of duties.\",\n      \"evidence\": \"Fiduciary, paragraph 43\u201145: \u2018The project design is complex\u2026 mitigation measures include hiring additional capacity, training, and risk\u2011based internal audit.\u2019\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Grievance Redress Mechanism (GRM) may be under\u2011utilized or ineffective, leading to beneficiary dissatisfaction and reputational risk.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Publicize GRM channels widely; set service\u2011level targets for response times; integrate GRM data into MIS for monitoring; conduct periodic satisfaction surveys.\",\n      \"evidence\": \"Section V. GRIEVANCE REDRESS \u2013 outlines GRM but no detailed implementation plan.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Contingent Emergency Response Component (CERC) withdrawal conditions may delay rapid disbursement during crises.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Pre\u2011approve CERC Manual and Emergency Action Plan before project start; establish fast\u2011track approval protocol with the Association for emergency triggers.\",\n      \"evidence\": \"Legal Covenants, Section I.E: \u2018Recipient shall ensure that a manual (\u201cCERC Manual\u201d) is prepared and adopted\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Reliance on digital G2P payments may exclude women, persons with disabilities and low\u2011literacy beneficiaries lacking bank accounts or digital skills.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy gender\u2011responsive outreach; set up community access points with assisted enrollment; provide audio\u2011guided interfaces; partner with mobile\u2011money agents in remote areas.\",\n      \"evidence\": \"Gender paragraph 42: \u2018Women report limited digital and financial access\u2026 cash transfers will be disbursed digitally\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Country Financial Parameters prohibit financing of land acquisition, vehicle procurement and taxes >15\u202f%, potentially creating budget shortfalls for required assets.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Identify alternative financing (e.g., donor\u2011provided vehicles, in\u2011kind contributions); negotiate tax exemptions where possible; allocate contingency from counterpart funding.\",\n      \"evidence\": \"Legal Covenants, Section I.F: \u2018Financing cannot apply to \u2026 land \u2026 vehicles \u2026 taxes exceeding 15\u202f% of total financing.\u2019\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Severe floods or cyclones can interrupt training sessions, field outreach and data\u2011collection activities, delaying DSR enrollment.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop an e\u2011learning backup for trainings; pre\u2011position training kits in safe zones; schedule field activities outside peak monsoon months.\",\n      \"evidence\": \"Strategic Context, paragraph 4: \u2018A major flood in August\u202f2024 affected over 3\u202fmillion people\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Monitoring & Evaluation relies heavily on MIS data; system outages or data integrity issues could compromise performance tracking.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Host MIS in the disaster\u2011resilient National Data Centers; implement regular data backups and redundancy; conduct quarterly data\u2011quality checks.\",\n      \"evidence\": \"Section III.B \u2013 Results Monitoring, Evaluation, and Verification Arrangements: \u2018Data will be collected through MIS\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Failure to meet Performance\u2011Based Conditions (PBCs) may trigger withholding of disbursements, affecting cash\u2011transfer funding.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a PBC tracking office within the PIU; conduct monthly verification of targets; engage early corrective actions if gaps appear.\",\n      \"evidence\": \"Key Risks (page 24) and PBC tables: \u2018PBCs will be disbursed against achievement of targets\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Procurement of energy\u2011efficient office equipment may face supply delays, undermining climate co\u2011benefits commitments.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Include energy\u2011efficiency specifications in tender documents; pre\u2011qualify suppliers with proven delivery records; monitor procurement milestones closely.\",\n      \"evidence\": \"Environmental section (page 40): \u2018All program units shall use energy\u2011efficient equipment\u2026\u2019\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Coordination among multiple ministries (FD, DSS, DWA, MoWCA) and partners may lead to duplication or gaps in DSR implementation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Create a joint steering committee with clear terms of reference; develop a shared work\u2011plan and regular coordination meetings; use a common project\u2011management portal for information sharing.\",\n      \"evidence\": \"Institutional Arrangements (page 31): \u2018Coordination committee will regulate and guide implementation\u2026\u2019\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BGD-SSPIRIT",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Political transition and lingering instability may reduce macro\u2011economic growth and fiscal space, jeopardizing project financing and implementation.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Maintain close liaison with the interim government; embed flexibility in budget lines; secure multi\u2011year commitments from the Finance Division and monitor fiscal indicators quarterly.",
+        "evidence": "Strategic Context, paragraph 1: \u2018Real GDP grew by 4.2\u202f% in FY24\u2026significant downside risks\u2026interim government\u2026\u2019"
+      },
+      {
+        "risk_id": "R02",
+        "description": "High inflation (\u22489.9\u202f% Jan\u202f2025) erodes real value of cash\u2011transfer benefits, risking benefit adequacy and poverty\u2011reduction impact.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement the benefit\u2011adequacy framework with index\u2011linking to CPI or HIES\u2011based inflation basket; schedule annual reviews and adjust transfers promptly.",
+        "evidence": "Strategic Context, paragraph 1: \u2018Inflation remained elevated, reaching 9.9\u202f% in January\u202f2025.\u2019"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Foreign\u2011exchange reserves cover only ~3.3\u202fmonths of imports, limiting ability to import goods or finance emergency draws.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Negotiate standby FX lines with development partners; prioritize procurement of locally\u2011sourced goods; monitor reserve levels monthly.",
+        "evidence": "Strategic Context, paragraph 1: \u2018FX reserves stood at US$19.9\u202fbn (\u22483.3\u202fmonths of prospective imports).\u2019"
+      },
+      {
+        "risk_id": "R04",
+        "description": "The six\u2011month (PIU, DSR units) and two\u2011month (DSR Steering Committee) establishment deadlines may be missed, delaying rollout of the Dynamic Social Registry.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a detailed implementation schedule with milestone\u2011based payments; assign a dedicated project\u2011lead to track unit set\u2011up; use interim reporting to flag delays early.",
+        "evidence": "Legal Covenants, Section I.A: \u2018The Recipient shall establish \u2026 the PIU \u2026 within six (6) months\u2026 and a DSR Steering Committee within two (2) months.\u2019"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Data quality and integration risks for the DSR due to past failures of the National Household Database (incomplete/out\u2011of\u2011date data).",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct a data\u2011quality audit before migration; adopt hybrid online/offline collection; allocate resources for data cleaning and validation; engage third\u2011party data specialists.",
+        "evidence": "Sectoral Context, paragraph 5: \u2018Past attempts \u2026 did not materialize due to incomplete and outdated data\u2026\u2019"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Persistent inclusion/exclusion errors (\u224860\u202f% targeting error) may limit coverage of the poorest and reduce program effectiveness.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Scale proxy\u2011means testing (PMT) across all cash\u2011transfer programs; embed real\u2011time validation rules in the DSR; conduct periodic independent audits of targeting outcomes.",
+        "evidence": "Sectoral Context, paragraph 7: \u2018Inclusion and exclusion errors are approximately 60\u202f%\u2026\u2019"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Bangladesh\u2019s high climate exposure (floods, cyclones) can disrupt beneficiary access, damage field operations, and increase demand for emergency assistance.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Prioritize climate\u2011vulnerable locations in DSR rollout; pre\u2011position emergency cash\u2011plus kits; ensure MIS servers are housed in disaster\u2011resilient data centres; integrate climate\u2011risk modules into beneficiary selection.",
+        "evidence": "Strategic Context, paragraph 4: \u2018Bangladesh ranks 7th in Global Climate Risk Index\u2026 recurring flooding affects >1\u202fmillion people annually.\u2019"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient training of DSS personnel and Upazila staff on DSR processes may hinder effective registration and service delivery.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a cascade\u2011training programme with certification; allocate dedicated budget for refresher courses; monitor training completion rates and performance metrics.",
+        "evidence": "PBC 4.4 description: \u2018Each Upazila \u2026 has at least one DSS personnel who has been trained on the updated business processes\u2026\u2019"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Complex fiduciary arrangements (multiple IAs, DA accounts, iBAS++) increase risk of financial mismanagement or audit findings.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire certified FM consultants for each PIU; enforce quarterly internal audits; use iBAS++ for real\u2011time tracking and segregation of duties.",
+        "evidence": "Fiduciary, paragraph 43\u201145: \u2018The project design is complex\u2026 mitigation measures include hiring additional capacity, training, and risk\u2011based internal audit.\u2019"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Grievance Redress Mechanism (GRM) may be under\u2011utilized or ineffective, leading to beneficiary dissatisfaction and reputational risk.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Publicize GRM channels widely; set service\u2011level targets for response times; integrate GRM data into MIS for monitoring; conduct periodic satisfaction surveys.",
+        "evidence": "Section V. GRIEVANCE REDRESS \u2013 outlines GRM but no detailed implementation plan."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Contingent Emergency Response Component (CERC) withdrawal conditions may delay rapid disbursement during crises.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Pre\u2011approve CERC Manual and Emergency Action Plan before project start; establish fast\u2011track approval protocol with the Association for emergency triggers.",
+        "evidence": "Legal Covenants, Section I.E: \u2018Recipient shall ensure that a manual (\u201cCERC Manual\u201d) is prepared and adopted\u2026\u2019"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Reliance on digital G2P payments may exclude women, persons with disabilities and low\u2011literacy beneficiaries lacking bank accounts or digital skills.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy gender\u2011responsive outreach; set up community access points with assisted enrollment; provide audio\u2011guided interfaces; partner with mobile\u2011money agents in remote areas.",
+        "evidence": "Gender paragraph 42: \u2018Women report limited digital and financial access\u2026 cash transfers will be disbursed digitally\u2026\u2019"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Country Financial Parameters prohibit financing of land acquisition, vehicle procurement and taxes >15\u202f%, potentially creating budget shortfalls for required assets.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Identify alternative financing (e.g., donor\u2011provided vehicles, in\u2011kind contributions); negotiate tax exemptions where possible; allocate contingency from counterpart funding.",
+        "evidence": "Legal Covenants, Section I.F: \u2018Financing cannot apply to \u2026 land \u2026 vehicles \u2026 taxes exceeding 15\u202f% of total financing.\u2019"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Severe floods or cyclones can interrupt training sessions, field outreach and data\u2011collection activities, delaying DSR enrollment.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop an e\u2011learning backup for trainings; pre\u2011position training kits in safe zones; schedule field activities outside peak monsoon months.",
+        "evidence": "Strategic Context, paragraph 4: \u2018A major flood in August\u202f2024 affected over 3\u202fmillion people\u2026\u2019"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Monitoring & Evaluation relies heavily on MIS data; system outages or data integrity issues could compromise performance tracking.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Host MIS in the disaster\u2011resilient National Data Centers; implement regular data backups and redundancy; conduct quarterly data\u2011quality checks.",
+        "evidence": "Section III.B \u2013 Results Monitoring, Evaluation, and Verification Arrangements: \u2018Data will be collected through MIS\u2026\u2019"
+      },
+      {
+        "risk_id": "R16",
+        "description": "Failure to meet Performance\u2011Based Conditions (PBCs) may trigger withholding of disbursements, affecting cash\u2011transfer funding.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a PBC tracking office within the PIU; conduct monthly verification of targets; engage early corrective actions if gaps appear.",
+        "evidence": "Key Risks (page 24) and PBC tables: \u2018PBCs will be disbursed against achievement of targets\u2026\u2019"
+      },
+      {
+        "risk_id": "R17",
+        "description": "Procurement of energy\u2011efficient office equipment may face supply delays, undermining climate co\u2011benefits commitments.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Include energy\u2011efficiency specifications in tender documents; pre\u2011qualify suppliers with proven delivery records; monitor procurement milestones closely.",
+        "evidence": "Environmental section (page 40): \u2018All program units shall use energy\u2011efficient equipment\u2026\u2019"
+      },
+      {
+        "risk_id": "R18",
+        "description": "Coordination among multiple ministries (FD, DSS, DWA, MoWCA) and partners may lead to duplication or gaps in DSR implementation.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Create a joint steering committee with clear terms of reference; develop a shared work\u2011plan and regular coordination meetings; use a common project\u2011management portal for information sharing.",
+        "evidence": "Institutional Arrangements (page 31): \u2018Coordination committee will regulate and guide implementation\u2026\u2019"
+      }
+    ]
+  },
+  "parse_error": null
+}

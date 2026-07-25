@@ -1,0 +1,198 @@
+{
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T17:50:16.797016+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep\u202f1 \u2013 Project framing  \n- Objective: improve efficiency and access to selected administrative services in Albania.  \n- Scope: regulatory reform, business\u2011process re\u2011engineering, ICT upgrades, one\u2011stop\u2011shop Citizen Service Center (CSC) in Tirana, citizen\u2011feedback mechanism, information campaigns and online service delivery.  \n- Delivery model: Results\u2011Based Financing (RBF) for salaries/social\u2011security, Project Preparation Facility (PPF) and Technical Assistance (TA).  \n- Timeline: start\u202f26\u2011Aug\u20112015, end\u202f30\u2011Sep\u20112020 (effectiveness\u202f02\u2011Nov\u20112015, closing\u202f31\u2011Dec\u20112020).  \n- Budget: total cost\u202fUS$74.1\u202fM, Bank financing\u202fUS$32\u202fM (PPF\u202fUS$2\u202fM, RBF\u202fUS$25\u202fM, TA\u202fUS$5\u202fM).  \n- Key stakeholders: Ministry of Finance (borrower), Ministry of State for Innovation & Public Administration (MIPA \u2013 responsible agency), ADISA (implementing agency), Prime Minister\u2019s Delivery Unit (DU), NAIS, Inter\u2011Ministerial Public Services Committee (IPSC), Steering Committee, various line ministries.  \n- External dependencies: EU/IPA assistance, NAIS ICT platform, telecom infrastructure, construction of CSC, procurement capacity, results\u2011based financing mechanisms.\n\nStep\u202f2 \u2013 Category sweep (risk candidates with supporting text)  \n\n**Technical**  \n- \u201cSeven institutions \u2026 have no IT system in place.\u201d  \n- \u201cOnly 45\u201150\u202f% of the archive is digitized.\u201d  \n- \u201cNAIS is the coordinating and regulatory authority \u2026 responsible for the Government Interoperability Platform.\u201d  \n\n**Financial**  \n- \u201cThe overall financial management risk is rated as Substantial.\u201d  \n- \u201cProcurement risk rating is High \u2026 Very weak procurement capacity at ADISA as a newly created agency.\u201d  \n- \u201cDisbursements under the RBF part \u2026 no disbursements will be made until DLI#5 is achieved.\u201d  \n- \u201cGoA has limited experience with results\u2011based lending.\u201d  \n\n**Schedule**  \n- \u201cThe compressed implementation timeline is a potential risk.\u201d  \n- \u201cThe core features and size of this new building have not been decided \u2026 financing models are being considered.\u201d  \n\n**Stakeholder / Organizational**  \n- \u201cInsufficient institutional and implementation capacity of the Ministry of State for Innovation \u2026 implications for implementation.\u201d  \n- \u201cField level staff is likely to resist the reform.\u201d  \n- \u201cInformation posters \u2026 were hidden; telephone numbers went unattended.\u201d  \n\n**Political\u202f/\u202fRegulatory**  \n- \u201cOmnibus legislation \u2026 expected to be passed by the end of 2016.\u201d  \n\n**Environmental**  \n- \u201cPotential environmental impacts \u2026 dust and noise, waste generation, material supply, use of machinery, possible traffic and safety issues.\u201d  \n\n**External**  \n- \u201cOnly 60 internet users per 100 people in 2013.\u201d  \n\nStep\u202f3 \u2013 Evidence filter  \nAll listed candidates are directly quoted in the appraisal document; therefore retained.\n\nStep\u202f4 \u2013 Assessment & mitigation (likelihood\u202f1\u20115, impact\u202f1\u20115)  \n\n| ID | Description | Category | Likelihood | Impact | Mitigation | Evidence |\n|----|-------------|----------|------------|--------|------------|----------|\n| R01 | Lack of existing IT systems in seven key agencies hampers automation. | technical | 4 | 4 | Provide phased ICT capacity\u2011building, hire external experts, and deploy interim manual\u2011to\u2011digital processes. | \u201cSeven institutions \u2026 have no IT system in place.\u201d |\n| R02 | Incomplete digitization of legacy registers (45\u201150\u202f% only) limits data quality. | technical | 3 | 3 | Prioritize digitization of high\u2011volume registers and allocate dedicated budget for scanning and validation. | \u201cOnly 45\u201150\u202f% of the archive is digitized.\u201d |\n| R03 | ADISA\u2019s weak procurement capacity (new agency) creates high procurement risk. | organizational | 4 | 4 | Accelerate recruitment of procurement specialists, provide Bank\u2011led training, and use experienced consultants for early contracts. | \u201cProcurement risk rating is High \u2026 Very weak procurement capacity at ADISA.\u201d |\n| R04 | Overall financial management risk is rated as Substantial. | financial | 3 | 4 | Implement a detailed Financial Management Manual, hire two finance specialists, and conduct regular internal audits. | \u201cThe overall financial management risk is rated as Substantial.\u201d |\n| R05 | Unfinalized design and financing model for the CSC may delay construction. | schedule | 3 | 4 | Finalize architectural design and financing (PPP or public) within the first project year; set firm construction milestones. | \u201cThe core features and size of this new building have not been decided \u2026 financing models are being considered.\u201d |\n| R06 | Compressed implementation timeline may cause missed milestones. | schedule | 4 | 3 | Use results\u2011based incentives, monitor quarterly milestones, and allow schedule adjustments where necessary. | \u201cThe compressed implementation timeline is a potential risk.\u201d |\n| R07 | Delay in passing omnibus legislation could stall regulatory reforms. | political_regulatory | 3 | 4 | Establish a legislative task\u2011force, engage parliament early, and align reform drafts with existing legal frameworks. | \u201cOmnibus legislation \u2026 expected to be passed by the end of 2016.\u201d |\n| R08 | Front\u2011office staff may resist process re\u2011engineering. | stakeholder | 3 | 3 | Deploy a change\u2011management program with training, incentives, and clear communication of benefits. | \u201cField level staff is likely to resist the reform.\u201d |\n| R09 | Low internet penetration limits uptake of e\u2011services. | external | 4 | 3 | Set up assisted\u2011access points (internet caf\u00e9s, community centres) and maintain non\u2011digital service channels. | \u201cOnly 60 internet users per 100 people in 2013.\u201d |\n| R10 | Emphasis on digital services could exclude poor and vulnerable groups. | stakeholder | 3 | 4 | Preserve physical service points, provide assisted digital access, and run targeted outreach campaigns. | \u201cRisk that focus on state\u2011of\u2011the\u2011art means \u2026 will diminish access of the poor and vulnerable.\u201d |\n| R11 | Construction of the CSC may cause dust, noise, waste and traffic impacts. | environmental | 2 | 3 | Implement the Environmental Management Plan (EMP) with monitoring, dust suppression, waste management, and traffic control. | \u201cPotential environmental impacts \u2026 dust and noise, waste generation, \u2026 traffic and safety issues.\u201d |\n| R12 | High public perception of corruption may undermine trust in new services. | stakeholder | 3 | 4 | Strengthen citizen\u2011feedback mechanism, publish performance data, and conduct anti\u2011corruption training for staff. | \u201cCitizens still view corruption as a significant problem \u2026 bribery prevalence 19.3%.\u201d |\n| R13 | Project depends on NAIS\u2019s capacity to integrate databases and e\u2011government platforms. | technical | 3 | 3 | Formalize service\u2011level agreements with NAIS, provide joint capacity\u2011building workshops, and monitor integration milestones. | \u201cNAIS is the coordinating and regulatory authority \u2026 responsible for the Government Interoperability Platform.\u201d |\n| R14 | Government\u2019s limited experience with results\u2011based financing may affect DLI achievement. | organizational | 3 | 3 | Provide dedicated RBF training, embed Bank technical assistance, and set up a DLI tracking unit within the PMU. | \u201cGoA has limited experience with results\u2011based lending.\u201d |\n| R15 | PMU staffing gaps (unfilled procurement and admin positions) risk implementation delays. | organizational | 4 | 3 | Fast\u2011track recruitment, use interim contracts, and assign existing staff to critical tasks pending hires. | \u201cPMU staff not yet contracted; procurement and admin specialist positions have been readvertised.\u201d |\n| R16 | Coordination among >12 ministries and agencies is complex and may cause bottlenecks. | stakeholder | 3 | 3 | Strengthen the Steering Committee, define clear RACI matrix, and hold weekly coordination meetings. | \u201cCoordination among the different departments and agencies \u2026 complex.\u201d |\n| R17 | Failure to verify DLIs on time could delay RBF disbursements and cash flow. | financial | 3 | 4 | Build a robust M&E system with third\u2011party validation and automate quarterly DLI reporting. | \u201cNo disbursements under RBF will be made until DLI#5 is achieved.\u201d |\n| R18 | Manual payroll systems increase risk of errors and fraud. | financial | 3 | 3 | Deploy the new HRMIS, automate payroll processing, and conduct regular reconciliations. | \u201cPayroll systems remain manual \u2026 extensive manual reconciliations required.\u201d |\n| R19 | Inadequate public communication may lead to low service uptake. | stakeholder | 3 | 3 | Launch a multi\u2011channel communication campaign (posters, SMS, radio) and monitor reach. | \u201cInformation posters \u2026 were hidden; telephone numbers went unattended.\u201d |\n| R20 | Delays in annual external audits could affect compliance reporting. | financial | 2 | 2 | Prepare audit schedules early, provide auditors with complete documentation, and track audit deliverables. | \u201cAnnual audit of EEPs due by Sep\u202f30\u202f2016; audit of PPF/TA due by Jun\u202f30.\u201d |\n\nAll risks are directly supported by statements in the provided Project Appraisal Document.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-ALB-CitizenServiceDelivery\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Lack of existing IT systems in seven key agencies hampers automation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide phased ICT capacity\u2011building, hire external experts, and deploy interim manual\u2011to\u2011digital processes.\",\n      \"evidence\": \"Seven institutions have no IT system in place.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Incomplete digitization of legacy registers (45\u201150% only) limits data quality.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritize digitization of high\u2011volume registers and allocate dedicated budget for scanning and validation.\",\n      \"evidence\": \"Only 45\u201150% of the archive is digitized.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"ADISA\u2019s weak procurement capacity (new agency) creates high procurement risk.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate recruitment of procurement specialists, provide Bank\u2011led training, and use experienced consultants for early contracts.\",\n      \"evidence\": \"Procurement risk rating is High; very weak procurement capacity at ADISA.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Overall financial management risk is rated as Substantial.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a detailed Financial Management Manual, hire two finance specialists, and conduct regular internal audits.\",\n      \"evidence\": \"The overall financial management risk is rated as Substantial.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Unfinalized design and financing model for the CSC may delay construction.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Finalize architectural design and financing (PPP or public) within the first project year; set firm construction milestones.\",\n      \"evidence\": \"The core features and size of this new building have not been decided; financing models are being considered.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Compressed implementation timeline may cause missed milestones.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Use results\u2011based incentives, monitor quarterly milestones, and allow schedule adjustments where necessary.\",\n      \"evidence\": \"The compressed implementation timeline is a potential risk.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Delay in passing omnibus legislation could stall regulatory reforms.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a legislative task\u2011force, engage parliament early, and align reform drafts with existing legal frameworks.\",\n      \"evidence\": \"Omnibus legislation expected to be passed by the end of 2016.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Front\u2011office staff may resist process re\u2011engineering.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy a change\u2011management program with training, incentives, and clear communication of benefits.\",\n      \"evidence\": \"Field level staff is likely to resist the reform.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Low internet penetration limits uptake of e\u2011services.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Set up assisted\u2011access points (internet caf\u00e9s, community centres) and maintain non\u2011digital service channels.\",\n      \"evidence\": \"Only 60 internet users per 100 people in 2013.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Emphasis on digital services could exclude poor and vulnerable groups.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Preserve physical service points, provide assisted digital access, and run targeted outreach campaigns.\",\n      \"evidence\": \"Risk that focus on state\u2011of\u2011the\u2011art means will diminish access of the poor and vulnerable.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Construction of the CSC may cause dust, noise, waste and traffic impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the Environmental Management Plan with monitoring, dust suppression, waste management, and traffic control.\",\n      \"evidence\": \"Potential environmental impacts include dust and noise, waste generation, traffic and safety issues.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"High public perception of corruption may undermine trust in new services.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen citizen\u2011feedback mechanism, publish performance data, and conduct anti\u2011corruption training for staff.\",\n      \"evidence\": \"Citizens still view corruption as a significant problem; bribery prevalence 19.3%.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Project depends on NAIS\u2019s capacity to integrate databases and e\u2011government platforms.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Formalize service\u2011level agreements with NAIS, provide joint capacity\u2011building workshops, and monitor integration milestones.\",\n      \"evidence\": \"NAIS is the coordinating and regulatory authority responsible for the Government Interoperability Platform.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Government\u2019s limited experience with results\u2011based financing may affect DLI achievement.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide dedicated RBF training, embed Bank technical assistance, and set up a DLI tracking unit within the PMU.\",\n      \"evidence\": \"GoA has limited experience with results\u2011based lending.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"PMU staffing gaps (unfilled procurement and admin positions) risk implementation delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Fast\u2011track recruitment, use interim contracts, and assign existing staff to critical tasks pending hires.\",\n      \"evidence\": \"PMU staff not yet contracted; procurement and admin specialist positions have been readvertised.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Coordination among >12 ministries and agencies is complex and may cause bottlenecks.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen the Steering Committee, define a clear RACI matrix, and hold weekly coordination meetings.\",\n      \"evidence\": \"Coordination among the different departments and agencies involved in the Project is complex.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Failure to verify DLIs on time could delay RBF disbursements and cash flow.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Build a robust M&E system with third\u2011party validation and automate quarterly DLI reporting.\",\n      \"evidence\": \"No disbursements under RBF will be made until DLI#5 is achieved.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Manual payroll systems increase risk of errors and fraud.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy the new HRMIS, automate payroll processing, and conduct regular reconciliations.\",\n      \"evidence\": \"Payroll systems remain manual; extensive manual reconciliations required.\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"Inadequate public communication may lead to low service uptake.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Launch a multi\u2011channel communication campaign (posters, SMS, radio) and monitor reach.\",\n      \"evidence\": \"Information posters were hidden; telephone numbers went unattended.\"\n    },\n    {\n      \"risk_id\": \"R20\",\n      \"description\": \"Delays in annual external audits could affect compliance reporting.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Prepare audit schedules early, provide auditors with complete documentation, and track audit deliverables.\",\n      \"evidence\": \"Annual audit of EEPs due by Sep\u202f30\u202f2016; audit of PPF/TA due by Jun\u202f30.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-ALB-CitizenServiceDelivery",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Lack of existing IT systems in seven key agencies hampers automation.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide phased ICT capacity\u2011building, hire external experts, and deploy interim manual\u2011to\u2011digital processes.",
+        "evidence": "Seven institutions have no IT system in place."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Incomplete digitization of legacy registers (45\u201150% only) limits data quality.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prioritize digitization of high\u2011volume registers and allocate dedicated budget for scanning and validation.",
+        "evidence": "Only 45\u201150% of the archive is digitized."
+      },
+      {
+        "risk_id": "R03",
+        "description": "ADISA\u2019s weak procurement capacity (new agency) creates high procurement risk.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Accelerate recruitment of procurement specialists, provide Bank\u2011led training, and use experienced consultants for early contracts.",
+        "evidence": "Procurement risk rating is High; very weak procurement capacity at ADISA."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Overall financial management risk is rated as Substantial.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement a detailed Financial Management Manual, hire two finance specialists, and conduct regular internal audits.",
+        "evidence": "The overall financial management risk is rated as Substantial."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Unfinalized design and financing model for the CSC may delay construction.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Finalize architectural design and financing (PPP or public) within the first project year; set firm construction milestones.",
+        "evidence": "The core features and size of this new building have not been decided; financing models are being considered."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Compressed implementation timeline may cause missed milestones.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Use results\u2011based incentives, monitor quarterly milestones, and allow schedule adjustments where necessary.",
+        "evidence": "The compressed implementation timeline is a potential risk."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delay in passing omnibus legislation could stall regulatory reforms.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a legislative task\u2011force, engage parliament early, and align reform drafts with existing legal frameworks.",
+        "evidence": "Omnibus legislation expected to be passed by the end of 2016."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Front\u2011office staff may resist process re\u2011engineering.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy a change\u2011management program with training, incentives, and clear communication of benefits.",
+        "evidence": "Field level staff is likely to resist the reform."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Low internet penetration limits uptake of e\u2011services.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Set up assisted\u2011access points (internet caf\u00e9s, community centres) and maintain non\u2011digital service channels.",
+        "evidence": "Only 60 internet users per 100 people in 2013."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Emphasis on digital services could exclude poor and vulnerable groups.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Preserve physical service points, provide assisted digital access, and run targeted outreach campaigns.",
+        "evidence": "Risk that focus on state\u2011of\u2011the\u2011art means will diminish access of the poor and vulnerable."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Construction of the CSC may cause dust, noise, waste and traffic impacts.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement the Environmental Management Plan with monitoring, dust suppression, waste management, and traffic control.",
+        "evidence": "Potential environmental impacts include dust and noise, waste generation, traffic and safety issues."
+      },
+      {
+        "risk_id": "R12",
+        "description": "High public perception of corruption may undermine trust in new services.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen citizen\u2011feedback mechanism, publish performance data, and conduct anti\u2011corruption training for staff.",
+        "evidence": "Citizens still view corruption as a significant problem; bribery prevalence 19.3%."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Project depends on NAIS\u2019s capacity to integrate databases and e\u2011government platforms.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Formalize service\u2011level agreements with NAIS, provide joint capacity\u2011building workshops, and monitor integration milestones.",
+        "evidence": "NAIS is the coordinating and regulatory authority responsible for the Government Interoperability Platform."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Government\u2019s limited experience with results\u2011based financing may affect DLI achievement.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide dedicated RBF training, embed Bank technical assistance, and set up a DLI tracking unit within the PMU.",
+        "evidence": "GoA has limited experience with results\u2011based lending."
+      },
+      {
+        "risk_id": "R15",
+        "description": "PMU staffing gaps (unfilled procurement and admin positions) risk implementation delays.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Fast\u2011track recruitment, use interim contracts, and assign existing staff to critical tasks pending hires.",
+        "evidence": "PMU staff not yet contracted; procurement and admin specialist positions have been readvertised."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Coordination among >12 ministries and agencies is complex and may cause bottlenecks.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen the Steering Committee, define a clear RACI matrix, and hold weekly coordination meetings.",
+        "evidence": "Coordination among the different departments and agencies involved in the Project is complex."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Failure to verify DLIs on time could delay RBF disbursements and cash flow.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Build a robust M&E system with third\u2011party validation and automate quarterly DLI reporting.",
+        "evidence": "No disbursements under RBF will be made until DLI#5 is achieved."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Manual payroll systems increase risk of errors and fraud.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy the new HRMIS, automate payroll processing, and conduct regular reconciliations.",
+        "evidence": "Payroll systems remain manual; extensive manual reconciliations required."
+      },
+      {
+        "risk_id": "R19",
+        "description": "Inadequate public communication may lead to low service uptake.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Launch a multi\u2011channel communication campaign (posters, SMS, radio) and monitor reach.",
+        "evidence": "Information posters were hidden; telephone numbers went unattended."
+      },
+      {
+        "risk_id": "R20",
+        "description": "Delays in annual external audits could affect compliance reporting.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Prepare audit schedules early, provide auditors with complete documentation, and track audit deliverables.",
+        "evidence": "Annual audit of EEPs due by Sep\u202f30\u202f2016; audit of PPF/TA due by Jun\u202f30."
+      }
+    ]
+  },
+  "parse_error": null
+}

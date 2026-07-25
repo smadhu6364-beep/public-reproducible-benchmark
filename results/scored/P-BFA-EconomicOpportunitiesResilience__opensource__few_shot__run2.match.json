@@ -1,0 +1,175 @@
+{
+  "run_file": "P-BFA-EconomicOpportunitiesResilience__opensource__few_shot__run2.json",
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R05",
+      "similarity": 0.6,
+      "gen_category": "technical",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R04",
+      "similarity": 0.564,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.451,
+      "gen_category": "environmental",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insecurity and conflict may disrupt project activities and affect beneficiary access.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Adapt project activities to insecurity levels, use remote delivery modalities when necessary, and partner with local organizations to maintain access.",
+      "evidence": "Section I. STRATEGIC CONTEXT, A. Project Strategic Context"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays in procurement processes may hinder project implementation.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit a procurement specialist, develop a procurement manual, and apply World Bank procurement flexibilities in fragile situations.",
+      "evidence": "ANNEX 2: PROCUREMENT ACTION PLAN"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Insufficient capacity of the Ministry of Family and Solidarity (MFS) may impede project implementation.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide capacity-building support to the MFS, recruit qualified staff, and establish a Project Implementation Unit (PIU).",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, A. Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Climate change and natural disasters may exacerbate poverty and vulnerability among beneficiary households.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Integrate climate resilience measures into project activities, support climate-smart agricultural practices, and provide training on climate change adaptation and mitigation.",
+      "evidence": "Section I. STRATEGIC CONTEXT, A. Project Strategic Context"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Gender-based violence (GBV) and sexual exploitation and abuse (SEA) may occur among beneficiary households.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Develop and implement a GBV/SEA Action Plan, establish a grievance redress mechanism, and provide training on GBV/SEA prevention and response.",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate targeting and selection of beneficiaries may lead to inefficient use of project resources.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use the Unique Social Registry (RSU) to target beneficiaries, conduct regular monitoring and evaluation, and adjust targeting approaches as needed.",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Project Components"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Dependence on a single implementing agency (MFS) may concentrate delivery and continuity risk.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish a PIU with clear roles and responsibilities, provide capacity-building support to the MFS, and engage with other government agencies and partners to ensure collaboration and coordination.",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, A. Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Financial management and procurement risks may arise due to inadequate FM arrangements and procurement capacity.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit qualified FM staff, establish a comprehensive procedures manual, and provide training on World Bank procurement procedures.",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, B. Fiduciary"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Environmental and social risks may arise from project activities, such as construction and rehabilitation of infrastructure.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Conduct environmental and social impact assessments, develop and implement environmental and social management plans, and establish a grievance redress mechanism.",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Stakeholder engagement and participation risks may arise due to inadequate communication and consultation with beneficiaries and local communities.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a stakeholder engagement plan, establish a grievance redress mechanism, and provide regular updates and information to beneficiaries and local communities.",
+      "evidence": "Section II. PROJECT DESCRIPTION, E. Role of Partners"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is assessed to be Substantial. The uncertain political and governance context provides a challenge to long-term development policy. Adaptive social protection systems are still nascent and will require continued political commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The team, guided by the management, will continue its high-level policy dialogue at central and decentralized levels and ensure continuous advocacy and communication."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed to be Substantial. Fiscal space remains constrained by elevated security spending and tighter financing conditions, which increase the risk of reduced budget allocations and delayed counterpart funding for new priorities and reforms, including social protection and the PAMPV. Macroeconomic risks also arise from exogenous factors, including current conflict in the Middle East which can result in a surge in oil prices and put inflationary pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Other programs such as the International Monetary Fund program and the World Bank's technical assistance on tax expenditure under the Sustainable Development Finance Policy can help expand fiscal space, partially mitigating these risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector strategy and policies risks are considered to be Substantial. Sectoral strategies and policies remain nascent, and the Government's budget allocation to operationalize the PAMPV remains unclear. Also, sectoral decisions are at times taken abruptly and can heavily affect implementation (for example, the suspension of cash transfers in 2023 led to an increased focus on economic inclusion, and the newly emerged priority of the CONASUR/IDPs led to the revision of the fiche de projet of this project).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In parallel with high-level policy dialogue, the project supports strategic communications, adopts an agile approach, and provides technical assistance to promote evidence-based decision-making (with support from SASPP, the Social Protection Response MDTF, and the State and Peacebuilding Fund)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall fiduciary risks are considered as Substantial, as described in section IV.B and annex 2, based on financial assessment and procurement assessment.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project preparation fund (Grant Facility for Project Preparation) has been used not only to prepare mitigation measures to address these risks but will also elevate the project readiness (for example, effectiveness-linked actions including FM and procurement staffing and initiating the procurement packages for the first 18-months' implementation priorities) to improve the project performance."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks related to insecurity are rated as High. The deteriorating and volatile security situation\u2014particularly in regions with high poverty, displacement, and food insecurity that are project intervention areas\u2014will likely be an important risk. The project will also address other risks related to protection of personal data: for Component 2 on social registry and interoperability, activities will be guided by the Information System Security Policy (ISSP) document developed by the ANSSI, to ensure confidentiality of households registered in the RSU.",
+      "category": "other",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project activities will be adjusted based on the security situation (see annex 3), and the PIU will be also staffed with a security specialist and a security management plan will be developed. To remain engaged, the project will also rely on remote delivery/monitoring, partnering with local representation (NGOs, UN agencies). The ST-RSU will conduct capacity-building activities, including training sessions and awareness campaigns, to strengthen users' ability to manage and protect households' personal data."
+    }
+  ]
+}

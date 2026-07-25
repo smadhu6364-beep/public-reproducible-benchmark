@@ -1,0 +1,180 @@
+{
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:35:26.836065+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-GTM-SmartPublicFinances\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Fragmented and obsolete PFM information systems may cause data inconsistencies and manual processing errors.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a comprehensive integration plan, adopt an enterprise architecture, and execute phased migration with data reconciliation checks.\",\n      \"evidence\": \"Core PFM information systems suffer from fragmentation, obsolescence, and weak institutional support.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Cyber\u2011attacks could disrupt critical public finance systems and compromise sensitive data.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement an ISMS (ISO\u202f27000), establish a CSIRT/SOC, conduct regular penetration testing and staff security training.\",\n      \"evidence\": \"Superintendency of Tax Administration faced >8,000 attacks in 2021; Guatecompras and SICOIN stopped working due to a cyber\u2011attack in Nov\u202f2023.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited analytical capacity restricts use of diagnostic and predictive analytics for decision\u2011making.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Create a dedicated data analytics unit, provide structured career paths, and deliver intensive training on advanced analytics techniques.\",\n      \"evidence\": \"96\u202f% of countries rely on descriptive analytics; use of diagnostic and predictive analytics remains minimal.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Fiscal vulnerability due to heavy reliance on remittances and VAT could reduce government revenue.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Build fiscal buffers, diversify revenue sources, monitor remittance trends, and adjust budget assumptions proactively.\",\n      \"evidence\": \"Remittances amount to 19.4\u202f% of GDP; a decline could reduce VAT collections, which generate 49\u202f% of net income.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Delay in establishing the Project Implementation Unit (PIU) may postpone fund disbursement.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set a clear timeline, treat PIU establishment as a condition of effectiveness, and provide technical assistance to meet the deadline.\",\n      \"evidence\": \"No withdrawal shall be made under Category\u202f1 until the Borrower has established the PIU, satisfactory to the Bank.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Insufficient political commitment could stall reform implementation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Secure high\u2011level endorsement from the Minister of Finance, embed reform milestones in ministerial performance contracts, and maintain a stakeholder coalition.\",\n      \"evidence\": \"A common reason for failure is lack of adequate preparation and institutional stability; strong, sustained commitment from senior government leadership is crucial.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Low uptake of gender\u2011responsive budgeting limits inclusive outcomes.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Mandate gender tagging for all municipalities, provide technical assistance, and link compliance to performance incentives.\",\n      \"evidence\": \"Only 0.6\u202f% of the national budget was tagged with a gender focus; 112 of 340 municipalities linked their budget to the CPEG.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Extreme weather events could damage ICT infrastructure and interrupt system operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Design ICT infrastructure to meet resilience standards, locate critical servers in safe zones, and develop climate\u2011aware business continuity plans.\",\n      \"evidence\": \"Extreme weather events pose an additional risk that can cause significant infrastructure damage and economic losses.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Procurement of energy\u2011efficient ICT hardware may experience delays, affecting project schedule.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Engage market early, pre\u2011qualify suppliers, embed life\u2011cycle cost criteria, and monitor procurement milestones closely.\",\n      \"evidence\": \"Implementing ICT equipment will be energy\u2011efficient and electronic waste treated adequately.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Absence of a data\u2011governance framework could lead to poor data quality and limited interoperability.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and adopt a data\u2011governance model, define standards, assign data stewards, and conduct regular data\u2011quality audits.\",\n      \"evidence\": \"Data availability in the repository is limited due to interoperability issues and the absence of a data\u2011sharing framework.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"High staff turnover may erode newly built analytical and technical capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Institutionalize training, create clear career ladders for data analysts, and implement retention incentives and knowledge\u2011transfer mechanisms.\",\n      \"evidence\": \"Lack of structured career paths for data professionals, insufficient training opportunities, and inadequate resourcing.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Coordination gaps among MINFIN, SEGEPLAN and other agencies could cause implementation bottlenecks.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Formalize terms of reference for the Digital Transformation and Interinstitutional Committees, schedule regular joint meetings, and use shared project\u2011management tools.\",\n      \"evidence\": \"Digital Transformation Committee and Interinstitutional Committee will serve as governance bodies ensuring inclusive participation.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Delayed or partial adoption of IPSAS may hinder financial reporting improvements.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set a phased IPSAS adoption timeline, provide IMF\u2011led technical assistance, and monitor quarterly progress reports.\",\n      \"evidence\": \"Subcomponent\u202f1.1 includes adopting International Public Sector Accounting Standards (IPSAS) to improve the quality of financial reporting.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Weak monitoring and evaluation could fail to detect implementation problems early.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen the M&E unit, conduct semi\u2011annual independent reviews, and deploy real\u2011time dashboards for key performance indicators.\",\n      \"evidence\": \"PIU will establish a project monitoring system... semiannual progress reports to the Bank.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Public investment management weaknesses may cause cost overruns and project discontinuities.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Introduce spending reviews, strengthen ex\u2011ante evaluation criteria, and enforce competitive procurement processes for investment projects.\",\n      \"evidence\": \"Significant weaknesses impact the effectiveness of investment management, including inadequate prioritization, frequent project discontinuities, weak procurement competitiveness.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Inadequate change\u2011management could generate resistance to new PFM processes.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a comprehensive change\u2011management strategy, run stakeholder workshops, and monitor adoption metrics throughout rollout.\",\n      \"evidence\": \"Subcomponent\u202f3.1 supports PFM governance and change management to improve coordination and execution.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Dependence on external World Bank technical assistance may limit sustainability if support wanes.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Build in\u2011house expertise early, document processes thoroughly, and plan a phased hand\u2011over of responsibilities.\",\n      \"evidence\": \"The World Bank will provide TA; project relies on TA for system design and capacity building.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Procurement fraud or corruption could inflate costs and undermine project credibility.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Apply World Bank procurement regulations, enforce anti\u2011fraud guidelines, and conduct annual independent audits of procurement activities.\",\n      \"evidence\": \"Procurement will follow World Bank Procurement Regulations and Guidelines on Preventing and Combating Fraud and Corruption.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-GTM-SmartPublicFinances",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Fragmented and obsolete PFM information systems may cause data inconsistencies and manual processing errors.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a comprehensive integration plan, adopt an enterprise architecture, and execute phased migration with data reconciliation checks.",
+        "evidence": "Core PFM information systems suffer from fragmentation, obsolescence, and weak institutional support."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Cyber\u2011attacks could disrupt critical public finance systems and compromise sensitive data.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement an ISMS (ISO\u202f27000), establish a CSIRT/SOC, conduct regular penetration testing and staff security training.",
+        "evidence": "Superintendency of Tax Administration faced >8,000 attacks in 2021; Guatecompras and SICOIN stopped working due to a cyber\u2011attack in Nov\u202f2023."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited analytical capacity restricts use of diagnostic and predictive analytics for decision\u2011making.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Create a dedicated data analytics unit, provide structured career paths, and deliver intensive training on advanced analytics techniques.",
+        "evidence": "96\u202f% of countries rely on descriptive analytics; use of diagnostic and predictive analytics remains minimal."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Fiscal vulnerability due to heavy reliance on remittances and VAT could reduce government revenue.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Build fiscal buffers, diversify revenue sources, monitor remittance trends, and adjust budget assumptions proactively.",
+        "evidence": "Remittances amount to 19.4\u202f% of GDP; a decline could reduce VAT collections, which generate 49\u202f% of net income."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delay in establishing the Project Implementation Unit (PIU) may postpone fund disbursement.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set a clear timeline, treat PIU establishment as a condition of effectiveness, and provide technical assistance to meet the deadline.",
+        "evidence": "No withdrawal shall be made under Category\u202f1 until the Borrower has established the PIU, satisfactory to the Bank."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Insufficient political commitment could stall reform implementation.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Secure high\u2011level endorsement from the Minister of Finance, embed reform milestones in ministerial performance contracts, and maintain a stakeholder coalition.",
+        "evidence": "A common reason for failure is lack of adequate preparation and institutional stability; strong, sustained commitment from senior government leadership is crucial."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Low uptake of gender\u2011responsive budgeting limits inclusive outcomes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate gender tagging for all municipalities, provide technical assistance, and link compliance to performance incentives.",
+        "evidence": "Only 0.6\u202f% of the national budget was tagged with a gender focus; 112 of 340 municipalities linked their budget to the CPEG."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Extreme weather events could damage ICT infrastructure and interrupt system operations.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Design ICT infrastructure to meet resilience standards, locate critical servers in safe zones, and develop climate\u2011aware business continuity plans.",
+        "evidence": "Extreme weather events pose an additional risk that can cause significant infrastructure damage and economic losses."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Procurement of energy\u2011efficient ICT hardware may experience delays, affecting project schedule.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Engage market early, pre\u2011qualify suppliers, embed life\u2011cycle cost criteria, and monitor procurement milestones closely.",
+        "evidence": "Implementing ICT equipment will be energy\u2011efficient and electronic waste treated adequately."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Absence of a data\u2011governance framework could lead to poor data quality and limited interoperability.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and adopt a data\u2011governance model, define standards, assign data stewards, and conduct regular data\u2011quality audits.",
+        "evidence": "Data availability in the repository is limited due to interoperability issues and the absence of a data\u2011sharing framework."
+      },
+      {
+        "risk_id": "R11",
+        "description": "High staff turnover may erode newly built analytical and technical capacity.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Institutionalize training, create clear career ladders for data analysts, and implement retention incentives and knowledge\u2011transfer mechanisms.",
+        "evidence": "Lack of structured career paths for data professionals, insufficient training opportunities, and inadequate resourcing."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Coordination gaps among MINFIN, SEGEPLAN and other agencies could cause implementation bottlenecks.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Formalize terms of reference for the Digital Transformation and Interinstitutional Committees, schedule regular joint meetings, and use shared project\u2011management tools.",
+        "evidence": "Digital Transformation Committee and Interinstitutional Committee will serve as governance bodies ensuring inclusive participation."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Delayed or partial adoption of IPSAS may hinder financial reporting improvements.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set a phased IPSAS adoption timeline, provide IMF\u2011led technical assistance, and monitor quarterly progress reports.",
+        "evidence": "Subcomponent\u202f1.1 includes adopting International Public Sector Accounting Standards (IPSAS) to improve the quality of financial reporting."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Weak monitoring and evaluation could fail to detect implementation problems early.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen the M&E unit, conduct semi\u2011annual independent reviews, and deploy real\u2011time dashboards for key performance indicators.",
+        "evidence": "PIU will establish a project monitoring system... semiannual progress reports to the Bank."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Public investment management weaknesses may cause cost overruns and project discontinuities.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Introduce spending reviews, strengthen ex\u2011ante evaluation criteria, and enforce competitive procurement processes for investment projects.",
+        "evidence": "Significant weaknesses impact the effectiveness of investment management, including inadequate prioritization, frequent project discontinuities, weak procurement competitiveness."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Inadequate change\u2011management could generate resistance to new PFM processes.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a comprehensive change\u2011management strategy, run stakeholder workshops, and monitor adoption metrics throughout rollout.",
+        "evidence": "Subcomponent\u202f3.1 supports PFM governance and change management to improve coordination and execution."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Dependence on external World Bank technical assistance may limit sustainability if support wanes.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Build in\u2011house expertise early, document processes thoroughly, and plan a phased hand\u2011over of responsibilities.",
+        "evidence": "The World Bank will provide TA; project relies on TA for system design and capacity building."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Procurement fraud or corruption could inflate costs and undermine project credibility.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Apply World Bank procurement regulations, enforce anti\u2011fraud guidelines, and conduct annual independent audits of procurement activities.",
+        "evidence": "Procurement will follow World Bank Procurement Regulations and Guidelines on Preventing and Combating Fraud and Corruption."
+      }
+    ]
+  },
+  "parse_error": null
+}

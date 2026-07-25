@@ -1,0 +1,171 @@
+{
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T17:39:14.946326+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-ALB-CitizenServiceDelivery\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Procurement capacity is weak because ADISA is a newly created agency, increasing the chance of procurement errors and delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a fully staffed PMU with a dedicated Procurement Specialist, use Bank\u2011provided sample TORs, and involve Bank technical experts in review.\",\n      \"evidence\": \"Procurement risk rating is High. Very weak procurement capacity at ADISA as a newly created agency.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial management risk is substantial due to ADISA and MIPA lacking experience with large donor\u2011funded operations.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified finance specialists, provide on\u2011the\u2011job training on Bank fiduciary rules, and develop a detailed Financial Management Manual.\",\n      \"evidence\": \"The overall financial management risk is rated as Substantial... ADISA... have no previous experience... capacity strengthening recommended.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The project\u2019s compressed implementation timeline may cause delays in CSC construction and reform milestones.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement phased work plans with clear milestones, monitor progress weekly, and maintain contingency buffers in the schedule.\",\n      \"evidence\": \"The compressed implementation timeline is a potential risk, which is mitigated by the project\u2019s span and incentives to deliver up to 2020.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Integration of legacy registers and new IT systems is technically complex; many agencies currently have no IT systems.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt a phased IT development approach, provide technical assistance, conduct rigorous testing, and ensure interoperability standards via NAIS.\",\n      \"evidence\": \"Seven institutions... have no IT system in place... building new IT systems... will be carried out in phases.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Bureaucratic resistance to ceding front\u2011office functions may impede reform implementation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Launch a change\u2011management program, engage staff through incentives, and communicate benefits via the communication strategy.\",\n      \"evidence\": \"Bureaucratic resistance could stifle efforts to improve back\u2011office functions... diagnostics of the political economy of reforms and a focus on change management can help.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Weak coordination among numerous ministries, agencies, and committees could lead to duplicated effort or stalled decisions.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen the steering and inter\u2011ministerial committees, define clear roles, and hold regular joint meetings with documented action items.\",\n      \"evidence\": \"Inter\u2011agency coordination... Inter\u2011Ministerial Public Services Committee... Technical Inter\u2011ministerial Committee... PMU will coordinate.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Low internet penetration limits citizen uptake of e\u2011services, risking under\u2011utilization of digital reforms.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain physical CSCs, expand assisted access points (internet caf\u00e9s, community centers), and run outreach campaigns for non\u2011digital channels.\",\n      \"evidence\": \"Only 60 internet users per 100 people in 2013... need for physical presence... assisted digital access.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Construction of the new Citizen Service Center may cause dust, noise, waste, and traffic impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the approved Environmental Management Plan, enforce construction best practices, and monitor compliance through regular site inspections.\",\n      \"evidence\": \"Potential environmental impacts... dust and noise, waste generation... mitigated through sound construction practices and implementation of a project specific EMP.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Emphasis on high\u2011end urban CSCs and online services could marginalize poor, vulnerable, and rural populations.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide assisted digital access, retain existing service points, and run targeted information campaigns for disadvantaged groups.\",\n      \"evidence\": \"Risk that focus on state\u2011of\u2011the\u2011art means... could diminish access of the poor and vulnerable... project takes proactive steps to enhance access.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Results\u2011Based Financing disbursements are blocked until DLI#5 is achieved, risking cash\u2011flow shortfalls.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritize completion of the Reform Policy Document and baseline survey, provide technical assistance, and monitor DLI#5 progress closely.\",\n      \"evidence\": \"No disbursements under RBF will be made until DLI#5 is achieved.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"High perceived corruption may undermine citizen trust and the effectiveness of service\u2011delivery reforms.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Deploy the citizen feedback mechanism, publicize anti\u2011corruption results, and strengthen transparency through performance dashboards.\",\n      \"evidence\": \"Corruption... second biggest problem... project aims to reduce petty corruption and improve service quality.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Key PMU positions remain vacant at project start, limiting operational capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Accelerate recruitment of Procurement and Administrative Specialists, use interim staff, and obtain Bank support for capacity building.\",\n      \"evidence\": \"Except for the Financial Specialist, PMU staff are yet to be contracted due to the delay in the approval of the PPF.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Reliance on external consultants for ICT and process re\u2011engineering may cause delays or quality issues.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop clear TORs, apply QCBS/QBS selection, and monitor deliverables against milestones with third\u2011party validation.\",\n      \"evidence\": \"Consulting services will be determined... selection methods include QCBS, QBS, etc.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"RBF eligible expenditures are limited to salaries and social security; payroll delays could affect disbursements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Synchronize payroll processing with FMIS, ensure timely submission of payroll data, and conduct regular payroll audits.\",\n      \"evidence\": \"EEPs for this project are salaries and social security contributions... processed through the government\u2019s FMIS.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Potential changes in political leadership could reduce commitment to the reform agenda.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Embed reforms in legislation, secure approvals from the Strategic Planning Committee and Prime Minister, and maintain broad stakeholder buy\u2011in.\",\n      \"evidence\": \"High level political commitment... Prime Minister and Council of Ministers have declared this initiative a key priority.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Data quality problems in legacy registers (e.g., missing National ID numbers) may hinder automation and service delivery.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct comprehensive data cleaning, digitization, and validation; align registers with NAIS standards and implement data\u2011quality checks.\",\n      \"evidence\": \"National ID number is missing for most records... only 45\u201150% of the archive digitized; legal issues over ownership remain.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Involvement of private partners in CSC construction/operation could lead to contract disputes and cost overruns.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Use transparent procurement procedures, define clear PPP terms, and involve legal counsel to oversee contract negotiations.\",\n      \"evidence\": \"Various models for financing, construction and management, including public\u2011private partnerships (PPPs), are under consideration.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-ALB-CitizenServiceDelivery",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Procurement capacity is weak because ADISA is a newly created agency, increasing the chance of procurement errors and delays.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a fully staffed PMU with a dedicated Procurement Specialist, use Bank\u2011provided sample TORs, and involve Bank technical experts in review.",
+        "evidence": "Procurement risk rating is High. Very weak procurement capacity at ADISA as a newly created agency."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial management risk is substantial due to ADISA and MIPA lacking experience with large donor\u2011funded operations.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit qualified finance specialists, provide on\u2011the\u2011job training on Bank fiduciary rules, and develop a detailed Financial Management Manual.",
+        "evidence": "The overall financial management risk is rated as Substantial... ADISA... have no previous experience... capacity strengthening recommended."
+      },
+      {
+        "risk_id": "R03",
+        "description": "The project\u2019s compressed implementation timeline may cause delays in CSC construction and reform milestones.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement phased work plans with clear milestones, monitor progress weekly, and maintain contingency buffers in the schedule.",
+        "evidence": "The compressed implementation timeline is a potential risk, which is mitigated by the project\u2019s span and incentives to deliver up to 2020."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Integration of legacy registers and new IT systems is technically complex; many agencies currently have no IT systems.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Adopt a phased IT development approach, provide technical assistance, conduct rigorous testing, and ensure interoperability standards via NAIS.",
+        "evidence": "Seven institutions... have no IT system in place... building new IT systems... will be carried out in phases."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Bureaucratic resistance to ceding front\u2011office functions may impede reform implementation.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Launch a change\u2011management program, engage staff through incentives, and communicate benefits via the communication strategy.",
+        "evidence": "Bureaucratic resistance could stifle efforts to improve back\u2011office functions... diagnostics of the political economy of reforms and a focus on change management can help."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Weak coordination among numerous ministries, agencies, and committees could lead to duplicated effort or stalled decisions.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen the steering and inter\u2011ministerial committees, define clear roles, and hold regular joint meetings with documented action items.",
+        "evidence": "Inter\u2011agency coordination... Inter\u2011Ministerial Public Services Committee... Technical Inter\u2011ministerial Committee... PMU will coordinate."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Low internet penetration limits citizen uptake of e\u2011services, risking under\u2011utilization of digital reforms.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Maintain physical CSCs, expand assisted access points (internet caf\u00e9s, community centers), and run outreach campaigns for non\u2011digital channels.",
+        "evidence": "Only 60 internet users per 100 people in 2013... need for physical presence... assisted digital access."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Construction of the new Citizen Service Center may cause dust, noise, waste, and traffic impacts.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement the approved Environmental Management Plan, enforce construction best practices, and monitor compliance through regular site inspections.",
+        "evidence": "Potential environmental impacts... dust and noise, waste generation... mitigated through sound construction practices and implementation of a project specific EMP."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Emphasis on high\u2011end urban CSCs and online services could marginalize poor, vulnerable, and rural populations.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide assisted digital access, retain existing service points, and run targeted information campaigns for disadvantaged groups.",
+        "evidence": "Risk that focus on state\u2011of\u2011the\u2011art means... could diminish access of the poor and vulnerable... project takes proactive steps to enhance access."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Results\u2011Based Financing disbursements are blocked until DLI#5 is achieved, risking cash\u2011flow shortfalls.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritize completion of the Reform Policy Document and baseline survey, provide technical assistance, and monitor DLI#5 progress closely.",
+        "evidence": "No disbursements under RBF will be made until DLI#5 is achieved."
+      },
+      {
+        "risk_id": "R11",
+        "description": "High perceived corruption may undermine citizen trust and the effectiveness of service\u2011delivery reforms.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deploy the citizen feedback mechanism, publicize anti\u2011corruption results, and strengthen transparency through performance dashboards.",
+        "evidence": "Corruption... second biggest problem... project aims to reduce petty corruption and improve service quality."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Key PMU positions remain vacant at project start, limiting operational capacity.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Accelerate recruitment of Procurement and Administrative Specialists, use interim staff, and obtain Bank support for capacity building.",
+        "evidence": "Except for the Financial Specialist, PMU staff are yet to be contracted due to the delay in the approval of the PPF."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Reliance on external consultants for ICT and process re\u2011engineering may cause delays or quality issues.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop clear TORs, apply QCBS/QBS selection, and monitor deliverables against milestones with third\u2011party validation.",
+        "evidence": "Consulting services will be determined... selection methods include QCBS, QBS, etc."
+      },
+      {
+        "risk_id": "R14",
+        "description": "RBF eligible expenditures are limited to salaries and social security; payroll delays could affect disbursements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Synchronize payroll processing with FMIS, ensure timely submission of payroll data, and conduct regular payroll audits.",
+        "evidence": "EEPs for this project are salaries and social security contributions... processed through the government\u2019s FMIS."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Potential changes in political leadership could reduce commitment to the reform agenda.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Embed reforms in legislation, secure approvals from the Strategic Planning Committee and Prime Minister, and maintain broad stakeholder buy\u2011in.",
+        "evidence": "High level political commitment... Prime Minister and Council of Ministers have declared this initiative a key priority."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Data quality problems in legacy registers (e.g., missing National ID numbers) may hinder automation and service delivery.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct comprehensive data cleaning, digitization, and validation; align registers with NAIS standards and implement data\u2011quality checks.",
+        "evidence": "National ID number is missing for most records... only 45\u201150% of the archive digitized; legal issues over ownership remain."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Involvement of private partners in CSC construction/operation could lead to contract disputes and cost overruns.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Use transparent procurement procedures, define clear PPP terms, and involve legal counsel to oversee contract negotiations.",
+        "evidence": "Various models for financing, construction and management, including public\u2011private partnerships (PPPs), are under consideration."
+      }
+    ]
+  },
+  "parse_error": null
+}
