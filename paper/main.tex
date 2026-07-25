@@ -35,11 +35,19 @@
 %     [AFFILIATION] rather than guessed.
 
 \documentclass[conference]{IEEEtran}
+\usepackage[T1]{fontenc}
 \usepackage{cite}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{url}
+% T1 fontenc added 2026-07-25 (Cowork session): a real compile ERROR (not just
+% a warning) was found via a real pdflatex log - "Command \k unavailable in
+% encoding OT1" on Section V.1's "Pezik et al." citation (LLMLagBench author's
+% real name has a Polish ogonek, P\k{e}zik). Default OT1 encoding can't render
+% it; T1 can, which is also the standard fix any properly-internationalized
+% IEEE paper needs rather than transliterating a real author's name to avoid
+% the problem.
 
 \begin{document}
 
@@ -66,6 +74,12 @@ against ground-truth registers via semantic matching, expert Likert
 ratings with Fleiss' $\kappa$, and supplementary LLM-as-judge scoring),
 and the headline RQ1--RQ3 finding.
 \end{abstract}
+
+\begin{IEEEkeywords}
+large language models, project risk management, risk register generation,
+benchmark evaluation, natural language generation, prompt engineering,
+hallucination detection, human-AI comparison
+\end{IEEEkeywords}
 
 \section{Introduction}
 

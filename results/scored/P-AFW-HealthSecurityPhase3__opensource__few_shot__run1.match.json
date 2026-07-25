@@ -1,0 +1,204 @@
+{
+  "run_file": "P-AFW-HealthSecurityPhase3__opensource__few_shot__run1.json",
+  "project_id": "P-AFW-HealthSecurityPhase3",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R05",
+      "similarity": 0.452,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate stakeholder engagement may lead to exclusion of vulnerable or disadvantaged groups",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a strong, adequately budgeted, and operational Grievance Redress Mechanism (GRM) to track and respond to grievances from target populations",
+      "evidence": "Section V. GRIEVANCE REDRESS SERVICES"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Financial management risks may lead to inaccurate or untimely information on project status",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Update existing financial management manuals, upgrade accounting software, and recruit an external auditor",
+      "evidence": "Section IV. B. Fiduciary"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Procurement risks may lead to delays, governance issues, or limited market competition",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Hire experienced procurement specialists, conduct early market engagement, and adopt flexible procurement approaches",
+      "evidence": "Section IV. B. Procurement"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Environmental risks may lead to community health risks, occupational health and safety risks, or nuisances related to air and noise emissions",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Prepare an Umbrella Environmental and Social Management Framework (U-ESMF) and adapt it to country context",
+      "evidence": "Section IV. D. Environmental and Social"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Sexual Exploitation and Abuse (SEA) risks may lead to harm to beneficiaries or project staff",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Prepare country-specific Gender-Based Violence (GBV) and SEA risk assessments and develop corresponding SEA Action Plans",
+      "evidence": "Section IV. D. Environmental and Social"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Climate change may lead to increased disease transmission risks, healthcare infrastructure damage, or disruptions to essential health services",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Integrate climate resilience into project design, including green and resilient infrastructure and climate-informed disease surveillance",
+      "evidence": "Section I. STRATEGIC CONTEXT"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate health security governance may lead to weak institutional capacities and limited resources for health emergency preparedness and response",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen health security governance through legislation, regulations, and institutional frameworks",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Limited laboratory capacity may lead to delayed or inaccurate disease diagnosis, hindering effective response to health emergencies",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen laboratory capacity through equipment, training, and quality management systems",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Inadequate human resources for health may lead to insufficient capacity to respond to health emergencies",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen human resources for health through training, capacity building, and workforce planning",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Inadequate emergency response mechanisms may lead to delayed or ineffective response to health emergencies",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish functional emergency response coordination mechanisms, including incident management systems and rapid response teams",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Inadequate health infrastructure may lead to disruptions to essential health services during health emergencies",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen health infrastructure through rehabilitation, equipment, and climate-resilient design",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Inadequate supply chain management may lead to stockouts or shortages of essential medical supplies",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen supply chain management through logistics capacity building, procurement planning, and stock management",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Inadequate risk communication and community engagement may lead to misinformation, mistrust, or inadequate response to health emergencies",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop and implement effective risk communication and community engagement strategies, including public awareness campaigns and community outreach",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Inadequate gender considerations may lead to unequal access to health services or inadequate response to gender-specific health needs",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate gender considerations into project design, including gender-sensitive risk assessments, gender-disaggregated data, and gender-specific interventions",
+      "evidence": "Section II. PROJECT DESCRIPTION"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate environmental considerations may lead to environmental degradation, health risks, or inadequate response to environmental health emergencies",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate environmental considerations into project design, including environmental impact assessments, environmental management plans, and climate-resilient infrastructure",
+      "evidence": "Section IV. D. Environmental and Social"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk (Moderate), considering fragility, socio-political instability, violence and weak governance of beneficiary countries.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close engagement by the World Bank to coordinate activities with other key partners."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical design risk (Substantial), considering the complexities of coordinating national-level and regional-level activities to align and build on each other, and the different levels of readiness at country-level.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Exploring the possibility of a coordinated implementation arrangement with CEMAC as the lead technical coordination body for regional activities."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Weak institutional capacity for implementation and sustainability (Substantial), combined with overstretched or nonexistent PIUs in respective countries.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthening the existing PIUs and intensive capacity building and targeted TA for newly established PIUs."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk (Substantial) due to weak governance structures and inadequate FM systems.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on fiduciary processes."
+    },
+    {
+      "risk_id": "R05",
+      "description": "E&S risk (Substantial) given the security risks associated with service delivery in FCV (fragility, conflict, and violence) settings.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Close implementation support by the World Bank, including TA as well as additional training and coaching on managing E&S risks."
+    }
+  ]
+}
