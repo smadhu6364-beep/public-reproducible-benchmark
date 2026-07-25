@@ -1,0 +1,175 @@
+{
+  "run_file": "P-GTM-SmartPublicFinances__claude__structured__run2.json",
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R01",
+      "similarity": 0.585,
+      "gen_category": "technical",
+      "gt_category": "technical",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R02",
+      "similarity": 0.577,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R03",
+      "similarity": 0.545,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Cyberattacks targeting state public financial management and procurement digital portals, leading to system outages, operational disruption, and data breaches.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implement an ISO 27000-compliant Information Security Management System (ISMS), establish a CSIRT, and deploy a Security Operations Center (SOC) under Subcomponent 2.5.",
+      "evidence": "The digital portals of the State Contracting and Acquisitions Information System, Guatecompras and SICOIN, faced attacks in 2023."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Decline in foreign remittance inflows causing significant drops in VAT collections, creating fiscal deficits and disrupting project expenditure execution.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthen Medium-Term Expenditure Frameworks (MTEF) and fiscal risk modeling under Subcomponent 1.1 to buffer against revenue volatility.",
+      "evidence": "A decline in these inflows could considerably reduce Value-Added Tax (VAT) collections, which account for 49 percent of the government's net income"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Severe climate hazards and natural disasters damaging ICT infrastructure and disrupting continuous operation of public financial management systems.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop an ISO 22301-compliant Business Continuity Management System (BCMS) and hybrid cloud redundancy architecture under Subcomponents 2.4 and 2.5.",
+      "evidence": "Extreme weather events pose an additional risk that can cause significant infrastructure damage and economic losses."
+    },
+    {
+      "risk_id": "R04",
+      "description": "High talent turnover and human capital shortages in the civil service impeding the maintenance and effective adoption of upgraded IFMIS applications.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Establish structured career paths for data professionals and implement permanent PFM capacity-building programs under Component 3.",
+      "evidence": "Poor system maintenance, weak governance arrangements, human capital constraints, and increasingly sophisticated cyberattacks... have left some existing PFM systems vulnerable"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Lack of transactional integration and persistent fragmentation between core accounting systems (SICOIN) and peripheral systems (procurement, assets, payroll).",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Define a PFM Integrated Conceptual Model and deploy an enterprise architecture interoperability platform under Subcomponents 1.1 and 2.4.",
+      "evidence": "System interoperability is limited to data transfers, with no transactional integration into the core financial systems."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Low uptake and municipal resistance toward integrating gender budget tagging (CPEG), hindering tracking of gender-focused public expenditure outcomes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Upgrade subnational management systems with automated CPEG tagging and conduct targeted training for municipal finance staff under Subcomponents 2.2 and 3.2.",
+      "evidence": "only 112 municipalities out of 340 linked their budget to the CPEG, limiting monitoring and accountability."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inability to transition from descriptive to predictive data analytics due to missing institutional frameworks and lack of specialized analytics units.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish specialized Data Analytics Units at MINFIN, SEGEPLAN, and SAT, supported by dedicated analytics toolkits under Component 3.",
+      "evidence": "Governments also struggle to build and retain analytical capacity due to the lack of structured career paths for data professionals"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Delays in establishing and fully staffing the Project Implementation Unit (PIU), delaying loan disbursements under Category 1.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Prioritize PIU staff recruitment and fiduciary onboarding immediately following loan approval as mandated by legal covenants.",
+      "evidence": "No withdrawal shall be made under Category 1 until the Borrower has established the PIU, satisfactory to the Bank."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Inadequate inter-institutional coordination between MINFIN and SEGEPLAN impairing multi-year public investment planning and climate adaptation integration.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Formalize and operationalize the Interinstitutional Committee governing body and reengineer joint planning-budgeting processes under Subcomponents 1.2 and 3.1.",
+      "evidence": "Key institutions lack mechanisms and incentives to implement or monitor climate adaptation measures across decentralized planning structures"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Weak ex-ante investment evaluation practices resulting in public project discontinuities, underfunded asset maintenance, and cost overruns.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Redesign SEGEPLAN's ex-ante prioritization methodologies and implement lifecycle M&E frameworks incorporating recurrent cost estimations under Subcomponent 1.2.",
+      "evidence": "weaknesses impact the effectiveness of investment management, including inadequate prioritization... frequent project discontinuities, underfunded maintenance... and insufficient data on total costs"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Delays in formal adoption of the Project Operational Manual (POM), preventing the operation from reaching legal effectiveness.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Advance drafting of the POM during appraisal to ensure rapid formal adoption by MINFIN upon loan signing.",
+      "evidence": "The Borrower has developed and adopted a Project Operational Manual ('POM'), satisfactory to the Bank."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Weak procurement competitiveness and inefficient contract management causing cost overruns and delays in key ICT procurements.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Reengineer procurement process flows, modernize Guatecompras under Subcomponent 2.2, and enforce strict World Bank Procurement Regulations oversight.",
+      "evidence": "weaknesses impact the effectiveness of investment management, including... weak procurement competitiveness"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical design risks are considered Substantial. PFM reforms typically require a whole-of-government approach and involve complex, cross-cutting changes that are often difficult to implement; these challenges are further amplified when reforms involve development or integration of sophisticated information systems. Many of the anticipated efficiency gains depend heavily on interoperability of processes and seamless integration of information systems across institutions, and the involvement of multiple stakeholders adds further complexity and increases the potential for misalignment or implementation delays.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project design includes the development and application of well-defined, evidence-based PFM conceptual and governance models, informed by a diagnostic and reform strategy developed through stakeholder consultations, providing a clear and coherent framework expected to foster shared understanding, facilitate collaboration, and reduce fragmentation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risks are Substantial. Given the complexity of PFM reforms, the project requires strong government commitment to ensure effective implementation and safeguard long-term sustainability. Since the project's beneficiaries extend beyond MINFIN, coordination challenges may arise during implementation.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A PIU will be established within the Directorate of Public Treasury (DTP) for faster decision-making and improved coordination across MINFIN directorates. Component 3 will strengthen PIU operations (project management, financial management, procurement, monitoring, E&S risk management capacities); the Bank will provide training to the PIU and relevant stakeholders and facilitate change management mechanisms and a communications strategy. Coordination challenges involving multiple beneficiaries will be addressed through collaboration between MINFIN and SEGEPLAN via the Digital Transformation Commission."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risks are Substantial. This is due to DTP's limited experience with donor-funded projects and lack of recent engagement with World Bank operations; DTP has no prior experience implementing the Bank's procurement regulations, and the low value of anticipated contracts may limit interest from international firms, reducing competition. DTP has basic financial management systems in place but its unfamiliarity with the Bank's FM policies and requirements may pose risks to achieving the PDO, potentially leading to delays in activity execution.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Measures include setting up a PIU with qualified personnel, offering procurement training to PIU and DTP staff, conducting market analysis to find potential providers, and preparing a simplified Project Procurement Strategy for Development (PPSD)."
+    }
+  ]
+}

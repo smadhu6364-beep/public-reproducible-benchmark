@@ -1,34 +1,34 @@
 {
-  "n_scored_runs_total": 66,
+  "n_scored_runs_total": 81,
   "n_parse_failed_total": 11,
   "corpus_wide": {
-    "n_runs": 66,
-    "mean_recall": 0.457,
-    "mean_precision": 0.194,
-    "mean_category_accuracy": 0.361,
+    "n_runs": 79,
+    "mean_recall": 0.508,
+    "mean_precision": 0.191,
+    "mean_category_accuracy": 0.393,
     "note": "Excludes the 5-document short-register subgroup - see short_register_subgroup block."
   },
   "by_model_and_prompt": {
     "claude / few_shot": {
-      "n_runs": 14,
+      "n_runs": 19,
       "n_parse_failed": 1,
-      "mean_recall": 0.564,
-      "mean_precision": 0.221,
-      "mean_category_accuracy": 0.301
+      "mean_recall": 0.609,
+      "mean_precision": 0.211,
+      "mean_category_accuracy": 0.366
     },
     "claude / structured": {
-      "n_runs": 13,
+      "n_runs": 17,
       "n_parse_failed": 1,
-      "mean_recall": 0.481,
-      "mean_precision": 0.203,
-      "mean_category_accuracy": 0.303
+      "mean_recall": 0.544,
+      "mean_precision": 0.197,
+      "mean_category_accuracy": 0.356
     },
     "claude / zero_shot": {
-      "n_runs": 14,
+      "n_runs": 20,
       "n_parse_failed": 1,
-      "mean_recall": 0.517,
-      "mean_precision": 0.193,
-      "mean_category_accuracy": 0.291
+      "mean_recall": 0.624,
+      "mean_precision": 0.178,
+      "mean_category_accuracy": 0.339
     },
     "gpt / few_shot": {
       "n_runs": 4,
@@ -75,25 +75,25 @@
   },
   "by_model_and_prompt_corpus_wide_only": {
     "claude / few_shot": {
-      "n_runs": 14,
+      "n_runs": 19,
       "n_parse_failed": 1,
-      "mean_recall": 0.564,
-      "mean_precision": 0.221,
-      "mean_category_accuracy": 0.301
+      "mean_recall": 0.609,
+      "mean_precision": 0.211,
+      "mean_category_accuracy": 0.366
     },
     "claude / structured": {
-      "n_runs": 13,
+      "n_runs": 17,
       "n_parse_failed": 1,
-      "mean_recall": 0.481,
-      "mean_precision": 0.203,
-      "mean_category_accuracy": 0.303
+      "mean_recall": 0.544,
+      "mean_precision": 0.197,
+      "mean_category_accuracy": 0.356
     },
     "claude / zero_shot": {
-      "n_runs": 14,
+      "n_runs": 18,
       "n_parse_failed": 1,
-      "mean_recall": 0.517,
-      "mean_precision": 0.193,
-      "mean_category_accuracy": 0.291
+      "mean_recall": 0.582,
+      "mean_precision": 0.188,
+      "mean_category_accuracy": 0.35
     },
     "gpt / few_shot": {
       "n_runs": 4,
@@ -140,111 +140,122 @@
   },
   "by_category": {
     "environmental": {
-      "missed_count": 8,
-      "hallucinated_count": 90
+      "missed_count": 9,
+      "hallucinated_count": 113
     },
     "external": {
       "missed_count": 7,
-      "hallucinated_count": 40
+      "hallucinated_count": 52
     },
     "financial": {
-      "missed_count": 41,
-      "hallucinated_count": 120
+      "missed_count": 42,
+      "hallucinated_count": 155
     },
     "organizational": {
-      "missed_count": 40,
-      "hallucinated_count": 71
+      "missed_count": 43,
+      "hallucinated_count": 100
     },
     "political_regulatory": {
-      "missed_count": 47,
-      "hallucinated_count": 27
+      "missed_count": 54,
+      "hallucinated_count": 38
     },
     "schedule": {
       "missed_count": 0,
-      "hallucinated_count": 62
+      "hallucinated_count": 75
     },
     "stakeholder": {
       "missed_count": 3,
-      "hallucinated_count": 101
+      "hallucinated_count": 124
     },
     "technical": {
       "missed_count": 25,
-      "hallucinated_count": 109
+      "hallucinated_count": 148
     }
   },
   "by_category_corpus_wide_only": {
     "environmental": {
-      "missed_count": 8,
-      "hallucinated_count": 90
+      "missed_count": 9,
+      "hallucinated_count": 111
     },
     "external": {
       "missed_count": 7,
-      "hallucinated_count": 40
+      "hallucinated_count": 51
     },
     "financial": {
-      "missed_count": 41,
-      "hallucinated_count": 120
+      "missed_count": 42,
+      "hallucinated_count": 149
     },
     "organizational": {
-      "missed_count": 40,
-      "hallucinated_count": 71
+      "missed_count": 43,
+      "hallucinated_count": 96
     },
     "political_regulatory": {
-      "missed_count": 47,
-      "hallucinated_count": 27
+      "missed_count": 54,
+      "hallucinated_count": 35
     },
     "schedule": {
       "missed_count": 0,
-      "hallucinated_count": 62
+      "hallucinated_count": 71
     },
     "stakeholder": {
       "missed_count": 3,
-      "hallucinated_count": 101
+      "hallucinated_count": 119
     },
     "technical": {
       "missed_count": 25,
-      "hallucinated_count": 109
+      "hallucinated_count": 144
     }
   },
   "by_category_excluding_parse_failures": {
     "environmental": {
-      "missed_count": 6,
-      "hallucinated_count": 90
+      "missed_count": 7,
+      "hallucinated_count": 113
     },
     "external": {
       "missed_count": 7,
-      "hallucinated_count": 40
+      "hallucinated_count": 52
     },
     "financial": {
-      "missed_count": 30,
-      "hallucinated_count": 120
+      "missed_count": 31,
+      "hallucinated_count": 155
     },
     "organizational": {
-      "missed_count": 20,
-      "hallucinated_count": 71
+      "missed_count": 23,
+      "hallucinated_count": 100
     },
     "political_regulatory": {
-      "missed_count": 36,
-      "hallucinated_count": 27
+      "missed_count": 43,
+      "hallucinated_count": 38
     },
     "schedule": {
       "missed_count": 0,
-      "hallucinated_count": 62
+      "hallucinated_count": 75
     },
     "stakeholder": {
       "missed_count": 3,
-      "hallucinated_count": 101
+      "hallucinated_count": 124
     },
     "technical": {
       "missed_count": 23,
-      "hallucinated_count": 109
+      "hallucinated_count": 148
     }
   },
   "short_register_subgroup": {
-    "n_runs": 0,
-    "mean_precision": null,
-    "mean_recall": null,
-    "by_project": {}
+    "n_runs": 2,
+    "mean_precision": 0.093,
+    "mean_recall": 1.0,
+    "by_project": {
+      "P-JOR-InnovativeStartupsSMEsFund2": {
+        "n_runs": 1,
+        "mean_precision": 0.125,
+        "mean_recall": 1.0
+      },
+      "P-KHM-BasicEducationImprovement": {
+        "n_runs": 1,
+        "mean_precision": 0.062,
+        "mean_recall": 1.0
+      }
+    }
   },
   "per_run": [
     {
@@ -1626,6 +1637,37 @@
     {
       "project_id": "P-BGD-SocialProtectionResilience",
       "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 4,
+      "n_matched": 2,
+      "precision": 0.143,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "environmental"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "technical",
+        "technical",
+        "financial",
+        "financial",
+        "schedule",
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "environmental",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-BGD-SocialProtectionResilience",
+      "model": "claude",
       "prompt_strategy": "zero_shot",
       "run_index": 1,
       "parse_failed": false,
@@ -1681,6 +1723,420 @@
         "technical",
         "technical",
         "financial",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-GTM-SmartPublicFinances",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 3,
+      "n_matched": 3,
+      "precision": 0.2,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "technical",
+        "environmental",
+        "financial",
+        "organizational",
+        "organizational",
+        "financial",
+        "technical",
+        "technical",
+        "financial",
+        "schedule",
+        "external",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-GTM-SmartPublicFinances",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 10,
+      "n_ground_truth": 3,
+      "n_matched": 2,
+      "precision": 0.2,
+      "recall": 0.667,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "financial"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "financial",
+        "environmental",
+        "organizational",
+        "schedule",
+        "stakeholder",
+        "external",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-GTM-SmartPublicFinances",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 3,
+      "n_matched": 3,
+      "precision": 0.214,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "technical",
+        "technical",
+        "technical",
+        "financial",
+        "financial",
+        "stakeholder",
+        "stakeholder",
+        "political_regulatory",
+        "environmental",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-GTM-SmartPublicFinances",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 12,
+      "n_ground_truth": 3,
+      "n_matched": 3,
+      "precision": 0.25,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "technical",
+        "financial",
+        "environmental",
+        "organizational",
+        "stakeholder",
+        "organizational",
+        "financial",
+        "political_regulatory",
+        "financial"
+      ]
+    },
+    {
+      "project_id": "P-GTM-SmartPublicFinances",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 3,
+      "n_matched": 3,
+      "precision": 0.2,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "technical",
+        "organizational",
+        "financial",
+        "environmental",
+        "technical",
+        "financial",
+        "stakeholder",
+        "schedule",
+        "stakeholder",
+        "technical",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-GTM-SmartPublicFinances",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 3,
+      "n_matched": 3,
+      "precision": 0.188,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "financial",
+        "technical",
+        "environmental",
+        "organizational",
+        "technical",
+        "technical",
+        "financial",
+        "stakeholder",
+        "schedule",
+        "technical",
+        "political_regulatory",
+        "financial",
+        "stakeholder"
+      ]
+    },
+    {
+      "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 4,
+      "n_matched": 2,
+      "precision": 0.125,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "stakeholder",
+        "technical",
+        "organizational",
+        "financial",
+        "financial",
+        "organizational",
+        "environmental",
+        "political_regulatory",
+        "financial",
+        "organizational",
+        "external",
+        "environmental",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 15,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.2,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.333,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "external",
+        "technical",
+        "organizational",
+        "organizational",
+        "technical",
+        "financial",
+        "financial",
+        "political_regulatory",
+        "environmental",
+        "external",
+        "organizational"
+      ]
+    },
+    {
+      "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+      "model": "claude",
+      "prompt_strategy": "few_shot",
+      "run_index": 3,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.214,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "stakeholder",
+        "technical",
+        "technical",
+        "organizational",
+        "schedule",
+        "financial",
+        "organizational",
+        "environmental",
+        "external",
+        "organizational"
+      ]
+    },
+    {
+      "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+      "model": "claude",
+      "prompt_strategy": "structured",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 17,
+      "n_ground_truth": 4,
+      "n_matched": 2,
+      "precision": 0.118,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "technical",
+        "technical",
+        "technical",
+        "financial",
+        "financial",
+        "financial",
+        "schedule",
+        "stakeholder",
+        "stakeholder",
+        "political_regulatory",
+        "environmental",
+        "environmental",
+        "organizational",
+        "organizational",
+        "external"
+      ]
+    },
+    {
+      "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 14,
+      "n_ground_truth": 4,
+      "n_matched": 2,
+      "precision": 0.143,
+      "recall": 0.5,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [
+        "political_regulatory",
+        "organizational"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "stakeholder",
+        "technical",
+        "organizational",
+        "technical",
+        "financial",
+        "schedule",
+        "political_regulatory",
+        "environmental",
+        "environmental",
+        "stakeholder",
+        "political_regulatory"
+      ]
+    },
+    {
+      "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 2,
+      "parse_failed": false,
+      "n_generated": 18,
+      "n_ground_truth": 4,
+      "n_matched": 3,
+      "precision": 0.167,
+      "recall": 0.75,
+      "category_accuracy_of_matches": 0.667,
+      "missed_ground_truth_categories": [
+        "political_regulatory"
+      ],
+      "unsupported_generated_categories": [
+        "environmental",
+        "stakeholder",
+        "technical",
+        "financial",
+        "organizational",
+        "technical",
+        "financial",
+        "organizational",
+        "environmental",
+        "technical",
+        "stakeholder",
+        "external",
+        "organizational",
+        "financial",
+        "technical"
+      ]
+    },
+    {
+      "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 2,
+      "n_matched": 2,
+      "precision": 0.125,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.5,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "financial",
+        "organizational",
+        "financial",
+        "environmental",
+        "organizational",
+        "stakeholder",
+        "political_regulatory",
+        "stakeholder",
+        "schedule",
+        "financial",
+        "stakeholder",
+        "technical",
+        "technical",
+        "financial"
+      ]
+    },
+    {
+      "project_id": "P-KHM-BasicEducationImprovement",
+      "model": "claude",
+      "prompt_strategy": "zero_shot",
+      "run_index": 1,
+      "parse_failed": false,
+      "n_generated": 16,
+      "n_ground_truth": 1,
+      "n_matched": 1,
+      "precision": 0.062,
+      "recall": 1.0,
+      "category_accuracy_of_matches": 0.0,
+      "missed_ground_truth_categories": [],
+      "unsupported_generated_categories": [
+        "environmental",
+        "financial",
+        "schedule",
+        "financial",
+        "organizational",
+        "schedule",
+        "political_regulatory",
+        "organizational",
+        "schedule",
+        "technical",
+        "political_regulatory",
+        "stakeholder",
+        "stakeholder",
+        "technical",
         "external"
       ]
     },

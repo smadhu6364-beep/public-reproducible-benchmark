@@ -1,0 +1,162 @@
+{
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T15:18:50.007989+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-IND-ChhattisgarhAcceleratedLearning\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Extreme heatwaves, erratic monsoons, droughts, and floods disrupt the annual academic calendar, forcing school closures and reducing instructional days.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Climate-proof school infrastructure, digitize learning resources/records, and implement flexible remedial plans to compensate for lost instructional days.\",\n      \"evidence\": \"vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions of the annual school summer break\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High dropout rates among secondary and senior secondary adolescent boys due to family economic pressure and available informal labor market jobs.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Expand access to quality senior secondary science and commerce education, introduce residential facilities for boys, and engage SMCs on student retention.\",\n      \"evidence\": \"GER for adolescent boys is visible in the secondary (83.2 percent) and senior secondary grades (52.3 percent) as compared with girl students\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Acute shortage of subject-specialized teachers leads to non-subject teachers managing key subjects like Mathematics and Science, reducing instructional quality.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and deploy grade- and subject-wise structured lesson plans and establish need-based in-service teacher professional development programs.\",\n      \"evidence\": \"a lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Insufficient technical capacity and staffing within the SCERT Assessment Cell (SAC) to design, administer, and analyze periodic diagnostic and state-level achievement assessments.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Engage external technical support agencies through the IPF component to build SAC capacity and competitively hire dedicated assessment staff.\",\n      \"evidence\": \"The lack of a standardized system to assess student learning through a diagnostic lens restricts the nodal educational institutions\u2019 ability to identify issue(s)\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Fiscal space constraints in state budget limit new teacher recruitment despite an increasing market availability of subject-specialist teachers.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Transition to large composite schools (Grades K-12) to achieve economies of scale and optimize existing teacher deployment across grades.\",\n      \"evidence\": \"efforts get limited by the available fiscal space to hire new teachers despite the increasing availability of subject teachers in the market.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Delays in budget releases and low budget execution rates caused by multi-tiered planning processes and limited financial management capacity across executing entities.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide technical assistance for financial management, streamline annual work plan preparation, and establish a dedicated PMC to support budget execution.\",\n      \"evidence\": \"multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting and consequent delays\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Financial management internal control weaknesses, including un-cleared advances, long-standing capital work in progress, and unresolved statutory audit queries dating back to 2009.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish an Audit Committee to resolve historical statutory audit findings, conduct risk-based internal audits, and set up district-level compliance camps.\",\n      \"evidence\": \"there exist unresolved/ addressed statutory observations since FY 2009-10.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inexperience of SIS-SS staff with World Bank Procurement Regulations for consultancy services under the IPF component, threatening contract award timelines.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize the World Bank STEP platform, deploy experienced procurement specialists within the PMC, and conduct extensive procurement capacity-building workshops.\",\n      \"evidence\": \"Procurement risks related to the IPF component include the inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Civil works for school construction and refurbishment create occupational health and safety hazards, traffic risks, construction waste, and disruption to ongoing classes.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Standardize Environmental, Health, and Safety (EHS) clauses in bidding documents, enforce environmental screening, and require School Improvement Plans prior to civil works.\",\n      \"evidence\": \"Occupational Health and Safety (OHS) and Community Health and Safety (CHS) issues include fire and electric safety, possible traffic incidents\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Locating upgraded model composite schools in coal mining areas exposes students and facilities to elevated air/noise pollution and environmental degradation.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate environmental greening and tree plantation protocols, install energy-efficient/ventilation-focused designs, and coordinate with the Forest/Horticulture departments.\",\n      \"evidence\": \"Environmental risks and impacts associated with the location of school premises, air/noise pollution in mining areas, dust and disposal of construction waste\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Potential regulatory changes in Personal Data protection laws impacting the collection, storage, and processing of student and teacher personal data within EMIS.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct technical impact assessments of new privacy legislation, adhere to national and international data protection standards, and eliminate personal data from public reports.\",\n      \"evidence\": \"the approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Operational bottlenecks and lack of seamless information interfaces between PFMS and banking systems under the Single Nodal Account (SNA) model leading to transaction delays.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Standardize accounting software (Tally) across sub-implementing agencies (PWD/RES), deliver bank/agency user training, and establish zero-balance child accounts under CHALK-SNA.\",\n      \"evidence\": \"lack of effective information interface between the PFMS system and the Banking network... increased reliance on the banking network has become a bottleneck\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Lack of a dedicated, online procurement complaint redressal mechanism leading to delayed handling of contractor grievances and potential procurement disputes.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a comprehensive online procurement complaint handling portal with clear protocols, mandatory public award disclosures, and defined escalation levels.\",\n      \"evidence\": \"Currently, there is no dedicated mechanism in place to treat procurement-related complaints promptly.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Long-term energy transition and coal mine closures over 20-30 years threaten local livelihoods in mining districts unless youth are equipped with alternative skills.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritize at least 5% of model composite schools in coal mining blocks offering quality senior secondary science and commerce education to support just transition.\",\n      \"evidence\": \"India's long-term goal of reaching net zero by 2070... will result in the gradual closure of coal mines that produce 85 percent\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Generation of unmanaged e-waste and solid waste from the procurement and lifecycle end-of-life of digital IT hardware for EMIS and assessment systems.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Include mandatory e-waste disposal requirements in vendor TORs conforming to E-Waste Management Rules 2016 and implement segregated waste collection.\",\n      \"evidence\": \"development of the state's EMIS, if at all, may generate some e-waste and solid waste (including plastics, and paper) in the nodal institutions.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Operational inefficiencies and multigrade teaching in fragmented, small primary schools due to low per-grade enrolment and high per-pupil expenditure.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Develop high-enrolment model composite hub schools while financing minor repairs in surrounding spoke primary schools to preserve access and operational efficiency.\",\n      \"evidence\": \"fragmented school functioning have led to multi-grade teaching and higher per-pupil expenditure.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Extreme heatwaves, erratic monsoons, droughts, and floods disrupt the annual academic calendar, forcing school closures and reducing instructional days.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Climate-proof school infrastructure, digitize learning resources/records, and implement flexible remedial plans to compensate for lost instructional days.",
+        "evidence": "vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions of the annual school summer break"
+      },
+      {
+        "risk_id": "R02",
+        "description": "High dropout rates among secondary and senior secondary adolescent boys due to family economic pressure and available informal labor market jobs.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Expand access to quality senior secondary science and commerce education, introduce residential facilities for boys, and engage SMCs on student retention.",
+        "evidence": "GER for adolescent boys is visible in the secondary (83.2 percent) and senior secondary grades (52.3 percent) as compared with girl students"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Acute shortage of subject-specialized teachers leads to non-subject teachers managing key subjects like Mathematics and Science, reducing instructional quality.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and deploy grade- and subject-wise structured lesson plans and establish need-based in-service teacher professional development programs.",
+        "evidence": "a lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Insufficient technical capacity and staffing within the SCERT Assessment Cell (SAC) to design, administer, and analyze periodic diagnostic and state-level achievement assessments.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Engage external technical support agencies through the IPF component to build SAC capacity and competitively hire dedicated assessment staff.",
+        "evidence": "The lack of a standardized system to assess student learning through a diagnostic lens restricts the nodal educational institutions\u2019 ability to identify issue(s)"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Fiscal space constraints in state budget limit new teacher recruitment despite an increasing market availability of subject-specialist teachers.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Transition to large composite schools (Grades K-12) to achieve economies of scale and optimize existing teacher deployment across grades.",
+        "evidence": "efforts get limited by the available fiscal space to hire new teachers despite the increasing availability of subject teachers in the market."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Delays in budget releases and low budget execution rates caused by multi-tiered planning processes and limited financial management capacity across executing entities.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide technical assistance for financial management, streamline annual work plan preparation, and establish a dedicated PMC to support budget execution.",
+        "evidence": "multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting and consequent delays"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Financial management internal control weaknesses, including un-cleared advances, long-standing capital work in progress, and unresolved statutory audit queries dating back to 2009.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish an Audit Committee to resolve historical statutory audit findings, conduct risk-based internal audits, and set up district-level compliance camps.",
+        "evidence": "there exist unresolved/ addressed statutory observations since FY 2009-10."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inexperience of SIS-SS staff with World Bank Procurement Regulations for consultancy services under the IPF component, threatening contract award timelines.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize the World Bank STEP platform, deploy experienced procurement specialists within the PMC, and conduct extensive procurement capacity-building workshops.",
+        "evidence": "Procurement risks related to the IPF component include the inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Civil works for school construction and refurbishment create occupational health and safety hazards, traffic risks, construction waste, and disruption to ongoing classes.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Standardize Environmental, Health, and Safety (EHS) clauses in bidding documents, enforce environmental screening, and require School Improvement Plans prior to civil works.",
+        "evidence": "Occupational Health and Safety (OHS) and Community Health and Safety (CHS) issues include fire and electric safety, possible traffic incidents"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Locating upgraded model composite schools in coal mining areas exposes students and facilities to elevated air/noise pollution and environmental degradation.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate environmental greening and tree plantation protocols, install energy-efficient/ventilation-focused designs, and coordinate with the Forest/Horticulture departments.",
+        "evidence": "Environmental risks and impacts associated with the location of school premises, air/noise pollution in mining areas, dust and disposal of construction waste"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Potential regulatory changes in Personal Data protection laws impacting the collection, storage, and processing of student and teacher personal data within EMIS.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct technical impact assessments of new privacy legislation, adhere to national and international data protection standards, and eliminate personal data from public reports.",
+        "evidence": "the approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Operational bottlenecks and lack of seamless information interfaces between PFMS and banking systems under the Single Nodal Account (SNA) model leading to transaction delays.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Standardize accounting software (Tally) across sub-implementing agencies (PWD/RES), deliver bank/agency user training, and establish zero-balance child accounts under CHALK-SNA.",
+        "evidence": "lack of effective information interface between the PFMS system and the Banking network... increased reliance on the banking network has become a bottleneck"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Lack of a dedicated, online procurement complaint redressal mechanism leading to delayed handling of contractor grievances and potential procurement disputes.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a comprehensive online procurement complaint handling portal with clear protocols, mandatory public award disclosures, and defined escalation levels.",
+        "evidence": "Currently, there is no dedicated mechanism in place to treat procurement-related complaints promptly."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Long-term energy transition and coal mine closures over 20-30 years threaten local livelihoods in mining districts unless youth are equipped with alternative skills.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritize at least 5% of model composite schools in coal mining blocks offering quality senior secondary science and commerce education to support just transition.",
+        "evidence": "India's long-term goal of reaching net zero by 2070... will result in the gradual closure of coal mines that produce 85 percent"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Generation of unmanaged e-waste and solid waste from the procurement and lifecycle end-of-life of digital IT hardware for EMIS and assessment systems.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Include mandatory e-waste disposal requirements in vendor TORs conforming to E-Waste Management Rules 2016 and implement segregated waste collection.",
+        "evidence": "development of the state's EMIS, if at all, may generate some e-waste and solid waste (including plastics, and paper) in the nodal institutions."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Operational inefficiencies and multigrade teaching in fragmented, small primary schools due to low per-grade enrolment and high per-pupil expenditure.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Develop high-enrolment model composite hub schools while financing minor repairs in surrounding spoke primary schools to preserve access and operational efficiency.",
+        "evidence": "fragmented school functioning have led to multi-grade teaching and higher per-pupil expenditure."
+      }
+    ]
+  },
+  "parse_error": null
+}
