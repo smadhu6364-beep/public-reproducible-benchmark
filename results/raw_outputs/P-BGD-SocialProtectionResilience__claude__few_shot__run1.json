@@ -1,0 +1,180 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-24T21:16:51.609220+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Economic uncertainty and lingering impacts from the August 2024 political transition could delay project execution and structural reforms.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Engage proactively with interim government leadership, establish clear inter-ministerial coordination mechanisms, and prioritize technical implementation milestones.\",\n      \"evidence\": \"lingering economic impact of the recent political transition\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High inflation rates risk eroding the real value and purchasing power of monthly cash transfer benefits provided to poor households.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and adopt a standardized benefits adequacy framework and indexation mechanism under Subcomponent 2.1 to inform periodic budget adjustments.\",\n      \"evidence\": \"the real value of benefits under the DSS\u2019s Old Age Allowance and Widow Allowance programs has decreased since 2016\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Recurring severe floods and extreme climate events could inundate project areas and disrupt livelihoods, increasing safety net demand.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate dynamic climate-shock targeting into the Dynamic Social Registry, prioritize climate-vulnerable locations, and maintain an active Contingent Emergency Response Component.\",\n      \"evidence\": \"recurring flooding affects a greater share of the population than any other natural hazard\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"High baseline inclusion and exclusion errors in safety net programs cause significant misallocation of cash transfer resources.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish and roll out the Dynamic Social Registry using standardized proxy means testing scores and digitized data verification.\",\n      \"evidence\": \"The inclusion and exclusion errors are approximately 60 percent\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Institutional weaknesses and cross-ministry coordination failures that hampered past social registry efforts (such as NHD) could recur.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Anchor overall DSR coordination in the Finance Division, establish Cabinet-backed steering oversight, and formalize inter-agency roles via MoUs.\",\n      \"evidence\": \"Past efforts to create a social registry through the National Household Database (NHD) did not materialize\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Complex financial management across multiple implementing agencies and varied expenditure types creates risk of accounting delays or non-compliance.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit certified FM consultants at both PIUs, integrate iBAS++ tracking, submit quarterly IUFRs, and execute annual risk-based internal audits.\",\n      \"evidence\": \"From the FM perspective, the project design is complex due to the intricacy of activity selection and various IAs and finances\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Fiscal pressure or revenue collection shortfalls could jeopardize the timely provision of the government's substantial counterpart funding.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Structure PBC disbursements against regular national safety net allowance budget lines (economic code 3721) to lock in funding flows.\",\n      \"evidence\": \"Counterpart Funding Borrower/Recipient 3,848.00\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Centralized storage and processing of national identity numbers and socioeconomic data pose data security, privacy, and cyber risks.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Host registry systems in secure National Data Centers equipped with disaster recovery facilities and adhere strictly to national data security regulations.\",\n      \"evidence\": \"the design of the DSR and module development will contain clear mitigation measures to address data security risks\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Gender disparities in digital skills and financial literacy could restrict female access to G2P digital payments and DSR registration.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Design simplified user interfaces and local language audio guides, deploy female frontline staff, and provide targeted financial literacy training.\",\n      \"evidence\": \"Women report limited digital and financial access, which constrains their access to G2P payments\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Lack of administrative and MIS integration across the four DSS livelihoods programs prevents seamless case management and beneficiary graduation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Harmonize the DSS livelihoods program MIS, establish interoperability with the DSR, and dedicate specialized PIU staff to program coordination.\",\n      \"evidence\": \"there is limited integration within these programs in terms of administrative systems, data/information, and resource management.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Sub-grants transferred directly to local social club bank accounts risk delayed expenditure reporting or fiduciary mismanagement.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Mandate official club enlistment, require dual-signatory bank accounts, enforce monthly countersigned SOE reporting, and record funds as advances until reconciled.\",\n      \"evidence\": \"Grants to social clubs under Subcomponent 2.2 will be financed through the DSS\u2019s DA and transferred directly\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Severe seasonal flooding in disaster-prone Upazilas could prevent program participants from attending in-person livelihoods training.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate e-learning options into the training curriculum and disburse training stipends via direct electronic fund transfers.\",\n      \"evidence\": \"risk of intense floodings in the region, which may restrict in-person attendance\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Frontline social service officers and field cadres may lack the operational capacity to manage modernized DSR workflows and business processes.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deliver continuous central and field-level training programs to ensure at least one fully trained personnel and active DSR access point in every Upazila.\",\n      \"evidence\": \"Each Upazila in the country has at least one DSS personnel who has been trained on the updated business processes\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Failure to establish implementation units, steering committees, or the Project Operations Manual within strict legal deadlines could delay effectiveness.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Assign experienced staff from predecessor projects, advance-draft the POM, and systematically track legal covenant timeline compliance.\",\n      \"evidence\": \"establish within six (6) months of the Effective Date... the Project Implementation Unit (PIU) at the DSS\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Delays or reluctance by partnering line ministries in executing MoUs could impede onboarding non-DSS cash transfer programs to the DSR.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Leverage the Cabinet Division-led DSR Steering Committee to facilitate inter-agency dialogue and resolve policy disputes swiftly.\",\n      \"evidence\": \"MoWCA is expected to sign a memorandum of understanding (MoU) with the FD and DSS\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Ad hoc training quality and limited market relevance in existing livelihoods schemes risk failing to secure long-term employment for beneficiaries.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Overhaul training curricula with technical, life skills, and financial modules, conduct market assessment studies, and offer post-training mentorship.\",\n      \"evidence\": \"training components, they are often ad hoc and limited in coverage and depth\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Procedural delays in finalizing CERC manuals and emergency action plans could hinder rapid disbursement during a major crisis.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Draft and formally adopt the CERC Manual and Emergency Action Plan early during standard project implementation.\",\n      \"evidence\": \"adopted the CERC Manual and Emergency Action Plan, in form and substance acceptable to the Association.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Foreign exchange reserve volatility and currency depreciation could exacerbate national macroeconomic vulnerability and import capacity.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain close alignment with international development partner financing and leverage public financial management strengthening efforts.\",\n      \"evidence\": \"FX reserves stood at US$19.9 billion (approximately 3.3 months of prospective imports).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Economic uncertainty and lingering impacts from the August 2024 political transition could delay project execution and structural reforms.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Engage proactively with interim government leadership, establish clear inter-ministerial coordination mechanisms, and prioritize technical implementation milestones.",
+        "evidence": "lingering economic impact of the recent political transition"
+      },
+      {
+        "risk_id": "R02",
+        "description": "High inflation rates risk eroding the real value and purchasing power of monthly cash transfer benefits provided to poor households.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and adopt a standardized benefits adequacy framework and indexation mechanism under Subcomponent 2.1 to inform periodic budget adjustments.",
+        "evidence": "the real value of benefits under the DSS\u2019s Old Age Allowance and Widow Allowance programs has decreased since 2016"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Recurring severe floods and extreme climate events could inundate project areas and disrupt livelihoods, increasing safety net demand.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate dynamic climate-shock targeting into the Dynamic Social Registry, prioritize climate-vulnerable locations, and maintain an active Contingent Emergency Response Component.",
+        "evidence": "recurring flooding affects a greater share of the population than any other natural hazard"
+      },
+      {
+        "risk_id": "R04",
+        "description": "High baseline inclusion and exclusion errors in safety net programs cause significant misallocation of cash transfer resources.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish and roll out the Dynamic Social Registry using standardized proxy means testing scores and digitized data verification.",
+        "evidence": "The inclusion and exclusion errors are approximately 60 percent"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Institutional weaknesses and cross-ministry coordination failures that hampered past social registry efforts (such as NHD) could recur.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Anchor overall DSR coordination in the Finance Division, establish Cabinet-backed steering oversight, and formalize inter-agency roles via MoUs.",
+        "evidence": "Past efforts to create a social registry through the National Household Database (NHD) did not materialize"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Complex financial management across multiple implementing agencies and varied expenditure types creates risk of accounting delays or non-compliance.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit certified FM consultants at both PIUs, integrate iBAS++ tracking, submit quarterly IUFRs, and execute annual risk-based internal audits.",
+        "evidence": "From the FM perspective, the project design is complex due to the intricacy of activity selection and various IAs and finances"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Fiscal pressure or revenue collection shortfalls could jeopardize the timely provision of the government's substantial counterpart funding.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Structure PBC disbursements against regular national safety net allowance budget lines (economic code 3721) to lock in funding flows.",
+        "evidence": "Counterpart Funding Borrower/Recipient 3,848.00"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Centralized storage and processing of national identity numbers and socioeconomic data pose data security, privacy, and cyber risks.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Host registry systems in secure National Data Centers equipped with disaster recovery facilities and adhere strictly to national data security regulations.",
+        "evidence": "the design of the DSR and module development will contain clear mitigation measures to address data security risks"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Gender disparities in digital skills and financial literacy could restrict female access to G2P digital payments and DSR registration.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Design simplified user interfaces and local language audio guides, deploy female frontline staff, and provide targeted financial literacy training.",
+        "evidence": "Women report limited digital and financial access, which constrains their access to G2P payments"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Lack of administrative and MIS integration across the four DSS livelihoods programs prevents seamless case management and beneficiary graduation.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Harmonize the DSS livelihoods program MIS, establish interoperability with the DSR, and dedicate specialized PIU staff to program coordination.",
+        "evidence": "there is limited integration within these programs in terms of administrative systems, data/information, and resource management."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Sub-grants transferred directly to local social club bank accounts risk delayed expenditure reporting or fiduciary mismanagement.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate official club enlistment, require dual-signatory bank accounts, enforce monthly countersigned SOE reporting, and record funds as advances until reconciled.",
+        "evidence": "Grants to social clubs under Subcomponent 2.2 will be financed through the DSS\u2019s DA and transferred directly"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Severe seasonal flooding in disaster-prone Upazilas could prevent program participants from attending in-person livelihoods training.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate e-learning options into the training curriculum and disburse training stipends via direct electronic fund transfers.",
+        "evidence": "risk of intense floodings in the region, which may restrict in-person attendance"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Frontline social service officers and field cadres may lack the operational capacity to manage modernized DSR workflows and business processes.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deliver continuous central and field-level training programs to ensure at least one fully trained personnel and active DSR access point in every Upazila.",
+        "evidence": "Each Upazila in the country has at least one DSS personnel who has been trained on the updated business processes"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Failure to establish implementation units, steering committees, or the Project Operations Manual within strict legal deadlines could delay effectiveness.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Assign experienced staff from predecessor projects, advance-draft the POM, and systematically track legal covenant timeline compliance.",
+        "evidence": "establish within six (6) months of the Effective Date... the Project Implementation Unit (PIU) at the DSS"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Delays or reluctance by partnering line ministries in executing MoUs could impede onboarding non-DSS cash transfer programs to the DSR.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Leverage the Cabinet Division-led DSR Steering Committee to facilitate inter-agency dialogue and resolve policy disputes swiftly.",
+        "evidence": "MoWCA is expected to sign a memorandum of understanding (MoU) with the FD and DSS"
+      },
+      {
+        "risk_id": "R16",
+        "description": "Ad hoc training quality and limited market relevance in existing livelihoods schemes risk failing to secure long-term employment for beneficiaries.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Overhaul training curricula with technical, life skills, and financial modules, conduct market assessment studies, and offer post-training mentorship.",
+        "evidence": "training components, they are often ad hoc and limited in coverage and depth"
+      },
+      {
+        "risk_id": "R17",
+        "description": "Procedural delays in finalizing CERC manuals and emergency action plans could hinder rapid disbursement during a major crisis.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Draft and formally adopt the CERC Manual and Emergency Action Plan early during standard project implementation.",
+        "evidence": "adopted the CERC Manual and Emergency Action Plan, in form and substance acceptable to the Association."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Foreign exchange reserve volatility and currency depreciation could exacerbate national macroeconomic vulnerability and import capacity.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain close alignment with international development partner financing and leverage public financial management strengthening efforts.",
+        "evidence": "FX reserves stood at US$19.9 billion (approximately 3.3 months of prospective imports)."
+      }
+    ]
+  },
+  "parse_error": null
+}
