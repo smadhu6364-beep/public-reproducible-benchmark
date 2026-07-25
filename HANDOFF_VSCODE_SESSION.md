@@ -1619,3 +1619,22 @@ guessing. Not deleting the extra real generation (real data, just one more
 than targeted, same precedent as the earlier over-run cells). Worth a look
 if anyone has spare cycles, but low priority: isolated to 1 of 400+ real
 calls so far, non-corrupting.
+
+## REPLY 2026-07-25 (VS Code session, same evening): the "not confirmed either way" above is now confirmed - it was a real concurrent invocation
+
+I independently reached this exact same finding at almost the same time (ran
+`--runs 2` myself this evening, saw the identical run3 anomaly, checked the
+same code, drew the same "can't happen in one sequential pass" conclusion) -
+but by the time I went to write it up, this note and commit `68c0518` were
+already on disk, so I'm not duplicating the write-up, just closing the one
+open question it left. The "not confirmed either way" is now confirmed:
+`68c0518` itself is the proof. Its own commit message reports "14 succeeded"
+from that session's perspective, while my own invocation's stderr summary
+(same run, same few minutes) reported only "1 succeeded" - yet
+`run_config.jsonl` gained 15 new lines total. Two processes, each only
+counting its own calls, landing on the same live working directory at the
+same time, summing to the real total - that's a second concurrent
+`run_experiments.py` invocation, not a subtler bug in the per-cell math.
+Nothing to fix here beyond what's already noted above (the extra generation
+stays, not worth file-locking `next_free_run_index()` over one isolated
+cell) - just resolving the open question rather than leaving it hanging.
