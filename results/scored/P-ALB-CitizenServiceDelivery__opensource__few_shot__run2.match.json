@@ -1,0 +1,184 @@
+{
+  "run_file": "P-ALB-CitizenServiceDelivery__opensource__few_shot__run2.json",
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R04",
+      "similarity": 0.581,
+      "gen_category": "organizational",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R01",
+      "similarity": 0.568,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R02",
+      "similarity": 0.54,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate capacity of the Ministry of Innovation and Public Administration to implement the project may hinder project progress.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide training and capacity building for the Ministry of Innovation and Public Administration, and ensure close supervision and support from the World Bank.",
+      "evidence": "Insufficient institutional and implementation capacity of the Ministry of State for Innovation itself has implications for project implementation and longer-term sustainability."
+    },
+    {
+      "risk_id": "R02",
+      "description": "High procurement risk due to limited experience with World Bank procurement guidelines may lead to delays or non-compliance.",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Provide procurement training and guidance to the Project Management Unit, and conduct regular procurement supervision and review.",
+      "evidence": "Procurement risk rating is high."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Inadequate financial management capacity may lead to non-compliance with World Bank financial management requirements.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide financial management training and guidance to the Project Management Unit, and conduct regular financial management supervision and review.",
+      "evidence": "The overall financial management risk is rated as Substantial."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Limited experience with results-based lending may hinder the Government of Albania's ability to achieve the desired outcomes.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide training and guidance on results-based lending to the Government of Albania, and ensure close supervision and support from the World Bank.",
+      "evidence": "Limited experience with Results-Based Lending: GoA has limited experience with results-based lending."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Inadequate coordination among different departments and agencies may lead to delays or non-compliance.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a Project Steering Committee to oversee project management and ensure coordination among participating institutions.",
+      "evidence": "Coordination among the different departments and agencies involved in the Project."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate monitoring and evaluation systems may hinder the ability to track project progress and achieve the desired outcomes.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide technical assistance to strengthen the monitoring and evaluation systems, and ensure regular monitoring and evaluation of project activities.",
+      "evidence": "Need to strengthen M&E systems and ensuring monitoring of DLI compliance."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Environmental and social risks associated with the construction of the Citizen Service Center may not be adequately mitigated.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Ensure that the Environmental Management Plan is implemented and monitored, and that the construction of the Citizen Service Center is carried out in accordance with World Bank environmental and social safeguards policies.",
+      "evidence": "Operational policy OP 4.01 is triggered and the project categorized as a World Bank Category B."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate grievance redress mechanisms may lead to dissatisfaction among citizens and businesses.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish a Grievance Redress Mechanism that is accessible and effective, and ensure that citizens and businesses are aware of the mechanism and can provide feedback.",
+      "evidence": "A Grievance Redress Mechanism (GRM) will be established following the World Bank policy."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Inadequate communication and outreach to citizens and businesses may lead to lack of awareness and participation in the project.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop a communication strategy that includes outreach and awareness-raising activities, and ensure that citizens and businesses are informed about the project and its benefits.",
+      "evidence": "Effective communication is critical to the success of this reform program and will improve citizens\u2019 trust and perception of government responsiveness."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Inadequate capacity of the Project Management Unit to manage the project may hinder project progress.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide training and capacity building for the Project Management Unit, and ensure close supervision and support from the World Bank.",
+      "evidence": "The Project Management Unit (PMU) will coordinate with all other key participating agencies and support project implementation."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Institutional capacity poses challenges to delivering the reform effort, despite very high leadership commitment and fast-paced GoA initiation of reforms.",
+      "category": "organizational",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project Preparation Facility (PPF) is designed to assist capacity building for the implementing agency; the TA part of the loan continues building capacity to deliver, addressing the most pressing capacity needs."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Fiduciary risks related to the new form of financial instrument used in Albania.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the fiduciary risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Technical design risk, named alongside the fiduciary risk as being addressed by the same TA support (fiduciary and budget specialists in the PMU); not separately elaborated beyond this.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the technical design risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Stakeholder risks arising from inter-agency coordination.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by strong emphasis on coordination mechanisms in the design of the operation."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bureaucratic resistance to enhanced transparency and simplification of administrative processes.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated in part through high-level leadership and engagement, and through citizen feedback arrangements that help pinpoint poor performance and corruption."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Political cycle risk from elections coming up in 2017, which could disrupt reform continuity and government commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by making early progress in showing results and ensuring a broad constituency of support for the project's objectives and activities among the leadership of participating institutions and service users."
+    }
+  ]
+}

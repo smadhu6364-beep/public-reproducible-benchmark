@@ -1,0 +1,108 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:05:25.033128+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insecurity and conflict may disrupt project activities and affect beneficiary access\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Implement flexible project design, partner with local organizations, and maintain regular communication with stakeholders\",\n      \"evidence\": \"Section I.A.2, 'Project Strategic Context'\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Climate change and natural disasters may exacerbate poverty and vulnerability\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate resilience measures into project design, support climate-smart agricultural practices, and provide training on climate change adaptation\",\n      \"evidence\": \"Section I.A.3, 'Project Strategic Context'\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited access to financial services may hinder project effectiveness\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Partner with microfinance institutions, provide financial literacy training, and support the development of mobile payment systems\",\n      \"evidence\": \"Section II.D, 'Project Components'\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate targeting and selection of beneficiaries may reduce project impact\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Use the Unique Social Registry to identify and select beneficiaries, and implement a robust monitoring and evaluation system\",\n      \"evidence\": \"Section II.D, 'Project Components'\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Insufficient capacity and resources may hinder project implementation\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building support to project staff, partner with local organizations, and ensure adequate resource allocation\",\n      \"evidence\": \"Section III.A, 'Institutional and Implementation Arrangements'\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Corruption and fraud may compromise project integrity\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust financial management and procurement systems, conduct regular audits, and establish a grievance redress mechanism\",\n      \"evidence\": \"Section IV.B, 'Fiduciary'\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Social and cultural barriers may limit project effectiveness\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct stakeholder analysis, engage with local communities, and integrate social and cultural considerations into project design\",\n      \"evidence\": \"Section II.C, 'Project Beneficiaries'\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Limited coordination and collaboration among stakeholders may hinder project impact\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a coordination mechanism, facilitate regular stakeholder meetings, and promote information sharing and collaboration\",\n      \"evidence\": \"Section II.E, 'Role of Partners'\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Environmental and social risks may arise from project activities\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct environmental and social impact assessments, develop mitigation measures, and establish a grievance redress mechanism\",\n      \"evidence\": \"Section IV.C, 'Environmental, Social and Legal Operational Policies'\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Delays in project implementation may reduce impact and increase costs\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed project schedule, monitor progress regularly, and identify and mitigate potential delays\",\n      \"evidence\": \"Section III.C, 'Disbursement Arrangements'\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insecurity and conflict may disrupt project activities and affect beneficiary access",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Implement flexible project design, partner with local organizations, and maintain regular communication with stakeholders",
+        "evidence": "Section I.A.2, 'Project Strategic Context'"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Climate change and natural disasters may exacerbate poverty and vulnerability",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate resilience measures into project design, support climate-smart agricultural practices, and provide training on climate change adaptation",
+        "evidence": "Section I.A.3, 'Project Strategic Context'"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited access to financial services may hinder project effectiveness",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Partner with microfinance institutions, provide financial literacy training, and support the development of mobile payment systems",
+        "evidence": "Section II.D, 'Project Components'"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate targeting and selection of beneficiaries may reduce project impact",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Use the Unique Social Registry to identify and select beneficiaries, and implement a robust monitoring and evaluation system",
+        "evidence": "Section II.D, 'Project Components'"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Insufficient capacity and resources may hinder project implementation",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building support to project staff, partner with local organizations, and ensure adequate resource allocation",
+        "evidence": "Section III.A, 'Institutional and Implementation Arrangements'"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Corruption and fraud may compromise project integrity",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implement robust financial management and procurement systems, conduct regular audits, and establish a grievance redress mechanism",
+        "evidence": "Section IV.B, 'Fiduciary'"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Social and cultural barriers may limit project effectiveness",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct stakeholder analysis, engage with local communities, and integrate social and cultural considerations into project design",
+        "evidence": "Section II.C, 'Project Beneficiaries'"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Limited coordination and collaboration among stakeholders may hinder project impact",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a coordination mechanism, facilitate regular stakeholder meetings, and promote information sharing and collaboration",
+        "evidence": "Section II.E, 'Role of Partners'"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Environmental and social risks may arise from project activities",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Conduct environmental and social impact assessments, develop mitigation measures, and establish a grievance redress mechanism",
+        "evidence": "Section IV.C, 'Environmental, Social and Legal Operational Policies'"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Delays in project implementation may reduce impact and increase costs",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a detailed project schedule, monitor progress regularly, and identify and mitigate potential delays",
+        "evidence": "Section III.C, 'Disbursement Arrangements'"
+      }
+    ]
+  },
+  "parse_error": null
+}

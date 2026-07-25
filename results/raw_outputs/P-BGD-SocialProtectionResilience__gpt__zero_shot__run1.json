@@ -1,0 +1,162 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:09:28.167208+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Political transition and mass uprising create macro\u2011economic uncertainty that could undermine project financing and implementation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain close liaison with the interim government; embed flexible financing clauses and monitor macro\u2011economic indicators quarterly.\",\n      \"evidence\": \"Strategic Context: interim government sworn in after mass uprising; downside risks and uncertainty remain (p.1).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High inflation erodes real value of cash\u2011transfer benefits, risking inadequate support for beneficiaries.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the benefit\u2011adequacy framework with index\u2011linking to CPI or HIES data; adjust transfers annually.\",\n      \"evidence\": \"Strategic Context: inflation at 9.9% Jan\u202f2025; benefit adequacy risks noted (p.4\u20115).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited foreign\u2011exchange reserves increase vulnerability to currency shocks that could affect disbursement timing.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Secure multi\u2011year drawdown schedule; hold a portion of IDA funds in local currency; monitor FX reserves monthly.\",\n      \"evidence\": \"Strategic Context: FX reserves at US$19.9\u202fbn (~3.3\u202fmonths imports) (p.1).\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delay in establishing the Dynamic Social Registry (DSR) units, steering committee and guidelines could stall rollout.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Set firm milestones in the Project Operations Manual; conduct monthly progress reviews; allocate dedicated staff with clear TORs.\",\n      \"evidence\": \"Legal Covenants: requirement to establish DSR units and steering committee within 2\u20116\u202fmonths (p.6\u20117).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Poor data quality from legacy National Household Database may lead to inaccurate targeting.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct data\u2011validation workshops; integrate field verification; use proxy\u2011means testing calibrated to recent HIES data.\",\n      \"evidence\": \"Sectoral Context: past NHD pilot failed due to incomplete/outdated data (p.5\u20116).\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Insufficient staffing and capacity in DSS and FD PIUs to manage complex MIS and DSR operations.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit certified FM and technical staff; provide intensive training; embed performance\u2011based incentives.\",\n      \"evidence\": \"Fiduciary: need for additional capacity, training, and close monitoring (p.21).\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Targeting errors (exclusion/inclusion) may persist despite DSR, reducing program effectiveness.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply periodic benefit\u2011adequacy and targeting audits; refine proxy\u2011means thresholds; use grievance redress data for correction.\",\n      \"evidence\": \"Sectoral Context: inclusion errors remain high; need for digitized tools (p.7\u20118).\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Climate\u2011induced floods or cyclones could disrupt beneficiary access and MIS operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Leverage disaster\u2011resilient data centers; pre\u2011position mobile cash\u2011out points; integrate climate\u2011risk layers into DSR targeting.\",\n      \"evidence\": \"Strategic Context: Bangladesh ranks 7th in Climate Risk Index; floods affect >1\u202fmillion annually (p.2\u20113).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Physical damage to servers despite disaster\u2011recovery centers could interrupt MIS and cash\u2011transfer processing.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain off\u2011site backups; conduct quarterly DR drills; ensure redundant power and connectivity at data centers.\",\n      \"evidence\": \"Project Description: MIS housed in National Data Centers with disaster recovery (p.16\u201117).\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Complex financing and procurement arrangements increase risk of misallocation or audit findings.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement iBAS++ for transparent budgeting; conduct annual internal audits; train staff on World Bank procurement rules.\",\n      \"evidence\": \"Fiduciary: detailed financial management and audit arrangements (p.21\u201124).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Failure to meet Performance\u2011Based Conditions (PBCs) could delay disbursements and affect project timelines.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a PBC tracking unit; conduct quarterly verification; build buffer funds to cover interim cash\u2011flow needs.\",\n      \"evidence\": \"Key Risks & PBC tables: disbursement linked to achievement of targets (p.24\u201130).\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Ineffective Grievance Redress Mechanism may lead to beneficiary dissatisfaction and social unrest.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen GRM with mobile hotlines; set SLA for response; publish quarterly complaint resolution reports.\",\n      \"evidence\": \"GRM section and stakeholder engagement plan (p.24\u201125).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Gender gaps in digital literacy may limit women\u2019s ability to enroll via the DSR and receive digital payments.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Design gender\u2011responsive interfaces; provide community\u2011based digital literacy sessions; offer assisted enrollment points for women.\",\n      \"evidence\": \"Gender analysis: women less likely to access digital payments; project plans gender\u2011responsive DSR (p.42\u201143).\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Coordination challenges among DSS, FD, DWA, MoWCA may cause duplication or gaps in service delivery.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Create a high\u2011level inter\u2011ministerial steering committee with clear terms of reference; hold monthly coordination meetings.\",\n      \"evidence\": \"Implementation Arrangements: multiple agencies and MoUs required (p.15\u201116).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Contingent Emergency Response Component (CERC) manual may not be ready when an emergency occurs, delaying aid.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Finalize CERC manual within six months of effective date; conduct simulation exercises annually.\",\n      \"evidence\": \"Legal Covenants: CERC manual to be prepared and adopted (p.7\u20118).\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Reliance on external partners (EU, GIZ) for complementary interventions could be affected by their own funding cycles.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Formalize joint work plans with clear deliverables; secure alternative funding sources; monitor partner timelines quarterly.\",\n      \"evidence\": \"Role of Partners: EU and GIZ provide complementary interventions (p.15\u201116).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Political transition and mass uprising create macro\u2011economic uncertainty that could undermine project financing and implementation.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Maintain close liaison with the interim government; embed flexible financing clauses and monitor macro\u2011economic indicators quarterly.",
+        "evidence": "Strategic Context: interim government sworn in after mass uprising; downside risks and uncertainty remain (p.1)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "High inflation erodes real value of cash\u2011transfer benefits, risking inadequate support for beneficiaries.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement the benefit\u2011adequacy framework with index\u2011linking to CPI or HIES data; adjust transfers annually.",
+        "evidence": "Strategic Context: inflation at 9.9% Jan\u202f2025; benefit adequacy risks noted (p.4\u20115)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited foreign\u2011exchange reserves increase vulnerability to currency shocks that could affect disbursement timing.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Secure multi\u2011year drawdown schedule; hold a portion of IDA funds in local currency; monitor FX reserves monthly.",
+        "evidence": "Strategic Context: FX reserves at US$19.9\u202fbn (~3.3\u202fmonths imports) (p.1)."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delay in establishing the Dynamic Social Registry (DSR) units, steering committee and guidelines could stall rollout.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Set firm milestones in the Project Operations Manual; conduct monthly progress reviews; allocate dedicated staff with clear TORs.",
+        "evidence": "Legal Covenants: requirement to establish DSR units and steering committee within 2\u20116\u202fmonths (p.6\u20117)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Poor data quality from legacy National Household Database may lead to inaccurate targeting.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct data\u2011validation workshops; integrate field verification; use proxy\u2011means testing calibrated to recent HIES data.",
+        "evidence": "Sectoral Context: past NHD pilot failed due to incomplete/outdated data (p.5\u20116)."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Insufficient staffing and capacity in DSS and FD PIUs to manage complex MIS and DSR operations.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit certified FM and technical staff; provide intensive training; embed performance\u2011based incentives.",
+        "evidence": "Fiduciary: need for additional capacity, training, and close monitoring (p.21)."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Targeting errors (exclusion/inclusion) may persist despite DSR, reducing program effectiveness.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply periodic benefit\u2011adequacy and targeting audits; refine proxy\u2011means thresholds; use grievance redress data for correction.",
+        "evidence": "Sectoral Context: inclusion errors remain high; need for digitized tools (p.7\u20118)."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Climate\u2011induced floods or cyclones could disrupt beneficiary access and MIS operations.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Leverage disaster\u2011resilient data centers; pre\u2011position mobile cash\u2011out points; integrate climate\u2011risk layers into DSR targeting.",
+        "evidence": "Strategic Context: Bangladesh ranks 7th in Climate Risk Index; floods affect >1\u202fmillion annually (p.2\u20113)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Physical damage to servers despite disaster\u2011recovery centers could interrupt MIS and cash\u2011transfer processing.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Maintain off\u2011site backups; conduct quarterly DR drills; ensure redundant power and connectivity at data centers.",
+        "evidence": "Project Description: MIS housed in National Data Centers with disaster recovery (p.16\u201117)."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Complex financing and procurement arrangements increase risk of misallocation or audit findings.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement iBAS++ for transparent budgeting; conduct annual internal audits; train staff on World Bank procurement rules.",
+        "evidence": "Fiduciary: detailed financial management and audit arrangements (p.21\u201124)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Failure to meet Performance\u2011Based Conditions (PBCs) could delay disbursements and affect project timelines.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a PBC tracking unit; conduct quarterly verification; build buffer funds to cover interim cash\u2011flow needs.",
+        "evidence": "Key Risks & PBC tables: disbursement linked to achievement of targets (p.24\u201130)."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Ineffective Grievance Redress Mechanism may lead to beneficiary dissatisfaction and social unrest.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen GRM with mobile hotlines; set SLA for response; publish quarterly complaint resolution reports.",
+        "evidence": "GRM section and stakeholder engagement plan (p.24\u201125)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Gender gaps in digital literacy may limit women\u2019s ability to enroll via the DSR and receive digital payments.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Design gender\u2011responsive interfaces; provide community\u2011based digital literacy sessions; offer assisted enrollment points for women.",
+        "evidence": "Gender analysis: women less likely to access digital payments; project plans gender\u2011responsive DSR (p.42\u201143)."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Coordination challenges among DSS, FD, DWA, MoWCA may cause duplication or gaps in service delivery.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Create a high\u2011level inter\u2011ministerial steering committee with clear terms of reference; hold monthly coordination meetings.",
+        "evidence": "Implementation Arrangements: multiple agencies and MoUs required (p.15\u201116)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Contingent Emergency Response Component (CERC) manual may not be ready when an emergency occurs, delaying aid.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Finalize CERC manual within six months of effective date; conduct simulation exercises annually.",
+        "evidence": "Legal Covenants: CERC manual to be prepared and adopted (p.7\u20118)."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Reliance on external partners (EU, GIZ) for complementary interventions could be affected by their own funding cycles.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Formalize joint work plans with clear deliverables; secure alternative funding sources; monitor partner timelines quarterly.",
+        "evidence": "Role of Partners: EU and GIZ provide complementary interventions (p.15\u201116)."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -103,10 +103,10 @@ class TestNoUnguardedRelativeToRepoRoot(unittest.TestCase):
         # _openai_compatible_call/call_claude/call_gpt/call_opensource
         # docstrings + the --batch-inapplicable note) - same constants, same
         # justification, just further down the file.
-        ("run_experiments.py", 913),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
-        ("run_experiments.py", 1137),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1240),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1448),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("run_experiments.py", 916),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("run_experiments.py", 1140),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1243),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1451),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
         ("validate_threshold.py", 191),  # PILOT_PATH -> fixed constant, no CLI override
     }
 

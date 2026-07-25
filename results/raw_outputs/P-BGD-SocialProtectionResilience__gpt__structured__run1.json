@@ -1,0 +1,153 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:17:48.966164+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Project framing  \n- Objective: Expand coverage and strengthen delivery of Bangladesh\u2019s national social protection system for the poor.  \n- Scope & Components: (1) Design, establishment and rollout of a Dynamic Social Registry (DSR); (2) Strengthening cash\u2011transfer programmes; (3) Expanding livelihoods support; (4) Contingent Emergency Response (zero\u2011budget).  \n- Delivery model: Implemented by the Department of Social Services (DSS) PIU, coordinated with the Finance Division (FD), Social Protection Budget Management Unit (SPBMU) and other line ministries; performance\u2011based conditions (PBCs) guide disbursements.  \n- Timeline: 5\u2011year implementation, expected approval 26\u2011Mar\u20112025, closing 30\u2011Jun\u20112030.  \n- Budget: Total US$4,048\u202fmillion (IDA credit US$200\u202fmillion, counterpart US$3,848\u202fmillion).  \n- Key stakeholders: GoB (Ministries of Finance, Social Welfare, Women & Children Affairs), DSS (implementing agency), FD/SPBMU, DSR Steering Committee, development partners (EU, GIZ), World Bank.  \n- External dependencies: National ID (NID) system, G2P payment platform, existing ISPMIS, National Data Centres, climate\u2011vulnerability data, procurement & disbursement mechanisms.\n\nStep 2 \u2013 Category sweep (candidate risks with supporting text)  \nTechnical:  \n\u202f\u202f\u2022 DSR implementation may face delays due to past registry failures (incomplete data, MIS lag, funding cuts).  \n\u202f\u202f\u2022 System downtime risk despite disaster\u2011recovery centres.  \n\u202f\u202f\u2022 Integration of DSR with existing ISPMIS and other databases may be complex.  \n\nFinancial:  \n\u202f\u202f\u2022 Currency/FX risk (FX reserves only\u202f\u2248\u202f3.3\u202fmonths of imports).  \n\u202f\u202f\u2022 Disbursement risk if PBC targets are not met.  \n\nSchedule:  \n\u202f\u202f\u2022 Delays in establishing PIU, DSR coordination unit and steering committee (legal covenants require set\u2011up within 2\u20116\u202fmonths).  \n\u202f\u202f\u2022 Phase\u2011wise DSR rollout may be delayed, affecting coverage.  \n\nStakeholder:  \n\u202f\u202f\u2022 Coordination among multiple ministries and partners may be weak.  \n\u202f\u202f\u2022 Reliance on EU and GIZ complementary interventions could cause mis\u2011alignment.  \n\nPolitical/Regulatory:  \n\u202f\u202f\u2022 Recent political transition (interim government Aug\u202f2024) creates uncertainty.  \n\u202f\u202f\u2022 Non\u2011compliance with legal covenants (establishment of units) could halt the project.  \n\nEnvironmental:  \n\u202f\u202f\u2022 High climate\u2011change exposure (floods, cyclones) could disrupt field activities and beneficiary registration.  \n\nOrganizational:  \n\u202f\u202f\u2022 Insufficient capacity/training of DSS staff to operate the DSR.  \n\u202f\u202f\u2022 Complex fiduciary arrangements may weaken internal controls.  \n\nExternal:  \n\u202f\u202f\u2022 Elevated inflation (9.9\u202f% Jan\u202f2025) may erode benefit adequacy and increase costs.  \n\nStep 3 \u2013 Evidence filter  \nAll listed risks are directly quoted or paraphrased from the appraisal document; none are removed.\n\nStep 4 \u2013 Assessment & mitigation  \nEach risk is assigned likelihood (1\u202f=\u202frare,\u202f5\u202f=\u202falmost certain) and impact (1\u202f=\u202fminor,\u202f5\u202f=\u202fcatastrophic) with a brief justification and a concrete mitigation action.\n\nStep 5 \u2013 Consolidation  \nNo duplicate risks were identified; the final register contains 15 material risks.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"DSR design and rollout may be delayed because past registry attempts failed due to poor data quality and weak institutional mandate.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a comprehensive data audit, secure dedicated funding for data cleaning, and establish a clear governance structure with strict timelines.\",\n      \"evidence\": \"Past attempts at social registry did not materialize due to incomplete and outdated data, lag in MIS development, early cuts in funding, and lack of institutional mandate.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"MIS and data platforms could experience downtime despite disaster\u2011recovery centres.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement regular disaster\u2011recovery testing, maintain backup power supplies, and enforce service\u2011level agreements with the data\u2011center providers.\",\n      \"evidence\": \"All MIS/data platforms will be housed inside the National Data Centers... disaster recovery centers will ensure that the MIS shall continue running uninterrupted even if the main servers are damaged.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Integrating the DSR with existing ISPMIS and other beneficiary databases may encounter technical difficulties.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed integration roadmap, pilot the interface in selected Upazilas, and allocate technical assistance for system testing.\",\n      \"evidence\": \"The final design will leverage the existing Integrated Social Protection MIS (ISPMIS) and will support linkages between existing cash transfer beneficiary databases.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Currency and foreign\u2011exchange fluctuations could increase project costs in local currency.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain an FX buffer, use hedging instruments where feasible, and regularly review the budget against exchange\u2011rate movements.\",\n      \"evidence\": \"FX reserves stood at US$19.9\u202fbillion (approximately 3.3 months of prospective imports).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Financing may be withheld if performance\u2011based condition targets are not achieved.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen monitoring systems, provide early\u2011warning dashboards, and deliver capacity\u2011building to ensure timely achievement of PBC targets.\",\n      \"evidence\": \"Financing would be disbursed against achievement of PBCs... If targets not met, funds not released.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Delay in establishing the PIU, DSR coordination unit and steering committee as required by legal covenants.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Assign senior officials with clear accountability, track set\u2011up milestones weekly, and include covenant compliance clauses in contracts.\",\n      \"evidence\": \"Recipient shall establish within six months... DSR steering committee within two months... PIU will be set up at the DSS.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Phase\u2011wise rollout of the DSR may be slower than planned, reducing expected coverage gains.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Create a realistic rollout schedule with buffer periods, conduct parallel pilots, and allocate contingency funds for accelerated deployment if needed.\",\n      \"evidence\": \"Phase\u2011wise rollout... first phase four of the largest life\u2011cycle\u2011based cash transfer programs have been selected to be onboarded.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Coordination gaps among ministries, FD, DSS and partners could impede implementation.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Formalise MoUs, establish a joint steering committee with regular meetings, and use a shared project\u2011management portal for transparency.\",\n      \"evidence\": \"Coordination committee will be established... implementation units... MoUs with key line ministries.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Dependence on EU and GIZ complementary activities may lead to mis\u2011alignment or duplication.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Align work plans through joint planning workshops and conduct periodic joint monitoring to ensure synergy.\",\n      \"evidence\": \"EU has been investing... GIZ has been working with the DSS... coordination will be critical to minimize duplication.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Recent political transition creates macro\u2011economic and policy uncertainty.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain continuous dialogue with all political factions, embed flexibility in work plans, and monitor policy changes closely.\",\n      \"evidence\": \"Interim government was sworn in on August 8, 2024... significant downside risks and uncertainty remain.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Failure to comply with legal covenants (e.g., establishing required units) could trigger project suspension.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a covenant\u2011compliance tracker, conduct quarterly reviews, and apply corrective actions promptly.\",\n      \"evidence\": \"Legal covenants require establishment of PIU, DSR coordination unit, DSR steering committee within specified timeframes.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Climate\u2011related floods or cyclones may disrupt field activities, data collection and beneficiary registration.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Utilise remote/online registration channels, pre\u2011position field kits in high\u2011risk districts, and design climate\u2011resilient field procedures.\",\n      \"evidence\": \"Bangladesh faces high level of vulnerability to climate change... floods affect more than 1\u202fmillion people annually.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Insufficient capacity of DSS staff to operate the DSR and follow new guidelines.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Deliver comprehensive training, certify staff, and provide ongoing technical support and refresher courses.\",\n      \"evidence\": \"Each Upazila in the country has at least one DSS personnel who has been trained on the updated business processes under the guidelines for DSS implementation of DSR.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Complex fiduciary arrangements may lead to weak internal controls and audit gaps.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Hire experienced FM consultants, strengthen iBAS integration, and conduct annual risk\u2011based internal audits by independent firms.\",\n      \"evidence\": \"From the FM perspective, the project design is complex... mitigation measures include hiring additional capacity, training, and close monitoring.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"High inflation could erode the real value of cash\u2011transfer benefits and increase project costs.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the benefit\u2011adequacy framework with index\u2011linking to CPI or HIES and review benefit levels annually or when inflation exceeds thresholds.\",\n      \"evidence\": \"Inflation remained elevated, reaching 9.9% in January 2025.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "DSR design and rollout may be delayed because past registry attempts failed due to poor data quality and weak institutional mandate.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct a comprehensive data audit, secure dedicated funding for data cleaning, and establish a clear governance structure with strict timelines.",
+        "evidence": "Past attempts at social registry did not materialize due to incomplete and outdated data, lag in MIS development, early cuts in funding, and lack of institutional mandate."
+      },
+      {
+        "risk_id": "R02",
+        "description": "MIS and data platforms could experience downtime despite disaster\u2011recovery centres.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement regular disaster\u2011recovery testing, maintain backup power supplies, and enforce service\u2011level agreements with the data\u2011center providers.",
+        "evidence": "All MIS/data platforms will be housed inside the National Data Centers... disaster recovery centers will ensure that the MIS shall continue running uninterrupted even if the main servers are damaged."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Integrating the DSR with existing ISPMIS and other beneficiary databases may encounter technical difficulties.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a detailed integration roadmap, pilot the interface in selected Upazilas, and allocate technical assistance for system testing.",
+        "evidence": "The final design will leverage the existing Integrated Social Protection MIS (ISPMIS) and will support linkages between existing cash transfer beneficiary databases."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Currency and foreign\u2011exchange fluctuations could increase project costs in local currency.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain an FX buffer, use hedging instruments where feasible, and regularly review the budget against exchange\u2011rate movements.",
+        "evidence": "FX reserves stood at US$19.9\u202fbillion (approximately 3.3 months of prospective imports)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Financing may be withheld if performance\u2011based condition targets are not achieved.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen monitoring systems, provide early\u2011warning dashboards, and deliver capacity\u2011building to ensure timely achievement of PBC targets.",
+        "evidence": "Financing would be disbursed against achievement of PBCs... If targets not met, funds not released."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Delay in establishing the PIU, DSR coordination unit and steering committee as required by legal covenants.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Assign senior officials with clear accountability, track set\u2011up milestones weekly, and include covenant compliance clauses in contracts.",
+        "evidence": "Recipient shall establish within six months... DSR steering committee within two months... PIU will be set up at the DSS."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Phase\u2011wise rollout of the DSR may be slower than planned, reducing expected coverage gains.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Create a realistic rollout schedule with buffer periods, conduct parallel pilots, and allocate contingency funds for accelerated deployment if needed.",
+        "evidence": "Phase\u2011wise rollout... first phase four of the largest life\u2011cycle\u2011based cash transfer programs have been selected to be onboarded."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Coordination gaps among ministries, FD, DSS and partners could impede implementation.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Formalise MoUs, establish a joint steering committee with regular meetings, and use a shared project\u2011management portal for transparency.",
+        "evidence": "Coordination committee will be established... implementation units... MoUs with key line ministries."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Dependence on EU and GIZ complementary activities may lead to mis\u2011alignment or duplication.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Align work plans through joint planning workshops and conduct periodic joint monitoring to ensure synergy.",
+        "evidence": "EU has been investing... GIZ has been working with the DSS... coordination will be critical to minimize duplication."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Recent political transition creates macro\u2011economic and policy uncertainty.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Maintain continuous dialogue with all political factions, embed flexibility in work plans, and monitor policy changes closely.",
+        "evidence": "Interim government was sworn in on August 8, 2024... significant downside risks and uncertainty remain."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Failure to comply with legal covenants (e.g., establishing required units) could trigger project suspension.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Implement a covenant\u2011compliance tracker, conduct quarterly reviews, and apply corrective actions promptly.",
+        "evidence": "Legal covenants require establishment of PIU, DSR coordination unit, DSR steering committee within specified timeframes."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Climate\u2011related floods or cyclones may disrupt field activities, data collection and beneficiary registration.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Utilise remote/online registration channels, pre\u2011position field kits in high\u2011risk districts, and design climate\u2011resilient field procedures.",
+        "evidence": "Bangladesh faces high level of vulnerability to climate change... floods affect more than 1\u202fmillion people annually."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Insufficient capacity of DSS staff to operate the DSR and follow new guidelines.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deliver comprehensive training, certify staff, and provide ongoing technical support and refresher courses.",
+        "evidence": "Each Upazila in the country has at least one DSS personnel who has been trained on the updated business processes under the guidelines for DSS implementation of DSR."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Complex fiduciary arrangements may lead to weak internal controls and audit gaps.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Hire experienced FM consultants, strengthen iBAS integration, and conduct annual risk\u2011based internal audits by independent firms.",
+        "evidence": "From the FM perspective, the project design is complex... mitigation measures include hiring additional capacity, training, and close monitoring."
+      },
+      {
+        "risk_id": "R15",
+        "description": "High inflation could erode the real value of cash\u2011transfer benefits and increase project costs.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement the benefit\u2011adequacy framework with index\u2011linking to CPI or HIES and review benefit levels annually or when inflation exceeds thresholds.",
+        "evidence": "Inflation remained elevated, reaching 9.9% in January 2025."
+      }
+    ]
+  },
+  "parse_error": null
+}

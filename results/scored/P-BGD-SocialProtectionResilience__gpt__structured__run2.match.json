@@ -1,0 +1,211 @@
+{
+  "run_file": "P-BGD-SocialProtectionResilience__gpt__structured__run2.json",
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "gpt",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.518,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R03",
+      "similarity": 0.472,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R02",
+      "similarity": 0.459,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delay in designing and rolling out the Dynamic Social Registry (DSR) could postpone beneficiary targeting for all components.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Appoint a dedicated DSR technical lead, adopt a detailed implementation schedule with monthly milestones, and conduct quarterly progress reviews.",
+      "evidence": "The circular proposes a phase\u2011wise rollout, with the first phase onboarding four major cash transfer programs."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Data\u2011security breach in the DSR could compromise personal information and erode beneficiary trust.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement encryption, role\u2011based access controls, regular security audits, and staff training on data protection compliance.",
+      "evidence": "GoB will adhere to national data security regulations; the DSR design will contain clear mitigation measures to address data security risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Complex fiduciary arrangements may lead to financial mis\u2011management or audit findings.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Hire certified financial\u2011management consultants, establish a robust FM unit, and conduct bi\u2011monthly internal audits.",
+      "evidence": "From the FM perspective, the project design is complex due to the intricacy of activity selection and various IAs and finances."
+    },
+    {
+      "risk_id": "R04",
+      "description": "IDA funds cannot cover land, vehicle procurement, or taxes >15%; GoB may lack timely counterpart financing.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Secure GoB budget lines for land, vehicle, and tax costs early, and monitor counterpart funding commitments.",
+      "evidence": "World Bank financing cannot apply to land, vehicle procurement, or taxes exceeding 15%; these must be funded exclusively by GoB."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Failure to establish the Project Implementation Unit (PIU) and adopt the Project Operations Manual (POM) within six months.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Accelerate recruitment of PIU staff, set up a deadline\u2011tracking tool, and assign senior oversight to ensure six\u2011month deadline met.",
+      "evidence": "The Recipient shall establish the PIU and adopt a Project Operations Manual within six months of the Effective Date."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Delays in the phase\u2011wise DSR rollout and onboarding of cash\u2011transfer programmes could reduce early\u2011year coverage gains.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Define clear phase\u2011wise rollout milestones, pilot the DSR in selected Upazilas, and allocate contingency resources for onboarding delays.",
+      "evidence": "Guidelines for Phase 1 implementation of the DSR are approved, specifying module development with focus on climate\u2011vulnerability."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Coordination gaps among ministries, development partners and DSS may cause duplication or implementation gaps.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Create a joint steering committee with a clear MoU, schedule monthly coordination meetings, and use a shared project dashboard.",
+      "evidence": "Coordination will be critical to minimize duplication and maximize synergies; multiple stakeholder consultations were organized through the Social Protection Development Partners\u2019 Coordination Platform."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Limited digital and financial access for women and persons with disabilities may hinder equitable DSR uptake.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop simplified DSR interfaces, provide audio guides, and conduct digital\u2011literacy workshops targeting women and PWDs.",
+      "evidence": "Women report limited digital and financial access, which constrains their access to G2P payments\u2014a key feature of the DSR."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Recent political transition and mass uprising create uncertainty that could affect policy continuity and resource allocation.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain engagement with all political parties, embed the project within national development plans, and design flexible implementation timelines.",
+      "evidence": "An interim government was sworn in on August 8, 2024, after the former Prime Minister resigned amid a mass uprising; significant downside risks remain."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Non\u2011compliance with legal covenants (e.g., establishing PIU, DSR Steering Committee) could trigger withdrawal conditions.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Establish a covenant compliance tracker, assign responsibility to a senior official, and report status to the World Bank quarterly.",
+      "evidence": "The Recipient shall establish within six months ... the PIU and within two months ... a DSR Steering Committee, all satisfactory to the Association."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Severe floods or cyclones may disrupt field activities, data collection and beneficiary access.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Pre\u2011position field kits, use remote data collection where possible, and integrate DSR for rapid beneficiary identification after disasters.",
+      "evidence": "A major flood in August 2024 affected over 3 million people, and recurring flooding affects more than 1 million people annually."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Damage to data\u2011center servers could interrupt MIS operations despite planned disaster\u2011recovery sites.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Regularly test disaster recovery procedures, maintain off\u2011site backups, and ensure redundant power and connectivity at data centres.",
+      "evidence": "Disaster recovery centers will ensure that the MIS shall continue running uninterrupted even if the main servers are damaged due to climate\u2011induced disasters."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Insufficient capacity and coordination within DSS may limit effective delivery of cash\u2011transfer and livelihoods components.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct a capacity\u2011gap analysis, deliver targeted training, and implement staff\u2011retention incentives.",
+      "evidence": "The DSS has built a strong reputation for modernizing its cash transfer programs. However, there is scope for improved capacities and institutional coordination."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Projected slowdown in GDP growth and high inflation could reduce fiscal space for benefit adequacy adjustments.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Link benefit\u2011adequacy reviews to inflation indices, build fiscal buffers, and monitor macro indicators to adjust program design as needed.",
+      "evidence": "Real GDP growth is projected to decline in FY25; inflation remained elevated, reaching 9.9% in January 2025."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Volatile foreign\u2011exchange reserves may increase costs of imported equipment and affect procurement timelines.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Prioritize local procurement, negotiate fixed\u2011price contracts, and maintain a foreign\u2011exchange reserve buffer.",
+      "evidence": "FX reserves stood at US$19.9\u202fbillion (approximately 3.3 months of prospective imports), stabilizing after budget support in December 2024."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is Substantial. Safety and security concerns persist, despite the priority placed by the interim government on law and order. The interim government is implementing critical reforms before holding elections; reaching a consensus on reforms and the announcement of the election date could heighten political tensions among political parties and the interim government.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated during implementation through continuous engagement with all relevant government and nongovernmental entities, and dialogue with other stakeholders."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is Substantial. Downside risks have increased, related to uncertainties in the political process and the security situation which affects the recovery of economic activities. The financial sector remains vulnerable with deviations from international regulatory and supervisory standards and weak corporate governance. Despite recent improvements, the balance of payments remained in deficit and FX reserves remained under pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The macroeconomic risks are partially mitigated by the GoB's reform program, supported by International Monetary Fund arrangements, as well as ongoing World Bank and other development partners' policy lending. Data show consistent budgetary and political commitment to spending on safety nets across regimes in Bangladesh, with strong stakeholder consensus on ensuring a ring-fenced core budget for social assistance and livelihoods programs for the poorest."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Fiduciary risk is rated Substantial due to the involvement of multiple implementing agencies (the DSS and FD), the complexity of activity selection, and intervention modalities. The project's residual procurement risk specifically is also rated Substantial, due to the complexity of procurement activities, multiagency coordination, and capacity limitations (para 56, part of the Fiduciary appraisal-summary discussion immediately preceding the Key Risks section).",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigation measures include hiring additional capacity, training, and close monitoring; considering satisfactory implementation of these measures, the residual fiduciary risk is assessed as Substantial and will be managed through proactive and continuous supervision and close dialogue with the GoB. Procurement-specific mitigation: hiring full-time procurement consultants for the DSS and FD; training on World Bank Procurement Regulations, STEP, and contract management; defining clear roles and streamlining approval processes; engaging IT procurement specialists and conducting early market assessments; using performance-based KPIs in contracts and including procurement consultants on bid evaluation committees; and establishing complaint registers at both agencies, with procurement not prior-reviewed by the Bank subject to regular fiduciary reviews and post-procurement review/audit by FAPAD."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project presents a low environmental risk and a moderate social risk, resulting in an overall moderate environmental and social (ES) risk classification. Minor environmental concerns relate to potential e-waste generation from IT equipment and increased energy use. Social risks include potential exclusion of beneficiaries, inadequate consultation, and challenges in reaching remote and marginalized communities, including those who lack IT knowledge; there is also the likelihood of sexual exploitation and abuse/sexual harassment (SEA/SH) cases given the cash transfer modalities of the project and the interaction between service providers and beneficiaries.",
+      "category": "environmental",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Waste management protocols and resource efficiency measures will prevent localized pollution. The project will establish a Digital Social Registry (DSR) to improve targeting and coverage, complemented by a robust outreach and monitoring program, and will include Stakeholder Engagement Plan provisions requiring community consultation and disclosure measures. The existing DSS grievance redress mechanism (GRM) will address complaints. An SEA/SH Action Plan will be developed including code of conduct, awareness raising, and GRM to address potential incidents. The project will partially rely on the borrower's ES management framework supplemented by gap-filling measures included in the POM."
+    }
+  ]
+}

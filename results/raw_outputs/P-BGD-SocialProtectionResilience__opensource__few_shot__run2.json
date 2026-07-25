@@ -1,0 +1,108 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:25:13.987458+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct periodic evidence-based review of benefit levels of social protection programs to ensure they are commensurate with the poverty line.\",\n      \"evidence\": \"Section II, B. Theory of Change and PDO Indicators\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inclusion and exclusion errors in social protection programs may lead to inefficient targeting and reduced impact.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce inclusion and exclusion errors.\",\n      \"evidence\": \"Section II, D. Project Components, Component 1\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited coverage and effectiveness of economic inclusion initiatives may hinder the self-reliance of poor communities.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen the DSS livelihoods programs and provide comprehensive and responsive livelihoods support to poor people, including youth, women, injured persons, and PWDs.\",\n      \"evidence\": \"Section II, D. Project Components, Component 3\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Climate change may exacerbate the vulnerability of poor and vulnerable populations, particularly women, the elderly, and PWDs.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Prioritize climate-vulnerable locations in the rollout of social protection programs and incorporate climate change adaptation measures into program design and delivery.\",\n      \"evidence\": \"Section I, B. Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate digital and financial access for women may constrain their ability to access social protection programs and benefits.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure women's participation in social protection programs through proactive outreach and strategic use of the DSR to identify and target beneficiaries.\",\n      \"evidence\": \"Section IV, B. Fiduciary, Gender\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Insufficient incentives for private provision of social protection services may lead to inadequate coverage and effectiveness.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide public financing for social protection programs and services to address market failures and ensure adequate coverage and effectiveness.\",\n      \"evidence\": \"Section III, A. Technical, Economic and Financial Analysis\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen the institutional capacity of the DSS and other implementing agencies through training, technical assistance, and capacity-building activities.\",\n      \"evidence\": \"Section III, A. Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate monitoring and evaluation systems may limit the ability to track progress and impact of social protection programs.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a robust monitoring and evaluation system to track progress and impact of social protection programs, including the use of intermediate indicators and performance-based conditions.\",\n      \"evidence\": \"Section III, B. Results Monitoring, Evaluation, and Verification Arrangements\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate grievance redress mechanisms may limit the ability of beneficiaries to access social protection programs and benefits.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish an efficient and responsive grievance redress mechanism to address beneficiary concerns and complaints.\",\n      \"evidence\": \"Section IV, B. Fiduciary, Citizen Engagement\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate financial management and accounting systems may limit the ability to track and manage program finances effectively.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a robust financial management and accounting system, including the use of integrated budgeting and accounting systems and regular auditing and reporting.\",\n      \"evidence\": \"Section IV, B. Fiduciary, Financial Management\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate benefit levels of social protection programs may not effectively protect incomes and ensure long-run welfare impacts against shocks, including those induced by climate change.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct periodic evidence-based review of benefit levels of social protection programs to ensure they are commensurate with the poverty line.",
+        "evidence": "Section II, B. Theory of Change and PDO Indicators"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inclusion and exclusion errors in social protection programs may lead to inefficient targeting and reduced impact.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement a Dynamic Social Registry (DSR) to improve targeting efficiency and reduce inclusion and exclusion errors.",
+        "evidence": "Section II, D. Project Components, Component 1"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited coverage and effectiveness of economic inclusion initiatives may hinder the self-reliance of poor communities.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen the DSS livelihoods programs and provide comprehensive and responsive livelihoods support to poor people, including youth, women, injured persons, and PWDs.",
+        "evidence": "Section II, D. Project Components, Component 3"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Climate change may exacerbate the vulnerability of poor and vulnerable populations, particularly women, the elderly, and PWDs.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Prioritize climate-vulnerable locations in the rollout of social protection programs and incorporate climate change adaptation measures into program design and delivery.",
+        "evidence": "Section I, B. Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate digital and financial access for women may constrain their ability to access social protection programs and benefits.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure women's participation in social protection programs through proactive outreach and strategic use of the DSR to identify and target beneficiaries.",
+        "evidence": "Section IV, B. Fiduciary, Gender"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Insufficient incentives for private provision of social protection services may lead to inadequate coverage and effectiveness.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide public financing for social protection programs and services to address market failures and ensure adequate coverage and effectiveness.",
+        "evidence": "Section III, A. Technical, Economic and Financial Analysis"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate institutional capacity and coordination may hinder the effective implementation of social protection programs.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Strengthen the institutional capacity of the DSS and other implementing agencies through training, technical assistance, and capacity-building activities.",
+        "evidence": "Section III, A. Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate monitoring and evaluation systems may limit the ability to track progress and impact of social protection programs.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a robust monitoring and evaluation system to track progress and impact of social protection programs, including the use of intermediate indicators and performance-based conditions.",
+        "evidence": "Section III, B. Results Monitoring, Evaluation, and Verification Arrangements"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate grievance redress mechanisms may limit the ability of beneficiaries to access social protection programs and benefits.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish an efficient and responsive grievance redress mechanism to address beneficiary concerns and complaints.",
+        "evidence": "Section IV, B. Fiduciary, Citizen Engagement"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate financial management and accounting systems may limit the ability to track and manage program finances effectively.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a robust financial management and accounting system, including the use of integrated budgeting and accounting systems and regular auditing and reporting.",
+        "evidence": "Section IV, B. Fiduciary, Financial Management"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,203 @@
+{
+  "run_file": "P-IND-ChhattisgarhAcceleratedLearning__gpt__zero_shot__run2.json",
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R04",
+      "similarity": 0.723,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R03",
+      "similarity": 0.466,
+      "gen_category": "environmental",
+      "gt_category": "organizational",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Extreme weather (droughts/floods) may force extensions of school summer breaks, reducing instructional days and delaying learning outcomes.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate buffer days in academic calendar, develop remote learning modules, and establish climate\u2011resilient school schedules.",
+      "evidence": "Section B.3: state is vulnerable to droughts and floods ... can force extensions of the annual school summer break and reduce the number of days for instruction."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient in\u2011service teacher training and shortage of subject\u2011specialist teachers could limit improvements in learning quality.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Roll out the structured TaRL multi\u2011year training, monitor completion rates, and recruit additional subject teachers with merit\u2011based hiring.",
+      "evidence": "Section 11: majority of teachers lack access to adequate in\u2011service training ... lack of subject teachers ... limited in\u2011service training support is resulting in poor quality of teaching\u2011learning interactions."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Over 84% of the education budget is spent on salaries, limiting funds for quality improvements and infrastructure upgrades.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Leverage results\u2011based financing to free up savings, prioritize expenditures in the PDO, and seek additional counterpart funding.",
+      "evidence": "Section 18: 84.8 percent of the consolidated budget ... is used to pay salaries ... This limits the funds available for improving the quality of education and for investments in strengthening the network of schools."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Weak procurement planning and lack of annual procurement plans may cause delays in civil works for model schools.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Mandate preparation of annual procurement plans, train staff on e\u2011GP usage, and monitor timelines through the STEP system.",
+      "evidence": "Section 61\u201164: procurement governed by FMP Manual but \"no practice of preparing an annual procurement plan\" and reliance on e\u2011GP platform."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Limited institutional capacity for environmental and social (E&S) management may lead to non\u2011compliance with fire safety, waste and accessibility standards.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct E&S capacity\u2011building workshops, embed fire\u2011safety and waste\u2011management clauses in contracts, and establish a dedicated E&S officer.",
+      "evidence": "Section 70: weak institutional capacity for E&S activity implementation, gap in fire safety norms, lack of provisions for universal access, etc."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate data protection for the EMIS and digital assessments could result in privacy breaches or loss of student records.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Adopt robust data\u2011protection policies, encrypt EMIS databases, and conduct periodic privacy impact assessments aligned with national legislation.",
+      "evidence": "Legal Covenants (Section IV): activities involving collection, storage, usage, and/or processing of Personal Data must be carried out with due regard to legal framework."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Delayed or incomplete verification of Disbursement Linked Indicators (DLIs) may postpone fund releases and affect implementation timelines.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Ensure timely appointment of Independent Verification Agency, set clear verification schedules, and use the EMIS dashboard for real\u2011time DLI tracking.",
+      "evidence": "Section V: funds will be disbursed on achievement of DLRs verified by an IVA; verification protocols outlined in Annex 2."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Social norms and topographic barriers may limit boys' enrollment in senior secondary science and commerce streams.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide residential facilities for boys, conduct community outreach, and align school placement with local needs to encourage enrollment.",
+      "evidence": "Section 6: families prefer boys to work; topographic challenges in accessing senior secondary schools; residential schools not available for adolescent boys."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Substantial fiduciary risk due to multiple implementing agencies and weak internal controls could lead to misallocation of funds.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthen internal audit, enforce anti\u2011corruption guidelines, and implement a risk\u2011based audit plan with an audit committee oversight.",
+      "evidence": "Section 56\u201157: IFSA concludes fiduciary risk is \u2018Substantial\u2019; systemic gaps observed in implementation; need for strengthening internal controls."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Technical support agencies engaged under IPF\u2011TA may lack capacity or continuity, reducing effectiveness of training and EMIS development.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Define clear TORs, include deliverable milestones, monitor performance quarterly, and ensure knowledge transfer to state institutions.",
+      "evidence": "Section 4.1: IPF\u2011TA will engage technical experts; Section 4.5 notes constraints of agencies such as limited funding and scalability."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Climate change could damage school infrastructure, compromising safety and continuity of education.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Incorporate disaster\u2011resilient designs, use energy\u2011 and water\u2011efficient fixtures, and conduct periodic climate\u2011risk assessments for school sites.",
+      "evidence": "Section 34\u201135: RA\u20113 will support climate\u2011proofing school infrastructure with disaster\u2011resilient designs and energy\u2011efficient fixtures."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Gender\u2011based violence and safety concerns may deter attendance, especially for girls, affecting enrollment targets.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement SRGBV training for principals, establish a robust grievance redress mechanism, and conduct regular safety audits.",
+      "evidence": "Section 74\u201175: training on SRGBV for school leaders; GRM strengthening; alignment with best practices for SEA/SH."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Multi\u2011tier budgeting and late approval of Annual Work Plans may cause cash\u2011flow gaps and slow project execution.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Accelerate AWP&B submission, secure provisional releases, and monitor fund flow through the Single Nodal Account dashboard.",
+      "evidence": "Section 59\u201160: AWP&B approved only by the third to fifth month of the financial year, leading to delays in fund releases."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Insufficient integration of climate education into curricula may limit achievement of climate\u2011adaptation outcomes.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Embed climate competencies in learning standards, develop dedicated lesson plans, and include climate items in diagnostic assessments.",
+      "evidence": "Section 25 & 28: RA\u20111 and RA\u20112 focus on integrating climate change education into teacher training and assessments."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate water, sanitation and hygiene (WASH) facilities in schools could affect student health and attendance.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Include WASH standards in school design, monitor toilet and drinking\u2011water functionality, and allocate budget for regular maintenance.",
+      "evidence": "Section 70: lack of provisions for drinking water facilities, toilets, and maintenance leading to service disruption."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is rated Substantial. State elections are due in December 2023 and the associated large democratic exercise could slow down activities envisioned for the first year of the operation. The window between the operation being declared effective and the state elections is small.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Disruptions are expected to be minimal given that the state intends to initiate work and complete necessary field work and/or data collection well before the elections, and utilize the election period for analysis and training module/materials development. The implementing bodies (SIS-SS, SCERT, SIEMAT, and SAC) will need to move swiftly to realize the state's plans."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical Design of operation risk is rated Substantial. Certain context-specific attributes such as topography and underlying community representation in overall enrolment could raise challenges, including barriers to school enrolment such as lack of physical access in sparsely populated areas with poor road connectivity, or high opportunity cost of schooling due to informal-sector employment.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Government of Chhattisgarh has addressed similar challenges in the past through development and rollout of customized solutions; the project will enable planning for residential facilities for students and teachers in model schools in topographically hard-to-reach areas."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Institutional Capacity for Implementation and Sustainability risk is rated Substantial. In some cases, nodal educational institutions lack the expertise to implement technically complex interventions.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Onboarding a Program Management Consultant (PMC) and technical support agencies is expected to significantly reduce the risks involved. Sustainability post-completion will be ensured through careful planning, technical support for capacity building of nodal institutions, and institutionalizing new mechanisms."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk is rated Substantial. Considering the implementing arrangements and diverse capacity across implementing agencies, implementation constraints can be foreseen in public financial management arrangements and compliance with rules and regulations for accountability.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Focused attention in the short/medium term on enhanced effectiveness of planning, budgeting, and fund flow processes; adequacy of staffing and capacity building of fiduciary staff; strengthened monitoring through internal and external independent reviews; timely resolution of independent external review observations; a robust dedicated procurement complaints redressal system; strengthened contract management for delivery of goods and works; and ensuring exclusion of Bank-debarred firms from high-value contracts."
+    }
+  ]
+}

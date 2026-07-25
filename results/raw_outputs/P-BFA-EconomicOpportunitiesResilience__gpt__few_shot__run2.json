@@ -1,0 +1,162 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T17:59:33.820029+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Escalating insecurity and conflict may restrict access to target areas, delaying or halting project activities.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement security SOPs, use remote delivery tools, partner with NGOs that have field access, and activate contingency plans for suspension if needed.\",\n      \"evidence\": \"Annex\u202f3 security risk matrix describing green/yellow/red risk levels and adaptations for economic inclusion and registry activities.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Procurement delays caused by administrative routines and limited competition in fragile areas could affect timely delivery of goods and services.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit a qualified procurement specialist, develop a detailed procurement procedures section in the PIM, and conduct fast\u2011track procurement trainings for DMP, DCMEF and bid committees.\",\n      \"evidence\": \"Procurement risk assessment notes administrative routines may cause delays; limited bidders in fragile areas (section\u202f83\u201185).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The newly created PIU lacks experienced financial management staff and systems, increasing fiduciary risk.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified FM staff by effectiveness, install approved accounting software, adopt a comprehensive FM manual, and engage an external auditor and internal audit arrangements.\",\n      \"evidence\": \"FM assessment finds PIU has no FM staff, procedures, software; mitigation measures listed (section\u202f82).\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Sexual exploitation, abuse and harassment (SEA/SH) incidents could arise among vulnerable beneficiaries, especially women and IDPs.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implement an SEA/SH Action Plan with community sensitisation, a grievance mechanism, referral pathways to GBV services, and train all staff on code of conduct.\",\n      \"evidence\": \"SEA/SH risk classified as Substantial; mitigation via Action Plan and Grievance Mechanism (section\u202f87\u201188).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Construction of warehouses and logistics infrastructure may cause water and soil pollution.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply ESS\u202f3 (pollution prevention) standards, conduct site\u2011specific environmental management plans, and monitor waste handling during construction.\",\n      \"evidence\": \"E&S risks include water and soil pollution from construction sites (section\u202f87).\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Interoperability of the RSU with other databases may breach data protection regulations, exposing personal data.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage the National Data Protection Authority to review data sharing protocols, implement encryption and access controls, and conduct privacy impact assessments.\",\n      \"evidence\": \"Interoperability work will follow national data protection authority guidance (section\u202f34\u201135).\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Complex coordination among multiple ministries and partners could lead to fragmented implementation and duplication.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a formal inter\u2011ministerial coordination unit, define clear roles in the PIM, and hold regular joint planning meetings.\",\n      \"evidence\": \"Section\u202f58\u201159 notes fragmentation and need for stronger coordination mechanisms.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Severe climate events (droughts, floods) may disrupt beneficiary participation and damage project assets.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate climate\u2011resilient livelihood packages, use early warning systems for shock\u2011responsive targeting, and design warehouses to withstand extreme weather.\",\n      \"evidence\": \"Strategic context describes climate shocks and adaptation measures (section\u202f2\u20113, 77).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Declining humanitarian funding could reduce complementary support for IDPs, affecting project outcomes.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Secure additional development financing through private sector partnerships, and build contingency buffers in the project budget for IDP\u2011specific activities.\",\n      \"evidence\": \"Section\u202f6 notes reduced humanitarian funding since 2025 and increased national ownership.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Delay in recruiting key PIU staff (GBV specialist, security specialist, external auditor) may hinder compliance with legal covenants.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set firm recruitment timelines in the PIM, use competitive hiring processes, and monitor progress through quarterly PIU reports.\",\n      \"evidence\": \"Legal covenants require recruitment within 3\u20116 months after effectiveness (section\u202fFA Schedule\u202f2).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Women may face barriers to opening bank accounts (KYC) limiting financial inclusion benefits.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Partner with MFIs to simplify KYC procedures, provide ID document assistance, and offer mobile\u2011money alternatives where banking is limited.\",\n      \"evidence\": \"Component\u202f1.1 mentions gender\u2011sensitive adaptations such as daycare and KYC support (section\u202f24\u201125).\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Certain vulnerable groups (people with disabilities, elderly) may be excluded from RSU registration and benefits.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Include explicit inclusion criteria in the proxy means test, conduct outreach through disability NGOs, and monitor disaggregated registration data.\",\n      \"evidence\": \"RSU aims to cover female\u2011headed households, displaced persons, persons with disability (section\u202f32).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Fraud or corruption in procurement could undermine project credibility and financial integrity.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply World Bank anti\u2011corruption guidelines, conduct regular audits by ASCELC, and use FundsChain for real\u2011time tracking of disbursements.\",\n      \"evidence\": \"Procurement risk includes fraud; fiduciary controls described in disbursement arrangements (section\u202f70\u201171).\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Security constraints may limit field monitoring, reducing data quality for M&E.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilise remote monitoring tools (GEMS, phone\u2011based PDM, IBM), and schedule periodic third\u2011party verification missions in accessible zones.\",\n      \"evidence\": \"Monitoring plan mentions remote tools for insecure areas (section\u202f67\u201168, Annex\u202f3).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Roll\u2011out of the Unique Social Registry may be slower than planned, limiting beneficiary targeting.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set phased rollout milestones, allocate dedicated staff for data collection, and monitor progress against a detailed implementation schedule.\",\n      \"evidence\": \"RSU rollout targets 800,000 households; timeline described in Subcomponent\u202f2.1 (section\u202f32\u201133).\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Failure to achieve system interoperability could result in duplicate beneficiary records and inefficient service delivery.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a clear interoperability architecture, conduct regular data reconciliation tests, and enforce standardized data exchange protocols.\",\n      \"evidence\": \"Subcomponent\u202f2.2 outlines need for interoperable framework and data exchange (section\u202f34\u201136).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Escalating insecurity and conflict may restrict access to target areas, delaying or halting project activities.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement security SOPs, use remote delivery tools, partner with NGOs that have field access, and activate contingency plans for suspension if needed.",
+        "evidence": "Annex\u202f3 security risk matrix describing green/yellow/red risk levels and adaptations for economic inclusion and registry activities."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Procurement delays caused by administrative routines and limited competition in fragile areas could affect timely delivery of goods and services.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit a qualified procurement specialist, develop a detailed procurement procedures section in the PIM, and conduct fast\u2011track procurement trainings for DMP, DCMEF and bid committees.",
+        "evidence": "Procurement risk assessment notes administrative routines may cause delays; limited bidders in fragile areas (section\u202f83\u201185)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "The newly created PIU lacks experienced financial management staff and systems, increasing fiduciary risk.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit qualified FM staff by effectiveness, install approved accounting software, adopt a comprehensive FM manual, and engage an external auditor and internal audit arrangements.",
+        "evidence": "FM assessment finds PIU has no FM staff, procedures, software; mitigation measures listed (section\u202f82)."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Sexual exploitation, abuse and harassment (SEA/SH) incidents could arise among vulnerable beneficiaries, especially women and IDPs.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implement an SEA/SH Action Plan with community sensitisation, a grievance mechanism, referral pathways to GBV services, and train all staff on code of conduct.",
+        "evidence": "SEA/SH risk classified as Substantial; mitigation via Action Plan and Grievance Mechanism (section\u202f87\u201188)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Construction of warehouses and logistics infrastructure may cause water and soil pollution.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply ESS\u202f3 (pollution prevention) standards, conduct site\u2011specific environmental management plans, and monitor waste handling during construction.",
+        "evidence": "E&S risks include water and soil pollution from construction sites (section\u202f87)."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Interoperability of the RSU with other databases may breach data protection regulations, exposing personal data.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage the National Data Protection Authority to review data sharing protocols, implement encryption and access controls, and conduct privacy impact assessments.",
+        "evidence": "Interoperability work will follow national data protection authority guidance (section\u202f34\u201135)."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Complex coordination among multiple ministries and partners could lead to fragmented implementation and duplication.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a formal inter\u2011ministerial coordination unit, define clear roles in the PIM, and hold regular joint planning meetings.",
+        "evidence": "Section\u202f58\u201159 notes fragmentation and need for stronger coordination mechanisms."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Severe climate events (droughts, floods) may disrupt beneficiary participation and damage project assets.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Integrate climate\u2011resilient livelihood packages, use early warning systems for shock\u2011responsive targeting, and design warehouses to withstand extreme weather.",
+        "evidence": "Strategic context describes climate shocks and adaptation measures (section\u202f2\u20113, 77)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Declining humanitarian funding could reduce complementary support for IDPs, affecting project outcomes.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Secure additional development financing through private sector partnerships, and build contingency buffers in the project budget for IDP\u2011specific activities.",
+        "evidence": "Section\u202f6 notes reduced humanitarian funding since 2025 and increased national ownership."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Delay in recruiting key PIU staff (GBV specialist, security specialist, external auditor) may hinder compliance with legal covenants.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set firm recruitment timelines in the PIM, use competitive hiring processes, and monitor progress through quarterly PIU reports.",
+        "evidence": "Legal covenants require recruitment within 3\u20116 months after effectiveness (section\u202fFA Schedule\u202f2)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Women may face barriers to opening bank accounts (KYC) limiting financial inclusion benefits.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Partner with MFIs to simplify KYC procedures, provide ID document assistance, and offer mobile\u2011money alternatives where banking is limited.",
+        "evidence": "Component\u202f1.1 mentions gender\u2011sensitive adaptations such as daycare and KYC support (section\u202f24\u201125)."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Certain vulnerable groups (people with disabilities, elderly) may be excluded from RSU registration and benefits.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Include explicit inclusion criteria in the proxy means test, conduct outreach through disability NGOs, and monitor disaggregated registration data.",
+        "evidence": "RSU aims to cover female\u2011headed households, displaced persons, persons with disability (section\u202f32)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Fraud or corruption in procurement could undermine project credibility and financial integrity.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply World Bank anti\u2011corruption guidelines, conduct regular audits by ASCELC, and use FundsChain for real\u2011time tracking of disbursements.",
+        "evidence": "Procurement risk includes fraud; fiduciary controls described in disbursement arrangements (section\u202f70\u201171)."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Security constraints may limit field monitoring, reducing data quality for M&E.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilise remote monitoring tools (GEMS, phone\u2011based PDM, IBM), and schedule periodic third\u2011party verification missions in accessible zones.",
+        "evidence": "Monitoring plan mentions remote tools for insecure areas (section\u202f67\u201168, Annex\u202f3)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Roll\u2011out of the Unique Social Registry may be slower than planned, limiting beneficiary targeting.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set phased rollout milestones, allocate dedicated staff for data collection, and monitor progress against a detailed implementation schedule.",
+        "evidence": "RSU rollout targets 800,000 households; timeline described in Subcomponent\u202f2.1 (section\u202f32\u201133)."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Failure to achieve system interoperability could result in duplicate beneficiary records and inefficient service delivery.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a clear interoperability architecture, conduct regular data reconciliation tests, and enforce standardized data exchange protocols.",
+        "evidence": "Subcomponent\u202f2.2 outlines need for interoperable framework and data exchange (section\u202f34\u201136)."
+      }
+    ]
+  },
+  "parse_error": null
+}

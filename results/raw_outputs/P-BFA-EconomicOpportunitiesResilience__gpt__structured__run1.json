@@ -1,0 +1,180 @@
+{
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T18:01:52.611623+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Frame the project  \n- **Objective:** Increase access to economic opportunities for poor and vulnerable households and strengthen the adaptive social protection system.  \n- **Scope & Components:** Four components \u2013 (1) Socio\u2011economic empowerment support (US$76.5\u202fM), (2) Strengthening the adaptive social protection information system (US$10.1\u202fM), (3) Institutional capacity building and learning (US$27.4\u202fM), (4) Project coordination management (US$6\u202fM) plus a zero\u2011dollar Contingent Emergency Response Component.  \n- **Delivery model:** Implementing agency \u2013 Ministry of Family and Solidarity (MFS) with a Project Implementation Unit (PIU); extensive coordination with ministries, NGOs/CBOs, MFIs, UN agencies, and a donor working group.  \n- **Timeline:** Expected approval\u202f15\u202fJun\u202f2026; expected closing\u202f30\u202fJun\u202f2031 (5\u2011year implementation).  \n- **Budget:** Total US$120\u202fM (US$100\u202fM IDA credit + US$20\u202fM SASPP grant).  \n- **Key stakeholders:** Borrower (Burkina\u202fFaso), MFS, PIU, steering committee, ministries of Finance, Agriculture, Health, Security, CONASUR, NGOs, CBOs, MFIs, World Bank, donor agencies.  \n- **External dependencies:** Security/FCV situation, climate\u2011related shocks, IDP flows, data\u2011system interoperability (RSU), procurement capacity, humanitarian funding levels.\n\nStep 2 \u2013 Category sweep (candidate risks with supporting text)  \n- **Technical:** interoperability of RSU, cybersecurity/data\u2011privacy, procurement delays, limited competition in fragile areas, insufficient procurement capacity.  \n- **Financial:** weak financial\u2011management (FM) capacity, disbursement\u2011condition compliance.  \n- **Schedule:** PIU/key\u2011staff establishment deadlines, security\u2011driven activity suspensions.  \n- **Stakeholder:** SEA/SH risk, grievance\u2011redress timeliness.  \n- **Political/Regulatory:** conflict & fragility, CERC inclusion.  \n- **Environmental:** water/soil pollution from construction, occupational health & safety.  \n- **Organizational:** PIU staffing turnover/capacity.  \n- **External:** climate shocks, declining humanitarian funding, large IDP influx.\n\nStep 3 \u2013 Evidence filter  \nAll listed risks are directly quoted from the appraisal document (see evidence excerpts below).\n\nStep 4 \u2013 Assess (likelihood\u202f1\u20115, impact\u202f1\u20115) and mitigation  \nEach risk is assigned a likelihood and impact based on the document\u2019s tone and mitigations already described. Concrete mitigation actions are proposed.\n\nStep 5 \u2013 Consolidate  \nDuplicates merged; 18 distinct risks retained.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-BFA-EconomicOpportunitiesResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Interoperability challenges between the Unique Social Registry (RSU) and other government databases may delay integrated targeting.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Create a dedicated technical integration team, adopt open\u2011data standards, pilot test interfaces, and engage ANSSI and CIL for security and privacy compliance.\",\n      \"evidence\": \"The project will support the development of interoperable framework/platform where different databases and individual systems communicate...\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Cybersecurity and data\u2011protection breaches could compromise beneficiary information in the RSU.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a Security Risk Assessment, implement a Security Management Plan, use encryption, regular security audits, and follow ANSSI guidelines.\",\n      \"evidence\": \"Will follow the security procedures elaborated by the National Cybersecurity Agency (ANSSI) and apply national data protection measures.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Administrative routines may cause procurement delays, slowing component rollout.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare a detailed procurement section in the Project Implementation Manual, set maximum timelines for each stage, and train staff on STEP procedures.\",\n      \"evidence\": \"Administrative routines may result in procurement delays, potentially affecting project implementation.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Procurement in fragile areas with few bidders could limit competition and raise prices or enable collusion.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply World Bank flexibilities for fragile contexts, pre\u2011qualify local suppliers, bundle purchases across regions, and monitor price benchmarks.\",\n      \"evidence\": \"Procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Insufficient procurement capacity may lead to poor contract management and administration of large contracts.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit a full\u2011time procurement specialist, deliver intensive World Bank procurement training, and establish an accountability framework with regular reviews.\",\n      \"evidence\": \"Insufficient capacity can lead to poor contract management and administration of large contracts.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Weak financial\u2011management capacity in the PIU could cause fiduciary weaknesses.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified FM staff, adopt a FM manual, install accounting software, appoint an external auditor, and conduct semi\u2011annual audit reports.\",\n      \"evidence\": \"The assessment found that the MFS currently does not have a PIU with FM arrangements... To mitigate these gaps, the project will recruit qualified FM staff.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Disbursement may be blocked if the Productive Grants Manual and required grant agreements are not adopted on time.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare the Productive Grants Manual and template agreements before effectiveness, train MFS staff on compliance, and monitor readiness quarterly.\",\n      \"evidence\": \"No withdrawal shall be made... unless the Recipient has adopted the Productive Grants Manual and entered into two Productive Grant Agreements.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Delays in establishing the PIU and recruiting key staff may breach covenant deadlines.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set internal recruitment milestones, allocate budget for staffing, use interim contracts if needed, and report progress to the steering committee monthly.\",\n      \"evidence\": \"The Recipient shall, not later than three (3) months after the Effective Date, establish... a committee... The PIU shall include key staff... no later than three (3) months after the Effective Date.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Escalating security threats could force suspension or adaptation of field activities.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Develop security SOPs, maintain a contingency plan with remote delivery options, partner with NGOs able to operate in high\u2011risk zones, and regularly reassess risk levels.\",\n      \"evidence\": \"Security risks are significant and could escalate... Adaptations include decreasing sessions, remote tools, or suspending activity.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"SEA/SH incidents (sexual exploitation, abuse, harassment) could cause reputational damage and harm beneficiaries.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement an SEA/SH Action Plan, conduct mandatory training, enforce a code of conduct, and integrate SEA/SH reporting into the grievance mechanism.\",\n      \"evidence\": \"SEA/SH risk is Substantial... To mitigate this risk, the project will prepare an SEA/SH Action Plan and Grievance Mechanism.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Grievance redress mechanism may fail to resolve complaints within stipulated timeframes.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Assign a dedicated GRM officer, set clear SLA targets, track all cases in the MIS, and publish quarterly performance reports.\",\n      \"evidence\": \"Grievance addressed within the stipulated timeframe (Percentage) is an indicator.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Ongoing conflict and fragility could disrupt implementation and increase costs.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Leverage the Contingent Emergency Response Component, maintain a security specialist in the PIU, and coordinate closely with CONASUR and security forces.\",\n      \"evidence\": \"The project is flagged as Fragile State(s) and Conflict... includes Contingent Emergency Response Component (CERC).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Construction of warehouses may cause water and soil pollution from waste.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct an ESIA, enforce a waste\u2011management plan, use best\u2011practice construction methods, and monitor runoff regularly.\",\n      \"evidence\": \"Key E&S risks include water and soil pollution from solid and liquid waste at construction and rehabilitation sites.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Occupational health and safety hazards could affect workers at construction and field sites.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop an OHS plan, provide PPE and safety training, conduct regular site inspections, and report incidents promptly.\",\n      \"evidence\": \"Key E&S risks include occupational health and safety of workers.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"High turnover or insufficient capacity of PIU staff may impair project coordination.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Offer competitive salaries, career\u2011development pathways, and performance\u2011based incentives; conduct periodic capacity assessments.\",\n      \"evidence\": \"The PIU will be established prior to the project\u2019s effective date and will recruit key staff.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Climate\u2011related shocks could reduce beneficiary income and undermine project outcomes.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate\u2011resilient livelihood options, strengthen early warning systems, and allow flexible re\u2011targeting of assistance.\",\n      \"evidence\": \"Climate change also severely undermines food security... shocks undermine food and income security, forcing households to adopt negative coping strategies.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Declining humanitarian funding may limit resources for IDP support.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Increase national ownership, diversify funding sources, and leverage private\u2011sector partnerships to sustain IDP assistance.\",\n      \"evidence\": \"Recent cuts in humanitarian funding have reduced support for IDPs... declining humanitarian financing.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Large and ongoing IDP flows could complicate registration and targeting in the RSU.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Scale up mobile registration teams, strengthen coordination with CONASUR, and prioritize data\u2011validation mechanisms for displaced populations.\",\n      \"evidence\": \"The deteriorating security situation has led to internal displacement, about 2 million IDPs... RSU aims to register IDPs.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BFA-EconomicOpportunitiesResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Interoperability challenges between the Unique Social Registry (RSU) and other government databases may delay integrated targeting.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Create a dedicated technical integration team, adopt open\u2011data standards, pilot test interfaces, and engage ANSSI and CIL for security and privacy compliance.",
+        "evidence": "The project will support the development of interoperable framework/platform where different databases and individual systems communicate..."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Cybersecurity and data\u2011protection breaches could compromise beneficiary information in the RSU.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct a Security Risk Assessment, implement a Security Management Plan, use encryption, regular security audits, and follow ANSSI guidelines.",
+        "evidence": "Will follow the security procedures elaborated by the National Cybersecurity Agency (ANSSI) and apply national data protection measures."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Administrative routines may cause procurement delays, slowing component rollout.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Prepare a detailed procurement section in the Project Implementation Manual, set maximum timelines for each stage, and train staff on STEP procedures.",
+        "evidence": "Administrative routines may result in procurement delays, potentially affecting project implementation."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Procurement in fragile areas with few bidders could limit competition and raise prices or enable collusion.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply World Bank flexibilities for fragile contexts, pre\u2011qualify local suppliers, bundle purchases across regions, and monitor price benchmarks.",
+        "evidence": "Procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Insufficient procurement capacity may lead to poor contract management and administration of large contracts.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit a full\u2011time procurement specialist, deliver intensive World Bank procurement training, and establish an accountability framework with regular reviews.",
+        "evidence": "Insufficient capacity can lead to poor contract management and administration of large contracts."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Weak financial\u2011management capacity in the PIU could cause fiduciary weaknesses.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit qualified FM staff, adopt a FM manual, install accounting software, appoint an external auditor, and conduct semi\u2011annual audit reports.",
+        "evidence": "The assessment found that the MFS currently does not have a PIU with FM arrangements... To mitigate these gaps, the project will recruit qualified FM staff."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Disbursement may be blocked if the Productive Grants Manual and required grant agreements are not adopted on time.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Prepare the Productive Grants Manual and template agreements before effectiveness, train MFS staff on compliance, and monitor readiness quarterly.",
+        "evidence": "No withdrawal shall be made... unless the Recipient has adopted the Productive Grants Manual and entered into two Productive Grant Agreements."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Delays in establishing the PIU and recruiting key staff may breach covenant deadlines.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set internal recruitment milestones, allocate budget for staffing, use interim contracts if needed, and report progress to the steering committee monthly.",
+        "evidence": "The Recipient shall, not later than three (3) months after the Effective Date, establish... a committee... The PIU shall include key staff... no later than three (3) months after the Effective Date."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Escalating security threats could force suspension or adaptation of field activities.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Develop security SOPs, maintain a contingency plan with remote delivery options, partner with NGOs able to operate in high\u2011risk zones, and regularly reassess risk levels.",
+        "evidence": "Security risks are significant and could escalate... Adaptations include decreasing sessions, remote tools, or suspending activity."
+      },
+      {
+        "risk_id": "R10",
+        "description": "SEA/SH incidents (sexual exploitation, abuse, harassment) could cause reputational damage and harm beneficiaries.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement an SEA/SH Action Plan, conduct mandatory training, enforce a code of conduct, and integrate SEA/SH reporting into the grievance mechanism.",
+        "evidence": "SEA/SH risk is Substantial... To mitigate this risk, the project will prepare an SEA/SH Action Plan and Grievance Mechanism."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Grievance redress mechanism may fail to resolve complaints within stipulated timeframes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Assign a dedicated GRM officer, set clear SLA targets, track all cases in the MIS, and publish quarterly performance reports.",
+        "evidence": "Grievance addressed within the stipulated timeframe (Percentage) is an indicator."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Ongoing conflict and fragility could disrupt implementation and increase costs.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Leverage the Contingent Emergency Response Component, maintain a security specialist in the PIU, and coordinate closely with CONASUR and security forces.",
+        "evidence": "The project is flagged as Fragile State(s) and Conflict... includes Contingent Emergency Response Component (CERC)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Construction of warehouses may cause water and soil pollution from waste.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Conduct an ESIA, enforce a waste\u2011management plan, use best\u2011practice construction methods, and monitor runoff regularly.",
+        "evidence": "Key E&S risks include water and soil pollution from solid and liquid waste at construction and rehabilitation sites."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Occupational health and safety hazards could affect workers at construction and field sites.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop an OHS plan, provide PPE and safety training, conduct regular site inspections, and report incidents promptly.",
+        "evidence": "Key E&S risks include occupational health and safety of workers."
+      },
+      {
+        "risk_id": "R15",
+        "description": "High turnover or insufficient capacity of PIU staff may impair project coordination.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Offer competitive salaries, career\u2011development pathways, and performance\u2011based incentives; conduct periodic capacity assessments.",
+        "evidence": "The PIU will be established prior to the project\u2019s effective date and will recruit key staff."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Climate\u2011related shocks could reduce beneficiary income and undermine project outcomes.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate\u2011resilient livelihood options, strengthen early warning systems, and allow flexible re\u2011targeting of assistance.",
+        "evidence": "Climate change also severely undermines food security... shocks undermine food and income security, forcing households to adopt negative coping strategies."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Declining humanitarian funding may limit resources for IDP support.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Increase national ownership, diversify funding sources, and leverage private\u2011sector partnerships to sustain IDP assistance.",
+        "evidence": "Recent cuts in humanitarian funding have reduced support for IDPs... declining humanitarian financing."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Large and ongoing IDP flows could complicate registration and targeting in the RSU.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Scale up mobile registration teams, strengthen coordination with CONASUR, and prioritize data\u2011validation mechanisms for displaced populations.",
+        "evidence": "The deteriorating security situation has led to internal displacement, about 2 million IDPs... RSU aims to register IDPs."
+      }
+    ]
+  },
+  "parse_error": null
+}

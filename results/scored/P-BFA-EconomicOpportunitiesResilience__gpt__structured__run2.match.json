@@ -1,0 +1,237 @@
+{
+  "run_file": "P-BFA-EconomicOpportunitiesResilience__gpt__structured__run2.json",
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "gpt",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R05",
+      "similarity": 0.579,
+      "gen_category": "technical",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R03",
+      "similarity": 0.483,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R01",
+      "similarity": 0.46,
+      "gen_category": "schedule",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R04",
+      "similarity": 0.454,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delays in achieving interoperability between the Unique Social Registry and other government databases.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop detailed technical specs, pilot integration in one region, assign dedicated IT lead, conduct regular system testing and security risk assessments.",
+      "evidence": "The project will support the development of interoperable framework/platform where different databases and individual systems communicate..."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Cyber\u2011security breach of the social\u2011protection information system.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement full SRA, enforce ANSSI security standards, encrypt data, conduct quarterly penetration tests, train staff on data protection.",
+      "evidence": "The project will apply the security procedures elaborated by the National Cybersecurity Agency (ANSSI)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Inadequate fiduciary capacity of the PIU (no FM staff, procedures, software).",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit qualified FM specialist and accountant within 3 months, adopt FM manual, engage external auditor, set up internal audit with IGF, conduct monthly fiduciary reviews.",
+      "evidence": "The assessment found that the MFS currently does not have a PIU with FM arrangements... Substantial risk expected to be reduced to Moderate."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Procurement capacity weaknesses leading to delays and higher costs.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Hire full\u2011time procurement specialist, finalize Procurement Manual (PIM) before effectiveness, train DMP/DCMEF and bid committees, use STEP for real\u2011time tracking, set maximum stage durations.",
+      "evidence": "The procurement risk is rated Substantial; administrative routines may result in procurement delays, potentially affecting project implementation."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Procurement delays could push the overall implementation timeline.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Fast\u2011track high\u2011value procurements, define clear approval timelines in PIM, monitor via STEP, hold weekly procurement coordination meetings.",
+      "evidence": "Administrative routines may result in procurement delays, potentially affecting project implementation."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Security\u2011related disruptions (conflict, violence) may halt field activities or force suspension.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop Security Management Plan, conduct regular security risk assessments, adopt remote delivery (mobile payments, radio training) for high\u2011risk zones, maintain contingency budget for activity relocation.",
+      "evidence": "Low\u2011intensity conflict ... could affect timing of payments; High\u2011intensity conflict ... could lead to suspension."
+    },
+    {
+      "risk_id": "R07",
+      "description": "SEA/SH (sexual exploitation, abuse, harassment) risk is substantial.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Implement SEA/SH Action Plan, mandatory training for all staff and partners, enforce strict code of conduct, strengthen grievance mechanism with confidential reporting, conduct regular audits.",
+      "evidence": "SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Grievance Redress Mechanism may be overwhelmed, leading to unresolved complaints.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Expand GM team, set 15\u2011day response SLA, use case\u2011management system, publish regular GM performance reports, provide GBV\u2011specific referral pathways.",
+      "evidence": "Grievance addressed within the stipulated timeframe (indicator 16)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Government suspension of cash transfers and food vouchers could affect project design.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Design flexible in\u2011kind support packages, maintain dialogue with Ministry of Finance, embed contingency clauses in PIM to switch modalities quickly.",
+      "evidence": "The Government\u2019s decision in 2023 to suspend cash transfers and food vouchers led the PAMPV to focus on in\u2011kind support."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Failure to establish the Steering Committee within 3\u202fmonths could breach legal covenants.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Include steering\u2011committee establishment as a monitoring milestone, send reminder notices, link compliance to disbursement approvals.",
+      "evidence": "Recipient shall, not later than three (3) months after the Effective Date, establish \u2026 a committee (the \u201cSteering Committee\u201d)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Water and soil pollution from construction/rehabilitation sites.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Prepare Environmental Management Plan, enforce waste\u2011segregation, train contractors on spill prevention, conduct site inspections, require waste\u2011disposal permits.",
+      "evidence": "Key E&S risks include water and soil pollution from solid and liquid waste at construction and rehabilitation sites."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Occupational health and safety risks for workers at warehouses and construction sites.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Develop Occupational Health & Safety Plan, provide PPE, conduct safety briefings, appoint safety officer, perform regular site safety audits.",
+      "evidence": "Key E&S risks include water and soil pollution ... and occupational health and safety of workers."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Delay in recruiting key PIU specialists (GBV, security, external auditor).",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Initiate accelerated recruitment, use temporary contracts if needed, partner with NGOs for interim expertise, monitor hiring progress weekly.",
+      "evidence": "PIU shall include \u2026 a gender\u2011based violence specialist, a security specialist, an external auditor \u2026 no later than three (3) months after the Effective Date."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Absence of a qualified procurement specialist within the PIU.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Publish competitive vacancy, set 30\u2011day hiring window, involve World Bank procurement advisors in selection, provide onboarding on World Bank procedures.",
+      "evidence": "Need for qualified procurement specialist within the PIU \u2013 Recruit competitively a full\u2011time procurement specialist."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Climate\u2011related shocks (droughts, floods) could undermine beneficiary livelihoods.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate climate\u2011resilient practices (drought\u2011tolerant crops, water harvesting), link with Early Warning System, allow rapid re\u2011targeting of assistance, allocate emergency buffer funds.",
+      "evidence": "Climate change also severely undermines food security\u2026 shocks undermine food and income security."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Declining humanitarian funding reduces support for IDPs and could strain project resources.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Diversify donor base, strengthen domestic budget allocations, embed cost\u2011recovery mechanisms, conduct quarterly financing gap analysis.",
+      "evidence": "Recent cuts in humanitarian funding have reduced support for IDPs."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is assessed to be Substantial. The uncertain political and governance context provides a challenge to long-term development policy. Adaptive social protection systems are still nascent and will require continued political commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The team, guided by the management, will continue its high-level policy dialogue at central and decentralized levels and ensure continuous advocacy and communication."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed to be Substantial. Fiscal space remains constrained by elevated security spending and tighter financing conditions, which increase the risk of reduced budget allocations and delayed counterpart funding for new priorities and reforms, including social protection and the PAMPV. Macroeconomic risks also arise from exogenous factors, including current conflict in the Middle East which can result in a surge in oil prices and put inflationary pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Other programs such as the International Monetary Fund program and the World Bank's technical assistance on tax expenditure under the Sustainable Development Finance Policy can help expand fiscal space, partially mitigating these risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector strategy and policies risks are considered to be Substantial. Sectoral strategies and policies remain nascent, and the Government's budget allocation to operationalize the PAMPV remains unclear. Also, sectoral decisions are at times taken abruptly and can heavily affect implementation (for example, the suspension of cash transfers in 2023 led to an increased focus on economic inclusion, and the newly emerged priority of the CONASUR/IDPs led to the revision of the fiche de projet of this project).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In parallel with high-level policy dialogue, the project supports strategic communications, adopts an agile approach, and provides technical assistance to promote evidence-based decision-making (with support from SASPP, the Social Protection Response MDTF, and the State and Peacebuilding Fund)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall fiduciary risks are considered as Substantial, as described in section IV.B and annex 2, based on financial assessment and procurement assessment.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project preparation fund (Grant Facility for Project Preparation) has been used not only to prepare mitigation measures to address these risks but will also elevate the project readiness (for example, effectiveness-linked actions including FM and procurement staffing and initiating the procurement packages for the first 18-months' implementation priorities) to improve the project performance."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks related to insecurity are rated as High. The deteriorating and volatile security situation\u2014particularly in regions with high poverty, displacement, and food insecurity that are project intervention areas\u2014will likely be an important risk. The project will also address other risks related to protection of personal data: for Component 2 on social registry and interoperability, activities will be guided by the Information System Security Policy (ISSP) document developed by the ANSSI, to ensure confidentiality of households registered in the RSU.",
+      "category": "other",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project activities will be adjusted based on the security situation (see annex 3), and the PIU will be also staffed with a security specialist and a security management plan will be developed. To remain engaged, the project will also rely on remote delivery/monitoring, partnering with local representation (NGOs, UN agencies). The ST-RSU will conduct capacity-building activities, including training sessions and awareness campaigns, to strengthen users' ability to manage and protect households' personal data."
+    }
+  ]
+}

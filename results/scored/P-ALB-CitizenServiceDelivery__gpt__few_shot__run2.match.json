@@ -1,0 +1,237 @@
+{
+  "run_file": "P-ALB-CitizenServiceDelivery__gpt__few_shot__run2.json",
+  "project_id": "P-ALB-CitizenServiceDelivery",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R14",
+      "gt_risk_id": "R05",
+      "similarity": 0.66,
+      "gen_category": "stakeholder",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R04",
+      "similarity": 0.592,
+      "gen_category": "organizational",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.516,
+      "gen_category": "external",
+      "gt_category": "organizational",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R02",
+      "similarity": 0.501,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Weak procurement capacity at ADISA may cause delays, non\u2011compliance, and cost overruns.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Hire qualified procurement specialist, provide bank technical assistance, use sample TORs, and enforce close bank oversight of procurement processes.",
+      "evidence": "Procurement risk rating is High. Very weak procurement capacity at ADISA as a newly created agency. (Section 66)"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Overall financial management risk is substantial due to limited experience of ADISA and MIPA with large donor\u2011funded operations.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deliver targeted fiduciary training, adopt a detailed Financial Management Manual, hire finance specialists, and implement robust internal controls with bank supervision.",
+      "evidence": "Overall financial management risk is rated as Substantial. ADISA and MIPA lack experience with large donor\u2011funded operations. (Section 62)"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Ambitious timeline for constructing the central Citizen Service Center may be missed.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Create a realistic construction schedule with contingency buffers, monitor milestones regularly, consider PPP financing options, and secure timely approvals.",
+      "evidence": "Central CSC building to be constructed in Tirana by first half of 2017; timeline described as very ambitious. (Section 7)"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Lack of existing IT systems and fragmented registers hinder integration and achievement of Level\u202f3 automation.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a phased IT implementation plan, allocate resources for system development, enforce interoperability standards, pilot test services, and coordinate with NAIS for integration.",
+      "evidence": "Seven institutions have no IT system; legacy registers are paper; integration required for Level\u202f3 automation. (Section 10)"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bureaucratic resistance from ministries and staff may impede front\u2011office reforms and service redesign.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement a change\u2011management program, involve staff in redesign, provide training on new processes, communicate benefits, and create incentives for adoption.",
+      "evidence": "Bureaucratic resistance could stifle efforts to improve back\u2011office functions; ministries may not welcome ceding front\u2011office function. (Section 58)"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Delay in passing omnibus legislation needed for regulatory reforms could stall service re\u2011engineering.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Accelerate legislative drafting, set clear parliamentary timelines, engage legal experts, monitor progress, and prepare contingency measures for partial implementation.",
+      "evidence": "Reform of government services will be implemented through omnibus legislation expected to be passed by end of 2016. (Section 19)"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Construction of the CSC may cause dust, noise, waste and other environmental impacts.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Implement the Environmental Management Plan, enforce construction best practices, conduct regular site inspections, and maintain a community liaison for grievance handling.",
+      "evidence": "Potential environmental impacts of new CSC construction include dust, noise, waste; mitigated by EMP. (Section 70)"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Emphasis on digital services could marginalize poor and vulnerable citizens with low internet access.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain non\u2011digital service points, provide assisted internet access, run targeted outreach campaigns, and ensure information is available via posters, call centres, and community centres.",
+      "evidence": "Risk that focus on state\u2011of\u2011the\u2011art online services may diminish access of the poor and vulnerable due to low internet penetration. (Section 6)"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Delay in recruiting procurement and administrative specialists for the PMU may weaken project implementation.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Fast\u2011track recruitment, use interim consultants if needed, define clear TORs, and obtain bank assistance for procurement support.",
+      "evidence": "Procurement and Administrative Specialist positions have been readvertised; PMU staff not yet fully set up. (Section 66)"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Results\u2011Based Financing disbursements are blocked until DLI#5 (strategic plan approval and baseline survey) is achieved.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prioritize completion of the strategic plan and baseline survey, allocate dedicated resources, and provide technical assistance to meet DLI#5 on schedule.",
+      "evidence": "No disbursements under RBF will be made until DLI#5 is achieved. (Section 31)"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Complex coordination among multiple ministries, agencies, and inter\u2011ministerial committees may cause delays and misalignment.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear coordination mechanisms, regular steering\u2011committee meetings, assign a dedicated coordination officer, and use project\u2011management tools to track responsibilities.",
+      "evidence": "Multiple inter\u2011ministerial committees and working groups; coordination among many agencies is required and may be complex. (Section 58)"
+    },
+    {
+      "risk_id": "R12",
+      "description": "ADISA, as a newly created agency, has limited implementation experience and capacity.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide intensive capacity\u2011building, hire experienced managers, leverage technical assistance, and monitor performance against clear milestones.",
+      "evidence": "ADISA created in Oct\u202f2014; limited track record; capacity strengthening needed. (Section 41)"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Improved service access may increase demand, creating budget pressures amid existing fiscal constraints.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct demand forecasting, adjust budget allocations, explore additional financing sources, and implement cost\u2011recovery where appropriate.",
+      "evidence": "Improved access may increase demand for services, with budget implications; fiscal constraints noted. (Section 49)"
+    },
+    {
+      "risk_id": "R14",
+      "description": "High levels of perceived corruption may persist, undermining public trust in the reform outcomes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Strengthen anti\u2011corruption controls, enforce front\u2011office separation, monitor bribery reports via citizen feedback, and run public awareness campaigns.",
+      "evidence": "Corruption remains high; 30% of citizens exposed to bribery; risk reforms may not fully reduce it. (Sections 1\u20113)"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Low response rate (\u224822%) to the citizen feedback mechanism may limit data quality for performance monitoring.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Increase outreach, diversify feedback channels, offer incentives for participation, and supplement with periodic surveys to improve data completeness.",
+      "evidence": "Citizen feedback mechanism response rate about 22%; limited data may affect performance monitoring. (Sections 40\u201141)"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Institutional capacity poses challenges to delivering the reform effort, despite very high leadership commitment and fast-paced GoA initiation of reforms.",
+      "category": "organizational",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project Preparation Facility (PPF) is designed to assist capacity building for the implementing agency; the TA part of the loan continues building capacity to deliver, addressing the most pressing capacity needs."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Fiduciary risks related to the new form of financial instrument used in Albania.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the fiduciary risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Technical design risk, named alongside the fiduciary risk as being addressed by the same TA support (fiduciary and budget specialists in the PMU); not separately elaborated beyond this.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The TA part of the loan helps mitigate the technical design risk by supporting fiduciary and budget specialists in the PMU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Stakeholder risks arising from inter-agency coordination.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by strong emphasis on coordination mechanisms in the design of the operation."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bureaucratic resistance to enhanced transparency and simplification of administrative processes.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated in part through high-level leadership and engagement, and through citizen feedback arrangements that help pinpoint poor performance and corruption."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Political cycle risk from elections coming up in 2017, which could disrupt reform continuity and government commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated by making early progress in showing results and ensuring a broad constituency of support for the project's objectives and activities among the leadership of participating institutions and service users."
+    }
+  ]
+}
