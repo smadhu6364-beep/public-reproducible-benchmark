@@ -1,0 +1,144 @@
+{
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-25T03:58:05.309422+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-BGD-SocialProtectionResilience\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Political transition uncertainties and lingering macroeconomic volatility could disrupt project implementation and social protection sector reforms.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain close operational dialogue with the interim government, align activities with national priorities, and leverage multi-partner coordination platforms.\",\n      \"evidence\": \"GDP growth would be affected by significant uncertainties due to the lingering economic impact of the recent political transition.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Recurrent severe flooding and climate hazards could disrupt program delivery, damage local infrastructure, and restrict beneficiary mobility.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prioritize climate-vulnerable locations, implement e-learning contingency options for training, utilize digital G2P payments, and include CERC for emergency response.\",\n      \"evidence\": \"recurring flooding affects a greater share of the population than any other natural hazard, affecting more than 1 million people annually.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Persistent high inflation erodes the real purchasing power of cash transfer benefits, diminishing the safety net's poverty reduction impact.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and adopt a standardized benefit adequacy framework with periodic review mechanisms and indexation triggers to inform entitlement adjustments.\",\n      \"evidence\": \"Inflation remained elevated, reaching 9.9 percent in January 2025.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"High targeting exclusion and inclusion errors in existing social assistance programs could lead to misallocation of benefits and reduced program impact.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Institutionalize proxy means testing (PMT) data and rollout the Dynamic Social Registry (DSR) for standardized, objective beneficiary selection.\",\n      \"evidence\": \"Nearly half (47 percent) of the poor households are not covered by any social assistance program (HIES 2022).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Interministerial coordination complexity across FD, DSS, DWA, and MoWCA could delay the rollout and integration of the Dynamic Social Registry.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a top-tier Steering Committee chaired by the Cabinet Division, form dedicated implementation units, and execute formal MoUs between participating agencies.\",\n      \"evidence\": \"The project design is complex due to the intricacy of activity selection and various IAs and finances\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Development of the Dynamic Social Registry risks data incomplete issues or MIS lags similar to past challenges faced by the National Household Database.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Build upon functional legacy platforms (ISPMIS), integrate mandatory NID/BRN digital verification, and assign clear legal mandates through Cabinet-approved guidelines.\",\n      \"evidence\": \"Past efforts to create a social registry through the National Household Database (NHD) did not materialize due to incomplete and outdated data\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"High dependence on recipient counterpart financing (US$3,848 million) creates fiscal short-fall risks during constrained government budget environments.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure yearly budgetary allocations in national development budgets and co-finance cash transfer payments linked to verified performance-based conditions.\",\n      \"evidence\": \"Counterpart Funding Borrower/Recipient 3,848.00\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Low digital and financial literacy among target beneficiaries, particularly women, elderly, and PWDs, could limit program registration and G2P payment access.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Design simplified digital interfaces, deploy local social worker cadres for last-mile outreach, and integrate financial literacy into livelihoods training.\",\n      \"evidence\": \"Women report limited digital and financial access, which constrains their access to G2P payments\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Centralizing sensitive citizen socioeconomic and national identity data in digital registries exposes systems to data security breaches and privacy risks.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce national data protection regulations, embed data security protocols in the POM, and host systems in National Data Centers with disaster recovery.\",\n      \"evidence\": \"clear mitigation measures to address data security risks, and these will be reflected in the Project Operations Manual (POM).\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Complex financial management arrangements across multiple PIUs may lead to accounting errors, delay financial reporting, or weaken internal controls.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit qualified FM consultants, integrate iBAS++ accounting software across PIUs, and conduct annual risk-based internal audits by chartered firms.\",\n      \"evidence\": \"From the FM perspective, the project design is complex due to the intricacy of activity selection and various IAs and finances\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Delays in establishing required PIUs, steering committees, or adopting the Project Operations Manual within mandated deadlines could delay project implementation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor legal covenants closely, establish steering committees within required timeframes, and prioritize POM drafting through specialized technical support.\",\n      \"evidence\": \"The Recipient shall establish within six (6) months of the Effective Date... the Project Implementation Unit (PIU) at the DSS\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"High youth unemployment and informal economy constraints may hinder livelihood support beneficiaries from maintaining long-term employment or microenterprises.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deliver bundled economic inclusion interventions combining market-relevant technical training, productive grants, stipends, mentorship, and market linkage support.\",\n      \"evidence\": \"Labor Force Survey for 2023 find youth unemployment for ages 15\u201324 remains high at 16 percent\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Sub-grants disbursed directly to local social clubs under Subcomponent 2.2 create financial management tracking and compliance risks at the local level.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Mandate official registration of clubs, require joint-signatory bank accounts, record funds as advances, and enforce monthly SOE submission prior to replenishment.\",\n      \"evidence\": \"Funds received by the clubs will initially be recorded as advances by the DSS until the SOE and supporting documents are submitted.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Delays or challenges in verifying complex Performance-Based Conditions (PBCs) could postpone IDA disbursements to the Recipient's Consolidated Fund.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish clear verification protocols, leverage floating PBC design for flexible timing, and strengthen field data collection through technical assistance.\",\n      \"evidence\": \"PBCs will be disbursed against the achievement of targets related to strengthened program targeting systems\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-BGD-SocialProtectionResilience",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Political transition uncertainties and lingering macroeconomic volatility could disrupt project implementation and social protection sector reforms.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Maintain close operational dialogue with the interim government, align activities with national priorities, and leverage multi-partner coordination platforms.",
+        "evidence": "GDP growth would be affected by significant uncertainties due to the lingering economic impact of the recent political transition."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Recurrent severe flooding and climate hazards could disrupt program delivery, damage local infrastructure, and restrict beneficiary mobility.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prioritize climate-vulnerable locations, implement e-learning contingency options for training, utilize digital G2P payments, and include CERC for emergency response.",
+        "evidence": "recurring flooding affects a greater share of the population than any other natural hazard, affecting more than 1 million people annually."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Persistent high inflation erodes the real purchasing power of cash transfer benefits, diminishing the safety net's poverty reduction impact.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and adopt a standardized benefit adequacy framework with periodic review mechanisms and indexation triggers to inform entitlement adjustments.",
+        "evidence": "Inflation remained elevated, reaching 9.9 percent in January 2025."
+      },
+      {
+        "risk_id": "R04",
+        "description": "High targeting exclusion and inclusion errors in existing social assistance programs could lead to misallocation of benefits and reduced program impact.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Institutionalize proxy means testing (PMT) data and rollout the Dynamic Social Registry (DSR) for standardized, objective beneficiary selection.",
+        "evidence": "Nearly half (47 percent) of the poor households are not covered by any social assistance program (HIES 2022)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Interministerial coordination complexity across FD, DSS, DWA, and MoWCA could delay the rollout and integration of the Dynamic Social Registry.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a top-tier Steering Committee chaired by the Cabinet Division, form dedicated implementation units, and execute formal MoUs between participating agencies.",
+        "evidence": "The project design is complex due to the intricacy of activity selection and various IAs and finances"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Development of the Dynamic Social Registry risks data incomplete issues or MIS lags similar to past challenges faced by the National Household Database.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Build upon functional legacy platforms (ISPMIS), integrate mandatory NID/BRN digital verification, and assign clear legal mandates through Cabinet-approved guidelines.",
+        "evidence": "Past efforts to create a social registry through the National Household Database (NHD) did not materialize due to incomplete and outdated data"
+      },
+      {
+        "risk_id": "R07",
+        "description": "High dependence on recipient counterpart financing (US$3,848 million) creates fiscal short-fall risks during constrained government budget environments.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure yearly budgetary allocations in national development budgets and co-finance cash transfer payments linked to verified performance-based conditions.",
+        "evidence": "Counterpart Funding Borrower/Recipient 3,848.00"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Low digital and financial literacy among target beneficiaries, particularly women, elderly, and PWDs, could limit program registration and G2P payment access.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Design simplified digital interfaces, deploy local social worker cadres for last-mile outreach, and integrate financial literacy into livelihoods training.",
+        "evidence": "Women report limited digital and financial access, which constrains their access to G2P payments"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Centralizing sensitive citizen socioeconomic and national identity data in digital registries exposes systems to data security breaches and privacy risks.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce national data protection regulations, embed data security protocols in the POM, and host systems in National Data Centers with disaster recovery.",
+        "evidence": "clear mitigation measures to address data security risks, and these will be reflected in the Project Operations Manual (POM)."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Complex financial management arrangements across multiple PIUs may lead to accounting errors, delay financial reporting, or weaken internal controls.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Recruit qualified FM consultants, integrate iBAS++ accounting software across PIUs, and conduct annual risk-based internal audits by chartered firms.",
+        "evidence": "From the FM perspective, the project design is complex due to the intricacy of activity selection and various IAs and finances"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Delays in establishing required PIUs, steering committees, or adopting the Project Operations Manual within mandated deadlines could delay project implementation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor legal covenants closely, establish steering committees within required timeframes, and prioritize POM drafting through specialized technical support.",
+        "evidence": "The Recipient shall establish within six (6) months of the Effective Date... the Project Implementation Unit (PIU) at the DSS"
+      },
+      {
+        "risk_id": "R12",
+        "description": "High youth unemployment and informal economy constraints may hinder livelihood support beneficiaries from maintaining long-term employment or microenterprises.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deliver bundled economic inclusion interventions combining market-relevant technical training, productive grants, stipends, mentorship, and market linkage support.",
+        "evidence": "Labor Force Survey for 2023 find youth unemployment for ages 15\u201324 remains high at 16 percent"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Sub-grants disbursed directly to local social clubs under Subcomponent 2.2 create financial management tracking and compliance risks at the local level.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate official registration of clubs, require joint-signatory bank accounts, record funds as advances, and enforce monthly SOE submission prior to replenishment.",
+        "evidence": "Funds received by the clubs will initially be recorded as advances by the DSS until the SOE and supporting documents are submitted."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Delays or challenges in verifying complex Performance-Based Conditions (PBCs) could postpone IDA disbursements to the Recipient's Consolidated Fund.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish clear verification protocols, leverage floating PBC design for flexible timing, and strengthen field data collection through technical assistance.",
+        "evidence": "PBCs will be disbursed against the achievement of targets related to strengthened program targeting systems"
+      }
+    ]
+  },
+  "parse_error": null
+}

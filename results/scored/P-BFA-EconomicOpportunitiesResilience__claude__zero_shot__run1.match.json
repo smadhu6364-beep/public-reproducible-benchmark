@@ -1,0 +1,245 @@
+{
+  "run_file": "P-BFA-EconomicOpportunitiesResilience__claude__zero_shot__run1.json",
+  "project_id": "P-BFA-EconomicOpportunitiesResilience",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R05",
+      "similarity": 0.694,
+      "gen_category": "technical",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R03",
+      "similarity": 0.611,
+      "gen_category": "organizational",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R04",
+      "similarity": 0.499,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R01",
+      "similarity": 0.484,
+      "gen_category": "external",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R16",
+      "gt_risk_id": "R02",
+      "similarity": 0.462,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "High insecurity and active conflict in intervention areas could restrict field access, suspend project activities, and pose safety risks to staff and beneficiaries.",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Implement security standard operating procedures, utilize remote delivery modalities (mobile payments, radio sensitization, GEMS monitoring), and partner with local CBOs, NGOs, or UN agencies where direct government access is constrained.",
+      "evidence": "Section IV.B Procurement: high insecurity in some of the areas in which project activities will be conducted"
+    },
+    {
+      "risk_id": "R02",
+      "description": "A fluid national political and governance context in Burkina Faso could lead to shifts in policy priorities, institutional restructuring, or operational delays.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Institutionalize project management within permanent civil service ministry directorates and maintain close multi-ministerial technical engagement through the Project Steering Committee.",
+      "evidence": "Section IV.B Procurement: the country's current fluid political situation"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Absence of established Financial Management (FM) staffing, software, and procedures within the MFS PIU at inception could lead to financial reporting non-compliance and disbursement bottlenecks.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Recruit qualified FM specialists prior to effectiveness, adopt a comprehensive financial procedures manual, install dedicated accounting software, and submit productive grant funds to annual ASCELC and external audits.",
+      "evidence": "Section IV.B Financial Management: the MFS currently does not have a PIU with FM arrangements in place, including the absence of FM staff"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Administrative routines and bureaucratic review processes could cause substantial procurement delays, affecting contract awards and overall project execution schedules.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Recruit an experienced procurement specialist, establish maximum processing timelines in the Project Implementation Manual, implement fast-track review mechanisms, and train bid committee members in World Bank procurement procedures.",
+      "evidence": "Section IV.B Procurement: administrative routines may result in procurement delays, potentially affecting project implementation"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Limited availability of qualified contractors and suppliers in fragile, high-risk zones could restrict competition, inflate contract prices, and heighten collusion risks.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Apply World Bank procurement flexibilities for fragile contexts, perform market mapping, optimize contract packaging, and consider direct contracting or delegated UN/NGO implementation where appropriate.",
+      "evidence": "Section IV.B Procurement: procurement in fragile areas with few bidders can restrict competition and possibly increase prices and collusion risks"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Heightened risk of Sexual Exploitation, Abuse, and Sexual Harassment (SEA/SH) and Gender-Based Violence (GBV) during project interventions targeting vulnerable women and displaced populations.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Enforce an SEA/SH Action Plan, mandate signed codes of conduct for all personnel, integrate confidential GBV intake and referral protocols into the Grievance Redress Mechanism, and partner with a specialized GBV NGO.",
+      "evidence": "Section IV.C Operational Policies: SEA/SH risk is Substantial, reflecting the nature of project activities and the vulnerability of the target population"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Civil works for constructing 28 food warehouses and rehabilitating 10 intake centers could cause localized soil and water pollution and pose occupational health and safety hazards for workers.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct environmental screening for all civil works, prepare site-specific ESIAs/ESMPs, strictly enforce worker safety requirements under Labor Management Plans, and recruit dedicated PIU environmental specialists.",
+      "evidence": "Section IV.C Operational Policies: water and soil pollution from solid and liquid waste at construction and rehabilitation sites"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Land acquisition or site selection for warehouse construction and provincial directorate upgrades could trigger economic displacement or land use restrictions for local communities.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Restrict construction activities to secured public land, conduct social screening under ESS 5, and formulate and implement Resettlement Action Plans (RAPs) or Livelihood Restoration Plans (LRPs) prior to land takeover.",
+      "evidence": "Section IV.C Operational Policies: exclusion from the project's benefits... and economic displacement."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Delays in fulfilling legal covenants and conditions precedent to effectiveness or disbursement (such as manual adoption or key staff recruitment) could postpone project launch and grant disbursements.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prioritize the recruitment of essential PIU personnel before effectiveness and accelerate the drafting, review, and adoption of the Project Implementation Manual and Productive Grants Manual.",
+      "evidence": "Datasheet Conditions: no withdrawal shall be made for payments under Category (3) until and unless the Recipient has adopted the Productive Grants Manual"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Interconnecting multiple sector databases with the Unique Social Registry (RSU) exposes sensitive socioeconomic and identification data to potential privacy breaches and cybersecurity threats.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Enforce national data protection standards with oversight from the Data Protection Authority (CIL), implement security protocols established by the National Cybersecurity Agency (ANSSI), and utilize secure permissioned APIs.",
+      "evidence": "Subcomponent 2.2: ensure proper and appropriate application of national data protection and privacy measures... follow security procedures elaborated by ANSSI"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Flawed targeting metrics, lack of national identity documentation, or social barriers could lead to the exclusion of highly vulnerable groups, including IDPs, female-headed households, and persons with disabilities.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Combine Proxy Means Testing (PMT) with community-validated assembly verification, adopt gender-sensitive outreach, coordinate with the WURI project for unique ID issuance, and maintain an accessible Grievance Redress Mechanism.",
+      "evidence": "Section IV.C Operational Policies: exclusion from the project's benefits of certain categories of people such as vulnerable groups including women, youth, people"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Complex multi-agency implementation involving MFS, CONASUR, SP-CNPS, SE-CNSA, and line ministries could lead to institutional coordination failure and fragmented implementation of the PAMPV flagship program.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Formalize inter-agency collaboration agreements and operational protocols, schedule regular inter-ministerial planning sessions, and operationalize a representative Steering Committee.",
+      "evidence": "Section I.B Sectoral Context: Building adaptive social protection that can respond to the needs of the poor... involves multiple government actors"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Recurrent climate shocks, such as severe droughts or flash floods, could destroy beneficiary productive assets, undermine agricultural livelihoods, and reverse economic inclusion gains.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Promote climate-smart agricultural techniques and off-farm livelihood diversification, link RSU data with early warning systems for shock detection, and preserve CERC activation readiness.",
+      "evidence": "Section I.A Strategic Context: Climate change also severely undermines food security, with 5 out of 10 Burkinabe in rural areas affected"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Inadequate Microfinance Institution (MFI) presence or financial infrastructure in remote and insecure areas could restrict beneficiary account opening and payment transfers for productive grants.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Perform partner mapping, adapt digital payment systems (Faso Arzeka) to include mobile money options, facilitate account opening through project operating support, and utilize local VSLAs.",
+      "evidence": "Section I.B Sectoral Context: addressing key constraints to financial access and inclusion... in underserved areas"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Severe operational budget and material deficits among local social workers could hinder community coaching, field supervision, grievance intake, and social registry data updating.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Provide decentralized social workers with dedicated operational support, transport equipment (motorcycles, gas), communication allowances, IT tablets, and targeted capacity-building under Subcomponent 3.2.",
+      "evidence": "Subcomponent 3.2: address critical gap in resources\u2014particularly operating budget\u2014for social workers hired by the MFS and communes"
+    },
+    {
+      "risk_id": "R16",
+      "description": "Abrupt reductions in international humanitarian funding could create severe social assistance gaps for displaced populations, overstretching government emergency response capacities.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Expand CONASUR logistical storage capacity, transition from fragmented emergency aid to a sustainable, government-led adaptive social protection framework (PAMPV), and leverage SASPP trust fund co-financing.",
+      "evidence": "Section I.A Strategic Context: Recent cuts in humanitarian funding have reduced support for IDPs."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is assessed to be Substantial. The uncertain political and governance context provides a challenge to long-term development policy. Adaptive social protection systems are still nascent and will require continued political commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The team, guided by the management, will continue its high-level policy dialogue at central and decentralized levels and ensure continuous advocacy and communication."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed to be Substantial. Fiscal space remains constrained by elevated security spending and tighter financing conditions, which increase the risk of reduced budget allocations and delayed counterpart funding for new priorities and reforms, including social protection and the PAMPV. Macroeconomic risks also arise from exogenous factors, including current conflict in the Middle East which can result in a surge in oil prices and put inflationary pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Other programs such as the International Monetary Fund program and the World Bank's technical assistance on tax expenditure under the Sustainable Development Finance Policy can help expand fiscal space, partially mitigating these risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector strategy and policies risks are considered to be Substantial. Sectoral strategies and policies remain nascent, and the Government's budget allocation to operationalize the PAMPV remains unclear. Also, sectoral decisions are at times taken abruptly and can heavily affect implementation (for example, the suspension of cash transfers in 2023 led to an increased focus on economic inclusion, and the newly emerged priority of the CONASUR/IDPs led to the revision of the fiche de projet of this project).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In parallel with high-level policy dialogue, the project supports strategic communications, adopts an agile approach, and provides technical assistance to promote evidence-based decision-making (with support from SASPP, the Social Protection Response MDTF, and the State and Peacebuilding Fund)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall fiduciary risks are considered as Substantial, as described in section IV.B and annex 2, based on financial assessment and procurement assessment.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project preparation fund (Grant Facility for Project Preparation) has been used not only to prepare mitigation measures to address these risks but will also elevate the project readiness (for example, effectiveness-linked actions including FM and procurement staffing and initiating the procurement packages for the first 18-months' implementation priorities) to improve the project performance."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks related to insecurity are rated as High. The deteriorating and volatile security situation\u2014particularly in regions with high poverty, displacement, and food insecurity that are project intervention areas\u2014will likely be an important risk. The project will also address other risks related to protection of personal data: for Component 2 on social registry and interoperability, activities will be guided by the Information System Security Policy (ISSP) document developed by the ANSSI, to ensure confidentiality of households registered in the RSU.",
+      "category": "other",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project activities will be adjusted based on the security situation (see annex 3), and the PIU will be also staffed with a security specialist and a security management plan will be developed. To remain engaged, the project will also rely on remote delivery/monitoring, partnering with local representation (NGOs, UN agencies). The ST-RSU will conduct capacity-building activities, including training sessions and awareness campaigns, to strengthen users' ability to manage and protect households' personal data."
+    }
+  ]
+}

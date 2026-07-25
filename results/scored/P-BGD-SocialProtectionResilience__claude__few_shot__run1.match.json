@@ -1,0 +1,246 @@
+{
+  "run_file": "P-BGD-SocialProtectionResilience__claude__few_shot__run1.json",
+  "project_id": "P-BGD-SocialProtectionResilience",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R01",
+      "similarity": 0.618,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R04",
+      "similarity": 0.488,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R02",
+      "similarity": 0.485,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R03",
+      "similarity": 0.471,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Economic uncertainty and lingering impacts from the August 2024 political transition could delay project execution and structural reforms.",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Engage proactively with interim government leadership, establish clear inter-ministerial coordination mechanisms, and prioritize technical implementation milestones.",
+      "evidence": "lingering economic impact of the recent political transition"
+    },
+    {
+      "risk_id": "R02",
+      "description": "High inflation rates risk eroding the real value and purchasing power of monthly cash transfer benefits provided to poor households.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop and adopt a standardized benefits adequacy framework and indexation mechanism under Subcomponent 2.1 to inform periodic budget adjustments.",
+      "evidence": "the real value of benefits under the DSS\u2019s Old Age Allowance and Widow Allowance programs has decreased since 2016"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Recurring severe floods and extreme climate events could inundate project areas and disrupt livelihoods, increasing safety net demand.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate dynamic climate-shock targeting into the Dynamic Social Registry, prioritize climate-vulnerable locations, and maintain an active Contingent Emergency Response Component.",
+      "evidence": "recurring flooding affects a greater share of the population than any other natural hazard"
+    },
+    {
+      "risk_id": "R04",
+      "description": "High baseline inclusion and exclusion errors in safety net programs cause significant misallocation of cash transfer resources.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish and roll out the Dynamic Social Registry using standardized proxy means testing scores and digitized data verification.",
+      "evidence": "The inclusion and exclusion errors are approximately 60 percent"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Institutional weaknesses and cross-ministry coordination failures that hampered past social registry efforts (such as NHD) could recur.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Anchor overall DSR coordination in the Finance Division, establish Cabinet-backed steering oversight, and formalize inter-agency roles via MoUs.",
+      "evidence": "Past efforts to create a social registry through the National Household Database (NHD) did not materialize"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Complex financial management across multiple implementing agencies and varied expenditure types creates risk of accounting delays or non-compliance.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit certified FM consultants at both PIUs, integrate iBAS++ tracking, submit quarterly IUFRs, and execute annual risk-based internal audits.",
+      "evidence": "From the FM perspective, the project design is complex due to the intricacy of activity selection and various IAs and finances"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Fiscal pressure or revenue collection shortfalls could jeopardize the timely provision of the government's substantial counterpart funding.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Structure PBC disbursements against regular national safety net allowance budget lines (economic code 3721) to lock in funding flows.",
+      "evidence": "Counterpart Funding Borrower/Recipient 3,848.00"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Centralized storage and processing of national identity numbers and socioeconomic data pose data security, privacy, and cyber risks.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Host registry systems in secure National Data Centers equipped with disaster recovery facilities and adhere strictly to national data security regulations.",
+      "evidence": "the design of the DSR and module development will contain clear mitigation measures to address data security risks"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Gender disparities in digital skills and financial literacy could restrict female access to G2P digital payments and DSR registration.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Design simplified user interfaces and local language audio guides, deploy female frontline staff, and provide targeted financial literacy training.",
+      "evidence": "Women report limited digital and financial access, which constrains their access to G2P payments"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Lack of administrative and MIS integration across the four DSS livelihoods programs prevents seamless case management and beneficiary graduation.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Harmonize the DSS livelihoods program MIS, establish interoperability with the DSR, and dedicate specialized PIU staff to program coordination.",
+      "evidence": "there is limited integration within these programs in terms of administrative systems, data/information, and resource management."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Sub-grants transferred directly to local social club bank accounts risk delayed expenditure reporting or fiduciary mismanagement.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Mandate official club enlistment, require dual-signatory bank accounts, enforce monthly countersigned SOE reporting, and record funds as advances until reconciled.",
+      "evidence": "Grants to social clubs under Subcomponent 2.2 will be financed through the DSS\u2019s DA and transferred directly"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Severe seasonal flooding in disaster-prone Upazilas could prevent program participants from attending in-person livelihoods training.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Incorporate e-learning options into the training curriculum and disburse training stipends via direct electronic fund transfers.",
+      "evidence": "risk of intense floodings in the region, which may restrict in-person attendance"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Frontline social service officers and field cadres may lack the operational capacity to manage modernized DSR workflows and business processes.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Deliver continuous central and field-level training programs to ensure at least one fully trained personnel and active DSR access point in every Upazila.",
+      "evidence": "Each Upazila in the country has at least one DSS personnel who has been trained on the updated business processes"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Failure to establish implementation units, steering committees, or the Project Operations Manual within strict legal deadlines could delay effectiveness.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign experienced staff from predecessor projects, advance-draft the POM, and systematically track legal covenant timeline compliance.",
+      "evidence": "establish within six (6) months of the Effective Date... the Project Implementation Unit (PIU) at the DSS"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Delays or reluctance by partnering line ministries in executing MoUs could impede onboarding non-DSS cash transfer programs to the DSR.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Leverage the Cabinet Division-led DSR Steering Committee to facilitate inter-agency dialogue and resolve policy disputes swiftly.",
+      "evidence": "MoWCA is expected to sign a memorandum of understanding (MoU) with the FD and DSS"
+    },
+    {
+      "risk_id": "R16",
+      "description": "Ad hoc training quality and limited market relevance in existing livelihoods schemes risk failing to secure long-term employment for beneficiaries.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Overhaul training curricula with technical, life skills, and financial modules, conduct market assessment studies, and offer post-training mentorship.",
+      "evidence": "training components, they are often ad hoc and limited in coverage and depth"
+    },
+    {
+      "risk_id": "R17",
+      "description": "Procedural delays in finalizing CERC manuals and emergency action plans could hinder rapid disbursement during a major crisis.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Draft and formally adopt the CERC Manual and Emergency Action Plan early during standard project implementation.",
+      "evidence": "adopted the CERC Manual and Emergency Action Plan, in form and substance acceptable to the Association."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Foreign exchange reserve volatility and currency depreciation could exacerbate national macroeconomic vulnerability and import capacity.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain close alignment with international development partner financing and leverage public financial management strengthening efforts.",
+      "evidence": "FX reserves stood at US$19.9 billion (approximately 3.3 months of prospective imports)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk is Substantial. Safety and security concerns persist, despite the priority placed by the interim government on law and order. The interim government is implementing critical reforms before holding elections; reaching a consensus on reforms and the announcement of the election date could heighten political tensions among political parties and the interim government.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated during implementation through continuous engagement with all relevant government and nongovernmental entities, and dialogue with other stakeholders."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is Substantial. Downside risks have increased, related to uncertainties in the political process and the security situation which affects the recovery of economic activities. The financial sector remains vulnerable with deviations from international regulatory and supervisory standards and weak corporate governance. Despite recent improvements, the balance of payments remained in deficit and FX reserves remained under pressure.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The macroeconomic risks are partially mitigated by the GoB's reform program, supported by International Monetary Fund arrangements, as well as ongoing World Bank and other development partners' policy lending. Data show consistent budgetary and political commitment to spending on safety nets across regimes in Bangladesh, with strong stakeholder consensus on ensuring a ring-fenced core budget for social assistance and livelihoods programs for the poorest."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Fiduciary risk is rated Substantial due to the involvement of multiple implementing agencies (the DSS and FD), the complexity of activity selection, and intervention modalities. The project's residual procurement risk specifically is also rated Substantial, due to the complexity of procurement activities, multiagency coordination, and capacity limitations (para 56, part of the Fiduciary appraisal-summary discussion immediately preceding the Key Risks section).",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigation measures include hiring additional capacity, training, and close monitoring; considering satisfactory implementation of these measures, the residual fiduciary risk is assessed as Substantial and will be managed through proactive and continuous supervision and close dialogue with the GoB. Procurement-specific mitigation: hiring full-time procurement consultants for the DSS and FD; training on World Bank Procurement Regulations, STEP, and contract management; defining clear roles and streamlining approval processes; engaging IT procurement specialists and conducting early market assessments; using performance-based KPIs in contracts and including procurement consultants on bid evaluation committees; and establishing complaint registers at both agencies, with procurement not prior-reviewed by the Bank subject to regular fiduciary reviews and post-procurement review/audit by FAPAD."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project presents a low environmental risk and a moderate social risk, resulting in an overall moderate environmental and social (ES) risk classification. Minor environmental concerns relate to potential e-waste generation from IT equipment and increased energy use. Social risks include potential exclusion of beneficiaries, inadequate consultation, and challenges in reaching remote and marginalized communities, including those who lack IT knowledge; there is also the likelihood of sexual exploitation and abuse/sexual harassment (SEA/SH) cases given the cash transfer modalities of the project and the interaction between service providers and beneficiaries.",
+      "category": "environmental",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Waste management protocols and resource efficiency measures will prevent localized pollution. The project will establish a Digital Social Registry (DSR) to improve targeting and coverage, complemented by a robust outreach and monitoring program, and will include Stakeholder Engagement Plan provisions requiring community consultation and disclosure measures. The existing DSS grievance redress mechanism (GRM) will address complaints. An SEA/SH Action Plan will be developed including code of conduct, awareness raising, and GRM to address potential incidents. The project will partially rely on the borrower's ES management framework supplemented by gap-filling measures included in the POM."
+    }
+  ]
+}
