@@ -37,6 +37,7 @@ ENV_PATH = REPO_ROOT / ".env"
 
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
 SAMBANOVA_BASE_URL = "https://api.sambanova.ai/v1/"
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 
 def _load_env() -> None:
@@ -119,14 +120,29 @@ def check_opensource_slot() -> tuple[str, bool, str]:
     return _check_openai_compatible_endpoint(label, SAMBANOVA_BASE_URL, key)
 
 
+def check_openrouter_supplemental() -> tuple[str, bool, str]:
+    """OPTIONAL, ADDED 2026-07-25: OpenRouter is a supplemental provider for
+    the gpt/opensource slots (see run_experiments.py's OPENROUTER_MODEL_ID
+    comment), tried only after SambaNova returns a transient error - not one
+    of the 3 required MODEL_DISPATCH slots, so an unconfigured or failing
+    OpenRouter key does NOT flip check_env.py's exit code (unlike the 3
+    checks above)."""
+    label = "OpenRouter (gpt/opensource supplemental)"
+    key = os.environ.get("OPENROUTER_API_KEY")
+    if not key:
+        return (label, False, "not configured (optional)")
+    return _check_openai_compatible_endpoint(label, OPENROUTER_BASE_URL, key)
+
+
 def main() -> int:
     if not ENV_PATH.exists():
         print(f"NOTE: {ENV_PATH} does not exist yet - copy .env.example to .env and fill in keys.\n", file=sys.stderr)
     _load_env()
 
     checks = [check_claude_slot(), check_gpt_slot(), check_opensource_slot()]
+    supplemental = check_openrouter_supplemental()
 
-    name_width = max(len(name) for name, _, _ in checks)
+    name_width = max(len(name) for name, _, _ in checks + [supplemental])
     print(f"{'PROVIDER':<{name_width}}  {'CONFIGURED':<11}  RESULT")
     print("-" * (name_width + 11 + 9))
     any_fail = False
@@ -134,6 +150,8 @@ def main() -> int:
         if result.startswith("FAIL"):
             any_fail = True
         print(f"{name:<{name_width}}  {str(configured):<11}  {result}")
+    sup_name, sup_configured, sup_result = supplemental
+    print(f"{sup_name:<{name_width}}  {str(sup_configured):<11}  {sup_result}")
 
     if any_fail:
         print("\nAt least one configured provider failed to authenticate - see FAIL messages above.", file=sys.stderr)

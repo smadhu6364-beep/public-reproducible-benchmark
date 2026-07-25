@@ -409,6 +409,45 @@ def _openai_compatible_call(
 
 GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
 SAMBANOVA_BASE_URL = "https://api.sambanova.ai/v1/"
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+
+# ADDED 2026-07-25: OpenRouter as a supplemental provider for the gpt/
+# opensource slots, tried only after SambaNova returns a transient
+# (rate-limit/5xx) error - SambaNova's real daily caps (~6-7 calls/day/model)
+# are the actual bottleneck on the ~3-week grid timeline, not a code problem
+# retrying fixes. Real-call verified (2026-07-25) with a genuine
+# ~35,100-token corpus prompt against BOTH exact models this project already
+# uses: `openai/gpt-oss-120b` succeeded (temperature_applied=True); so did
+# `meta-llama/llama-3.3-70b-instruct` (clean, on-topic JSON risk-register
+# content, real project facts). Same underlying open-weight models, same
+# RQ2 comparison shape - this is an additional PROVIDER for existing model
+# labels, not a new model, so no further disclosure-shape change needed.
+# Real per-token pricing confirmed directly from openrouter.ai/api/v1/models
+# (checked 2026-07-25): gpt-oss-120b $0.000000037/$0.00000017 prompt/
+# completion; llama-3.3-70b-instruct $0.00000013/$0.0000004 - both non-free,
+# but at these rates a ~35K-token call costs roughly $0.002-0.006, not the
+# dollar amounts the original paid-triple estimate implied. NOT the
+# ":free"-suffixed tier - OpenRouter's actual free models are smaller/
+# different (e.g. gpt-oss-20b:free), confirmed absent for the two exact
+# models this project needs. Real, disclosed cost - this is a paid call,
+# however small, not a free-tier trick.
+#
+# Genuinely unconfirmed: the exact mechanism letting a $0-lifetime-purchase
+# ("is_free_tier": true per openrouter.ai/api/v1/key) account pay for a
+# non-free model at all - OpenRouter's own /credits endpoint showed
+# total_credits=0 alongside real, succeeded, billed usage. Some kind of
+# small default trial allowance not exposed by that endpoint is the likely
+# explanation but not confirmed - if real calls start failing on insufficient
+# balance, that is the likely cause, not a bug here. Also unconfirmed:
+# whether OpenRouter's documented 50-requests/day cap (0-tier, no lifetime
+# purchases; openrouter.ai/docs/api-reference/limits, checked 2026-07-25)
+# applies to paid-model calls on a free-tier-labeled account the same way it
+# applies to :free-suffixed models - real behavior will show this, not
+# guessed in advance.
+OPENROUTER_MODEL_ID = {
+    "gpt-oss-120b": "openai/gpt-oss-120b",
+    "Meta-Llama-3.3-70B-Instruct": "meta-llama/llama-3.3-70b-instruct",
+}
 
 
 def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
@@ -468,7 +507,29 @@ def call_gpt(prompt: str, model_version: str, temperature: float, max_tokens: in
     sourced against the actual error.
     """
     api_key = _require_env("SAMBANOVA_API_KEY")
-    return _openai_compatible_call(SAMBANOVA_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
+    try:
+        return _openai_compatible_call(SAMBANOVA_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
+    except Exception as e:
+        return _fallback_to_openrouter(e, model_version, prompt, temperature, max_tokens)
+
+
+def _fallback_to_openrouter(sambanova_exc: Exception, model_version: str, prompt: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
+    """Shared by call_gpt/call_opensource: re-raises immediately unless
+    SambaNova's error is transient (rate-limit/5xx - see
+    _is_transient_provider_error) AND OPENROUTER_API_KEY is configured. A
+    non-transient error (bad auth, bad request) propagates as before -
+    OpenRouter can't fix a broken SambaNova config and shouldn't mask one.
+    Without OPENROUTER_API_KEY set, behavior is unchanged from before this
+    fallback existed (SambaNova's own error just propagates)."""
+    if not _is_transient_provider_error(sambanova_exc):
+        raise sambanova_exc
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY")
+    if not openrouter_key:
+        raise sambanova_exc
+    openrouter_model_id = OPENROUTER_MODEL_ID.get(model_version)
+    if not openrouter_model_id:
+        raise sambanova_exc
+    return _openai_compatible_call(OPENROUTER_BASE_URL, openrouter_key, openrouter_model_id, prompt, temperature, max_tokens)
 
 
 def call_opensource(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
@@ -492,7 +553,10 @@ def call_opensource(prompt: str, model_version: str, temperature: float, max_tok
     overhead observed for this model).
     """
     api_key = _require_env("SAMBANOVA_API_KEY")
-    return _openai_compatible_call(SAMBANOVA_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
+    try:
+        return _openai_compatible_call(SAMBANOVA_BASE_URL, api_key, model_version, prompt, temperature, max_tokens)
+    except Exception as e:
+        return _fallback_to_openrouter(e, model_version, prompt, temperature, max_tokens)
 
 
 MODEL_DISPATCH = {
