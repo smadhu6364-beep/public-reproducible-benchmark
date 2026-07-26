@@ -1,0 +1,159 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__claude__structured__run1.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.563,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Geopolitical volatility in the MENA region could depress private investor confidence, disrupt venture capital markets, and hinder private capital mobilization targets.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Partner with regional and international DFIs like IFC to co-invest, de-risk deals, and utilize flexible LP commitment structures.",
+      "evidence": "Jordan\u2019s small, open economy continues to face vulnerabilities tied to its position in a geopolitically volatile region."
+    },
+    {
+      "risk_id": "R02",
+      "description": "High-growth Jordanian startups may relocate their primary headquarters and capital structures to GCC or US markets, reducing domestic development impact.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Enforce contractual side letters requiring beneficiary funds and startups to maintain significant core operations, development teams, and headcount in Jordan.",
+      "evidence": "Availability of long-term funding and market size in the Gulf Cooperation Council (GCC) countries, US and other markets prompt high-growth Jordanian startups to expand elsewhere"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Excessive capital commitment to a small number of VC funds or individual startups could lead to severe portfolio concentration loss.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Enforce nominal single-fund exposure limits in the Project Operations Manual, capping commitments at 15 percent of total loan size.",
+      "evidence": "To mitigate and manage concentration risks, the current ISSF Investment Strategy sets out the limit on ISSF investment in one VC fund."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Turnover of key management and technical professionals at ISSF PMU could disrupt investment evaluation, due diligence, and capital deployment.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Maintain market-aligned compensation structures and institutionalize operational due diligence processes to ensure knowledge retention.",
+      "evidence": "In the initial years of operation, ISSF faced challenges linked to, for example, high turnover of the team."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Improper handling and disposal of e-waste by beneficiary ICT startups could cause environmental pollution and health and safety hazards.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Incorporate mandatory environmental screening into deal selection and mandate safe e-waste recycling and management practices in sub-project covenants.",
+      "evidence": "SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e-waste, including pollution, Occupational Health and Safety..."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Beneficiary ICT startups may exhibit inadequate labor practices, employment discrimination, or sexual harassment risks.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Mandate anti-harassment and non-discrimination provisions in investment agreements and ensure accessible worker grievance mechanisms.",
+      "evidence": "Additional labor risks related to ICT start-ups include terms and conditions of employment, discrimination, and sexual harassment, which are sometimes more prevalent in the ICT sector."
+    },
+    {
+      "risk_id": "R07",
+      "description": "ISSF and participating financial intermediaries may lack sufficient technical capacity to effectively implement World Bank ESF and ESMS standards.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint dedicated Environmental and Social staff at ISSF and mandate that beneficiary funds establish internal ESMS frameworks.",
+      "evidence": "ISSF requires improved E&S risks and impacts management capacity, especially in the implementation of the World Bank Environmental and Social Standards (ESS)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Underlying VC fund managers may engage in weak operational governance, financial mismanagement, or regulatory non-compliance.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Integrate formal Operational Due Diligence (ODD) into pre-investment screening and conduct continuous portfolio monitoring.",
+      "evidence": "Underlying funds follow robust operational practices and have the tools and capacity to monitor risks such as fraud, mismanagement, or regulatory non-compliance."
+    },
+    {
+      "risk_id": "R09",
+      "description": "The project grievance redress system may be insufficiently accessible or confidential, preventing stakeholders from reporting grievances or SEA/SH concerns.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Upgrade the ISSF Grievance Mechanism with safe, confidential multi-channel intake mechanisms and survivor-centered SEA/SH protocols.",
+      "evidence": "it was found that the GM system requires enhancement to ensure that all affected parties and stakeholders of the project can access it"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Gaps between national labor legislation and World Bank ESS2 could lead to compliance issues regarding non-discrimination and supply chain safety.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Implement specific gap-filling measures in the Environmental and Social Commitment Plan (ESCP) addressing non-discrimination and contractor oversight.",
+      "evidence": "There are gaps with ESS2 in the following areas: lack of non-discrimination provisions based on gender, disability and citizenship; worker\u2019s organizations, contractor management"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Macroeconomic friction or learning curves in deploying complex fund-of-funds structures could slow capital disbursement pace.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Streamline decision-making by separating Board governance from Investment Committee approvals and utilizing experienced PMU staff.",
+      "evidence": "During initial phases of ISSF 1.0 implementation the pace of commitments was relatively slow mostly due to the steep learning curve"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Supported tech startups operating digital platforms may experience cybersecurity breaches or fail to maintain adequate data privacy standards.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Require data privacy and cybersecurity compliance checks as part of operational due diligence and technical assistance for portfolio startups.",
+      "evidence": "the proposed Project could entail social risks, including poor labor and working conditions, limited stakeholder engagement, the digital divide, data privacy and security risks"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Social norms and legislative barriers may impede female and youth entrepreneurs, causing the project to miss target participation indicators.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt a comprehensive Gender Action Plan, conduct targeted outreach, and collaborate with gender-focused programs like IFC Start Mashreq.",
+      "evidence": "Factors such as social norms, legislative barriers, and limited access to finance continue to influence participation in entrepreneurship in Jordan."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}
