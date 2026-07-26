@@ -156,6 +156,49 @@ RQ3: Which risk categories do LLMs systematically miss or hallucinate?
 >   `python src/run_experiments.py --runs 2` daily; the pipeline safely
 >   resumes (raw outputs are append-only, `next_free_run_index` skips
 >   completed cells) rather than needing anything special per re-run.
+>
+> **ADDENDUM 2026-07-25/26: a real, small paid spend entered the pipeline
+> via an OpenRouter fallback, added without prior sign-off - retroactively
+> authorized 2026-07-26, documented here so it isn't a silent change to the
+> "genuinely free-tier" design above.** SambaNova's real daily caps
+> (~6-7 calls/day/model) are the actual bottleneck on the 3-week timeline
+> above, not something retry/backoff can fix. A same-day change (Cowork
+> session, commit `6653857`) added OpenRouter as a fallback for the `gpt`/
+> `opensource` slots: `call_gpt()`/`call_opensource()` now fall through to
+> OpenRouter only when SambaNova raises a transient (rate-limit/5xx) error
+> and `OPENROUTER_API_KEY` is configured; a non-transient error still
+> propagates immediately, and behavior is unchanged when the key isn't set.
+> Real-call verified against a genuine ~35,100-token corpus prompt: both
+> `openai/gpt-oss-120b` and `meta-llama/llama-3.3-70b-instruct` succeed on
+> OpenRouter - the same exact models this project already uses, so this is
+> a provider addition, not a further change to RQ2's comparison shape.
+>
+> **This is real, disclosed paid spend, not free-tier.** OpenRouter's own
+> `:free`-suffixed tier does not include either exact model (confirmed
+> against their live models API); calls route to the real, paid versions at
+> roughly $0.000000037-0.0000004/token (~$0.002-0.006 for a ~35K-token
+> call). The first live run under this fallback (commit `d114dca`) made 46
+> real calls before hitting a genuine `402 Payment Required` - the account's
+> implicit trial balance (confirmed via `/api/v1/key`'s usage field
+> climbing from \$0 to \$0.1814 across the run) was spent, not a rate limit.
+> Two things flagged as genuinely unconfirmed rather than asserted: how a
+> \$0-lifetime-purchase account is able to pay for a non-free model at all,
+> and whether OpenRouter's documented 50-req/day free-tier cap applies the
+> same way to these paid-model calls. Real total impact so far: roughly
+> \$0.18 spent, once.
+>
+> **Why this needed a addendum and not just a commit message:** every other
+> provider/model decision in this section - the original free-tier redesign,
+> the Groq to SambaNova move - was free-tier-to-free-tier and got a dated
+> writeup here before or immediately after landing. This one crossed from
+> genuinely-free to a real (if tiny) paid call automatically, on a daily
+> cron Madhu isn't watching live, without going through that same disclosure
+> step first. Raised directly to Madhu 2026-07-26 (VS Code session) rather
+> than left as an implicit fact buried in a commit message; **Madhu's
+> decision: keep the fallback active, retroactively authorized, documented
+> here** rather than capped or reverted. The paper's Methodology/Limitations
+> sections must describe the pipeline as free-tier-with-a-small-paid-
+> fallback from this point forward, not as purely free-tier.
 
 ## Methodology rules (enforce in all code you write)
 
