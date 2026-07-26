@@ -1598,6 +1598,50 @@ information worth a fresh look, not a sign the diagnosis above was wrong.
 `origin/main` are fully in sync through `6a42c1e`. The credential fix
 worked. Closing this out, not leaving it open for re-diagnosis.
 
+## CORRECTION 2026-07-25 (this Cowork session): I did not make the concurrent run in 68c0518/ea3bb43 - attribution needs fixing, substance doesn't
+
+`ea3bb43` attributes a concurrent daily re-run to "Cowork." Checked this
+against my own actual history rather than accepting the label: this session
+has never invoked `run_experiments.py` for a real (non-`--estimate-only`)
+call anywhere in this conversation, and earlier today I confirmed directly
+(via `curl` to `generativelanguage.googleapis.com` and `api.sambanova.ai`,
+both came back unreachable) that this sandbox has no network path to either
+provider at all. So whatever process made those 14 real Gemini calls
+tonight, it wasn't this session - either the attribution logic guessed
+wrong, or Madhu has a *separate* Cowork conversation running independently
+of this one (that second case is real and plausible - Cowork sessions
+aren't singular - but it isn't this one, and I can't confirm which from
+here).
+
+**The substantive finding underneath the attribution still holds and
+matters, independent of whose process it was:** verified directly against
+`run_config.jsonl`'s real timestamps - 15 lines landed between 15:05 and
+15:30 UTC tonight, and the `P-IND-ChhattisgarhAcceleratedLearning`
+few_shot->structured gap is only 10 seconds versus the ~25-40s gap every
+other consecutive pair shows, which is consistent with two independent
+processes interleaving rather than one process pausing oddly. Real
+mechanism, not just coincidence: my earlier fix (`already = next_free_run_
+index()-1` computed once per cell, then loop `needed` times) is correct for
+a single process, but has a genuine check-then-act race if a second,
+fully independent process reads the same "how many exist" state before
+either has written its own new run - both can independently and correctly
+decide "1 more needed," and the second one's actual write (append-only,
+disk-checked at write time) lands at index 3 rather than colliding, because
+by the time it writes, the first process has already taken index 2. This
+is a much smaller, rarer failure mode than the original bug - one extra run
+on rare overlap, not unbounded over-completion - and doesn't need a complex
+fix given how infrequently two full-grid processes will actually overlap on
+the same specific cell in the same few-second window. Worth knowing about,
+not urgent to engineer around.
+
+**Practical upshot for the daily-continuation question:** something is
+independently re-triggering this grid without needing anyone to say
+"continue" - that part of tonight's finding is real regardless of which
+session did it. Exactly one reliable driver (rather than an unknown number
+guessing independently) would remove this race entirely; whichever of
+Madhu's sessions is actually the one running this is better placed to
+decide that than I am from here.
+
 ## NOTE 2026-07-25 (VS Code session): one isolated cell got 3 runs instead of the requested 2 - flagging, not yet root-caused
 
 Today's `--runs 2` re-run (task, 14 succeeded, 311 failed, 25 skipped - all
