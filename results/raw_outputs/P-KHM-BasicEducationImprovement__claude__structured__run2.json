@@ -1,0 +1,144 @@
+{
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T14:04:47.009462+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the Project\n- Objective: To improve learning outcomes in primary education in Cambodia.\n- Scope: Nationwide rollout of Early Grade Learning (EGL) for Grades 1\u20133, targeted instruction/remedial learning, construction of climate-resilient classrooms/childcare/preschools, modernization of HRMIS, and project management capacity building.\n- Components: \n  1. Improving Primary School Readiness (US$12.5M)\n  2. Leveraging Cost-Effective Solutions to Enhance Student Learning in Primary Education (US$85.5M)\n  3. Improving Institutional Capacity for Education Staff Management and Project Management (US$7.0M)\n  4. Contingent Emergency Response Component (CERC) (US$0.0M)\n- Delivery Model: Investment Project Financing (IPF) implemented by the Ministry of Education, Youth, and Sport (MoEYS) through a Project Steering Committee (PSC) and Project Management Unit (PMU), in coordination with Ministry of Civil Service (MCS) and Ministry of Economy and Finance (MEF).\n- Timeline: Expected approval August 29, 2025; Expected closing December 31, 2030.\n- Budget: Total US$105.0M (US$100M IDA Credit + US$5M Early Learning Partnership Trust Fund Grant).\n- Key Stakeholders: Kingdom of Cambodia (Borrower), MoEYS (Implementing Agency), MCS, MEF, primary school teachers, students, parents/garment factory workers, DPs (UNICEF, FCDO, JSDF).\n- External Dependencies: Inter-ministerial coordination with MCS for HRMIS; alignment with ongoing/ending DP initiatives; MEF financial processing.\n\nStep 2 - Category Sweep\n- technical:\n  * Insufficient teacher capacity and poor HR management (Section I.B, Para 9).\n  * Implementation fidelity constraints when scaling donor-funded EGL interventions through government systems (Section II.D, Subcomponent 2.2, Para 35).\n- financial:\n  * Lack of proper monitoring for decentralized school mentoring funding spent directly at schools (Section IV.B, Para 63).\n- schedule:\n  * Delayed approval of the Annual Work Plan and Budget (AWPB) hindering timely implementation (Section IV.B, Para 63).\n  * Delays in receiving technical inputs for procurement (Section IV.B, Para 68).\n  * Delays in internal clearance from the Procurement Review Committee (Section IV.B, Para 68).\n- stakeholder:\n  * Inter-agency alignment and technical feasibility risks between MoEYS and MCS during Phase 1 HRMIS scoping conditioning Phase 2 progression (Section II.D, Subcomponent 3.1, Para 41; Section III.A, Para 49).\n- political_regulatory:\n  * Governance risks, including corrupt practices in procurement (Section IV.B, Para 68).\n  * Prevalence of Gender-Based Violence (GBV) and Sexual Exploitation and Abuse/Sexual Harassment (SEA/SH) in rural education settings (Section IV.A, Para 57-58).\n- environmental:\n  * Climate hazards (floods, cyclones, extreme heat) disrupting education continuity and damaging infrastructure (Section I.B, Para 12; Section IV.A, Para 62).\n- organizational:\n  * Overload of current FM staff at the Directorate General of Administration and Finance causing transaction processing delays (Section IV.B, Para 63).\n  * MoEYS staff's limited knowledge and experience with World Bank Procurement Regulations (Section IV.B, Para 68).\n  * Inadequate capacity for contract supervision and management leading to project execution delays (Section IV.B, Para 68).\n- external:\n  * Land acquisition, land use restrictions, and resettlement risks related to civil works/infrastructure construction (Datasheet ESS 5; Section IV.C).\n\nStep 3 - Evidence Filter\nAll candidate risks identified above are directly grounded in explicit statements in the Project Appraisal Document text. None rely on speculation or post-appraisal sources.\n\nStep 4 - Assess\n- R01 (organizational): FM staff overload -> Likelihood: 3, Impact: 3. Justification: Staffing overload at the Directorate General of Administration and Finance directly stalls transaction processing and financial reporting. Mitigation: Appoint qualified FM staff and consultants within three months of signing and adopt the updated FMM.\n- R02 (schedule): Delayed AWPB approval -> Likelihood: 3, Impact: 3. Justification: Delayed budget approval stalls annual activity rollout and fund flows. Mitigation: Adopt simplified AWPB templates in the FMM and streamline internal review schedules.\n- R03 (financial): School mentoring funding monitoring gaps -> Likelihood: 3, Impact: 3. Justification: Decentralized funds disbursed to primary school clusters risk inadequate oversight. Mitigation: Issue specific School Mentoring Funding guidelines in the POM and perform periodic internal audits.\n- R04 (organizational): Procurement regulation knowledge gap -> Likelihood: 3, Impact: 3. Justification: MoEYS staff unfamiliarity with World Bank Procurement Regulations can lead to procedural non-compliance. Mitigation: Assign dedicated full-time government procurement officers and conduct targeted Bank procurement training.\n- R05 (schedule): Delays in procurement technical inputs -> Likelihood: 3, Impact: 3. Justification: Unprepared specifications from technical departments bottleneck procurement package processing in STEP. Mitigation: Designate focal points within technical departments and enforce service standard timelines in the POM.\n- R06 (political_regulatory): Procurement governance and corruption risks -> Likelihood: 2, Impact: 4. Justification: Fraud and corrupt practices in contract bidding erode project efficiency and public trust. Mitigation: Mandate public disclosure of procurement plans and awards, establish a complaint handling mechanism, and use STEP.\n- R07 (organizational): Contract management and supervision capacity deficits -> Likelihood: 3, Impact: 3. Justification: Weak supervisory oversight leads to construction delays and vendor underperformance. Mitigation: Deliver contract management training to the procurement team and delegate adequate evaluation authority.\n- R08 (schedule): Procurement Review Committee clearance delays -> Likelihood: 3, Impact: 3. Justification: Bureaucratic review delays slow contract awards and project startup. Mitigation: Enforce strict service standards in the POM and delegate authority to committee members.\n- R09 (environmental): Climate disaster impacts on school facilities -> Likelihood: 4, Impact: 4. Justification: Severe floods, cyclones, and heatwaves regularly close Cambodian schools and damage infrastructure. Mitigation: Apply climate-resilient building standards, elevated foundations, solar power, and expand EdTech remote learning.\n- R10 (technical): Fidelity loss in nationwide EGL scale-up -> Likelihood: 3, Impact: 4. Justification: Expanding donor-piloted models to national government systems risks quality dilution. Mitigation: Implement an implementation science-informed learning agenda with rapid testing and core-mentor coaching.\n- R11 (stakeholder): Inter-agency alignment and Phase 1 conditional progression for HRMIS -> Likelihood: 3, Impact: 3. Justification: Lack of alignment with MCS regulations could stall progression from Phase 1 to Phase 2 module development. Mitigation: Establish a joint MoEYS-MCS working group and conduct thorough Phase 1 system mapping before Phase 2 investment.\n- R12 (technical): Teacher capacity deficits -> Likelihood: 4, Impact: 4. Justification: Inadequate baseline teaching competencies hinder foundational learning acceleration. Mitigation: Roll out structured pedagogy, scripted lesson plans, cluster mentoring, and continuous professional development.\n- R13 (political_regulatory): Gender-Based Violence (GBV) and SEA/SH risks -> Likelihood: 3, Impact: 4. Justification: High rural GBV prevalence poses risks to female students and staff in educational environments. Mitigation: Conduct GBV training for primary teachers, operationalize an SEA/SH-sensitive GRM, and implement a dedicated GBV action plan.\n- R14 (external): Land acquisition and land use restrictions -> Likelihood: 2, Impact: 3. Justification: Civil works for childcare centers, preschools, and classrooms may impact land usage or local communities. Mitigation: Screen all site selections using ESMF protocols to ensure construction occurs on unencumbered public land.\n\nStep 5 - Consolidate\nThe 14 distinct risks cover technical, financial, schedule, stakeholder, political_regulatory, environmental, organizational, and external categories without duplicate overlaps.\n\nFINAL JSON:\n{\"project_id\":\"P-KHM-BasicEducationImprovement\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Financial management staff overload at the Directorate General of Administration and Finance may lead to delays in transaction processing and financial reporting.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Appoint adequate FM staff, including government officers and consultants, within three months of project signing and implement the updated Financial Management Manual.\",\"evidence\":\"The current FM staff at the Directorate General of Administration and Finance may be overloaded, potentially leading to delays in processing transactions and reporting.\"},{\"risk_id\":\"R02\",\"description\":\"Delayed approval of the Annual Work Plan and Budget (AWPB) may impede the timely implementation of project activities.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Adopt simplified AWPB templates and standardized submission schedules as specified in the Financial Management Manual.\",\"evidence\":\"The delayed approval of the Annual Work Plan and Budget (AWPB) may hinder the timely implementation of project activities.\"},{\"risk_id\":\"R03\",\"description\":\"Decentralized school mentoring funding disbursed directly to primary school clusters may not be properly monitored or audited.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Issue formal guidelines on School Mentoring Funding within the Project Operations Manual and perform regular internal audit reviews.\",\"evidence\":\"There is a risk that school mentoring funding, which is to be spent at the schools, may not be properly monitored.\"},{\"risk_id\":\"R04\",\"description\":\"MoEYS staff's limited experience with World Bank Procurement Regulations could cause procedural non-compliance and execution delays.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Assign dedicated full-time government procurement officers and deliver continuous World Bank procurement and STEP system training.\",\"evidence\":\"MoEYS staff\u2019s limited knowledge and experience with the World Bank\u2019s Procurement Regulations, potentially resulting in project implementation delays and noncompliance\"},{\"risk_id\":\"R05\",\"description\":\"Delays in obtaining technical specifications and inputs from implementing departments could bottleneck procurement processing.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Designate dedicated focal points in technical departments to coordinate inputs and enforce standard operational timelines in the POM.\",\"evidence\":\"possible delays in receiving technical inputs for procurement\"},{\"risk_id\":\"R06\",\"description\":\"Governance vulnerabilities and corrupt practices in procurement could compromise contract integrity and cost-efficiency.\",\"category\":\"political_regulatory\",\"likelihood\":2,\"impact\":4,\"mitigation\":\"Enforce public disclosure of procurement plans and contract awards, implement a procurement complaint mechanism, and track transactions in STEP.\",\"evidence\":\"governance risks, including corrupt practices in procurement\"},{\"risk_id\":\"R07\",\"description\":\"Inadequate contract supervision and management capacity among implementing units may result in construction delays and vendor underperformance.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Provide targeted contract management training to the procurement team and delegate adequate evaluation and oversight authority.\",\"evidence\":\"inadequate capacity for contract supervision and management, which may result in implementation delays\"},{\"risk_id\":\"R08\",\"description\":\"Internal clearance delays from the Procurement Review Committee could stall contract approvals and project momentum.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish strict service standards in the Project Operations Manual and grant sufficient delegation of authority to committee members.\",\"evidence\":\"possible delays in internal clearance from procurement review committee.\"},{\"risk_id\":\"R09\",\"description\":\"Recurrent floods, tropical cyclones, and extreme heatwaves cause school closures, lost instructional time, and infrastructure damage.\",\"category\":\"environmental\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Construct elevated, climate-resilient facilities with passive cooling and solar power, and deploy EdTech for remote learning continuity.\",\"evidence\":\"Natural disasters caused by climate change, including floods, cyclones, and extreme heat, pose significant challenges for Cambodia, particularly affecting the continuity of education\"},{\"risk_id\":\"R10\",\"description\":\"Transitioning Early Grade Learning from donor-supported pilots to nationwide government delivery risks loss of implementation fidelity.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Implement an implementation science-informed learning agenda with rapid testing, process evaluations, and cluster core-mentor coaching.\",\"evidence\":\"Transitioning from successful, donor-funded interventions with limited geographic coverage to implementation at scale through government systems requires overcoming the many technical, financial, political economy, and capability constraints\"},{\"risk_id\":\"R11\",\"description\":\"Incomplete inter-agency alignment between MoEYS and MCS or failure of Phase 1 feasibility criteria could block progression to Phase 2 HRMIS development.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish a joint MoEYS-MCS working group and enforce strict Phase 1 technical and regulatory review milestones before Phase 2 commitment.\",\"evidence\":\"Progression to Phase 2 is conditional on Phase 1 results demonstrating quality and feasibility in terms of (a) technical and system development\"},{\"risk_id\":\"R12\",\"description\":\"Insufficient teacher capacity and poor human resource management severely undermine foundational learning achievement in primary schools.\",\"category\":\"technical\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Provide structured EGL lesson plans, continuous professional development, cluster coaching, and modernize HRMIS for improved teacher allocation.\",\"evidence\":\"insufficient teacher capacity to effectively fulfill their roles... and poor human resources management, which impedes the efficient utilization of allocated resources.\"},{\"risk_id\":\"R13\",\"description\":\"Prevalence of physical and sexual violence in rural contexts poses safety risks to female students and staff in education environments.\",\"category\":\"political_regulatory\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Conduct GBV awareness training for primary teachers, operationalize an SEA/SH-sensitive grievance redress mechanism, and execute GBV action plans.\",\"evidence\":\"10 percent of women ages 15\u201349 have experienced physical violence since the age of 15, and 3 percent have faced sexual violence.\"},{\"risk_id\":\"R14\",\"description\":\"Civil works construction for childcare centers, preschools, and primary classrooms may trigger land acquisition or land use restrictions.\",\"category\":\"external\",\"likelihood\":2,\"impact\":3,\"mitigation\":\"Apply Environmental and Social Management Framework (ESMF) procedures to verify unencumbered public land prior to initiating civil works.\",\"evidence\":\"ESS 5: Land Acquisition, Restrictions on Land Use and Involuntary Resettlement Relevant\"}]}",
+  "parsed_risks": {
+    "project_id": "P-KHM-BasicEducationImprovement",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Financial management staff overload at the Directorate General of Administration and Finance may lead to delays in transaction processing and financial reporting.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint adequate FM staff, including government officers and consultants, within three months of project signing and implement the updated Financial Management Manual.",
+        "evidence": "The current FM staff at the Directorate General of Administration and Finance may be overloaded, potentially leading to delays in processing transactions and reporting."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delayed approval of the Annual Work Plan and Budget (AWPB) may impede the timely implementation of project activities.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt simplified AWPB templates and standardized submission schedules as specified in the Financial Management Manual.",
+        "evidence": "The delayed approval of the Annual Work Plan and Budget (AWPB) may hinder the timely implementation of project activities."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Decentralized school mentoring funding disbursed directly to primary school clusters may not be properly monitored or audited.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Issue formal guidelines on School Mentoring Funding within the Project Operations Manual and perform regular internal audit reviews.",
+        "evidence": "There is a risk that school mentoring funding, which is to be spent at the schools, may not be properly monitored."
+      },
+      {
+        "risk_id": "R04",
+        "description": "MoEYS staff's limited experience with World Bank Procurement Regulations could cause procedural non-compliance and execution delays.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Assign dedicated full-time government procurement officers and deliver continuous World Bank procurement and STEP system training.",
+        "evidence": "MoEYS staff\u2019s limited knowledge and experience with the World Bank\u2019s Procurement Regulations, potentially resulting in project implementation delays and noncompliance"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays in obtaining technical specifications and inputs from implementing departments could bottleneck procurement processing.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Designate dedicated focal points in technical departments to coordinate inputs and enforce standard operational timelines in the POM.",
+        "evidence": "possible delays in receiving technical inputs for procurement"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Governance vulnerabilities and corrupt practices in procurement could compromise contract integrity and cost-efficiency.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Enforce public disclosure of procurement plans and contract awards, implement a procurement complaint mechanism, and track transactions in STEP.",
+        "evidence": "governance risks, including corrupt practices in procurement"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate contract supervision and management capacity among implementing units may result in construction delays and vendor underperformance.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide targeted contract management training to the procurement team and delegate adequate evaluation and oversight authority.",
+        "evidence": "inadequate capacity for contract supervision and management, which may result in implementation delays"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Internal clearance delays from the Procurement Review Committee could stall contract approvals and project momentum.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish strict service standards in the Project Operations Manual and grant sufficient delegation of authority to committee members.",
+        "evidence": "possible delays in internal clearance from procurement review committee."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Recurrent floods, tropical cyclones, and extreme heatwaves cause school closures, lost instructional time, and infrastructure damage.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct elevated, climate-resilient facilities with passive cooling and solar power, and deploy EdTech for remote learning continuity.",
+        "evidence": "Natural disasters caused by climate change, including floods, cyclones, and extreme heat, pose significant challenges for Cambodia, particularly affecting the continuity of education"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Transitioning Early Grade Learning from donor-supported pilots to nationwide government delivery risks loss of implementation fidelity.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement an implementation science-informed learning agenda with rapid testing, process evaluations, and cluster core-mentor coaching.",
+        "evidence": "Transitioning from successful, donor-funded interventions with limited geographic coverage to implementation at scale through government systems requires overcoming the many technical, financial, political economy, and capability constraints"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Incomplete inter-agency alignment between MoEYS and MCS or failure of Phase 1 feasibility criteria could block progression to Phase 2 HRMIS development.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a joint MoEYS-MCS working group and enforce strict Phase 1 technical and regulatory review milestones before Phase 2 commitment.",
+        "evidence": "Progression to Phase 2 is conditional on Phase 1 results demonstrating quality and feasibility in terms of (a) technical and system development"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Insufficient teacher capacity and poor human resource management severely undermine foundational learning achievement in primary schools.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide structured EGL lesson plans, continuous professional development, cluster coaching, and modernize HRMIS for improved teacher allocation.",
+        "evidence": "insufficient teacher capacity to effectively fulfill their roles... and poor human resources management, which impedes the efficient utilization of allocated resources."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Prevalence of physical and sexual violence in rural contexts poses safety risks to female students and staff in education environments.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct GBV awareness training for primary teachers, operationalize an SEA/SH-sensitive grievance redress mechanism, and execute GBV action plans.",
+        "evidence": "10 percent of women ages 15\u201349 have experienced physical violence since the age of 15, and 3 percent have faced sexual violence."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Civil works construction for childcare centers, preschools, and primary classrooms may trigger land acquisition or land use restrictions.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Apply Environmental and Social Management Framework (ESMF) procedures to verify unencumbered public land prior to initiating civil works.",
+        "evidence": "ESS 5: Land Acquisition, Restrictions on Land Use and Involuntary Resettlement Relevant"
+      }
+    ]
+  },
+  "parse_error": null
+}

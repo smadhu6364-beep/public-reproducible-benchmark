@@ -1,0 +1,135 @@
+{
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T13:59:52.264683+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-JOR-InnovativeStartupsSMEsFund2\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Geopolitical instability and regional macroeconomic shocks in the MENA region could suppress private capital flows and investor confidence, threatening capital mobilization targets.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Structure ISSF investments to provide matching co-investments on commercial non-subsidized terms to de-risk private VC entry, while serving as a strategic co-investment partner to regional/GCC funds.\",\n      \"evidence\": \"Section I.A, para 1: Jordan\u2019s small, open economy continues to face vulnerabilities tied to its position in a geopolitically volatile region.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High-growth Jordanian startups may relocate headquarters to GCC or Western markets to access larger growth capital, reducing local economic and employment impact.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Contractually enforce Side Letters with partner VC funds requiring portfolio companies to maintain significant commercial operations and workforce footprint in Jordan.\",\n      \"evidence\": \"Section I.B, para 7: Availability of long-term funding and market size in the Gulf Cooperation Council (GCC) countries... prompt high-growth Jordanian startups to expand elsewhere\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Expansion of ICT and technology startups supported by the fund could lead to improper management and disposal of e-waste, causing environmental pollution and health hazards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate E&S screening into sub-project approval, enforce e-waste management clauses in Fund legal documentation, and promote adoption of good e-waste recycling practices.\",\n      \"evidence\": \"Section IV.C, para 77: SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e-waste, including pollution, Occupational Health and Safety\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Growing ICT startups could lack formal human resources policies, leading to labor standard violations, discrimination, or sexual harassment in the workplace.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement ESCP gap-filling measures aligning beneficiary practices with national labor law and ESS2, adopt workplace non-discrimination policies, and enforce anti-harassment standards.\",\n      \"evidence\": \"Section IV.C, para 78: Additional labor risks related to ICT start-ups include terms and conditions of employment, discrimination, and sexual harassment\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"The existing Grievance Mechanism (GM) at ISSF may lack sufficient reach or specialized procedures to address SEA/SH complaints and broader stakeholder concerns effectively.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enhance GM protocols to establish safe, confidential, survivor-centered uptake channels for SEA/SH and extend accessible grievance reporting mechanisms across all sub-projects.\",\n      \"evidence\": \"Section IV.C, para 82: according to a recent E&S audit for ISSF, it was found that the GM system requires enhancement\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Over-concentration of investable capital into a single VC fund or startup could lead to disproportionate portfolio losses if the counterparty underperforms.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate strict nominal and percentage exposure caps in the Project Operations Manual (e.g., maximum US$5 million cap and no more than 15% loan size per fund).\",\n      \"evidence\": \"Section II.D, para 34: To mitigate and manage concentration risks, the current ISSF Investment Strategy sets out the limit on ISSF investment in one VC fund.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"An acute shortage of pre-seed and seed financing could bottleneck the pipeline of deal-ready startups moving toward early and growth stage venture rounds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Ring-fence approximately 30 percent of total investable capital under Component 1 specifically for pre-seed and seed stage funds, incubators, and accelerators.\",\n      \"evidence\": \"Section II.D, para 33: pre-seed and seed funding are in short supply.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"ISSF and financial intermediaries may lack sufficient capacity to evaluate and manage Environmental and Social Framework (ESF) requirements and standard ESMS implementation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint dedicated E&S staff within the ISSF PMU, mandate that all recipient VC funds establish an approved ESMS, and provide continuous institutional capacity building.\",\n      \"evidence\": \"Section IV.C, para 79: ISSF requires improved E&S risks and impacts management capacity, especially in the implementation of the World Bank Environmental and Social Standards\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Private VC funds and startups could fail to comply with acceptable commercial procurement practices or misprice sub-contracts, causing fiduciary compliance failures.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit a qualified procurement specialist for the PMU, outline explicit commercial practices in the POM, perform annual ex-post reviews, and engage independent technical auditors.\",\n      \"evidence\": \"Section IV.B, para 73: ISSF shall satisfy itself with the reasonableness of the price of contracts awarded, through the hiring of independent auditors\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The legal structure of ISSF as a Private Shareholding Company set to expire in 2029 conflicts with standard 10\u201312 year venture capital investment cycles.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Execute a legal amendment to ISSF's Articles of Association as an effectiveness condition to convert ISSF into an open-ended Private Shareholding Company.\",\n      \"evidence\": \"Section II.D, para 30(vii): currently the ISSF Private Shareholding Company \u2018ends\u2019 in 2029\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Relying on external lead investors for due diligence under Component 2 co-investments could expose ISSF to flawed valuations or excessive aggregate exposure to single startups.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish strict double-exposure checks across Component 1 and 2 in the POM, cap co-investments at US$500,000, and ensure independent review by the Investment Committee.\",\n      \"evidence\": \"Section II.D, para 36: consider the risks related to total exposure to the same startups (through Component 1 and Component 2)\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Deep-seated social norms and systemic barriers could prevent female and youth entrepreneurs from equitably accessing early-stage risk capital.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a Gender Action Plan with targeted outreach, mandate at least 20% female representation on the Board and Investment Committee, and target >=30% female-led/owned beneficiaries.\",\n      \"evidence\": \"Section IV.C, para 78: there is a risk that they may not fully benefit if specific barriers to their participation are not effectively addressed.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Sub-project funding could inadvertently support business activities that are non-aligned with Paris Agreement objectives or increase national mitigation/adaptation vulnerabilities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Update the ISSF Investment Strategy and POM to include universal Paris Alignment exclusion lists and counterparty/transaction screening procedures.\",\n      \"evidence\": \"Section IV.A, para 56: ISSF Investment Strategy will be updated to amend the exclusion list with activities that are universally non-aligned from Paris Alignment perspective.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Geopolitical instability and regional macroeconomic shocks in the MENA region could suppress private capital flows and investor confidence, threatening capital mobilization targets.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Structure ISSF investments to provide matching co-investments on commercial non-subsidized terms to de-risk private VC entry, while serving as a strategic co-investment partner to regional/GCC funds.",
+        "evidence": "Section I.A, para 1: Jordan\u2019s small, open economy continues to face vulnerabilities tied to its position in a geopolitically volatile region."
+      },
+      {
+        "risk_id": "R02",
+        "description": "High-growth Jordanian startups may relocate headquarters to GCC or Western markets to access larger growth capital, reducing local economic and employment impact.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Contractually enforce Side Letters with partner VC funds requiring portfolio companies to maintain significant commercial operations and workforce footprint in Jordan.",
+        "evidence": "Section I.B, para 7: Availability of long-term funding and market size in the Gulf Cooperation Council (GCC) countries... prompt high-growth Jordanian startups to expand elsewhere"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Expansion of ICT and technology startups supported by the fund could lead to improper management and disposal of e-waste, causing environmental pollution and health hazards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Integrate E&S screening into sub-project approval, enforce e-waste management clauses in Fund legal documentation, and promote adoption of good e-waste recycling practices.",
+        "evidence": "Section IV.C, para 77: SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e-waste, including pollution, Occupational Health and Safety"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Growing ICT startups could lack formal human resources policies, leading to labor standard violations, discrimination, or sexual harassment in the workplace.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement ESCP gap-filling measures aligning beneficiary practices with national labor law and ESS2, adopt workplace non-discrimination policies, and enforce anti-harassment standards.",
+        "evidence": "Section IV.C, para 78: Additional labor risks related to ICT start-ups include terms and conditions of employment, discrimination, and sexual harassment"
+      },
+      {
+        "risk_id": "R05",
+        "description": "The existing Grievance Mechanism (GM) at ISSF may lack sufficient reach or specialized procedures to address SEA/SH complaints and broader stakeholder concerns effectively.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enhance GM protocols to establish safe, confidential, survivor-centered uptake channels for SEA/SH and extend accessible grievance reporting mechanisms across all sub-projects.",
+        "evidence": "Section IV.C, para 82: according to a recent E&S audit for ISSF, it was found that the GM system requires enhancement"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Over-concentration of investable capital into a single VC fund or startup could lead to disproportionate portfolio losses if the counterparty underperforms.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Incorporate strict nominal and percentage exposure caps in the Project Operations Manual (e.g., maximum US$5 million cap and no more than 15% loan size per fund).",
+        "evidence": "Section II.D, para 34: To mitigate and manage concentration risks, the current ISSF Investment Strategy sets out the limit on ISSF investment in one VC fund."
+      },
+      {
+        "risk_id": "R07",
+        "description": "An acute shortage of pre-seed and seed financing could bottleneck the pipeline of deal-ready startups moving toward early and growth stage venture rounds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Ring-fence approximately 30 percent of total investable capital under Component 1 specifically for pre-seed and seed stage funds, incubators, and accelerators.",
+        "evidence": "Section II.D, para 33: pre-seed and seed funding are in short supply."
+      },
+      {
+        "risk_id": "R08",
+        "description": "ISSF and financial intermediaries may lack sufficient capacity to evaluate and manage Environmental and Social Framework (ESF) requirements and standard ESMS implementation.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint dedicated E&S staff within the ISSF PMU, mandate that all recipient VC funds establish an approved ESMS, and provide continuous institutional capacity building.",
+        "evidence": "Section IV.C, para 79: ISSF requires improved E&S risks and impacts management capacity, especially in the implementation of the World Bank Environmental and Social Standards"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Private VC funds and startups could fail to comply with acceptable commercial procurement practices or misprice sub-contracts, causing fiduciary compliance failures.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Recruit a qualified procurement specialist for the PMU, outline explicit commercial practices in the POM, perform annual ex-post reviews, and engage independent technical auditors.",
+        "evidence": "Section IV.B, para 73: ISSF shall satisfy itself with the reasonableness of the price of contracts awarded, through the hiring of independent auditors"
+      },
+      {
+        "risk_id": "R10",
+        "description": "The legal structure of ISSF as a Private Shareholding Company set to expire in 2029 conflicts with standard 10\u201312 year venture capital investment cycles.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Execute a legal amendment to ISSF's Articles of Association as an effectiveness condition to convert ISSF into an open-ended Private Shareholding Company.",
+        "evidence": "Section II.D, para 30(vii): currently the ISSF Private Shareholding Company \u2018ends\u2019 in 2029"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Relying on external lead investors for due diligence under Component 2 co-investments could expose ISSF to flawed valuations or excessive aggregate exposure to single startups.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish strict double-exposure checks across Component 1 and 2 in the POM, cap co-investments at US$500,000, and ensure independent review by the Investment Committee.",
+        "evidence": "Section II.D, para 36: consider the risks related to total exposure to the same startups (through Component 1 and Component 2)"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Deep-seated social norms and systemic barriers could prevent female and youth entrepreneurs from equitably accessing early-stage risk capital.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a Gender Action Plan with targeted outreach, mandate at least 20% female representation on the Board and Investment Committee, and target >=30% female-led/owned beneficiaries.",
+        "evidence": "Section IV.C, para 78: there is a risk that they may not fully benefit if specific barriers to their participation are not effectively addressed."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Sub-project funding could inadvertently support business activities that are non-aligned with Paris Agreement objectives or increase national mitigation/adaptation vulnerabilities.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Update the ISSF Investment Strategy and POM to include universal Paris Alignment exclusion lists and counterparty/transaction screening procedures.",
+        "evidence": "Section IV.A, para 56: ISSF Investment Strategy will be updated to amend the exclusion list with activities that are universally non-aligned from Paris Alignment perspective."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,150 @@
+{
+  "run_file": "P-KHM-BasicEducationImprovement__claude__structured__run1.json",
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R01",
+      "similarity": 0.617,
+      "gen_category": "stakeholder",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Severe climate hazards (flooding, tropical cyclones, extreme heat) risk causing physical damage to school infrastructure and prolonged disruptions to instructional time.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate climate-resilient building designs, elevated foundations, rainwater harvesting, solar power, and EdTech distance learning capabilities.",
+      "evidence": "approximately 10 percent of schools are in regions with flooding less than 2 m, while 28 percent are in areas highly prone to severe flooding"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Overloaded FM staff at the Directorate General of Administration and Finance may cause bottlenecks and delays in transaction processing and financial reporting.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint adequate additional financial management staff, including government officers and consultants, within three months of project signing.",
+      "evidence": "The current FM staff at the Directorate General of Administration and Finance may be overloaded, potentially leading to delays in processing transactions and reporting."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delayed annual approval of the Annual Work Plan and Budget (AWPB) risks stalling timely project execution and fund disbursements.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt simplified AWPB templates and standardized review content established in the Financial Management Manual.",
+      "evidence": "The delayed approval of the Annual Work Plan and Budget (AWPB) may hinder the timely implementation of project activities."
+    },
+    {
+      "risk_id": "R04",
+      "description": "School mentoring funds disbursed directly to 1,400 school clusters risk improper monitoring or financial misallocation.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Enforce explicit guidelines on School Mentoring Funding usage, conduct internal audits, and track expenditures via digital platforms.",
+      "evidence": "There is a risk that school mentoring funding, which is to be spent at the schools, may not be properly monitored."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Limited familiarity of MoEYS staff with World Bank Procurement Regulations risks noncompliance and procurement execution delays.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign dedicated full-time procurement officers and conduct targeted contract management and procurement training.",
+      "evidence": "MoEYS staff\u2019s limited knowledge and experience with the World Bank\u2019s Procurement Regulations, potentially resulting in project implementation delays and noncompliance"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Delayed technical input from departments and slow Procurement Review Committee clearances risk creating major procurement backlogs.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Designate technical focal points, implement standardized service-level agreements, and utilize STEP tracking tools.",
+      "evidence": "possible delays in receiving technical inputs for procurement... and possible delays in internal clearance from procurement review committee."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Governance vulnerabilities and corrupt practices during procurement execution risk compromising project value and compliance.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Mandate public disclosure of procurement plans and awards, establish a procurement complaint handling mechanism, and enforce World Bank anti-corruption guidelines.",
+      "evidence": "governance risks, including corrupt practices in procurement;"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate contract supervision capacity across dispersed construction sites risks project delays and substandard civil works quality.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide targeted contract management training to procurement and engineering teams and establish clear service standards in the POM.",
+      "evidence": "inadequate capacity for contract supervision and management, which may result in implementation delays;"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Scaling Early Grade Learning and targeted instruction nationwide through government systems risks dilution of pedagogical implementation fidelity.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement an implementation science-informed learning agenda with rapid testing, feedback loops, and cluster mentoring funding.",
+      "evidence": "Transitioning from successful, donor-funded interventions with limited geographic coverage to implementation at scale through government systems requires overcoming the many technical, financial, political economy, and capability constraints"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Failure of Phase 1 scoping and function mapping for HRMIS to demonstrate quality or regulatory feasibility will halt Phase 2 software development.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Establish a joint MoEYS-MCS working group to ensure alignment between education HRMIS modules and national civil service roadmaps.",
+      "evidence": "Progression to Phase 2 is conditional on Phase 1 results demonstrating quality and feasibility in terms of (a) technical and system development"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Planned phase-out of major donor financing for Early Grade Learning by 2027 risks creating M&E and funding gaps before full institutionalization.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Integrate donor-developed EGL materials, M&E tools, and coaching frameworks into standard ministry budgets and operational structures.",
+      "evidence": "Their support is expected to phase out by 2027. Due to these one-off interventions, there are gaps in M&E"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Civil works for classroom and childcare construction risk triggering adverse social or environmental impacts under ESF standards (ESS5, ESS7, ESS8).",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement Environmental and Social Framework (ESF) instruments including ESMF, IPPF, and project-level Grievance Redress Mechanisms.",
+      "evidence": "Environmental and Social Risk Classification: Substantial... ESS 5: Land Acquisition, Restrictions on Land Use and Involuntary Resettlement; ESS 7: Indigenous Peoples"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Risk of gender-based violence (GBV) and sexual exploitation, abuse, and harassment (SEA/SH) in educational settings and project civil works.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Deploy GBV teacher training, recruit dedicated ministry GBV technical support, and adapt the SEA/SH Grievance Redress Mechanism.",
+      "evidence": "10 percent of women ages 15\u201349 have experienced physical violence... Women residing in rural areas are at a heightened risk"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Environment and Social risk is rated Substantial due to (a) limited institutional capacity to manage environmental and social risks and impacts; (b) nationwide implementation of the project's activities; (c) possible exclusion of vulnerable groups (such as poor children, children with disabilities, and indigenous groups); and (d) other risks involving child protection, occupational health and safety, labor issues, and sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project will develop a capacity-building plan for the Environmental and Social Safeguards Office and Project Management Unit, including hiring dedicated environmental and social specialists and providing targeted training. It will establish robust monitoring mechanisms to ensure support for vulnerable groups (universal design in new school/WASH construction, materials adapted for visually impaired students), strict adherence to worker codes of conduct, complaint redress and referral mechanisms, and construction site safety measures to protect school children and communities from labor influx and construction-related risks."
+    }
+  ]
+}

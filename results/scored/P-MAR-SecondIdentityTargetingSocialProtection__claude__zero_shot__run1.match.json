@@ -1,0 +1,168 @@
+{
+  "run_file": "P-MAR-SecondIdentityTargetingSocialProtection__claude__zero_shot__run1.json",
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.55,
+      "gen_category": "stakeholder",
+      "gt_category": "stakeholder",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Informal sector workers may resist registering in the NPR and SR due to fears that sharing personal data could expose them to taxation.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Execute targeted outreach and communication campaigns emphasizing that registration is solely for social benefit eligibility and data privacy is protected under Law 09-08.",
+      "evidence": "workers in the informal sector, are wary of providing their information to the government due to perceived risks of making them susceptible to taxation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Vulnerable groups such as illiterate individuals, persons with disabilities, rural residents, and migrants may face exclusion due to inadequate communication or complex registration procedures.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Mobilize Citizen Service Centers (CSCs), deploy mobile registration units with satellite connections, and implement the Stakeholder Engagement Plan (SEP).",
+      "evidence": "exclusion of some vulnerable groups due to inefficient or inadequate public communication and outreach efforts, as well as unclear registration processes"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Potential data privacy or cybersecurity breaches involving sensitive biometric and biographic data stored in the NPR and SR repositories.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Incorporate privacy-by-design architecture, ensure strict compliance with national data protection Law 09-08, and provide data privacy training to project staff.",
+      "evidence": "Potential negative social impacts from project activities are mainly related to... data protection issues."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Improper disposal of electronic devices and IT hardware used in mobile units and registration centers leading to environmental e-waste contamination.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement Ministry of Interior asset management procedures for e-waste recycling and adhere to sustainable procurement practices.",
+      "evidence": "use of electronic devices (such as mobile units) include the potential generation of e-waste and its improper disposal."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Government and MoI capacity constraints caused by rapid registry expansion may delay the full operationalization and staffing of the National Registry Agency (NRA).",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide dedicated technical assistance under Sub-component 1.3, define clear operational procedures, and recruit core NRA staff.",
+      "evidence": "This rapid expansion has strained the government\u2019s and the MoI\u2019s capacity to take steps in operationalizing the NRA."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Reliance on Excel spreadsheets and manual extraction from national budget software could compromise the timeliness and accuracy of Interim Financial Reports (IFRs).",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop, install, and operationalize dedicated financial management software to streamline IFR preparation and annual statement reporting.",
+      "evidence": "use of a spreadsheet \u201cExcel\u201d and data extracted from the national budget execution software may lead to some challenges in terms of quality and timeliness"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Risk of expenditure duplication or overlapping funding claims due to sharing the 'AMO-TADAMON' budget line with other World Bank-financed operations.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Create distinct and dedicated budget codes within the Ministry of Interior budget specifically earmarked to track PBC-related eligible expenditures.",
+      "evidence": "risk of duplication or overlap due to the use of the same budget line \u201cAMO-TADAMON\u201d to justify expenditure"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Income fluctuations and seasonal shocks affecting non-salaried workers (e.g., farmers) could disrupt their social insurance contributions and health coverage continuity.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Utilize dynamic welfare score updating and recertification processes in the SR to adaptively evaluate shocks and maintain target social protection coverage.",
+      "evidence": "non-salaried workers, in particular farmers... suffer from two patterns of irregularities in the flow of income... which significantly affects their ability to pay."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Recurrent climate shocks such as severe droughts and floods could disrupt rural livelihoods and increase vulnerability across project areas.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Enhance residential address data quality in the NPR and SR to enable rapid geographic identification and adaptive shock-responsive assistance.",
+      "evidence": "climate-related shocks, primarily droughts, represent significant risks to the Moroccan economy."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Inaccuracies or out-of-date household socioeconomic data in the SR could cause inclusion and exclusion targeting errors in user social programs.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct a comprehensive process evaluation, revise the PMT scoring formula, and establish administrative data exchanges for continuous recertification.",
+      "evidence": "develop a strategy to reduce potential exclusion and inclusion errors"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Inaccuracies, misreporting, or fraudulent claims during registration could compromise registry integrity and lead to leakage of social protection funds.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Design and implement an end-to-end Error, Fraud, and Corruption (EFC) monitoring system and mitigation strategy across the NPR and SR.",
+      "evidence": "design and develop an end-to-end Error, Fraud, and Corruption (EFC) monitoring system and EFC mitigation strategy"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Delays in approving key legal and operational manuals (such as the POM) could disrupt project effectiveness and implementation timelines.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Finalize and approve the Project Operational Manual (POM) within 60 days of effectiveness as required by legal covenants.",
+      "evidence": "Section I.A.3(a) No later than sixty (60) days after the Effective Date... prepare a manual acceptable to the Bank ('Project Operational Manual')"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Technical integration hurdles between civil registration offices (BEC) and the NPR could delay automated birth assignment and death record capturing.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Upgrade IT infrastructure across all 2,200 Civil Registry Offices and establish automated electronic data exchange protocols between BEC and NPR.",
+      "evidence": "removal of deceased registrants is equally important... all deaths will be automatically captured and communicated electronically"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Slow technical adoption or integration of DCSID digital authentication by partner social protection programs could impede full delivery chain digitization.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Utilize the Inter-ministerial Steering Committee to mandate and monitor API integration across sector programs and social protection agencies.",
+      "evidence": "Eight (8) social protection programs/registries have integrated the DCSID into their authentication process"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Coordination bottlenecks among participating sector ministries (MoI, MEF, HCP) could delay key strategic decisions and implementation milestones.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Maintain regular meetings and oversight through the high-level Inter-ministerial Steering Committee (IMSC) chaired by the MoI Wali Secretary General.",
+      "evidence": "IMSC... role is to... ensure consistency and alignment of project activities with sectoral policies... examine current status... assess implementation challenges"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Stakeholder risk is assessed as Substantial. Given the complex nature of the operation and the involvement of multiple stakeholders in the implementation of the National Population Register (NPR) and the Social Registry (SR), the Project Management Unit (PMU) will need to put considerable effort into ensuring better coordination to achieve the PDO. The national rollout and the improvement of the NPR and the SR will need strong stakeholder engagement, including citizens concerned by social protection programs who are often poor and vulnerable.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The communication strategy will continue to inform all stakeholders involved in project implementation and will capitalize on lessons learned from the first Identity and Targeting for Social Protection project (P155198). The PMU envisions improving the grievance mechanism at local and national levels and establishing a system to promote citizen engagement and transparency. The Inter-Ministerial Steering Committee is responsible for developing guidelines for the strategic policy for the envisaged reform and ensuring a link with the ongoing social protection reform. Technical work will also cover a process evaluation to identify challenges, propose remedies, and provide recommendations to enhance system implementation at central and local levels."
+    }
+  ]
+}

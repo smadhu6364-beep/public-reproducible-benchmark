@@ -1,0 +1,177 @@
+{
+  "run_file": "P-KHM-BasicEducationImprovement__claude__few_shot__run2.json",
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R01",
+      "similarity": 0.591,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Climate hazards such as severe flooding, tropical cyclones, and extreme heat pose major risks of damaging school infrastructure and disrupting primary education continuity.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate climate-resilient designs, elevated foundations, natural ventilation, and solar panels into infrastructure, and deploy e-learning platforms for education continuity.",
+      "evidence": "Natural disasters caused by climate change, including floods, cyclones, and extreme heat, pose significant challenges for Cambodia, particularly affecting the continuity of education."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Overloaded financial management staff at the Directorate General of Administration and Finance could lead to delays in processing transactions and financial reporting.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint additional adequate financial management staff, including government officers and external consultants, within three months of project signing.",
+      "evidence": "The current FM staff at the Directorate General of Administration and Finance may be overloaded, potentially leading to delays in processing transactions and reporting."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in approving the Annual Work Plan and Budget (AWPB) may hinder the timely execution of planned project activities.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt a simplified AWPB template and clear approval guidelines integrated into the Project Operations Manual and Financial Management Manual.",
+      "evidence": "The delayed approval of the Annual Work Plan and Budget (AWPB) may hinder the timely implementation of project activities."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Decentralized school mentoring funding disbursed directly to cluster lead primary schools risks inadequate monitoring and improper expenditure tracking.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Formulate and enforce explicit guidelines on School Mentoring Funding within the Project Operations Manual and Financial Management Manual.",
+      "evidence": "There is a risk that school mentoring funding, which is to be spent at the schools, may not be properly monitored."
+    },
+    {
+      "risk_id": "R05",
+      "description": "MoEYS staff's limited familiarity with World Bank Procurement Regulations could cause project implementation delays and noncompliance.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign full-time government procurement officers to the project and provide targeted contract management training from the World Bank.",
+      "evidence": "MoEYS staff\u2019s limited knowledge and experience with the World Bank\u2019s Procurement Regulations, potentially resulting in project implementation delays and noncompliance"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Late provision of technical inputs from implementing departments risks delaying procurement processes and contract awards.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint dedicated focal points across technical departments and set clear service standards in the Project Operations Manual.",
+      "evidence": "possible delays in receiving technical inputs for procurement"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Governance risks including potential corrupt practices during procurement could compromise procurement integrity and resource allocation.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Mandate enhanced publication of procurement plans and contract awards, establish a procurement complaint handling mechanism, and enforce rigorous monitoring.",
+      "evidence": "governance risks, including corrupt practices in procurement"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Weak capacity for contract supervision and management may cause implementation delays and substandard civil works or procurement delivery.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Deliver targeted contract management training to the procurement team and institute procurement tracking forms with delegated authority levels.",
+      "evidence": "inadequate capacity for contract supervision and management, which may result in implementation delays"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Bottlenecks and delayed internal clearances from the Procurement Review Committee may impede timely contract execution.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish service standard timelines in the Project Operations Manual and delegate appropriate review authority to committee members.",
+      "evidence": "possible delays in internal clearance from procurement review committee."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Phase 2 development of the modernized HRMIS may fail or stall if Phase 1 deliverables fail to meet technical, regulatory, or sustainability requirements.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct thorough stakeholder consultations, system scoping, and function mapping during Phase 1 prior to inviting bids for Phase 2 system development.",
+      "evidence": "Progression to Phase 2 is conditional on Phase 1 results demonstrating quality and feasibility in terms of (a) technical and system development"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Scaling Early Grade Learning (EGL) programs from localized donor initiatives to full nationwide government implementation risks loss of fidelity due to technical and capacity constraints.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Apply an implementation science-informed learning agenda with rapid testing, mixed-methods process evaluations, and continuous feedback to adapt implementation.",
+      "evidence": "Transitioning from successful, donor-funded interventions with limited geographic coverage to implementation at scale through government systems requires overcoming the many technical, financial, political economy, and capability constraints"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Severe classroom overcrowding affects student learning and restricts teachers' ability to manage instruction and monitor performance.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Construct climate-resilient additional classrooms targeted at overcrowded primary schools with class sizes of 50 or more students.",
+      "evidence": "overcrowded classrooms is prevalent in Cambodian schools, with 76 percent of primary students learning in classes with more than 30 students... affecting student learning."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Lack of affordable, quality childcare services creates significant caregiving barriers that restrict women's formal employment participation and productivity.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish approximately 60 public childcare centers co-located with existing preschools near industrial and garment hubs, and evaluate impact on female employment.",
+      "evidence": "Gendered care responsibilities, particularly the lack of accessible childcare, further restrict women\u2019s opportunities to formal sector work"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Widespread low baseline proficiency in reading and math among primary students threatens the achievement of primary education development objectives.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Deploy structured Early Grade Learning (EGL) packages nationwide, introduce targeted remedial instruction (TaRL), and scale up school readiness programs.",
+      "evidence": "in a national assessment conducted in 2021, 81 percent of Grade 6 students did not reach the proficient level in math and Khmer."
+    },
+    {
+      "risk_id": "R15",
+      "description": "The project faces substantial environmental and social risks related to land acquisition, indigenous populations, cultural heritage, and infrastructure construction.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement the ESMF, ESCP, IPPF, universal design standards for accessibility, and a specialized SEA/SH grievance redress mechanism.",
+      "evidence": "Environmental and Social Risk Classification: Substantial"
+    },
+    {
+      "risk_id": "R16",
+      "description": "Phasing out of development partner funding for EGL by 2027 threatens the sustainability and M&E capacity of early grade learning reforms.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Institutionalize cluster lead school mentoring funding, integrate EGL into standard MoEYS operating budgets, and deploy the national PLP digital platform.",
+      "evidence": "Their support is expected to phase out by 2027. Due to these one-off interventions, there are gaps in M&E"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Environment and Social risk is rated Substantial due to (a) limited institutional capacity to manage environmental and social risks and impacts; (b) nationwide implementation of the project's activities; (c) possible exclusion of vulnerable groups (such as poor children, children with disabilities, and indigenous groups); and (d) other risks involving child protection, occupational health and safety, labor issues, and sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project will develop a capacity-building plan for the Environmental and Social Safeguards Office and Project Management Unit, including hiring dedicated environmental and social specialists and providing targeted training. It will establish robust monitoring mechanisms to ensure support for vulnerable groups (universal design in new school/WASH construction, materials adapted for visually impaired students), strict adherence to worker codes of conduct, complaint redress and referral mechanisms, and construction site safety measures to protect school children and communities from labor influx and construction-related risks."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__claude__few_shot__run2.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "claude",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.633,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R02",
+      "similarity": 0.547,
+      "gen_category": "environmental",
+      "gt_category": "other",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Geopolitical volatility in the MENA region could disrupt economic stability and lower investor confidence, impeding private capital mobilization.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Diversify investment portfolio across multiple sectors and leverage strategic co-investment partnerships with regional and global VC funds to maintain investment momentum.",
+      "evidence": "Jordan\u2019s small, open economy continues to face vulnerabilities tied to its position in a geopolitically volatile region."
+    },
+    {
+      "risk_id": "R02",
+      "description": "High-growth Jordanian startups may relocate headquarters or key assets to GCC and foreign markets due to larger market size and funding availability.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Serve as a strategic partner to GCC-based VC funds and contractually require portfolio funds to ensure investee startups maintain core operations and employment in Jordan.",
+      "evidence": "Availability of long-term funding and market size in the Gulf Cooperation Council (GCC) countries, US and other markets prompt high-growth Jordanian startups to expand elsewhere"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Supported SME/startup operations could cause local environmental and safety impacts through poor e-waste management, occupational health hazards, and e-waste pollution.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop and implement an Environmental and Social Management System (ESMS), screen sub-projects, and include standard E&S covenants in fund legal agreements.",
+      "evidence": "SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e-waste, including pollution, Occupational Health and Safety"
+    },
+    {
+      "risk_id": "R04",
+      "description": "National labor law framework presents gaps regarding non-discrimination, worker organization, contractor management, and supply chain due diligence relative to ESS2.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Incorporate gap-filling measures into the Environmental and Social Commitment Plan (ESCP) and enforce non-discrimination and labor standard compliance across sub-projects.",
+      "evidence": "There are gaps with ESS2 in the following areas: lack of non-discrimination provisions based on gender, disability and citizenship"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Existing Grievance Mechanism (GM) at ISSF requires system enhancements to ensure full accessibility and safe handling of sensitive complaints including SEA/SH.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Upgrade the project GM system with clear procedures, confidential uptake channels, survivor-centered protocols for SEA/SH, and improved public outreach.",
+      "evidence": "found that the GM system requires enhancement to ensure that all affected parties and stakeholders of the project can access it"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Turnover or loss of key management and technical staff in the ISSF PMU could weaken implementation capacity and slow investment decision-making.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Retain experienced core team members at market-aligned compensation levels and build dedicated internal capacity for fiduciary and E&S management.",
+      "evidence": "In the initial years of operation, ISSF faced challenges linked to, for example, high turnover of the team."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Underlying VC fund managers may exhibit governance gaps, operational inefficiency, or fiduciary risks such as fraud, mismanagement, and regulatory non-compliance.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Integrate comprehensive Operational Due Diligence (ODD) into fund evaluation and ongoing monitoring, backed by mandatory legal covenants and regular audits.",
+      "evidence": "ensure that underlying funds follow robust operational practices and have the tools and capacity to monitor risks such as fraud, mismanagement, or regulatory non-compliance."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Overexposure of project capital to a single VC fund could create portfolio concentration risk and heighten financial loss if that fund underperforms.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish strict nominal exposure caps (e.g., maximum 15% of total loan size) and percentage ownership limits per VC fund in the Project Operations Manual.",
+      "evidence": "To mitigate and manage concentration risks, the current ISSF Investment Strategy sets out the limit on ISSF investment in one VC fund."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Complex governance and initial setup processes may delay the pace of capital deployment and commitment to target venture capital funds.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Retain experienced PMU staff from ISSF 1.0, streamline decision-making layers between the Board and Investment Committee, and leverage existing fund pipelines.",
+      "evidence": "During initial phases of ISSF 1.0 implementation the pace of commitments was relatively slow mostly due to the steep learning curve to set-up a fund-of-funds"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Persistent market supply shortages of pre-seed and seed stage equity funding could bottleneck the pipeline of investible early-stage startups.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Allocate approximately 30 percent of total Component 1 investable capital to funds, incubators, and accelerators specializing in pre-seed and seed stages.",
+      "evidence": "the key sectoral challenge that this proposed Project seeks to address is the limited availability of early-stage financing"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Social norms, legislative obstacles, and financing constraints may restrict female and youth entrepreneurs from fully accessing project equity funding.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement a Gender Action Plan, adopt targeted outreach measures, and set specific intermediate result indicators targeting female and youth ownership/leadership.",
+      "evidence": "Factors such as social norms, legislative barriers, and limited access to finance continue to influence participation in entrepreneurship in Jordan."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Increasing climate vulnerability, drought, and extreme weather events in Jordan could disrupt broader commercial activity and infrastructure stability.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Incorporate climate risk screening into sub-project selection and target 10 percent of capital allocation toward greentech and climate-resilient solution providers.",
+      "evidence": "Climate change modelling indicates Jordan\u2019s vulnerability to various climate-related effects and geophysical hazards."
+    },
+    {
+      "risk_id": "R13",
+      "description": "The current corporate registration of ISSF as a company ending in 2029 conflicts with the 10-12 year venture capital investment return cycle.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Update the ISSF Articles of Association prior to project effectiveness to convert ISSF into an open-ended Private Shareholding Company.",
+      "evidence": "return on investment usually takes 10-12 years after capital deployment, whereas currently the ISSF Private Shareholding Company \u2018ends\u2019 in 2029."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Direct co-investment in startups under Component 2 could introduce potential conflicts of interest or valuation misalignments without independent deal validation.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Require co-investments to strictly follow lead qualified institutional investors who establish round terms, capping ISSF participation as a minority investor at US$500,000.",
+      "evidence": "provides a private sector validation and aims to safeguard ISSF from possible conflicts of interest."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Private sector commercial procurement conducted by partner VC funds and startups could deviate from World Bank eligibility and anti-corruption requirements.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign a qualified PMU procurement specialist, articulate commercial practice rules in the POM, mandate Anti-Corruption Guidelines adherence, and conduct annual ex-post reviews.",
+      "evidence": "ISSF will hold the overall responsibility for procurement under the proposed Project, including undertaking procurement and contract management"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

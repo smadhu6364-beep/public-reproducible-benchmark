@@ -1,0 +1,126 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T14:08:01.296268+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: Expand DCSID coverage across the Moroccan population and foreign residents, strengthen inclusion in the National Population Registry (NPR) and Social Registry (SR) (particularly in rural/remote areas), and improve targeting and access to social protection programs.\n- Scope / Components: \n  - Component 1: Strengthening and Extending Coverage of the NPR and Operationalization of the NRA ($43m)\n  - Component 2: Expanding and Enhancing the SR System ($23m)\n  - Component 3: Project Management, Capacity Building, and M&E ($3.825m)\n- Delivery Model: Investment Project Financing (IPF) with Performance-Based Conditions (PBCs).\n- Timeline: Expected approval Nov/Dec 2024; closing Dec 31, 2028.\n- Budget: Total US$70 million equivalent (EUR 62.6 million IBRD loan).\n- Key Stakeholders: Ministry of Interior (MoI - Implementing Agency), Ministry of Economy and Finance (MEF), High Commission for Planning (HCP), National Registry Agency (NRA), National Social Security Fund (CNSS), beneficiaries (vulnerable populations, women, rural residents, persons with disabilities), Inter-ministerial Steering Committee (IMSC).\n- External Dependencies: Civil Registry Offices (BEC), interoperability with sector databases (Disability Evaluation System, Ministry of Justice, CNSS/AMO-TADAMON, DSB).\n\nStep 2 - Category sweep\n- technical: Data privacy/protection breaches; infrastructure deficiencies in remote Civil Registry Offices (BECs); manual financial reporting risks in Excel.\n- financial: Budget line overlap/duplication between WB projects under AMO-TADAMON; income volatility among informal/agricultural workers affecting contribution sustainability.\n- schedule: Delays in operationalizing the NRA due to MoI operational strain from rapid registry expansion.\n- stakeholder: Risk of exclusion of vulnerable populations (illiterate, disabled, rural) due to communication/outreach gaps; informal sector reluctance to register due to tax fears.\n- political_regulatory: Delays in establishing legal/governance frameworks for transferring registry management to the NRA.\n- environmental: Potential e-waste generation from hardware, laptops, and mobile registration units.\n- organizational: Procurement and contract management challenges regarding maintenance tranches for critical NPR/SR systems.\n- external: Severe climate shocks (droughts) disrupting agricultural livelihoods and worsening household vulnerability in project areas.\n\nStep 3 - Evidence filter\nAll identified candidate risks are verified against direct explicit statements in the PAD text (e.g., paras 3, 13, 27, 32, 52, 53, 69, 81, 85). No non-grounded risks were included.\n\nStep 4 - Assess\n- R01 (technical): Likelihood 2, Impact 4 \u2014 Privacy breaches would undermine public confidence in digital identity. Mitigation: Enforce privacy-by-design, legal compliance (Law 09-08), and staff data security training.\n- R02 (financial): Likelihood 3, Impact 3 \u2014 Dual usage of AMO-TADAMON budget line across WB operations risks audit non-compliance. Mitigation: Create distinct budget sub-codes and software controls.\n- R03 (schedule): Likelihood 3, Impact 4 \u2014 Rapid rollout strains capacity to operationalize NRA. Mitigation: Follow PBC milestones for NRA staffing and approval of operational manuals.\n- R04 (stakeholder): Likelihood 3, Impact 4 \u2014 Ineffective communication risks excluding isolated or illiterate groups. Mitigation: Implement Stakeholder Engagement Plan (SEP), deploy mobile units, and leverage 1,600 CSCs.\n- R05 (stakeholder): Likelihood 4, Impact 3 \u2014 Informal workers fear tax visibility. Mitigation: Conduct targeted outreach emphasizing data confidentiality and benefit eligibility.\n- R06 (financial): Likelihood 4, Impact 3 \u2014 Income cyclicality hinders contribution consistency. Mitigation: Adjust SR scoring formulas and dynamic welfare evaluations for shock responsiveness.\n- R07 (financial): Likelihood 3, Impact 2 \u2014 Manual Excel use risks reporting delays or errors. Mitigation: Deploy automated financial management software for IFRs.\n- R08 (environmental): Likelihood 2, Impact 2 \u2014 E-waste from mobile units and IT equipment. Mitigation: Implement MoI e-waste asset management procedures and sustainable procurement.\n- R09 (external): Likelihood 4, Impact 4 \u2014 Recurrent droughts destabilize rural incomes. Mitigation: Utilize NPR/SR location and welfare data for dynamic shock-response social assistance.\n- R10 (technical): Likelihood 3, Impact 3 \u2014 Infrastructure gaps at remote BECs delay civil registry integration. Mitigation: Upgrade hardware, software, and connectivity across 2,200 BECs.\n- R11 (political_regulatory): Likelihood 3, Impact 3 \u2014 Transfer to NRA requires complex inter-agency legal agreements. Mitigation: Fast-track regulatory decrees and inter-institutional protocols via IMSC.\n- R12 (organizational): Likelihood 2, Impact 3 \u2014 Maintenance contract options require careful administration. Mitigation: Execute PPSD contract management protocols and POM procurement procedures.\n\nStep 5 - Consolidate\n12 distinct, evidence-grounded risks consolidated across all categories.\n\nFINAL JSON:\n{\"project_id\":\"P-MAR-SecondIdentityTargetingSocialProtection\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Potential exposure or misuse of personal biographic and biometric data during the scale-up of digital identification and targeting registries.\",\"category\":\"technical\",\"likelihood\":2,\"impact\":4,\"mitigation\":\"Enforce privacy-by-design architecture, comply with personal data protection Law 09-08, and deliver mandatory data protection training for platform operators.\",\"evidence\":\"Potential negative social impacts from project activities are mainly related to... data protection issues\"},{\"risk_id\":\"R02\",\"description\":\"Risk of financial duplication or expenditure overlap due to using the shared AMO-TADAMON budget line across multiple World Bank-financed programs.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish dedicated budget codes within the Ministry of Interior budget for PBC-related activities and deploy custom financial tracking software.\",\"evidence\":\"the risk of duplication or overlap due to the use of the same budget line 'AMO-TADAMON' to justify expenditure\"},{\"risk_id\":\"R03\",\"description\":\"Delays in the operationalization and staffing of the National Registry Agency due to Ministry of Interior capacity strain during rapid registry rollout.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Execute a structured operationalization roadmap backed by PBC targets for appointing key staff and approving operational manuals.\",\"evidence\":\"This rapid expansion has strained the government\u2019s and the MoI\u2019s capacity to take steps in operationalizing the NRA.\"},{\"risk_id\":\"R04\",\"description\":\"Risk of excluding vulnerable populations, such as illiterate individuals, disabled persons, and remote residents, due to outreach gaps or complex registration.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Implement inclusive engagement strategies under the Stakeholder Engagement Plan, utilize 1,600 Citizen Service Centers, and deploy satellite-equipped mobile units.\",\"evidence\":\"exclusion of some vulnerable groups due to inefficient or inadequate public communication and outreach efforts\"},{\"risk_id\":\"R05\",\"description\":\"Reluctance of informal sector workers to register in the NPR and SR due to fears of becoming susceptible to taxation.\",\"category\":\"stakeholder\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Launch targeted communication campaigns emphasizing data confidentiality, strict separation from tax databases, and social protection benefits.\",\"evidence\":\"workers in the informal sector, are wary of providing their information to the government due to perceived risks of making them susceptible to taxation.\"},{\"risk_id\":\"R06\",\"description\":\"Seasonal and annual income fluctuations among farmers and informal workers impairing their ability to maintain health insurance payments.\",\"category\":\"financial\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Refine SR proxy-means testing formulas and dynamic recertification protocols to adjust welfare scoring during income shocks.\",\"evidence\":\"Several categories of non-salaried workers, in particular farmers... suffer from two patterns of irregularities in the flow of income\"},{\"risk_id\":\"R07\",\"description\":\"Data quality and timeliness challenges in financial reporting resulting from reliance on manual Excel spreadsheets and budget software extractions.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":2,\"mitigation\":\"Develop, install, and operationalize dedicated financial management software to automate IFR preparation and annual financial statements.\",\"evidence\":\"the use of a spreadsheet 'Excel' and data extracted from the national budget execution software may lead to some challenges\"},{\"risk_id\":\"R08\",\"description\":\"Environmental risks and hazardous waste accumulation resulting from improper disposal of electronic devices and mobile registration hardware.\",\"category\":\"environmental\",\"likelihood\":2,\"impact\":2,\"mitigation\":\"Adhere to sustainable IT procurement standards and enforce asset management e-waste disposal procedures across participating Ministries.\",\"evidence\":\"Risks associated with the use of electronic devices (such as mobile units) include the potential generation of e-waste and its improper disposal.\"},{\"risk_id\":\"R09\",\"description\":\"Severe climate shocks and recurrent droughts causing widespread agricultural job losses and worsening rural household poverty.\",\"category\":\"external\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Leverage NPR location data and SR welfare scores to rapidly deploy adaptive social transfers to climate-affected populations.\",\"evidence\":\"Rainfall shocks are estimated to account for almost 37 percent of the recent volatility of GDP growth in Morocco\"},{\"risk_id\":\"R10\",\"description\":\"Infrastructure and connectivity deficits at isolated Civil Registry Offices hindering automated digital birth and death data exchange with the NPR.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Upgrade Civil Registry Office IT hardware, software, and electronic data exchange infrastructure nationwide under Component 1.\",\"evidence\":\"some of which are in very isolated areas and require substantial investments in overall infrastructure, beyond the needs of new hardware\"},{\"risk_id\":\"R11\",\"description\":\"Legal and regulatory delays in finalizing inter-institutional governance agreements required to transfer registry oversight from MoI to NRA.\",\"category\":\"political_regulatory\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Utilize Inter-ministerial Steering Committee oversight to finalize legal decrees, data-sharing protocols, and operational transfer manuals.\",\"evidence\":\"requires the elaboration and extension of the legal framework, and the establishment of governance agreements with programs\"},{\"risk_id\":\"R12\",\"description\":\"Service disruptions or operational delays during contract maintenance tranches for core biometric and software infrastructure systems.\",\"category\":\"organizational\",\"likelihood\":2,\"impact\":3,\"mitigation\":\"Incorporate clear contract management procedures into the POM and execute Project Procurement Strategy for Development (PPSD) maintenance guidelines.\",\"evidence\":\"PPSD should provide the practical modalities and measures to manage the optional tranches relating to the maintenance of the contracts\"}]}",
+  "parsed_risks": {
+    "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Potential exposure or misuse of personal biographic and biometric data during the scale-up of digital identification and targeting registries.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Enforce privacy-by-design architecture, comply with personal data protection Law 09-08, and deliver mandatory data protection training for platform operators.",
+        "evidence": "Potential negative social impacts from project activities are mainly related to... data protection issues"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Risk of financial duplication or expenditure overlap due to using the shared AMO-TADAMON budget line across multiple World Bank-financed programs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish dedicated budget codes within the Ministry of Interior budget for PBC-related activities and deploy custom financial tracking software.",
+        "evidence": "the risk of duplication or overlap due to the use of the same budget line 'AMO-TADAMON' to justify expenditure"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in the operationalization and staffing of the National Registry Agency due to Ministry of Interior capacity strain during rapid registry rollout.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Execute a structured operationalization roadmap backed by PBC targets for appointing key staff and approving operational manuals.",
+        "evidence": "This rapid expansion has strained the government\u2019s and the MoI\u2019s capacity to take steps in operationalizing the NRA."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Risk of excluding vulnerable populations, such as illiterate individuals, disabled persons, and remote residents, due to outreach gaps or complex registration.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement inclusive engagement strategies under the Stakeholder Engagement Plan, utilize 1,600 Citizen Service Centers, and deploy satellite-equipped mobile units.",
+        "evidence": "exclusion of some vulnerable groups due to inefficient or inadequate public communication and outreach efforts"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Reluctance of informal sector workers to register in the NPR and SR due to fears of becoming susceptible to taxation.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Launch targeted communication campaigns emphasizing data confidentiality, strict separation from tax databases, and social protection benefits.",
+        "evidence": "workers in the informal sector, are wary of providing their information to the government due to perceived risks of making them susceptible to taxation."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Seasonal and annual income fluctuations among farmers and informal workers impairing their ability to maintain health insurance payments.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Refine SR proxy-means testing formulas and dynamic recertification protocols to adjust welfare scoring during income shocks.",
+        "evidence": "Several categories of non-salaried workers, in particular farmers... suffer from two patterns of irregularities in the flow of income"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Data quality and timeliness challenges in financial reporting resulting from reliance on manual Excel spreadsheets and budget software extractions.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Develop, install, and operationalize dedicated financial management software to automate IFR preparation and annual financial statements.",
+        "evidence": "the use of a spreadsheet 'Excel' and data extracted from the national budget execution software may lead to some challenges"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Environmental risks and hazardous waste accumulation resulting from improper disposal of electronic devices and mobile registration hardware.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Adhere to sustainable IT procurement standards and enforce asset management e-waste disposal procedures across participating Ministries.",
+        "evidence": "Risks associated with the use of electronic devices (such as mobile units) include the potential generation of e-waste and its improper disposal."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Severe climate shocks and recurrent droughts causing widespread agricultural job losses and worsening rural household poverty.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Leverage NPR location data and SR welfare scores to rapidly deploy adaptive social transfers to climate-affected populations.",
+        "evidence": "Rainfall shocks are estimated to account for almost 37 percent of the recent volatility of GDP growth in Morocco"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Infrastructure and connectivity deficits at isolated Civil Registry Offices hindering automated digital birth and death data exchange with the NPR.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Upgrade Civil Registry Office IT hardware, software, and electronic data exchange infrastructure nationwide under Component 1.",
+        "evidence": "some of which are in very isolated areas and require substantial investments in overall infrastructure, beyond the needs of new hardware"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Legal and regulatory delays in finalizing inter-institutional governance agreements required to transfer registry oversight from MoI to NRA.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize Inter-ministerial Steering Committee oversight to finalize legal decrees, data-sharing protocols, and operational transfer manuals.",
+        "evidence": "requires the elaboration and extension of the legal framework, and the establishment of governance agreements with programs"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Service disruptions or operational delays during contract maintenance tranches for core biometric and software infrastructure systems.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Incorporate clear contract management procedures into the POM and execute Project Procurement Strategy for Development (PPSD) maintenance guidelines.",
+        "evidence": "PPSD should provide the practical modalities and measures to manage the optional tranches relating to the maintenance of the contracts"
+      }
+    ]
+  },
+  "parse_error": null
+}
