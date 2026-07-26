@@ -1,11 +1,17 @@
 % main.tex - IEEE conference paper skeleton
 % LLM Risk Register Benchmark
 %
-% STATUS (2026-07-25): Draft skeleton, not a submittable manuscript.
-% Real, non-fabricated content: Sections I (framing/RQs), III (Methodology),
-% and V (Discussion/Limitations) are built from paper/methodology_notes.md,
-% docs/lit_review_foundation.md, and INCLUSION_CRITERIA.md - all real,
-% previously-vetted project content, not invented here.
+% STATUS (2026-07-26): Draft working manuscript, NOT a submittable one -
+% deliberately expanded past IEEE's real 6-8 page target (CLAUDE.md) as a
+% working draft at Madhu's explicit instruction; must be trimmed back to
+% 6-8 pages before real submission. Currently compiles to 8 pages.
+% Real, non-fabricated content throughout: Sections I (framing/RQs), II
+% (Related Work), III (Methodology), and V (Discussion/Limitations) are
+% built from paper/methodology_notes.md, docs/lit_review_foundation.md,
+% INCLUSION_CRITERIA.md, docs/rater_protocol.md, CLAUDE.md, and
+% data/corpus_manifest.csv - all real, previously-vetted project content
+% or data, not invented here. Every references.bib entry is now cited
+% somewhere in the paper (Related Work + Methodology).
 % 2026-07-25 (Cowork session): corrected a stale fact in V.1 (Pretraining
 % Contamination) - the Gemini-slot cutoff was recorded as January 2025
 % (researched against gemini-2.5-flash, no longer the model actually
@@ -14,8 +20,14 @@
 % March 2026 instead, per docs/model_cutoffs.md's THIRD update. Also folded
 % in the gpt-oss-120b LLMLagBench data point (three non-agreeing candidate
 % values, still not a single confirmed date) from that file's FOURTH update.
-% No other section touched - Results/Abstract/Conclusion remain correctly
-% blocked on real experiment data (see below), not filled in.
+% 2026-07-26 (VS Code session): substantially expanded III/V with real
+% content (rater protocol detail, free-tier quota numbers incl. the new
+% OpenRouter paid fallback - CLAUDE.md's dated addendum, an investigated
+% leak-check false positive on P-MAR, Method B's rater instructions
+% verbatim, corpus/model tables) and expanded II with every previously-
+% unused references.bib entry. No fabricated numbers anywhere -
+% Results/Abstract/Conclusion remain correctly blocked on real experiment
+% data (see below), not filled in.
 %
 % EXPLICIT PLACEHOLDERS - do not fill these with invented numbers:
 %   - Abstract: needs real RQ1-RQ3 headline findings (results/metrics.json
@@ -83,6 +95,20 @@ hallucination detection, human-AI comparison
 
 \section{Introduction}
 
+Risk registers are a natural, high-value testbed for evaluating LLM
+generation capability against a real, structured, professionally-authored
+artifact. Unlike open-ended text generation, a risk register has a fixed,
+checkable output contract (category, likelihood, impact, mitigation) and a
+directly comparable human-authored counterpart already exists for many
+completed or appraised projects, making semantic-matching evaluation
+against genuine ground truth possible in a way it is not for many other
+generative project-management tasks. At the same time, risk-register
+quality is not reducible to surface fluency: a register that is
+well-written but generic, or that hallucinates a plausible-sounding risk
+with no basis in the actual project documentation, is a real practical
+failure a project team could act on badly, which is exactly the failure
+mode RQ3 is designed to surface rather than average away.
+
 Large language models are increasingly proposed as tools for project
 management tasks, yet the literature concentrates heavily on predictive
 analytics for time, cost, and quality rather than generative capability
@@ -117,6 +143,21 @@ We address it with three frozen research questions:
   hallucinate? This failure-mode analysis is the paper's core contribution.
 \end{itemize}
 
+This study makes four contributions. First, to our knowledge it is the
+first benchmark to evaluate end-to-end risk-register \emph{generation} --
+not classification of already-identified risks -- against real, published,
+human-authored ground truth rather than expert opinion alone. Second, it
+compares three models spanning both a general-purpose proprietary system
+and two architecturally distinct open-weight models under three prompting
+strategies, where prior work is almost uniformly single-model. Third, it
+performs a per-category failure-mode analysis (RQ3) that treats systematic
+omission and hallucination as first-class findings rather than an aggregate
+accuracy score. Fourth, it releases the corpus manifest, extraction and
+prompting code, and evaluation pipeline, including a disclosed account of
+the free-tier provider constraints that shaped the experimental timeline
+(Section~\ref{sec:methods}), so the benchmark is reproducible rather than
+described only in the abstract.
+
 \section{Related Work}
 \label{sec:related}
 
@@ -131,9 +172,25 @@ Systematic reviews of AI in project management consistently find that
 generative applications are among the least-studied AI functions in the
 field, with research concentrated instead on predictive analytics for
 schedule, cost, and quality outcomes
-\cite{aidriven2026usecases,aitools2025knowledge}. Adoption itself is
-reported as limited by practitioners' unfamiliarity with the tools rather
-than by demonstrated capability gaps \cite{aitools2025knowledge}.
+\cite{aidriven2026usecases,aitools2025knowledge}. This pattern is not
+specific to any one review: a broader survey covering opportunities,
+enablers, and barriers across the 2013--2024 literature reaches the same
+conclusion \cite{salimimoghadam2025rise}, as does a 97-study PRISMA review
+of AI applications, challenges, and future directions
+\cite{leveraging2025ai_pm} and a further systematic mapping of the AI
+landscape in project-management contexts through late 2024
+\cite{mapping2025ai_landscape}. A thematic review focused specifically on AI
+and data analytics within project management information systems reports
+the same predictive-over-generative emphasis inside agile PM tooling
+\cite{karshiboev2026pmis}, and a review of AI within open-innovation project
+management similarly finds generative use cases under-represented relative
+to decision-support and analytics applications \cite{openinnovation2024ai}.
+Adoption itself is reported as limited by
+practitioners' unfamiliarity with the tools rather than by demonstrated
+capability gaps \cite{aitools2025knowledge}. Taken together, these reviews
+establish that the imbalance motivating this study -- abundant predictive-AI
+research, sparse generative-AI evaluation -- is a field-wide pattern rather
+than an artifact of any single review's scope.
 
 \subsection{LLMs for Project Risk Management}
 The closest prior work evaluates ChatGPT against expert judgment on
@@ -142,21 +199,50 @@ performance on generic, checklist-style risks but weaker performance on
 context-specific risks -- typically the highest-severity ones
 \cite{asce2025exploring_chatgpt_risk}. Related studies report similar
 patterns using GPT-3.5 and GPT-4 under expert or focus-group evaluation
-\cite{aladag2023assessing_chatgpt,ecam2024chatgpt_exceed_humans}, and one
-develops a fine-tuned agent (RiskGPT) evaluated on a small set of case
-studies rather than a public benchmark \cite{wen2025riskgpt}. Across this
-line of work, three limitations recur: single-model evaluation (almost
-always ChatGPT), no comparison against real published ground-truth
-registers, and no publicly released, reproducible benchmark.
+\cite{aladag2023assessing_chatgpt,ecam2024chatgpt_exceed_humans}, including
+one evaluation structured explicitly around the ISO 31000 risk-management
+process rather than an ad hoc rubric \cite{esrel2023iso31000_chatgpt}, and
+one develops a fine-tuned agent (RiskGPT) evaluated on a small set of case
+studies rather than a public benchmark \cite{wen2025riskgpt}. Adjacent
+generative applications include LLM-assisted contract review via
+knowledge-graph augmentation \cite{contractkg2023llm} and a direct
+comparison of generative-AI versus human project managers on planning
+tasks \cite{barcaui2023whoisbetter}, both of which support LLM use in
+PM-adjacent generative work without evaluating risk-register generation
+specifically. Across this line of work, three limitations recur:
+single-model evaluation (almost always ChatGPT), no comparison against real
+published ground-truth registers, and no publicly released, reproducible
+benchmark.
 
-\subsection{Risk Classification vs.\ Generation}
+\subsection{Risk Classification and Text Mining vs.\ Generation}
 A closely related but distinct task is classifying already-identified risk
 items into categories, which has been benchmarked across NLP and LLM
-methods \cite{buildings2025risk_classification}. This is a materially
-easier task than the one studied here: it presupposes that the risks have
-already been identified, whereas end-to-end register generation requires a
-model to both identify and characterize risks from raw project
-documentation.
+methods \cite{buildings2025risk_classification}. Pre-LLM text-mining
+approaches to risk extraction form a further adjacent line of work: a
+systematic review of text-mining analytics for supply-chain risk management
+from online data \cite{textmining2025scrm}, and a scientometric analysis of
+text mining and NLP specifically within construction research
+\cite{textmining2026construction_scientometric}, both surveying extraction
+and categorization pipelines that predate or do not use generative LLMs.
+Classification and extraction are materially easier tasks than the one
+studied here: they presuppose that the risks have already been identified
+or are recoverable via pattern matching, whereas end-to-end register
+generation requires a model to both identify and characterize risks from
+raw, unstructured project documentation.
+
+\subsection{In-Context Learning and Prompting Strategies}
+RQ2's zero-shot/few-shot/structured-reasoning comparison is grounded in two
+foundational results this study treats as background rather than novel
+contribution: that large language models can perform new tasks from a small
+number of in-context demonstrations without gradient updates
+\cite{brown2020fewshot}, and that eliciting explicit intermediate reasoning
+steps before a final answer measurably improves performance on tasks
+requiring multi-step inference \cite{wei2022cot}. Risk-register generation
+plausibly benefits from both mechanisms -- few-shot demonstrations convey
+the expected output shape and level of specificity, while structured
+reasoning may help a model connect a stated risk back to the specific
+planning-document passage that motivates it -- but neither effect has been
+measured for this task specifically, which is what RQ2 addresses.
 
 \subsection{LLM Evaluation Methodology}
 LLM-as-judge protocols are documented to be unstable across near-identical
@@ -166,7 +252,28 @@ calibrated in expert-knowledge domains
 This motivates our decision (Section~\ref{sec:methods}) to treat LLM-as-judge
 scoring as strictly supplementary to semantic matching against ground truth
 and blinded human expert rating, never as a stand-alone measure
-\cite{llmsasjudges2024survey}.
+\cite{llmsasjudges2024survey}. Separately, within inter-rater reliability
+methodology itself, at least one source argues for Cohen's kappa over raw
+percent agreement specifically when measuring judge-human alignment
+\cite{thakur2024kappa}; we follow the more established Fleiss' kappa instead
+(Section~\ref{sec:methods}) since our design uses more than two raters per
+item, for which Cohen's kappa does not directly apply.
+
+\subsection{Benchmark and Inter-Rater Methodology Precedent}
+Two methodological building blocks are treated as established foundations
+rather than novel contributions here. First, Fleiss' $\kappa$
+\cite{fleiss1971kappa} is the standard statistic for measuring agreement
+among more than two nominal raters, used here (Section~\ref{sec:methods})
+because Method B recruits 3--5 raters rather than exactly two, for which
+the more commonly cited Cohen's $\kappa$ does not directly apply. Second,
+the interpretation bands conventionally attached to $\kappa$ values
+\cite{landiskoch1977agreement} give this study's Method B results a
+citable, standard vocabulary (``substantial,'' ``moderate,'' and so on)
+rather than an author-invented one. Grounding the human-evaluation side of
+this benchmark in these two established statistical tools, rather than an
+ad hoc agreement measure, is itself a response to the non-blind,
+inconsistently reported evaluation designs criticized elsewhere in this
+section.
 
 \subsection{Positioning}
 Table~\ref{tab:gap} summarizes how this study differs from the closest
@@ -207,7 +314,66 @@ content survive excision of the risk content. Two UK candidates and one
 World Bank candidate were read in full and excluded or set aside for
 failing gate (2); one UK project (13 pages of surviving planning content)
 is retained as a disclosed exception to gate (4) rather than silently
-lowering the threshold.
+lowering the threshold. Both excluded UK candidates were verified by full
+direct read rather than a sampled judgment: one business case (a nuclear
+energy project) was found, on reading all 23 pages, to contain no
+itemized or rated risk register anywhere -- only generic process language
+about risk governance -- and was excluded for failing gate (1) as well as
+gate (2). A second, HTML-only business case (an employment programme) was
+found to contain exactly two named risks, both restatements of the same
+underlying funding-timing issue, with no separate mitigation text for
+either and no category diversity between them; it was excluded specifically
+because it could not support the per-category recall/precision analysis
+RQ3 depends on, not because it lacked a risk register outright. Both
+exclusion decisions, and the full text supporting them, are recorded in the
+released corpus manifest rather than only in an internal note. The 21 included projects span 18 distinct sector
+labels, among them social protection, basic and accelerated-learning
+education, energy and carbon-capture-and-storage, regional public health
+security, public financial management, water, transport and agriculture,
+private-sector competitiveness, venture finance, digital identity, and
+tourism -- a deliberately cross-sector corpus rather than one concentrated
+in a single domain such as construction, which is where nearly all prior
+LLM-risk evaluation work is sited (Section~\ref{sec:related}).
+Table~\ref{tab:corpus} lists all 21 included projects. Every source
+document is already public (World Bank project pages or UK government
+publication pages); the corpus manifest records the planning-document URL
+and the separate ground-truth-register URL as distinct fields for every
+project, so the planning/ground-truth boundary is explicit in the released
+manifest itself and independently re-checkable by a reader, not only
+asserted in prose.
+
+\begin{table*}[t]
+\centering
+\caption{The 21-project corpus: identifier, document type, and sector}
+\label{tab:corpus}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Project ID} & \textbf{Document Type} & \textbf{Sector} \\
+\midrule
+\texttt{P-AFW-HealthSecurityPhase3} & WB PAD & health / regional public health security \\
+\texttt{P-ALB-CitizenServiceDelivery} & WB PAD & public sector governance \\
+\texttt{P-BFA-EconomicOpportunitiesResilience} & WB PAD & social protection \\
+\texttt{P-BGD-SocialProtectionResilience} & WB PAD & social protection \\
+\texttt{P-GTM-SmartPublicFinances} & WB PAD & public financial management \\
+\texttt{P-IND-ChhattisgarhAcceleratedLearning} & WB PAD & education \\
+\texttt{P-JOR-InnovativeStartupsSMEsFund2} & WB PAD & private sector development / venture finance \\
+\texttt{P-KHM-BasicEducationImprovement} & WB PAD & education \\
+\texttt{P-MAR-SecondIdentityTargetingSocialProtection} & WB PAD & social protection / digital identity \\
+\texttt{P-MEX-SustainableValueChains} & WB PAD & energy / value chains \\
+\texttt{P-MNG-ThirdEnergySector} & WB PAD & energy \\
+\texttt{P-NGA-AgroProcessingLivelihood} & WB PAD & agriculture \\
+\texttt{P-PAK-ResilientAccessibleMicrofinance} & WB PAD & financial sector \\
+\texttt{P-PER-ArequipaColca} & WB PAD & tourism \\
+\texttt{P-SLE-ConnectivityAgMarketInfra} & WB PAD & transport / agriculture \\
+\texttt{P-SRB-CompetitivenessJobs} & WB PAD & private sector / competitiveness \\
+\texttt{P-STP-YouthEmployment} & WB PAD & social protection / jobs \\
+\texttt{P-UGA-IntegratedWaterMgmtDev} & WB PAD & water \\
+\texttt{P-UK-FreeBreakfastClubs} & UK SBC (HTML) & education / social policy \\
+\texttt{P-UK-HyNetCCUSCluster} & UK FBC & energy / carbon capture and storage \\
+\texttt{P-UK-PadeswoodCCUS} & UK SBC & energy / carbon capture and storage \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 \subsection{Leakage Control}
 Because several source documents contain the human risk register within the
@@ -221,10 +387,25 @@ passages that restate the register's risks, which were likewise removed.
 Every excision range was independently re-verified against the source
 document itself before ground truth was finalized -- not merely re-checked
 against the previously recorded range -- which caught three distinct
-under- and over-excision errors during corpus construction. A standing
-audit tool independently re-scans included documents for heading/table
-patterns and greps ground-truth text against processed planning text for
-verbatim or near-verbatim recurrence, run on every corpus change.
+under- and over-excision errors during corpus construction (narrative
+under-excision, rated-table under-excision, and one over-excision). A
+standing, re-runnable audit tool independently re-scans every included
+document for heading and rated-table patterns, and separately checks each
+ground-truth risk's description and mitigation text for an 8-word sliding-
+window phrase or a distinctive alphanumeric code (e.g., a World Bank
+project identifier) that also recurs verbatim in that project's processed
+planning text. This is a real, disclosed control with a known false-positive
+rate rather than a purely theoretical one: on the current corpus, this
+check flags one project whose ground-truth mitigation and processed
+planning text both contain the phrase and code identifying a
+\emph{predecessor} project -- standard background language the source
+document itself repeats over a dozen times across unrelated sections
+(project history, financial management, procurement), not risk-specific
+content, and confirmed on inspection to be a false positive rather than a
+true leak. We report this as an example of the audit process working as
+intended -- surfacing a candidate for human review rather than silently
+passing or silently excluding -- not as evidence the corpus is leak-free by
+construction.
 
 \subsection{Experimental Grid}
 Three models -- one general-purpose proprietary model and two distinct
@@ -237,6 +418,28 @@ enters that project's prompt or any few-shot example (few-shot
 demonstrations are fully synthetic, constructed for this purpose, and never
 drawn from a real corpus project).
 
+Table~\ref{tab:models} summarizes the model lineup actually dispatched.
+
+\begin{table}[t]
+\centering
+\caption{Model lineup (role label, dispatched identifier, provider)}
+\label{tab:models}
+\small
+\begin{tabular}{@{}p{0.19\linewidth}p{0.47\linewidth}p{0.21\linewidth}@{}}
+\toprule
+\textbf{Role} & \textbf{Dispatched model} & \textbf{Provider} \\
+\midrule
+Proprietary & \texttt{gemini-flash-\allowbreak latest} (resolves to \texttt{gemini-3.6-\allowbreak flash}) & Google, free tier \\
+Open-weight \#1 & \texttt{gpt-oss-\allowbreak 120b} & SambaNova, free tier \\
+Open-weight \#2 & \texttt{Meta-Llama-\allowbreak 3.3-70B-\allowbreak Instruct} & SambaNova, free tier \\
+\bottomrule
+\end{tabular}
+\\[2pt]
+\raggedright\footnotesize Both open-weight rows additionally fall back to
+OpenRouter (paid, same model identifiers) when SambaNova rate-limits --
+Section~\ref{sec:methods}.
+\end{table}
+
 \textit{Model selection note:} the model tier was originally chosen to
 include a leading proprietary model, a competing proprietary model, and one
 open-weight model. That tier was replaced after all three original provider
@@ -245,31 +448,208 @@ reported on in this paper instead pairs one proprietary model with two
 distinct open-weight models, a real and disclosed change to the
 comparison's shape rather than a substitution of equivalent alternatives.
 
+\subsection{Prompting Strategy Design}
+The three prompting strategies compared in RQ2 are grounded in the
+in-context-learning and chain-of-thought literature
+(Section~\ref{sec:related}): \emph{zero-shot} supplies only the task
+instruction and output schema; \emph{few-shot} additionally supplies
+worked demonstration examples \cite{brown2020fewshot}; \emph{structured}
+additionally instructs the model to emit visible step-by-step reasoning
+before a final answer \cite{wei2022cot}. Few-shot demonstrations are
+synthetic, purpose-built for this study, and never drawn from a real
+corpus project, so that no project's few-shot example can leak information
+about that same project's held-out ground truth. The structured condition
+is parsed by extracting the JSON object following a literal
+\texttt{FINAL JSON:} marker via a greedy regular expression anchored to the
+end of the response; this anchors to the \emph{first} occurrence of the
+marker and captures to the end of the string, so a response that emits the
+marker more than once (for example, a model visibly reconsidering its own
+answer) fails to parse entirely rather than recovering the later, intended
+JSON object. This is a real, disclosed characteristic of the parsing
+implementation, not a hypothetical edge case; if structured-condition parse
+failures in Section~\ref{sec:results} are disproportionately high relative
+to zero-shot and few-shot, this parsing contract -- not necessarily weaker
+underlying reasoning -- is the first explanation to rule out.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Confirmed real free-tier daily limits, by provider}
+\label{tab:quotas}
+\begin{tabular}{@{}p{0.32\linewidth}p{0.6\linewidth}@{}}
+\toprule
+\textbf{Provider} & \textbf{Confirmed limit} \\
+\midrule
+Proprietary-model provider (Google) & 20 requests/day, per project, per model \\
+Open-weight provider (SambaNova Cloud) & 20 requests/min; 20 requests/day; 200{,}000 tokens/day -- each \emph{per model}, independently \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Free-Tier Infrastructure and Its Methodological Consequences}
+All three models in the lineup are accessed through providers' free usage
+tiers by default, a direct consequence of the provider-account funding
+failure described above. This choice has real methodological consequences
+beyond the model-selection change itself, and we report them here rather
+than only in an internal engineering log.
+First, free-tier daily request quotas are small relative to the size of the
+experimental grid, summarized in Table~\ref{tab:quotas}. Clearing the full
+$189$-cell $\times$ 2-run grid ($378$ calls) under these limits requires
+repeated daily invocations over roughly three weeks rather than a single
+run, and the pipeline is designed around this constraint: run
+metadata is appended, never overwritten, and a resumption routine determines
+how many additional runs each (project, model, prompt) cell still needs
+before issuing new calls, so that a daily re-invocation tops cells up to the
+target run count rather than accumulating unbounded duplicates. Second, an
+earlier candidate open-weight provider (Groq) was evaluated and rejected
+during pipeline construction because its free tier imposed a hard 8{,}000
+token-per-request ceiling that this study's real prompts -- from
+extracted planning documents, typically 30{,}000--34{,}000 tokens -- exceed
+by roughly a factor of four; this is reported as a negative provider
+finding for other researchers attempting similar free-tier benchmark
+designs, not merely an implementation detail. Third, free-tier responses
+from more than one provider were observed to consume part of the
+requested output-token budget on hidden, non-visible reasoning content
+before producing visible output, which silently truncated early runs at a
+4{,}096-token output budget; the budget was raised accordingly, and this
+behavior is disclosed here since it is easy to mistake for a model-quality
+difference rather than an output-budget artifact when comparing raw
+generation lengths across providers. Fourth, because the open-weight
+provider's daily cap is the binding constraint on how quickly the grid can
+be collected, the pipeline falls back to a second provider (OpenRouter) for
+the open-weight slots specifically when the primary provider returns a
+transient rate-limit error -- routing to the identical two model
+identifiers already in use, so this is an infrastructure decision, not a
+further change to RQ2's comparison shape. Unlike the rest of the lineup,
+this fallback is a real, small paid service rather than a free tier: at
+observed per-token pricing, a single call costs on the order of
+US\$0.002--0.006, and the first live use of this fallback made 46 real
+calls before exhausting a small implicit trial balance and hitting a
+genuine payment-required response. This is disclosed here as a real,
+if minor, departure from the otherwise free-tier design, adopted and
+authorized after the fact rather than planned from the outset -- consistent
+with this section's broader pattern of reporting infrastructure decisions
+as they actually happened rather than as originally planned.
+
 \subsection{Output Schema}
-Each generated risk is a fixed JSON object: a stable identifier, a
-description, one of eight categories (technical, financial, schedule,
-stakeholder, political/regulatory, environmental, organizational,
-external), likelihood and impact on 1--5 scales, a required mitigation, and
-a required evidence field citing the specific planning-document passage
-that motivated the risk -- a generated risk with no traceable evidence is
-the operational definition of a hallucination for RQ3. The structured
-reasoning condition additionally emits visible step-by-step reasoning before
-a \texttt{FINAL JSON:} marker; the zero-shot and few-shot conditions emit
-the JSON object only.
+Each generation is validated against a fixed JSON Schema before being
+accepted: a top-level object naming the project and an array of risk
+objects, with \texttt{additionalProperties} disallowed at both levels so
+that a model cannot satisfy the schema by adding extra, unscored fields in
+place of a required one. Each risk object requires seven fields: a stable
+identifier unique within the register; a free-text description; exactly one
+of eight fixed categories (technical, financial, schedule, stakeholder,
+political/regulatory, environmental, organizational, external); likelihood
+and impact, each on a 1--5 integer scale; a mitigation, required in
+generation mode (unlike ground-truth extraction, where an explicit
+``none stated'' is permitted); and an evidence field, capped at 25 words,
+naming the specific planning-document passage that motivated the risk. A
+generated risk with no evidence traceable to the supplied planning text is
+the operational definition of a hallucination for RQ3 -- a model can only
+satisfy the evidence field by pointing at real input text, not by asserting
+plausibility. The structured reasoning condition additionally emits visible
+step-by-step reasoning before a \texttt{FINAL JSON:} marker
+(Section~\ref{sec:methods}); the zero-shot and few-shot conditions emit the
+JSON object only, with no reasoning preamble to strip before validation.
 
 \subsection{Evaluation}
-Three methods are used. \textbf{Method A (primary):} sentence-embedding
-semantic matching (\texttt{all-MiniLM-L6-v2}) between generated and
-ground-truth risks within the same project, greedy highest-similarity-first
-one-to-one matching above a validated threshold, yielding per-category
-recall and precision. \textbf{Method B:} blinded expert practitioner
-ratings on completeness, accuracy, and mitigation actionability, with
-inter-rater agreement reported via Fleiss' $\kappa$
-\cite{fleiss1971kappa} and interpreted using standard agreement bands
-\cite{landiskoch1977agreement}. \textbf{Method C (supplementary only):}
-LLM-as-judge scoring on the same three dimensions, reported strictly as a
-correlation against Method B once human ratings exist, per the
-methodological concerns discussed in Section~\ref{sec:related}.
+Three methods are used, combining an automated, a human, and a
+model-based signal so that no single measurement instrument's known
+weaknesses (Section~\ref{sec:related}) determines the headline finding on
+its own.
+
+\textbf{Method A (primary): semantic matching.} Generated and ground-truth
+risks within the same project are embedded with a sentence-embedding model
+(\texttt{all-MiniLM-L6-v2}) and matched greedily, highest-similarity-first,
+one-to-one, above a similarity threshold validated against a hand-labeled
+set of risk-description pairs. Matched pairs yield per-category recall
+(share of ground-truth risks a model's register recovers) and precision
+(share of generated risks that correspond to a real ground-truth risk);
+generated risks with no match above threshold, and no evidence field
+traceable to the source planning text, are treated as candidate
+hallucinations for RQ3. Because the threshold was validated before any real
+model output existed (Section~\ref{sec:limitations}), it is revisited
+against real generations once the full grid completes, not assumed correct
+by construction.
+
+\textbf{Method B: blinded expert rating.} A subset of generated registers
+is rated by project-management practitioners on three 1--5 Likert
+dimensions -- completeness, accuracy/plausibility, and mitigation
+actionability -- plus an optional free-text field for anything a rater
+flags as fabricated, miscategorized, or duplicated, which feeds RQ3
+alongside Method A's automated hallucination signal. Raters see the same
+planning documentation a model saw and one generated register rendered as
+a readable table; they never see which model or prompting strategy
+produced it, nor the project's human-authored ground truth, mirroring
+prior work's criticism of non-blind LLM-risk evaluation designs
+(Section~\ref{sec:related}). Ratings are gathered per \emph{register}
+rather than per individual risk line, bounding rater burden independent of
+how many risks a given register contains. The rated subset is fixed at 45
+registers: one project-independent random sample of 5 of the 21 projects
+per (model $\times$ prompt) cell, with every rater scoring the same 45
+registers under an independent per-rater shuffle, so that inter-rater
+agreement measures genuine agreement rather than an artifact of a
+partial-overlap sampling design. Because the corpus's three UK documents
+exist specifically to test cross-template generalization beyond the
+World Bank SORT format, UK representation in the rated sample is
+guaranteed at one register per cell rather than left to chance, after an
+unconstrained random draw was found to leave UK registers under- or
+unrepresented across cells for some random seeds. Inter-rater agreement is
+computed separately per Likert dimension via Fleiss' $\kappa$
+\cite{fleiss1971kappa}, treating each of the five Likert points as a
+discrete nominal category, and interpreted using standard agreement bands
+\cite{landiskoch1977agreement}; $\kappa$ and mean Likert scores are each
+reported overall and broken out by model and by prompting strategy, feeding
+RQ2 with a human-judgment signal alongside Method A's automated one.
+Raters are given plain-language instructions deliberately written for a
+project-management professional rather than an ML practitioner:
+\begin{quote}
+\small
+\emph{You'll review a series of short packets. Each packet has two parts:
+(1) a project's planning/appraisal documentation, and (2) a risk register
+someone or something produced from it. You don't need any AI/ML
+background -- read the planning documents the way you would for a real
+project, then judge the risk register the way you'd judge a colleague's
+risk register: does it cover what you'd expect, is it accurate and
+specific rather than generic, and are the proposed mitigations actually
+useful? You won't be told who or what produced each register, and that's
+intentional -- please don't try to guess.}
+\end{quote}
+
+\textbf{Method C (supplementary only): LLM-as-judge.} The same three Likert
+dimensions are additionally scored by an LLM judge and reported strictly as
+a correlation against Method B once human ratings exist, per the
+methodological concerns discussed in Section~\ref{sec:related}; Method C
+is never treated as an independent quality measure or substituted for
+Method B if human rating data is incomplete.
+
+\subsection{Implementation}
+The pipeline is organized as five stages, each a separate, independently
+runnable script: extraction (PDF/HTML source documents to plain-text
+planning documentation, with excision enforced at this stage rather than
+left to a later filtering step); generation (prompt construction and
+per-provider dispatch for all three models under all three prompting
+strategies, with the retry and cost-guard behavior described above);
+matching (Method A's embedding-based semantic matching between generated
+and ground-truth risks); metrics aggregation (per-model, per-prompt, and
+per-category recall/precision roll-ups, plus the pretraining-cutoff
+subgroup analysis); and judging (Method C's supplementary LLM-as-judge
+scoring). Each stage reads only the previous stage's output and its own
+configuration, so that, for example, re-running Method A with an updated
+similarity threshold never requires re-issuing any real model calls.
+
+\subsection{Reproducibility}
+Every generation call is logged to an append-only configuration record
+capturing the exact model version string, run date, sampling temperature
+and whether the provider actually honored it, and the SHA-256 hash of the
+prompt file used, alongside the path to that call's raw output; raw outputs
+themselves are never overwritten, only added to, so that a partially
+completed experimental grid (Section~\ref{sec:limitations}) can be resumed
+without risk of silently duplicating or discarding a prior real call. The
+corpus manifest, extraction and prompting code, output schema, and
+evaluation pipeline are released alongside this paper so that the full grid
+is independently reproducible, subject to each provider's own model-version
+rollover policy (Section~\ref{sec:limitations}).
 
 \section{Results}
 \label{sec:results}
@@ -284,6 +664,7 @@ aggregates) and the Method B rater-agreement output
 illustrative or placeholder numbers here under any circumstance.
 
 \section{Discussion and Limitations}
+\label{sec:limitations}
 
 \subsection{Pretraining Contamination}
 The corpus is drawn from public documents, which the evaluated models may
@@ -317,11 +698,18 @@ one confirmed date, this sub-analysis will either report a range for
 quantitative contamination comparison and discuss it qualitatively --
 decide once real generations exist, not before]}. A systematic gap
 between groups would be a contamination signal, though a suggestive one,
-not dispositive proof either way. \texttt{publication\_date} is populated for
-only 10 of the 21 included projects at present, which limits this
-supplementary analysis to that subset; we report this as a limitation
-rather than backfilling the field from a different, non-equivalent date
-found in the source documents.
+not dispositive proof either way. \texttt{publication\_date} is populated
+for only 10 of the 21 included projects at present, which limits this
+supplementary analysis to that subset. We considered, and rejected, an
+automated backfill for the remaining 11: World Bank appraisal documents
+carry a mechanically extractable ``Expected Approval Date'' field, but
+cross-checking it against the 10 already-dated projects showed it records a
+different concept entirely (a drafting-time projection of a future Board
+decision, which may precede, follow, or never match the real approval
+outcome) from what \texttt{publication\_date} is meant to capture (when the
+document was actually posted). Substituting one for the other under the
+same field name would misrepresent a genuine methodological gap as a solved
+one; we report the missing dates as a limitation instead.
 
 \subsection{Provider API Behavior}
 The experiment runner records a \texttt{temperature\_applied} flag on every
@@ -332,6 +720,15 @@ Section~\ref{sec:methods}) was documented to reject the
 \texttt{temperature} parameter outright in its reasoning mode; the models
 actually used in the current lineup have not been sourced to share that
 constraint, but the flag remains in place as a general-purpose safeguard.
+Transient provider errors (rate-limit and server-side failures, as opposed
+to malformed requests or missing credentials) are retried up to three times
+per call with exponential backoff before being recorded as a failed run; a
+non-transient error is never retried, since repeating a call that cannot
+possibly succeed only wastes free-tier daily quota that a different,
+viable cell could have used instead. A cost guard separately halts any
+invocation whose estimated spend exceeds a fixed threshold before a single
+paid call is made, though this guard is inactive by construction while the
+pipeline runs entirely on free-tier providers (Section~\ref{sec:methods}).
 
 \subsection{Free-Tier Provider Data Usage}
 The Gemini-slot provider's free-tier terms of service state that unpaid-tier
@@ -348,13 +745,64 @@ government documents, which substantially limits the practical sensitivity
 of this exposure; nonetheless, this is disclosed here as a real property of
 the experimental setup rather than omitted.
 
+\subsection{Rater Recruitment Status}
+Method B's protocol -- sampling design, blinding mechanism, and the Fleiss'
+$\kappa$ computation itself -- is fully implemented and tested against a
+hand-derived worked example prior to this draft. Recruitment of the 3--5
+practitioner raters the protocol calls for is, however, not yet complete as
+of this writing. We disclose this as a real, current gap rather than
+implying human-rating results are further along than they are: every Method
+B number in this paper is contingent on recruitment completing, and the
+paper will not report Method B findings, or claim inter-rater agreement,
+before real rater data exists.
+
+\subsection{Ethical Considerations}
+All planning documents used as model input are already-public World Bank
+Project Appraisal Documents or UK government business cases; no
+confidential, proprietary, or personally identifying material enters any
+prompt. The free-tier provider data-usage disclosures in
+Section~\ref{sec:limitations} apply to already-public source material for
+this reason, which substantially limits their practical severity even where
+the usage terms themselves are unfavorable or unstated. Human raters in
+Method B review only project documentation and a generated register, never
+personal data about named individuals in either the planning documents or
+any provider account; rater identities are decoupled from their ratings in
+the released data via the same blinding codes used to keep model identity
+from raters (Section~\ref{sec:methods}).
+
+\subsection{Human Ground Truth Is Not a Perfect Oracle}
+Method A measures overlap with one specific published human register;
+treating a low Method A recall as straightforwardly ``the model missed a
+real risk'' presumes the human register is itself complete, which is not
+guaranteed -- published registers are themselves a product of time
+constraints, institutional templates, and reviewer judgment, and can omit
+risks a careful independent review would surface. This is precisely why
+Method B asks raters to judge completeness against what a PM professional
+would expect from the planning documents \emph{alone}, not against the
+unseen human register: a generated register that a blinded practitioner
+rates highly on completeness despite low Method A recall would indicate the
+metric is penalizing a genuine gap in the ground truth rather than a
+genuine gap in the generation, which Method A alone cannot distinguish.
+
 \subsection{Threats to Validity}
 Method A's similarity threshold was validated against a hand-labeled set of
 risk-description pairs rather than a real experiment run, since no real
 model output existed at the time of validation; it should be revisited
-against real generations if the corpus or embedding model changes.
-Method C is deliberately never treated as an independent quality measure,
-for the reasons discussed in Section~\ref{sec:related}.
+against real generations if the corpus or embedding model changes. Fleiss'
+$\kappa$ treats the five Likert points as unordered nominal categories, so a
+1-versus-2 disagreement counts identically to a 1-versus-5 disagreement in
+the reported statistic -- a real simplification of an ordinal scale, stated
+here rather than left implicit. Method C is deliberately never treated as
+an independent quality measure, for the reasons discussed in
+Section~\ref{sec:related}. Finally, the free-tier infrastructure
+constraints described in Section~\ref{sec:methods} mean the full grid is
+collected over an extended, multi-week period of daily re-invocation rather
+than a single run; because model version strings and sampling temperature
+are logged per call (Section~\ref{sec:methods}), any provider-side model
+rollover mid-collection would be visible in the logged data rather than
+silently conflated with a stable model, but a rollover occurring would
+still be a real threat to the comparability of runs collected on either
+side of it.
 
 \section{Conclusion}
 
