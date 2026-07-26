@@ -1,0 +1,144 @@
+{
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:07:23.833722+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: To improve the quality of school education and access to science and commerce senior secondary education in Chhattisgarh.\n- Scope: In-service teacher professional development (RA-1); centrally developed, digitally enabled student diagnostic/assessment systems (RA-2); model composite school development and management (RA-3); school leadership development (RA-4); and IPF technical assistance for EMIS, technical agencies, PMC, and IVA.\n- Delivery Model: Hybrid Program-for-Results (PforR) operation ($535.80M) with an Investment Project Financing (IPF) component ($21.75M).\n- Implementing Agency: State of Chhattisgarh (Department of School Education via SIS-SS, with SCERT, SIEMAT, SAC, DIETs, PWD, and RES).\n- Timeline: Expected Approval Date June 26, 2023; Expected Closing Date September 29, 2028 (5-year implementation period, FY23/24 \u2013 FY27/28).\n- Budget: Total operation cost $558.30M ($300M IBRD Loan, $258.30M Counterpart funding). PforR Program $535.80M, IPF component $21.75M, Front-end fee $0.75M.\n- Key Stakeholders: Government of India (MoE), Government of Chhattisgarh (DoSE, SIS-SS, SCERT, SIEMAT, SAC, PWD, RES), teachers, school principals, students (focus on SC, ST, OBC, and adolescent boys), and SMCs.\n- External Dependencies: Samagra Shiksha (SS) scheme approval/funding from Central Government (MoE PAB), annual state budget releases, execution capacity of PWD/RES, and climatic/weather factors.\n\nStep 2 - Category sweep\n- technical:\n  1. Inexperience of SIS-SS with World Bank Procurement Regulations for consultancy contracts under the IPF component. (Text: \"Procurement risks related to the IPF component include the inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations...\")\n  2. SCERT Assessment Cell (SAC) has limited capacity and staff (only 4-5 faculty) to design/execute diagnostic assessments and SLAS. (Text: \"However, the SAC has limited capacity and experience in these areas.\")\n- financial:\n  3. Delays in fund releases and low budget execution due to complex multi-tier planning and limited budgeting capacity. (Text: \"...multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting...\")\n  4. Systemic gaps in financial internal controls and unresolved statutory audit observations dating back to FY 2009-10. (Text: \"It may be noted that there exist unresolved/ addressed statutory observations since FY 2009-10.\")\n- schedule:\n  5. Delayed approval of the Annual Work Plan & Budget (AWP&B) by the central Project Approval Board (PAB) 3-5 months into the fiscal year. (Text: \"However, the AWP&B gets approved only by the third to the fifth month of the financial year.\")\n  6. Lack of annual procurement planning with fixed timelines across procuring entities. (Text: \"...the assessment found that there is no practice of preparing an annual procurement plan with timelines or of public disclosure...\")\n- stakeholder:\n  7. High dropout rates among adolescent boys at secondary/senior secondary levels due to opportunity costs and informal job market entry. (Text: \"...adolescent boys in secondary and senior secondary grades find it economically beneficial to drop out and take up informal jobs...\")\n  8. Over-crowding in tribal hostels and lack of geographic equity in infrastructure planning for remote SC/ST areas. (Text: \"...over-crowding of students in tribal hostels, (g) lack of geographic and needs-based planning to ensure equity and access...\")\n- political_regulatory:\n  9. Potential enactment of new Personal Data protection legislation impacting project activities collecting personal data. (Text: \"...approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation...\")\n- environmental:\n  10. Vulnerability to climate extreme events (droughts, floods, heatwaves) causing extended school closures and reduced instruction days. (Text: \"The state is vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions...\")\n  11. Environmental, occupational, and community safety risks during school civil works (fire safety, dust, missing universal access features). (Text: \"...gap in following any fire safety norms in the schools, (c) lack of provisions for universal access to students and teachers...\")\n- organizational:\n  12. Staff vacancies in SIS-SS operating at ~70% sanctioned capacity, constraining program monitoring and management. (Text: \"On average, SIS-SS is functioning at approximately 70 percent of the sanctioned strength.\")\n  13. Dearth of subject-specialist teachers leading to language teachers teaching mathematics and science in multi-grade settings. (Text: \"...lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences.\")\n- external:\n  14. Coal mine closures and economic transition in coal blocks over the coming decades requiring re-skilling and alternative education pathways. (Text: \"India's long-term goal of reaching net zero by 2070... will result in the gradual closure of coal mines...\")\n\nStep 3 - Evidence filter\nAll 14 candidate risks are explicitly rooted in quotes and data provided in the appraisal document.\n\nStep 4 - Assess\nLikelihood, impact, justifications, concrete mitigations, and exact quotes (<25 words) assigned for each of the 14 identified risks.\n\nStep 5 - Consolidate\nThe 14 distinct risks cover all 8 required risk categories without fluff or unsupported assumptions.\n\nFINAL JSON:\n{\"project_id\":\"P-IND-ChhattisgarhAcceleratedLearning\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Inexperience of SIS-SS with World Bank Procurement Regulations for consultancy contracts under the IPF component leading to selection and implementation delays.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Engage procurement-skilled personnel, provide extensive World Bank handholding, utilize the STEP system, and apply World Bank prior/post reviews.\",\"evidence\":\"Procurement risks related to the IPF component include the inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations\"},{\"risk_id\":\"R02\",\"description\":\"SCERT Assessment Cell (SAC) has limited capacity and staff to design, administer, and analyze state Level Achievement Surveys and diagnostic assessments.\",\"category\":\"technical\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Hire a technical support agency through the IPF component to strengthen SAC staffing, institutional structure, and assessment capabilities.\",\"evidence\":\"The SAC has limited capacity and experience in these areas.\"},{\"risk_id\":\"R03\",\"description\":\"Delays in fund releases and low budget execution caused by complex multi-tier planning and limited budgeting capacity across agencies.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Conduct a financial management study, streamline AWP&B planning cycles, and deploy PFMS-linked Single Nodal Accounts for direct fund flows.\",\"evidence\":\"multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting\"},{\"risk_id\":\"R04\",\"description\":\"Systemic weaknesses in financial internal controls and persistent unresolved statutory audit observations dating back to FY 2009-10.\",\"category\":\"financial\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Establish a formal Audit Committee, expand risk-based internal audit ToRs, and organize block-level camps to resolve legacy audit findings.\",\"evidence\":\"It may be noted that there exist unresolved/ addressed statutory observations since FY 2009-10.\"},{\"risk_id\":\"R05\",\"description\":\"Late approval of the Annual Work Plan & Budget (AWP&B) by the central Project Approval Board (PAB) delaying program execution start dates.\",\"category\":\"schedule\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Pre-finance ongoing and critical program activities through state budget allocations prior to formal PAB approval.\",\"evidence\":\"However, the AWP&B gets approved only by the third to the fifth month of the financial year.\"},{\"risk_id\":\"R06\",\"description\":\"Absence of annual procurement planning with structured timelines across implementing agencies causing procurement slippages.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Mandate the publication of annual procurement plans within one month of AWP&B approval and mandate disclosure of awards on e-GP platforms.\",\"evidence\":\"the assessment found that there is no practice of preparing an annual procurement plan with timelines or of public disclosure\"},{\"risk_id\":\"R07\",\"description\":\"High dropout rates among adolescent boys at secondary and senior secondary levels due to economic pressures to enter informal labor.\",\"category\":\"stakeholder\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Develop model composite schools offering science and commerce streams, introduce targeted remedial support, and build residential facilities for boys.\",\"evidence\":\"adolescent boys in secondary and senior secondary grades find it economically beneficial to drop out and take up informal jobs\"},{\"risk_id\":\"R08\",\"description\":\"Over-crowding in tribal hostels and lack of geographic needs-based planning leading to inequitable access for remote SC/ST communities.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Conduct formal hostel need assessments, prioritize model composite school placement in SC/ST blocks, and strengthen SMC participation.\",\"evidence\":\"over-crowding of students in tribal hostels, (g) lack of geographic and needs-based planning to ensure equity and access\"},{\"risk_id\":\"R09\",\"description\":\"Enactment of new Personal Data protection legislation impacting project operations collecting and processing student and teacher data.\",\"category\":\"political_regulatory\",\"likelihood\":2,\"impact\":3,\"mitigation\":\"Conduct technical impact analyses of new privacy legislation, adopt international data protection standards, and ensure anonymization of shared data.\",\"evidence\":\"approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation\"},{\"risk_id\":\"R10\",\"description\":\"Vulnerability to climate extremes such as heatwaves, erratic monsoons, droughts, and floods forcing school closures and loss of instructional time.\",\"category\":\"environmental\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Incorporate disaster-resilient school designs, digitize student learning records, train principals in DRM, and deploy TaRL catch-up strategies.\",\"evidence\":\"The state is vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions\"},{\"risk_id\":\"R11\",\"description\":\"Environmental, health, and safety risks during civil works, including poor fire safety, dust pollution, and lack of universal access features.\",\"category\":\"environmental\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Mandate environmental and social screening, integrate EHS obligations into standard bidding documents, and apply National Disaster Management safety guidelines.\",\"evidence\":\"gap in following any fire safety norms in the schools, (c) lack of provisions for universal access to students and teachers\"},{\"risk_id\":\"R12\",\"description\":\"Staff vacancies in SIS-SS operating at roughly 70 percent capacity, limiting program implementation and monitoring oversight.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Contract a Project Management Consultant (PMC) with dedicated fiduciary and E&S experts and execute a time-bound state staffing plan.\",\"evidence\":\"On average, SIS-SS is functioning at approximately 70 percent of the sanctioned strength.\"},{\"risk_id\":\"R13\",\"description\":\"Shortage of subject-specialist teachers forcing non-specialist language teachers to teach mathematics and science in multi-grade settings.\",\"category\":\"organizational\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Provide structured grade-specific lesson plans, transition to composite model schools with critical masses of subject teachers, and offer need-based CPD.\",\"evidence\":\"lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences.\"},{\"risk_id\":\"R14\",\"description\":\"Phased closure of coal mines due to long-term net-zero goals causing economic displacement in mining blocks and requiring workforce re-skilling.\",\"category\":\"external\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish at least 5 percent of model composite schools offering science and commerce education specifically in coal mining blocks.\",\"evidence\":\"India's long-term goal of reaching net zero by 2070... will result in the gradual closure of coal mines\"}]}",
+  "parsed_risks": {
+    "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inexperience of SIS-SS with World Bank Procurement Regulations for consultancy contracts under the IPF component leading to selection and implementation delays.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Engage procurement-skilled personnel, provide extensive World Bank handholding, utilize the STEP system, and apply World Bank prior/post reviews.",
+        "evidence": "Procurement risks related to the IPF component include the inexperience of the SIS-SS to process consultancy services following World Bank Procurement Regulations"
+      },
+      {
+        "risk_id": "R02",
+        "description": "SCERT Assessment Cell (SAC) has limited capacity and staff to design, administer, and analyze state Level Achievement Surveys and diagnostic assessments.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire a technical support agency through the IPF component to strengthen SAC staffing, institutional structure, and assessment capabilities.",
+        "evidence": "The SAC has limited capacity and experience in these areas."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in fund releases and low budget execution caused by complex multi-tier planning and limited budgeting capacity across agencies.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct a financial management study, streamline AWP&B planning cycles, and deploy PFMS-linked Single Nodal Accounts for direct fund flows.",
+        "evidence": "multiple tiers of planning and implementation and their limited capacities to prepare and manage budgets often result in inadequately planned budgeting"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Systemic weaknesses in financial internal controls and persistent unresolved statutory audit observations dating back to FY 2009-10.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a formal Audit Committee, expand risk-based internal audit ToRs, and organize block-level camps to resolve legacy audit findings.",
+        "evidence": "It may be noted that there exist unresolved/ addressed statutory observations since FY 2009-10."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Late approval of the Annual Work Plan & Budget (AWP&B) by the central Project Approval Board (PAB) delaying program execution start dates.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Pre-finance ongoing and critical program activities through state budget allocations prior to formal PAB approval.",
+        "evidence": "However, the AWP&B gets approved only by the third to the fifth month of the financial year."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Absence of annual procurement planning with structured timelines across implementing agencies causing procurement slippages.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate the publication of annual procurement plans within one month of AWP&B approval and mandate disclosure of awards on e-GP platforms.",
+        "evidence": "the assessment found that there is no practice of preparing an annual procurement plan with timelines or of public disclosure"
+      },
+      {
+        "risk_id": "R07",
+        "description": "High dropout rates among adolescent boys at secondary and senior secondary levels due to economic pressures to enter informal labor.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop model composite schools offering science and commerce streams, introduce targeted remedial support, and build residential facilities for boys.",
+        "evidence": "adolescent boys in secondary and senior secondary grades find it economically beneficial to drop out and take up informal jobs"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Over-crowding in tribal hostels and lack of geographic needs-based planning leading to inequitable access for remote SC/ST communities.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct formal hostel need assessments, prioritize model composite school placement in SC/ST blocks, and strengthen SMC participation.",
+        "evidence": "over-crowding of students in tribal hostels, (g) lack of geographic and needs-based planning to ensure equity and access"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Enactment of new Personal Data protection legislation impacting project operations collecting and processing student and teacher data.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Conduct technical impact analyses of new privacy legislation, adopt international data protection standards, and ensure anonymization of shared data.",
+        "evidence": "approval of any new legislation regarding Personal Data protection may have an impact on the activities financed by the Operation"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Vulnerability to climate extremes such as heatwaves, erratic monsoons, droughts, and floods forcing school closures and loss of instructional time.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Incorporate disaster-resilient school designs, digitize student learning records, train principals in DRM, and deploy TaRL catch-up strategies.",
+        "evidence": "The state is vulnerable to droughts and floods due to erratic monsoons and heat waves that can force extensions"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Environmental, health, and safety risks during civil works, including poor fire safety, dust pollution, and lack of universal access features.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate environmental and social screening, integrate EHS obligations into standard bidding documents, and apply National Disaster Management safety guidelines.",
+        "evidence": "gap in following any fire safety norms in the schools, (c) lack of provisions for universal access to students and teachers"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Staff vacancies in SIS-SS operating at roughly 70 percent capacity, limiting program implementation and monitoring oversight.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Contract a Project Management Consultant (PMC) with dedicated fiduciary and E&S experts and execute a time-bound state staffing plan.",
+        "evidence": "On average, SIS-SS is functioning at approximately 70 percent of the sanctioned strength."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Shortage of subject-specialist teachers forcing non-specialist language teachers to teach mathematics and science in multi-grade settings.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide structured grade-specific lesson plans, transition to composite model schools with critical masses of subject teachers, and offer need-based CPD.",
+        "evidence": "lack of subject teachers in schools managed by the GoCG has resulted in Language teachers teaching Mathematics, English, and Sciences."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Phased closure of coal mines due to long-term net-zero goals causing economic displacement in mining blocks and requiring workforce re-skilling.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish at least 5 percent of model composite schools offering science and commerce education specifically in coal mining blocks.",
+        "evidence": "India's long-term goal of reaching net zero by 2070... will result in the gradual closure of coal mines"
+      }
+    ]
+  },
+  "parse_error": null
+}

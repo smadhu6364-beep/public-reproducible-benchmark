@@ -1,0 +1,230 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__gpt__few_shot__run1.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R18",
+      "gt_risk_id": "R02",
+      "similarity": 0.709,
+      "gen_category": "political_regulatory",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R01",
+      "similarity": 0.673,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Concentration of investment in a single VC fund could lead to over\u2011exposure if the fund underperforms.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Enforce the updated cap of no more than 15% of total loan size per VC fund and monitor compliance quarterly.",
+      "evidence": "Concentration limits: no more than 15 percent of the total loan size (section 34)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Turnover of ISSF senior staff may disrupt project implementation and delay capital deployment.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement retention incentives for key personnel and maintain a succession plan for board and investment committee members.",
+      "evidence": "Lessons learned note high turnover was addressed with a stable team (section 41)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Global venture\u2011capital market slowdown could reduce private capital mobilised and affect fund returns.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversify investor base across regions and include covenant\u2011linked performance triggers to adjust commitments if market conditions deteriorate.",
+      "evidence": "Mention of global downturn in VC returns after COVID\u201119 (section 59)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Slow pace of capital commitments observed in early ISSF 1.0 years may repeat, delaying impact delivery.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt a phased deployment schedule with clear milestones and allocate additional resources to investment monitoring.",
+      "evidence": "Initial phases of ISSF 1.0 had slow commitment pace (section 24)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Climate\u2011related extreme events could disrupt startup operations, affecting project outcomes.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Prioritise greentech startups with climate\u2011resilience solutions and incorporate climate risk assessments into investment due diligence.",
+      "evidence": "Climate vulnerability context states limited impact on startups (section 12)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate e\u2011waste management by funded ICT SMEs may cause environmental pollution.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Require funded firms to adopt certified e\u2011waste recycling practices and include compliance clauses in investment agreements.",
+      "evidence": "Potential e\u2011waste impacts noted for ICT sector (section 77)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Labor and gender\u2011related risks (discrimination, harassment) could arise in funded startups, undermining social objectives.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Integrate gender\u2011sensitive labor standards into the ESG screening and conduct periodic compliance audits.",
+      "evidence": "Social risk includes poor labor conditions and gender issues (section 78)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Grievance Mechanism currently lacks full accessibility, risking unresolved complaints and reputational damage.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Upgrade the GM with clear procedures, multilingual channels, and a 10\u2011day resolution target, and train staff on handling complaints.",
+      "evidence": "GM system requires enhancement per recent E&S audit (section 82)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Non\u2011compliance with World Bank safeguard policies could trigger project delays or sanctions.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement a dedicated compliance officer to verify all activities against the ESF and conduct quarterly safeguard reviews.",
+      "evidence": "Project must adhere to ESF and exclusion list (section 81)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Currency fluctuations between USD and JOD may affect the real value of disbursed funds.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Use hedging instruments for loan proceeds and regularly review exchange\u2011rate impacts in financial reporting.",
+      "evidence": "Exchange rate provided (JOD 0.709 = $1) (datasheet)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Delay in signing the IFC Memorandum of Understanding could limit co\u2011investment opportunities.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Set a firm deadline for MOU execution and include a contingency clause to engage alternative DFIs if needed.",
+      "evidence": "IFC MOU planned to enhance collaboration (section 26)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Insufficient capacity within ISSF PMU to manage procurement and monitoring may lead to weak controls.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Recruit a qualified procurement specialist and provide targeted training on World Bank procurement and monitoring standards.",
+      "evidence": "Need for procurement specialist and capacity assessment (section 74)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Procurement processes may face delays due to under\u2011developed standard documents and templates.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Develop and approve standard procurement templates early and conduct staff training before the first procurement cycle.",
+      "evidence": "Procurement tools under development (section 74)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Failure to achieve the 30% women\u2011owned/led beneficiary target could reduce gender impact and stakeholder support.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement targeted outreach, set interim gender quotas for each investment round, and monitor progress quarterly.",
+      "evidence": "Goal of at least 30% women\u2011owned beneficiaries (section 49)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Greentech allocation may fall short of the 10% target, limiting climate co\u2011benefits.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Introduce a greentech screening criterion and reserve a dedicated fund tranche for climate\u2011tech investments.",
+      "evidence": "Target of 10% greentech investments (section 51)."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Data quality issues in self\u2011reported job creation figures could overstate impact.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Require verification of employment data through payroll records and social security filings, with random audits.",
+      "evidence": "Job creation data to be verified via payroll/social security (section 30)."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Exit risk: portfolio startups may not achieve successful exits, reducing expected returns and fund sustainability.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Set minimum performance milestones for co\u2011invested startups and maintain a reserve fund to cover potential shortfalls.",
+      "evidence": "Exit expectations discussed; TVPI above 1 but future exits uncertain (section 59)."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Jordan\u2019s regional geopolitical volatility could deter foreign VC participation.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage diplomatic channels to promote investment security and incorporate political\u2011risk insurance for foreign investors.",
+      "evidence": "Jordan\u2019s small, open economy faces vulnerabilities in a geopolitically volatile region (section 1)."
+    },
+    {
+      "risk_id": "R19",
+      "description": "Regulatory changes in the fintech sandbox or other sector\u2011specific rules may affect funded startups\u2019 business models.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain continuous liaison with MODEE and monitor regulatory updates; include flexibility clauses in investment agreements.",
+      "evidence": "Fintech regulatory sandbox noted as influencing pipeline (section 25)."
+    },
+    {
+      "risk_id": "R20",
+      "description": "Reliance on a single financial intermediary (ISSF) for fund management concentrates operational risk.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Establish backup management arrangements and periodic external reviews of ISSF\u2019s governance and operational processes.",
+      "evidence": "ISSF serves as the sole PMU and fund manager (section 42)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

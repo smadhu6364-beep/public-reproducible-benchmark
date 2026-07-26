@@ -1,0 +1,108 @@
+{
+  "project_id": "P-GTM-SmartPublicFinances",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:06:01.840711+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-GTM-SmartPublicFinances\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate preparation and institutional stability within the implementing agency may hinder project success\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure strong, sustained commitment from senior government leadership and establish incentives to sustain reforms beyond individual tenures\",\n      \"evidence\": \"Section 32, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Lack of foundational preconditions for PFM reforms may lead to project delays or failure\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct comprehensive diagnostic and reform strategy to identify priority areas and determine appropriate sequencing of interventions\",\n      \"evidence\": \"Section 33, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Cybersecurity threats may compromise the security and integrity of PFM systems\",\n      \"category\": \"technical\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop and implement an Information Security Management System (ISMS) and a Business Continuity Management System (BCMS)\",\n      \"evidence\": \"Section 10, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate data governance and analytics capabilities may limit the effectiveness of PFM reforms\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a data governance model and develop analytical capabilities to support data-driven decision-making\",\n      \"evidence\": \"Section 9, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Climate-related risks may impact the sustainability and effectiveness of PFM reforms\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate considerations into PFM systems and develop strategies to enhance resilience and adaptability\",\n      \"evidence\": \"Section 42, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate stakeholder engagement and participation may limit the success of PFM reforms\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish mechanisms for stakeholder engagement and participation, including citizen consultations and feedback mechanisms\",\n      \"evidence\": \"Section 40, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate capacity and skills within the public sector may hinder the effective implementation of PFM reforms\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop capacity-building programs and provide training and technical assistance to support the implementation of PFM reforms\",\n      \"evidence\": \"Section 28, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate coordination and collaboration among stakeholders may limit the effectiveness of PFM reforms\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish mechanisms for coordination and collaboration among stakeholders, including the creation of a Project Implementation Unit (PIU)\",\n      \"evidence\": \"Section 34, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate monitoring and evaluation frameworks may limit the ability to assess the effectiveness of PFM reforms\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a monitoring and evaluation framework to track progress and assess the effectiveness of PFM reforms\",\n      \"evidence\": \"Section 36, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate funding and resource allocation may limit the effectiveness of PFM reforms\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure adequate funding and resource allocation to support the implementation of PFM reforms\",\n      \"evidence\": \"Section 51, Annex 1\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-GTM-SmartPublicFinances",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate preparation and institutional stability within the implementing agency may hinder project success",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Ensure strong, sustained commitment from senior government leadership and establish incentives to sustain reforms beyond individual tenures",
+        "evidence": "Section 32, Annex 1"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Lack of foundational preconditions for PFM reforms may lead to project delays or failure",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct comprehensive diagnostic and reform strategy to identify priority areas and determine appropriate sequencing of interventions",
+        "evidence": "Section 33, Annex 1"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Cybersecurity threats may compromise the security and integrity of PFM systems",
+        "category": "technical",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop and implement an Information Security Management System (ISMS) and a Business Continuity Management System (BCMS)",
+        "evidence": "Section 10, Annex 1"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate data governance and analytics capabilities may limit the effectiveness of PFM reforms",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a data governance model and develop analytical capabilities to support data-driven decision-making",
+        "evidence": "Section 9, Annex 1"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Climate-related risks may impact the sustainability and effectiveness of PFM reforms",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Integrate climate considerations into PFM systems and develop strategies to enhance resilience and adaptability",
+        "evidence": "Section 42, Annex 1"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate stakeholder engagement and participation may limit the success of PFM reforms",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish mechanisms for stakeholder engagement and participation, including citizen consultations and feedback mechanisms",
+        "evidence": "Section 40, Annex 1"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate capacity and skills within the public sector may hinder the effective implementation of PFM reforms",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop capacity-building programs and provide training and technical assistance to support the implementation of PFM reforms",
+        "evidence": "Section 28, Annex 1"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate coordination and collaboration among stakeholders may limit the effectiveness of PFM reforms",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish mechanisms for coordination and collaboration among stakeholders, including the creation of a Project Implementation Unit (PIU)",
+        "evidence": "Section 34, Annex 1"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate monitoring and evaluation frameworks may limit the ability to assess the effectiveness of PFM reforms",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a monitoring and evaluation framework to track progress and assess the effectiveness of PFM reforms",
+        "evidence": "Section 36, Annex 1"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate funding and resource allocation may limit the effectiveness of PFM reforms",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Ensure adequate funding and resource allocation to support the implementation of PFM reforms",
+        "evidence": "Section 51, Annex 1"
+      }
+    ]
+  },
+  "parse_error": null
+}

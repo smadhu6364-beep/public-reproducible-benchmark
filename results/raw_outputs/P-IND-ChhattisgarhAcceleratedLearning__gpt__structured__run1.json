@@ -1,0 +1,171 @@
+{
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:07:41.661543+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n**Step\u202f1 \u2013 Frame the project**  \n- **Objective:** Improve quality of school education and expand access to science & commerce senior\u2011secondary education in Chhattisgarh.  \n- **Scope & Components:** Four Results Areas \u2013 (RA\u20111) teacher professional development & TaRL; (RA\u20112) student diagnostic & remedial assessment system; (RA\u20113) model composite school development (disaster\u2011resilient, energy\u2011efficient); (RA\u20114) school leadership (DRM, SRGBV). Includes IPF\u2011TA technical assistance, EMIS development, procurement of civil works, training modules, and monitoring.  \n- **Delivery model:** State Implementation Society for Samagra\u202fShiksha (SIS\u2011SS) as nodal implementer; sub\u2011implementers SCERT, SIEMAT, DIETs, PWD, RES; Project Management Consultant (PMC) and Independent Verification Agency (IVA) engaged.  \n- **Timeline:** July\u202f2023\u202f\u2013\u202fDecember\u202f2028 (5\u202fyears).  \n- **Budget:** Total operation US$558.3\u202fM; CHALK program US$535.8\u202fM; IBRD loan US$300\u202fM; counterpart funding US$258.3\u202fM.  \n- **Key stakeholders:** GoCG (DoSE, DoSE&L), SCERT, SIEMAT, DIETs, PWD, RES, World Bank, PMC, IVA, teachers, school management committees, students, community groups.  \n- **External dependencies:** State budget cycles, Samagra\u202fShiksha (SS) financing, e\u2011Government Procurement (e\u2011GP) & GeM portals, climate\u2011related disruptions, data\u2011protection legislation.\n\n**Step\u202f2 \u2013 Category sweep (candidate risks with supporting text)**  \n- *Technical*: EMIS capacity gap (Sec\u202f41); lack of standardized assessment data (Sec\u202f13); no structured TaRL training program (DLI\u202f4 baseline); absence of annual procurement plan (Sec\u202f4.5).  \n- *Financial*: Fiduciary risk rated \u201cSubstantial\u201d (Sec\u202f56); budgeting and fund\u2011release delays due to multi\u2011tier planning (Sec\u202f59).  \n- *Schedule*: Climate\u2011induced drought/flood risk affecting construction and school days (Sec\u202f3); DLI verification may delay disbursements (DLIs verification protocol).  \n- *Stakeholder*: Teacher shortage/high pupil\u2011teacher ratios (Sec\u202f11); community preference for boys to work, no residential schools for boys (Sec\u202f6); weak grievance redress mechanism (Sec\u202f67).  \n- *Political/Regulatory*: Potential new personal\u2011data protection law impacting data handling (Legal covenants Sec\u202fIII.C).  \n- *Environmental*: Construction waste, pollution, fire\u2011safety gaps (Sec\u202f70); broader climate change impacts (Sec\u202f72).  \n- *Organizational*: SIS\u2011SS staffed at ~70\u202f% of sanctioned strength (Sec\u202f14); internal\u2011audit/control weaknesses (Sec\u202f15).  \n- *External*: Under\u2011funded technical support agencies limiting capacity (Sec\u202f4.4).\n\n**Step\u202f3 \u2013 Evidence filter**  \nAll listed risks are directly quoted in the appraisal document; none are removed.\n\n**Step\u202f4 \u2013 Assess & mitigate**  \n\n| ID | Likelihood (1\u20115) | Impact (1\u20115) | Justification (likelihood / impact) | Mitigation (concrete) |\n|----|------------------|--------------|--------------------------------------|-----------------------|\n| R01 | 4 | 4 | Capacity gaps are explicit and central to EMIS rollout. | Assign dedicated EMIS team, embed technical experts via IPF\u2011TA, set phased milestones, monitor through PMC. |\n| R02 | 3 | 4 | Current assessment system is weak; improvement planned but not yet in place. | Strengthen SCERT Assessment Cell, launch periodic SLAS, train staff on item\u2011level data, integrate with EMIS. |\n| R03 | 4 | 3 | No existing TaRL programme; development required. | Fast\u2011track curriculum design, allocate blended\u2011learning resources, monitor trainer deployment, set completion checkpoints. |\n| R04 | 3 | 3 | Procurement plan absent; could cause delays. | Draft and approve annual procurement plan per FMP manual, assign procurement specialist, track against timeline. |\n| R05 | 3 | 4 | \u201cSubstantial\u201d fiduciary risk identified. | Implement IFSA recommendations, augment FM staff, conduct regular internal audits, enforce strict controls. |\n| R06 | 4 | 3 | Multi\u2011tier budgeting repeatedly causes release delays. | Streamline AWP&B approval (target\u202f\u2264\u202f3\u202fmonths), provide budgeting capacity\u2011building, use interim financing where needed. |\n| R07 | 3 | 4 | State prone to droughts/floods; construction sensitive to weather. | Use disaster\u2011resilient designs, schedule works in optimal seasons, maintain buffer time in Gantt. |\n| R08 | 3 | 3 | DLI verification requires field surveys that may lag. | Strengthen verification team, use digital data submission, schedule verification early in fiscal year. |\n| R09 | 4 | 4 | Teacher shortage documented; high pupil\u2011teacher ratios. | Accelerate recruitment, offer contract teachers, provide incentives for subject specialists, use remote training modules. |\n| R10 | 3 | 3 | Social norm pushes boys to work; no residential schools for boys. | Community\u2011engagement campaigns, develop boys\u2019 residential facilities, provide scholarships/incentives. |\n| R11 | 3 | 2 | GRM currently weak; could affect community trust. | Upgrade GRM to online portal, set response\u2011time SLA, train staff, publish regular reports. |\n| R12 | 2 | 3 | New data\u2011protection law uncertain but possible. | Conduct legal impact analysis, update data\u2011handling SOPs, train staff on compliance, embed safeguards in contracts. |\n| R13 | 3 | 3 | Construction may generate waste, fire\u2011safety gaps. | Adopt environmental management plan, enforce waste segregation, include fire\u2011safety standards in designs, train contractors. |\n| R14 | 4 | 4 | Climate change projected to increase extreme events. | Climate\u2011risk screening for sites, incorporate green building features, develop school emergency response plans. |\n| R15 | 3 | 3 | SIS\u2011SS operating at 70\u202f% staffing. | Recruit to fill vacancies, offer retention incentives, cross\u2011train existing staff. |\n| R16 | 3 | 3 | Internal\u2011audit controls not fully applied. | Establish dedicated internal\u2011audit unit, adopt risk\u2011based audit schedule, ensure audit\u2011observation follow\u2011up. |\n| R17 | 3 | 3 | Technical agencies under\u2011funded, limiting scalability. | Secure multi\u2011year funding agreements, build in\u2011house capacity, monitor deliverables against milestones. |\n\n**Step\u202f5 \u2013 Consolidate**  \nAll 17 risks are retained; no duplicates identified.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-IND-ChhattisgarhAcceleratedLearning\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient capacity to develop and operate the state EMIS and digital assessment tools.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Assign a dedicated EMIS team, embed IPF\u2011TA technical experts, set phased milestones and monitor progress through the PMC.\",\n      \"evidence\": \"State EMIS will be developed under IPF\u2011TA component; capacity building needed for nodal institutions (Section 41).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Lack of a standardized student assessment system and limited SAC capacity.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen SCERT Assessment Cell, launch periodic SLAS, train staff on item\u2011level data collection, and integrate results with EMIS.\",\n      \"evidence\": \"State lacks periodic SLAS and SAC does not collect student/item\u2011level data (Section 13).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Delay in establishing a structured in\u2011service TaRL teacher training programme.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Fast\u2011track TaRL curriculum design, allocate blended\u2011learning resources, monitor trainer deployment, and set clear completion checkpoints.\",\n      \"evidence\": \"Baseline states system lacks a structured long\u2011term in\u2011service teacher training program on TaRL (DLI 4).\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Absence of an annual procurement plan may cause procurement delays.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Draft and approve an annual procurement plan per the FMP manual, assign a procurement specialist, and track against the schedule.\",\n      \"evidence\": \"Assessment found no practice of preparing an annual procurement plan (Section 4.5).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Substantial fiduciary risk due to systemic gaps in financial management.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement IFSA recommendations, augment FM staff, conduct regular internal audits, and enforce strict control procedures.\",\n      \"evidence\": \"Fiduciary risk of the Program is assessed as \u2018Substantial\u2019 (Section 56).\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Budget execution delays caused by multi\u2011tier planning and limited capacity.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Streamline AWP&B approval (target \u22643 months), provide budgeting capacity\u2011building, and use interim financing where needed.\",\n      \"evidence\": \"Multiple tiers of planning and limited capacity lead to inadequately planned budgeting and fund release delays (Section 59).\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Construction of model composite schools delayed by droughts or floods.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate disaster\u2011resilient designs, schedule works in favorable seasons, and maintain buffer time in the project timeline.\",\n      \"evidence\": \"State vulnerable to droughts and floods which can extend school breaks and affect construction timelines (Section 3).\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Disbursement delays if DLI verification and data collection are not completed on time.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen verification team, use digital data submission, and schedule verification activities early in each fiscal year.\",\n      \"evidence\": \"DLIs require field\u2011based verification and data collection, which may delay disbursements (DLIs verification protocols).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Teacher shortage and high pupil\u2011teacher ratios limit training effectiveness.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate recruitment, use contract teachers, provide incentives for subject specialists, and deliver remote training modules.\",\n      \"evidence\": \"Majority of teachers lack adequate training; many teach 2\u20113 grades, indicating shortage (Section 11).\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Community resistance to boys\u2019 residential schools and dropout norms.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Run community\u2011engagement campaigns, develop residential facilities for boys, and offer scholarships/incentives to keep boys in school.\",\n      \"evidence\": \"Families prefer boys to work; residential schools for boys not currently available (Section 6).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Weak grievance redress mechanism may erode community trust.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Upgrade GRM to an online portal, set SLA for response times, train staff, and publish regular grievance reports.\",\n      \"evidence\": \"Need for strengthening grievance redress mechanism for escalation and monitoring (Section 67).\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"New personal\u2011data protection legislation could affect data handling procedures.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct legal impact analysis, update data\u2011handling SOPs, train staff on compliance, and embed safeguards in contracts.\",\n      \"evidence\": \"New personal data protection legislation may impact activities; technical analysis required (Legal covenants Section III.C).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Construction activities may generate waste, pollution, and lack fire\u2011safety compliance.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt an environmental management plan, enforce waste segregation, include fire\u2011safety standards in designs, and train contractors.\",\n      \"evidence\": \"Construction may cause uncontrolled waste, pollution, and lacks fire safety norms (Section 70).\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Increasing climate\u2011change impacts (heatwaves, heavy precipitation) threaten school operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct climate\u2011risk screening, incorporate green building features, and develop school emergency response plans.\",\n      \"evidence\": \"Climate change will increase erratic temperatures and heavy precipitation, threatening school operations (Section 72).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"SIS\u2011SS staffed at only ~70\u202f% of sanctioned strength, limiting implementation capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit to fill vacancies, offer retention incentives, and cross\u2011train existing staff to cover critical functions.\",\n      \"evidence\": \"SIS\u2011SS operates at approximately 70\u202f% of sanctioned staff strength (Section 14).\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Weak internal audit and control mechanisms may lead to compliance gaps.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a dedicated internal\u2011audit unit, adopt a risk\u2011based audit plan, and ensure timely follow\u2011up on audit observations.\",\n      \"evidence\": \"Deviations observed in control implementation; lack of focused internal audit system (Section 15).\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Reliance on under\u2011funded technical support agencies could limit capacity\u2011building outcomes.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Secure multi\u2011year funding agreements with agencies, build in\u2011house capacity, and monitor deliverables against milestones.\",\n      \"evidence\": \"Technical support agencies are underfunded and may not sustain interventions (Section 4.4).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient capacity to develop and operate the state EMIS and digital assessment tools.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Assign a dedicated EMIS team, embed IPF\u2011TA technical experts, set phased milestones and monitor progress through the PMC.",
+        "evidence": "State EMIS will be developed under IPF\u2011TA component; capacity building needed for nodal institutions (Section 41)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Lack of a standardized student assessment system and limited SAC capacity.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen SCERT Assessment Cell, launch periodic SLAS, train staff on item\u2011level data collection, and integrate results with EMIS.",
+        "evidence": "State lacks periodic SLAS and SAC does not collect student/item\u2011level data (Section 13)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delay in establishing a structured in\u2011service TaRL teacher training programme.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Fast\u2011track TaRL curriculum design, allocate blended\u2011learning resources, monitor trainer deployment, and set clear completion checkpoints.",
+        "evidence": "Baseline states system lacks a structured long\u2011term in\u2011service teacher training program on TaRL (DLI 4)."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Absence of an annual procurement plan may cause procurement delays.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Draft and approve an annual procurement plan per the FMP manual, assign a procurement specialist, and track against the schedule.",
+        "evidence": "Assessment found no practice of preparing an annual procurement plan (Section 4.5)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Substantial fiduciary risk due to systemic gaps in financial management.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement IFSA recommendations, augment FM staff, conduct regular internal audits, and enforce strict control procedures.",
+        "evidence": "Fiduciary risk of the Program is assessed as \u2018Substantial\u2019 (Section 56)."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Budget execution delays caused by multi\u2011tier planning and limited capacity.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Streamline AWP&B approval (target \u22643 months), provide budgeting capacity\u2011building, and use interim financing where needed.",
+        "evidence": "Multiple tiers of planning and limited capacity lead to inadequately planned budgeting and fund release delays (Section 59)."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Construction of model composite schools delayed by droughts or floods.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Incorporate disaster\u2011resilient designs, schedule works in favorable seasons, and maintain buffer time in the project timeline.",
+        "evidence": "State vulnerable to droughts and floods which can extend school breaks and affect construction timelines (Section 3)."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Disbursement delays if DLI verification and data collection are not completed on time.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen verification team, use digital data submission, and schedule verification activities early in each fiscal year.",
+        "evidence": "DLIs require field\u2011based verification and data collection, which may delay disbursements (DLIs verification protocols)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Teacher shortage and high pupil\u2011teacher ratios limit training effectiveness.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Accelerate recruitment, use contract teachers, provide incentives for subject specialists, and deliver remote training modules.",
+        "evidence": "Majority of teachers lack adequate training; many teach 2\u20113 grades, indicating shortage (Section 11)."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Community resistance to boys\u2019 residential schools and dropout norms.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Run community\u2011engagement campaigns, develop residential facilities for boys, and offer scholarships/incentives to keep boys in school.",
+        "evidence": "Families prefer boys to work; residential schools for boys not currently available (Section 6)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Weak grievance redress mechanism may erode community trust.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Upgrade GRM to an online portal, set SLA for response times, train staff, and publish regular grievance reports.",
+        "evidence": "Need for strengthening grievance redress mechanism for escalation and monitoring (Section 67)."
+      },
+      {
+        "risk_id": "R12",
+        "description": "New personal\u2011data protection legislation could affect data handling procedures.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Conduct legal impact analysis, update data\u2011handling SOPs, train staff on compliance, and embed safeguards in contracts.",
+        "evidence": "New personal data protection legislation may impact activities; technical analysis required (Legal covenants Section III.C)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Construction activities may generate waste, pollution, and lack fire\u2011safety compliance.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt an environmental management plan, enforce waste segregation, include fire\u2011safety standards in designs, and train contractors.",
+        "evidence": "Construction may cause uncontrolled waste, pollution, and lacks fire safety norms (Section 70)."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Increasing climate\u2011change impacts (heatwaves, heavy precipitation) threaten school operations.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct climate\u2011risk screening, incorporate green building features, and develop school emergency response plans.",
+        "evidence": "Climate change will increase erratic temperatures and heavy precipitation, threatening school operations (Section 72)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "SIS\u2011SS staffed at only ~70\u202f% of sanctioned strength, limiting implementation capacity.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Recruit to fill vacancies, offer retention incentives, and cross\u2011train existing staff to cover critical functions.",
+        "evidence": "SIS\u2011SS operates at approximately 70\u202f% of sanctioned staff strength (Section 14)."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Weak internal audit and control mechanisms may lead to compliance gaps.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a dedicated internal\u2011audit unit, adopt a risk\u2011based audit plan, and ensure timely follow\u2011up on audit observations.",
+        "evidence": "Deviations observed in control implementation; lack of focused internal audit system (Section 15)."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Reliance on under\u2011funded technical support agencies could limit capacity\u2011building outcomes.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Secure multi\u2011year funding agreements with agencies, build in\u2011house capacity, and monitor deliverables against milestones.",
+        "evidence": "Technical support agencies are underfunded and may not sustain interventions (Section 4.4)."
+      }
+    ]
+  },
+  "parse_error": null
+}

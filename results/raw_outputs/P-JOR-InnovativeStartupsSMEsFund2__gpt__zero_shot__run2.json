@@ -1,0 +1,180 @@
+{
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:10:32.417839+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-JOR-InnovativeStartupsSMEsFund2\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient private capital mobilization may fall short of the US$150\u202fmillion target, limiting the fund\u2019s impact on startups and job creation.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement rigorous pipeline development, strengthen outreach to regional and international VC funds, and set quarterly mobilization milestones with corrective actions if targets lag.\",\n      \"evidence\": \"Section 20 \u2013 PDO indicator target of US$150\u202fmillion private capital mobilized.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High turnover of ISSF staff could disrupt investment processes and weaken project management capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Introduce retention incentives, succession planning, and continuous professional development for key positions; monitor staff turnover quarterly.\",\n      \"evidence\": \"Section 41 \u2013 Lessons learned note past high turnover and its resolution.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Concentration risk if ISSF exceeds investment caps in a single VC fund, exposing the fund to over\u2011exposure to one manager\u2019s performance.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce the updated concentration limits (max 15\u202f% of total loan size) and conduct quarterly portfolio reviews to ensure compliance.\",\n      \"evidence\": \"Section 34 \u2013 Concentration risk management and proposed cap of 15\u202f%.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Adverse climate events could disrupt startup operations, especially those not focused on greentech, affecting project outcomes.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritize investments in climate\u2011resilient greentech startups and incorporate climate risk assessments into due diligence.\",\n      \"evidence\": \"Section 12 \u2013 Climate vulnerability context notes limited impact but acknowledges risk.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate e\u2011waste management by ICT\u2011focused startups may generate environmental pollution and reputational damage.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate e\u2011waste management clauses into investment agreements and require beneficiaries to adopt certified recycling practices.\",\n      \"evidence\": \"Section 77 \u2013 Environmental risk of e\u2011waste mismanagement.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Weak labor and working\u2011condition standards in startups could lead to non\u2011compliance with Jordanian labor law and ESS2 requirements.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply the ESCP gap\u2011filling measures, conduct labor compliance audits for funded startups, and provide gender\u2011sensitive training.\",\n      \"evidence\": \"Section 78 \u2013 Social risk includes poor labor conditions and gaps in ESS2.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Delays in fund disbursement due to separate accounting systems and approval processes may postpone investments and affect schedule.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a streamlined withdrawal workflow with MOPIC, set internal disbursement deadlines, and monitor cash\u2011flow readiness before capital calls.\",\n      \"evidence\": \"Section 46 \u2013 Disbursement arrangements and separate designated accounts.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Procurement processes may encounter fraud or corruption risks, especially with multiple VC fund and startup contracts.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt World Bank Procurement Regulations, use the Systematic Tracking of Exchanges, and appoint a qualified procurement specialist for oversight.\",\n      \"evidence\": \"Section 71\u201173 \u2013 Procurement to follow World Bank regulations and anti\u2011corruption guidelines.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Reliance on lead investors for co\u2011investment due diligence may expose ISSF to poorly vetted startups.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Require lead investors to share full due\u2011diligence reports, conduct independent verification, and limit co\u2011investment exposure per startup.\",\n      \"evidence\": \"Section 36 \u2013 Co\u2011investment relies on lead investor\u2019s due diligence.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Regional geopolitical volatility could affect investor confidence and the flow of foreign VC capital into Jordan.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain active engagement with regional partners, diversify investor base across GCC, US, and EU, and develop contingency financing arrangements.\",\n      \"evidence\": \"Section 1\u20112 \u2013 Jordan\u2019s small open economy faces vulnerabilities in a geopolitically volatile region.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Changes in Jordanian VC\u2011related regulations (e.g., fintech sandbox) could restrict the pipeline of investable startups.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Monitor regulatory developments through the Ministry of Digital Economy, adapt investment criteria promptly, and advocate for supportive policies.\",\n      \"evidence\": \"Section 25 \u2013 Mention of fintech regulatory sandbox influencing pipeline.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Currency fluctuations between USD and JOD may affect the real value of disbursed funds and repayment calculations.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Use hedging instruments where feasible, price commitments in USD with clear conversion clauses, and review exchange rates quarterly.\",\n      \"evidence\": \"Datasheet \u2013 Exchange rate JOD 0.709 = US$1 (effective March\u202f1\u202f2025).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Insufficient gender inclusion could miss the target of \u226530\u202f% women\u2011owned or led startups, reducing social impact.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a Gender Action Plan, set minimum quotas for women\u2011led beneficiaries, and track gender metrics quarterly.\",\n      \"evidence\": \"Section 49\u201150 \u2013 Target of at least 30\u202f% women\u2011owned/led beneficiaries and 20\u202f% female board members.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Failure to achieve the 10\u202f% greentech investment share could limit climate co\u2011benefits and alignment with Paris Agreement.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Introduce greentech screening criteria in the investment selection process and allocate a dedicated greentech fund pool.\",\n      \"evidence\": \"Section 51\u201152 \u2013 Goal of 10\u202f% greentech investment share.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Operational Due Diligence (ODD) gaps may allow investments in funds with weak governance, increasing fraud risk.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Embed ODD as a mandatory step for all VC fund selections, conduct periodic audits, and require remedial action plans for identified deficiencies.\",\n      \"evidence\": \"Section 41 \u2013 ODD integrated into monitoring of portfolio funds.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Limited capacity of ISSF to monitor ESG performance of portfolio startups could lead to non\u2011compliance with ESF standards.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Hire an additional E&S officer, develop an ESMS for all intermediaries, and conduct annual ESG compliance reviews.\",\n      \"evidence\": \"Section 42 \u2013 Need for additional E&S officer and ESMS development.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Potential market downturn in venture capital returns could reduce the TVPI multiplier and affect financial sustainability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify investments across stages and sectors, maintain a reserve fund for downside periods, and regularly reassess exit strategies.\",\n      \"evidence\": \"Section 59 \u2013 Acknowledgement of global VC downturn but positive TVPI outlook.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Transition of ISSF to a market\u2011aligned limited partnership structure may face legal and governance challenges, delaying self\u2011sustainability.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed transition roadmap, secure legal counsel early, and pilot the GP\u2011LP model with a subset of investors before full rollout.\",\n      \"evidence\": \"Section 27 \u2013 Plan to convert ISSF into a GP\u2011LP structure for market alignment.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient private capital mobilization may fall short of the US$150\u202fmillion target, limiting the fund\u2019s impact on startups and job creation.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement rigorous pipeline development, strengthen outreach to regional and international VC funds, and set quarterly mobilization milestones with corrective actions if targets lag.",
+        "evidence": "Section 20 \u2013 PDO indicator target of US$150\u202fmillion private capital mobilized."
+      },
+      {
+        "risk_id": "R02",
+        "description": "High turnover of ISSF staff could disrupt investment processes and weaken project management capacity.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Introduce retention incentives, succession planning, and continuous professional development for key positions; monitor staff turnover quarterly.",
+        "evidence": "Section 41 \u2013 Lessons learned note past high turnover and its resolution."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Concentration risk if ISSF exceeds investment caps in a single VC fund, exposing the fund to over\u2011exposure to one manager\u2019s performance.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce the updated concentration limits (max 15\u202f% of total loan size) and conduct quarterly portfolio reviews to ensure compliance.",
+        "evidence": "Section 34 \u2013 Concentration risk management and proposed cap of 15\u202f%."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Adverse climate events could disrupt startup operations, especially those not focused on greentech, affecting project outcomes.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Prioritize investments in climate\u2011resilient greentech startups and incorporate climate risk assessments into due diligence.",
+        "evidence": "Section 12 \u2013 Climate vulnerability context notes limited impact but acknowledges risk."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate e\u2011waste management by ICT\u2011focused startups may generate environmental pollution and reputational damage.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Integrate e\u2011waste management clauses into investment agreements and require beneficiaries to adopt certified recycling practices.",
+        "evidence": "Section 77 \u2013 Environmental risk of e\u2011waste mismanagement."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Weak labor and working\u2011condition standards in startups could lead to non\u2011compliance with Jordanian labor law and ESS2 requirements.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply the ESCP gap\u2011filling measures, conduct labor compliance audits for funded startups, and provide gender\u2011sensitive training.",
+        "evidence": "Section 78 \u2013 Social risk includes poor labor conditions and gaps in ESS2."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delays in fund disbursement due to separate accounting systems and approval processes may postpone investments and affect schedule.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a streamlined withdrawal workflow with MOPIC, set internal disbursement deadlines, and monitor cash\u2011flow readiness before capital calls.",
+        "evidence": "Section 46 \u2013 Disbursement arrangements and separate designated accounts."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Procurement processes may encounter fraud or corruption risks, especially with multiple VC fund and startup contracts.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Adopt World Bank Procurement Regulations, use the Systematic Tracking of Exchanges, and appoint a qualified procurement specialist for oversight.",
+        "evidence": "Section 71\u201173 \u2013 Procurement to follow World Bank regulations and anti\u2011corruption guidelines."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Reliance on lead investors for co\u2011investment due diligence may expose ISSF to poorly vetted startups.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Require lead investors to share full due\u2011diligence reports, conduct independent verification, and limit co\u2011investment exposure per startup.",
+        "evidence": "Section 36 \u2013 Co\u2011investment relies on lead investor\u2019s due diligence."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Regional geopolitical volatility could affect investor confidence and the flow of foreign VC capital into Jordan.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Maintain active engagement with regional partners, diversify investor base across GCC, US, and EU, and develop contingency financing arrangements.",
+        "evidence": "Section 1\u20112 \u2013 Jordan\u2019s small open economy faces vulnerabilities in a geopolitically volatile region."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Changes in Jordanian VC\u2011related regulations (e.g., fintech sandbox) could restrict the pipeline of investable startups.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Monitor regulatory developments through the Ministry of Digital Economy, adapt investment criteria promptly, and advocate for supportive policies.",
+        "evidence": "Section 25 \u2013 Mention of fintech regulatory sandbox influencing pipeline."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Currency fluctuations between USD and JOD may affect the real value of disbursed funds and repayment calculations.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Use hedging instruments where feasible, price commitments in USD with clear conversion clauses, and review exchange rates quarterly.",
+        "evidence": "Datasheet \u2013 Exchange rate JOD 0.709 = US$1 (effective March\u202f1\u202f2025)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Insufficient gender inclusion could miss the target of \u226530\u202f% women\u2011owned or led startups, reducing social impact.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a Gender Action Plan, set minimum quotas for women\u2011led beneficiaries, and track gender metrics quarterly.",
+        "evidence": "Section 49\u201150 \u2013 Target of at least 30\u202f% women\u2011owned/led beneficiaries and 20\u202f% female board members."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Failure to achieve the 10\u202f% greentech investment share could limit climate co\u2011benefits and alignment with Paris Agreement.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Introduce greentech screening criteria in the investment selection process and allocate a dedicated greentech fund pool.",
+        "evidence": "Section 51\u201152 \u2013 Goal of 10\u202f% greentech investment share."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Operational Due Diligence (ODD) gaps may allow investments in funds with weak governance, increasing fraud risk.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Embed ODD as a mandatory step for all VC fund selections, conduct periodic audits, and require remedial action plans for identified deficiencies.",
+        "evidence": "Section 41 \u2013 ODD integrated into monitoring of portfolio funds."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Limited capacity of ISSF to monitor ESG performance of portfolio startups could lead to non\u2011compliance with ESF standards.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Hire an additional E&S officer, develop an ESMS for all intermediaries, and conduct annual ESG compliance reviews.",
+        "evidence": "Section 42 \u2013 Need for additional E&S officer and ESMS development."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Potential market downturn in venture capital returns could reduce the TVPI multiplier and affect financial sustainability.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Diversify investments across stages and sectors, maintain a reserve fund for downside periods, and regularly reassess exit strategies.",
+        "evidence": "Section 59 \u2013 Acknowledgement of global VC downturn but positive TVPI outlook."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Transition of ISSF to a market\u2011aligned limited partnership structure may face legal and governance challenges, delaying self\u2011sustainability.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a detailed transition roadmap, secure legal counsel early, and pilot the GP\u2011LP model with a subset of investors before full rollout.",
+        "evidence": "Section 27 \u2013 Plan to convert ISSF into a GP\u2011LP structure for market alignment."
+      }
+    ]
+  },
+  "parse_error": null
+}

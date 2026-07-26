@@ -1,0 +1,180 @@
+{
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:10:25.096731+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-JOR-InnovativeStartupsSMEsFund2\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Target private capital mobilization of US$150\u202fmillion may not be achieved, limiting the fund\u2019s impact on startups and job creation.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Expand outreach to additional regional and international VC funds, set quarterly mobilization targets, and activate a rapid\u2011response pipeline to attract new investors when shortfalls appear.\",\n      \"evidence\": \"Section 20 \u2013 PDO expects US$150\u202fmillion private capital mobilized.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Concentration of investments in a single VC fund could expose the ISSF to high loss if that fund underperforms.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce updated concentration limits (no more than 15\u202f% of total loan per fund), regularly monitor exposure, and diversify across multiple funds and stages.\",\n      \"evidence\": \"Section 34 \u2013 Concentration risk management caps at US$5\u202fmillion / 30\u202f% ownership.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Turnover of key ISSF staff or board members could disrupt project implementation and governance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement retention contracts, succession planning, and a formal nomination process to ensure timely replacement of board members.\",\n      \"evidence\": \"Section 41 \u2013 Lessons learned on high turnover and need for stable team.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Insufficient operational due diligence (ODD) on underlying VC funds may allow fraud, mismanagement, or regulatory breaches.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate a robust ODD framework, conduct periodic third\u2011party audits of VC funds, and train ISSF staff on ODD best practices.\",\n      \"evidence\": \"Section 41 \u2013 ODD will be integrated to assess compliance and governance.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Climate\u2011related extreme events could disrupt startup operations, especially those not focused on greentech.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Prioritize investments in greentech and climate\u2011resilient solutions; include climate risk assessment in investment screening.\",\n      \"evidence\": \"Section 12 \u2013 Climate vulnerability noted but deemed low impact.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Improper e\u2011waste handling by ICT\u2011focused SMEs could cause pollution and health hazards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Require funded startups to adopt certified e\u2011waste recycling plans and embed ESG clauses in investment agreements.\",\n      \"evidence\": \"Section 77 \u2013 Potential environmental impacts from e\u2011waste mismanagement.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Startups may face data\u2011privacy and cybersecurity breaches, harming users and reputations.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Mandate compliance with international data\u2011protection standards (e.g., GDPR/ISO\u202f27001) and provide cybersecurity capacity\u2011building grants.\",\n      \"evidence\": \"Section 78 \u2013 Risks include data privacy and security concerns.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"A regional or global downturn in venture\u2011capital markets could reduce follow\u2011on funding and returns.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify investments across stages, sectors, and geographies; maintain a reserve fund to support portfolio companies during market stress.\",\n      \"evidence\": \"Section 59 \u2013 Acknowledgement of global VC downturn but portfolio performance remains promising.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Insufficient successful exits may limit the fund\u2019s financial returns and ability to recycle capital.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Select startups with clear exit pathways, engage strategic corporate investors early, and allocate follow\u2011on capital to accelerate growth.\",\n      \"evidence\": \"Section 14 \u2013 Only two exits to date; expectation of more in coming years.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Regulatory changes in the fintech sandbox or other sectors could render invested business models non\u2011compliant.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain continuous liaison with MODEE and other regulators; embed regulatory compliance checks in due\u2011diligence.\",\n      \"evidence\": \"Section 25 \u2013 Fintech Regulatory Sandbox re\u2011launched with growing demand.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"The project may fail to meet its gender\u2011inclusion targets, reducing impact on women\u2019s economic participation.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a Gender Action Plan with dedicated outreach, mentorship programs for women entrepreneurs, and performance\u2011based incentives for VC funds.\",\n      \"evidence\": \"Section 49 \u2013 Goal of at least 30\u202f% women\u2011owned/led beneficiaries; current 26\u202f% women\u2011led.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"The existing grievance mechanism may not be accessible to all stakeholders, leading to unresolved complaints.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Upgrade GM procedures, add multilingual channels, train staff on handling complaints, and publish quarterly grievance reports.\",\n      \"evidence\": \"Section 82 \u2013 GM system requires enhancement to ensure accessibility.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Procurement processes could face delays or non\u2011compliance due to under\u2011developed tools and templates.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint a qualified procurement specialist, adopt standard World Bank procurement documents, and conduct annual ex\u2011post reviews.\",\n      \"evidence\": \"Section 74 \u2013 Procurement risk rated Moderate; tools under development.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Exchange\u2011rate fluctuations between USD (loan currency) and JOD (local expenditures) could affect project budgeting.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Use forward\u2011exchange contracts or currency hedges and maintain a contingency buffer in the budget.\",\n      \"evidence\": \"Datasheet \u2013 Currency equivalents JOD\u202f0.709\u202f=\u202f$US1; disbursements in USD (Section\u202f69).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Delays in World Bank disbursements or IFR approvals could postpone investment commitments.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare IFRs ahead of schedule, assign a dedicated liaison officer with MOPIC, and monitor disbursement timelines weekly.\",\n      \"evidence\": \"Section 70 \u2013 Disbursement based on quarterly IFRs submitted within 45\u202fdays.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Jordanian labor law gaps relative to ESS2 (e.g., non\u2011discrimination) may expose the project to compliance issues.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement gap\u2011filling measures outlined in the ESCP, conduct regular labor\u2011law compliance audits, and train employers on non\u2011discrimination policies.\",\n      \"evidence\": \"Section 80 \u2013 Identified gaps with ESS2 and added gap\u2011filling measures.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Overlap of exposure to the same startup through both Fund\u2011of\u2011Funds and co\u2011investment components could amplify loss.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain a centralized exposure register, set a maximum aggregate exposure per startup (e.g., 10\u202f% of total capital), and require independent review before additional investment.\",\n      \"evidence\": \"Section 36 \u2013 Risks related to total exposure to the same startups through both components.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Geopolitical volatility in the region may deter foreign investors and affect capital inflows.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Broaden the investor base to include regional sovereign wealth funds, obtain political\u2011risk insurance, and highlight Jordan\u2019s stable macro\u2011economic reforms in marketing materials.\",\n      \"evidence\": \"Section 1 \u2013 Jordan faces vulnerabilities tied to its position in a geopolitically volatile region.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Target private capital mobilization of US$150\u202fmillion may not be achieved, limiting the fund\u2019s impact on startups and job creation.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Expand outreach to additional regional and international VC funds, set quarterly mobilization targets, and activate a rapid\u2011response pipeline to attract new investors when shortfalls appear.",
+        "evidence": "Section 20 \u2013 PDO expects US$150\u202fmillion private capital mobilized."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Concentration of investments in a single VC fund could expose the ISSF to high loss if that fund underperforms.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce updated concentration limits (no more than 15\u202f% of total loan per fund), regularly monitor exposure, and diversify across multiple funds and stages.",
+        "evidence": "Section 34 \u2013 Concentration risk management caps at US$5\u202fmillion / 30\u202f% ownership."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Turnover of key ISSF staff or board members could disrupt project implementation and governance.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement retention contracts, succession planning, and a formal nomination process to ensure timely replacement of board members.",
+        "evidence": "Section 41 \u2013 Lessons learned on high turnover and need for stable team."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Insufficient operational due diligence (ODD) on underlying VC funds may allow fraud, mismanagement, or regulatory breaches.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Integrate a robust ODD framework, conduct periodic third\u2011party audits of VC funds, and train ISSF staff on ODD best practices.",
+        "evidence": "Section 41 \u2013 ODD will be integrated to assess compliance and governance."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Climate\u2011related extreme events could disrupt startup operations, especially those not focused on greentech.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Prioritize investments in greentech and climate\u2011resilient solutions; include climate risk assessment in investment screening.",
+        "evidence": "Section 12 \u2013 Climate vulnerability noted but deemed low impact."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Improper e\u2011waste handling by ICT\u2011focused SMEs could cause pollution and health hazards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Require funded startups to adopt certified e\u2011waste recycling plans and embed ESG clauses in investment agreements.",
+        "evidence": "Section 77 \u2013 Potential environmental impacts from e\u2011waste mismanagement."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Startups may face data\u2011privacy and cybersecurity breaches, harming users and reputations.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Mandate compliance with international data\u2011protection standards (e.g., GDPR/ISO\u202f27001) and provide cybersecurity capacity\u2011building grants.",
+        "evidence": "Section 78 \u2013 Risks include data privacy and security concerns."
+      },
+      {
+        "risk_id": "R08",
+        "description": "A regional or global downturn in venture\u2011capital markets could reduce follow\u2011on funding and returns.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Diversify investments across stages, sectors, and geographies; maintain a reserve fund to support portfolio companies during market stress.",
+        "evidence": "Section 59 \u2013 Acknowledgement of global VC downturn but portfolio performance remains promising."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Insufficient successful exits may limit the fund\u2019s financial returns and ability to recycle capital.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Select startups with clear exit pathways, engage strategic corporate investors early, and allocate follow\u2011on capital to accelerate growth.",
+        "evidence": "Section 14 \u2013 Only two exits to date; expectation of more in coming years."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Regulatory changes in the fintech sandbox or other sectors could render invested business models non\u2011compliant.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Maintain continuous liaison with MODEE and other regulators; embed regulatory compliance checks in due\u2011diligence.",
+        "evidence": "Section 25 \u2013 Fintech Regulatory Sandbox re\u2011launched with growing demand."
+      },
+      {
+        "risk_id": "R11",
+        "description": "The project may fail to meet its gender\u2011inclusion targets, reducing impact on women\u2019s economic participation.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a Gender Action Plan with dedicated outreach, mentorship programs for women entrepreneurs, and performance\u2011based incentives for VC funds.",
+        "evidence": "Section 49 \u2013 Goal of at least 30\u202f% women\u2011owned/led beneficiaries; current 26\u202f% women\u2011led."
+      },
+      {
+        "risk_id": "R12",
+        "description": "The existing grievance mechanism may not be accessible to all stakeholders, leading to unresolved complaints.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Upgrade GM procedures, add multilingual channels, train staff on handling complaints, and publish quarterly grievance reports.",
+        "evidence": "Section 82 \u2013 GM system requires enhancement to ensure accessibility."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Procurement processes could face delays or non\u2011compliance due to under\u2011developed tools and templates.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint a qualified procurement specialist, adopt standard World Bank procurement documents, and conduct annual ex\u2011post reviews.",
+        "evidence": "Section 74 \u2013 Procurement risk rated Moderate; tools under development."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Exchange\u2011rate fluctuations between USD (loan currency) and JOD (local expenditures) could affect project budgeting.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Use forward\u2011exchange contracts or currency hedges and maintain a contingency buffer in the budget.",
+        "evidence": "Datasheet \u2013 Currency equivalents JOD\u202f0.709\u202f=\u202f$US1; disbursements in USD (Section\u202f69)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Delays in World Bank disbursements or IFR approvals could postpone investment commitments.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Prepare IFRs ahead of schedule, assign a dedicated liaison officer with MOPIC, and monitor disbursement timelines weekly.",
+        "evidence": "Section 70 \u2013 Disbursement based on quarterly IFRs submitted within 45\u202fdays."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Jordanian labor law gaps relative to ESS2 (e.g., non\u2011discrimination) may expose the project to compliance issues.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement gap\u2011filling measures outlined in the ESCP, conduct regular labor\u2011law compliance audits, and train employers on non\u2011discrimination policies.",
+        "evidence": "Section 80 \u2013 Identified gaps with ESS2 and added gap\u2011filling measures."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Overlap of exposure to the same startup through both Fund\u2011of\u2011Funds and co\u2011investment components could amplify loss.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Maintain a centralized exposure register, set a maximum aggregate exposure per startup (e.g., 10\u202f% of total capital), and require independent review before additional investment.",
+        "evidence": "Section 36 \u2013 Risks related to total exposure to the same startups through both components."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Geopolitical volatility in the region may deter foreign investors and affect capital inflows.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Broaden the investor base to include regional sovereign wealth funds, obtain political\u2011risk insurance, and highlight Jordan\u2019s stable macro\u2011economic reforms in marketing materials.",
+        "evidence": "Section 1 \u2013 Jordan faces vulnerabilities tied to its position in a geopolitically volatile region."
+      }
+    ]
+  },
+  "parse_error": null
+}

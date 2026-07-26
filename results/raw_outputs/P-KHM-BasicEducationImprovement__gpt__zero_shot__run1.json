@@ -1,0 +1,198 @@
+{
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:12:53.627286+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-KHM-BasicEducationImprovement\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Financial Management staff may be overloaded, causing delays in processing transactions and reporting.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit additional FM officers and consultants within three months; implement streamlined procedures and regular workload monitoring.\",\n      \"evidence\": \"Fiduciary section: FM staff may be overloaded, potentially leading to delays in processing transactions and reporting.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Late approval of the Annual Work Plan and Budget could postpone project activities.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a fast\u2011track approval workflow and set internal deadlines well before the World Bank\u2019s cut\u2011off dates.\",\n      \"evidence\": \"Fiduciary section: delayed approval of the AWPB may hinder timely implementation of project activities.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inadequate monitoring of school mentoring funds may lead to misuse or ineffective spending.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Introduce a dedicated mentoring\u2011fund tracking system, quarterly audits, and clear reporting templates for schools.\",\n      \"evidence\": \"Fiduciary section: risk that school mentoring funding, spent at schools, may not be properly monitored.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"MoEYS procurement staff lack familiarity with World Bank procurement rules, risking delays and non\u2011compliance.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide intensive World Bank procurement training, assign a full\u2011time procurement officer, and use step\u2011by\u2011step checklists.\",\n      \"evidence\": \"Procurement section: MoEYS staff\u2019s limited knowledge of World Bank Procurement Regulations may cause delays and non\u2011compliance.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Potential corrupt practices in procurement could compromise project integrity and outcomes.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce transparent procurement disclosures, publicize award notices, and establish an independent complaint handling mechanism.\",\n      \"evidence\": \"Procurement section: governance risks, including corrupt practices in procurement.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Limited capacity for contract supervision may cause implementation delays or quality issues.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Create a contract\u2011management unit with trained supervisors and conduct regular performance reviews of contractors.\",\n      \"evidence\": \"Procurement section: inadequate capacity for contract supervision and management may result in implementation delays.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Frequent floods, cyclones and extreme heat could damage schools and interrupt learning.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Construct climate\u2011resilient classrooms with elevated foundations, robust roofing, and emergency shelter features; develop school disaster response plans.\",\n      \"evidence\": \"Strategic Context: 10% of schools in <2\u202fm flood zones, 28% in severe flood zones, 31% exposed to cyclones, heat waves 23\u201125 days annually.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Overcrowded classrooms (\u226530 pupils) reduce teaching effectiveness and learning outcomes.\",\n      \"category\": \"technical\",\n      \"likelihood\": 5,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate construction of additional classrooms in high\u2011density schools and enforce maximum class\u2011size caps during implementation.\",\n      \"evidence\": \"Component 2.3: 76% of primary students learn in classes with more than 30 students.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Insufficient teacher capacity and limited CPD may hinder improvement of student learning.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Scale up continuous professional development, mentorship, and career\u2011pathway programs; monitor teacher competency through regular assessments.\",\n      \"evidence\": \"Sectoral Context: insufficient teacher capacity to effectively fulfill their roles; CPD planned to attract and retain specialists.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Limited access to quality early childhood education reduces school readiness for children aged 0\u20115.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Expand public ECE classes, build 60 childcare centers, and run community awareness campaigns to increase enrollment.\",\n      \"evidence\": \"Strategic Context: limited readiness among children due to inadequate access to quality childcare and ECE services.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"EdTech hardware may fail under extreme temperature or humidity, disrupting remote learning.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Procure climate\u2011rated ICT equipment, install climate\u2011controlled storage, and maintain a spare\u2011parts inventory for rapid replacement.\",\n      \"evidence\": \"Climate section: ICT equipment designed to withstand extreme temperatures and humidity; housed in climate\u2011controlled environments.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Gender\u2011based violence could affect safety of students and staff, undermining participation.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate GBV awareness training for teachers, strengthen school\u2011based grievance mechanisms, and monitor incidents through the GRM.\",\n      \"evidence\": \"GBV paragraph: GBV remains a paramount concern; GBV programs integrated into project design.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"New school buildings may not fully meet universal design standards, limiting access for children with disabilities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Include disability\u2011accessibility checklists in construction contracts and conduct third\u2011party inspections before handover.\",\n      \"evidence\": \"Disability inclusion: ensure newly constructed buildings adhere to universal design principles, ramps, accessible toilets.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Weak coordination among multiple development partners could cause duplication or gaps in service delivery.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Establish a joint coordination forum with clear roles, shared M&E data, and regular alignment meetings.\",\n      \"evidence\": \"Project description: project will complement and build on activities already under implementation by other DPs; gaps in M&E noted.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"The Contingent Emergency Response Component manual may not be activated promptly during a crisis.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct annual simulation exercises, pre\u2011approve trigger criteria, and assign a dedicated CERC activation officer.\",\n      \"evidence\": \"Component 4: CERC Manual will consider climate risks and facilitate release of IDA financing during emergencies.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Low adoption of the modernized HRMIS could limit data quality for staff management.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide hands\u2011on training, user support help\u2011desk, and performance\u2011based incentives for timely data entry.\",\n      \"evidence\": \"Subcomponent 3.1: modernizing HRMIS to improve data recording; Phase 2 conditional on feasibility and alignment.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Insufficient staffing and resources for the Project Management Unit may impair overall project coordination.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Allocate dedicated budget line for PMU staffing, secure office space, and conduct quarterly capacity\u2011assessment reviews.\",\n      \"evidence\": \"Implementation Arrangements: PMU will need additional resources for logistics, physical space, and transportation.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Climate\u2011resilient construction may not meet design standards, leaving facilities vulnerable.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Engage certified climate\u2011resilient design consultants, perform independent third\u2011party inspections, and enforce compliance clauses in contracts.\",\n      \"evidence\": \"Climate co\u2011benefits: designs incorporate elevated foundations, energy\u2011efficient systems, and climate\u2011resilient standards.\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"Failure to secure additional donor financing could limit scale\u2011up of interventions.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a donor\u2011engagement strategy, prepare supplemental financing proposals early, and prioritize activities that can be delivered with existing funds.\",\n      \"evidence\": \"Project Description: design allows potential accommodation of additional financing should those resources materialize.\"\n    },\n    {\n      \"risk_id\": \"R20\",\n      \"description\": \"Data quality problems in M&E systems may compromise indicator tracking and decision\u2011making.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement data\u2011validation routines, conduct periodic data\u2011quality audits, and provide refresher training for data\u2011collection staff.\",\n      \"evidence\": \"Results Monitoring: data collected from government data, surveys, and progress reports; PMU oversees M&E tasks.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-KHM-BasicEducationImprovement",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Financial Management staff may be overloaded, causing delays in processing transactions and reporting.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit additional FM officers and consultants within three months; implement streamlined procedures and regular workload monitoring.",
+        "evidence": "Fiduciary section: FM staff may be overloaded, potentially leading to delays in processing transactions and reporting."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Late approval of the Annual Work Plan and Budget could postpone project activities.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a fast\u2011track approval workflow and set internal deadlines well before the World Bank\u2019s cut\u2011off dates.",
+        "evidence": "Fiduciary section: delayed approval of the AWPB may hinder timely implementation of project activities."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inadequate monitoring of school mentoring funds may lead to misuse or ineffective spending.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Introduce a dedicated mentoring\u2011fund tracking system, quarterly audits, and clear reporting templates for schools.",
+        "evidence": "Fiduciary section: risk that school mentoring funding, spent at schools, may not be properly monitored."
+      },
+      {
+        "risk_id": "R04",
+        "description": "MoEYS procurement staff lack familiarity with World Bank procurement rules, risking delays and non\u2011compliance.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide intensive World Bank procurement training, assign a full\u2011time procurement officer, and use step\u2011by\u2011step checklists.",
+        "evidence": "Procurement section: MoEYS staff\u2019s limited knowledge of World Bank Procurement Regulations may cause delays and non\u2011compliance."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Potential corrupt practices in procurement could compromise project integrity and outcomes.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce transparent procurement disclosures, publicize award notices, and establish an independent complaint handling mechanism.",
+        "evidence": "Procurement section: governance risks, including corrupt practices in procurement."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Limited capacity for contract supervision may cause implementation delays or quality issues.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Create a contract\u2011management unit with trained supervisors and conduct regular performance reviews of contractors.",
+        "evidence": "Procurement section: inadequate capacity for contract supervision and management may result in implementation delays."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Frequent floods, cyclones and extreme heat could damage schools and interrupt learning.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Construct climate\u2011resilient classrooms with elevated foundations, robust roofing, and emergency shelter features; develop school disaster response plans.",
+        "evidence": "Strategic Context: 10% of schools in <2\u202fm flood zones, 28% in severe flood zones, 31% exposed to cyclones, heat waves 23\u201125 days annually."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Overcrowded classrooms (\u226530 pupils) reduce teaching effectiveness and learning outcomes.",
+        "category": "technical",
+        "likelihood": 5,
+        "impact": 4,
+        "mitigation": "Accelerate construction of additional classrooms in high\u2011density schools and enforce maximum class\u2011size caps during implementation.",
+        "evidence": "Component 2.3: 76% of primary students learn in classes with more than 30 students."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Insufficient teacher capacity and limited CPD may hinder improvement of student learning.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Scale up continuous professional development, mentorship, and career\u2011pathway programs; monitor teacher competency through regular assessments.",
+        "evidence": "Sectoral Context: insufficient teacher capacity to effectively fulfill their roles; CPD planned to attract and retain specialists."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Limited access to quality early childhood education reduces school readiness for children aged 0\u20115.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Expand public ECE classes, build 60 childcare centers, and run community awareness campaigns to increase enrollment.",
+        "evidence": "Strategic Context: limited readiness among children due to inadequate access to quality childcare and ECE services."
+      },
+      {
+        "risk_id": "R11",
+        "description": "EdTech hardware may fail under extreme temperature or humidity, disrupting remote learning.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Procure climate\u2011rated ICT equipment, install climate\u2011controlled storage, and maintain a spare\u2011parts inventory for rapid replacement.",
+        "evidence": "Climate section: ICT equipment designed to withstand extreme temperatures and humidity; housed in climate\u2011controlled environments."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Gender\u2011based violence could affect safety of students and staff, undermining participation.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Integrate GBV awareness training for teachers, strengthen school\u2011based grievance mechanisms, and monitor incidents through the GRM.",
+        "evidence": "GBV paragraph: GBV remains a paramount concern; GBV programs integrated into project design."
+      },
+      {
+        "risk_id": "R13",
+        "description": "New school buildings may not fully meet universal design standards, limiting access for children with disabilities.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Include disability\u2011accessibility checklists in construction contracts and conduct third\u2011party inspections before handover.",
+        "evidence": "Disability inclusion: ensure newly constructed buildings adhere to universal design principles, ramps, accessible toilets."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Weak coordination among multiple development partners could cause duplication or gaps in service delivery.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Establish a joint coordination forum with clear roles, shared M&E data, and regular alignment meetings.",
+        "evidence": "Project description: project will complement and build on activities already under implementation by other DPs; gaps in M&E noted."
+      },
+      {
+        "risk_id": "R15",
+        "description": "The Contingent Emergency Response Component manual may not be activated promptly during a crisis.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Conduct annual simulation exercises, pre\u2011approve trigger criteria, and assign a dedicated CERC activation officer.",
+        "evidence": "Component 4: CERC Manual will consider climate risks and facilitate release of IDA financing during emergencies."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Low adoption of the modernized HRMIS could limit data quality for staff management.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide hands\u2011on training, user support help\u2011desk, and performance\u2011based incentives for timely data entry.",
+        "evidence": "Subcomponent 3.1: modernizing HRMIS to improve data recording; Phase 2 conditional on feasibility and alignment."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Insufficient staffing and resources for the Project Management Unit may impair overall project coordination.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Allocate dedicated budget line for PMU staffing, secure office space, and conduct quarterly capacity\u2011assessment reviews.",
+        "evidence": "Implementation Arrangements: PMU will need additional resources for logistics, physical space, and transportation."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Climate\u2011resilient construction may not meet design standards, leaving facilities vulnerable.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Engage certified climate\u2011resilient design consultants, perform independent third\u2011party inspections, and enforce compliance clauses in contracts.",
+        "evidence": "Climate co\u2011benefits: designs incorporate elevated foundations, energy\u2011efficient systems, and climate\u2011resilient standards."
+      },
+      {
+        "risk_id": "R19",
+        "description": "Failure to secure additional donor financing could limit scale\u2011up of interventions.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a donor\u2011engagement strategy, prepare supplemental financing proposals early, and prioritize activities that can be delivered with existing funds.",
+        "evidence": "Project Description: design allows potential accommodation of additional financing should those resources materialize."
+      },
+      {
+        "risk_id": "R20",
+        "description": "Data quality problems in M&E systems may compromise indicator tracking and decision\u2011making.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement data\u2011validation routines, conduct periodic data\u2011quality audits, and provide refresher training for data\u2011collection staff.",
+        "evidence": "Results Monitoring: data collected from government data, surveys, and progress reports; PMU oversees M&E tasks."
+      }
+    ]
+  },
+  "parse_error": null
+}
