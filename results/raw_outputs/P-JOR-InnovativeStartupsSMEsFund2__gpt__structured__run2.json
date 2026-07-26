@@ -1,0 +1,126 @@
+{
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T03:11:10.433517+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 - Frame the project.\n- Objective: Mobilize private capital for early\u2011stage equity financing and job creation by innovative startups and SMEs in Jordan.  \n- Scope & Components: (i) Fund\u2011of\u2011Funds investments (US$42\u202fM) for pre\u2011seed/seed; (ii) Co\u2011investment in startups with lead VC/institutional investors (US$3\u202fM); (iii) Project management & capacity building (US$5\u202fM).  \n- Delivery model: Financial Intermediary (ISSF) acting as Project Management Unit; World Bank loan US$50\u202fM, total operation cost US$200\u202fM.  \n- Timeline: Expected approval 31\u2011Mar\u20112025, closing 31\u2011Jul\u20112030 (\u22485\u202fyears).  \n- Budget: US$50\u202fM IBRD financing, total cost US$200\u202fM.  \n- Key stakeholders: Government of Jordan (MOPIC), ISSF (implementing agency/PMU), Ministry of Digital Economy & Entrepreneurship, Jordan Loan Guarantee Corp, Central Bank of Jordan, IFC, other DFIs, private VC funds, startups, women\u2011 and youth\u2011focused groups, Board & Investment Committee.  \n- External dependencies: Regional VC market health, GCC/US capital flows, climate\u2011related hazards, regulatory environment, World Bank procurement and ESG safeguards.\n\nStep 2 - Category sweep.\nIdentified candidate risks from explicit statements in the PAD:\n- Limited early\u2011stage financing pipeline (financial).  \n- Concentration risk \u2013 over\u2011exposure to a single VC fund (financial).  \n- Inadequate Operational Due Diligence (ODD) leading to fraud/mis\u2011management (organizational).  \n- Governance/board turnover affecting implementation (organizational).  \n- Financial\u2011management control weaknesses (financial).  \n- Procurement non\u2011compliance (organizational).  \n- Environmental impacts from e\u2011waste & climate hazards (environmental).  \n- Social risks: labor conditions, gender discrimination, digital divide (stakeholder).  \n- Market downturn in VC returns affecting fund sustainability (external).  \n- Cash\u2011flow/disbursement risk \u2013 insufficient funds for capital calls (financial).  \n- Delay in IFC/DFI partnership MoU (stakeholder).  \n- Failure to meet gender\u2011target (30\u202f% women\u2011owned) (stakeholder).\n\nStep 3 - Evidence filter.\nAll above risks are directly supported by quoted sentences in the document; no unsupported risks remain.\n\nStep 4 - Assess.\nLikelihood (1\u20115) and Impact (1\u20115) assigned with brief justification; concrete mitigation actions drafted.\n\nStep 5 - Consolidate.\nMerged overlapping items (e\u2011waste & climate hazards combined into one environmental risk). Final set: 12 risks.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-JOR-InnovativeStartupsSMEsFund2\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient pipeline of early\u2011stage financing may limit private capital mobilisation and job creation.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Intensify outreach to VC funds, set quarterly pipeline targets, expand accelerator partnerships, and monitor private\u2011capital mobilisation indicators.\",\n      \"evidence\": \"the key sectoral challenge ... limited availability of early-stage financing for innovative startups and SMEs\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Concentration risk: over\u2011exposure to a single VC fund could breach investment caps.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce the US$5\u202fM / 15\u202f% loan\u2011size cap, require diversification approval by the Investment Committee, and run monthly exposure reports.\",\n      \"evidence\": \"To mitigate and manage concentration risks ... cap stands at US$5 million\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inadequate Operational Due Diligence may lead to fraud or mis\u2011management of invested capital.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a robust ODD framework, conduct independent third\u2011party reviews, and embed ODD checkpoints in all investment approvals.\",\n      \"evidence\": \"Operational Due Diligence (ODD) ... will remain an integral part of the proposed ISSF 2.0 Project\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Governance turnover (board or senior staff) could disrupt project execution.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt a succession plan, retain key staff with performance incentives, and maintain documented hand\u2011over procedures.\",\n      \"evidence\": \"ISSF faced challenges linked to, for example, high turnover of the team. The issues have been addressed and ISSF now has a stable team\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Weak financial\u2011management controls may cause mis\u2011allocation or reporting errors.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Strengthen internal audit schedule, upgrade accounting systems, keep separate designated accounts, and conduct quarterly FM compliance reviews.\",\n      \"evidence\": \"The ISSF Financial Management (FM) risk rating is \u201cModerate,\u201d ... internal audit plans will consider emerging risks\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Procurement non\u2011compliance could trigger audit findings or sanctions.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint a qualified procurement specialist, follow World Bank Procurement Regulations, and perform annual ex\u2011post reviews covering \u226515\u202f% of contracts.\",\n      \"evidence\": \"Procurement risk is rated Moderate. The envisaged procurement packages are small; therefore, it is expected that no contract will be subject to the Bank\u2019s prior review\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Environmental impacts from e\u2011waste mis\u2011management or climate\u2011related hazards could affect beneficiaries.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Integrate e\u2011waste recycling standards into the ESMS, require startups to adopt certified disposal practices, and monitor climate\u2011resilience criteria for greentech investments.\",\n      \"evidence\": \"SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e\u2011waste\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Social risks: poor labour conditions, gender discrimination, digital divide, data\u2011privacy issues.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply the Gender Action Plan, enforce Jordan labour law compliance, provide grievance mechanism training, and conduct regular social\u2011impact audits.\",\n      \"evidence\": \"The proposed Project social risk is rated Moderate... could entail poor labor and working conditions, limited stakeholder engagement, the digital divide, data privacy and security risks\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Downturn in global VC returns may reduce fund performance and private\u2011capital mobilisation.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify across sectors and geographies, maintain a reserve capital buffer, and regularly reassess market outlook to adjust investment pacing.\",\n      \"evidence\": \"global downturn in VC returns in the aftermath of the COVID\u201119 pandemic... ISSF\u2019s portfolio performance to date is promising\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Cash\u2011flow risk: insufficient funds in the designated account to meet capital\u2011call obligations.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Keep a cash buffer equal to at least 20\u202f% of total commitments, forecast quarterly cash needs, and trigger early disbursement requests when balances fall below threshold.\",\n      \"evidence\": \"ISSF must have funds in the account at the time of signing the capital commitment ... to cover the entire capital calls\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Delay in signing the IFC Memorandum of Understanding could postpone co\u2011investment activities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Assign a dedicated liaison officer, set a firm MoU signing deadline (e.g., Q2\u202f2025), and identify alternative DFI partners as backup.\",\n      \"evidence\": \"ISSF plans to sign a Memorandum of Understanding with IFC to establish a structured information\u2011sharing mechanism\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Failure to achieve the 30\u202f% women\u2011owned/led beneficiary target may undermine gender\u2011inclusion objectives.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement targeted outreach to women entrepreneurs, provide mentorship grants, and monitor gender\u2011disaggregated metrics quarterly with corrective action plans.\",\n      \"evidence\": \"target ... at least 30 percent of all ISSF 2.0 Project beneficiaries to be women\u2011owned, led, or majority female employment startups\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient pipeline of early\u2011stage financing may limit private capital mobilisation and job creation.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Intensify outreach to VC funds, set quarterly pipeline targets, expand accelerator partnerships, and monitor private\u2011capital mobilisation indicators.",
+        "evidence": "the key sectoral challenge ... limited availability of early-stage financing for innovative startups and SMEs"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Concentration risk: over\u2011exposure to a single VC fund could breach investment caps.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Enforce the US$5\u202fM / 15\u202f% loan\u2011size cap, require diversification approval by the Investment Committee, and run monthly exposure reports.",
+        "evidence": "To mitigate and manage concentration risks ... cap stands at US$5 million"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inadequate Operational Due Diligence may lead to fraud or mis\u2011management of invested capital.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement a robust ODD framework, conduct independent third\u2011party reviews, and embed ODD checkpoints in all investment approvals.",
+        "evidence": "Operational Due Diligence (ODD) ... will remain an integral part of the proposed ISSF 2.0 Project"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Governance turnover (board or senior staff) could disrupt project execution.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt a succession plan, retain key staff with performance incentives, and maintain documented hand\u2011over procedures.",
+        "evidence": "ISSF faced challenges linked to, for example, high turnover of the team. The issues have been addressed and ISSF now has a stable team"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Weak financial\u2011management controls may cause mis\u2011allocation or reporting errors.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen internal audit schedule, upgrade accounting systems, keep separate designated accounts, and conduct quarterly FM compliance reviews.",
+        "evidence": "The ISSF Financial Management (FM) risk rating is \u201cModerate,\u201d ... internal audit plans will consider emerging risks"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Procurement non\u2011compliance could trigger audit findings or sanctions.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Appoint a qualified procurement specialist, follow World Bank Procurement Regulations, and perform annual ex\u2011post reviews covering \u226515\u202f% of contracts.",
+        "evidence": "Procurement risk is rated Moderate. The envisaged procurement packages are small; therefore, it is expected that no contract will be subject to the Bank\u2019s prior review"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Environmental impacts from e\u2011waste mis\u2011management or climate\u2011related hazards could affect beneficiaries.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Integrate e\u2011waste recycling standards into the ESMS, require startups to adopt certified disposal practices, and monitor climate\u2011resilience criteria for greentech investments.",
+        "evidence": "SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e\u2011waste"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Social risks: poor labour conditions, gender discrimination, digital divide, data\u2011privacy issues.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply the Gender Action Plan, enforce Jordan labour law compliance, provide grievance mechanism training, and conduct regular social\u2011impact audits.",
+        "evidence": "The proposed Project social risk is rated Moderate... could entail poor labor and working conditions, limited stakeholder engagement, the digital divide, data privacy and security risks"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Downturn in global VC returns may reduce fund performance and private\u2011capital mobilisation.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Diversify across sectors and geographies, maintain a reserve capital buffer, and regularly reassess market outlook to adjust investment pacing.",
+        "evidence": "global downturn in VC returns in the aftermath of the COVID\u201119 pandemic... ISSF\u2019s portfolio performance to date is promising"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Cash\u2011flow risk: insufficient funds in the designated account to meet capital\u2011call obligations.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Keep a cash buffer equal to at least 20\u202f% of total commitments, forecast quarterly cash needs, and trigger early disbursement requests when balances fall below threshold.",
+        "evidence": "ISSF must have funds in the account at the time of signing the capital commitment ... to cover the entire capital calls"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Delay in signing the IFC Memorandum of Understanding could postpone co\u2011investment activities.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Assign a dedicated liaison officer, set a firm MoU signing deadline (e.g., Q2\u202f2025), and identify alternative DFI partners as backup.",
+        "evidence": "ISSF plans to sign a Memorandum of Understanding with IFC to establish a structured information\u2011sharing mechanism"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Failure to achieve the 30\u202f% women\u2011owned/led beneficiary target may undermine gender\u2011inclusion objectives.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement targeted outreach to women entrepreneurs, provide mentorship grants, and monitor gender\u2011disaggregated metrics quarterly with corrective action plans.",
+        "evidence": "target ... at least 30 percent of all ISSF 2.0 Project beneficiaries to be women\u2011owned, led, or majority female employment startups"
+      }
+    ]
+  },
+  "parse_error": null
+}
