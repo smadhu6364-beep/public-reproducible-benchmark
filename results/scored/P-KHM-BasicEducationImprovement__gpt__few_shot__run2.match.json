@@ -1,0 +1,258 @@
+{
+  "run_file": "P-KHM-BasicEducationImprovement__gpt__few_shot__run2.json",
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R01",
+      "similarity": 0.589,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Financial Management staff may be overloaded, causing delays in processing transactions and reporting.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Recruit additional FM officers and consultants within three months; implement workload monitoring and task prioritization.",
+      "evidence": "FM assessment identified current FM staff at Directorate General of Administration and Finance may be overloaded."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delayed approval of the Annual Work Plan and Budget could postpone activity implementation.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish a fast\u2011track approval workflow with clear deadlines and senior sign\u2011off commitments.",
+      "evidence": "Risk noted that delayed approval of the AWPB may hinder timely implementation."
+    },
+    {
+      "risk_id": "R03",
+      "description": "School mentoring funds may not be properly monitored, leading to misallocation.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Introduce a transparent tracking system, quarterly audits, and mandatory reporting templates for mentoring expenditures.",
+      "evidence": "Risk that school mentoring funding, spent at schools, may not be properly monitored."
+    },
+    {
+      "risk_id": "R04",
+      "description": "MoEYS procurement staff have limited knowledge of World Bank procurement rules, risking non\u2011compliance and delays.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide intensive World Bank procurement training and certify staff before procurement activities commence.",
+      "evidence": "MoEYS staff\u2019s limited knowledge and experience with World Bank Procurement Regulations could cause delays."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Potential corrupt practices in procurement could undermine project integrity.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Enforce strict disclosure, publish procurement plans and award summaries, and establish an independent complaint mechanism.",
+      "evidence": "Governance risks, including corrupt practices in procurement, identified in procurement risk assessment."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Insufficient capacity for contract supervision may cause implementation delays.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Assign dedicated contract supervisors, provide on\u2011the\u2011job training, and set up performance monitoring dashboards.",
+      "evidence": "Inadequate capacity for contract supervision and management may result in implementation delays."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Internal clearance delays from the procurement review committee could stall procurement.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Create a joint clearance task force with defined turnaround times and escalation procedures.",
+      "evidence": "Possible delays in internal clearance from procurement review committee noted as a risk."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Floods, cyclones and extreme heat may damage school facilities and interrupt learning.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Construct all new buildings to climate\u2011resilient standards, locate them in lower\u2011risk zones, and develop emergency shelter plans.",
+      "evidence": "Approximately 10% of schools in <2\u202fm flood zones; 31% exposed to cyclones; extreme heat increasing school closures."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Climate\u2011resilient construction may not meet design specifications, leaving facilities vulnerable.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement third\u2011party design review and independent post\u2011construction inspections to verify compliance.",
+      "evidence": "Designs incorporate climate\u2011resilient construction practices; risk of inadequate implementation implied."
+    },
+    {
+      "risk_id": "R10",
+      "description": "ICT equipment could fail under high temperature or humidity, disrupting e\u2011learning.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Procure equipment rated for tropical climates and house devices in climate\u2011controlled cabinets.",
+      "evidence": "ICT equipment must withstand extreme temperatures and humidity; design includes climate\u2011controlled environments."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Teachers may lack capacity to implement EGL and TaRL approaches effectively.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Deliver intensive pre\u2011service and in\u2011service training, followed by continuous mentoring and performance monitoring.",
+      "evidence": "Insufficient teacher capacity identified as a principal cause of poor learning outcomes."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Targeted instruction pilot (TaRL) may not scale due to limited evidence on costs and impact.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct rigorous pilot evaluation, document lessons, and develop a scalable implementation guide before expansion.",
+      "evidence": "Targeted instruction is being piloted in 2025; less information is available on costs, impact, and scaling requirements."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Low enrollment in early childhood education could limit primary school readiness gains.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement community outreach, parental education campaigns, and incentives for enrollment in ECE programs.",
+      "evidence": "Limited readiness among children results from inadequate access to quality childcare and early childhood education."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Gender\u2011based violence (GBV) data gaps may hinder effective prevention and response measures.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Integrate GBV data collection into school monitoring systems and strengthen teacher training on GBV awareness.",
+      "evidence": "Significant lack of comprehensive data on GBV prevalence in the education sector."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate inclusion of children with disabilities may reduce equity of learning outcomes.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Ensure all new buildings follow universal design standards and provide braille EGL materials.",
+      "evidence": "Project will ensure universal design and convert EGL materials into braille for students with vision disabilities."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Weak M&E capacity could produce poor quality data, compromising performance tracking.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Upgrade M&E digital tools, train staff, and conduct periodic data quality audits.",
+      "evidence": "M&E capacity risks identified; digitalization of M&E processes planned to improve data quality."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Dependence on external donors (FCDO, UNICEF) for pilot funding may jeopardize scaling if funding stops.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Negotiate multi\u2011year funding commitments and develop a government\u2011financed scaling plan.",
+      "evidence": "FCDO pilot and UNICEF support are key for EGL; partners\u2019 support expected to phase out by 2027."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Early Learning Partnership grant closes in 2027, potentially leaving a financing gap for childcare components.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Secure additional domestic or donor financing before 2027 and align disbursements with grant timeline.",
+      "evidence": "Trust Fund closing date is April\u202f30\u202f2027, while project runs to 2030."
+    },
+    {
+      "risk_id": "R19",
+      "description": "Reliance on digital HRMIS and M&E tools may be disrupted by poor internet connectivity in remote areas.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide offline data entry modules and periodic synchronization when connectivity is available.",
+      "evidence": "HRMIS and digital M&E will be deployed; risk of connectivity issues implied for remote districts."
+    },
+    {
+      "risk_id": "R20",
+      "description": "Political shifts could reduce government commitment to project reforms.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Embed reforms in legally binding policies and maintain high\u2011level political championing through the PSC.",
+      "evidence": "Project aligns with PS\u2011I and national priorities; political commitment is essential for sustainability."
+    },
+    {
+      "risk_id": "R21",
+      "description": "Construction delays may keep overcrowded classrooms in place, limiting learning improvements.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Set strict construction milestones, use performance\u2011based payments, and monitor progress via the PMU.",
+      "evidence": "Overcrowded classrooms affect learning; subcomponent 2.3 funds climate\u2011resilient construction to reduce class size."
+    },
+    {
+      "risk_id": "R22",
+      "description": "Insufficient WASH facilities could lead to health issues and absenteeism.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Ensure all new and renovated schools include gender\u2011separated toilets and functional water\u2011sanitation infrastructure.",
+      "evidence": "Component 2.3 includes provision of gender\u2011separated toilets and WASH facilities."
+    },
+    {
+      "risk_id": "R23",
+      "description": "Inadequate grievance redress mechanisms may allow stakeholder complaints to go unresolved, harming project reputation.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Operationalize the GRM, publicize contact channels, and track resolution timelines.",
+      "evidence": "A GRM will be implemented to ensure timely responses to stakeholder feedback."
+    },
+    {
+      "risk_id": "R24",
+      "description": "Cost overruns in climate\u2011resilient construction could strain the project budget.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Apply rigorous cost\u2011control procedures, use standardized \u201csmart\u2011buy\u201d specifications, and conduct regular financial reviews.",
+      "evidence": "Component 1 and 2.3 allocate funds for climate\u2011resilient construction; fiduciary risk includes potential cost overruns."
+    },
+    {
+      "risk_id": "R25",
+      "description": "Limited evidence on the effectiveness of the PLP EdTech platform at scale may reduce expected learning gains.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Pilot the platform in additional schools, collect usage analytics, and iterate based on feedback before full rollout.",
+      "evidence": "PLP currently used in 1,500 schools; BEIP will expand use to all schools."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Environment and Social risk is rated Substantial due to (a) limited institutional capacity to manage environmental and social risks and impacts; (b) nationwide implementation of the project's activities; (c) possible exclusion of vulnerable groups (such as poor children, children with disabilities, and indigenous groups); and (d) other risks involving child protection, occupational health and safety, labor issues, and sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project will develop a capacity-building plan for the Environmental and Social Safeguards Office and Project Management Unit, including hiring dedicated environmental and social specialists and providing targeted training. It will establish robust monitoring mechanisms to ensure support for vulnerable groups (universal design in new school/WASH construction, materials adapted for visually impaired students), strict adherence to worker codes of conduct, complaint redress and referral mechanisms, and construction site safety measures to protect school children and communities from labor influx and construction-related risks."
+    }
+  ]
+}

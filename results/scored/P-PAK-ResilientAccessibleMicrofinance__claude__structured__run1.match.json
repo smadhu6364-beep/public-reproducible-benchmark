@@ -1,0 +1,123 @@
+{
+  "run_file": "P-PAK-ResilientAccessibleMicrofinance__claude__structured__run1.json",
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delays in executing and legally registering the Trust Deed between MoF and SBP could postpone project effectiveness and initial CRF capitalization.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Establish standard operating procedures and legal draft templates early between MoF and SBP to expedite Trust Deed registration.",
+      "evidence": "The Trust Deed... has been executed between the Recipient... and State Bank of Pakistan and registered in accordance with legal requirements"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays or shortfalls in securing national budget allocation in PKR for Category 2 financing could block disbursement of project funds.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "MoF and SBP will integrate project allocation requests directly into the annual national budget submission cycle.",
+      "evidence": "No withdrawals can take place under Category 2 until the Recipient has ensured... a sufficient amount in its currency has been requested in its budget allocation"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Severe 1-in-20-year flood events could cause damage claims exceeding the total $125 million capital size of the Climate Risk Fund.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Implement a layered risk framework combining capital buffers with an annual international parametric reinsurance backstop to absorb extreme tail risk.",
+      "evidence": "A 1-in-a-20-year flood... would impact 705,000 borrowers and US$189 million in lending."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Reinsurance market rate increases or lower investment returns could make annual parametric insurance backstop premiums unaffordable.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct annual financial and technical reviews of insurance products and utilize GSFF grant funds combined with CRF investment yield.",
+      "evidence": "subject to an annual decision by the CRF Oversight Committee, following technical and financial review... and review of the CRF\u2019s financial position"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Complexities in verifying flood triggers and calculating losses post-disaster could delay deployment of recovery liquidity beyond 60 days.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish pre-defined parametric triggers, empirical risk models, and third-party data collection protocols in the Project Operating Manual.",
+      "evidence": "CRF liquidity which is deployed to originate loans within 60 days of qualifying floods (percentage)"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Microfinance providers may fail to achieve the 55% female beneficiary target due to loan officer biases and social constraints.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct SBP-led loan officer awareness training, implement financial literacy programs for women, and enforce higher borrowing rates for non-compliant MFPs.",
+      "evidence": "at least 55% of the beneficiaries... are women, with the safeguard that the MFPs will be required to pay a higher borrowing cost"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Geographically concentrated micro-lending in agricultural belts could cause cumulative environmental damage from fertilizer and pesticide usage.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Apply Environmental and Social Management Systems (ESMS) screeners, enforce negative lists, and promote climate-smart sustainable agricultural technology practices via ATCs.",
+      "evidence": "cumulative impacts of clustering of loans in geographical areas... where project interventions may increase use of fertilizers, pesticides and other chemicals"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Difficulties in structuring operational partnerships between MFPs and Agriculture Technology Companies could slow adoption of bundled agritech loans.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Run the Agriculture Finance Innovation Challenge (AFIC) to pre-select viable ATCs and provide standardized partnership frameworks in the POM.",
+      "evidence": "MFPs that avail the IAL product will have to partner with at least one ATC selected under the AFIC."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Persistent perception of high flood risks may cause MFPs to continue de-risking away from smallholder agricultural lending.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Offer pre-disaster IAL liquidity bundled with productivity-boosting agritech advisory, and guaranteed post-flood contingent liquidity.",
+      "evidence": "The share of agriculture in total lending of MFBs has declined... indicating that the sector is de-risking away from small farmers"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Severe post-flood spikes in non-performing loans and provisioning could erode MFP capital adequacy ratios below regulatory requirements.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide immediate contingent liquidity via the CLF to allow MFPs to restructure existing loans and issue recovery top-up loans.",
+      "evidence": "NPLs of MFBs... surged by 25.7 percent... provisioning expenses... surged by 50.8 percent... capital adequacy declined from 14.9 percent to 11.7 percent"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is Substantial. The political context in Pakistan remains fluid. However, there has been significant decline in political uncertainty and associated policy instability in recent months, especially in the backdrop of the general elections. Given that a new government took the helm recently and the fact that policy priorities are still being defined, political risks, in particular in the context of the project, remain substantial.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In the implementation stage, the risks will be mitigated through frequent monitoring and oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is High. While fiscal consolidation measures have supported short-term stabilization, macroeconomic risks remain high amid a high debt burden (72 percent of GDP), heavy financial sector exposure to government debt, large external financing needs, weak confidence, and little progress with structural reforms. Significant risks include potential worsening of external conditions, further natural disasters, and a slowdown or reversals in policy adjustment.",
+      "category": "external",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Risks are partly mitigated by government commitment to implementation of reforms under the ongoing International Monetary Fund program, World Bank support to structural policy reforms in the fiscal and power sectors, strong government commitment to the reforms supported by the operation, and the availability of dedicated World Bank technical assistance to implement key reforms."
+    }
+  ]
+}

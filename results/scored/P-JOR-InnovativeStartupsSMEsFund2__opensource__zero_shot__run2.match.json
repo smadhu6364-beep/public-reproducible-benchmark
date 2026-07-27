@@ -1,0 +1,132 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__opensource__zero_shot__run2.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.606,
+      "gen_category": "technical",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insufficient deal flow for ISSF investments, potentially leading to reduced investment opportunities and lower returns",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "ISSF to focus on pre-seed and seed investments, and explore new sources of funding to scale up resources",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Concentration risk due to limited number of VC funds and startups in Jordan, potentially leading to overexposure to specific sectors or companies",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "ISSF to diversify investments across various sectors and companies, and update concentration limits in the POM",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited access to early-stage financing for female and youth-led startups, potentially hindering their growth and development",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "ISSF to introduce targeted outreach measures, such as the Gender Action Plan, to support female and youth-led startups",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Environmental and social risks associated with investments in the ICT sector, potentially leading to negative impacts on the environment and local communities",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "ISSF to develop an Environmental and Social Management System (ESMS) and apply the Environmental and Social Framework (ESF) of the World Bank",
+      "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Grievance mechanism not being effective in addressing complaints from stakeholders, potentially leading to reputational damage and loss of trust",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "ISSF to enhance the grievance mechanism, ensure accessibility and transparency, and provide clear procedures for receiving and resolving complaints",
+      "evidence": "Section D, Grievance Redress Services"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate financial management and disbursement arrangements, potentially leading to inefficiencies and mismanagement of funds",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "ISSF to utilize the same FM arrangements as ISSF 1.0, with additional measures such as separated budgets and accounting records",
+      "evidence": "Section B, Fiduciary"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Procurement risks, including corruption and non-compliance with World Bank regulations, potentially leading to reputational damage and loss of trust",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "ISSF to follow World Bank Procurement Regulations, ensure compliance with eligibility requirements, and maintain records for post-review and audits",
+      "evidence": "Section B, Fiduciary"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Climate change and natural hazards potentially affecting the achievement of the project development objective",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "ISSF to invest in greentech startups and climate-responsive solutions, and apply the Environmental and Social Framework (ESF) of the World Bank",
+      "evidence": "Section I, Strategic Context"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Limited capacity of ISSF to manage environmental and social risks, potentially leading to inadequate identification and mitigation of risks",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "ISSF to develop an Environmental and Social Management System (ESMS) and enhance its capacity to manage environmental and social risks",
+      "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Dependence on public funding, potentially leading to reduced sustainability and long-term viability of the project",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "ISSF to transition to a market-aligned structure, manage the Fund of Funds, and explore new sources of funding to scale up resources",
+      "evidence": "Section II, Project Description"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

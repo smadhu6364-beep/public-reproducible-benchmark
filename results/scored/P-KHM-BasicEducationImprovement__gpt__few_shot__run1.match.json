@@ -1,0 +1,186 @@
+{
+  "run_file": "P-KHM-BasicEducationImprovement__gpt__few_shot__run1.json",
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R01",
+      "similarity": 0.582,
+      "gen_category": "stakeholder",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Climate\u2011related floods, cyclones and extreme heat may damage school facilities and cause prolonged closures.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Apply climate\u2011resilient construction standards, include flood\u2011elevated foundations, install emergency shelters, and activate CERC when needed.",
+      "evidence": "Paragraph 12: floods, cyclones and extreme heat cause school closures and damage."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Overcrowded classrooms ( >30 pupils) reduce learning effectiveness.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Build additional classrooms per subcomponent 2.3, enforce maximum class\u2011size caps, and monitor student\u2011teacher ratios.",
+      "evidence": "Paragraph 37: 76% of primary students in classes >30 pupils, indicating overcrowding."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Insufficient teacher capacity and limited professional development hinder instructional quality.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Scale CPD, mentoring, career pathways, recruit additional teachers, and implement teacher performance monitoring.",
+      "evidence": "Paragraph 9 lists insufficient teacher capacity as a principal cause of poor outcomes."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Procurement delays and corruption risk due to limited staff knowledge of World Bank regulations.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Assign full\u2011time procurement officer, provide World Bank procurement training, publish procurement plans, and establish a complaint mechanism.",
+      "evidence": "Paragraph 68\u201170: limited procurement knowledge, corruption risk, and inadequate contract supervision identified."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Financial\u2011management staff overload may cause transaction processing delays.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Hire additional FM staff within three months, set processing\u2011time targets, and monitor workload regularly.",
+      "evidence": "Paragraph 63(a): FM staff may be overloaded, causing processing delays."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Delayed approval of the Annual Work Plan and Budget could stall project activities.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Set firm AWPB submission deadlines, require senior sign\u2011off, and track approval status monthly.",
+      "evidence": "Paragraph 63(b): delayed AWPB approval may hinder timely implementation."
+    },
+    {
+      "risk_id": "R07",
+      "description": "School mentoring funding may not be properly monitored, risking misuse.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement detailed mentoring\u2011fund tracking system, conduct quarterly audits, and require regular school reporting.",
+      "evidence": "Paragraph 63(c): risk school mentoring funding may not be properly monitored."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Limited evidence on TaRL pilot may impede successful scale\u2011up of targeted instruction.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Pilot TaRL in limited schools, monitor rigorously, adjust design based on results, and allocate contingency budget for scale\u2011up.",
+      "evidence": "Paragraph 36: TaRL pilot limited evidence for scale\u2011up, increasing uncertainty."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Dependence on donor partners for EGL and TaRL could create funding gaps after 2027.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage donors early for follow\u2011on financing, embed activities in MoEYS budget, and develop a sustainability plan.",
+      "evidence": "Paragraph 21\u201122: DP support expected to phase out by 2027, creating funding gaps."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Gender\u2011based violence (GBV) data gaps may limit effective prevention and response measures.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Strengthen GBV monitoring, integrate GBV indicators, train teachers on GBV response, and coordinate with GEIP GBV team.",
+      "evidence": "Paragraph 57\u201158: GBV data gaps noted; BEIP will build on GEIP GBV mechanisms."
+    },
+    {
+      "risk_id": "R11",
+      "description": "New school buildings may fail to meet universal design standards, limiting accessibility for children with disabilities.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Enforce universal\u2011design checklist, conduct accessibility audits, produce braille materials, and monitor compliance.",
+      "evidence": "Paragraph 59: new buildings must meet universal design; braille materials planned."
+    },
+    {
+      "risk_id": "R12",
+      "description": "ICT equipment may malfunction under extreme temperature and humidity, disrupting e\u2011learning.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Procure climate\u2011rated hardware, store devices in climate\u2011controlled rooms, and schedule regular maintenance.",
+      "evidence": "Paragraph 62: ICT equipment must withstand extreme temperature and humidity."
+    },
+    {
+      "risk_id": "R13",
+      "description": "M&E data quality risk due to reliance on multiple sources and limited PMU capacity.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Upgrade PMU data\u2011management capacity, adopt digital M&E tools, and conduct periodic data\u2011quality assessments.",
+      "evidence": "Paragraph 50: M&E relies on multiple data sources; PMU oversees coordination."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Land acquisition and involuntary resettlement may arise for new school construction, triggering social conflict.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Conduct ESIA, develop a resettlement action plan, ensure fair compensation, and engage affected communities per ESS\u202f5.",
+      "evidence": "ESS\u202f5 listed as relevant, indicating land acquisition/resettlement risk."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Cash\u2011flow uncertainty due to variable Designated Account ceiling and quarterly disbursement schedule.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain a cash buffer, align disbursement schedule with procurement plan, and monitor DA ceiling quarterly.",
+      "evidence": "Paragraph 52: DA ceiling equals two\u2011quarter cash forecast, creating cash\u2011flow uncertainty."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Inadequate capacity for contract supervision may cause implementation delays and quality issues.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Designate contract supervisors, provide supervision training, conduct regular performance reviews, and use third\u2011party audits.",
+      "evidence": "Paragraph 68(e): inadequate capacity for contract supervision may cause delays."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Insufficient integration of climate\u2011resilient standards for infrastructure and ICT could reduce overall project resilience.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Apply climate\u2011resilient design to all new buildings, perform climate risk assessments for ICT, and update designs as needed.",
+      "evidence": "Paragraph 61\u201162: climate\u2011resilient designs and ICT climate\u2011proofing integrated."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Environment and Social risk is rated Substantial due to (a) limited institutional capacity to manage environmental and social risks and impacts; (b) nationwide implementation of the project's activities; (c) possible exclusion of vulnerable groups (such as poor children, children with disabilities, and indigenous groups); and (d) other risks involving child protection, occupational health and safety, labor issues, and sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project will develop a capacity-building plan for the Environmental and Social Safeguards Office and Project Management Unit, including hiring dedicated environmental and social specialists and providing targeted training. It will establish robust monitoring mechanisms to ensure support for vulnerable groups (universal design in new school/WASH construction, materials adapted for visually impaired students), strict adherence to worker codes of conduct, complaint redress and referral mechanisms, and construction site safety measures to protect school children and communities from labor influx and construction-related risks."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T04:06:42.311933+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-IND-ChhattisgarhAcceleratedLearning\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate teacher training and support may hinder the effectiveness of the CHALK program\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Provide comprehensive training and support to teachers, including regular coaching and mentoring\",\n      \"evidence\": \"Section II.C, Results Area 1\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient funding may limit the program's ability to achieve its objectives\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Secure sufficient funding through a combination of government and external sources, and ensure efficient use of resources\",\n      \"evidence\": \"Section IV, Program Expenditure Framework\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Delays in program implementation may impact the achievement of results\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed implementation plan with clear timelines and milestones, and regularly monitor progress\",\n      \"evidence\": \"Section III.A, Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Limited community engagement and participation may hinder the program's success\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Foster strong relationships with local communities, and ensure their active participation in program planning and implementation\",\n      \"evidence\": \"Section II.C, Results Area 3\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Environmental and social risks associated with school infrastructure development may not be adequately addressed\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough environmental and social impact assessments, and develop strategies to mitigate potential risks\",\n      \"evidence\": \"Section V, Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate monitoring and evaluation may limit the program's ability to track progress and achieve results\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a comprehensive monitoring and evaluation framework, and ensure regular data collection and analysis\",\n      \"evidence\": \"Section III.B, Results Monitoring and Evaluation\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Dependence on external funding may create sustainability risks\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a plan for long-term financial sustainability, including strategies for securing domestic funding and reducing dependence on external sources\",\n      \"evidence\": \"Section IV, Program Expenditure Framework\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Limited capacity of implementing agencies may hinder program implementation\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building support to implementing agencies, and ensure clear roles and responsibilities\",\n      \"evidence\": \"Section III.A, Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Climate change may impact the program's ability to achieve its objectives\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Develop strategies to address climate-related risks, including measures to promote climate-resilient infrastructure and adaptive capacity\",\n      \"evidence\": \"Section V, Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inequitable access to education may persist, particularly for marginalized groups\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop targeted strategies to address equity gaps, including measures to promote inclusive education and address socio-economic disparities\",\n      \"evidence\": \"Section II.C, Results Area 3\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate teacher training and support may hinder the effectiveness of the CHALK program",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Provide comprehensive training and support to teachers, including regular coaching and mentoring",
+        "evidence": "Section II.C, Results Area 1"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient funding may limit the program's ability to achieve its objectives",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Secure sufficient funding through a combination of government and external sources, and ensure efficient use of resources",
+        "evidence": "Section IV, Program Expenditure Framework"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in program implementation may impact the achievement of results",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a detailed implementation plan with clear timelines and milestones, and regularly monitor progress",
+        "evidence": "Section III.A, Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Limited community engagement and participation may hinder the program's success",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Foster strong relationships with local communities, and ensure their active participation in program planning and implementation",
+        "evidence": "Section II.C, Results Area 3"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Environmental and social risks associated with school infrastructure development may not be adequately addressed",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct thorough environmental and social impact assessments, and develop strategies to mitigate potential risks",
+        "evidence": "Section V, Environmental and Social"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate monitoring and evaluation may limit the program's ability to track progress and achieve results",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop a comprehensive monitoring and evaluation framework, and ensure regular data collection and analysis",
+        "evidence": "Section III.B, Results Monitoring and Evaluation"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Dependence on external funding may create sustainability risks",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Develop a plan for long-term financial sustainability, including strategies for securing domestic funding and reducing dependence on external sources",
+        "evidence": "Section IV, Program Expenditure Framework"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Limited capacity of implementing agencies may hinder program implementation",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building support to implementing agencies, and ensure clear roles and responsibilities",
+        "evidence": "Section III.A, Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Climate change may impact the program's ability to achieve its objectives",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Develop strategies to address climate-related risks, including measures to promote climate-resilient infrastructure and adaptive capacity",
+        "evidence": "Section V, Environmental and Social"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inequitable access to education may persist, particularly for marginalized groups",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop targeted strategies to address equity gaps, including measures to promote inclusive education and address socio-economic disparities",
+        "evidence": "Section II.C, Results Area 3"
+      }
+    ]
+  },
+  "parse_error": null
+}

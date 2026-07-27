@@ -1,0 +1,177 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__opensource__few_shot__run2.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.655,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insufficient deal flow and pipeline of startups for ISSF investments",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Collaboration with development partners, accelerators, and incubators to support pipeline development",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Project Components"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Concentration risk due to limited number of VC funds and startups in Jordan",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversification of investments across various sectors and stages, and setting concentration limits",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Project Components, Component 1: Fund of Funds investments"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Dependence on lead investors for co-investment decisions",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establishing a robust due diligence process and investment committee oversight",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Project Components, Component 2: Co-investment in startups"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Limited capacity of ISSF staff to manage increased workload and responsibilities",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Hiring additional staff, providing training and capacity building support",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, A. Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Environmental and social risks associated with investments in the ICT sector",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Developing and implementing an Environmental and Social Management System (ESMS)",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Regulatory risks and changes in government policies affecting the startup ecosystem",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Engaging with government stakeholders, monitoring regulatory developments, and adapting to changes",
+      "evidence": "Section I. STRATEGIC CONTEXT, A. Project Strategic Context"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Reputation risk due to potential failures of portfolio startups or VC funds",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conducting thorough due diligence, monitoring portfolio performance, and maintaining transparency",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Project Components, Component 1: Fund of Funds investments"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Cybersecurity risks associated with investments in the ICT sector",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implementing robust cybersecurity measures, conducting regular risk assessments, and providing support to portfolio startups",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Limited access to funding for female-led startups and entrepreneurs",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implementing targeted outreach measures, setting diversity and inclusion targets, and providing support to female-led startups",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, A. Technical, Economic and Financial Analysis (if applicable), Gender"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Climate change risks affecting the startup ecosystem and ISSF investments",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Integrating climate change considerations into investment decisions, supporting greentech startups, and promoting sustainable practices",
+      "evidence": "Section I. STRATEGIC CONTEXT, B. Sectoral and Institutional Context, Climate vulnerability context of the project"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Risk of not achieving the project development objective due to various factors",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Regular monitoring and evaluation, adaptive management, and adjustment of strategies as needed",
+      "evidence": "Section II. PROJECT DESCRIPTION, A. Project Development Objective"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Risk of fraud, corruption, or mismanagement of funds",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Implementing robust internal controls, conducting regular audits, and ensuring transparency and accountability",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, B. Fiduciary"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Risk of non-compliance with World Bank policies and procedures",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Providing training and capacity building support to ISSF staff, ensuring compliance with World Bank policies and procedures",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, B. Fiduciary"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Risk of inadequate stakeholder engagement and participation",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Developing a stakeholder engagement plan, ensuring regular communication and feedback mechanisms",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Risk of inadequate monitoring and evaluation of project performance",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Developing a monitoring and evaluation plan, ensuring regular data collection and analysis",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, A. Technical, Economic and Financial Analysis (if applicable)"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

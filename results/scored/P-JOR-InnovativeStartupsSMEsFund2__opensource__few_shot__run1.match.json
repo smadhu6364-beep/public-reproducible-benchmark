@@ -1,0 +1,177 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__opensource__few_shot__run1.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.645,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insufficient deal flow and pipeline of startups for ISSF investments",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Collaboration with development partners, accelerators, and incubators to support pipeline development",
+      "evidence": "Section II. PROJECT DESCRIPTION, Component 1"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Concentration risk due to limited number of VC funds and startups in Jordan",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversification of investments across various sectors and stages, and updating concentration limits",
+      "evidence": "Section II. PROJECT DESCRIPTION, Component 1"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Dependence on lead investors for co-investment decisions",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establishing a structured information-sharing mechanism with lead investors and conducting thorough due diligence",
+      "evidence": "Section II. PROJECT DESCRIPTION, Component 2"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Limited capacity of ISSF staff to manage increased workload and responsibilities",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Hiring additional staff, providing training and capacity building, and outsourcing certain functions",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, A. Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Inadequate environmental and social risk management",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Developing an Environmental and Social Management System (ESMS) and integrating E&S screening into the investment process",
+      "evidence": "Section C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Non-compliance with World Bank's Environmental and Social Framework (ESF)",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Ensuring compliance with ESF, developing an Environmental and Social Commitment Plan (ESCP), and conducting regular monitoring and reporting",
+      "evidence": "Section C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate governance and oversight of ISSF",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthening governance arrangements, updating the Investment Strategy, and ensuring independence of the Investment Committee",
+      "evidence": "Section II. PROJECT DESCRIPTION, ISSF Governance setup"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Limited access to funding for female-led startups and SMEs",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implementing targeted outreach measures, adopting a Gender Action Plan, and ensuring representation of female members on the ISSF Board",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, Gender"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Insufficient investment in greentech startups and climate-responsive solutions",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Updating investment screening criteria to prioritize greentech and climate-responsive solutions, and allocating a minimum of 10% of investments to these areas",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, Climate co-benefits"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Dependence on public funding and limited potential for self-sustainability",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Exploring new sources of funding, transitioning to a market-aligned structure, and ensuring commercial viability of investments",
+      "evidence": "Section II. PROJECT DESCRIPTION, Long-Term Evolution"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Inadequate monitoring and evaluation of project performance",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Developing a robust monitoring framework, conducting regular surveys and data collection, and ensuring data-driven decision-making",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, B. Results Monitoring, Evaluation, and Verification Arrangements"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Inadequate procurement and contract management",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Ensuring compliance with World Bank Procurement Regulations, hiring a qualified procurement specialist, and conducting regular procurement reviews",
+      "evidence": "Section B. Fiduciary, Procurement"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Limited capacity of Jordanian startups to absorb and utilize investments",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Providing capacity building support, mentoring, and coaching to eligible VC funds, startups, and SMEs",
+      "evidence": "Section II. PROJECT DESCRIPTION, Component 3"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Dependence on international investors and potential risks associated with foreign investment",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversifying investor base, conducting thorough due diligence, and ensuring alignment with national development goals",
+      "evidence": "Section II. PROJECT DESCRIPTION, Component 1"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate risk management and potential for investment losses",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conducting thorough risk assessments, diversifying investments, and ensuring adequate risk management practices",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, Summary of economic and financial analysis"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

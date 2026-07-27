@@ -1,0 +1,108 @@
+{
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T04:07:53.638816+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-JOR-InnovativeStartupsSMEsFund2\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient deal flow for ISSF investments, potentially leading to reduced investment opportunities and lower returns\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Enhance deal sourcing efforts, expand network of partners and intermediaries, and consider investments in pre-seed and seed stages\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inadequate governance and oversight of ISSF, potentially leading to poor investment decisions and mismanagement of funds\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Strengthen ISSF's governance structure, ensure independence of Board members, and enhance oversight mechanisms\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited access to funding for female-led startups, potentially hindering the growth of women-owned businesses\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement targeted outreach measures, develop a Gender Action Plan, and consider investments in women-led startups\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate environmental and social risk management, potentially leading to negative impacts on the environment and local communities\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Develop and implement an Environmental and Social Management System, conduct thorough risk assessments, and ensure compliance with World Bank standards\",\n      \"evidence\": \"Section C, Environmental, Social and Legal Operational Policies\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Dependence on public funding, potentially limiting the long-term sustainability of ISSF\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Explore alternative funding sources, develop a strategy for transitioning to private sector funding, and enhance financial management and reporting\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Regulatory risks, potentially affecting the viability of ISSF investments\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Monitor regulatory developments, engage with relevant authorities, and ensure compliance with applicable laws and regulations\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Concentration risk, potentially leading to overexposure to specific sectors or investments\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify investments, set concentration limits, and monitor portfolio risk\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate monitoring and evaluation, potentially hindering the assessment of project impact and effectiveness\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement a comprehensive monitoring and evaluation framework, ensure data quality and availability, and conduct regular assessments\",\n      \"evidence\": \"Section IV, PROJECT APPRAISAL SUMMARY\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Limited capacity of ISSF staff, potentially affecting the implementation and management of the project\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building opportunities, ensure adequate staffing levels, and enhance operational efficiency\",\n      \"evidence\": \"Section II, Project Description\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"External risks, such as economic downturns or global events, potentially affecting the viability of ISSF investments\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Monitor external developments, diversify investments, and develop contingency plans to mitigate potential risks\",\n      \"evidence\": \"Section I, STRATEGIC CONTEXT\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient deal flow for ISSF investments, potentially leading to reduced investment opportunities and lower returns",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Enhance deal sourcing efforts, expand network of partners and intermediaries, and consider investments in pre-seed and seed stages",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inadequate governance and oversight of ISSF, potentially leading to poor investment decisions and mismanagement of funds",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Strengthen ISSF's governance structure, ensure independence of Board members, and enhance oversight mechanisms",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited access to funding for female-led startups, potentially hindering the growth of women-owned businesses",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement targeted outreach measures, develop a Gender Action Plan, and consider investments in women-led startups",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate environmental and social risk management, potentially leading to negative impacts on the environment and local communities",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Develop and implement an Environmental and Social Management System, conduct thorough risk assessments, and ensure compliance with World Bank standards",
+        "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Dependence on public funding, potentially limiting the long-term sustainability of ISSF",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Explore alternative funding sources, develop a strategy for transitioning to private sector funding, and enhance financial management and reporting",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Regulatory risks, potentially affecting the viability of ISSF investments",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Monitor regulatory developments, engage with relevant authorities, and ensure compliance with applicable laws and regulations",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Concentration risk, potentially leading to overexposure to specific sectors or investments",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Diversify investments, set concentration limits, and monitor portfolio risk",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate monitoring and evaluation, potentially hindering the assessment of project impact and effectiveness",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop and implement a comprehensive monitoring and evaluation framework, ensure data quality and availability, and conduct regular assessments",
+        "evidence": "Section IV, PROJECT APPRAISAL SUMMARY"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Limited capacity of ISSF staff, potentially affecting the implementation and management of the project",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building opportunities, ensure adequate staffing levels, and enhance operational efficiency",
+        "evidence": "Section II, Project Description"
+      },
+      {
+        "risk_id": "R10",
+        "description": "External risks, such as economic downturns or global events, potentially affecting the viability of ISSF investments",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Monitor external developments, diversify investments, and develop contingency plans to mitigate potential risks",
+        "evidence": "Section I, STRATEGIC CONTEXT"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,220 @@
+{
+  "run_file": "P-PER-ArequipaColca__claude__zero_shot__run1.json",
+  "project_id": "P-PER-ArequipaColca",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R02",
+      "similarity": 0.718,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R01",
+      "similarity": 0.547,
+      "gen_category": "financial",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R03",
+      "similarity": 0.497,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Increased national and subnational political instability could disrupt policy continuity, cause leadership turnover, and hamper long-term commitment to project activities.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish high-level multi-agency Steering and Consultative Committees with formal legal agreements to maintain institutional momentum across political transitions.",
+      "evidence": "The slowdown has revealed important structural challenges: low productivity and persistent spatial disparities, in addition to increased political instability in recent years."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The Regional Government of Arequipa (GORE) lacks prior experience executing World Bank-financed operations, which could lead to administrative delays and non-compliance with Bank policies.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Deploy Grant Facility for Project Preparation (GFPP) funds for intensive PIU training and early capacity building in fiduciary, environmental, and social management.",
+      "evidence": "Given the lack of experience of the PIU with World Bank or other multilateral-financed projects, targeted capacity building and training... will be required."
+    },
+    {
+      "risk_id": "R03",
+      "description": "High institutional fragmentation across multiple sectoral ministries and local subnational governments could lead to coordination bottlenecks and delayed implementation across the 33 sub-projects.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Institutionalize multi-sectoral coordination via the high-level Steering Committee, Consultative Committee, and formal Interinstitutional Agreements with participating municipalities.",
+      "evidence": "Efficient budgeting and implementation of investments in tourism are hindered by lack of coordination within a highly fragmented institutional landscape"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Delays in negotiating and executing mandatory Interinstitutional Agreements with participating municipalities could trigger disbursement conditions and halt funding for Components 1 and 2.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prioritize early technical assistance and legal support to municipalities during early setup to finalize and sign agreements prior to major procurement activities.",
+      "evidence": "No withdrawals shall be made... until and unless the Bank has received at least three signed Interinstitutional Agreements"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Severe climate events such as floods, mudslides, and landslides from El Ni\u00f1o phenomena could destroy rural road infrastructure, impair access to tourist corridors, and damage heritage assets.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate climate-resilient engineering standards into road and asset designs, including slope stabilization, enhanced drainage systems, and rapid tourist assistance mechanisms.",
+      "evidence": "floods and resulting mudslides weaken transportation infrastructure, road closures impede access to tourism destinations, particularly those most isolated"
+    },
+    {
+      "risk_id": "R06",
+      "description": "High regional seismic activity poses a threat of structural damage or destruction to historic churches, temples, and archaeological sites during or after restoration works.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Utilize traditional, earthquake-resilient restoration techniques, perform pre-intervention structural engineering assessments, and establish site risk management manuals.",
+      "evidence": "The churches were built in the 17th to 19th centuries and are in various states of disrepair, many having suffered earthquake damage."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Elevated road traffic fatality rates in Arequipa could pose safety hazards for local communities and tourists traveling along upgraded rural road networks.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Mandate road safety features in technical designs, including speed calming measures, guardrails, clear signage, pedestrian crossings, and formal road safety audits.",
+      "evidence": "In 2024, Arequipa recorded 11.7 road traffic deaths per 100,000 people, a significantly higher rate than Peru's national average"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Bureaucratic delays in national and subnational budget allocation could result in low budget execution rates and hamper financial disbursements.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Initiate budget allocation procedures in GORE Arequipa immediately upon loan signing and codify expedited budget execution steps in the Project Operational Manual.",
+      "evidence": "In Peru, initial project implementation phases often experience delays in budget allocation and low budget execution rates"
+    },
+    {
+      "risk_id": "R09",
+      "description": "PIU unfamiliarity with World Bank financial management guidelines could lead to accounting errors, reporting discrepancies, or delayed financial audits.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Integrate project accounting into the national SIAF system, hire experienced FM specialists, and conduct independent annual external financial audits.",
+      "evidence": "Inadequate experience with Bank-financed projects may result in errors in financial records and reporting."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Capacity constraints in GORE\u2019s procurement office could slow down bidding, evaluation, and contracting processes across multiple sub-projects.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide early procurement capacity-building to GORE logistics staff via GFPP support and refine the Project Procurement Strategy Document (PPSD) early.",
+      "evidence": "GORE\u2019s \u00c1rea de Log\u00edstica (Logistics office)... will be responsible for the project's procurement."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Delays in recruiting or high turnover among key PIU positions (such as FM, environmental/social, and technical coordinators) could disrupt execution continuity.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish clear competitive terms of reference early and enforce legal covenants requiring appointment of key PIU staff within 60 days of effectiveness.",
+      "evidence": "Delayed recruitment of FM staff... To manage this risk, terms of reference for all the FM positions... will be prepared"
+    },
+    {
+      "risk_id": "R12",
+      "description": "High informal employment in Arequipa's tourism sector could impede accurate monitoring and evaluation of job creation and targeted community benefits.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 2,
+      "mitigation": "Employ innovative remote sensing methodologies, satellite imagery disaggregation, and targeted household surveys to monitor direct and informal tourism labor dynamics.",
+      "evidence": "Measuring the impact of project interventions on jobs is difficult considering the high level of informality, the lack of monitoring of jobs"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Prevalent gender wage gaps, care burdens, and risks of Sexual Exploitation and Abuse / Sexual Harassment (SEA/SH) could suppress women's participation in new economic opportunities.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement a mandatory SEA/SH Action Plan, establish gender-targeted capacity building with local artisan groups, and ensure safe public infrastructure design.",
+      "evidence": "Contributors to the gender gap include... exposure to sexual harassment and exploitation risks"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Insufficient private sector interest or investment in complementary services (hotels, transport, tours) could diminish overall project economic returns and MFD objectives.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Utilize the Maximizing Finance for Development (MFD) framework and Obras por Impuestos tax mechanism to structure public-private investment opportunities and promote local business environment reforms.",
+      "evidence": "both public and private investment remain low... FDI for tourism in Peru was only US$85m in 2023"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate long-term funding and operational planning by municipal/regional entities for completed assets could result in rapid physical degradation of roads, water schemes, and visitor centers.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Require approved Operation & Maintenance (O&M) plans and formal institutional budget commitments prior to the physical handover and completion of infrastructure works.",
+      "evidence": "the project will support arrangements that ensure mechanisms are in place for the ongoing maintenance and sustainability of the improved assets."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Protracted negotiations or delays in formalizing the Project Operations Manual (POM) between GORE Arequipa and MINCETUR could postpone project effectiveness.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use GFPP grant resources to draft the Project Operations Manual prior to effectiveness and conduct early joint review sessions between MINCETUR and GORE Arequipa.",
+      "evidence": "The Project Operations Manual has been adopted by GORE Arequipa, with the no-objection of MINCETUR in a manner satisfactory to the Bank"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Peru is in a period of substantial political uncertainty (low popular support for the executive and Congress, high political fragmentation); a new government assumes office July 2026 and regional elections are scheduled October 2026. Since GORE Arequipa (a regional government) is the implementing agency, regional government changes could slow implementation or shift priorities; high-level changes at MINCETUR could also affect oversight commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Focus on highly needed, consensus-driven investments; maintain buy-in and continuous dialogue with the tourism private sector; engage proactively with any new authorities on project opportunities; use implementation arrangements that are technically strong, highly competent, and relatively shielded from political influence and staff turnover."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Tourism projects are inherently complex, involving infrastructure, capacity building, and multiple government levels/sectors plus private-sector and community stakeholders. Capacity must be built at GORE Arequipa given no precedent for multisectoral regional investment programs in Peru, and historic national-regional coordination weaknesses. The project also does not budget for O&M of delivered sites/infrastructure, which falls to designated stakeholders.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Institutional capacity building via the Project (incl. GFPP) to ready GORE for implementation; World Bank support on PIU composition and key staff selection; coordination arrangements/agreements between the PIU and local partners in charge of operating sites, to align on design, implementation, and handover."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Combined fiduciary risk with GORE Arequipa is Substantial, reflecting the entity's lack of prior experience with World Bank or other MDB-financed operations in both financial management and procurement.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A fiduciary assessment identified capacity gaps and informed mitigation measures; recruit dedicated FM and Procurement Specialists supported by qualified administrative staff; detail minimum FM/procurement procedures aligned with WB requirements in the Project Operational Manual; use SIAF for financial transactions/reporting and STEP for procurement planning/monitoring; targeted WB training, regular fiduciary supervision, and annual audits."
+    },
+    {
+      "risk_id": "R04",
+      "description": "E&S risk reflects the scope/nature of planned interventions, works located in environmentally and culturally sensitive areas, and GORE Arequipa's limited institutional capacity to manage risks per the Environmental and Social Framework (ESF).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthen PIU capacity to manage E&S risks with adequate resources/staffing; elaborate and implement project-level instruments (Stakeholder Engagement Plan, Labor Management Plan, SEA/SH Plan) plus intervention-level instruments with specific mitigation measures."
+    }
+  ]
+}

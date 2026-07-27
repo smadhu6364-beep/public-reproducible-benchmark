@@ -1,0 +1,166 @@
+{
+  "run_file": "P-IND-ChhattisgarhAcceleratedLearning__opensource__few_shot__run1.json",
+  "project_id": "P-IND-ChhattisgarhAcceleratedLearning",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R03",
+      "similarity": 0.584,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R02",
+      "similarity": 0.572,
+      "gen_category": "environmental",
+      "gt_category": "technical",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R04",
+      "similarity": 0.468,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate teacher training and support may hinder the effectiveness of the CHALK program",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Provide comprehensive training and support to teachers, including regular coaching and mentoring",
+      "evidence": "Section II.C, Results Area 1"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient funding may limit the program's ability to achieve its objectives",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Secure sufficient funding through a combination of government and external sources, and ensure efficient use of resources",
+      "evidence": "Section IV, Program Expenditure Framework"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in program implementation may impact the achievement of results",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop a detailed implementation plan with clear timelines and milestones, and regularly monitor progress",
+      "evidence": "Section III.A, Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Limited community engagement and participation may hinder the program's success",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Foster strong relationships with local communities, and ensure their active participation in program planning and implementation",
+      "evidence": "Section II.C, Results Area 3"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Environmental and social risks associated with school infrastructure development may not be adequately addressed",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct thorough environmental and social impact assessments, and develop strategies to mitigate potential risks",
+      "evidence": "Section V, Environmental and Social"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate monitoring and evaluation may limit the program's ability to track progress and achieve results",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a comprehensive monitoring and evaluation framework, and ensure regular data collection and analysis",
+      "evidence": "Section III.B, Results Monitoring and Evaluation"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Dependence on external funding may create sustainability risks",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Develop a plan for long-term financial sustainability, including strategies for securing domestic funding and reducing dependence on external sources",
+      "evidence": "Section IV, Program Expenditure Framework"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Limited capacity of implementing agencies may hinder program implementation",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide training and capacity-building support to implementing agencies, and ensure clear roles and responsibilities",
+      "evidence": "Section III.A, Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Climate change may impact the program's ability to achieve its objectives",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Develop strategies to address climate-related risks, including measures to promote climate-resilient infrastructure and adaptive capacity",
+      "evidence": "Section V, Environmental and Social"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Inequitable access to education may persist, particularly for marginalized groups",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop targeted strategies to address equity gaps, including measures to promote inclusive education and address socio-economic disparities",
+      "evidence": "Section II.C, Results Area 3"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is rated Substantial. State elections are due in December 2023 and the associated large democratic exercise could slow down activities envisioned for the first year of the operation. The window between the operation being declared effective and the state elections is small.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Disruptions are expected to be minimal given that the state intends to initiate work and complete necessary field work and/or data collection well before the elections, and utilize the election period for analysis and training module/materials development. The implementing bodies (SIS-SS, SCERT, SIEMAT, and SAC) will need to move swiftly to realize the state's plans."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Technical Design of operation risk is rated Substantial. Certain context-specific attributes such as topography and underlying community representation in overall enrolment could raise challenges, including barriers to school enrolment such as lack of physical access in sparsely populated areas with poor road connectivity, or high opportunity cost of schooling due to informal-sector employment.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Government of Chhattisgarh has addressed similar challenges in the past through development and rollout of customized solutions; the project will enable planning for residential facilities for students and teachers in model schools in topographically hard-to-reach areas."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Institutional Capacity for Implementation and Sustainability risk is rated Substantial. In some cases, nodal educational institutions lack the expertise to implement technically complex interventions.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Onboarding a Program Management Consultant (PMC) and technical support agencies is expected to significantly reduce the risks involved. Sustainability post-completion will be ensured through careful planning, technical support for capacity building of nodal institutions, and institutionalizing new mechanisms."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk is rated Substantial. Considering the implementing arrangements and diverse capacity across implementing agencies, implementation constraints can be foreseen in public financial management arrangements and compliance with rules and regulations for accountability.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Focused attention in the short/medium term on enhanced effectiveness of planning, budgeting, and fund flow processes; adequacy of staffing and capacity building of fiduciary staff; strengthened monitoring through internal and external independent reviews; timely resolution of independent external review observations; a robust dedicated procurement complaints redressal system; strengthened contract management for delivery of goods and works; and ensuring exclusion of Bank-debarred firms from high-value contracts."
+    }
+  ]
+}
