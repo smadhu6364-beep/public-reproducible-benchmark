@@ -1,0 +1,166 @@
+{
+  "run_file": "P-MEX-SustainableValueChains__opensource__zero_shot__run1.json",
+  "project_id": "P-MEX-SustainableValueChains",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R01",
+      "similarity": 0.583,
+      "gen_category": "organizational",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R04",
+      "similarity": 0.573,
+      "gen_category": "financial",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.554,
+      "gen_category": "political_regulatory",
+      "gt_category": "technical",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate NAFIN capacity to manage environmental and social risks",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide training and capacity building for NAFIN staff on environmental and social risk management",
+      "evidence": "Section III.A.38"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient demand for sustainable finance products from SMEs and mid-caps",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Conduct market research and outreach to SMEs and mid-caps to raise awareness and build demand for sustainable finance products",
+      "evidence": "Section II.D.24"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Inadequate regulatory framework for sustainable finance in Mexico",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Collaborate with government agencies to strengthen regulatory framework and provide technical assistance to support sustainable finance development",
+      "evidence": "Section I.B.7"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Climate-related risks affecting SMEs and mid-caps",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Provide technical assistance and capacity building to SMEs and mid-caps on climate risk management and resilience",
+      "evidence": "Section I.B.19"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Limited access to long-term financing for SMEs and mid-caps",
+      "category": "financial",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop and offer long-term financing products tailored to SMEs and mid-caps, and provide capacity building on financial management and planning",
+      "evidence": "Section I.B.13"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate monitoring and reporting of project results and impacts",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish a robust monitoring and reporting system, and provide training to NAFIN staff on results-based management",
+      "evidence": "Section III.B.40"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Gender disparities in access to finance for women-led businesses",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop and implement a gender strategy to address disparities in access to finance for women-led businesses",
+      "evidence": "Section II.B.46"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate environmental and social risk management by PFIs",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide training and capacity building to PFIs on environmental and social risk management, and establish a system for monitoring and reporting",
+      "evidence": "Section III.A.39"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Limited capacity of SMEs and mid-caps to prepare and implement sustainability plans",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide technical assistance and capacity building to SMEs and mid-caps on sustainability planning and implementation",
+      "evidence": "Section II.D.26"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Inadequate governance and oversight of NAFIN",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Strengthen governance and oversight mechanisms, and provide training to NAFIN staff on governance and risk management",
+      "evidence": "Section III.A.38"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "The Project channels financing to SMEs/mid-caps via NAFIN through Green Loans (GLs) and Sustainability-Linked Loans (SLLs). For GLs, E&S risk is limited (resources go to a pre-screened positive list), but SLLs operate as corporate loans, making site-specific impacts harder to trace and creating risk around traceability of environmental outcomes and possible greenwashing if sustainability targets are weak or under-monitored.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN prepared an Environmental and Social Management System (ESMS) summary covering main E&S risks by key sector, disclosed at appraisal."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Introduction of new financial instruments (notably SLLs) not currently deployed in Mexico, which may lack sufficient demand, drives the technical design risk rating.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Substantial TA to NAFIN, PFIs, and beneficiary enterprises (BEs) to support instrument design/deployment; GFPP grant to advance instrument design during preparation; NAFIN required to prepare and adopt a Sustainable Finance Framework (covering SLLs and GLs) acceptable to the Bank prior to effectiveness; draw on global best practices from comparable SLL facilities; Bank hands-on support during initial deployment."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Project requires close coordination and participation of several stakeholders: different units within NAFIN, participating financial institutions (PFIs), beneficiary enterprises, and large anchor companies heading the green value chains (GVCs).",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Develop and deploy engagement/communication strategies pre-implementation via GFPP plus ongoing TA; establish a dedicated project implementation team within NAFIN with clear roles/responsibilities; formalize PFI participation through legal agreements defining reporting obligations and performance expectations; proactive NAFIN/WB engagement with anchor companies to encourage supplier-firm participation."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Risk that SMEs, mid-caps, and participating financial institutions may not take up the new SLL/GL products at the expected pace or scale, given evolving global sustainability policies, limited familiarity with the instruments, and possible overestimation of market demand.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN business-development efforts for sustainable finance; targeted awareness and capacity-building for potential borrowers; TA to help beneficiary enterprises prepare Sustainability Plans and green investment proposals; monitor product uptake with scope to adjust instrument design/eligibility criteria, subject to Bank approval."
+    }
+  ]
+}

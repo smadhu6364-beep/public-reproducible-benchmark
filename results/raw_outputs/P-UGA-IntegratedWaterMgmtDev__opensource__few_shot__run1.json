@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:18:49.455169+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UGA-IntegratedWaterMgmtDev\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate water resource management may lead to water scarcity and affect the project's objectives.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct thorough water resource assessments and develop strategies for efficient water use.\",\n      \"evidence\": \"Uganda's economy is highly dependent on water resources, yet there is limited cross-sector coordination when planning water-related interventions.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Climate change may impact the project's infrastructure and operations, particularly in areas prone to flooding and droughts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Incorporate climate resilience measures into project design and operations, such as flood-resistant construction and drought-tolerant water sources.\",\n      \"evidence\": \"Uganda is expected to experience increased temperatures, changed precipitation patterns, and more frequent extreme weather events due to climate change.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The project's reliance on international funding may be affected by changes in donor priorities or availability of funds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify funding sources and develop a contingency plan to address potential funding shortfalls.\",\n      \"evidence\": \"The project is funded by international donors, including the World Bank and the African Development Bank.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate institutional capacity and weak governance structures may hinder project implementation and sustainability.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Provide training and capacity-building programs for project staff and stakeholders, and establish clear governance structures and accountability mechanisms.\",\n      \"evidence\": \"The project will be implemented by the Ministry of Water and Environment and the National Water and Sewerage Corporation, which may face capacity constraints.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Social and cultural factors, such as gender and community engagement, may impact project acceptance and effectiveness.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct social and cultural assessments to inform project design and implementation, and engage with local communities to ensure their participation and ownership.\",\n      \"evidence\": \"The project aims to improve access to water and sanitation services, particularly for vulnerable groups such as women and children.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Environmental impacts, such as water pollution and habitat destruction, may result from project activities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct environmental impact assessments and develop strategies to minimize and mitigate potential environmental impacts.\",\n      \"evidence\": \"The project involves the construction of water infrastructure, which may affect aquatic ecosystems and water quality.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The project's focus on small towns and rural growth centers may lead to uneven distribution of benefits and potential disparities in access to services.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure that project design and implementation prioritize equity and inclusivity, and that benefits are distributed fairly among target communities.\",\n      \"evidence\": \"The project aims to improve access to water and sanitation services in small towns and rural growth centers, which may have varying levels of need and capacity.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The project's success may be affected by the performance of the National Water and Sewerage Corporation, which is responsible for implementing and operating the water and sanitation infrastructure.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Establish clear performance metrics and monitoring mechanisms to ensure the NWSC's effective implementation and operation of project activities.\",\n      \"evidence\": \"The NWSC is responsible for implementing and operating the water and sanitation infrastructure, and its performance will impact the project's success.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The project may face challenges in ensuring the sustainability of water and sanitation services, particularly in rural areas with limited resources and capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop strategies for long-term sustainability, including capacity-building programs, community engagement, and innovative financing mechanisms.\",\n      \"evidence\": \"The project aims to improve access to water and sanitation services, but ensuring long-term sustainability will require ongoing support and investment.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The project may be affected by external factors, such as changes in government policies or unexpected events, which may impact project implementation and outcomes.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a risk management plan to identify and mitigate potential external risks, and establish contingency plans to address unexpected events.\",\n      \"evidence\": \"The project is subject to various external factors, including changes in government policies, economic conditions, and unexpected events.\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UGA-IntegratedWaterMgmtDev",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate water resource management may lead to water scarcity and affect the project's objectives.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct thorough water resource assessments and develop strategies for efficient water use.",
+        "evidence": "Uganda's economy is highly dependent on water resources, yet there is limited cross-sector coordination when planning water-related interventions."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Climate change may impact the project's infrastructure and operations, particularly in areas prone to flooding and droughts.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Incorporate climate resilience measures into project design and operations, such as flood-resistant construction and drought-tolerant water sources.",
+        "evidence": "Uganda is expected to experience increased temperatures, changed precipitation patterns, and more frequent extreme weather events due to climate change."
+      },
+      {
+        "risk_id": "R03",
+        "description": "The project's reliance on international funding may be affected by changes in donor priorities or availability of funds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Diversify funding sources and develop a contingency plan to address potential funding shortfalls.",
+        "evidence": "The project is funded by international donors, including the World Bank and the African Development Bank."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate institutional capacity and weak governance structures may hinder project implementation and sustainability.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Provide training and capacity-building programs for project staff and stakeholders, and establish clear governance structures and accountability mechanisms.",
+        "evidence": "The project will be implemented by the Ministry of Water and Environment and the National Water and Sewerage Corporation, which may face capacity constraints."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Social and cultural factors, such as gender and community engagement, may impact project acceptance and effectiveness.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct social and cultural assessments to inform project design and implementation, and engage with local communities to ensure their participation and ownership.",
+        "evidence": "The project aims to improve access to water and sanitation services, particularly for vulnerable groups such as women and children."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Environmental impacts, such as water pollution and habitat destruction, may result from project activities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct environmental impact assessments and develop strategies to minimize and mitigate potential environmental impacts.",
+        "evidence": "The project involves the construction of water infrastructure, which may affect aquatic ecosystems and water quality."
+      },
+      {
+        "risk_id": "R07",
+        "description": "The project's focus on small towns and rural growth centers may lead to uneven distribution of benefits and potential disparities in access to services.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Ensure that project design and implementation prioritize equity and inclusivity, and that benefits are distributed fairly among target communities.",
+        "evidence": "The project aims to improve access to water and sanitation services in small towns and rural growth centers, which may have varying levels of need and capacity."
+      },
+      {
+        "risk_id": "R08",
+        "description": "The project's success may be affected by the performance of the National Water and Sewerage Corporation, which is responsible for implementing and operating the water and sanitation infrastructure.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Establish clear performance metrics and monitoring mechanisms to ensure the NWSC's effective implementation and operation of project activities.",
+        "evidence": "The NWSC is responsible for implementing and operating the water and sanitation infrastructure, and its performance will impact the project's success."
+      },
+      {
+        "risk_id": "R09",
+        "description": "The project may face challenges in ensuring the sustainability of water and sanitation services, particularly in rural areas with limited resources and capacity.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop strategies for long-term sustainability, including capacity-building programs, community engagement, and innovative financing mechanisms.",
+        "evidence": "The project aims to improve access to water and sanitation services, but ensuring long-term sustainability will require ongoing support and investment."
+      },
+      {
+        "risk_id": "R10",
+        "description": "The project may be affected by external factors, such as changes in government policies or unexpected events, which may impact project implementation and outcomes.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a risk management plan to identify and mitigate potential external risks, and establish contingency plans to address unexpected events.",
+        "evidence": "The project is subject to various external factors, including changes in government policies, economic conditions, and unexpected events."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,108 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:57:32.826743+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-STP-YouthEmployment\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate capacity of training institutions to deliver high-quality, market-relevant training\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and equipment to upgrade the capacity of training institutions\",\n      \"evidence\": \"Section II.D.12\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient alignment between workforce skills and employer needs in priority sectors\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish workforce development committees to review training offerings and identify skills gaps\",\n      \"evidence\": \"Section II.D.11\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Limited access to finance for MSMEs, constraining their ability to create jobs\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide grant financing to support MSME productivity and expansion\",\n      \"evidence\": \"Section II.D.42\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays in project implementation due to multiple stakeholders involved\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a coordination committee to oversee project implementation\",\n      \"evidence\": \"Section III.A.50\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Risk of exclusion of marginalized groups from project benefits\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Apply gender-responsive enrollment targets and outreach strategies\",\n      \"evidence\": \"Section II.D.40\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Non-compliance with environmental and social safeguards\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct environmental and social assessments, and establish a grievance redress mechanism\",\n      \"evidence\": \"Section IV.C.58\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate institutional capacity to manage project funds and implement activities\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building support to project staff and implementing agencies\",\n      \"evidence\": \"Section III.A.49\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"External factors such as climate change and economic shocks affecting project implementation\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a contingency plan to address potential external risks and shocks\",\n      \"evidence\": \"Section IV.C.61\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Risk of sexual exploitation and abuse (SEA) and sexual harassment (SH) of project beneficiaries\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Establish a grievance redress mechanism and provide training on SEA/SH prevention\",\n      \"evidence\": \"Section IV.C.59\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Limited access to data and information on labor market needs and trends\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a labor market information system to provide data and analysis\",\n      \"evidence\": \"Section II.D.32\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-STP-YouthEmployment",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate capacity of training institutions to deliver high-quality, market-relevant training",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and equipment to upgrade the capacity of training institutions",
+        "evidence": "Section II.D.12"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient alignment between workforce skills and employer needs in priority sectors",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish workforce development committees to review training offerings and identify skills gaps",
+        "evidence": "Section II.D.11"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Limited access to finance for MSMEs, constraining their ability to create jobs",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide grant financing to support MSME productivity and expansion",
+        "evidence": "Section II.D.42"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays in project implementation due to multiple stakeholders involved",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a coordination committee to oversee project implementation",
+        "evidence": "Section III.A.50"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Risk of exclusion of marginalized groups from project benefits",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Apply gender-responsive enrollment targets and outreach strategies",
+        "evidence": "Section II.D.40"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Non-compliance with environmental and social safeguards",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct environmental and social assessments, and establish a grievance redress mechanism",
+        "evidence": "Section IV.C.58"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate institutional capacity to manage project funds and implement activities",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building support to project staff and implementing agencies",
+        "evidence": "Section III.A.49"
+      },
+      {
+        "risk_id": "R08",
+        "description": "External factors such as climate change and economic shocks affecting project implementation",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop a contingency plan to address potential external risks and shocks",
+        "evidence": "Section IV.C.61"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Risk of sexual exploitation and abuse (SEA) and sexual harassment (SH) of project beneficiaries",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Establish a grievance redress mechanism and provide training on SEA/SH prevention",
+        "evidence": "Section IV.C.59"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Limited access to data and information on labor market needs and trends",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a labor market information system to provide data and analysis",
+        "evidence": "Section II.D.32"
+      }
+    ]
+  },
+  "parse_error": null
+}

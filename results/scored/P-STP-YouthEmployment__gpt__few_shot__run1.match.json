@@ -1,0 +1,230 @@
+{
+  "run_file": "P-STP-YouthEmployment__gpt__few_shot__run1.json",
+  "project_id": "P-STP-YouthEmployment",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R04",
+      "similarity": 0.606,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R18",
+      "gt_risk_id": "R02",
+      "similarity": 0.535,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Construction of the new training center on Pr\u00edncipe may be delayed due to procurement and weather-related challenges.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Adopt accelerated procurement, include contingency timelines, use modular construction, and monitor weather forecasts closely.",
+      "evidence": "Construction of a new multi-use technical training center... adjustments will be managed within the project\u2019s procurement plan."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Existing training institutions may lack adequate equipment, infrastructure, and staff to deliver quality market\u2011aligned training.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Upgrade equipment, fund instructor upskilling, provide performance\u2011based compensation, and monitor capacity against a standardized checklist.",
+      "evidence": "Capacity remains constrained... outdated equipment, limited infrastructure, staffing gaps."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The labor market information system and Employability Portal may not become fully operational, limiting job matching.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Assign dedicated IT staff, pilot test modules, ensure integration with USR and social security databases, and set clear rollout milestones.",
+      "evidence": "Employment Observatory never fully operationalized; digital Employability Portal never launched."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Beneficiary selection could exclude the most vulnerable or be captured by elites, reducing equity.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use USR data for transparent criteria, conduct independent verification, and strengthen the grievance redress mechanism.",
+      "evidence": "Risks of exclusion... if project benefits are not equitably distributed, elite capture."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Risk of sexual exploitation, abuse or harassment (SEA/SH) for young women participating in training and internships.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Enforce GBV/SEA policies, provide safe training locations, child\u2011care support, and a confidential reporting system.",
+      "evidence": "Risk of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Delays and weaknesses in financial management could impede timely payments to beneficiaries.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Appoint an experienced accountant, customize the accounting system, conduct regular internal audits, and provide staff capacity building.",
+      "evidence": "FM risks identified include delays in recording financial transactions and generating financial reports."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Procurement processes may stall due to insufficient coordination between AFAP and line ministries.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Create a joint procurement task force, define clear TORs and timelines, and conduct coordination workshops.",
+      "evidence": "Key factor for good procurement performance will be ability of AFAP and the MLSSS to work in close collaboration."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Climate\u2011related hazards (floods, storms) could disrupt training delivery and construction activities.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement climate\u2011resilient designs, install backup generators, schedule activities flexibly, and activate the CERC if needed.",
+      "evidence": "STP vulnerable to coastal floods, severe storms... may cause disruptions in service delivery."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Activation of the Contingent Emergency Response Component may be delayed or lack sufficient funds.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Finalize the CERC manual before effectiveness, pre\u2011identify trigger criteria, and retain a reserve fund for rapid use.",
+      "evidence": "CERC manual to be prepared after project effectiveness; activation follows procedures."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Training outputs may not match evolving private\u2011sector demand, reducing employment outcomes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain active Workforce Development Committees, use real\u2011time labor market data to adjust curricula, and conduct quarterly employer surveys.",
+      "evidence": "Employers will be engaged in defining priority skills... to review training offerings."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Labor\u2011mobility pathways could be hindered by policy changes in destination countries such as Portugal.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Diversify destination partnerships, monitor migration policies, and embed flexible MOUs covering multiple jurisdictions.",
+      "evidence": "Labor mobility approach depends on partnerships with overseas employers; risk of policy changes."
+    },
+    {
+      "risk_id": "R12",
+      "description": "The Project Implementation Unit may lack sufficient skilled staff, leading to fragmented execution.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Recruit two senior specialists and two assistants as planned, provide onboarding training, and establish clear reporting lines.",
+      "evidence": "PIU will be reinforced with additional consultants; single PIU Coordinator will oversee implementation."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Corruption or fraud in grant and stipend disbursements could undermine project credibility.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement electronic payments, conduct independent audits, publish beneficiary lists, and enforce the grievance redress mechanism.",
+      "evidence": "Guidelines on Preventing and Combating Fraud and Corruption in Projects will be applied."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Scholarship and grant amounts may be insufficient to cover transport and living costs, causing drop\u2011outs.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Periodically review cost surveys, adjust stipend levels, and provide additional transport vouchers where needed.",
+      "evidence": "Scholarships up to US$1,000; may not fully cover transportation, accommodation."
+    },
+    {
+      "risk_id": "R15",
+      "description": "The new training center may fail to achieve EDGE certification, increasing operational carbon emissions.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Engage certified green\u2011design consultants, monitor compliance during construction, and install energy\u2011efficient systems.",
+      "evidence": "Aim to meet at least Level 1 of IFC\u2019s EDGE certification."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Delay in completing the impact evaluation could limit learning and evidence generation.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Contract the evaluation firm early, set interim deliverables, and allocate dedicated budget for timely completion.",
+      "evidence": "Component 3 will finance an impact evaluation; evaluation to be completed end of project."
+    },
+    {
+      "risk_id": "R17",
+      "description": "High turnover of newly hired instructors may erode training quality over time.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Offer competitive contracts, continuous professional development, and retention bonuses tied to performance.",
+      "evidence": "Need to contract additional instructors; financing instructor upskilling, retraining."
+    },
+    {
+      "risk_id": "R18",
+      "description": "External economic shocks (fuel price volatility, pandemic resurgence) could reduce private\u2011sector hiring capacity.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversify sector focus, include flexible internship placements, and build resilience through climate\u2011smart skill training.",
+      "evidence": "STP\u2019s economy affected by COVID\u201119, fuel and food import cost volatility."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections. Success depends on sustained coordination across labor, education, tourism, agriculture, and finance ministries plus private-sector engagement.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Anchor the project within MLSSS (core employment-promotion mandate); strengthen technical ownership at directorate level rather than relying on political leadership; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events), which may weaken labor demand, reduce firms' absorption capacity, and constrain the Government's ability to sustain recurrent-cost interventions (training, stipends, employment services).",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Prioritize low-cost, scalable interventions; combine supply-side investments with direct job-creation support; target sectors with growth potential and external demand linkages (incl. labor mobility); coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination; sustainability risk if new systems/programs are not institutionalized within government structures and budgets.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures (existing MLSSS PIU, coordination committee, AFAP for fiduciary/safeguards); finance targeted TA and staffing; invest in durable institutional assets (labor-market information system, employability portal, strengthened training institutions, formalized service-provider arrangements); use the learning agenda and impact evaluation to identify cost-effective interventions for scale-up."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Agree ToRs and technical specifications between AFAP and the World Bank before initiating any procurement (prior and post-review); reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual; continue and adapt the risk assessment during implementation."
+    }
+  ]
+}

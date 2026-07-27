@@ -1,0 +1,246 @@
+{
+  "run_file": "P-MEX-SustainableValueChains__gpt__zero_shot__run2.json",
+  "project_id": "P-MEX-SustainableValueChains",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R01",
+      "similarity": 0.588,
+      "gen_category": "political_regulatory",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R03",
+      "similarity": 0.579,
+      "gen_category": "stakeholder",
+      "gt_category": "stakeholder",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R14",
+      "gt_risk_id": "R04",
+      "similarity": 0.504,
+      "gen_category": "organizational",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R02",
+      "similarity": 0.482,
+      "gen_category": "technical",
+      "gt_category": "technical",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Low market uptake of the newly introduced Sustainability\u2011Linked and Green Loans may limit financing reach.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Run targeted outreach and pilot incentives; partner with anchor firms to create demand for sustainable loans.",
+      "evidence": "Section 7: first systematic application of SLLs in Mexico; market for sustainable finance remains nascent and concentrated among large corporations."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Participating Financial Institutions lack capacity to design, appraise and monitor green loan portfolios.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide dedicated technical assistance, standardized appraisal tools and training workshops for PFIs.",
+      "evidence": "Section 15: limited capacity of Mexican financial institutions to design, originate, appraise and monitor green loans."
+    },
+    {
+      "risk_id": "R03",
+      "description": "High Monitoring, Reporting and Verification (MRV) costs deter SMEs from applying for sustainable finance.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Subsidize MRV expenses, develop a shared verification platform and simplify reporting templates.",
+      "evidence": "Section 15: high Monitoring, Reporting and Verification (MRV) costs and limited capacity hinder SME loan uptake."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Credit risk of beneficiary enterprises could lead to loan defaults and affect project financial viability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Apply rigorous credit assessments, require co\u2011financing, and use step\u2011down pricing incentives tied to performance.",
+      "evidence": "Section 30: NAFIN assumes credit risk of BEs; Section 19 notes extreme temperatures raise loan delinquency rates."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Physical climate hazards (heatwaves, floods) may impair SME operations and repayment capacity.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Integrate climate\u2011resilience criteria in loan eligibility and offer insurance or contingency funding for high\u2011risk firms.",
+      "evidence": "Section 19: Mexico faces significant climate vulnerability; extreme weather increases operational costs and financial distress for SMEs."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Insufficient co\u2011financing from firms or PFIs could limit the amount of private capital mobilized.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Enforce minimum co\u2011financing thresholds, provide matching grant incentives, and engage private investors early in pipeline development.",
+      "evidence": "Sections 28\u201129: require minimum 20% co\u2011financing from BEs and 30% from PFIs for sub\u2011projects."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Gender gap in access to finance may reduce participation of women\u2011led enterprises, undermining inclusive outcomes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Set gender\u2011inclusive eligibility criteria, allocate a quota for women\u2011led firms, and run gender\u2011focused outreach campaigns.",
+      "evidence": "Section 46: 14% gender gap in finance; women\u2011owned firms have lower credit access."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Risk of greenwashing if sustainability plans are not properly validated, compromising environmental integrity.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Mandate independent ex\u2011ante validation and ex\u2011post verification for all sustainability plans; conduct random audits.",
+      "evidence": "Section on SLL validation: ex\u2011ante validation and ex\u2011post verification required to mitigate greenwashing risk."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Procurement capacity gaps at NAFIN may delay contract award and implementation of TA activities.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint a qualified internal procurement professional and provide hands\u2011on training with World Bank support.",
+      "evidence": "Section 57\u201158: NAFIN staff lack direct procurement experience; internal procurement professional to be appointed."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Fiduciary risk from reliance on legacy manual financial systems could cause errors or delays in fund tracking.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Upgrade FM systems, automate reconciliations, and conduct periodic internal and external audits.",
+      "evidence": "Section 54\u201155: residual FM risk moderate; efficiency constraints from legacy manual systems."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Changes to the Sustainable Taxonomy or ESG standards may affect eligibility of projects and loan terms.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Monitor policy developments, keep eligibility criteria flexible, and maintain dialogue with regulators and taxonomy authorities.",
+      "evidence": "Section 7: Sustainable Taxonomy provides criteria but policy may evolve, affecting eligibility."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Shift in government priorities could reduce political support or funding for the project.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Secure formal commitments through memoranda of understanding and align project outputs with national development plans.",
+      "evidence": "Section 2.A.2: Plan M\u00e9xico launched 2025; new administration may shift priorities."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Anchor companies may not demand sustainable suppliers, limiting the incentive for firms to adopt green practices.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Engage anchor firms early, develop supplier\u2011development programs, and link financing to procurement contracts.",
+      "evidence": "Section 9\u201110: anchor companies expect sustainable suppliers; many SMEs not prepared."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Complex coordination among NAFIN, PFIs and the World Bank could cause implementation delays.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear governance structures, regular coordination meetings, and documented decision\u2011making protocols.",
+      "evidence": "Section 38\u201139: Project Implementation Team coordinates NAFIN, PFIs, WB; coordination risks noted."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Substantial environmental and social risk classification may trigger compliance challenges and project delays.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement a robust ESMS, conduct thorough due diligence, and monitor compliance with regular reporting.",
+      "evidence": "Section 60: Environmental and Social risk classified as Substantial."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Currency fluctuations could affect the real cost of MXN\u2011denominated loans for borrowers and lenders.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Use FX swaps to hedge exposure and limit the share of USD\u2011denominated loans.",
+      "evidence": "Section 31: NAFIN will manage FX risk using Mexico\u2019s currency swap market."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Failure to mobilize the targeted US$89\u202fmillion of private capital would reduce overall impact.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop a pipeline of bankable projects, offer de\u2011risking instruments, and engage private investors early.",
+      "evidence": "Section 28: project aims to mobilize US$89\u202fmillion private capital; shortfall risk."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Weak anti\u2011corruption controls could expose the project to fraud or reputational damage.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Strengthen anti\u2011corruption policies, train staff, and implement a whistle\u2011blower mechanism with regular audits.",
+      "evidence": "Loan Agreement sections require compliance with Anti\u2011Corruption Guidelines and fraud detection provisions."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "The Project channels financing to SMEs/mid-caps via NAFIN through Green Loans (GLs) and Sustainability-Linked Loans (SLLs). For GLs, E&S risk is limited (resources go to a pre-screened positive list), but SLLs operate as corporate loans, making site-specific impacts harder to trace and creating risk around traceability of environmental outcomes and possible greenwashing if sustainability targets are weak or under-monitored.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN prepared an Environmental and Social Management System (ESMS) summary covering main E&S risks by key sector, disclosed at appraisal."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Introduction of new financial instruments (notably SLLs) not currently deployed in Mexico, which may lack sufficient demand, drives the technical design risk rating.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Substantial TA to NAFIN, PFIs, and beneficiary enterprises (BEs) to support instrument design/deployment; GFPP grant to advance instrument design during preparation; NAFIN required to prepare and adopt a Sustainable Finance Framework (covering SLLs and GLs) acceptable to the Bank prior to effectiveness; draw on global best practices from comparable SLL facilities; Bank hands-on support during initial deployment."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Project requires close coordination and participation of several stakeholders: different units within NAFIN, participating financial institutions (PFIs), beneficiary enterprises, and large anchor companies heading the green value chains (GVCs).",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Develop and deploy engagement/communication strategies pre-implementation via GFPP plus ongoing TA; establish a dedicated project implementation team within NAFIN with clear roles/responsibilities; formalize PFI participation through legal agreements defining reporting obligations and performance expectations; proactive NAFIN/WB engagement with anchor companies to encourage supplier-firm participation."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Risk that SMEs, mid-caps, and participating financial institutions may not take up the new SLL/GL products at the expected pace or scale, given evolving global sustainability policies, limited familiarity with the instruments, and possible overestimation of market demand.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN business-development efforts for sustainable finance; targeted awareness and capacity-building for potential borrowers; TA to help beneficiary enterprises prepare Sustainability Plans and green investment proposals; monitor product uptake with scope to adjust instrument design/eligibility criteria, subject to Bank approval."
+    }
+  ]
+}

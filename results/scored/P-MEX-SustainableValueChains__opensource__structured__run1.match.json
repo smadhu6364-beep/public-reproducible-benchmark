@@ -1,0 +1,50 @@
+{
+  "run_file": "P-MEX-SustainableValueChains__opensource__structured__run1.json",
+  "project_id": "P-MEX-SustainableValueChains",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "The Project channels financing to SMEs/mid-caps via NAFIN through Green Loans (GLs) and Sustainability-Linked Loans (SLLs). For GLs, E&S risk is limited (resources go to a pre-screened positive list), but SLLs operate as corporate loans, making site-specific impacts harder to trace and creating risk around traceability of environmental outcomes and possible greenwashing if sustainability targets are weak or under-monitored.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN prepared an Environmental and Social Management System (ESMS) summary covering main E&S risks by key sector, disclosed at appraisal."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Introduction of new financial instruments (notably SLLs) not currently deployed in Mexico, which may lack sufficient demand, drives the technical design risk rating.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Substantial TA to NAFIN, PFIs, and beneficiary enterprises (BEs) to support instrument design/deployment; GFPP grant to advance instrument design during preparation; NAFIN required to prepare and adopt a Sustainable Finance Framework (covering SLLs and GLs) acceptable to the Bank prior to effectiveness; draw on global best practices from comparable SLL facilities; Bank hands-on support during initial deployment."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Project requires close coordination and participation of several stakeholders: different units within NAFIN, participating financial institutions (PFIs), beneficiary enterprises, and large anchor companies heading the green value chains (GVCs).",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Develop and deploy engagement/communication strategies pre-implementation via GFPP plus ongoing TA; establish a dedicated project implementation team within NAFIN with clear roles/responsibilities; formalize PFI participation through legal agreements defining reporting obligations and performance expectations; proactive NAFIN/WB engagement with anchor companies to encourage supplier-firm participation."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Risk that SMEs, mid-caps, and participating financial institutions may not take up the new SLL/GL products at the expected pace or scale, given evolving global sustainability policies, limited familiarity with the instruments, and possible overestimation of market demand.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN business-development efforts for sustainable finance; targeted awareness and capacity-building for potential borrowers; TA to help beneficiary enterprises prepare Sustainability Plans and green investment proposals; monitor product uptake with scope to adjust instrument design/eligibility criteria, subject to Bank approval."
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "run_file": "P-UGA-IntegratedWaterMgmtDev__opensource__few_shot__run1.json",
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R01",
+      "similarity": 0.605,
+      "gen_category": "external",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R05",
+      "similarity": 0.573,
+      "gen_category": "organizational",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R02",
+      "similarity": 0.568,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R04",
+      "similarity": 0.461,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate water resource management may lead to water scarcity and affect the project's objectives.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conduct thorough water resource assessments and develop strategies for efficient water use.",
+      "evidence": "Uganda's economy is highly dependent on water resources, yet there is limited cross-sector coordination when planning water-related interventions."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Climate change may impact the project's infrastructure and operations, particularly in areas prone to flooding and droughts.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Incorporate climate resilience measures into project design and operations, such as flood-resistant construction and drought-tolerant water sources.",
+      "evidence": "Uganda is expected to experience increased temperatures, changed precipitation patterns, and more frequent extreme weather events due to climate change."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The project's reliance on international funding may be affected by changes in donor priorities or availability of funds.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversify funding sources and develop a contingency plan to address potential funding shortfalls.",
+      "evidence": "The project is funded by international donors, including the World Bank and the African Development Bank."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate institutional capacity and weak governance structures may hinder project implementation and sustainability.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Provide training and capacity-building programs for project staff and stakeholders, and establish clear governance structures and accountability mechanisms.",
+      "evidence": "The project will be implemented by the Ministry of Water and Environment and the National Water and Sewerage Corporation, which may face capacity constraints."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Social and cultural factors, such as gender and community engagement, may impact project acceptance and effectiveness.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conduct social and cultural assessments to inform project design and implementation, and engage with local communities to ensure their participation and ownership.",
+      "evidence": "The project aims to improve access to water and sanitation services, particularly for vulnerable groups such as women and children."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Environmental impacts, such as water pollution and habitat destruction, may result from project activities.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct environmental impact assessments and develop strategies to minimize and mitigate potential environmental impacts.",
+      "evidence": "The project involves the construction of water infrastructure, which may affect aquatic ecosystems and water quality."
+    },
+    {
+      "risk_id": "R07",
+      "description": "The project's focus on small towns and rural growth centers may lead to uneven distribution of benefits and potential disparities in access to services.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Ensure that project design and implementation prioritize equity and inclusivity, and that benefits are distributed fairly among target communities.",
+      "evidence": "The project aims to improve access to water and sanitation services in small towns and rural growth centers, which may have varying levels of need and capacity."
+    },
+    {
+      "risk_id": "R08",
+      "description": "The project's success may be affected by the performance of the National Water and Sewerage Corporation, which is responsible for implementing and operating the water and sanitation infrastructure.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish clear performance metrics and monitoring mechanisms to ensure the NWSC's effective implementation and operation of project activities.",
+      "evidence": "The NWSC is responsible for implementing and operating the water and sanitation infrastructure, and its performance will impact the project's success."
+    },
+    {
+      "risk_id": "R09",
+      "description": "The project may face challenges in ensuring the sustainability of water and sanitation services, particularly in rural areas with limited resources and capacity.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop strategies for long-term sustainability, including capacity-building programs, community engagement, and innovative financing mechanisms.",
+      "evidence": "The project aims to improve access to water and sanitation services, but ensuring long-term sustainability will require ongoing support and investment."
+    },
+    {
+      "risk_id": "R10",
+      "description": "The project may be affected by external factors, such as changes in government policies or unexpected events, which may impact project implementation and outcomes.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a risk management plan to identify and mitigate potential external risks, and establish contingency plans to address unexpected events.",
+      "evidence": "The project is subject to various external factors, including changes in government policies, economic conditions, and unexpected events."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk: as detailed in the CPF, significant political uncertainty is not foreseen, but governance and effective public-sector management present substantial risks.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project will mitigate these risks through (a) strengthening the MWE's regulatory framework; (b) carrying out a citizen engagement strategy; and (c) strengthening project implementation efforts in close coordination with local government officials and development partners. The World Bank's procurement processes will also help safeguard the Project from corruption."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risk: the Umbrella Water Authority (UWA) as a regional service delivery model for small towns and RGCs was recently introduced. Although the decision to scale up this model was informed by extensive analytical work and a pilot project, the UWA model was only recently operationalized.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project will support implementation of a professionalized monitoring system focused on enhancing revenue collection approaches (billing software, cashless/mobile payment systems) and on strengthening integration of specialized private operators through improved contract management. The implementation team will use the Utility Performance Monitoring and Information System (UPMIS) tool to regularly review UWA and NWSC performance."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk: the Procurement risk is rated Substantial while the FM risk is Moderate. The risks identified relate to delays and skills gaps at different stages of procurement processing.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "IWMDP will benefit from the lessons learned and mechanisms put in place under the predecessor project (WMDP); detailed mitigation measures for the procurement risk are set out in the Appraisal (Procurement) section."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The environmental and social risk is deemed Substantial given (a) potential opposition to the introduction of a new service delivery model, including new tariffs and catchment management measures; (b) the influx of new workers in small towns and RGCs; and (c) potentially adverse environmental impacts from the construction and operation of the proposed investments.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The environmental and social risk will be managed through the application of an Environmental and Social Management Framework (ESMF), a Resettlement Policy Framework (RPF), and related safeguards instruments (Environmental and Social Impact Assessment, Resettlement Action Plans)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks (social tensions in districts hosting refugees): tensions between refugees and citizens are caused by inequity in access to and payment for water supply and sanitation (WSS) services. While refugees in the settlements benefit from humanitarian aid and GoU support, Ugandans in host communities receive limited support for services and infrastructure, causing social tension that may result in Project implementation delays given potential community opposition to the works.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The GoU has prioritized development efforts for poor districts hosting refugees while remaining firmly committed to its policy on refugee protection. The Project will manage this risk by designing WSS facilities and catchment management measures that benefit both host communities and refugees, and by ensuring the Project's social and communication management plan is applied and adequately supervised. There are no known existing risks to the refugee protection framework or reputational risks for the Project."
+    }
+  ]
+}

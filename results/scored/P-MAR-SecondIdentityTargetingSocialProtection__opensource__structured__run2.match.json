@@ -1,0 +1,23 @@
+{
+  "run_file": "P-MAR-SecondIdentityTargetingSocialProtection__opensource__structured__run2.json",
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Stakeholder risk is assessed as Substantial. Given the complex nature of the operation and the involvement of multiple stakeholders in the implementation of the National Population Register (NPR) and the Social Registry (SR), the Project Management Unit (PMU) will need to put considerable effort into ensuring better coordination to achieve the PDO. The national rollout and the improvement of the NPR and the SR will need strong stakeholder engagement, including citizens concerned by social protection programs who are often poor and vulnerable.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The communication strategy will continue to inform all stakeholders involved in project implementation and will capitalize on lessons learned from the first Identity and Targeting for Social Protection project (P155198). The PMU envisions improving the grievance mechanism at local and national levels and establishing a system to promote citizen engagement and transparency. The Inter-Ministerial Steering Committee is responsible for developing guidelines for the strategic policy for the envisaged reform and ensuring a link with the ongoing social protection reform. Technical work will also cover a process evaluation to identify challenges, propose remedies, and provide recommendations to enhance system implementation at central and local levels."
+    }
+  ]
+}

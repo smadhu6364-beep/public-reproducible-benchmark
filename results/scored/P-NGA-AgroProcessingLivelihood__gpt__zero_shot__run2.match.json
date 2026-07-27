@@ -1,0 +1,255 @@
+{
+  "run_file": "P-NGA-AgroProcessingLivelihood__gpt__zero_shot__run2.json",
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R06",
+      "similarity": 0.618,
+      "gen_category": "stakeholder",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R05",
+      "similarity": 0.611,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R08",
+      "similarity": 0.589,
+      "gen_category": "stakeholder",
+      "gt_category": "stakeholder",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R07",
+      "similarity": 0.501,
+      "gen_category": "stakeholder",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delay in establishing State Coordination Offices (SCOs) in new participating states could slow project start\u2011up and coordination.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Accelerate recruitment and provide temporary second\u2011ment staff; set clear milestones for SCO activation and monitor progress monthly.",
+      "evidence": "Section IV.1 \u2013 establishment of State Coordination Offices (SCOs) for new states (e.g., Kogi)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Limited procurement capacity in several states may lead to non\u2011compliant or delayed procurements.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deploy the procurement consultant to train and mentor state procurement officers; use standardized procurement templates and enforce pre\u2011qualification checks.",
+      "evidence": "Section IV.C \u2013 procurement capacity is low and many states lack procurement tools."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Unretired travel advances and poor documentation could cause fiduciary loss or audit findings.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement the enhanced accountability framework in the Financial Procedures Manual; conduct quarterly internal audits of travel expenses.",
+      "evidence": "Section III.3 \u2013 key issues: unretired advances and inadequate documentation of eligible expenditures."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Beneficiaries may be unable to meet the in\u2011kind matching contribution for grant\u2011based technology adoption, reducing uptake.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Offer flexible cash\u2011in\u2011kind options, micro\u2011credit for matching contributions, and clear communication of eligibility during outreach.",
+      "evidence": "Section III.1 \u2013 matching grant mechanism requires in\u2011kind contribution from beneficiaries."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Use of fertilizers and pesticides could contaminate soil and water, breaching environmental safeguards.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Enforce Integrated Pest Management Plan; conduct regular soil\u2011water monitoring and provide training on correct input handling.",
+      "evidence": "Section VI.99 \u2013 potential contamination from agricultural chemical inputs."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Infrastructure works may trigger involuntary resettlement disputes, causing delays and social tension.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Apply Resettlement Policy Framework proactively; conduct early community consultations and compensate eligible persons promptly.",
+      "evidence": "Section VI.d \u2013 Involuntary Resettlement safeguard activated for infrastructure investments."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Target of 35% women beneficiaries may not be reached, limiting gender equity outcomes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Set gender\u2011specific selection quotas, monitor gender tracker quarterly, and provide additional outreach to women farmer groups.",
+      "evidence": "Section II.2 \u2013 35% of direct beneficiaries expected to be women."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Project financial returns are sensitive to a >10% fall in commodity prices, risking economic viability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Include price\u2011risk hedging mechanisms, diversify supported value chains, and adjust grant sizes if market prices decline sharply.",
+      "evidence": "Section VIII.80 \u2013 10% reduction in benefits turns NPV negative for all crops."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Security challenges in the North East and Niger Delta could interrupt field activities and logistics.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Coordinate with security agencies, adjust field schedules, and allocate contingency budget for security\u2011related disruptions.",
+      "evidence": "Section I.5 \u2013 government focusing on improving security in North East and Niger Delta."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Disbursement may be delayed pending legal ratification of subsidiary agreements and SCO establishment as required by IDA conditions.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Prepare draft subsidiary agreements and SCO establishment evidence in parallel with project preparation; obtain provisional approvals early.",
+      "evidence": "PAD Data Sheet \u2013 disbursement conditions require ratified subsidiary agreements and evidence of SCOs."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Weaknesses in M&E data collection could compromise monitoring of results and impact evaluation.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Standardize data collection templates, train SCO M&E officers, and conduct periodic data quality audits by an independent firm.",
+      "evidence": "Section IV.2 \u2013 M&E system relies on MIS, third\u2011party support, and capacity building."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Insufficient off\u2011taker or buyer participation may limit the effectiveness of business alliances and out\u2011grower schemes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage private\u2011sector chambers early, sign pre\u2011commitment memoranda with large processors, and provide market\u2011linkage incentives.",
+      "evidence": "Section III.21 \u2013 business alliances depend on contracts between producers and off\u2011takers."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Projected climate\u2011smart practices may not be fully adopted, reducing expected GHG mitigation benefits.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Integrate climate\u2011smart modules into extension packages, monitor adoption rates, and reward high adopters with additional grants.",
+      "evidence": "Section VI.86 \u2013 project constitutes a carbon sink through improved CSA practices."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Cost overruns in road and infrastructure construction could exhaust allocated budgets.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Apply contingency allowance of 10% to infrastructure line items; conduct independent cost audits and enforce fixed\u2011price contracts where possible.",
+      "evidence": "Section III.28 \u2013 infrastructure support includes design and construction of access roads and utilities."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Potential fraud, collusion or corruption in procurement could damage project reputation and waste resources.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Strict adherence to anti\u2011corruption guidelines, public posting of award notices, and random procurement spot\u2011checks by the World Bank team.",
+      "evidence": "Section IV.48 \u2013 procurement must comply with anti\u2011corruption guidelines and require de\u2011briefing of unsuccessful bidders."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk has been rated Substantial. Coordination of externally funded projects' responsibilities between the federal and state levels is a complex phenomenon, and incomprehension or misinterpretation at any level can affect the project implementation negatively.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A communication strategy, supported by the project, will ensure that transparency is maintained at all levels of project management and implementation, and the participation of beneficiaries remains at the core of the project."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risks are rated Substantial. Falling oil prices have undermined economic growth in the country and remain a major source of risks, which may be exacerbated further by security challenges, natural disasters, and climate change. With reliance on a few primary exports and a relatively undiversified economy, Nigeria remains vulnerable to external demand and price shocks, compounded by pressures from weak fiscal management.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The World Bank is in close dialogue with the authorities on the reform program in support of restoring macro-economic resilience and economic growth."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector Policies and Strategies risk has been rated Substantial. One major risk is frequent changes in the agricultural policy, especially the tariff policy, which would change the economic incentives faced by farmers and the private sector alike. Considering this is a multi-sector project, risk associated with other sector policies (e.g., transport and energy) might also affect implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through a sustained, evidence-based policy dialogue and engagement with the government to ensure sustainability of the reforms in the sector."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Technical Design risk has been rated Moderate. The approach for agribusiness partnership proposed by this project has already been successfully implemented under CADP.",
+      "category": "technical",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Lessons learned from both CADP and other similar operations have been incorporated into the project design, which is based on analyses undertaken during preparation and summarized under Annex 2."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Institutional Capacity for Implementation and Sustainability risk has been rated Substantial. While capacity at the federal level for implementing World Bank-supported agricultural project activities is adequate, there is a risk at state level of insufficient experience, structure, and technical knowhow to manage the new project design features.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "SCOs' staff will be provided necessary training at the time of launching the project, and newly recruited staff (particularly in Kogi state) will benefit from an induction training program. Coordination challenges will be addressed by Steering Committees at federal and state levels, and a Technical Committee at state level chaired by the Commissioner of Agriculture. NCO and SCO will collaborate with FADAMAIII, RAMP, and GEM where relevant, and the project may contract a third-party service provider to assist states in project execution."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Fiduciary risk (financial management) is assessed as Substantial. The key risks identified are those of value for money in works/construction contracts and capacity building events; capacity building activities such as training workshops have been identified as having significant fiduciary risks.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Additional steps include: (i) all training and workshop activities subject to prior review by the Bank; (ii) activities part of the approved annual work plan; (iii) part of the project training plan; and (iv) compliance with the enhanced accountability framework. A qualified procurement specialist will be selected competitively; goods and consultants' services will be procured in accordance with World Bank anti-fraud/corruption guidelines and procurement guidelines."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Environment and Social risk has been rated Substantial. The Environmental Category assigned to the project is Category B, predicated on the assumption that environmental risks and social impact may not have serious adverse impact of a sensitive or diverse nature; the project may not be engaged in development of heavy infrastructure or acquisition of large expanses of land.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "An Environmental and Social Management Framework (ESMF), a Resettlement Policy Framework (RPF), and an Integrated Pest Management Plan (IPMP) have been prepared and publicly disclosed. Specific Environment and Social Impact Assessments (ESIAs) and Resettlement Action Plans (RAPs) will be conducted for each public and private investment once the type of work is determined and precisely located, and a Strategic Environmental and Social Assessment will cover all areas and localities in which the project will operate."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Stakeholders/Gender risk: there is a risk that women will be disadvantaged in terms of their access to employment and participation in out-growers arrangements.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A detailed gender assessment and tracking for the project will be undertaken with the DFID-supported Gender Filter Trust Fund, in collaboration with the Africa Gender Innovation Lab, and incorporated into the Project Implementation Manual. A substantial part of Component 2 (35% of project funding) will support a Women and Youth Empowerment program, with affirmation of 35 percent female inclusion in all aspects of the project (representation in joint community meetings, jobs, extension agents, facilitators, and agri-business/entrepreneurship development), plus TA and training on business plan preparation, accounting, and financial management for women."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:30:19.078503+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-PAK-ResilientAccessibleMicrofinance\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate risk modelling may lead to ineffective triggers for CRF activation\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough risk modelling and regularly review triggers to ensure effectiveness\",\n      \"evidence\": \"Section III, Project Implementation\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient funding for CRF may limit its ability to provide liquidity to MFPs\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Explore additional funding sources and consider increasing the CRF's capitalization\",\n      \"evidence\": \"Section II, Project Components\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Delays in disbursement may hinder the project's ability to respond to climate events\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear disbursement schedule and ensure timely release of funds\",\n      \"evidence\": \"Section IV, Project Appraisal Summary\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Limited access to microfinance for women and rural households may exacerbate existing inequalities\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Implement targeted measures to increase access to microfinance for women and rural households\",\n      \"evidence\": \"Section I, Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Changes in government policies or regulations may affect the project's implementation\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Engage with government stakeholders to ensure policy alignment and flexibility\",\n      \"evidence\": \"Section I, Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Environmental degradation may result from increased use of fertilizers and pesticides\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Promote sustainable agricultural practices and monitor environmental impacts\",\n      \"evidence\": \"Section C, Environmental, Social and Legal Operational Policies\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate institutional capacity may hinder the project's implementation\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building support to relevant institutions\",\n      \"evidence\": \"Section III, Project Implementation\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"External factors, such as economic downturns, may affect the project's success\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Monitor external factors and develop contingency plans to address potential risks\",\n      \"evidence\": \"Section I, Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Limited availability of agricultural technology companies (ATCs) may hinder the project's impact\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Identify and partner with multiple ATCs to ensure a range of options for MFPs\",\n      \"evidence\": \"Section II, Project Components\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate monitoring and evaluation may limit the project's ability to assess its impact\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a robust monitoring and evaluation framework to track project outcomes\",\n      \"evidence\": \"Section IV, Project Appraisal Summary\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate risk modelling may lead to ineffective triggers for CRF activation",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct thorough risk modelling and regularly review triggers to ensure effectiveness",
+        "evidence": "Section III, Project Implementation"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient funding for CRF may limit its ability to provide liquidity to MFPs",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Explore additional funding sources and consider increasing the CRF's capitalization",
+        "evidence": "Section II, Project Components"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in disbursement may hinder the project's ability to respond to climate events",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear disbursement schedule and ensure timely release of funds",
+        "evidence": "Section IV, Project Appraisal Summary"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Limited access to microfinance for women and rural households may exacerbate existing inequalities",
+        "category": "stakeholder",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Implement targeted measures to increase access to microfinance for women and rural households",
+        "evidence": "Section I, Strategic Context"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Changes in government policies or regulations may affect the project's implementation",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Engage with government stakeholders to ensure policy alignment and flexibility",
+        "evidence": "Section I, Strategic Context"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Environmental degradation may result from increased use of fertilizers and pesticides",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Promote sustainable agricultural practices and monitor environmental impacts",
+        "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate institutional capacity may hinder the project's implementation",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building support to relevant institutions",
+        "evidence": "Section III, Project Implementation"
+      },
+      {
+        "risk_id": "R08",
+        "description": "External factors, such as economic downturns, may affect the project's success",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Monitor external factors and develop contingency plans to address potential risks",
+        "evidence": "Section I, Strategic Context"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Limited availability of agricultural technology companies (ATCs) may hinder the project's impact",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Identify and partner with multiple ATCs to ensure a range of options for MFPs",
+        "evidence": "Section II, Project Components"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate monitoring and evaluation may limit the project's ability to assess its impact",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a robust monitoring and evaluation framework to track project outcomes",
+        "evidence": "Section IV, Project Appraisal Summary"
+      }
+    ]
+  },
+  "parse_error": null
+}

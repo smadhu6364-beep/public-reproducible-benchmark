@@ -1,0 +1,153 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:07:15.560523+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate funding for road maintenance may hinder the project's sustainability\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a road maintenance fund and ensure regular allocations from the government\",\n      \"evidence\": \"Section 15, Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient capacity of the Ministry of Transport and Aviation may affect project implementation\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building programs for the Ministry of Transport and Aviation staff\",\n      \"evidence\": \"Section 37, Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Climate change may exacerbate flooding and landslides, affecting bridge and road infrastructure\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Incorporate climate-resilient design and construction techniques for bridges and roads\",\n      \"evidence\": \"Section 47, Technical Analysis\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Limited access to markets and storage facilities may lead to post-harvest losses for farmers\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construct and upgrade market infrastructure, including storage facilities and aggregation centers\",\n      \"evidence\": \"Section 14, Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate road safety measures may lead to accidents and fatalities\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement road safety measures, such as traffic signals, pedestrian crossings, and streetlights\",\n      \"evidence\": \"Section 8, Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Limited participation of women in the transport sector may hinder their economic empowerment\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building programs for women in the transport sector\",\n      \"evidence\": \"Section 9, Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate maintenance of urban road infrastructure may lead to congestion and accidents\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a maintenance plan and allocate funds for regular maintenance of urban road infrastructure\",\n      \"evidence\": \"Section 7, Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient private sector participation may limit the project's impact\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Encourage private sector participation through public-private partnerships and incentives\",\n      \"evidence\": \"Section 35, Project Description\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate environmental and social safeguards may lead to negative impacts on local communities\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct environmental and social impact assessments and develop mitigation measures\",\n      \"evidence\": \"Section 24, Project Description\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate monitoring and evaluation may hinder the project's effectiveness\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a monitoring and evaluation plan and allocate resources for regular monitoring and evaluation\",\n      \"evidence\": \"Section 40, Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Inadequate capacity of local councils may hinder the management of market infrastructure\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building programs for local councils\",\n      \"evidence\": \"Section 15, Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Inadequate funding for the project may lead to delays or cancellation\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Secure funding commitments from the government and development partners\",\n      \"evidence\": \"Section 30, Project Description\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Inadequate coordination among stakeholders may hinder the project's implementation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a coordination mechanism among stakeholders, including regular meetings and communication\",\n      \"evidence\": \"Section 38, Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Inadequate consideration of gender issues may lead to unequal benefits for women and men\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a gender analysis and incorporate gender-sensitive design and implementation measures\",\n      \"evidence\": \"Section 50, Gender\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Inadequate consideration of environmental issues may lead to negative environmental impacts\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct an environmental impact assessment and incorporate environmental mitigation measures\",\n      \"evidence\": \"Section 53, Climate Change Mitigation and Adaptation\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate funding for road maintenance may hinder the project's sustainability",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a road maintenance fund and ensure regular allocations from the government",
+        "evidence": "Section 15, Institutional Context"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient capacity of the Ministry of Transport and Aviation may affect project implementation",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building programs for the Ministry of Transport and Aviation staff",
+        "evidence": "Section 37, Implementation Arrangements"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Climate change may exacerbate flooding and landslides, affecting bridge and road infrastructure",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Incorporate climate-resilient design and construction techniques for bridges and roads",
+        "evidence": "Section 47, Technical Analysis"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Limited access to markets and storage facilities may lead to post-harvest losses for farmers",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct and upgrade market infrastructure, including storage facilities and aggregation centers",
+        "evidence": "Section 14, Institutional Context"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate road safety measures may lead to accidents and fatalities",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement road safety measures, such as traffic signals, pedestrian crossings, and streetlights",
+        "evidence": "Section 8, Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Limited participation of women in the transport sector may hinder their economic empowerment",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building programs for women in the transport sector",
+        "evidence": "Section 9, Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate maintenance of urban road infrastructure may lead to congestion and accidents",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a maintenance plan and allocate funds for regular maintenance of urban road infrastructure",
+        "evidence": "Section 7, Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient private sector participation may limit the project's impact",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Encourage private sector participation through public-private partnerships and incentives",
+        "evidence": "Section 35, Project Description"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate environmental and social safeguards may lead to negative impacts on local communities",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct environmental and social impact assessments and develop mitigation measures",
+        "evidence": "Section 24, Project Description"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate monitoring and evaluation may hinder the project's effectiveness",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a monitoring and evaluation plan and allocate resources for regular monitoring and evaluation",
+        "evidence": "Section 40, Implementation Arrangements"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Inadequate capacity of local councils may hinder the management of market infrastructure",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building programs for local councils",
+        "evidence": "Section 15, Institutional Context"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Inadequate funding for the project may lead to delays or cancellation",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Secure funding commitments from the government and development partners",
+        "evidence": "Section 30, Project Description"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Inadequate coordination among stakeholders may hinder the project's implementation",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a coordination mechanism among stakeholders, including regular meetings and communication",
+        "evidence": "Section 38, Implementation Arrangements"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Inadequate consideration of gender issues may lead to unequal benefits for women and men",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct a gender analysis and incorporate gender-sensitive design and implementation measures",
+        "evidence": "Section 50, Gender"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Inadequate consideration of environmental issues may lead to negative environmental impacts",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Conduct an environmental impact assessment and incorporate environmental mitigation measures",
+        "evidence": "Section 53, Climate Change Mitigation and Adaptation"
+      }
+    ]
+  },
+  "parse_error": null
+}

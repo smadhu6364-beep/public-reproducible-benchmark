@@ -1,0 +1,50 @@
+{
+  "run_file": "P-PER-ArequipaColca__opensource__structured__run2.json",
+  "project_id": "P-PER-ArequipaColca",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Peru is in a period of substantial political uncertainty (low popular support for the executive and Congress, high political fragmentation); a new government assumes office July 2026 and regional elections are scheduled October 2026. Since GORE Arequipa (a regional government) is the implementing agency, regional government changes could slow implementation or shift priorities; high-level changes at MINCETUR could also affect oversight commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Focus on highly needed, consensus-driven investments; maintain buy-in and continuous dialogue with the tourism private sector; engage proactively with any new authorities on project opportunities; use implementation arrangements that are technically strong, highly competent, and relatively shielded from political influence and staff turnover."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Tourism projects are inherently complex, involving infrastructure, capacity building, and multiple government levels/sectors plus private-sector and community stakeholders. Capacity must be built at GORE Arequipa given no precedent for multisectoral regional investment programs in Peru, and historic national-regional coordination weaknesses. The project also does not budget for O&M of delivered sites/infrastructure, which falls to designated stakeholders.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Institutional capacity building via the Project (incl. GFPP) to ready GORE for implementation; World Bank support on PIU composition and key staff selection; coordination arrangements/agreements between the PIU and local partners in charge of operating sites, to align on design, implementation, and handover."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Combined fiduciary risk with GORE Arequipa is Substantial, reflecting the entity's lack of prior experience with World Bank or other MDB-financed operations in both financial management and procurement.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A fiduciary assessment identified capacity gaps and informed mitigation measures; recruit dedicated FM and Procurement Specialists supported by qualified administrative staff; detail minimum FM/procurement procedures aligned with WB requirements in the Project Operational Manual; use SIAF for financial transactions/reporting and STEP for procurement planning/monitoring; targeted WB training, regular fiduciary supervision, and annual audits."
+    },
+    {
+      "risk_id": "R04",
+      "description": "E&S risk reflects the scope/nature of planned interventions, works located in environmentally and culturally sensitive areas, and GORE Arequipa's limited institutional capacity to manage risks per the Environmental and Social Framework (ESF).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthen PIU capacity to manage E&S risks with adequate resources/staffing; elaborate and implement project-level instruments (Stakeholder Engagement Plan, Labor Management Plan, SEA/SH Plan) plus intervention-level instruments with specific mitigation measures."
+    }
+  ]
+}

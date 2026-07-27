@@ -1,0 +1,126 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:34:42.406295+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-FreeBreakfastClubs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Schools may struggle to deliver free breakfast clubs due to space constraints.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Continuing contracts of technical estate advisers to test what schools can do to mitigate space constraints.\",\n      \"evidence\": \"space constraints\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Rising food insecurity and childcare costs may impact the effectiveness of the programme.\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 4,\n      \"mitigation\": \"Monitoring food insecurity and childcare costs, and adjusting the programme accordingly.\",\n      \"evidence\": \"rising food insecurity and childcare costs\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The programme's success depends on timely approval and budget confirmation from HM Treasury.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Close collaboration with HM Treasury to ensure timely approval and budget confirmation.\",\n      \"evidence\": \"timely approval and budget confirmation from HM Treasury\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Effective collaboration with sector partners is crucial for the programme's success.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Establishing strong relationships with sector partners and ensuring effective communication.\",\n      \"evidence\": \"effective collaboration with sector partners\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"The programme's funding model may not be sufficient to support all schools.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Continuously monitoring the funding model and making adjustments as necessary.\",\n      \"evidence\": \"funding model\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"The programme's success depends on the availability of skilled staff and resources.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Ensuring the availability of skilled staff and resources through effective recruitment and retention strategies.\",\n      \"evidence\": \"availability of skilled staff and resources\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The programme may face challenges in delivering free breakfast clubs to all pupils, particularly those with high levels of disadvantage.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Targeting support to schools with high levels of disadvantage and ensuring effective delivery models.\",\n      \"evidence\": \"delivering free breakfast clubs to all pupils\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The programme's evaluation strategy may not be effective in measuring the programme's outcomes.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Continuously monitoring and evaluating the programme's evaluation strategy and making adjustments as necessary.\",\n      \"evidence\": \"evaluation strategy\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The programme may face logistical challenges in delivering free breakfast clubs, particularly in terms of food provision and staffing.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensuring effective logistics and supply chain management, and providing support to schools on food provision and staffing.\",\n      \"evidence\": \"logistical challenges\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The programme's success depends on the effective implementation of the Children's Wellbeing and Schools Bill.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Close collaboration with relevant stakeholders to ensure effective implementation of the Bill.\",\n      \"evidence\": \"Children's Wellbeing and Schools Bill\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"The programme may face challenges in transitioning schools from the National School Breakfast Programme (NSBP) to the Free Breakfast Clubs (FBC) programme.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Providing support to schools during the transition period and ensuring effective communication.\",\n      \"evidence\": \"transitioning schools from NSBP to FBC\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"The programme's funding may not be sufficient to support the increased demand for free breakfast clubs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Continuously monitoring the funding and making adjustments as necessary to ensure sufficient support for the programme.\",\n      \"evidence\": \"funding for free breakfast clubs\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Schools may struggle to deliver free breakfast clubs due to space constraints.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Continuing contracts of technical estate advisers to test what schools can do to mitigate space constraints.",
+        "evidence": "space constraints"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Rising food insecurity and childcare costs may impact the effectiveness of the programme.",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 4,
+        "mitigation": "Monitoring food insecurity and childcare costs, and adjusting the programme accordingly.",
+        "evidence": "rising food insecurity and childcare costs"
+      },
+      {
+        "risk_id": "R03",
+        "description": "The programme's success depends on timely approval and budget confirmation from HM Treasury.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Close collaboration with HM Treasury to ensure timely approval and budget confirmation.",
+        "evidence": "timely approval and budget confirmation from HM Treasury"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Effective collaboration with sector partners is crucial for the programme's success.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Establishing strong relationships with sector partners and ensuring effective communication.",
+        "evidence": "effective collaboration with sector partners"
+      },
+      {
+        "risk_id": "R05",
+        "description": "The programme's funding model may not be sufficient to support all schools.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Continuously monitoring the funding model and making adjustments as necessary.",
+        "evidence": "funding model"
+      },
+      {
+        "risk_id": "R06",
+        "description": "The programme's success depends on the availability of skilled staff and resources.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Ensuring the availability of skilled staff and resources through effective recruitment and retention strategies.",
+        "evidence": "availability of skilled staff and resources"
+      },
+      {
+        "risk_id": "R07",
+        "description": "The programme may face challenges in delivering free breakfast clubs to all pupils, particularly those with high levels of disadvantage.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Targeting support to schools with high levels of disadvantage and ensuring effective delivery models.",
+        "evidence": "delivering free breakfast clubs to all pupils"
+      },
+      {
+        "risk_id": "R08",
+        "description": "The programme's evaluation strategy may not be effective in measuring the programme's outcomes.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Continuously monitoring and evaluating the programme's evaluation strategy and making adjustments as necessary.",
+        "evidence": "evaluation strategy"
+      },
+      {
+        "risk_id": "R09",
+        "description": "The programme may face logistical challenges in delivering free breakfast clubs, particularly in terms of food provision and staffing.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensuring effective logistics and supply chain management, and providing support to schools on food provision and staffing.",
+        "evidence": "logistical challenges"
+      },
+      {
+        "risk_id": "R10",
+        "description": "The programme's success depends on the effective implementation of the Children's Wellbeing and Schools Bill.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Close collaboration with relevant stakeholders to ensure effective implementation of the Bill.",
+        "evidence": "Children's Wellbeing and Schools Bill"
+      },
+      {
+        "risk_id": "R11",
+        "description": "The programme may face challenges in transitioning schools from the National School Breakfast Programme (NSBP) to the Free Breakfast Clubs (FBC) programme.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Providing support to schools during the transition period and ensuring effective communication.",
+        "evidence": "transitioning schools from NSBP to FBC"
+      },
+      {
+        "risk_id": "R12",
+        "description": "The programme's funding may not be sufficient to support the increased demand for free breakfast clubs.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Continuously monitoring the funding and making adjustments as necessary to ensure sufficient support for the programme.",
+        "evidence": "funding for free breakfast clubs"
+      }
+    ]
+  },
+  "parse_error": null
+}

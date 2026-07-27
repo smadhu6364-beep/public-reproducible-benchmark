@@ -1,0 +1,86 @@
+{
+  "run_file": "P-NGA-AgroProcessingLivelihood__gpt__few_shot__run2.json",
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk has been rated Substantial. Coordination of externally funded projects' responsibilities between the federal and state levels is a complex phenomenon, and incomprehension or misinterpretation at any level can affect the project implementation negatively.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A communication strategy, supported by the project, will ensure that transparency is maintained at all levels of project management and implementation, and the participation of beneficiaries remains at the core of the project."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risks are rated Substantial. Falling oil prices have undermined economic growth in the country and remain a major source of risks, which may be exacerbated further by security challenges, natural disasters, and climate change. With reliance on a few primary exports and a relatively undiversified economy, Nigeria remains vulnerable to external demand and price shocks, compounded by pressures from weak fiscal management.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The World Bank is in close dialogue with the authorities on the reform program in support of restoring macro-economic resilience and economic growth."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector Policies and Strategies risk has been rated Substantial. One major risk is frequent changes in the agricultural policy, especially the tariff policy, which would change the economic incentives faced by farmers and the private sector alike. Considering this is a multi-sector project, risk associated with other sector policies (e.g., transport and energy) might also affect implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through a sustained, evidence-based policy dialogue and engagement with the government to ensure sustainability of the reforms in the sector."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Technical Design risk has been rated Moderate. The approach for agribusiness partnership proposed by this project has already been successfully implemented under CADP.",
+      "category": "technical",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Lessons learned from both CADP and other similar operations have been incorporated into the project design, which is based on analyses undertaken during preparation and summarized under Annex 2."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Institutional Capacity for Implementation and Sustainability risk has been rated Substantial. While capacity at the federal level for implementing World Bank-supported agricultural project activities is adequate, there is a risk at state level of insufficient experience, structure, and technical knowhow to manage the new project design features.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "SCOs' staff will be provided necessary training at the time of launching the project, and newly recruited staff (particularly in Kogi state) will benefit from an induction training program. Coordination challenges will be addressed by Steering Committees at federal and state levels, and a Technical Committee at state level chaired by the Commissioner of Agriculture. NCO and SCO will collaborate with FADAMAIII, RAMP, and GEM where relevant, and the project may contract a third-party service provider to assist states in project execution."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Fiduciary risk (financial management) is assessed as Substantial. The key risks identified are those of value for money in works/construction contracts and capacity building events; capacity building activities such as training workshops have been identified as having significant fiduciary risks.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Additional steps include: (i) all training and workshop activities subject to prior review by the Bank; (ii) activities part of the approved annual work plan; (iii) part of the project training plan; and (iv) compliance with the enhanced accountability framework. A qualified procurement specialist will be selected competitively; goods and consultants' services will be procured in accordance with World Bank anti-fraud/corruption guidelines and procurement guidelines."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Environment and Social risk has been rated Substantial. The Environmental Category assigned to the project is Category B, predicated on the assumption that environmental risks and social impact may not have serious adverse impact of a sensitive or diverse nature; the project may not be engaged in development of heavy infrastructure or acquisition of large expanses of land.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "An Environmental and Social Management Framework (ESMF), a Resettlement Policy Framework (RPF), and an Integrated Pest Management Plan (IPMP) have been prepared and publicly disclosed. Specific Environment and Social Impact Assessments (ESIAs) and Resettlement Action Plans (RAPs) will be conducted for each public and private investment once the type of work is determined and precisely located, and a Strategic Environmental and Social Assessment will cover all areas and localities in which the project will operate."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Stakeholders/Gender risk: there is a risk that women will be disadvantaged in terms of their access to employment and participation in out-growers arrangements.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A detailed gender assessment and tracking for the project will be undertaken with the DFID-supported Gender Filter Trust Fund, in collaboration with the Africa Gender Innovation Lab, and incorporated into the Project Implementation Manual. A substantial part of Component 2 (35% of project funding) will support a Women and Youth Empowerment program, with affirmation of 35 percent female inclusion in all aspects of the project (representation in joint community meetings, jobs, extension agents, facilitators, and agri-business/entrepreneurship development), plus TA and training on business plan preparation, accounting, and financial management for women."
+    }
+  ]
+}

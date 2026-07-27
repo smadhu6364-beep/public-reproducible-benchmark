@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UK-PadeswoodCCUS",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:47:36.574430+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-PadeswoodCCUS\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Carbon leakage due to lack of CCUS technology, impacting UK cement industry competitiveness\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement CCUS technology at Padeswood to reduce emissions and maintain competitiveness\",\n      \"evidence\": \"2.1.3 Justification\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Delay in Padeswood project timeline, impacting UK's net zero targets\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed project schedule with milestones and deadlines to ensure timely completion\",\n      \"evidence\": \"3.2 Counterfactual\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Insufficient funding for Padeswood project, impacting project viability\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Secure sufficient funding through government support and private investment\",\n      \"evidence\": \"5.2 Affordability\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Technical difficulties in implementing CCUS technology at Padeswood\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough technical assessments and testing to identify and address potential issues\",\n      \"evidence\": \"4.2 Emitter Selection and Assurance Process\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Regulatory changes impacting Padeswood project, such as changes to CCS Network Code\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor regulatory developments and engage with relevant authorities to ensure compliance\",\n      \"evidence\": \"4.6 Network Code Compliance\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Supply chain disruptions impacting Padeswood project, such as delays in equipment delivery\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a robust supply chain strategy with multiple suppliers and contingency plans\",\n      \"evidence\": \"4.4 Business Model Framework\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Public perception and acceptance of CCUS technology at Padeswood\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Engage with local communities and stakeholders to raise awareness and address concerns\",\n      \"evidence\": \"2.3 Public Sector Equalities Duties\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Environmental impacts of Padeswood project, such as effects on local ecosystems\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct environmental impact assessments and implement measures to minimize harm\",\n      \"evidence\": \"2.1.4 Help meet UK carbon targets\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Governance and oversight issues impacting Padeswood project, such as ineffective decision-making\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish clear governance structures and decision-making processes\",\n      \"evidence\": \"4.5 Governance and Oversight\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Risk of fraud or corruption in Padeswood project, such as mismanagement of funds\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust financial controls and auditing processes to prevent and detect fraud\",\n      \"evidence\": \"5.4.4 Fraud\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-PadeswoodCCUS",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Carbon leakage due to lack of CCUS technology, impacting UK cement industry competitiveness",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement CCUS technology at Padeswood to reduce emissions and maintain competitiveness",
+        "evidence": "2.1.3 Justification"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delay in Padeswood project timeline, impacting UK's net zero targets",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a detailed project schedule with milestones and deadlines to ensure timely completion",
+        "evidence": "3.2 Counterfactual"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Insufficient funding for Padeswood project, impacting project viability",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Secure sufficient funding through government support and private investment",
+        "evidence": "5.2 Affordability"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Technical difficulties in implementing CCUS technology at Padeswood",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct thorough technical assessments and testing to identify and address potential issues",
+        "evidence": "4.2 Emitter Selection and Assurance Process"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Regulatory changes impacting Padeswood project, such as changes to CCS Network Code",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor regulatory developments and engage with relevant authorities to ensure compliance",
+        "evidence": "4.6 Network Code Compliance"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Supply chain disruptions impacting Padeswood project, such as delays in equipment delivery",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a robust supply chain strategy with multiple suppliers and contingency plans",
+        "evidence": "4.4 Business Model Framework"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Public perception and acceptance of CCUS technology at Padeswood",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Engage with local communities and stakeholders to raise awareness and address concerns",
+        "evidence": "2.3 Public Sector Equalities Duties"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Environmental impacts of Padeswood project, such as effects on local ecosystems",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Conduct environmental impact assessments and implement measures to minimize harm",
+        "evidence": "2.1.4 Help meet UK carbon targets"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Governance and oversight issues impacting Padeswood project, such as ineffective decision-making",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish clear governance structures and decision-making processes",
+        "evidence": "4.5 Governance and Oversight"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Risk of fraud or corruption in Padeswood project, such as mismanagement of funds",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement robust financial controls and auditing processes to prevent and detect fraud",
+        "evidence": "5.4.4 Fraud"
+      }
+    ]
+  },
+  "parse_error": null
+}

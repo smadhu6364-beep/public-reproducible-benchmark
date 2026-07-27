@@ -1,0 +1,108 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:13:00.069529+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MAR-SecondIdentityTargetingSocialProtection\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate communication and outreach efforts may lead to exclusion of vulnerable groups from the NPR and SR.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement inclusive communication and engagement strategies, and establish a project Grievance Mechanism (GM).\",\n      \"evidence\": \"Section V. GRIEVANCE REDRESS SERVICES\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Data protection and privacy issues may arise if the NPR and SR systems are not designed with adequate safeguards.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement a privacy-by-design approach, and ensure compliance with national regulations and international best practices for data protection.\",\n      \"evidence\": \"Section D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The NPR and SR systems may not be fully accessible to all individuals, particularly those in remote or rural areas.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Deploy mobile units and satellite connection equipment to facilitate enrollment, and ensure that the systems are user-friendly and inclusive.\",\n      \"evidence\": \"Section III. IMPLEMENTATION ARRANGEMENTS\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"The project's reliance on technology may lead to errors, leakages, or fraud if not properly managed.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement an Error, Fraud, and Corruption (EFC) monitoring system, and ensure that the systems are designed with adequate safeguards.\",\n      \"evidence\": \"Section B. Fiduciary\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"The project's success depends on the effective implementation of the NPR and SR systems, which may be hindered by institutional or capacity constraints.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Provide capacity building and technical assistance to the Ministry of Interior and other relevant institutions, and ensure that the project is well-coordinated and managed.\",\n      \"evidence\": \"Section III. IMPLEMENTATION ARRANGEMENTS\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"The project may not achieve its intended objectives if the targeting and identification systems are not effective in reaching the most vulnerable populations.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Continuously monitor and evaluate the project's progress, and make adjustments as needed to ensure that the targeting and identification systems are effective.\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The project's financial management arrangements may not be adequate, which could lead to fiduciary risks.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project's financial management arrangements are adequate, and that the Ministry of Interior has the necessary capacity and systems in place to manage the project's finances.\",\n      \"evidence\": \"Section B. Fiduciary\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The project may have environmental impacts, such as e-waste generation, if not properly managed.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Ensure that the project follows sustainable procurement practices, and that e-waste is properly managed and disposed of.\",\n      \"evidence\": \"Section D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The project's success depends on the effective coordination and collaboration among different stakeholders, including government institutions, civil society, and the private sector.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Establish a coordination mechanism, and ensure that all stakeholders are engaged and informed throughout the project's implementation.\",\n      \"evidence\": \"Section III. IMPLEMENTATION ARRANGEMENTS\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The project may face risks related to climate change, such as increased frequency of natural disasters, which could impact the project's implementation and effectiveness.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure that the project is designed and implemented with climate resilience in mind, and that the project's systems and infrastructure are able to withstand potential climate-related shocks.\",\n      \"evidence\": \"Section C. Relevance to Higher Level Objectives\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate communication and outreach efforts may lead to exclusion of vulnerable groups from the NPR and SR.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement inclusive communication and engagement strategies, and establish a project Grievance Mechanism (GM).",
+        "evidence": "Section V. GRIEVANCE REDRESS SERVICES"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Data protection and privacy issues may arise if the NPR and SR systems are not designed with adequate safeguards.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement a privacy-by-design approach, and ensure compliance with national regulations and international best practices for data protection.",
+        "evidence": "Section D. Environmental and Social"
+      },
+      {
+        "risk_id": "R03",
+        "description": "The NPR and SR systems may not be fully accessible to all individuals, particularly those in remote or rural areas.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Deploy mobile units and satellite connection equipment to facilitate enrollment, and ensure that the systems are user-friendly and inclusive.",
+        "evidence": "Section III. IMPLEMENTATION ARRANGEMENTS"
+      },
+      {
+        "risk_id": "R04",
+        "description": "The project's reliance on technology may lead to errors, leakages, or fraud if not properly managed.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement an Error, Fraud, and Corruption (EFC) monitoring system, and ensure that the systems are designed with adequate safeguards.",
+        "evidence": "Section B. Fiduciary"
+      },
+      {
+        "risk_id": "R05",
+        "description": "The project's success depends on the effective implementation of the NPR and SR systems, which may be hindered by institutional or capacity constraints.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Provide capacity building and technical assistance to the Ministry of Interior and other relevant institutions, and ensure that the project is well-coordinated and managed.",
+        "evidence": "Section III. IMPLEMENTATION ARRANGEMENTS"
+      },
+      {
+        "risk_id": "R06",
+        "description": "The project may not achieve its intended objectives if the targeting and identification systems are not effective in reaching the most vulnerable populations.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Continuously monitor and evaluate the project's progress, and make adjustments as needed to ensure that the targeting and identification systems are effective.",
+        "evidence": "Section II. PROJECT DESCRIPTION"
+      },
+      {
+        "risk_id": "R07",
+        "description": "The project's financial management arrangements may not be adequate, which could lead to fiduciary risks.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure that the project's financial management arrangements are adequate, and that the Ministry of Interior has the necessary capacity and systems in place to manage the project's finances.",
+        "evidence": "Section B. Fiduciary"
+      },
+      {
+        "risk_id": "R08",
+        "description": "The project may have environmental impacts, such as e-waste generation, if not properly managed.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Ensure that the project follows sustainable procurement practices, and that e-waste is properly managed and disposed of.",
+        "evidence": "Section D. Environmental and Social"
+      },
+      {
+        "risk_id": "R09",
+        "description": "The project's success depends on the effective coordination and collaboration among different stakeholders, including government institutions, civil society, and the private sector.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Establish a coordination mechanism, and ensure that all stakeholders are engaged and informed throughout the project's implementation.",
+        "evidence": "Section III. IMPLEMENTATION ARRANGEMENTS"
+      },
+      {
+        "risk_id": "R10",
+        "description": "The project may face risks related to climate change, such as increased frequency of natural disasters, which could impact the project's implementation and effectiveness.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Ensure that the project is designed and implemented with climate resilience in mind, and that the project's systems and infrastructure are able to withstand potential climate-related shocks.",
+        "evidence": "Section C. Relevance to Higher Level Objectives"
+      }
+    ]
+  },
+  "parse_error": null
+}

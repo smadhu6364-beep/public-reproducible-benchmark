@@ -1,0 +1,153 @@
+{
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:06:02.569930+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-NGA-AgroProcessingLivelihood\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delay in establishing State Coordination Offices (SCOs) in new participating states could slow project start\u2011up and coordination.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Accelerate recruitment and provide temporary second\u2011ment staff; set clear milestones for SCO activation and monitor progress monthly.\",\n      \"evidence\": \"Section IV.1 \u2013 establishment of State Coordination Offices (SCOs) for new states (e.g., Kogi).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Limited procurement capacity in several states may lead to non\u2011compliant or delayed procurements.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Deploy the procurement consultant to train and mentor state procurement officers; use standardized procurement templates and enforce pre\u2011qualification checks.\",\n      \"evidence\": \"Section IV.C \u2013 procurement capacity is low and many states lack procurement tools.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Unretired travel advances and poor documentation could cause fiduciary loss or audit findings.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the enhanced accountability framework in the Financial Procedures Manual; conduct quarterly internal audits of travel expenses.\",\n      \"evidence\": \"Section III.3 \u2013 key issues: unretired advances and inadequate documentation of eligible expenditures.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Beneficiaries may be unable to meet the in\u2011kind matching contribution for grant\u2011based technology adoption, reducing uptake.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Offer flexible cash\u2011in\u2011kind options, micro\u2011credit for matching contributions, and clear communication of eligibility during outreach.\",\n      \"evidence\": \"Section III.1 \u2013 matching grant mechanism requires in\u2011kind contribution from beneficiaries.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Use of fertilizers and pesticides could contaminate soil and water, breaching environmental safeguards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce Integrated Pest Management Plan; conduct regular soil\u2011water monitoring and provide training on correct input handling.\",\n      \"evidence\": \"Section VI.99 \u2013 potential contamination from agricultural chemical inputs.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Infrastructure works may trigger involuntary resettlement disputes, causing delays and social tension.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Apply Resettlement Policy Framework proactively; conduct early community consultations and compensate eligible persons promptly.\",\n      \"evidence\": \"Section VI.d \u2013 Involuntary Resettlement safeguard activated for infrastructure investments.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Target of 35% women beneficiaries may not be reached, limiting gender equity outcomes.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set gender\u2011specific selection quotas, monitor gender tracker quarterly, and provide additional outreach to women farmer groups.\",\n      \"evidence\": \"Section II.2 \u2013 35% of direct beneficiaries expected to be women.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Project financial returns are sensitive to a >10% fall in commodity prices, risking economic viability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Include price\u2011risk hedging mechanisms, diversify supported value chains, and adjust grant sizes if market prices decline sharply.\",\n      \"evidence\": \"Section VIII.80 \u2013 10% reduction in benefits turns NPV negative for all crops.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Security challenges in the North East and Niger Delta could interrupt field activities and logistics.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Coordinate with security agencies, adjust field schedules, and allocate contingency budget for security\u2011related disruptions.\",\n      \"evidence\": \"Section I.5 \u2013 government focusing on improving security in North East and Niger Delta.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Disbursement may be delayed pending legal ratification of subsidiary agreements and SCO establishment as required by IDA conditions.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare draft subsidiary agreements and SCO establishment evidence in parallel with project preparation; obtain provisional approvals early.\",\n      \"evidence\": \"PAD Data Sheet \u2013 disbursement conditions require ratified subsidiary agreements and evidence of SCOs.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Weaknesses in M&E data collection could compromise monitoring of results and impact evaluation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Standardize data collection templates, train SCO M&E officers, and conduct periodic data quality audits by an independent firm.\",\n      \"evidence\": \"Section IV.2 \u2013 M&E system relies on MIS, third\u2011party support, and capacity building.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Insufficient off\u2011taker or buyer participation may limit the effectiveness of business alliances and out\u2011grower schemes.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage private\u2011sector chambers early, sign pre\u2011commitment memoranda with large processors, and provide market\u2011linkage incentives.\",\n      \"evidence\": \"Section III.21 \u2013 business alliances depend on contracts between producers and off\u2011takers.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Projected climate\u2011smart practices may not be fully adopted, reducing expected GHG mitigation benefits.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate climate\u2011smart modules into extension packages, monitor adoption rates, and reward high adopters with additional grants.\",\n      \"evidence\": \"Section VI.86 \u2013 project constitutes a carbon sink through improved CSA practices.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Cost overruns in road and infrastructure construction could exhaust allocated budgets.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply contingency allowance of 10% to infrastructure line items; conduct independent cost audits and enforce fixed\u2011price contracts where possible.\",\n      \"evidence\": \"Section III.28 \u2013 infrastructure support includes design and construction of access roads and utilities.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Potential fraud, collusion or corruption in procurement could damage project reputation and waste resources.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Strict adherence to anti\u2011corruption guidelines, public posting of award notices, and random procurement spot\u2011checks by the World Bank team.\",\n      \"evidence\": \"Section IV.48 \u2013 procurement must comply with anti\u2011corruption guidelines and require de\u2011briefing of unsuccessful bidders.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-NGA-AgroProcessingLivelihood",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delay in establishing State Coordination Offices (SCOs) in new participating states could slow project start\u2011up and coordination.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Accelerate recruitment and provide temporary second\u2011ment staff; set clear milestones for SCO activation and monitor progress monthly.",
+        "evidence": "Section IV.1 \u2013 establishment of State Coordination Offices (SCOs) for new states (e.g., Kogi)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Limited procurement capacity in several states may lead to non\u2011compliant or delayed procurements.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deploy the procurement consultant to train and mentor state procurement officers; use standardized procurement templates and enforce pre\u2011qualification checks.",
+        "evidence": "Section IV.C \u2013 procurement capacity is low and many states lack procurement tools."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Unretired travel advances and poor documentation could cause fiduciary loss or audit findings.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement the enhanced accountability framework in the Financial Procedures Manual; conduct quarterly internal audits of travel expenses.",
+        "evidence": "Section III.3 \u2013 key issues: unretired advances and inadequate documentation of eligible expenditures."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Beneficiaries may be unable to meet the in\u2011kind matching contribution for grant\u2011based technology adoption, reducing uptake.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Offer flexible cash\u2011in\u2011kind options, micro\u2011credit for matching contributions, and clear communication of eligibility during outreach.",
+        "evidence": "Section III.1 \u2013 matching grant mechanism requires in\u2011kind contribution from beneficiaries."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Use of fertilizers and pesticides could contaminate soil and water, breaching environmental safeguards.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce Integrated Pest Management Plan; conduct regular soil\u2011water monitoring and provide training on correct input handling.",
+        "evidence": "Section VI.99 \u2013 potential contamination from agricultural chemical inputs."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Infrastructure works may trigger involuntary resettlement disputes, causing delays and social tension.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Apply Resettlement Policy Framework proactively; conduct early community consultations and compensate eligible persons promptly.",
+        "evidence": "Section VI.d \u2013 Involuntary Resettlement safeguard activated for infrastructure investments."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Target of 35% women beneficiaries may not be reached, limiting gender equity outcomes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set gender\u2011specific selection quotas, monitor gender tracker quarterly, and provide additional outreach to women farmer groups.",
+        "evidence": "Section II.2 \u2013 35% of direct beneficiaries expected to be women."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Project financial returns are sensitive to a >10% fall in commodity prices, risking economic viability.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Include price\u2011risk hedging mechanisms, diversify supported value chains, and adjust grant sizes if market prices decline sharply.",
+        "evidence": "Section VIII.80 \u2013 10% reduction in benefits turns NPV negative for all crops."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Security challenges in the North East and Niger Delta could interrupt field activities and logistics.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Coordinate with security agencies, adjust field schedules, and allocate contingency budget for security\u2011related disruptions.",
+        "evidence": "Section I.5 \u2013 government focusing on improving security in North East and Niger Delta."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Disbursement may be delayed pending legal ratification of subsidiary agreements and SCO establishment as required by IDA conditions.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Prepare draft subsidiary agreements and SCO establishment evidence in parallel with project preparation; obtain provisional approvals early.",
+        "evidence": "PAD Data Sheet \u2013 disbursement conditions require ratified subsidiary agreements and evidence of SCOs."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Weaknesses in M&E data collection could compromise monitoring of results and impact evaluation.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Standardize data collection templates, train SCO M&E officers, and conduct periodic data quality audits by an independent firm.",
+        "evidence": "Section IV.2 \u2013 M&E system relies on MIS, third\u2011party support, and capacity building."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Insufficient off\u2011taker or buyer participation may limit the effectiveness of business alliances and out\u2011grower schemes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage private\u2011sector chambers early, sign pre\u2011commitment memoranda with large processors, and provide market\u2011linkage incentives.",
+        "evidence": "Section III.21 \u2013 business alliances depend on contracts between producers and off\u2011takers."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Projected climate\u2011smart practices may not be fully adopted, reducing expected GHG mitigation benefits.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Integrate climate\u2011smart modules into extension packages, monitor adoption rates, and reward high adopters with additional grants.",
+        "evidence": "Section VI.86 \u2013 project constitutes a carbon sink through improved CSA practices."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Cost overruns in road and infrastructure construction could exhaust allocated budgets.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply contingency allowance of 10% to infrastructure line items; conduct independent cost audits and enforce fixed\u2011price contracts where possible.",
+        "evidence": "Section III.28 \u2013 infrastructure support includes design and construction of access roads and utilities."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Potential fraud, collusion or corruption in procurement could damage project reputation and waste resources.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Strict adherence to anti\u2011corruption guidelines, public posting of award notices, and random procurement spot\u2011checks by the World Bank team.",
+        "evidence": "Section IV.48 \u2013 procurement must comply with anti\u2011corruption guidelines and require de\u2011briefing of unsuccessful bidders."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,114 @@
+{
+  "run_file": "P-MAR-SecondIdentityTargetingSocialProtection__opensource__zero_shot__run1.json",
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate legal framework for the NPR and SR implementation may hinder their operationalization and sustainability.",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish a clear and comprehensive legal framework for the NPR and SR, ensuring their autonomy and independence.",
+      "evidence": "Page 4, Section 9"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient data protection and privacy measures may compromise the trust of the population in the NPR and SR systems.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement robust data protection and privacy measures, including training for workers handling personal data and adherence to national regulations and international best practices.",
+      "evidence": "Page 18, Section 55"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Inefficient communication and outreach efforts may lead to the exclusion of vulnerable groups from the NPR and SR.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implement inclusive communication and outreach strategies, including the use of media, SMS, and social media, to reach vulnerable groups and ensure their participation in the NPR and SR.",
+      "evidence": "Page 11, Section 11"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate capacity building and training for human resources may hinder the effective implementation and management of the NPR and SR.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop systematic approaches to building the capacity of human resources, including training and technical assistance, to ensure the effective implementation and management of the NPR and SR.",
+      "evidence": "Page 18, Section 54"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Climate-related shocks may impact the effectiveness of the NPR and SR in identifying and supporting vulnerable populations.",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop strategies to enhance the resilience of the NPR and SR to climate-related shocks, including the use of climate-resilient infrastructure and adaptive management practices.",
+      "evidence": "Page 3, Section 3"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate funding and resource allocation may hinder the effective implementation and sustainability of the NPR and SR.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Ensure adequate funding and resource allocation for the NPR and SR, including the provision of sufficient budget and personnel to support their implementation and management.",
+      "evidence": "Page 20, Section 63"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inefficient procurement processes may lead to delays and inefficiencies in the implementation of the NPR and SR.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop and implement efficient procurement processes, including the use of the World Bank's procurement regulations and guidelines, to ensure the timely and effective implementation of the NPR and SR.",
+      "evidence": "Page 24, Section 76"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate monitoring and evaluation (M&E) systems may hinder the effective tracking and assessment of the NPR and SR's performance and impact.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop and implement comprehensive M&E systems, including the use of indicators and data collection tools, to track and assess the performance and impact of the NPR and SR.",
+      "evidence": "Page 27, Section 61"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Inadequate grievance redress mechanisms may lead to dissatisfaction and mistrust among beneficiaries and stakeholders.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish and implement effective grievance redress mechanisms, including the use of complaint handling procedures and feedback systems, to ensure that beneficiaries and stakeholders can report concerns and receive timely and effective responses.",
+      "evidence": "Page 25, Section 85"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Inadequate coordination and collaboration among stakeholders may hinder the effective implementation and management of the NPR and SR.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Foster coordination and collaboration among stakeholders, including government agencies, civil society organizations, and private sector entities, to ensure the effective implementation and management of the NPR and SR.",
+      "evidence": "Page 17, Section 48"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Stakeholder risk is assessed as Substantial. Given the complex nature of the operation and the involvement of multiple stakeholders in the implementation of the National Population Register (NPR) and the Social Registry (SR), the Project Management Unit (PMU) will need to put considerable effort into ensuring better coordination to achieve the PDO. The national rollout and the improvement of the NPR and the SR will need strong stakeholder engagement, including citizens concerned by social protection programs who are often poor and vulnerable.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The communication strategy will continue to inform all stakeholders involved in project implementation and will capitalize on lessons learned from the first Identity and Targeting for Social Protection project (P155198). The PMU envisions improving the grievance mechanism at local and national levels and establishing a system to promote citizen engagement and transparency. The Inter-Ministerial Steering Committee is responsible for developing guidelines for the strategic policy for the envisaged reform and ensuring a link with the ongoing social protection reform. Technical work will also cover a process evaluation to identify challenges, propose remedies, and provide recommendations to enhance system implementation at central and local levels."
+    }
+  ]
+}

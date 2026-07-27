@@ -1,0 +1,195 @@
+{
+  "run_file": "P-STP-YouthEmployment__gpt__zero_shot__run2.json",
+  "project_id": "P-STP-YouthEmployment",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R04",
+      "similarity": 0.538,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Training institutions lack adequate equipment, infrastructure and staff, limiting the quality and scale of technical training.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Allocate funds for equipment upgrades, refurbish facilities, recruit qualified instructors and provide continuous professional development.",
+      "evidence": "capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps (Section 12)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Curricula may not match employer needs, leading to skills mismatches and low graduate employability.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish regular employer advisory panels, embed employer\u2011driven competency standards in curricula, and monitor placement outcomes.",
+      "evidence": "most firms perceive that the education and training systems do not adequately prepare youth (Section 11)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Floods, storms and landslides could damage training facilities and disrupt program delivery.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Incorporate climate\u2011resilient design in renovations and new construction, and develop contingency plans for temporary relocation of activities.",
+      "evidence": "STP is vulnerable to coastal and riparian floods, severe storms, landslides (Section 4)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Delays in financial reporting and internal audits may hinder timely disbursements and compliance.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint an experienced accountant, customize accounting software for real\u2011time reporting, and enforce strict audit timelines.",
+      "evidence": "delays in recording financial transactions and generating financial reports; internal audit reviews not timely (Section 56)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Weak coordination between AFAP and ministries could slow procurement of goods and services.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Create joint procurement task\u2011forces with clear SOPs and shared timelines, and hold weekly coordination meetings.",
+      "evidence": "ability of AFAP and the MLSSS to work in close collaboration is key for timely procurement (Section 57)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Risk of sexual exploitation, abuse or harassment affecting especially female trainees and interns.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Hire dedicated GBV/SEA specialists, implement strict code of conduct, provide safe reporting channels and conduct regular awareness trainings.",
+      "evidence": "require hiring Environmental Specialist with SEA/SH expertise; risks of sexual exploitation and abuse (Legal covenants)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Beneficiary selection may exclude marginalized groups or be captured by elites, undermining equity goals.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use transparent, data\u2011driven targeting from the Unique Social Registry, and establish independent oversight of selection processes.",
+      "evidence": "risks of exclusion, especially for marginalized groups, if benefits not equitably distributed (Section 58)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "The new labor market information system may not become fully functional, limiting data\u2011driven employment services.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Adopt a phased rollout with pilot testing, allocate dedicated IT staff, and secure vendor support for system maintenance.",
+      "evidence": "Employment Observatory never fully operationalized; new system may not be operational (Sections 32\u201133)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "CERC may not be activated promptly during a crisis, delaying reallocation of funds to vulnerable beneficiaries.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Finalize the CERC manual before effectiveness, train staff on activation procedures, and conduct tabletop simulations annually.",
+      "evidence": "CERC manual to be prepared after effectiveness; staff orientation required (Section 47)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Insufficient partnerships with overseas employers could limit labor\u2011mobility opportunities for youth.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Negotiate MoUs with destination\u2011country employers, leverage CPLP networks, and showcase qualified candidates through the Employability Portal.",
+      "evidence": "explore partnerships with relevant overseas employers to advertise opportunities (Section 34)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Limited grant and scholarship budgets may fall short of the target numbers of beneficiaries.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Monitor disbursement pace quarterly, re\u2011prioritize allocations if needed, and seek supplemental donor contributions.",
+      "evidence": "project finances 0.00 financing gap but grant amounts limited; risk of not meeting 1,000 scholarships (Section 44)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Cultural and time\u2011poverty constraints may prevent women from reaching the 50\u202f% participation target.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide childcare services at training sites, schedule flexible class times, and conduct gender\u2011sensitive outreach through women\u2019s associations.",
+      "evidence": "women face higher poverty, lower labor participation; project aims 50\u202f% women but barriers exist (Sections 9, 23)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Private sector firms may not actively engage in Workforce Development Committees, reducing relevance of training programs.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Offer incentives such as partial compensation for training slots and public recognition for participating firms.",
+      "evidence": "Workforce Development Committees bring together private sector employers; participation may be limited (Section 27)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Logistical challenges of delivering equipment and staff to Pr\u00edncipe could delay construction of the new training centre.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop a detailed logistics plan, secure local transport contracts early, and build buffer time into the construction schedule.",
+      "evidence": "Pr\u00edncipe is 170\u202fkm away, geographically isolated, with limited skilled workers (Section 1)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Weak monitoring and evaluation data quality could impede learning and evidence\u2011based adjustments.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement standardized data collection tools, train staff on M&E protocols, and conduct periodic data quality audits.",
+      "evidence": "monitoring includes spot checks; risk of weak data if not properly managed (Section 51)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections. Success depends on sustained coordination across labor, education, tourism, agriculture, and finance ministries plus private-sector engagement.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Anchor the project within MLSSS (core employment-promotion mandate); strengthen technical ownership at directorate level rather than relying on political leadership; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events), which may weaken labor demand, reduce firms' absorption capacity, and constrain the Government's ability to sustain recurrent-cost interventions (training, stipends, employment services).",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Prioritize low-cost, scalable interventions; combine supply-side investments with direct job-creation support; target sectors with growth potential and external demand linkages (incl. labor mobility); coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination; sustainability risk if new systems/programs are not institutionalized within government structures and budgets.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures (existing MLSSS PIU, coordination committee, AFAP for fiduciary/safeguards); finance targeted TA and staffing; invest in durable institutional assets (labor-market information system, employability portal, strengthened training institutions, formalized service-provider arrangements); use the learning agenda and impact evaluation to identify cost-effective interventions for scale-up."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Agree ToRs and technical specifications between AFAP and the World Bank before initiating any procurement (prior and post-review); reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual; continue and adapt the risk assessment during implementation."
+    }
+  ]
+}

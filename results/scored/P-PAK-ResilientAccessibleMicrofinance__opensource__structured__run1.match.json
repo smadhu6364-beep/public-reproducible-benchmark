@@ -1,0 +1,32 @@
+{
+  "run_file": "P-PAK-ResilientAccessibleMicrofinance__opensource__structured__run1.json",
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is Substantial. The political context in Pakistan remains fluid. However, there has been significant decline in political uncertainty and associated policy instability in recent months, especially in the backdrop of the general elections. Given that a new government took the helm recently and the fact that policy priorities are still being defined, political risks, in particular in the context of the project, remain substantial.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In the implementation stage, the risks will be mitigated through frequent monitoring and oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is High. While fiscal consolidation measures have supported short-term stabilization, macroeconomic risks remain high amid a high debt burden (72 percent of GDP), heavy financial sector exposure to government debt, large external financing needs, weak confidence, and little progress with structural reforms. Significant risks include potential worsening of external conditions, further natural disasters, and a slowdown or reversals in policy adjustment.",
+      "category": "external",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Risks are partly mitigated by government commitment to implementation of reforms under the ongoing International Monetary Fund program, World Bank support to structural policy reforms in the fiscal and power sectors, strong government commitment to the reforms supported by the operation, and the availability of dedicated World Bank technical assistance to implement key reforms."
+    }
+  ]
+}

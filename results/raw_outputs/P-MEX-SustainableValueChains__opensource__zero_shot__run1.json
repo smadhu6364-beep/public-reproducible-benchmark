@@ -1,0 +1,108 @@
+{
+  "project_id": "P-MEX-SustainableValueChains",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:37:42.168167+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MEX-SustainableValueChains\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate NAFIN capacity to manage environmental and social risks\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity building for NAFIN staff on environmental and social risk management\",\n      \"evidence\": \"Section III.A.38\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient demand for sustainable finance products from SMEs and mid-caps\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct market research and outreach to SMEs and mid-caps to raise awareness and build demand for sustainable finance products\",\n      \"evidence\": \"Section II.D.24\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inadequate regulatory framework for sustainable finance in Mexico\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Collaborate with government agencies to strengthen regulatory framework and provide technical assistance to support sustainable finance development\",\n      \"evidence\": \"Section I.B.7\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Climate-related risks affecting SMEs and mid-caps\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Provide technical assistance and capacity building to SMEs and mid-caps on climate risk management and resilience\",\n      \"evidence\": \"Section I.B.19\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Limited access to long-term financing for SMEs and mid-caps\",\n      \"category\": \"financial\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop and offer long-term financing products tailored to SMEs and mid-caps, and provide capacity building on financial management and planning\",\n      \"evidence\": \"Section I.B.13\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate monitoring and reporting of project results and impacts\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a robust monitoring and reporting system, and provide training to NAFIN staff on results-based management\",\n      \"evidence\": \"Section III.B.40\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Gender disparities in access to finance for women-led businesses\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement a gender strategy to address disparities in access to finance for women-led businesses\",\n      \"evidence\": \"Section II.B.46\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate environmental and social risk management by PFIs\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity building to PFIs on environmental and social risk management, and establish a system for monitoring and reporting\",\n      \"evidence\": \"Section III.A.39\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Limited capacity of SMEs and mid-caps to prepare and implement sustainability plans\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide technical assistance and capacity building to SMEs and mid-caps on sustainability planning and implementation\",\n      \"evidence\": \"Section II.D.26\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate governance and oversight of NAFIN\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Strengthen governance and oversight mechanisms, and provide training to NAFIN staff on governance and risk management\",\n      \"evidence\": \"Section III.A.38\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MEX-SustainableValueChains",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate NAFIN capacity to manage environmental and social risks",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide training and capacity building for NAFIN staff on environmental and social risk management",
+        "evidence": "Section III.A.38"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient demand for sustainable finance products from SMEs and mid-caps",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct market research and outreach to SMEs and mid-caps to raise awareness and build demand for sustainable finance products",
+        "evidence": "Section II.D.24"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inadequate regulatory framework for sustainable finance in Mexico",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Collaborate with government agencies to strengthen regulatory framework and provide technical assistance to support sustainable finance development",
+        "evidence": "Section I.B.7"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Climate-related risks affecting SMEs and mid-caps",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Provide technical assistance and capacity building to SMEs and mid-caps on climate risk management and resilience",
+        "evidence": "Section I.B.19"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Limited access to long-term financing for SMEs and mid-caps",
+        "category": "financial",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop and offer long-term financing products tailored to SMEs and mid-caps, and provide capacity building on financial management and planning",
+        "evidence": "Section I.B.13"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate monitoring and reporting of project results and impacts",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a robust monitoring and reporting system, and provide training to NAFIN staff on results-based management",
+        "evidence": "Section III.B.40"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Gender disparities in access to finance for women-led businesses",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement a gender strategy to address disparities in access to finance for women-led businesses",
+        "evidence": "Section II.B.46"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate environmental and social risk management by PFIs",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide training and capacity building to PFIs on environmental and social risk management, and establish a system for monitoring and reporting",
+        "evidence": "Section III.A.39"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Limited capacity of SMEs and mid-caps to prepare and implement sustainability plans",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide technical assistance and capacity building to SMEs and mid-caps on sustainability planning and implementation",
+        "evidence": "Section II.D.26"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate governance and oversight of NAFIN",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Strengthen governance and oversight mechanisms, and provide training to NAFIN staff on governance and risk management",
+        "evidence": "Section III.A.38"
+      }
+    ]
+  },
+  "parse_error": null
+}

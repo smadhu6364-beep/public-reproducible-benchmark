@@ -1,0 +1,50 @@
+{
+  "run_file": "P-SLE-ConnectivityAgMarketInfra__gpt__few_shot__run2.json",
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance is rated Substantial. This project's activities are not highly sensitive to moderate perturbations in the political dispensation, although pronounced degeneration in political stability could still undermine their implementation. The more likely risk is that poor governance may affect implementation for the road sector, resulting in reduced commitment during implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through close supervision, strict adherence to the criteria for beneficiary selection, and fiduciary oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed as Substantial. Sierra Leone's post-pandemic recovery was disrupted by concurrent domestic and external shocks. Inflation and exchange rate depreciation reached record levels, depressing economic activity and triggering a severe cost-of-living crisis. Fiscal accounts have deteriorated on account of macroeconomic headwinds and policy slippages, and risks to debt sustainability have intensified. The economy is projected to grow at 3.8 percent on average during 2023-2025, below the long-term trend, and this baseline is vulnerable to downside risks given recent fiscal slippages and expenditure overruns. The macroeconomic risk may raise concerns about contractors' cost overrun and delay of payment.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Key macroeconomic reforms will help reduce the imbalances and avoid the downside risks. The project is 100 percent financed by IDA which will help mitigate the macroeconomic challenges to project implementation."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk is rated Substantial. The key fiduciary risks are related to the overall governance context of the project, the risk that procurement of project works may be delayed and/or result in higher-than-expected bid prices or poorly performing contractors, and difficulty retaining qualified procurement and FM professionals in the PCIU.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated by implementing an action plan that aims to strengthen the accountability and control framework for project implementation and improve overall fiduciary performance, and by ensuring adequate procurement and FM training. The PPSD will establish appropriate prequalification requirements and adopt standard lessons from experience procuring similar works contracts in Sierra Leone. The FM risk will be further mitigated by recruiting an internal auditor under PCIU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project's E&S risk is Substantial (para 74, explicitly pointing to section V.D for detail - para 74 states both environment risk and social risk are rated Substantial 'as indicated in section V.D'). Section V.D (paras 64-68): overall E&S risk classification is Substantial, with eight of ten Environmental and Social Standards (ESS) applying. Environmental risk is Substantial: construction activities are expected to generate air/noise nuisance, construction waste, and traffic/worker safety issues, and Component 2 in particular could affect downstream water users (water quality/hydrology, navigation, fish catch, riparian vegetation), with some impacts potentially long-term or irreversible (e.g. accidental spill of used oil/electrolytes/hazardous materials into the river during construction). Social risk is also Substantial: key risks include physical and economic displacement of boat/ferry operators, loaders, and traders after bridge construction; SEA/SH risks from the contractor workforce; elite capture in market-infrastructure interventions; social exclusion of vulnerable groups (persons with disabilities, women/small traders, the landless, elders); and secondary risks including potential child labor, communicable-disease spread from the contractor workforce, and local conflict over benefit-sharing from downstream impacts.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Standard measures per the ESIA/ESMP to be prepared for project activities, including energy-efficiency measures per World Bank EHS Guidelines/GIIPs; a site-specific SEA/SH risk assessment and commensurate GBV/SEA/SH action plan; the Environmental and Social Commitment Plan (ESCP) and Stakeholder Engagement Plan (SEP), disclosed April 19, 2024; hiring a social specialist with GBV/SEA/SH experience before project effectiveness; an ESIA and Resettlement Action Plan/livelihoods restoration plan already under development for the seven originally-planned bridges, with updated ESIA/ESMP/RAP and a SEA/SH action plan to be disclosed within one month of effectiveness; and a functional grievance mechanism (GM) plus Labor Management Procedures (LMP) for project workers."
+    }
+  ]
+}

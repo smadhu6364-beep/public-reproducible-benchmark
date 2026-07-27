@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:34:14.856999+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-FreeBreakfastClubs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient funding for schools to deliver free breakfast clubs, potentially impacting programme effectiveness.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Regular review of funding model and allocation, with adjustments as needed to ensure sufficient support for schools.\",\n      \"evidence\": \"Financial case: funding approach and costs.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Difficulty in recruiting and retaining skilled staff to deliver free breakfast clubs, affecting programme quality.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Development of training and support programs for staff, and exploration of incentives to attract and retain qualified personnel.\",\n      \"evidence\": \"Management case: programme success factors.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inequitable access to free breakfast clubs due to variations in school resources and capacity, potentially exacerbating existing inequalities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Targeted support for disadvantaged schools, and monitoring of programme accessibility and equity.\",\n      \"evidence\": \"Strategic case: food insecurity and childcare costs.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays or challenges in implementing the customer relationship management system, hindering school support and programme efficiency.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritized development and testing of the system, with contingency planning for potential delays or issues.\",\n      \"evidence\": \"Commercial case: customer relationship management system.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Insufficient engagement and participation from schools, potentially limiting programme reach and impact.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Proactive outreach and communication with schools, and incentives for participation and engagement.\",\n      \"evidence\": \"Commercial case: school recruitment and participation.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Difficulty in meeting the legislative requirements and timelines for implementing free breakfast clubs, potentially leading to non-compliance or delays.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Close collaboration with relevant authorities and stakeholders, and proactive planning to ensure compliance with legislative requirements.\",\n      \"evidence\": \"Strategic case: Children's Wellbeing and Schools Bill.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate infrastructure and resources in schools to support free breakfast clubs, potentially impacting programme quality and safety.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Assessment of school infrastructure and resources, with targeted support and investment to address gaps and needs.\",\n      \"evidence\": \"Management case: programme success factors.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Challenges in collecting and analyzing data on programme outcomes and impact, potentially limiting evaluation and improvement efforts.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Development of a robust data collection and analysis system, with regular review and refinement to ensure data quality and utility.\",\n      \"evidence\": \"Evaluation plan: data collection and analysis.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Insufficient consideration of the needs and perspectives of parents and carers, potentially leading to inadequate programme design and delivery.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Proactive engagement with parents and carers, and incorporation of their feedback and perspectives into programme design and delivery.\",\n      \"evidence\": \"Evaluation plan: parent and school perspectives.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Difficulty in sustaining programme funding and support over time, potentially leading to reduced programme effectiveness and impact.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Development of a long-term funding strategy, and exploration of opportunities for sustainable funding and support.\",\n      \"evidence\": \"Financial case: funding approach and costs.\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient funding for schools to deliver free breakfast clubs, potentially impacting programme effectiveness.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Regular review of funding model and allocation, with adjustments as needed to ensure sufficient support for schools.",
+        "evidence": "Financial case: funding approach and costs."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Difficulty in recruiting and retaining skilled staff to deliver free breakfast clubs, affecting programme quality.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Development of training and support programs for staff, and exploration of incentives to attract and retain qualified personnel.",
+        "evidence": "Management case: programme success factors."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inequitable access to free breakfast clubs due to variations in school resources and capacity, potentially exacerbating existing inequalities.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Targeted support for disadvantaged schools, and monitoring of programme accessibility and equity.",
+        "evidence": "Strategic case: food insecurity and childcare costs."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays or challenges in implementing the customer relationship management system, hindering school support and programme efficiency.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prioritized development and testing of the system, with contingency planning for potential delays or issues.",
+        "evidence": "Commercial case: customer relationship management system."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Insufficient engagement and participation from schools, potentially limiting programme reach and impact.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Proactive outreach and communication with schools, and incentives for participation and engagement.",
+        "evidence": "Commercial case: school recruitment and participation."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Difficulty in meeting the legislative requirements and timelines for implementing free breakfast clubs, potentially leading to non-compliance or delays.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Close collaboration with relevant authorities and stakeholders, and proactive planning to ensure compliance with legislative requirements.",
+        "evidence": "Strategic case: Children's Wellbeing and Schools Bill."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate infrastructure and resources in schools to support free breakfast clubs, potentially impacting programme quality and safety.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Assessment of school infrastructure and resources, with targeted support and investment to address gaps and needs.",
+        "evidence": "Management case: programme success factors."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Challenges in collecting and analyzing data on programme outcomes and impact, potentially limiting evaluation and improvement efforts.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Development of a robust data collection and analysis system, with regular review and refinement to ensure data quality and utility.",
+        "evidence": "Evaluation plan: data collection and analysis."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Insufficient consideration of the needs and perspectives of parents and carers, potentially leading to inadequate programme design and delivery.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Proactive engagement with parents and carers, and incorporation of their feedback and perspectives into programme design and delivery.",
+        "evidence": "Evaluation plan: parent and school perspectives."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Difficulty in sustaining programme funding and support over time, potentially leading to reduced programme effectiveness and impact.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Development of a long-term funding strategy, and exploration of opportunities for sustainable funding and support.",
+        "evidence": "Financial case: funding approach and costs."
+      }
+    ]
+  },
+  "parse_error": null
+}

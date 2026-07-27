@@ -1,0 +1,247 @@
+{
+  "run_file": "P-MNG-ThirdEnergySector__gpt__few_shot__run2.json",
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R04",
+      "similarity": 0.683,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R05",
+      "similarity": 0.511,
+      "gen_category": "external",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R17",
+      "gt_risk_id": "R01",
+      "similarity": 0.497,
+      "gen_category": "financial",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Construction may be delayed if the transmission line is not completed before the winter construction season.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Advance procurement and civil works planning; start activities early to align with the short construction season and include winter contingency.",
+      "evidence": "If it cannot be completed before winter, the Project will have more delays with waiting for the next construction season."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient local capacity to manufacture 220\u202fkV poles and conductors could cause procurement bottlenecks.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct early market engagement, pre\u2011qualify suppliers, and arrange imports of certified components with strict quality\u2011assurance clauses.",
+      "evidence": "no local company who can produce metal poles and conductors meeting the standards for 220kV lines."
+    },
+    {
+      "risk_id": "R03",
+      "description": "New Project Management Office (PMO) staff lack experience in World Bank financial management procedures.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit a qualified financial officer before loan signing and provide intensive FM training with ongoing Bank support.",
+      "evidence": "PMO is not yet in place and no financial management staff has been appointed."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Weak budgeting and cost controls may lead to funds being used for unintended purposes.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement robust budgeting, quarterly variance analysis, and require PSC approval of any major re\u2011allocations.",
+      "evidence": "Poor budgeting: The project funds not used for the intended purposes."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bird collisions and biodiversity impacts could arise from the new overhead transmission line.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement the Bird Management Plan, install flight diverters, and monitor avifauna along the corridor.",
+      "evidence": "Transmission lines often involve bird collision and other biodiversity issues; a Bird Management Plan was prepared."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Construction activities may cause soil erosion, noise, and disturbance to local wildlife and communities.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Apply erosion control measures, dust suppression, noise limits, and conduct community notification prior to works.",
+      "evidence": "Construction ... heavy equipment and construction noise and disturbance on bird sensitive areas, soil erosion during minor civil work."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Temporary restriction of pasture and water access could affect local herders and raise social tensions.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Develop a community liaison plan, provide compensation or alternative access, and schedule works to minimize disruption.",
+      "evidence": "Community safety during the construction phase, with temporary restriction of access to resources by local herders."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Grievances may not be resolved promptly, eroding community trust.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Publicize the GRM widely, train staff on response timelines, and monitor grievance logs for timely closure.",
+      "evidence": "The project level grievance redress mechanism (GRM) will replicate the mechanisms ... two\u2011stage approach."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Changes in government officials after elections could disrupt project continuity.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage promptly with incoming officials, secure written commitments, and embed continuity clauses in MoE agreements.",
+      "evidence": "Potential changes in Government officials involved in project activities due to election cycle."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Perceived corruption and high\u2011level interference in procurement may cause delays and reputational risk.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Adopt transparent procurement with independent evaluation, anti\u2011corruption safeguards, and regular monitoring by the Bank.",
+      "evidence": "High level of corruption perception. Interference of the high\u2011level officials in procurement decision making."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Design may not withstand extreme climate events, leading to premature failures.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Apply enhanced engineering standards for wind, snow, temperature, earthquake and flood as defined in the EHSG.",
+      "evidence": "Enhanced engineering and design standards that consider weather and natural hazards ... wind loading, earthquake and flood."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Heavy reliance on imported construction materials makes the project vulnerable to border closures or pandemic disruptions.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Identify alternative local suppliers, maintain buffer inventories, and monitor global logistics to adjust schedules as needed.",
+      "evidence": "75\u201180% of construction materials are sourced from outside the country; pandemic or border closures could have significant impact."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Occupational health and safety risks from live lines, work at height, and EMF exposure.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement strict OHS protocols, worker training, EMF monitoring, signage, and emergency procedures.",
+      "evidence": "OHS risks associated with live power lines, working at height, electric and magnetic fields (EMF)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Delay or shortfall in counterpart funding could stall component\u20112 capacity\u2011building activities.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Establish an escrow account for counterpart funds, require quarterly reporting, and enforce contractual penalties for delays.",
+      "evidence": "Borrower shall provide ... counterpart funds ... in a timely manner, minimum amount $840,000."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Local contractors lack sufficient human resources and technical capacity, risking procurement delays.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct market sounding, provide targeted capacity\u2011building, and consider joint ventures with experienced foreign firms.",
+      "evidence": "Many local companies lack human resources; no local company can produce metal poles and conductors meeting standards."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Insufficient ongoing capacity building may limit sustainability of project outcomes.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement a continuous training program, periodic competency assessments, and refresher courses for PMO staff.",
+      "evidence": "Capacity building activities ... moderate social risk; ongoing stakeholder engagement required for sustainability."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Private investors may not develop the expected volume of VRE projects, reducing financial returns.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Offer de\u2011risking instruments, guarantee grid access, and align tariff reforms to improve project bankability.",
+      "evidence": "Only 100\u202fMW expected private development; monetary estimate US$110\u202fmillion captured in results framework."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Audit findings may not be addressed, weakening financial controls and increasing misuse risk.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Create a formal audit\u2011follow\u2011up action plan, assign responsibility, and monitor implementation with Bank oversight.",
+      "evidence": "Poor follow\u2011up on audit findings: PMO does not address audit findings noted by the auditors."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risks are rated Substantial. The parliamentary election was held in June 2024 and a new coalition government was formed, with representation of all three major political parties. While there may be risks of disagreement on the approval of individual projects, these risks will be mitigated by the strong alignment of the proposed operation with the NRP and the new Government Action Plan for 2024-2028.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Continued engagement with key stakeholders, including government and the parliament, through ongoing analytical and technical support on VRE integration and energy sector reform, will help mitigate risks going forward. The Development Partner Group, co-chaired by the World Bank and UNDP, will also offer a donor coordination platform to maintain political momentum for RE integration."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The macroeconomic risk is rated Substantial. Mongolia's economic outlook is dependent on global macroeconomic factors, in particular commodity prices. Despite recent positive short-term developments from coal and agricultural exports, Mongolia still needs to strengthen fiscal and external buffers to respond to future shocks and continue reforms aimed at diversifying the economy.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "To mitigate these risks and manage external balances, the World Bank has been, and will continue to be, supporting the authorities in restoring fiscal and external buffers through analytical and advisory work."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The sector strategies and policies risk is rated Substantial. Substantial risk still exists due to institutional fragmentation, lack of policies to promote RE projects, and lack of clear commitment of reforms, especially related to tariff reforms that are crucial to make the sector viable and be able to refinance projects.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigation measures include actively engaging in multi-stakeholder coordination meetings and providing technical advice and capacity building to key stakeholders."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The institutional capacity for implementation and sustainability risk is rated Substantial. The implementing agency MOE and NPTG have experience implementing World Bank-funded projects; however, there is a substantial risk that newly hired PMO staff may not have sufficient capacity, which could potentially lead to implementation delays.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The PMO will be strengthened with experienced consultants and targeted training and capacity building. Mitigating measures include the World Bank's scrutiny of PMO members' selection, including a review of the TOR and providing no objection to the qualification criteria of the staff."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Fiduciary risk is rated Substantial. There are substantial risks due to the reliance of MOE on a newly constituted PMO, which may cause delays in processing payments, conducting IFRs, and other reporting requirements; the construction sector in Mongolia is often subject to delays and cost overruns. Potential procurement risks include (i) likelihood of time and cost overruns due to weak contract management capacity, and (ii) significant procurement delays due to delayed initiation of procurement and establishment of needed staffing arrangements.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Capacity building through customized training and TA is a central element of the Project, along with strong project supervision and contract management capacity building; MOE will continue to directly provide intensive support to the PMO. Procurement risks are mitigated by (a) establishing a PMO with appropriate procurement and technical staff per FIDIC contract standards; (b) clearly defined workflow in decision-making within the MOE/PMO procurement manual; and (c) extensive market engagement to stimulate market participation."
+    }
+  ]
+}

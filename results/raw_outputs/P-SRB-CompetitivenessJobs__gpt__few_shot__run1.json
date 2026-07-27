@@ -1,0 +1,180 @@
+{
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:23:28.456502+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-SRB-CompetitivenessJobs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Weak inter\u2011ministerial policy coordination may delay PPMC implementation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish clear PPMC mandate, schedule regular WG meetings, enforce reporting and performance reviews.\",\n      \"evidence\": \"Weak strategic planning and policy coordination identified; PPMC framework to be piloted (Section 24\u201126).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient procurement capacity in PPS and MoLEVSA could cause delays and non\u2011compliance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced procurement specialists, provide intensive training, and implement Bank oversight of procurement processes.\",\n      \"evidence\": \"Assessment found most entities lack World Bank project experience; capacity issue addressed by hiring procurement experts (Section 86\u201187).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Results\u2011based financing depends on achieving DLIs; failure reduces loan disbursements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust monitoring, early verification of DLIs, and allocate contingency TA to support indicator achievement.\",\n      \"evidence\": \"Disbursement\u2011linked indicators condition loan repayments; failure to meet DLIs reduces funding (Section 58\u201160).\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Payroll data integrity risk may affect eligibility of salary reimbursements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct regular audits, cross\u2011checks, enforce segregation of duties, and review IT logs periodically.\",\n      \"evidence\": \"Centralized payroll system deemed reliable but IT logs not regularly reviewed (Section 14\u201115).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"High variance in NES caseworker caseload reduces labor intermediation effectiveness.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Introduce caseworker certification, redistribute staff, and implement active\u2011jobseeker registry to balance workloads.\",\n      \"evidence\": \"NES caseworker caseload ranges 200\u20112000; new active\u2011jobseeker list proposed to reduce dispersion (Section 46\u201147).\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Innovation Fund may not meet 80% matching\u2011grant budget commitment, limiting enterprise innovation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen IF governance, monitor grant allocations, and ensure budget commitments are met each fiscal year.\",\n      \"evidence\": \"Innovation Fund governance strong; DLI requires 80% of matching\u2011grant budget committed annually (Section 37\u201138).\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Technology Transfer Facility lacks functional capacity, risking insufficient technology transfer transactions.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Design service lines, allocate EUR 0.9\u202fm annually, pilot transactions, and evaluate for scaling.\",\n      \"evidence\": \"No existing TT facility; DLI 4 mandates design and deployment of service lines and funding (Section 31\u201133).\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Overlapping mandates of MoE agencies may hinder effective restructuring.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Define clear legal bases, streamline mandates, set performance targets, and conduct stakeholder consultations.\",\n      \"evidence\": \"MoE agencies have overlapping mandates and non\u2011transparent performance (Section 30\u201131).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Fiscal consolidation could limit funding for ALMPs and NES reforms.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Embed reforms in existing budget lines, prioritize cost\u2011effective measures, and seek donor co\u2011financing where needed.\",\n      \"evidence\": \"Fiscal consolidation and upcoming SOE restructuring may limit ALMP budget (Section 50\u201151).\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"High tax wedge and benefit withdrawal create work disincentives for low\u2011wage workers.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Design in\u2011work cash transfer, adjust tax/benefit formulas, and pilot the program for formal job uptake.\",\n      \"evidence\": \"High tax wedge and benefit withdrawal create work disincentives; DLI 9 targets cash\u2011transfer pilot (Section 51\u201153).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Insufficient stakeholder engagement may reduce uptake of reforms.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain ongoing consultations, conduct citizen surveys, and publish progress reports to keep stakeholders informed.\",\n      \"evidence\": \"Extensive consultations with NGOs, business groups and public surveys planned (Section 18\u201119).\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"External macro\u2011economic risk from IMF program and debt sustainability could affect project environment.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor IMF compliance, maintain fiscal discipline, and adjust reform pace if macro conditions deteriorate.\",\n      \"evidence\": \"Three\u2011year IMF Precautionary Stand\u2011By Agreement approved Feb 2015 (Section 3\u20114).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Potential environmental impacts from innovation activities not fully screened.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Apply ESMF screening to all activities, prepare EMPs where required, and conduct environmental monitoring.\",\n      \"evidence\": \"Project classified as Category B; ESMF prepared and public consultation held (Section 89\u201190).\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Gender gaps may persist if gender analysis is not effectively integrated.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate gender indicators, monitor female participation, and adjust programs based on gender\u2011disaggregated data.\",\n      \"evidence\": \"Gender analysis incorporated in components 4.C and 4.B; gender\u2011disaggregated stats to be monitored (Section 17\u201118).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Delay in adoption of R&I strategy and sector reforms could stall innovation outcomes.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set firm adoption deadlines, track progress quarterly, and provide targeted technical assistance.\",\n      \"evidence\": \"DLI 5 requires adoption of R&I strategy and sector reforms by 2015\u20112020 (Section 42\u201144).\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Perceived corruption may affect procurement and TA contract integrity.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce transparency, publish contracts, conduct anti\u2011corruption training, and maintain Bank oversight.\",\n      \"evidence\": \"Perceived corruption high; mitigation includes transparency, publishing contracts and Bank oversight (Section 32\u201133).\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"NES KPI data system may not be fully operational, limiting monitoring of labor reforms.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop IT platform, train staff, and perform regular data quality audits.\",\n      \"evidence\": \"NES to develop KPI system with semi\u2011annual reports; risk of data quality if not implemented (Section 41\u201142).\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Results\u2011based financing schedule may misalign with fiscal calendar, causing cash\u2011flow gaps.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Synchronize DLI reporting with budget cycles and maintain contingency reserves for interim financing.\",\n      \"evidence\": \"Disbursements tied to semi\u2011annual DLI reporting; retroactive financing limited to 12 months (Section 84\u201186).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SRB-CompetitivenessJobs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Weak inter\u2011ministerial policy coordination may delay PPMC implementation.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish clear PPMC mandate, schedule regular WG meetings, enforce reporting and performance reviews.",
+        "evidence": "Weak strategic planning and policy coordination identified; PPMC framework to be piloted (Section 24\u201126)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient procurement capacity in PPS and MoLEVSA could cause delays and non\u2011compliance.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire experienced procurement specialists, provide intensive training, and implement Bank oversight of procurement processes.",
+        "evidence": "Assessment found most entities lack World Bank project experience; capacity issue addressed by hiring procurement experts (Section 86\u201187)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Results\u2011based financing depends on achieving DLIs; failure reduces loan disbursements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implement robust monitoring, early verification of DLIs, and allocate contingency TA to support indicator achievement.",
+        "evidence": "Disbursement\u2011linked indicators condition loan repayments; failure to meet DLIs reduces funding (Section 58\u201160)."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Payroll data integrity risk may affect eligibility of salary reimbursements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct regular audits, cross\u2011checks, enforce segregation of duties, and review IT logs periodically.",
+        "evidence": "Centralized payroll system deemed reliable but IT logs not regularly reviewed (Section 14\u201115)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "High variance in NES caseworker caseload reduces labor intermediation effectiveness.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Introduce caseworker certification, redistribute staff, and implement active\u2011jobseeker registry to balance workloads.",
+        "evidence": "NES caseworker caseload ranges 200\u20112000; new active\u2011jobseeker list proposed to reduce dispersion (Section 46\u201147)."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Innovation Fund may not meet 80% matching\u2011grant budget commitment, limiting enterprise innovation.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen IF governance, monitor grant allocations, and ensure budget commitments are met each fiscal year.",
+        "evidence": "Innovation Fund governance strong; DLI requires 80% of matching\u2011grant budget committed annually (Section 37\u201138)."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Technology Transfer Facility lacks functional capacity, risking insufficient technology transfer transactions.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Design service lines, allocate EUR 0.9\u202fm annually, pilot transactions, and evaluate for scaling.",
+        "evidence": "No existing TT facility; DLI 4 mandates design and deployment of service lines and funding (Section 31\u201133)."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Overlapping mandates of MoE agencies may hinder effective restructuring.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Define clear legal bases, streamline mandates, set performance targets, and conduct stakeholder consultations.",
+        "evidence": "MoE agencies have overlapping mandates and non\u2011transparent performance (Section 30\u201131)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Fiscal consolidation could limit funding for ALMPs and NES reforms.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Embed reforms in existing budget lines, prioritize cost\u2011effective measures, and seek donor co\u2011financing where needed.",
+        "evidence": "Fiscal consolidation and upcoming SOE restructuring may limit ALMP budget (Section 50\u201151)."
+      },
+      {
+        "risk_id": "R10",
+        "description": "High tax wedge and benefit withdrawal create work disincentives for low\u2011wage workers.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Design in\u2011work cash transfer, adjust tax/benefit formulas, and pilot the program for formal job uptake.",
+        "evidence": "High tax wedge and benefit withdrawal create work disincentives; DLI 9 targets cash\u2011transfer pilot (Section 51\u201153)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Insufficient stakeholder engagement may reduce uptake of reforms.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain ongoing consultations, conduct citizen surveys, and publish progress reports to keep stakeholders informed.",
+        "evidence": "Extensive consultations with NGOs, business groups and public surveys planned (Section 18\u201119)."
+      },
+      {
+        "risk_id": "R12",
+        "description": "External macro\u2011economic risk from IMF program and debt sustainability could affect project environment.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor IMF compliance, maintain fiscal discipline, and adjust reform pace if macro conditions deteriorate.",
+        "evidence": "Three\u2011year IMF Precautionary Stand\u2011By Agreement approved Feb 2015 (Section 3\u20114)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Potential environmental impacts from innovation activities not fully screened.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Apply ESMF screening to all activities, prepare EMPs where required, and conduct environmental monitoring.",
+        "evidence": "Project classified as Category B; ESMF prepared and public consultation held (Section 89\u201190)."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Gender gaps may persist if gender analysis is not effectively integrated.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate gender indicators, monitor female participation, and adjust programs based on gender\u2011disaggregated data.",
+        "evidence": "Gender analysis incorporated in components 4.C and 4.B; gender\u2011disaggregated stats to be monitored (Section 17\u201118)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Delay in adoption of R&I strategy and sector reforms could stall innovation outcomes.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set firm adoption deadlines, track progress quarterly, and provide targeted technical assistance.",
+        "evidence": "DLI 5 requires adoption of R&I strategy and sector reforms by 2015\u20112020 (Section 42\u201144)."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Perceived corruption may affect procurement and TA contract integrity.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce transparency, publish contracts, conduct anti\u2011corruption training, and maintain Bank oversight.",
+        "evidence": "Perceived corruption high; mitigation includes transparency, publishing contracts and Bank oversight (Section 32\u201133)."
+      },
+      {
+        "risk_id": "R17",
+        "description": "NES KPI data system may not be fully operational, limiting monitoring of labor reforms.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop IT platform, train staff, and perform regular data quality audits.",
+        "evidence": "NES to develop KPI system with semi\u2011annual reports; risk of data quality if not implemented (Section 41\u201142)."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Results\u2011based financing schedule may misalign with fiscal calendar, causing cash\u2011flow gaps.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Synchronize DLI reporting with budget cycles and maintain contingency reserves for interim financing.",
+        "evidence": "Disbursements tied to semi\u2011annual DLI reporting; retroactive financing limited to 12 months (Section 84\u201186)."
+      }
+    ]
+  },
+  "parse_error": null
+}

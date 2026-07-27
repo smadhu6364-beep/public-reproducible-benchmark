@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UK-PadeswoodCCUS",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:48:38.096349+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-PadeswoodCCUS\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Carbon leakage if Padeswood does not receive investment to deploy CCUS\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Government support through the Industrial Carbon Capture business model\",\n      \"evidence\": \"2.1.2 Current position\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Delay in Padeswood FID and COD impacting project timeline\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Clear risk allocation, commercial incentives, and ongoing assurance processes\",\n      \"evidence\": \"3.2 Counterfactual\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"High upfront costs and revenue uncertainty impacting project viability\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Revenue support through the ICC Contract and CCS Infrastructure Fund Grant\",\n      \"evidence\": \"4.3 Government Support\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Cross-chain risks and operating model integration risks\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Cluster Sponsor Function to manage government-owned cross-chain delivery risks\",\n      \"evidence\": \"6.4 Post-HyNet FID roles and responsibilities\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Regulatory and business model issues impacting project delivery\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Cluster Sponsor Function to coordinate removal of barriers to successful delivery\",\n      \"evidence\": \"6.4 Post-HyNet FID roles and responsibilities\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Technical risks associated with CCUS deployment\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Independent assurance and robust Open Book Model\",\n      \"evidence\": \"4.2 Emitter Selection and Assurance Process\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Risk of non-compliance with the CCS Network Code\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Padeswood compliance with the CCS Network Code\",\n      \"evidence\": \"4.6 Network Code Compliance\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Risk of under-delivery and non-performance\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Performance thresholds and contractual clauses\",\n      \"evidence\": \"4.4 Business Model Framework\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Risk of change in law and force majeure\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Contractual clauses covering change in law and force majeure\",\n      \"evidence\": \"4.4 Business Model Framework\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Risk of fraud and discontinuation of Padeswood\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Robust financial management and oversight\",\n      \"evidence\": \"5.4 Financial Risks\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-PadeswoodCCUS",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Carbon leakage if Padeswood does not receive investment to deploy CCUS",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Government support through the Industrial Carbon Capture business model",
+        "evidence": "2.1.2 Current position"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delay in Padeswood FID and COD impacting project timeline",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Clear risk allocation, commercial incentives, and ongoing assurance processes",
+        "evidence": "3.2 Counterfactual"
+      },
+      {
+        "risk_id": "R03",
+        "description": "High upfront costs and revenue uncertainty impacting project viability",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Revenue support through the ICC Contract and CCS Infrastructure Fund Grant",
+        "evidence": "4.3 Government Support"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Cross-chain risks and operating model integration risks",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Cluster Sponsor Function to manage government-owned cross-chain delivery risks",
+        "evidence": "6.4 Post-HyNet FID roles and responsibilities"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Regulatory and business model issues impacting project delivery",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Cluster Sponsor Function to coordinate removal of barriers to successful delivery",
+        "evidence": "6.4 Post-HyNet FID roles and responsibilities"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Technical risks associated with CCUS deployment",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Independent assurance and robust Open Book Model",
+        "evidence": "4.2 Emitter Selection and Assurance Process"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Risk of non-compliance with the CCS Network Code",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Padeswood compliance with the CCS Network Code",
+        "evidence": "4.6 Network Code Compliance"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Risk of under-delivery and non-performance",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Performance thresholds and contractual clauses",
+        "evidence": "4.4 Business Model Framework"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Risk of change in law and force majeure",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Contractual clauses covering change in law and force majeure",
+        "evidence": "4.4 Business Model Framework"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Risk of fraud and discontinuation of Padeswood",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Robust financial management and oversight",
+        "evidence": "5.4 Financial Risks"
+      }
+    ]
+  },
+  "parse_error": null
+}

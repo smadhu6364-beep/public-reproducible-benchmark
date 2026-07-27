@@ -1,0 +1,180 @@
+{
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:24:21.468208+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-SRB-CompetitivenessJobs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Failure to establish a functional inter\u2011ministerial policy planning, monitoring and coordination (PPMC) system.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Create a legally mandated PPMC working group, define clear mandates, provide capacity\u2011building workshops and enforce semi\u2011annual reporting.\",\n      \"evidence\": \"No Competitiveness and Jobs policy planning, monitoring, or coordination framework exists (DLI 1 description).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient procurement capacity in the Public Policy Secretariat (PPS) and line ministries causing procurement delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Hire experienced procurement specialists, deliver intensive Bank\u2011led procurement training, and implement a monitoring checklist for all procurements.\",\n      \"evidence\": \"PPS does not have adequate capacity in Bank\u2011funded projects and with Bank procurement procedures.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"High overall procurement risk may lead to contract award delays and cost overruns.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt a detailed procurement plan with clear timelines, use pre\u2011qualified bidders, and conduct regular procurement progress reviews.\",\n      \"evidence\": \"Overall project risk for procurement is rated \u201chigh\u201d.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Disbursement\u2011Linked Indicators (DLIs) not met, resulting in delayed or withheld loan disbursements and cash\u2011flow pressure.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Establish a DLI tracking unit within the PIU, conduct quarterly DLI readiness assessments, and prepare contingency action plans for shortfalls.\",\n      \"evidence\": \"If a DLI is not achieved, the Bank can issue a waiver and determine amount and timing of withheld disbursement.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Overlapping mandates and lack of coordination among investment and export promotion agencies reduce program efficiency.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement agency restructuring with clear legal mandates, introduce joint performance targets, and set up a shared monitoring dashboard.\",\n      \"evidence\": \"Agencies have overlapping mandates, no coordination, and unclear links with broader economic policy goals.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Restructuring of Ministry of Economy agencies may disrupt ongoing support services during transition.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Phase restructuring steps, maintain interim service units, and monitor service continuity indicators throughout the transition.\",\n      \"evidence\": \"Restructuring could include combination of existing or creation of new agencies.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Matching Grants Program may fail to attract required private co\u2011financing, limiting leverage of public funds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set minimum co\u2011financing thresholds in grant agreements, provide technical assistance to firms for co\u2011financing arrangements, and monitor uptake quarterly.\",\n      \"evidence\": \"Matching grants require at least 30% private sector co\u2011financing.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Technology Transfer Facility (TTF) funding insufficient to build a viable tech\u2011transfer pipeline.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Secure additional donor contributions, prioritize high\u2011potential projects, and establish performance\u2011based milestones for transaction completion.\",\n      \"evidence\": \"Current TTF funding (Euro 1.18\u202fmillion) is deemed insufficient to finance and demonstrate a strong tech transfer pipeline.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"High caseload per NES case worker limits effective job matching and employer outreach.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Reallocate staff, introduce active\u2011job\u2011seeker registry, and set caseload caps with regular monitoring of workload distribution.\",\n      \"evidence\": \"Average caseload varies between around 200 to over 2,000 registered unemployed per case worker.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Certification and training of NES case workers may not be completed within the 12\u2011month target.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a detailed training calendar, assign dedicated trainers, and track certification progress monthly.\",\n      \"evidence\": \"Case workers must be certified within 12 months from appointment.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"High tax wedge and benefit withdrawal disincentivize formal employment for social assistance beneficiaries.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Design an in\u2011work cash transfer that offsets lost benefits and tax contributions, and pilot the scheme before scaling.\",\n      \"evidence\": \"High tax wedge on low\u2011paying jobs and social assistance benefit reduced by at least one dinar for every dinar earned.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Macroeconomic instability and high public debt may constrain fiscal space for project activities.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Align project expenditures with the medium\u2011term fiscal strategy, and include fiscal contingency buffers in the budget.\",\n      \"evidence\": \"Public debt to GDP ratio sharply increased from 36% in 2009 to over 70% in 2014.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Perceived high level of corruption could affect procurement integrity and stakeholder confidence.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce public disclosure of all contracts, conduct independent audits, and implement a whistle\u2011blower mechanism.\",\n      \"evidence\": \"Perceived level of corruption in the country is high.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Lack of robust monitoring and evaluation systems hampers evidence\u2011based policy adjustments.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Build a centralized M&E platform, train staff on data collection, and conduct periodic independent evaluations.\",\n      \"evidence\": \"Lack of robust monitoring and evaluation systems; not clear what outcomes of programs are.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Dependence on external technical assistance may lead to delays if consultants are not secured on time.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare detailed TORs early, use pre\u2011qualified consultant pools, and include penalty clauses for late delivery.\",\n      \"evidence\": \"Total TA needs are estimated at around EUR 3\u202fmillion; additional details of Innovation component TA are included.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Manual entries in the centralized payroll system could introduce data errors or unauthorized changes.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement automated validation rules, conduct quarterly payroll audits, and enforce segregation of duties with audit\u2011trail reviews.\",\n      \"evidence\": \"Changes in the payroll are entered manually; IT system generates logs, but the logs are not reviewed.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Environmental and social safeguards may be insufficiently monitored, risking non\u2011compliance with ESMF requirements.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Engage the independent E&S expert to conduct quarterly compliance checks and publish safeguard monitoring reports publicly.\",\n      \"evidence\": \"An Independent Environmental and Social Expert will be engaged to ensure compliance with the ESMF.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Implementation of the PPMC framework may experience schedule slippage due to need for frequent adjustments.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set a phased rollout plan with fixed milestones, and allocate a contingency buffer for adjustment activities.\",\n      \"evidence\": \"The framework will be a work\u2011in\u2011progress, requiring frequent adjustment and improvement.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SRB-CompetitivenessJobs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Failure to establish a functional inter\u2011ministerial policy planning, monitoring and coordination (PPMC) system.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Create a legally mandated PPMC working group, define clear mandates, provide capacity\u2011building workshops and enforce semi\u2011annual reporting.",
+        "evidence": "No Competitiveness and Jobs policy planning, monitoring, or coordination framework exists (DLI 1 description)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient procurement capacity in the Public Policy Secretariat (PPS) and line ministries causing procurement delays.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Hire experienced procurement specialists, deliver intensive Bank\u2011led procurement training, and implement a monitoring checklist for all procurements.",
+        "evidence": "PPS does not have adequate capacity in Bank\u2011funded projects and with Bank procurement procedures."
+      },
+      {
+        "risk_id": "R03",
+        "description": "High overall procurement risk may lead to contract award delays and cost overruns.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Adopt a detailed procurement plan with clear timelines, use pre\u2011qualified bidders, and conduct regular procurement progress reviews.",
+        "evidence": "Overall project risk for procurement is rated \u201chigh\u201d."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Disbursement\u2011Linked Indicators (DLIs) not met, resulting in delayed or withheld loan disbursements and cash\u2011flow pressure.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Establish a DLI tracking unit within the PIU, conduct quarterly DLI readiness assessments, and prepare contingency action plans for shortfalls.",
+        "evidence": "If a DLI is not achieved, the Bank can issue a waiver and determine amount and timing of withheld disbursement."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Overlapping mandates and lack of coordination among investment and export promotion agencies reduce program efficiency.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement agency restructuring with clear legal mandates, introduce joint performance targets, and set up a shared monitoring dashboard.",
+        "evidence": "Agencies have overlapping mandates, no coordination, and unclear links with broader economic policy goals."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Restructuring of Ministry of Economy agencies may disrupt ongoing support services during transition.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Phase restructuring steps, maintain interim service units, and monitor service continuity indicators throughout the transition.",
+        "evidence": "Restructuring could include combination of existing or creation of new agencies."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Matching Grants Program may fail to attract required private co\u2011financing, limiting leverage of public funds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set minimum co\u2011financing thresholds in grant agreements, provide technical assistance to firms for co\u2011financing arrangements, and monitor uptake quarterly.",
+        "evidence": "Matching grants require at least 30% private sector co\u2011financing."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Technology Transfer Facility (TTF) funding insufficient to build a viable tech\u2011transfer pipeline.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Secure additional donor contributions, prioritize high\u2011potential projects, and establish performance\u2011based milestones for transaction completion.",
+        "evidence": "Current TTF funding (Euro 1.18\u202fmillion) is deemed insufficient to finance and demonstrate a strong tech transfer pipeline."
+      },
+      {
+        "risk_id": "R09",
+        "description": "High caseload per NES case worker limits effective job matching and employer outreach.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Reallocate staff, introduce active\u2011job\u2011seeker registry, and set caseload caps with regular monitoring of workload distribution.",
+        "evidence": "Average caseload varies between around 200 to over 2,000 registered unemployed per case worker."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Certification and training of NES case workers may not be completed within the 12\u2011month target.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a detailed training calendar, assign dedicated trainers, and track certification progress monthly.",
+        "evidence": "Case workers must be certified within 12 months from appointment."
+      },
+      {
+        "risk_id": "R11",
+        "description": "High tax wedge and benefit withdrawal disincentivize formal employment for social assistance beneficiaries.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Design an in\u2011work cash transfer that offsets lost benefits and tax contributions, and pilot the scheme before scaling.",
+        "evidence": "High tax wedge on low\u2011paying jobs and social assistance benefit reduced by at least one dinar for every dinar earned."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Macroeconomic instability and high public debt may constrain fiscal space for project activities.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Align project expenditures with the medium\u2011term fiscal strategy, and include fiscal contingency buffers in the budget.",
+        "evidence": "Public debt to GDP ratio sharply increased from 36% in 2009 to over 70% in 2014."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Perceived high level of corruption could affect procurement integrity and stakeholder confidence.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce public disclosure of all contracts, conduct independent audits, and implement a whistle\u2011blower mechanism.",
+        "evidence": "Perceived level of corruption in the country is high."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Lack of robust monitoring and evaluation systems hampers evidence\u2011based policy adjustments.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Build a centralized M&E platform, train staff on data collection, and conduct periodic independent evaluations.",
+        "evidence": "Lack of robust monitoring and evaluation systems; not clear what outcomes of programs are."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Dependence on external technical assistance may lead to delays if consultants are not secured on time.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prepare detailed TORs early, use pre\u2011qualified consultant pools, and include penalty clauses for late delivery.",
+        "evidence": "Total TA needs are estimated at around EUR 3\u202fmillion; additional details of Innovation component TA are included."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Manual entries in the centralized payroll system could introduce data errors or unauthorized changes.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement automated validation rules, conduct quarterly payroll audits, and enforce segregation of duties with audit\u2011trail reviews.",
+        "evidence": "Changes in the payroll are entered manually; IT system generates logs, but the logs are not reviewed."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Environmental and social safeguards may be insufficiently monitored, risking non\u2011compliance with ESMF requirements.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Engage the independent E&S expert to conduct quarterly compliance checks and publish safeguard monitoring reports publicly.",
+        "evidence": "An Independent Environmental and Social Expert will be engaged to ensure compliance with the ESMF."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Implementation of the PPMC framework may experience schedule slippage due to need for frequent adjustments.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set a phased rollout plan with fixed milestones, and allocate a contingency buffer for adjustment activities.",
+        "evidence": "The framework will be a work\u2011in\u2011progress, requiring frequent adjustment and improvement."
+      }
+    ]
+  },
+  "parse_error": null
+}

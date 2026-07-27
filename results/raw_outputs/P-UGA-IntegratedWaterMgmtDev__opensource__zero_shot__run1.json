@@ -1,0 +1,108 @@
+{
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:17:26.677669+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UGA-IntegratedWaterMgmtDev\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in project implementation due to inadequate readiness at appraisal\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct thorough readiness assessments and develop detailed project plans to ensure timely implementation\",\n      \"evidence\": \"Lessons from ongoing operations in Uganda and the World Bank's global experience\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inadequate water resource management leading to water scarcity and quality issues\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Implement integrated water resources management (IWRM) approaches and strengthen water resource monitoring and information systems\",\n      \"evidence\": \"Uganda's dependence on agriculture and recent shift toward industrialization\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Insufficient funding for project implementation and sustainability\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Explore alternative financing options, such as public-private partnerships, and ensure adequate budget allocation for project implementation and maintenance\",\n      \"evidence\": \"Financing gap and dependence on donor funding\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate capacity and institutional strengthening of implementing agencies\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building programs for implementing agencies and ensure adequate staffing and resources\",\n      \"evidence\": \"Inadequate capacity and institutional strengthening of implementing agencies\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Social and environmental impacts of project activities, such as displacement and pollution\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough environmental and social impact assessments and develop mitigation measures to minimize negative impacts\",\n      \"evidence\": \"Potential social and environmental impacts of project activities\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Climate change and variability affecting water resources and project implementation\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate change considerations into project design and implementation, and develop strategies to enhance resilience and adaptability\",\n      \"evidence\": \"Climate change and variability affecting water resources and project implementation\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate stakeholder engagement and participation in project planning and implementation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure inclusive stakeholder engagement and participation in project planning and implementation, and establish effective communication channels\",\n      \"evidence\": \"Importance of stakeholder engagement and participation in project success\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Refugee influx and related social and economic challenges affecting project implementation\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop strategies to address refugee-related challenges, such as providing alternative water sources and sanitation facilities, and ensuring inclusive stakeholder engagement\",\n      \"evidence\": \"Refugee influx and related social and economic challenges affecting project implementation\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate procurement and contract management leading to delays and cost overruns\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure adequate procurement and contract management capacity, and develop strategies to mitigate delays and cost overruns\",\n      \"evidence\": \"Inadequate procurement and contract management leading to delays and cost overruns\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate monitoring and evaluation (M&E) systems and data management\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement effective M&E systems and data management protocols to ensure accurate tracking of project progress and outcomes\",\n      \"evidence\": \"Importance of M&E systems and data management in project success\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UGA-IntegratedWaterMgmtDev",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in project implementation due to inadequate readiness at appraisal",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Conduct thorough readiness assessments and develop detailed project plans to ensure timely implementation",
+        "evidence": "Lessons from ongoing operations in Uganda and the World Bank's global experience"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inadequate water resource management leading to water scarcity and quality issues",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Implement integrated water resources management (IWRM) approaches and strengthen water resource monitoring and information systems",
+        "evidence": "Uganda's dependence on agriculture and recent shift toward industrialization"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Insufficient funding for project implementation and sustainability",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Explore alternative financing options, such as public-private partnerships, and ensure adequate budget allocation for project implementation and maintenance",
+        "evidence": "Financing gap and dependence on donor funding"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate capacity and institutional strengthening of implementing agencies",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building programs for implementing agencies and ensure adequate staffing and resources",
+        "evidence": "Inadequate capacity and institutional strengthening of implementing agencies"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Social and environmental impacts of project activities, such as displacement and pollution",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct thorough environmental and social impact assessments and develop mitigation measures to minimize negative impacts",
+        "evidence": "Potential social and environmental impacts of project activities"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Climate change and variability affecting water resources and project implementation",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate change considerations into project design and implementation, and develop strategies to enhance resilience and adaptability",
+        "evidence": "Climate change and variability affecting water resources and project implementation"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate stakeholder engagement and participation in project planning and implementation",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure inclusive stakeholder engagement and participation in project planning and implementation, and establish effective communication channels",
+        "evidence": "Importance of stakeholder engagement and participation in project success"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Refugee influx and related social and economic challenges affecting project implementation",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop strategies to address refugee-related challenges, such as providing alternative water sources and sanitation facilities, and ensuring inclusive stakeholder engagement",
+        "evidence": "Refugee influx and related social and economic challenges affecting project implementation"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate procurement and contract management leading to delays and cost overruns",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure adequate procurement and contract management capacity, and develop strategies to mitigate delays and cost overruns",
+        "evidence": "Inadequate procurement and contract management leading to delays and cost overruns"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate monitoring and evaluation (M&E) systems and data management",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement effective M&E systems and data management protocols to ensure accurate tracking of project progress and outcomes",
+        "evidence": "Importance of M&E systems and data management in project success"
+      }
+    ]
+  },
+  "parse_error": null
+}

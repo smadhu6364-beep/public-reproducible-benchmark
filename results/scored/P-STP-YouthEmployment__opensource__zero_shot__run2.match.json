@@ -1,0 +1,150 @@
+{
+  "run_file": "P-STP-YouthEmployment__opensource__zero_shot__run2.json",
+  "project_id": "P-STP-YouthEmployment",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.461,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate capacity of implementing entities to manage project funds and implement activities effectively",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide training and capacity-building support to implementing entities, and ensure close monitoring and supervision by the World Bank",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, A. Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays in project implementation due to slow disbursement of funds",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish a clear disbursement schedule and ensure timely submission of withdrawal applications, and provide support to the implementing entities to improve their financial management capacity",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, B. Fiduciary"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited access to finance for MSMEs, hindering their growth and job creation potential",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide financial support to MSMEs through grants and other financial instruments, and support the development of financial institutions that can provide financing to MSMEs",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Components, Component 2: Pathways to More and Better Jobs"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate skills and training of youth, limiting their employability and job prospects",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Provide training and skills development programs that are aligned with labor market needs, and support the development of TVET institutions and training programs",
+      "evidence": "Section II. PROJECT DESCRIPTION, D. Components, Component 1: Institutional Foundations for More and Better Jobs"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Climate-related hazards and disasters affecting project implementation and outcomes",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conduct climate risk assessments and develop strategies to mitigate and adapt to climate-related hazards, and ensure that project design and implementation take into account climate resilience and sustainability",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, C. Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inequitable distribution of project benefits, with marginalized groups potentially being left behind",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Ensure that project design and implementation take into account the needs and priorities of marginalized groups, and provide targeted support to these groups to ensure their equal access to project benefits",
+      "evidence": "Section II. PROJECT DESCRIPTION, B. Beneficiaries"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate monitoring and evaluation of project outcomes, hindering the ability to assess project effectiveness",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish a robust monitoring and evaluation system, and ensure that data collection and analysis are regular and accurate",
+      "evidence": "Section VI. RESULTS FRAMEWORK"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Dependence on external funding, which may be uncertain or unpredictable",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Diversify funding sources and ensure that project design and implementation take into account the potential risks and uncertainties associated with external funding",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, B. Fiduciary"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Inadequate governance and institutional framework, hindering effective project implementation",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Support the development of a robust governance and institutional framework, and ensure that project design and implementation take into account the needs and priorities of key stakeholders",
+      "evidence": "Section III. PROJECT IMPLEMENTATION, A. Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Potential for corruption and fraud, which could undermine project effectiveness and integrity",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Establish a robust anti-corruption and fraud prevention system, and ensure that project design and implementation take into account the potential risks and uncertainties associated with corruption and fraud",
+      "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, B. Fiduciary"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections. Success depends on sustained coordination across labor, education, tourism, agriculture, and finance ministries plus private-sector engagement.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Anchor the project within MLSSS (core employment-promotion mandate); strengthen technical ownership at directorate level rather than relying on political leadership; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events), which may weaken labor demand, reduce firms' absorption capacity, and constrain the Government's ability to sustain recurrent-cost interventions (training, stipends, employment services).",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Prioritize low-cost, scalable interventions; combine supply-side investments with direct job-creation support; target sectors with growth potential and external demand linkages (incl. labor mobility); coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination; sustainability risk if new systems/programs are not institutionalized within government structures and budgets.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures (existing MLSSS PIU, coordination committee, AFAP for fiduciary/safeguards); finance targeted TA and staffing; invest in durable institutional assets (labor-market information system, employability portal, strengthened training institutions, formalized service-provider arrangements); use the learning agenda and impact evaluation to identify cost-effective interventions for scale-up."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Agree ToRs and technical specifications between AFAP and the World Bank before initiating any procurement (prior and post-review); reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual; continue and adapt the risk assessment during implementation."
+    }
+  ]
+}

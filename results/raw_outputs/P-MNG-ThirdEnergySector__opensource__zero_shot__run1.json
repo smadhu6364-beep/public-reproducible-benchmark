@@ -1,0 +1,153 @@
+{
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:54:30.051859+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MNG-ThirdEnergySector\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in project implementation due to insufficient coordination and communication among agencies\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a Project Management Office (PMO) with dedicated staff to work on technical, project, and contract management, and ensure regular meetings and updates among agencies\",\n      \"evidence\": \"Section III, Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial management risks due to lack of experience of new PMO staff with Bank's operational policies\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training to PMO staff on project financial management requirements and Bank's disbursement-related policies\",\n      \"evidence\": \"Section A, Financial Management, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement risks due to market complexity and competitiveness\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct supply market intelligence and ensure proper procurement planning to start advance procurement well ahead of the construction season\",\n      \"evidence\": \"Section 31, Procurement Risk Assessment and Rating, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental and social risks due to construction of transmission lines and substations\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement environmental and social management plans, including a bird management plan, and ensure regular monitoring and reporting\",\n      \"evidence\": \"Section D, Environmental and Social, Page 20\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Risks due to climate change and extreme weather conditions\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate climate resilience measures into the project design and ensure regular monitoring and maintenance of infrastructure\",\n      \"evidence\": \"Section IV, Project Appraisal Summary, Page 18\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Risks due to corruption and interference in procurement decision-making\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure transparent procurement processes and establish a clear decision-making framework to prevent interference\",\n      \"evidence\": \"Section 31, Procurement Risk Assessment and Rating, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Risks due to lack of qualified contractors and suppliers\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure proper procurement planning and market engagement to attract qualified contractors and suppliers\",\n      \"evidence\": \"Section 31, Procurement Risk Assessment and Rating, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Risks due to delays in contract implementation and payment\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear contract management framework and ensure regular monitoring and reporting of contract implementation progress\",\n      \"evidence\": \"Section 32, Procurement Risk and Mitigation Measures, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Risks due to insufficient budgeting and financial management\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure proper budgeting and financial management, including regular variance analysis and reporting\",\n      \"evidence\": \"Section A, Financial Management, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Risks due to lack of internal controls and audit mechanisms\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear internal control framework and ensure regular audits and monitoring\",\n      \"evidence\": \"Section A, Financial Management, Annex 1\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Risks due to gender disparities in the workforce\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement gender-responsive policies and practices, including training and awareness-raising programs\",\n      \"evidence\": \"Section 54, Gender, Page 23\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Risks due to lack of stakeholder engagement and participation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Ensure regular stakeholder engagement and participation, including consultation and feedback mechanisms\",\n      \"evidence\": \"Section 52, Citizen Engagement, Page 22\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Risks due to inadequate grievance redress mechanisms\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a clear grievance redress mechanism and ensure regular monitoring and reporting\",\n      \"evidence\": \"Section V, Grievance Redress Services, Page 23\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Risks due to changes in government officials and policies\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear project implementation framework and ensure regular communication with government officials\",\n      \"evidence\": \"Section A, Country Context, Page 8\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Risks due to lack of private sector investment in renewable energy\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure a conducive investment climate and provide incentives for private sector investment in renewable energy\",\n      \"evidence\": \"Section 57, Private Capital Enabling, Page 23\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MNG-ThirdEnergySector",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in project implementation due to insufficient coordination and communication among agencies",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a Project Management Office (PMO) with dedicated staff to work on technical, project, and contract management, and ensure regular meetings and updates among agencies",
+        "evidence": "Section III, Implementation Arrangements"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial management risks due to lack of experience of new PMO staff with Bank's operational policies",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training to PMO staff on project financial management requirements and Bank's disbursement-related policies",
+        "evidence": "Section A, Financial Management, Annex 1"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement risks due to market complexity and competitiveness",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct supply market intelligence and ensure proper procurement planning to start advance procurement well ahead of the construction season",
+        "evidence": "Section 31, Procurement Risk Assessment and Rating, Annex 1"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental and social risks due to construction of transmission lines and substations",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement environmental and social management plans, including a bird management plan, and ensure regular monitoring and reporting",
+        "evidence": "Section D, Environmental and Social, Page 20"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Risks due to climate change and extreme weather conditions",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Incorporate climate resilience measures into the project design and ensure regular monitoring and maintenance of infrastructure",
+        "evidence": "Section IV, Project Appraisal Summary, Page 18"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Risks due to corruption and interference in procurement decision-making",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure transparent procurement processes and establish a clear decision-making framework to prevent interference",
+        "evidence": "Section 31, Procurement Risk Assessment and Rating, Annex 1"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Risks due to lack of qualified contractors and suppliers",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure proper procurement planning and market engagement to attract qualified contractors and suppliers",
+        "evidence": "Section 31, Procurement Risk Assessment and Rating, Annex 1"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Risks due to delays in contract implementation and payment",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear contract management framework and ensure regular monitoring and reporting of contract implementation progress",
+        "evidence": "Section 32, Procurement Risk and Mitigation Measures, Annex 1"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Risks due to insufficient budgeting and financial management",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure proper budgeting and financial management, including regular variance analysis and reporting",
+        "evidence": "Section A, Financial Management, Annex 1"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Risks due to lack of internal controls and audit mechanisms",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear internal control framework and ensure regular audits and monitoring",
+        "evidence": "Section A, Financial Management, Annex 1"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Risks due to gender disparities in the workforce",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement gender-responsive policies and practices, including training and awareness-raising programs",
+        "evidence": "Section 54, Gender, Page 23"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Risks due to lack of stakeholder engagement and participation",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Ensure regular stakeholder engagement and participation, including consultation and feedback mechanisms",
+        "evidence": "Section 52, Citizen Engagement, Page 22"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Risks due to inadequate grievance redress mechanisms",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a clear grievance redress mechanism and ensure regular monitoring and reporting",
+        "evidence": "Section V, Grievance Redress Services, Page 23"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Risks due to changes in government officials and policies",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear project implementation framework and ensure regular communication with government officials",
+        "evidence": "Section A, Country Context, Page 8"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Risks due to lack of private sector investment in renewable energy",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Ensure a conducive investment climate and provide incentives for private sector investment in renewable energy",
+        "evidence": "Section 57, Private Capital Enabling, Page 23"
+      }
+    ]
+  },
+  "parse_error": null
+}

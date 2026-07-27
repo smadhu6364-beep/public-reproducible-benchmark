@@ -1,0 +1,32 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__opensource__structured__run2.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

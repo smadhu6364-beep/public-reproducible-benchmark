@@ -1,0 +1,59 @@
+{
+  "run_file": "P-UGA-IntegratedWaterMgmtDev__gpt__few_shot__run1.json",
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk: as detailed in the CPF, significant political uncertainty is not foreseen, but governance and effective public-sector management present substantial risks.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project will mitigate these risks through (a) strengthening the MWE's regulatory framework; (b) carrying out a citizen engagement strategy; and (c) strengthening project implementation efforts in close coordination with local government officials and development partners. The World Bank's procurement processes will also help safeguard the Project from corruption."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risk: the Umbrella Water Authority (UWA) as a regional service delivery model for small towns and RGCs was recently introduced. Although the decision to scale up this model was informed by extensive analytical work and a pilot project, the UWA model was only recently operationalized.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project will support implementation of a professionalized monitoring system focused on enhancing revenue collection approaches (billing software, cashless/mobile payment systems) and on strengthening integration of specialized private operators through improved contract management. The implementation team will use the Utility Performance Monitoring and Information System (UPMIS) tool to regularly review UWA and NWSC performance."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk: the Procurement risk is rated Substantial while the FM risk is Moderate. The risks identified relate to delays and skills gaps at different stages of procurement processing.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "IWMDP will benefit from the lessons learned and mechanisms put in place under the predecessor project (WMDP); detailed mitigation measures for the procurement risk are set out in the Appraisal (Procurement) section."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The environmental and social risk is deemed Substantial given (a) potential opposition to the introduction of a new service delivery model, including new tariffs and catchment management measures; (b) the influx of new workers in small towns and RGCs; and (c) potentially adverse environmental impacts from the construction and operation of the proposed investments.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The environmental and social risk will be managed through the application of an Environmental and Social Management Framework (ESMF), a Resettlement Policy Framework (RPF), and related safeguards instruments (Environmental and Social Impact Assessment, Resettlement Action Plans)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks (social tensions in districts hosting refugees): tensions between refugees and citizens are caused by inequity in access to and payment for water supply and sanitation (WSS) services. While refugees in the settlements benefit from humanitarian aid and GoU support, Ugandans in host communities receive limited support for services and infrastructure, causing social tension that may result in Project implementation delays given potential community opposition to the works.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The GoU has prioritized development efforts for poor districts hosting refugees while remaining firmly committed to its policy on refugee protection. The Project will manage this risk by designing WSS facilities and catchment management measures that benefit both host communities and refugees, and by ensuring the Project's social and communication management plan is applied and adequately supervised. There are no known existing risks to the refugee protection framework or reputational risks for the Project."
+    }
+  ]
+}

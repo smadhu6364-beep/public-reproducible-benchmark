@@ -1,0 +1,153 @@
+{
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:14:30.372931+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-SRB-CompetitivenessJobs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Weak strategic planning and policy coordination capacity across ministries risks causing implementation deficits in the reform program.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish an inter-ministerial Policy Planning, Monitoring, and Coordination Working Group led by the Public Policy Secretariat.\",\n      \"evidence\": \"weak planning and implementation deficits are among the most significant risks to the reform program.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inexperience of key implementing agencies with World Bank procurement rules risks procurement delays and non-compliance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Hire experienced procurement experts in PPS and MoLEVSA, and conduct intensive procurement training and Bank prior review.\",\n      \"evidence\": \"most of the entities involved in project implementation, have no experience in implementing World Bank-funded projects and with Bank procurement\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Fiscal consolidation measures may restrict required government budget allocations for active labor market programs and Innovation Fund matching grants.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Use Results-Based Financing with DLIs to reimburse salary EEPs upon achievement of budget allocation and program milestones.\",\n      \"evidence\": \"In an environment of fiscal consolidation, the activities mostly target areas where the Government is spending significant resources\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"High tax wedges and rigid social benefit withdrawal structures discourage social assistance beneficiaries from accepting formal low-wage jobs.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Design and pilot an in-work cash transfer benefit to reduce work disincentives for social assistance recipients transitioning to formal work.\",\n      \"evidence\": \"Serbia has one of the highest tax wedges on low-paying jobs in the entire ECA Region and a social assistance benefit that is reduced\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"High and uneven caseloads per caseworker across NES branch offices impair the quality of case management and labor intermediation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Introduce a new active jobseeker registry, reallocate staff, and implement a caseworker training and certification system.\",\n      \"evidence\": \"average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Grant-funded technology development activities under Component 3 may generate direct or indirect physical environmental impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Apply the project Environmental and Social Management Framework (ESMF) to screen out Category A sub-projects and require sub-project EMPs.\",\n      \"evidence\": \"Direct, physical environmental impacts could arise under Component 2 on Innovation, which includes DLIs supporting startups and enterprises\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Academic research culture and lack of commercial incentives in public RDIs may create resistance to research sector and technology transfer reforms.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement RDI self-assessments, international expert audits, and performance-based financing schemes to incentivize commercial relevance.\",\n      \"evidence\": \"very strong academic culture, fueled by an incentive system that places a clear premium on publications with little incentives for protection of intellectual property\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Overlapping, non-transparent mandates across Ministry of Economy development agencies impede efficient investment attraction and export promotion.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and adopt an overarching strategic framework and action plan to restructure MoE agencies and streamline support programs.\",\n      \"evidence\": \"system of support provided by the MoE\u2019s agencies is complex and non-transparent\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Failure to meet technical or formal DLI targets will lead to withheld Bank loan disbursements under Part A.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set clear DLI verification protocols, conduct mid-year progress tracking, and utilize technical assistance for implementation support.\",\n      \"evidence\": \"In the event a DLI is not achieved, a 'request for reassessment' may be submitted\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"External macroeconomic shocks or natural disasters could disrupt national economic recovery and divert government focus from structural reforms.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain macroeconomic alignment with the IMF Precautionary Stand-By Agreement and build flexible project design.\",\n      \"evidence\": \"droughts and flooding in 2012, leading to a second recession. The disastrous floods of May 2014 triggered a further recession.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Large-scale retrenchment and redundancies from ongoing state-owned enterprise restructuring will strain labor market absorption capacity.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Enhance NES capacity, profile unemployed individuals, and target cost-effective active labor market programs to vulnerable workers.\",\n      \"evidence\": \"retrenchments and redundancies due to the ongoing right-sizing exercise.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Political economy pressures and intermittent leadership changes may cause delays in adopting key legislative and policy reform packages.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Build broad inter-ministerial ownership via the PPMC Working Group and align project activities with EU accession requirements.\",\n      \"evidence\": \"political economy considerations, including severe resources constraints and intermittent leadership with ownership over these issues.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Low private sector engagement and employer reliance on NES services limit vacancy collection and placement efficacy.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt an employer outreach action plan, increase direct employer contacts, and conduct client satisfaction surveys.\",\n      \"evidence\": \"Currently, only a small share of job matches in the Serbian labor market are carried out by the NES.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Delays in establishing the PPS Project Implementation Unit and selecting key specialists could delay loan effectiveness.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Make PIU establishment and selection of key specialists explicit conditions of loan effectiveness.\",\n      \"evidence\": \"PIU has been established within the PPS in a manner satisfactory to the Bank and has selected at least the PIU director\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Academic research projects being at low technology readiness levels risks slow commercialization and low technology transfer transaction volumes.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy centralized Technology Transfer Facility service lines at the Innovation Fund to support project commercialization and IP protection.\",\n      \"evidence\": \"most high quality projects hail from the basic sciences, are at early technology readiness levels, and far from market readiness.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SRB-CompetitivenessJobs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Weak strategic planning and policy coordination capacity across ministries risks causing implementation deficits in the reform program.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish an inter-ministerial Policy Planning, Monitoring, and Coordination Working Group led by the Public Policy Secretariat.",
+        "evidence": "weak planning and implementation deficits are among the most significant risks to the reform program."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inexperience of key implementing agencies with World Bank procurement rules risks procurement delays and non-compliance.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Hire experienced procurement experts in PPS and MoLEVSA, and conduct intensive procurement training and Bank prior review.",
+        "evidence": "most of the entities involved in project implementation, have no experience in implementing World Bank-funded projects and with Bank procurement"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Fiscal consolidation measures may restrict required government budget allocations for active labor market programs and Innovation Fund matching grants.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Use Results-Based Financing with DLIs to reimburse salary EEPs upon achievement of budget allocation and program milestones.",
+        "evidence": "In an environment of fiscal consolidation, the activities mostly target areas where the Government is spending significant resources"
+      },
+      {
+        "risk_id": "R04",
+        "description": "High tax wedges and rigid social benefit withdrawal structures discourage social assistance beneficiaries from accepting formal low-wage jobs.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Design and pilot an in-work cash transfer benefit to reduce work disincentives for social assistance recipients transitioning to formal work.",
+        "evidence": "Serbia has one of the highest tax wedges on low-paying jobs in the entire ECA Region and a social assistance benefit that is reduced"
+      },
+      {
+        "risk_id": "R05",
+        "description": "High and uneven caseloads per caseworker across NES branch offices impair the quality of case management and labor intermediation.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Introduce a new active jobseeker registry, reallocate staff, and implement a caseworker training and certification system.",
+        "evidence": "average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Grant-funded technology development activities under Component 3 may generate direct or indirect physical environmental impacts.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Apply the project Environmental and Social Management Framework (ESMF) to screen out Category A sub-projects and require sub-project EMPs.",
+        "evidence": "Direct, physical environmental impacts could arise under Component 2 on Innovation, which includes DLIs supporting startups and enterprises"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Academic research culture and lack of commercial incentives in public RDIs may create resistance to research sector and technology transfer reforms.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement RDI self-assessments, international expert audits, and performance-based financing schemes to incentivize commercial relevance.",
+        "evidence": "very strong academic culture, fueled by an incentive system that places a clear premium on publications with little incentives for protection of intellectual property"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Overlapping, non-transparent mandates across Ministry of Economy development agencies impede efficient investment attraction and export promotion.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and adopt an overarching strategic framework and action plan to restructure MoE agencies and streamline support programs.",
+        "evidence": "system of support provided by the MoE\u2019s agencies is complex and non-transparent"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Failure to meet technical or formal DLI targets will lead to withheld Bank loan disbursements under Part A.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set clear DLI verification protocols, conduct mid-year progress tracking, and utilize technical assistance for implementation support.",
+        "evidence": "In the event a DLI is not achieved, a 'request for reassessment' may be submitted"
+      },
+      {
+        "risk_id": "R10",
+        "description": "External macroeconomic shocks or natural disasters could disrupt national economic recovery and divert government focus from structural reforms.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Maintain macroeconomic alignment with the IMF Precautionary Stand-By Agreement and build flexible project design.",
+        "evidence": "droughts and flooding in 2012, leading to a second recession. The disastrous floods of May 2014 triggered a further recession."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Large-scale retrenchment and redundancies from ongoing state-owned enterprise restructuring will strain labor market absorption capacity.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Enhance NES capacity, profile unemployed individuals, and target cost-effective active labor market programs to vulnerable workers.",
+        "evidence": "retrenchments and redundancies due to the ongoing right-sizing exercise."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Political economy pressures and intermittent leadership changes may cause delays in adopting key legislative and policy reform packages.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Build broad inter-ministerial ownership via the PPMC Working Group and align project activities with EU accession requirements.",
+        "evidence": "political economy considerations, including severe resources constraints and intermittent leadership with ownership over these issues."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Low private sector engagement and employer reliance on NES services limit vacancy collection and placement efficacy.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt an employer outreach action plan, increase direct employer contacts, and conduct client satisfaction surveys.",
+        "evidence": "Currently, only a small share of job matches in the Serbian labor market are carried out by the NES."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Delays in establishing the PPS Project Implementation Unit and selecting key specialists could delay loan effectiveness.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Make PIU establishment and selection of key specialists explicit conditions of loan effectiveness.",
+        "evidence": "PIU has been established within the PPS in a manner satisfactory to the Bank and has selected at least the PIU director"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Academic research projects being at low technology readiness levels risks slow commercialization and low technology transfer transaction volumes.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Deploy centralized Technology Transfer Facility service lines at the Innovation Fund to support project commercialization and IP protection.",
+        "evidence": "most high quality projects hail from the basic sciences, are at early technology readiness levels, and far from market readiness."
+      }
+    ]
+  },
+  "parse_error": null
+}

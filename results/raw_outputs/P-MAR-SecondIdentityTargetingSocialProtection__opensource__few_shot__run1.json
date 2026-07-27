@@ -1,0 +1,108 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:12:28.181789+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MAR-SecondIdentityTargetingSocialProtection\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate data protection and privacy measures may compromise the security of personal data in the NPR and SR systems.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Implement robust data protection and privacy measures, including encryption, access controls, and regular security audits.\",\n      \"evidence\": \"Section 87, Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient communication and outreach efforts may lead to low enrollment rates, particularly among vulnerable populations.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement effective communication and outreach strategies, including awareness campaigns, training, and support for vulnerable populations.\",\n      \"evidence\": \"Section 20, Citizen Engagement\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inadequate institutional capacity and resources may hinder the effective implementation and management of the NPR and SR systems.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building programs for staff, and ensure adequate resources and infrastructure are available to support the implementation and management of the NPR and SR systems.\",\n      \"evidence\": \"Section 44, Project Management, Capacity Building, and Monitoring and Evaluation\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Dependence on a single technology platform or vendor may create risks related to system maintenance, updates, and potential vendor lock-in.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a strategy for maintaining and updating the technology platform, and consider diversifying vendors to mitigate risks.\",\n      \"evidence\": \"Section 80, Procurement risks and mitigation measures\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate monitoring and evaluation of the project's performance may hinder the ability to track progress, identify areas for improvement, and make data-driven decisions.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and implement a comprehensive monitoring and evaluation framework, including regular reporting and data analysis.\",\n      \"evidence\": \"Section 61, Results M&E Arrangements\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Climate-related shocks and disasters may impact the project's implementation and the livelihoods of vulnerable populations.\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop strategies to enhance the resilience of vulnerable populations, including climate-resilient infrastructure and social protection programs.\",\n      \"evidence\": \"Section 3, Morocco has undergone several overlapping shocks in recent years, and climate change is projected to significantly impact future economic growth and shared prosperity.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate grievance redress mechanisms may lead to dissatisfaction and mistrust among beneficiaries and stakeholders.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish and communicate effective grievance redress mechanisms, including clear procedures and timelines for addressing complaints and concerns.\",\n      \"evidence\": \"Section 87, Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate financial management and oversight may lead to inefficiencies, mismanagement of funds, or corruption.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement robust financial management and oversight mechanisms, including regular audits, financial reporting, and monitoring.\",\n      \"evidence\": \"Section 67, FM\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Delays or changes in government policies or regulations may impact the project's implementation and effectiveness.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Engage with government stakeholders to stay informed about policy and regulatory changes, and develop strategies to adapt to potential changes.\",\n      \"evidence\": \"Section 56, Implementation arrangements\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate environmental and social safeguards may lead to negative environmental and social impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement environmental and social safeguards, including measures to minimize waste, reduce carbon footprint, and protect vulnerable populations.\",\n      \"evidence\": \"Section 83, Environmental and Social\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate data protection and privacy measures may compromise the security of personal data in the NPR and SR systems.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Implement robust data protection and privacy measures, including encryption, access controls, and regular security audits.",
+        "evidence": "Section 87, Environmental and Social"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient communication and outreach efforts may lead to low enrollment rates, particularly among vulnerable populations.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement effective communication and outreach strategies, including awareness campaigns, training, and support for vulnerable populations.",
+        "evidence": "Section 20, Citizen Engagement"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inadequate institutional capacity and resources may hinder the effective implementation and management of the NPR and SR systems.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building programs for staff, and ensure adequate resources and infrastructure are available to support the implementation and management of the NPR and SR systems.",
+        "evidence": "Section 44, Project Management, Capacity Building, and Monitoring and Evaluation"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Dependence on a single technology platform or vendor may create risks related to system maintenance, updates, and potential vendor lock-in.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a strategy for maintaining and updating the technology platform, and consider diversifying vendors to mitigate risks.",
+        "evidence": "Section 80, Procurement risks and mitigation measures"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate monitoring and evaluation of the project's performance may hinder the ability to track progress, identify areas for improvement, and make data-driven decisions.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop and implement a comprehensive monitoring and evaluation framework, including regular reporting and data analysis.",
+        "evidence": "Section 61, Results M&E Arrangements"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Climate-related shocks and disasters may impact the project's implementation and the livelihoods of vulnerable populations.",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop strategies to enhance the resilience of vulnerable populations, including climate-resilient infrastructure and social protection programs.",
+        "evidence": "Section 3, Morocco has undergone several overlapping shocks in recent years, and climate change is projected to significantly impact future economic growth and shared prosperity."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate grievance redress mechanisms may lead to dissatisfaction and mistrust among beneficiaries and stakeholders.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish and communicate effective grievance redress mechanisms, including clear procedures and timelines for addressing complaints and concerns.",
+        "evidence": "Section 87, Environmental and Social"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate financial management and oversight may lead to inefficiencies, mismanagement of funds, or corruption.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement robust financial management and oversight mechanisms, including regular audits, financial reporting, and monitoring.",
+        "evidence": "Section 67, FM"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Delays or changes in government policies or regulations may impact the project's implementation and effectiveness.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Engage with government stakeholders to stay informed about policy and regulatory changes, and develop strategies to adapt to potential changes.",
+        "evidence": "Section 56, Implementation arrangements"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate environmental and social safeguards may lead to negative environmental and social impacts.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement environmental and social safeguards, including measures to minimize waste, reduce carbon footprint, and protect vulnerable populations.",
+        "evidence": "Section 83, Environmental and Social"
+      }
+    ]
+  },
+  "parse_error": null
+}

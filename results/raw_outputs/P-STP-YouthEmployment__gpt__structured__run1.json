@@ -1,0 +1,180 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:53:52.066492+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Frame the project  \n- **Objective:** Strengthen employment support systems and expand pathways to more and better jobs for targeted youth in priority value chains.  \n- **Scope & Components:** Four components \u2013 (1) Institutional foundations (training\u2011institution upgrades, employer committees), (2) Pathways to jobs (internships, self\u2011employment grants, MSME productivity, scholarships), (3) Project management & learning, (4) Contingent Emergency Response (CERC).  \n- **Delivery model:** IDA grant (US$21\u202fm) under an IPF financing instrument; implementation by the Ministry of Labor, Solidarity and Social Security (MLSSS) through the Directorate of Labor, Employment and Professional Training (DTEFP); fiduciary functions by AFAP; shared PIU with the SPRRP.  \n- **Timeline:** Expected approval\u202f08\u202fJul\u202f2026; expected closing\u202f30\u202fJun\u202f2031 (\u22485\u202fyears).  \n- **Budget:** US$21\u202fmillion total (Component\u202f1\u202f$10.55\u202fm, Component\u202f2\u202f$8.90\u202fm, Component\u202f3\u202f$1.55\u202fm, Component\u202f4\u202f$0).  \n- **Key stakeholders:** GoSTP, MLSSS/DTEFP, AFAP, training institutions (CFP\u2011BB, CFP\u2011BSTP, EHT, CATAP, FCT\u2011USTP), private\u2011sector employers, REINA, UNDP, ILO, CPLP, Portugal, Brazil, EU, AfDB.  \n- **External dependencies:** Climate\u2011related hazards, labour\u2011market information systems, private\u2011sector demand in tourism, agriculture, fisheries, energy, digital, construction; regional coordination (IUCEA).\n\nStep 2 \u2013 Category sweep (candidate risks with supporting text)  \n- **Technical** \u2013 equipment & connectivity procurement delays; labour\u2011market information system & Employability Portal not operational; construction/quality of new Pr\u00edncipe training centre; need for early hiring of specialists.  \n- **Financial** \u2013 delays in financial reporting/audits; disbursement bottlenecks via the Designated Account.  \n- **Schedule** \u2013 late recruitment of required specialists; procurement and construction timeline overruns.  \n- **Stakeholder** \u2013 weak private\u2011sector engagement; gender\u2011based violence/SEA risks; ineffective Grievance Redress Mechanism.  \n- **Political/Regulatory** \u2013 CERC activation delays; procurement coordination delays between AFAP and ministries.  \n- **Environmental** \u2013 climate events disrupting works; waste generation from construction.  \n- **Organizational** \u2013 limited capacity of MLSSS/DTEFP; PIU restructuring coordination gaps.  \n- **External** \u2013 macro\u2011economic shocks (fuel/food price volatility, ODA volatility); low private\u2011sector demand for trained youth.\n\nStep 3 \u2013 Evidence filter  \nAll listed risks are directly quoted or paraphrased from the appraisal document; no unsupported risks remain.\n\nStep 4 \u2013 Assess & mitigate  \n\n| Risk | Likelihood (1\u20115) | Impact (1\u20115) | Justification | Mitigation |\n|------|------------------|--------------|---------------|------------|\n| R01 \u2013 Procurement/installation of modern training equipment and connectivity upgrades may be delayed. | 3 | 3 | Procurement is complex and involves multiple ministries. | Early procurement planning, fast\u2011track procedures, and centralized oversight by AFAP. |\n| R02 \u2013 Integrated labour\u2011market information system and Employability Portal may fail to become operational. | 3 | 4 | System is core to job matching; development is technically new. | Hire qualified IT staff, adopt phased rollout, include backup generators, and conduct pilot testing. |\n| R03 \u2013 Construction of the new multi\u2011use training centre on Pr\u00edncipe may face delays or quality issues, jeopardising EDGE certification. | 3 | 4 | New civil works on a remote island with climate risks. | Detailed schedule with milestone payments, performance bonds, climate\u2011resilient design checks, and contractor monitoring. |\n| R04 \u2013 Delays in financial reporting and internal audit could weaken controls. | 3 | 3 | FM risks identified in the document. | Appoint experienced accountant, customize accounting system, schedule regular internal audits. |\n| R05 \u2013 Disbursement delays due to Designated Account or IFR submission issues. | 2 | 3 | Disbursement relies on quarterly IFRs. | Establish clear IFR calendar, train AFAP staff, monitor cash\u2011flow weekly. |\n| R06 \u2013 Required specialists (environmental, social, TVET, Data/IT) not hired within 45\u201160\u202fdays. | 2 | 3 | Legal covenants set strict hiring timelines. | Pre\u2011qualify candidates, use short\u2011term contracts, impose recruitment penalties. |\n| R07 \u2013 Procurement and rehabilitation works may overrun schedule. | 3 | 3 | Procurement plan noted as a risk area. | Early tender preparation, use of accelerated procurement where permissible, regular progress reviews. |\n| R08 \u2013 Insufficient private\u2011sector engagement leading to mis\u2011aligned curricula. | 3 | 4 | Success depends on Workforce Development Committees. | Formalize committees, provide employer incentives, hold quarterly curriculum alignment workshops. |\n| R09 \u2013 Risk of gender\u2011based violence, sexual exploitation or harassment for female participants. | 2 | 4 | GBV/SEA specialist required; social risk noted. | Hire qualified GBV/SEA specialist, enforce safeguarding policy, conduct regular trainings and monitoring. |\n| R10 \u2013 Grievance Redress Mechanism may not resolve complaints timely, eroding trust. | 2 | 3 | GRM performance indicator included. | Set clear resolution timelines, publish GRM statistics, train staff on case handling. |\n| R11 \u2013 Activation of CERC could be delayed by procedural approvals. | 2 | 3 | CERC Manual must be prepared and approved. | Draft CERC Manual before effectiveness, run simulation exercises, obtain pre\u2011approval from World Bank. |\n| R12 \u2013 Procurement delays caused by poor coordination between AFAP and ministries for technical specifications. | 3 | 3 | Procurement coordination highlighted as a risk. | Joint planning workshops, assign a liaison officer, develop detailed TORs early. |\n| R13 \u2013 Climate\u2011related events (floods, storms) may disrupt construction or training activities. | 3 | 3 | STP\u2019s vulnerability to floods and storms documented. | Incorporate climate\u2011resilient design, procure backup generators, build flexible implementation timelines. |\n| R14 \u2013 Generation of solid waste and construction debris could cause environmental impacts. | 2 | 2 | ESF notes waste generation from activities. | Implement waste\u2011management plan, require contractors to follow disposal standards, conduct site inspections. |\n| R15 \u2013 Limited institutional capacity of MLSSS/DTEFP to manage new systems and expanded workload. | 3 | 4 | Skills\u2011ecosystem capacity constraints described. | Capacity\u2011building programme, hire Data/IT assistant, provide on\u2011the\u2011job training and mentorship. |\n| R16 \u2013 PIU restructuring may create coordination gaps between SPRRP and the youth project. | 2 | 3 | PIU will be restructured and shared. | Develop a transition plan, define clear governance roles, hold weekly coordination meetings. |\n| R17 \u2013 Macro\u2011economic shocks (fuel/food price volatility, ODA fluctuations) could affect project financing or beneficiary livelihoods. | 3 | 3 | Economic shocks listed in country context. | Maintain a contingency buffer in the budget, adopt flexible financing arrangements, monitor macro indicators. |\n| R18 \u2013 Low private\u2011sector demand in priority value chains may limit job placement for trained youth. | 3 | 4 | Sectoral challenges and skills gaps highlighted. | Conduct regular labour\u2011market analyses, adjust training packages, promote sector reforms and private\u2011sector incentives. |\n\nStep 5 \u2013 Consolidate  \nAll 18 risks are distinct and directly supported by the appraisal document; no duplicates remain.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-STP-YouthEmployment\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Procurement and installation of modern training equipment and connectivity upgrades may be delayed, limiting institution capacity.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare detailed procurement schedule, use fast\u2011track procedures, and centralize oversight through AFAP with milestone\u2011based payments.\",\n      \"evidence\": \"The project will finance targeted physical investments... procurement of new modern training equipment and connectivity upgrades.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Integrated labour\u2011market information system and Employability Portal may fail to become operational, reducing job\u2011matching effectiveness.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire qualified IT staff early, adopt a phased development and pilot testing approach, and ensure backup power for system resilience.\",\n      \"evidence\": \"The project will help redesign and operationalize an integrated labor market information... new information and data management system... digital Employability Portal.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Construction of the new multi\u2011use training centre on Pr\u00edncipe may face delays or quality issues, jeopardising EDGE certification.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement a detailed construction schedule with milestone payments, require performance bonds, and conduct regular quality and climate\u2011resilience inspections.\",\n      \"evidence\": \"Construction of a new multi\u2011use technical training center... aim to meet EDGE certification and integrate climate\u2011resilient design.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays in financial reporting and internal audit could weaken fiduciary controls.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint an experienced accountant, customize the accounting system for timely reporting, and schedule regular internal audits.\",\n      \"evidence\": \"Financial management risks identified include delays in recording financial transactions and generating financial reports.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Disbursement may be delayed due to Designated Account management or late IFR submissions.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a clear IFR calendar, train AFAP staff on procedures, and monitor cash\u2011flow weekly to anticipate shortfalls.\",\n      \"evidence\": \"AFAP will open and manage a designated account... disbursement based on quarterly IFRs.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Required specialists (environmental, social, TVET, Data/IT) may not be hired within the 45\u201160 day window.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Pre\u2011qualify candidates, use short\u2011term contracts, and include recruitment penalties for missed deadlines.\",\n      \"evidence\": \"The Recipient shall cause AFAP to hire... an Environmental Specialist... within forty\u2011five days after Effectiveness.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Procurement and rehabilitation works could overrun the planned schedule, affecting overall project timing.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prepare tender documents early, apply accelerated procurement where allowed, and conduct monthly progress reviews.\",\n      \"evidence\": \"The cost estimate for the new center... adjustments will be managed within the project\u2019s procurement plan.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient private\u2011sector engagement may lead to curricula that do not match labour\u2011market needs.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Formalize Workforce Development Committees, provide employer incentives, and hold quarterly curriculum alignment workshops.\",\n      \"evidence\": \"Workforce Development Committees... bringing together private sector employers, training institutions, relevant ministries, and worker representatives.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Gender\u2011based violence, sexual exploitation or harassment could affect female participants.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Hire a qualified GBV/SEA specialist, enforce a strict safeguarding policy, and conduct regular trainings and monitoring.\",\n      \"evidence\": \"The Recipient shall cause AFAP to hire... a Social Specialist with gender\u2011based violence (GBV) / sexual exploitation and abuse\u2013sexual harassment (SEA/SH) expertise.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Grievance Redress Mechanism may not resolve complaints promptly, undermining beneficiary trust.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Set clear resolution timelines, publish GRM performance statistics, and train staff on case handling procedures.\",\n      \"evidence\": \"Share of grievances received through the Grievance Redress Mechanism that are resolved on time (Percentage).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Activation of the Contingent Emergency Response Component could be delayed by procedural approvals.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Draft the CERC Manual before effectiveness, run simulation exercises, and obtain pre\u2011approval from the World Bank.\",\n      \"evidence\": \"The project will ensure that a manual (\u201cCERC Manual\u201d) is prepared and adopted... activation subject to World Bank agreement.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Procurement delays may arise from poor coordination between AFAP and ministries for technical specifications.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Hold joint planning workshops, assign a liaison officer, and develop detailed TORs early in the process.\",\n      \"evidence\": \"Procurement will be carried out in accordance with World Bank Procurement Regulations for IPF Borrowers... technical inputs required from ministries.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Climate\u2011related events (floods, storms) could disrupt construction or training activities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate climate\u2011resilient design, procure backup generators, and build flexibility into activity schedules.\",\n      \"evidence\": \"STP is vulnerable to coastal floods, severe storms, landslides, and droughts... climate hazards may affect infrastructure and livelihoods.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Generation of solid waste and construction debris may cause local environmental impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Implement a waste\u2011management plan, require contractors to follow approved disposal procedures, and conduct regular site inspections.\",\n      \"evidence\": \"Project activities may result in the generation of solid waste, obsolete equipment, and minor construction debris.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Limited capacity of MLSSS/DTEFP to manage new systems and increased workload could hinder implementation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Deliver targeted capacity\u2011building, hire a Data/IT assistant, and provide on\u2011the\u2011job mentorship for new processes.\",\n      \"evidence\": \"STP\u2019s skills\u2011building ecosystem suffers from limited capacity, infrastructure constraints, and insufficient alignment with labor demand.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"PIU restructuring may create coordination gaps between the youth project and the SPRRP.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a clear transition plan, define governance roles, and hold weekly coordination meetings during the restructuring period.\",\n      \"evidence\": \"The PIU will be restructured and strengthened to serve as a unified PIU... recruitment of additional senior specialists and assistants.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Macro\u2011economic shocks (fuel/food price volatility, ODA fluctuations) could affect project financing or beneficiary livelihoods.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain a contingency buffer in the budget, adopt flexible financing arrangements, and monitor macro\u2011economic indicators regularly.\",\n      \"evidence\": \"Slow economic growth and covariate shocks... COVID\u201119 pandemic, geopolitical turmoil, recurrent flooding, and electricity crisis.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Low private\u2011sector demand in priority value chains may limit job placement for trained youth.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct regular labour\u2011market analyses, adjust training packages to emerging demand, and promote sector reforms and employer incentives.\",\n      \"evidence\": \"Key sectoral challenges relate to infrastructure, sustainable management, destination promotion, and the availability of an adequately prepared workforce.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-STP-YouthEmployment",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Procurement and installation of modern training equipment and connectivity upgrades may be delayed, limiting institution capacity.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prepare detailed procurement schedule, use fast\u2011track procedures, and centralize oversight through AFAP with milestone\u2011based payments.",
+        "evidence": "The project will finance targeted physical investments... procurement of new modern training equipment and connectivity upgrades."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Integrated labour\u2011market information system and Employability Portal may fail to become operational, reducing job\u2011matching effectiveness.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire qualified IT staff early, adopt a phased development and pilot testing approach, and ensure backup power for system resilience.",
+        "evidence": "The project will help redesign and operationalize an integrated labor market information... new information and data management system... digital Employability Portal."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Construction of the new multi\u2011use training centre on Pr\u00edncipe may face delays or quality issues, jeopardising EDGE certification.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement a detailed construction schedule with milestone payments, require performance bonds, and conduct regular quality and climate\u2011resilience inspections.",
+        "evidence": "Construction of a new multi\u2011use technical training center... aim to meet EDGE certification and integrate climate\u2011resilient design."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays in financial reporting and internal audit could weaken fiduciary controls.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint an experienced accountant, customize the accounting system for timely reporting, and schedule regular internal audits.",
+        "evidence": "Financial management risks identified include delays in recording financial transactions and generating financial reports."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Disbursement may be delayed due to Designated Account management or late IFR submissions.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Establish a clear IFR calendar, train AFAP staff on procedures, and monitor cash\u2011flow weekly to anticipate shortfalls.",
+        "evidence": "AFAP will open and manage a designated account... disbursement based on quarterly IFRs."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Required specialists (environmental, social, TVET, Data/IT) may not be hired within the 45\u201160 day window.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Pre\u2011qualify candidates, use short\u2011term contracts, and include recruitment penalties for missed deadlines.",
+        "evidence": "The Recipient shall cause AFAP to hire... an Environmental Specialist... within forty\u2011five days after Effectiveness."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Procurement and rehabilitation works could overrun the planned schedule, affecting overall project timing.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prepare tender documents early, apply accelerated procurement where allowed, and conduct monthly progress reviews.",
+        "evidence": "The cost estimate for the new center... adjustments will be managed within the project\u2019s procurement plan."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient private\u2011sector engagement may lead to curricula that do not match labour\u2011market needs.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Formalize Workforce Development Committees, provide employer incentives, and hold quarterly curriculum alignment workshops.",
+        "evidence": "Workforce Development Committees... bringing together private sector employers, training institutions, relevant ministries, and worker representatives."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Gender\u2011based violence, sexual exploitation or harassment could affect female participants.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Hire a qualified GBV/SEA specialist, enforce a strict safeguarding policy, and conduct regular trainings and monitoring.",
+        "evidence": "The Recipient shall cause AFAP to hire... a Social Specialist with gender\u2011based violence (GBV) / sexual exploitation and abuse\u2013sexual harassment (SEA/SH) expertise."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Grievance Redress Mechanism may not resolve complaints promptly, undermining beneficiary trust.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Set clear resolution timelines, publish GRM performance statistics, and train staff on case handling procedures.",
+        "evidence": "Share of grievances received through the Grievance Redress Mechanism that are resolved on time (Percentage)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Activation of the Contingent Emergency Response Component could be delayed by procedural approvals.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Draft the CERC Manual before effectiveness, run simulation exercises, and obtain pre\u2011approval from the World Bank.",
+        "evidence": "The project will ensure that a manual (\u201cCERC Manual\u201d) is prepared and adopted... activation subject to World Bank agreement."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Procurement delays may arise from poor coordination between AFAP and ministries for technical specifications.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Hold joint planning workshops, assign a liaison officer, and develop detailed TORs early in the process.",
+        "evidence": "Procurement will be carried out in accordance with World Bank Procurement Regulations for IPF Borrowers... technical inputs required from ministries."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Climate\u2011related events (floods, storms) could disrupt construction or training activities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate climate\u2011resilient design, procure backup generators, and build flexibility into activity schedules.",
+        "evidence": "STP is vulnerable to coastal floods, severe storms, landslides, and droughts... climate hazards may affect infrastructure and livelihoods."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Generation of solid waste and construction debris may cause local environmental impacts.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Implement a waste\u2011management plan, require contractors to follow approved disposal procedures, and conduct regular site inspections.",
+        "evidence": "Project activities may result in the generation of solid waste, obsolete equipment, and minor construction debris."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Limited capacity of MLSSS/DTEFP to manage new systems and increased workload could hinder implementation.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deliver targeted capacity\u2011building, hire a Data/IT assistant, and provide on\u2011the\u2011job mentorship for new processes.",
+        "evidence": "STP\u2019s skills\u2011building ecosystem suffers from limited capacity, infrastructure constraints, and insufficient alignment with labor demand."
+      },
+      {
+        "risk_id": "R16",
+        "description": "PIU restructuring may create coordination gaps between the youth project and the SPRRP.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Develop a clear transition plan, define governance roles, and hold weekly coordination meetings during the restructuring period.",
+        "evidence": "The PIU will be restructured and strengthened to serve as a unified PIU... recruitment of additional senior specialists and assistants."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Macro\u2011economic shocks (fuel/food price volatility, ODA fluctuations) could affect project financing or beneficiary livelihoods.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain a contingency buffer in the budget, adopt flexible financing arrangements, and monitor macro\u2011economic indicators regularly.",
+        "evidence": "Slow economic growth and covariate shocks... COVID\u201119 pandemic, geopolitical turmoil, recurrent flooding, and electricity crisis."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Low private\u2011sector demand in priority value chains may limit job placement for trained youth.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct regular labour\u2011market analyses, adjust training packages to emerging demand, and promote sector reforms and employer incentives.",
+        "evidence": "Key sectoral challenges relate to infrastructure, sustainable management, destination promotion, and the availability of an adequately prepared workforce."
+      }
+    ]
+  },
+  "parse_error": null
+}
