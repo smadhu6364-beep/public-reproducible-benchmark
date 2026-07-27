@@ -1,0 +1,211 @@
+{
+  "run_file": "P-SLE-ConnectivityAgMarketInfra__claude__structured__run1.json",
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R03",
+      "similarity": 0.561,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.516,
+      "gen_category": "financial",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R14",
+      "gt_risk_id": "R04",
+      "similarity": 0.513,
+      "gen_category": "stakeholder",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "GoSL fiscal stress and macroeconomic pressure may prevent the government from contributing its committed US$3.1 million for SCADeP bridge completion.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a joint MoF-PCIU tracking mechanism to monitor national budget allocations and align bridge contract milestone payments with fiscal releases.",
+      "evidence": "Considering the current fiscal stress on the GoSL, this subcomponent will partially address the financial gap of the bridge works."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Inadequate road maintenance funding collected by the Road Maintenance Fund Administration (RMFA) could lead to rapid post-construction deterioration of road and bridge assets.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop a national transport strategy and action plan to reform road fund revenues and strengthen local council maintenance capacity.",
+      "evidence": "RMFA collected approximately US$12.5 million equivalent... which is a small fraction of the actual support needed for road maintenance"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Global supply chain shocks and domestic inflation could cause severe cost overruns on major civil works and bridge construction materials.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Incorporate price adjustment clauses in long-term civil works contracts and utilize Standard Procurement Documents with appropriate contingencies.",
+      "evidence": "macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks"
+    },
+    {
+      "risk_id": "R04",
+      "description": "PCIU financial management weaknesses and MTA's limited experience with World Bank procedures create a high risk of control breakdowns and audit issues.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Recruit a qualified FM Specialist and Internal Auditor, adopt an approved FM manual, and install dedicated accounting software within 90 days of effectiveness.",
+      "evidence": "The FM risk before considering the mitigating measures is 'High' mainly due to: (i) Insufficient experience of MTA with the World Bank\u2019s FM procedures"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Low procurement capacity in MTA and the initial absence of an established PCIU procurement unit could cause widespread implementation and contracting delays.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Hire an experienced Procurement Specialist prior to effectiveness, implement continuous STEP training, and establish robust contract management systems.",
+      "evidence": "the PCIU is yet to be established and the capacity of procurement staff in MTA is low"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Disbursements for Subcomponent 2b bridge works could be delayed if SCADeP Additional Financing resources are not fully exhausted in a timely manner.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain monthly disbursement tracking of SCADeP bridge contracts to accelerate full resource utilization and trigger Category 2 funding seamlessly.",
+      "evidence": "No withdrawal shall be made under Category (2), unless the Recipient has exhausted all financing available under the SCADeP Additional Financing"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Delays in fulfilling post-effectiveness legal covenants for accounting software procurement, PIM adoption, and contract systems could stall early project execution.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Utilize Project Preparation Advance (PPA) funding to advance the drafting of the PIM, procurement terms of reference, and accounting software selection.",
+      "evidence": "No later than ninety (90) days after the Effective Date... identified and procured appropriate software for use in Project accounting"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Institutional fragmentation and overlapping mandates among MTA, SLRA, SLRSA, and Traffic Police may obstruct integrated urban traffic management implementation.",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Institutionalize inter-agency policy coordination through the National Project Steering Committee and strengthen SLPTA's mandate over urban mobility.",
+      "evidence": "institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Intense precipitation, prolonged wet seasons, and river flooding could suspend construction activities and damage ongoing civil works.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Schedule high-water foundation works strictly during the dry season, apply climate-resilient engineering standards, and employ incremental launching methods.",
+      "evidence": "Sierra Leone experienced a prolonged rainy season... leading to a rise in water levels... As a result, civil works in the four sites were suspended"
+    },
+    {
+      "risk_id": "R10",
+      "description": "High water flow rates and severe riverbed scour during flood events could threaten the structural integrity of bridge piers and abutments.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Construct pile foundations, cantilever abutments with return walls, scour protection works, and elevate bridge decks above 1.5 times historical high-water levels.",
+      "evidence": "River floods can cause erosion, soil and debris deposition, bridge, road and markets damage, and assets washaway."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Ad-hoc decision-making and lack of systematic asset data could result in inadequate prioritization and maintenance of bridges and link roads.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop and operationalize a digital Bridge Management System (BMS) integrated with the existing Road Asset Management System (RAMS).",
+      "evidence": "monitoring and management of the road asset is not systematic and lacks supporting data. The decision-making on road maintenance... is ad hoc"
+    },
+    {
+      "risk_id": "R12",
+      "description": "High baseline crash rates and weak enforcement create severe traffic safety hazards along urban public transport corridors during civil works.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implement corridor Traffic Management Plans, install functional traffic signals, marked footpaths, guardrails, and solar streetlights along priority routes.",
+      "evidence": "Sierra Leone has one of the poorest road safety records globally with ineffective monitoring system and weak enforcement."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Low digital literacy, low income, and cultural barriers could exclude rural women from utilizing the upgraded Agricultural Market Information System (AMIS).",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Partner with women's NGOs to conduct digital skills training, integrate voice-response systems, and disseminate market data through local community channels.",
+      "evidence": "survey revealed the gender gap in Sierra Leone in access to mobile phones... Underlying causes... include limited digital skills, low-income levels, and cultural norms."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Civil works construction and improved transport corridors expose workers and communities to risks of SEA/SH and social displacement.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement an updated SEA/SH Action Plan, enforce Labor Management Procedures, establish a functional Grievance Redress Mechanism, and update RAPs.",
+      "evidence": "Environmental and Social Risk Classification Substantial... adoption and disclosure of updated Resettlement Action Plan... and Sexual Exploitation and Abuse/Sexual Harassment Action Plan"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Private bus operators may lack sufficient financial capacity or commercial willingness to participate in the public transport lease-operate-own scheme.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct market appetite studies under PPA, offer structured concession agreements via SLPTA, and build on informal operator formalization models.",
+      "evidence": "subcomponent will increase the coverage of modernized bus services... with inclusive private sector participation... follow the approach of 'lease-operate-own'."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance is rated Substantial. This project's activities are not highly sensitive to moderate perturbations in the political dispensation, although pronounced degeneration in political stability could still undermine their implementation. The more likely risk is that poor governance may affect implementation for the road sector, resulting in reduced commitment during implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through close supervision, strict adherence to the criteria for beneficiary selection, and fiduciary oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed as Substantial. Sierra Leone's post-pandemic recovery was disrupted by concurrent domestic and external shocks. Inflation and exchange rate depreciation reached record levels, depressing economic activity and triggering a severe cost-of-living crisis. Fiscal accounts have deteriorated on account of macroeconomic headwinds and policy slippages, and risks to debt sustainability have intensified. The economy is projected to grow at 3.8 percent on average during 2023-2025, below the long-term trend, and this baseline is vulnerable to downside risks given recent fiscal slippages and expenditure overruns. The macroeconomic risk may raise concerns about contractors' cost overrun and delay of payment.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Key macroeconomic reforms will help reduce the imbalances and avoid the downside risks. The project is 100 percent financed by IDA which will help mitigate the macroeconomic challenges to project implementation."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk is rated Substantial. The key fiduciary risks are related to the overall governance context of the project, the risk that procurement of project works may be delayed and/or result in higher-than-expected bid prices or poorly performing contractors, and difficulty retaining qualified procurement and FM professionals in the PCIU.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated by implementing an action plan that aims to strengthen the accountability and control framework for project implementation and improve overall fiduciary performance, and by ensuring adequate procurement and FM training. The PPSD will establish appropriate prequalification requirements and adopt standard lessons from experience procuring similar works contracts in Sierra Leone. The FM risk will be further mitigated by recruiting an internal auditor under PCIU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project's E&S risk is Substantial (para 74, explicitly pointing to section V.D for detail - para 74 states both environment risk and social risk are rated Substantial 'as indicated in section V.D'). Section V.D (paras 64-68): overall E&S risk classification is Substantial, with eight of ten Environmental and Social Standards (ESS) applying. Environmental risk is Substantial: construction activities are expected to generate air/noise nuisance, construction waste, and traffic/worker safety issues, and Component 2 in particular could affect downstream water users (water quality/hydrology, navigation, fish catch, riparian vegetation), with some impacts potentially long-term or irreversible (e.g. accidental spill of used oil/electrolytes/hazardous materials into the river during construction). Social risk is also Substantial: key risks include physical and economic displacement of boat/ferry operators, loaders, and traders after bridge construction; SEA/SH risks from the contractor workforce; elite capture in market-infrastructure interventions; social exclusion of vulnerable groups (persons with disabilities, women/small traders, the landless, elders); and secondary risks including potential child labor, communicable-disease spread from the contractor workforce, and local conflict over benefit-sharing from downstream impacts.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Standard measures per the ESIA/ESMP to be prepared for project activities, including energy-efficiency measures per World Bank EHS Guidelines/GIIPs; a site-specific SEA/SH risk assessment and commensurate GBV/SEA/SH action plan; the Environmental and Social Commitment Plan (ESCP) and Stakeholder Engagement Plan (SEP), disclosed April 19, 2024; hiring a social specialist with GBV/SEA/SH experience before project effectiveness; an ESIA and Resettlement Action Plan/livelihoods restoration plan already under development for the seven originally-planned bridges, with updated ESIA/ESMP/RAP and a SEA/SH action plan to be disclosed within one month of effectiveness; and a functional grievance mechanism (GM) plus Labor Management Procedures (LMP) for project workers."
+    }
+  ]
+}

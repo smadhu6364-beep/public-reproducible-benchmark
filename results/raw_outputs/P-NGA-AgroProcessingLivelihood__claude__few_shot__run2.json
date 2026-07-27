@@ -1,0 +1,135 @@
+{
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T15:50:45.164169+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-NGA-AgroProcessingLivelihood\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Unretired travel advances and inadequate expenditure documentation within PFMUs and FPFMD could lead to ineligible expenses and fiduciary delays.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Implement an enhanced accountability framework in the Financial Procedures Manual, enforce strict advance acquittal controls, and conduct risk-based internal audits.\",\n      \"evidence\": \"The key issues noted within the PFMUs and FPFMD are unretired advances and inadequate documentation of the eligible expenditures incurred.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"State-level implementation capacity limitations and multi-layered bureaucratic approval processes may cause operational delays across participating states.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Contract qualified third-party implementation support, deploy standardized Project Implementation Manuals, and utilize performance-based funding allocations.\",\n      \"evidence\": \"Taking the lessons learnt from the implementation of CADP... addressing capacity limitations, Coalitions/participation of beneficiaries, avoiding delays in approval processes\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Project economic and financial returns are highly sensitive to market output price drops, where a 20 percent reduction turns NPV negative.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Facilitate structured business alliances with off-takers, construct aggregation/storage infrastructure to smooth price fluctuations, and establish market information platforms.\",\n      \"evidence\": \"One can safely conclude that the project is highly robust to increase in prices of inputs (cost) while being sensitive to a reduction in output prices\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Agricultural intensification and small-scale civil works may cause localized soil and water contamination, waste generation, or runoff pollution.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply site-specific Environmental and Social Management Plans, enforce the Integrated Pest Management Plan, and designate dedicated environmental specialists.\",\n      \"evidence\": \"agricultural intensification involving the use of inputs, could potentially have adverse impact on soil, water and vegetation covers.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Infrastructure developments such as access roads and processing units may require land acquisition, causing involuntary resettlement or loss of resource access.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Execute site screening under the Resettlement Policy Framework (RPF) and implement transparent Resettlement Action Plans (RAPs) including full asset compensation.\",\n      \"evidence\": \"Involuntary re-settlement (OP/BP 4.12)... infrastructure investments could result in involuntary re-settlement and land requisition.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Low procurement capacity in participating states and mandatory contract approvals at executive level risk significant procurement bottlenecks.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Retain procurement execution in dedicated NCO/SCO units, competitively recruit experienced procurement officers and consultants, and conduct annual procurement audits.\",\n      \"evidence\": \"The procurement capacity is still considered low and most of the states do not have procurement tools in place.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Targeted smallholder farmers may slowly adopt or reject new climate-smart and nutrition-sensitive agricultural technologies.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide matching grant incentives under Sub-component 1.3, conduct technology field demonstrations, and deliver targeted agricultural extension services.\",\n      \"evidence\": \"Productivity has not shown any significant enhancement due to under-investment in new technologies, slow adoption of existing improved technologies by producers\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Business alliances between farmer cooperatives and private buyers may fail due to side-selling, weak contract enforcement, or unequal negotiation power.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide targeted technical assistance for alliance structuring, business plan development, commercial arbitration, and cooperative management capacity building.\",\n      \"evidence\": \"weak market negotiation ability of small producers vis-\u00e0-vis buyers and input providers... inability of buyers and sellers to successfully integrate\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Regional insecurity and militant activities in intervention areas could disrupt civil works, supply chains, and project field activities.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Include state police representation on State Technical Committees, continuously monitor local security conditions, and maintain flexible state funding allocations.\",\n      \"evidence\": \"compounded by additional factors including a sharp drop in oil production levels due to militant activities in the Niger Delta region.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Socio-cultural constraints may restrict women and youth from accessing land, capital, inputs, and project matching grants.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a dedicated Women and Youth Empowerment sub-component (Sub-component 2.1) providing start-up grants, mentorship, and monitoring via a gender tracker.\",\n      \"evidence\": \"women in Nigeria, compared with men, have relatively limited access to productive agricultural land, inputs and services.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Delays by participating states in executing legal subsidiary agreements could hold back project effectiveness and initial credit disbursements.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Sequence project start-up across six pre-assessed ready states and deploy dedicated legal support to streamline subsidiary agreement execution.\",\n      \"evidence\": \"At least one Subsidiary Agreement has been executed on behalf of the Recipient and one Participating State and has been duly authorized or ratified\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Processing assets, aggregation facilities, and rural infrastructure may degrade quickly if local beneficiaries fail to fund and perform maintenance.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Mandate established management structures and 100% beneficiary O&M cost-coverage commitments prior to investing in subproject infrastructure.\",\n      \"evidence\": \"the project will first establish a management structure and O&M arrangement for each infrastructure before investing in such undertakings.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Supply of counterfeit or low-quality agricultural inputs in the market may undermine productivity gains and cause crop failure.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide technical assistance to FMARD and regulatory agencies to enforce quality assurance, accredit input dealers, and inform farmers on certified suppliers.\",\n      \"evidence\": \"support to FMARD and other relevant agencies in conducting assessment of government policies and capacity strengthening on quality control of agro-inputs\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-NGA-AgroProcessingLivelihood",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Unretired travel advances and inadequate expenditure documentation within PFMUs and FPFMD could lead to ineligible expenses and fiduciary delays.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Implement an enhanced accountability framework in the Financial Procedures Manual, enforce strict advance acquittal controls, and conduct risk-based internal audits.",
+        "evidence": "The key issues noted within the PFMUs and FPFMD are unretired advances and inadequate documentation of the eligible expenditures incurred."
+      },
+      {
+        "risk_id": "R02",
+        "description": "State-level implementation capacity limitations and multi-layered bureaucratic approval processes may cause operational delays across participating states.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Contract qualified third-party implementation support, deploy standardized Project Implementation Manuals, and utilize performance-based funding allocations.",
+        "evidence": "Taking the lessons learnt from the implementation of CADP... addressing capacity limitations, Coalitions/participation of beneficiaries, avoiding delays in approval processes"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Project economic and financial returns are highly sensitive to market output price drops, where a 20 percent reduction turns NPV negative.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Facilitate structured business alliances with off-takers, construct aggregation/storage infrastructure to smooth price fluctuations, and establish market information platforms.",
+        "evidence": "One can safely conclude that the project is highly robust to increase in prices of inputs (cost) while being sensitive to a reduction in output prices"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Agricultural intensification and small-scale civil works may cause localized soil and water contamination, waste generation, or runoff pollution.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply site-specific Environmental and Social Management Plans, enforce the Integrated Pest Management Plan, and designate dedicated environmental specialists.",
+        "evidence": "agricultural intensification involving the use of inputs, could potentially have adverse impact on soil, water and vegetation covers."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Infrastructure developments such as access roads and processing units may require land acquisition, causing involuntary resettlement or loss of resource access.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Execute site screening under the Resettlement Policy Framework (RPF) and implement transparent Resettlement Action Plans (RAPs) including full asset compensation.",
+        "evidence": "Involuntary re-settlement (OP/BP 4.12)... infrastructure investments could result in involuntary re-settlement and land requisition."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Low procurement capacity in participating states and mandatory contract approvals at executive level risk significant procurement bottlenecks.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Retain procurement execution in dedicated NCO/SCO units, competitively recruit experienced procurement officers and consultants, and conduct annual procurement audits.",
+        "evidence": "The procurement capacity is still considered low and most of the states do not have procurement tools in place."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Targeted smallholder farmers may slowly adopt or reject new climate-smart and nutrition-sensitive agricultural technologies.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide matching grant incentives under Sub-component 1.3, conduct technology field demonstrations, and deliver targeted agricultural extension services.",
+        "evidence": "Productivity has not shown any significant enhancement due to under-investment in new technologies, slow adoption of existing improved technologies by producers"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Business alliances between farmer cooperatives and private buyers may fail due to side-selling, weak contract enforcement, or unequal negotiation power.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide targeted technical assistance for alliance structuring, business plan development, commercial arbitration, and cooperative management capacity building.",
+        "evidence": "weak market negotiation ability of small producers vis-\u00e0-vis buyers and input providers... inability of buyers and sellers to successfully integrate"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Regional insecurity and militant activities in intervention areas could disrupt civil works, supply chains, and project field activities.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Include state police representation on State Technical Committees, continuously monitor local security conditions, and maintain flexible state funding allocations.",
+        "evidence": "compounded by additional factors including a sharp drop in oil production levels due to militant activities in the Niger Delta region."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Socio-cultural constraints may restrict women and youth from accessing land, capital, inputs, and project matching grants.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a dedicated Women and Youth Empowerment sub-component (Sub-component 2.1) providing start-up grants, mentorship, and monitoring via a gender tracker.",
+        "evidence": "women in Nigeria, compared with men, have relatively limited access to productive agricultural land, inputs and services."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Delays by participating states in executing legal subsidiary agreements could hold back project effectiveness and initial credit disbursements.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Sequence project start-up across six pre-assessed ready states and deploy dedicated legal support to streamline subsidiary agreement execution.",
+        "evidence": "At least one Subsidiary Agreement has been executed on behalf of the Recipient and one Participating State and has been duly authorized or ratified"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Processing assets, aggregation facilities, and rural infrastructure may degrade quickly if local beneficiaries fail to fund and perform maintenance.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Mandate established management structures and 100% beneficiary O&M cost-coverage commitments prior to investing in subproject infrastructure.",
+        "evidence": "the project will first establish a management structure and O&M arrangement for each infrastructure before investing in such undertakings."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Supply of counterfeit or low-quality agricultural inputs in the market may undermine productivity gains and cause crop failure.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide technical assistance to FMARD and regulatory agencies to enforce quality assurance, accredit input dealers, and inform farmers on certified suppliers.",
+        "evidence": "support to FMARD and other relevant agencies in conducting assessment of government policies and capacity strengthening on quality control of agro-inputs"
+      }
+    ]
+  },
+  "parse_error": null
+}

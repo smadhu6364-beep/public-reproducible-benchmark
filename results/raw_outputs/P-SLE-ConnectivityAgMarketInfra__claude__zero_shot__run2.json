@@ -1,0 +1,135 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T16:01:46.933348+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Soaring macroeconomic inflation and global supply shocks in Sierra Leone could cause significant cost overruns for civil works and infrastructure components.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Include price contingency provisions in major works contracts, conduct market pricing surveys, and monitor procurement budgets regularly.\",\n      \"evidence\": \"macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Heavy seasonal rainfall, intense river flooding, and landslides could cause civil works suspensions, erosion, and structural damage to rural bridges and link roads under construction.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate climate-proofed technical design standards, elevate approach embankments, right-size drainage culverts, and schedule heavy foundation works during the dry season.\",\n      \"evidence\": \"prolonged rainy season... leading to a rise in water levels in river crossings... civil works in the four sites were suspended\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"GoSL fiscal stress could delay or prevent the provision of committed counterpart funds ($3.1 million) needed to complete ongoing SCADeP bridge contracts.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a legally binding counterpart contribution schedule with the Ministry of Finance and prioritize initial disbursements from Subcomponent 2b grant funds.\",\n      \"evidence\": \"Leaves a funding gap of about US$7.1 million... Considering the current fiscal stress on the GoSL... government has committed to cover the remaining US$3.1 million\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Institutional fragmentation and overlapping mandates among MTA, SLRA, SLRSA, and Traffic Police could result in poor inter-agency coordination and delayed project execution.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Formalize inter-agency coordination mechanisms through the National Project Steering Committee (NPSC) and define explicit institutional roles in the Project Implementation Manual.\",\n      \"evidence\": \"institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Lack of an established procurement unit and limited familiarity with World Bank procurement regulations and STEP at MTA/PCIU could cause procurement delays and non-compliance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified Procurement and Financial Management Specialists prior to project effectiveness, institute proper record-keeping systems, and provide continuous hands-on STEP training.\",\n      \"evidence\": \"PCIU is yet to be established and the capacity of procurement staff in MTA is low; there is a lack of knowledge in using World Bank\u2019s Procurement Regulations\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Low internet penetration and digital literacy gaps among rural farmers, particularly women, may inhibit the widespread adoption and utilization of the upgraded AMIS mobile app.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Integrate offline access channels such as Integrated Voice Response (IVR) systems, partner with community women's groups, and deliver tailored grassroots digital literacy training.\",\n      \"evidence\": \"internet penetration standing at 21.2 percent... rural women and farmers often have limited access to mobile phones based on factors such as literacy rates\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Informal paratransit operators (poda-podas, okadas, kekes) may resist formalization and high-capacity bus priority schemes, causing operational conflicts or service disruptions.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage informal transport associations early, facilitate their integration into corporate entities (like MTC), and incorporate them into scheduled feeder bus operation contracts.\",\n      \"evidence\": \"Public transport services are experiencing a rapid growth of unregulated informal providers... Engaging private operators including bus operators... is the key to modernize\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient road maintenance funding from the Road Maintenance Fund Administration (RMFA) and ad-hoc maintenance allocation could cause rapid post-construction deterioration of road and bridge assets.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Operationalize the Bridge Management System (BMS) and Road Asset Management System (RAMS) to prioritize data-driven maintenance and support national transport strategy reforms for road fund sustainability.\",\n      \"evidence\": \"RMFA collected approximately US$12.5 million... which is a small fraction of the actual support needed for road maintenance... decision-making on road maintenance... is ad hoc\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Labor influx for rural bridge and urban infrastructure civil works increases the risk of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH) in local communities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce worker codes of conduct, adopt a comprehensive SEA/SH Action Plan, conduct community awareness campaigns, and establish a secure, gender-sensitive grievance mechanism.\",\n      \"evidence\": \"assess the risks related to SEA/SH and prepare an SH/SEA action plan... Sexual Exploitation and Abuse/Sexual Harassment Action Plan consistent with the ESCP\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Delays in fulfilling time-bound legal covenants and disbursement conditions (e.g., establishing NPSC, adopting PIM, procuring accounting software) could stall initial project implementation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize Project Preparation Advance (PPA) funding to complete draft manuals, recruit core PCIU personnel, and finalize accounting system software selection prior to effectiveness.\",\n      \"evidence\": \"Schedule 2, Section I. A. 2(a)... Section IV, 1... Section IV, 2... Article IV 4.01.(a)... adopt and disclose updated ESMP, ESIA, RAP\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Land acquisition and economic displacement along bridge approach roads, bus corridors, and market sites could trigger disputes and delay civil works commencement.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Update and disclose Resettlement Action Plans (RAPs) early, conduct transparent stakeholder consultations, and fully execute compensation prior to site handover to contractors.\",\n      \"evidence\": \"updated Resettlement Action Plan for Component 2... potential relocation of the project-affected people and sitting of the proposed bridges and agricultural market infrastructure\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Manual and unsynchronized road incident data collection across SLRSA and Police impedes effective safety monitoring and targeted traffic enforcement.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Finance the establishment of a centralized digital road safety database and national guidelines while delivering joint training to SLRSA and traffic police officers.\",\n      \"evidence\": \"There is no systematic database on road safety, and Sierra Leone Road Safety Authority (SLRSA) and the police department collect road incidents manually\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Heavy vehicle overloading on newly constructed long-span rural bridges and link roads could cause premature structural fatigue and shorten asset life.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Design bridge structures with structural redundancy and allowance for vehicle overloads, install scour protection, and build SLRA capacity for continuous bridge lifecycle monitoring.\",\n      \"evidence\": \"The bridges will also be checked for resilience to climate change exacerbated floods, landslides, extreme temperature, and potential vehicles\u2019 overloads.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Soaring macroeconomic inflation and global supply shocks in Sierra Leone could cause significant cost overruns for civil works and infrastructure components.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Include price contingency provisions in major works contracts, conduct market pricing surveys, and monitor procurement budgets regularly.",
+        "evidence": "macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Heavy seasonal rainfall, intense river flooding, and landslides could cause civil works suspensions, erosion, and structural damage to rural bridges and link roads under construction.",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 4,
+        "mitigation": "Incorporate climate-proofed technical design standards, elevate approach embankments, right-size drainage culverts, and schedule heavy foundation works during the dry season.",
+        "evidence": "prolonged rainy season... leading to a rise in water levels in river crossings... civil works in the four sites were suspended"
+      },
+      {
+        "risk_id": "R03",
+        "description": "GoSL fiscal stress could delay or prevent the provision of committed counterpart funds ($3.1 million) needed to complete ongoing SCADeP bridge contracts.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a legally binding counterpart contribution schedule with the Ministry of Finance and prioritize initial disbursements from Subcomponent 2b grant funds.",
+        "evidence": "Leaves a funding gap of about US$7.1 million... Considering the current fiscal stress on the GoSL... government has committed to cover the remaining US$3.1 million"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Institutional fragmentation and overlapping mandates among MTA, SLRA, SLRSA, and Traffic Police could result in poor inter-agency coordination and delayed project execution.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Formalize inter-agency coordination mechanisms through the National Project Steering Committee (NPSC) and define explicit institutional roles in the Project Implementation Manual.",
+        "evidence": "institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Lack of an established procurement unit and limited familiarity with World Bank procurement regulations and STEP at MTA/PCIU could cause procurement delays and non-compliance.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit qualified Procurement and Financial Management Specialists prior to project effectiveness, institute proper record-keeping systems, and provide continuous hands-on STEP training.",
+        "evidence": "PCIU is yet to be established and the capacity of procurement staff in MTA is low; there is a lack of knowledge in using World Bank\u2019s Procurement Regulations"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Low internet penetration and digital literacy gaps among rural farmers, particularly women, may inhibit the widespread adoption and utilization of the upgraded AMIS mobile app.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Integrate offline access channels such as Integrated Voice Response (IVR) systems, partner with community women's groups, and deliver tailored grassroots digital literacy training.",
+        "evidence": "internet penetration standing at 21.2 percent... rural women and farmers often have limited access to mobile phones based on factors such as literacy rates"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Informal paratransit operators (poda-podas, okadas, kekes) may resist formalization and high-capacity bus priority schemes, causing operational conflicts or service disruptions.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage informal transport associations early, facilitate their integration into corporate entities (like MTC), and incorporate them into scheduled feeder bus operation contracts.",
+        "evidence": "Public transport services are experiencing a rapid growth of unregulated informal providers... Engaging private operators including bus operators... is the key to modernize"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient road maintenance funding from the Road Maintenance Fund Administration (RMFA) and ad-hoc maintenance allocation could cause rapid post-construction deterioration of road and bridge assets.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Operationalize the Bridge Management System (BMS) and Road Asset Management System (RAMS) to prioritize data-driven maintenance and support national transport strategy reforms for road fund sustainability.",
+        "evidence": "RMFA collected approximately US$12.5 million... which is a small fraction of the actual support needed for road maintenance... decision-making on road maintenance... is ad hoc"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Labor influx for rural bridge and urban infrastructure civil works increases the risk of Sexual Exploitation and Abuse and Sexual Harassment (SEA/SH) in local communities.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce worker codes of conduct, adopt a comprehensive SEA/SH Action Plan, conduct community awareness campaigns, and establish a secure, gender-sensitive grievance mechanism.",
+        "evidence": "assess the risks related to SEA/SH and prepare an SH/SEA action plan... Sexual Exploitation and Abuse/Sexual Harassment Action Plan consistent with the ESCP"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Delays in fulfilling time-bound legal covenants and disbursement conditions (e.g., establishing NPSC, adopting PIM, procuring accounting software) could stall initial project implementation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize Project Preparation Advance (PPA) funding to complete draft manuals, recruit core PCIU personnel, and finalize accounting system software selection prior to effectiveness.",
+        "evidence": "Schedule 2, Section I. A. 2(a)... Section IV, 1... Section IV, 2... Article IV 4.01.(a)... adopt and disclose updated ESMP, ESIA, RAP"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Land acquisition and economic displacement along bridge approach roads, bus corridors, and market sites could trigger disputes and delay civil works commencement.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Update and disclose Resettlement Action Plans (RAPs) early, conduct transparent stakeholder consultations, and fully execute compensation prior to site handover to contractors.",
+        "evidence": "updated Resettlement Action Plan for Component 2... potential relocation of the project-affected people and sitting of the proposed bridges and agricultural market infrastructure"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Manual and unsynchronized road incident data collection across SLRSA and Police impedes effective safety monitoring and targeted traffic enforcement.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Finance the establishment of a centralized digital road safety database and national guidelines while delivering joint training to SLRSA and traffic police officers.",
+        "evidence": "There is no systematic database on road safety, and Sierra Leone Road Safety Authority (SLRSA) and the police department collect road incidents manually"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Heavy vehicle overloading on newly constructed long-span rural bridges and link roads could cause premature structural fatigue and shorten asset life.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Design bridge structures with structural redundancy and allowance for vehicle overloads, install scour protection, and build SLRA capacity for continuous bridge lifecycle monitoring.",
+        "evidence": "The bridges will also be checked for resilience to climate change exacerbated floods, landslides, extreme temperature, and potential vehicles\u2019 overloads."
+      }
+    ]
+  },
+  "parse_error": null
+}

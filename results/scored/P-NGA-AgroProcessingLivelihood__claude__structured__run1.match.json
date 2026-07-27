@@ -1,0 +1,253 @@
+{
+  "run_file": "P-NGA-AgroProcessingLivelihood__claude__structured__run1.json",
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R07",
+      "similarity": 0.668,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.595,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R08",
+      "similarity": 0.507,
+      "gen_category": "stakeholder",
+      "gt_category": "stakeholder",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R06",
+      "similarity": 0.49,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R05",
+      "similarity": 0.475,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R04",
+      "similarity": 0.456,
+      "gen_category": "schedule",
+      "gt_category": "technical",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Financial management deficiencies regarding unretired travel advances and inadequate expenditure documentation within PFMUs and FPFMD.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement an enhanced accountability framework detailed in the Financial Procedures Manual, including risk-based internal audits and strict advance acquittance controls.",
+      "evidence": "The key issues noted within the PFMUs and FPFMD are unretired advances and inadequate documentation of the eligible expenditures incurred."
+    },
+    {
+      "risk_id": "R02",
+      "description": "High vulnerability of project financial and economic returns (NPV/IRR) to potential drops in agricultural output prices.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deploy aggregation centers, market information platforms, and business alliances to stabilize output prices and improve market linkages.",
+      "evidence": "if benefits were reduced by 20 percent for all the crops, the net present values will turn negative while the IRR were also below the cost of capital."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Low procurement capacity in state offices and contract approval delays at executive council levels.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Competitively recruit qualified procurement specialists, hire a lead procurement consultant at NCO, and conduct contract management training.",
+      "evidence": "The procurement capacity is still considered low and most of the states do not have procurement tools in place."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Technical and managerial capacity constraints within smallholder producer organizations and cooperatives.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Provide mandatory business development services, governance training, and technical assistance before grant disbursement.",
+      "evidence": "These include addressing capacity limitations, ensuring participation of beneficiaries at local level, avoiding delays in approval processes"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Delays in project effectiveness and initial disbursements due to pending Subsidiary Agreements and SCO establishment.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Fast-track execution and legal ratification of Subsidiary Agreements and utilize existing CADP structures during the startup phase.",
+      "evidence": "At least one Subsidiary Agreement has been executed on behalf of the Recipient and one Participating State"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Schedule delays in completing competitive selection and deployment of dedicated NCO and SCO staff.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Retain existing qualified CADP staff under government funding during the initial 18-month transition while executing competitive recruitment.",
+      "evidence": "During the first 18-month period of project implementation, it is expected that selection and replacement of CADP staff will be completed"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Weak market bargaining power and potential contractual breach between smallholders and commercial off-takers.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Contract third-party service providers to broker formal alliance agreements and provide continuous medium-term business development support.",
+      "evidence": "weak market negotiation ability of small producers vis-\u00e0-vis buyers and input providers to obtain better prices and more stable market relationships"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Potential beneficiary grievances or perceived lack of transparency in selecting grant recipients and youth/women sub-projects.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish a functional multi-level Grievance Redress Mechanism (GRM), transparent competitive selection criteria, and a broad communication outreach strategy.",
+      "evidence": "establishment of an effective grievance redress mechanism (GRM)"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Governance risks including political interference, opacity, and approval bottlenecks in grant allocations across steering committees.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Enforce strict compliance with the Project Implementation Manual, conduct independent annual technical audits, and maintain multi-tiered oversight.",
+      "evidence": "The oversight and supervision mechanism, at both federal and participating states levels, will significantly help in addressing any tendencies towards a lack of transparency"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Environmental degradation, soil erosion, and water contamination from increased agro-chemical usage and processing effluents.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Enforce the Integrated Pest Management Plan (IPMP) and site-specific Environmental and Social Management Plans (ESMPs) for all sub-projects.",
+      "evidence": "The adverse impact could include contamination of soils and surface water, waste generation, dust pollution, disruption in natural habitats"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Involuntary land acquisition, displacement, or loss of access to common resources from access road and infrastructure works.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Screen all civil works and implement site-specific Resettlement Action Plans (RAPs) adhering to the Resettlement Policy Framework (RPF).",
+      "evidence": "infrastructure investments could result in involuntary re-settlement and land requisition."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Institutional friction and role ambiguity among multiple participating federal and state ministries, departments, and agencies.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear operational mandates in the Project Implementation Manual and convene regular quarterly State Technical Committee meetings.",
+      "evidence": "defining the responsibilities of each participating actors clearly, and staffing of SCOs with appropriate technical staff."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Insecurity and militant activities in intervention regions disrupting field execution, supply chains, and project monitoring.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Include police and security agency representation on State Technical Committees and engage local community leadership for field security coordination.",
+      "evidence": "a sharp drop in oil production levels due to militant activities in the Niger Delta region"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk has been rated Substantial. Coordination of externally funded projects' responsibilities between the federal and state levels is a complex phenomenon, and incomprehension or misinterpretation at any level can affect the project implementation negatively.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A communication strategy, supported by the project, will ensure that transparency is maintained at all levels of project management and implementation, and the participation of beneficiaries remains at the core of the project."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risks are rated Substantial. Falling oil prices have undermined economic growth in the country and remain a major source of risks, which may be exacerbated further by security challenges, natural disasters, and climate change. With reliance on a few primary exports and a relatively undiversified economy, Nigeria remains vulnerable to external demand and price shocks, compounded by pressures from weak fiscal management.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The World Bank is in close dialogue with the authorities on the reform program in support of restoring macro-economic resilience and economic growth."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Sector Policies and Strategies risk has been rated Substantial. One major risk is frequent changes in the agricultural policy, especially the tariff policy, which would change the economic incentives faced by farmers and the private sector alike. Considering this is a multi-sector project, risk associated with other sector policies (e.g., transport and energy) might also affect implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through a sustained, evidence-based policy dialogue and engagement with the government to ensure sustainability of the reforms in the sector."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Technical Design risk has been rated Moderate. The approach for agribusiness partnership proposed by this project has already been successfully implemented under CADP.",
+      "category": "technical",
+      "sort_rating": "Moderate",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Lessons learned from both CADP and other similar operations have been incorporated into the project design, which is based on analyses undertaken during preparation and summarized under Annex 2."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Institutional Capacity for Implementation and Sustainability risk has been rated Substantial. While capacity at the federal level for implementing World Bank-supported agricultural project activities is adequate, there is a risk at state level of insufficient experience, structure, and technical knowhow to manage the new project design features.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "SCOs' staff will be provided necessary training at the time of launching the project, and newly recruited staff (particularly in Kogi state) will benefit from an induction training program. Coordination challenges will be addressed by Steering Committees at federal and state levels, and a Technical Committee at state level chaired by the Commissioner of Agriculture. NCO and SCO will collaborate with FADAMAIII, RAMP, and GEM where relevant, and the project may contract a third-party service provider to assist states in project execution."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Fiduciary risk (financial management) is assessed as Substantial. The key risks identified are those of value for money in works/construction contracts and capacity building events; capacity building activities such as training workshops have been identified as having significant fiduciary risks.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Additional steps include: (i) all training and workshop activities subject to prior review by the Bank; (ii) activities part of the approved annual work plan; (iii) part of the project training plan; and (iv) compliance with the enhanced accountability framework. A qualified procurement specialist will be selected competitively; goods and consultants' services will be procured in accordance with World Bank anti-fraud/corruption guidelines and procurement guidelines."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Environment and Social risk has been rated Substantial. The Environmental Category assigned to the project is Category B, predicated on the assumption that environmental risks and social impact may not have serious adverse impact of a sensitive or diverse nature; the project may not be engaged in development of heavy infrastructure or acquisition of large expanses of land.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "An Environmental and Social Management Framework (ESMF), a Resettlement Policy Framework (RPF), and an Integrated Pest Management Plan (IPMP) have been prepared and publicly disclosed. Specific Environment and Social Impact Assessments (ESIAs) and Resettlement Action Plans (RAPs) will be conducted for each public and private investment once the type of work is determined and precisely located, and a Strategic Environmental and Social Assessment will cover all areas and localities in which the project will operate."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Stakeholders/Gender risk: there is a risk that women will be disadvantaged in terms of their access to employment and participation in out-growers arrangements.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A detailed gender assessment and tracking for the project will be undertaken with the DFID-supported Gender Filter Trust Fund, in collaboration with the Africa Gender Innovation Lab, and incorporated into the Project Implementation Manual. A substantial part of Component 2 (35% of project funding) will support a Women and Youth Empowerment program, with affirmation of 35 percent female inclusion in all aspects of the project (representation in joint community meetings, jobs, extension agents, facilitators, and agri-business/entrepreneurship development), plus TA and training on business plan preparation, accounting, and financial management for women."
+    }
+  ]
+}
