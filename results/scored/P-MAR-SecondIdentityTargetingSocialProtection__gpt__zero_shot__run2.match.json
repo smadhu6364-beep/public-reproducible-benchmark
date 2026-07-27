@@ -1,0 +1,168 @@
+{
+  "run_file": "P-MAR-SecondIdentityTargetingSocialProtection__gpt__zero_shot__run2.json",
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.495,
+      "gen_category": "organizational",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inaccurate or incomplete data in the NPR/SR due to poor quality of legacy databases and biometric deduplication errors, leading to exclusion or duplicate IDs.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conduct comprehensive data quality audits, implement automated validation rules, and run pilot reconciliations before full rollout; allocate resources for manual correction where needed.",
+      "evidence": "Section 11: mixed data quality and risk of inaccuracies when reconciling multiple databases."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delay or failure in operationalizing the National Registry Agency (NRA), jeopardizing governance of NPR and SR.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Develop a detailed NRA staffing and governance plan with clear timelines; monitor recruitment milestones; provide technical assistance from World Bank to accelerate setup.",
+      "evidence": "Section 35\u201136: NRA operationalization essential; rapid expansion has strained capacity."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Enrollment and DCSID attribution targets (e.g., 21\u202fmillion IDs by 2028) not met, reducing coverage of social protection.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement monthly enrollment dashboards, prioritize high\u2011density rural provinces, and deploy additional mobile units where enrollment lags.",
+      "evidence": "PBC tables: target 21\u202fmillion DCSIDs by FY\u202f29."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk from reliance on Excel spreadsheets and overlapping budget lines, causing reporting errors or misallocation of funds.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt the planned financial software for IFR preparation; harmonize budget codes; conduct quarterly internal audits to detect duplication.",
+      "evidence": "Section 68\u201170: use of Excel and duplicate AMO\u2011TADAMON budget line identified as FM risk."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Exclusion of vulnerable groups (women, disabled, remote populations) due to inadequate communication, outreach or unclear registration procedures.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Roll out multilingual, multi\u2011channel awareness campaigns; strengthen CSC and mobile\u2011unit support; monitor enrollment disaggregated by gender and disability.",
+      "evidence": "Sections 84\u201187: risk of exclusion from inefficient communication and registration."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Generation of electronic waste from mobile units and ICT equipment without proper disposal, causing environmental harm.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Implement the MoI e\u2011waste management procedure; train field staff on proper disposal; partner with certified recyclers.",
+      "evidence": "Section 85\u201186: e\u2011waste risk from electronic devices."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Changes in national data\u2011protection regulations or non\u2011compliance could halt digital ID operations.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Maintain a legal watch team; align system design with Law\u202f09\u201108 and international best practices; update privacy\u2011by\u2011design features as laws evolve.",
+      "evidence": "Section 55\u201157: data\u2011protection by design and reference to Law\u202f09\u201108."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Insufficient institutional capacity within the Ministry of Interior and PMU to manage simultaneous NPR rollout and NRA establishment.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Scale up staffing, provide targeted capacity\u2011building workshops, and delegate routine tasks to the Center of Excellence once operational.",
+      "evidence": "Section 52\u201153: rapid expansion strained MoI capacity; need for long\u2011term commitment."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Severe climate\u2011related shocks (drought, floods) increase demand for social protection faster than the system can process, overwhelming NPR/SR.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Integrate real\u2011time climate\u2011impact alerts into the DSPDS; pre\u2011position emergency response protocols; allocate contingency budget for surge enrollment.",
+      "evidence": "Section 3\u20114: climate shocks account for 37\u202f% of GDP volatility and threaten livelihoods."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Macroeconomic downturns (inflation, recession) reduce fiscal space, threatening project financing and sustainability of social programs.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Secure multi\u2011year budget commitments; explore cost\u2011saving digital processes; maintain a reserve fund for cash\u2011flow gaps.",
+      "evidence": "Section 3: COVID\u201119 recession and 2022 inflation shock impacted growth."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Cybersecurity breach or unauthorized access to biometric and socioeconomic data, eroding public trust.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Implement robust encryption, regular penetration testing, and an incident\u2011response plan; train staff on data\u2011handling protocols.",
+      "evidence": "Section 55\u201157: data\u2011privacy safeguards and EFC monitoring system."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Reluctance of informal\u2011sector workers to provide personal data, leading to under\u2011coverage of a large labor segment.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct targeted outreach explaining benefits and data protection; offer optional low\u2011cost enrollment incentives; engage labor unions.",
+      "evidence": "Section 53: informal workers wary of providing information due to tax concerns."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Potential delays in procurement of maintenance contracts for biometric and IT systems, affecting system uptime.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Use the existing STEP system for early procurement planning; keep standby service agreements with current vendors.",
+      "evidence": "Section 79\u201180: procurement risk assessed as low but requires POM procedures."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Late establishment of the Center of Excellence, limiting technical support and sustainability of the NPR platform.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Define a clear workplan with milestones; allocate dedicated budget; monitor progress quarterly and adjust staffing as needed.",
+      "evidence": "Component 3 description: Center of Excellence to support sustainability."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate monitoring of error, fraud, and corruption (EFC) leading to undetected leakages in social transfers.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deploy the EFC monitoring system as designed; conduct regular audits; integrate automated anomaly detection algorithms.",
+      "evidence": "Section 30\u201131: design of end\u2011to\u2011end EFC monitoring system."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Stakeholder risk is assessed as Substantial. Given the complex nature of the operation and the involvement of multiple stakeholders in the implementation of the National Population Register (NPR) and the Social Registry (SR), the Project Management Unit (PMU) will need to put considerable effort into ensuring better coordination to achieve the PDO. The national rollout and the improvement of the NPR and the SR will need strong stakeholder engagement, including citizens concerned by social protection programs who are often poor and vulnerable.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The communication strategy will continue to inform all stakeholders involved in project implementation and will capitalize on lessons learned from the first Identity and Targeting for Social Protection project (P155198). The PMU envisions improving the grievance mechanism at local and national levels and establishing a system to promote citizen engagement and transparency. The Inter-Ministerial Steering Committee is responsible for developing guidelines for the strategic policy for the envisaged reform and ensuring a link with the ongoing social protection reform. Technical work will also cover a process evaluation to identify challenges, propose remedies, and provide recommendations to enhance system implementation at central and local levels."
+    }
+  ]
+}

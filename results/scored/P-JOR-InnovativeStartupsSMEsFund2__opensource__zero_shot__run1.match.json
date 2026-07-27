@@ -1,0 +1,132 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__opensource__zero_shot__run1.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R01",
+      "similarity": 0.528,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insufficient deal flow for ISSF investments, potentially leading to reduced investment opportunities and lower returns",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Enhance deal sourcing efforts, expand network of partners and intermediaries, and consider investments in pre-seed and seed stages",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Inadequate governance and oversight of ISSF, potentially leading to poor investment decisions and mismanagement of funds",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Strengthen ISSF's governance structure, ensure independence of Board members, and enhance oversight mechanisms",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited access to funding for female-led startups, potentially hindering the growth of women-owned businesses",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implement targeted outreach measures, develop a Gender Action Plan, and consider investments in women-led startups",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate environmental and social risk management, potentially leading to negative impacts on the environment and local communities",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Develop and implement an Environmental and Social Management System, conduct thorough risk assessments, and ensure compliance with World Bank standards",
+      "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Dependence on public funding, potentially limiting the long-term sustainability of ISSF",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Explore alternative funding sources, develop a strategy for transitioning to private sector funding, and enhance financial management and reporting",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Regulatory risks, potentially affecting the viability of ISSF investments",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Monitor regulatory developments, engage with relevant authorities, and ensure compliance with applicable laws and regulations",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Concentration risk, potentially leading to overexposure to specific sectors or investments",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Diversify investments, set concentration limits, and monitor portfolio risk",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate monitoring and evaluation, potentially hindering the assessment of project impact and effectiveness",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop and implement a comprehensive monitoring and evaluation framework, ensure data quality and availability, and conduct regular assessments",
+      "evidence": "Section IV, PROJECT APPRAISAL SUMMARY"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Limited capacity of ISSF staff, potentially affecting the implementation and management of the project",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide training and capacity-building opportunities, ensure adequate staffing levels, and enhance operational efficiency",
+      "evidence": "Section II, Project Description"
+    },
+    {
+      "risk_id": "R10",
+      "description": "External risks, such as economic downturns or global events, potentially affecting the viability of ISSF investments",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Monitor external developments, diversify investments, and develop contingency plans to mitigate potential risks",
+      "evidence": "Section I, STRATEGIC CONTEXT"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Macroeconomic risk is rated Substantial. External economic shocks, regional instability and related uncertainties, or a downturn in global venture capital markets could reduce investor confidence and slow private capital mobilization. Additionally, Jordan's nascent venture capital market and competition from more developed ecosystems in neighboring countries may impact startup retention and funding.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Other risks are rated Substantial and relate to geopolitical risk. Jordan's strategic location makes it susceptible to a complex set of geopolitical challenges that have intensified in recent years, due to the current Conflict in the Middle East and its repercussions for investment, trade, and tourism in the region. Increasing geopolitical risks may prompt adjustments in policy and budgetary priorities and/or contribute to delays in implementation.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "By combining regional and global diplomacy, building international partnerships, staying the course on political and economic modernization reforms, implementing prudent fiscal policies, and strategic security measures, Jordan has maintained its resilience and stability despite continuous crises."
+    }
+  ]
+}

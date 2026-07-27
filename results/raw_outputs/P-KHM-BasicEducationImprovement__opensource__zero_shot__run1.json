@@ -1,0 +1,108 @@
+{
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T04:09:51.251532+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-KHM-BasicEducationImprovement\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in project implementation due to inadequate financial management staff\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire additional financial management staff and provide training to ensure adequate capacity\",\n      \"evidence\": \"FM assessment\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inadequate procurement planning and execution\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a comprehensive procurement plan and provide training to procurement staff\",\n      \"evidence\": \"Procurement assessment\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Climate-related disasters affecting project implementation and education outcomes\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate-resilient design principles into school construction and develop emergency response plans\",\n      \"evidence\": \"Climate change considerations\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate teacher training and support\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide comprehensive teacher training and mentoring programs\",\n      \"evidence\": \"Teacher training programs\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Insufficient community engagement and participation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a community engagement plan and establish a grievance redress mechanism\",\n      \"evidence\": \"Citizen engagement\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate monitoring and evaluation of project outcomes\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a comprehensive monitoring and evaluation plan and establish a data management system\",\n      \"evidence\": \"Monitoring and evaluation plan\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Delays in disbursement due to inadequate financial reporting\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a financial reporting plan and provide training to financial staff\",\n      \"evidence\": \"Financial management\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate school infrastructure and learning environment\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construct and rehabilitate school buildings and provide necessary facilities and equipment\",\n      \"evidence\": \"School infrastructure\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate human resource management and capacity building\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a human resource management plan and provide training and capacity building programs\",\n      \"evidence\": \"Human resource management\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"External factors affecting project implementation, such as political instability or economic crisis\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a risk management plan and establish relationships with key stakeholders\",\n      \"evidence\": \"External factors\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-KHM-BasicEducationImprovement",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in project implementation due to inadequate financial management staff",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire additional financial management staff and provide training to ensure adequate capacity",
+        "evidence": "FM assessment"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inadequate procurement planning and execution",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a comprehensive procurement plan and provide training to procurement staff",
+        "evidence": "Procurement assessment"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Climate-related disasters affecting project implementation and education outcomes",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate-resilient design principles into school construction and develop emergency response plans",
+        "evidence": "Climate change considerations"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate teacher training and support",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide comprehensive teacher training and mentoring programs",
+        "evidence": "Teacher training programs"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Insufficient community engagement and participation",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a community engagement plan and establish a grievance redress mechanism",
+        "evidence": "Citizen engagement"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate monitoring and evaluation of project outcomes",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a comprehensive monitoring and evaluation plan and establish a data management system",
+        "evidence": "Monitoring and evaluation plan"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delays in disbursement due to inadequate financial reporting",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a financial reporting plan and provide training to financial staff",
+        "evidence": "Financial management"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate school infrastructure and learning environment",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct and rehabilitate school buildings and provide necessary facilities and equipment",
+        "evidence": "School infrastructure"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate human resource management and capacity building",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a human resource management plan and provide training and capacity building programs",
+        "evidence": "Human resource management"
+      },
+      {
+        "risk_id": "R10",
+        "description": "External factors affecting project implementation, such as political instability or economic crisis",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Develop a risk management plan and establish relationships with key stakeholders",
+        "evidence": "External factors"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,171 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T04:11:33.000806+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Frame the project  \n- **Objective:** Expand coverage of the Digital Civil and Social Identifier (DCSID) and strengthen inclusion of the National Population Registry (NPR) and Social Registry (SR) \u2013 especially in rural/remote areas \u2013 to improve targeting and access to social\u2011protection programmes.  \n- **Scope & Components:** 1) Strengthen/extend NPR and operationalise the National Registry Agency (NRA); 2) Expand and enhance the SR system; 3) Project Management, Capacity Building and M&E.  \n- **Delivery model:** Implemented by the Ministry of Interior (MoI) through a Project Management Unit (PMU) and an Inter\u2011ministerial Steering Committee (IMSC), with World Bank technical and supervisory support, under Performance\u2011Based Conditions (PBCs).  \n- **Timeline:** Expected approval\u202f04\u2011Dec\u20112024; closing\u202f31\u2011Dec\u20112028.  \n- **Budget:** US\u202f$70\u202fmillion (EUR\u202f62.6\u202fmillion).  \n- **Key stakeholders:** Borrower (Kingdom of Morocco), MoI (implementing agency), PMU, IMSC, World Bank, EU (communication support), CNSS, other ministries (MEF, HCP).  \n- **External dependencies:** Legal framework (Law\u202f72\u201118, decrees, Law\u202f09\u201108 on data protection), civil\u2011registry offices, biometric solution providers, satellite/mobile\u2011unit connectivity, climate\u2011related shocks.\n\nStep 2 \u2013 Category sweep (candidate risks with supporting evidence)  \n\n| Category | Candidate risk | Evidence (\u226425\u202fwords) |\n|----------|----------------|----------------------|\n| technical | Legacy data inconsistencies may cause inaccurate enrolment/exclusions. | \u201cexisting databases had inconsistent quality and data formats, including Arabic and Latin alphabets, likely leading to substantial inaccuracies and processing requirements.\u201d |\n| technical | Remote\u2011area ICT infrastructure may be insufficient. | \u201csome of the 2,200 Civil Registry Offices are in very isolated areas and require substantial investments in overall infrastructure, beyond new hardware and software.\u201d |\n| technical | Data\u2011privacy breach despite privacy\u2011by\u2011design. | \u201cMoI adopted a privacy\u2011by\u2011design approach to guarantee data privacy and protection.\u201d |\n| technical | EFC monitoring system may be ineffective. | \u201cdesign and development of an end\u2011to\u2011end Error, Fraud, and Corruption (EFC) monitoring system and mitigation strategy to reduce its rate.\u201d |\n| organizational | Transition of NPR/SR management to the newly created NRA may stall. | \u201cImplementation of the NPR and the SR will be managed by the DIST \u2026 until the NRA is operational.\u201d |\n| financial | Use of Excel for IFRs may affect quality/timeliness. | \u201cuse of a spreadsheet \u2018Excel\u2019 \u2026 may lead to challenges in quality and timeliness of IFRs and annual financial statements.\u201d |\n| financial | Duplicate budgeting (e.g., AMO\u2011TADAMON) could cause reporting errors. | \u201crisk of duplication or overlap due to the use of the same budget line \u2018AMO\u2011TADAMON\u2019 to justify expenditure.\u201d |\n| financial | Retroactive financing limited to 12\u2011month\u2011old expenditures \u2013 cash\u2011flow risk. | \u201cRetroactive financing may only be provided \u2026 for eligible expenditures incurred not more than 12\u202fmonths before signing.\u201d |\n| schedule | NRA operationalisation and staff recruitment may be delayed (PBCs). | \u201cPBCs target NRA operationalisation and staff recruitment by FY26 (see Table\u202f2).\u201d |\n| schedule | NPR coverage target (\u226560\u202f% by 2028) may slip. | \u201cThe NPR national rollout strategy aims to expand coverage to more than 60\u202fpercent of the total population by end of\u202f2024.\u201d |\n| stakeholder | Informal\u2011sector workers may avoid enrolment fearing taxation. | \u201cworkers in the informal sector are wary of providing their information \u2026 due to perceived risks of making them susceptible to taxation.\u201d |\n| stakeholder | Vulnerable groups could be excluded due to poor communication. | \u201cPotential negative social impacts \u2026 mainly related to the exclusion of some vulnerable groups due to inefficient or inadequate public communication and outreach efforts.\u201d |\n| political_regulatory | Changes to Law\u202f72\u201118 or its decrees could affect implementation. | \u201cLaw\u202fno.\u202f72\u201118 and the three implementing decrees provide a solid legal and institutional framework.\u201d |\n| political_regulatory | Amendments to data\u2011protection law (Law\u202f09\u201108) could create compliance gaps. | \u201cThe project will follow national regulations related to personal data protection (Law\u202f09\u201108).\u201d |\n| environmental | Mobile units/e\u2011waste may be improperly disposed. | \u201cRisks associated with the use of electronic devices (such as mobile units) include the potential generation of e\u2011waste and its improper disposal.\u201d |\n| external | Climate\u2011related shocks (drought, floods) may increase demand on social protection. | \u201cMorocco has undergone several overlapping shocks \u2026 climate change \u2026 droughts \u2026 represent significant risks to the Moroccan economy.\u201d |\n| external | Economic recession from COVID\u201119 could affect funding/beneficiary ability. | \u201cThe COVID\u201119 pandemic led to the first recession in over two decades due to reduced economic activity.\u201d |\n\nStep 3 \u2013 Evidence filter  \nAll candidate risks are directly supported by statements in the appraisal document; none are discarded.\n\nStep 4 \u2013 Assess & Mitigate  \n\n| Risk ID | Likelihood (1\u20115) | Impact (1\u20115) | Justification | Mitigation |\n|---------|------------------|--------------|---------------|------------|\n| R01 | 4 | 4 | Legacy data quality is known to be poor; errors would undermine targeting. | Conduct comprehensive data cleaning, validation and biometric deduplication before enrolment; institute ongoing quality\u2011control checks. |\n| R02 | 3 | 3 | Remote offices need extra infrastructure; failures would delay enrolment. | Provide backup power, satellite links, and a maintenance schedule; pre\u2011position spare equipment. |\n| R03 | 2 | 5 | Breach would damage trust and violate law; impact is severe. | Implement strong encryption, regular security audits, and staff training; monitor compliance with Law\u202f09\u201108. |\n| R04 | 3 | 4 | Fraud detection is critical; an ineffective system could cause leakages. | Engage experienced anti\u2011fraud vendor, pilot the EFC system, and refine based on monitoring results. |\n| R05 | 3 | 4 | Institutional hand\u2011over is complex; delays affect whole project. | Develop a detailed hand\u2011over plan, recruit NRA staff early, and provide capacity\u2011building workshops. |\n| R06 | 3 | 4 | Spreadsheet\u2011based reporting risks inaccurate financial statements. | Adopt dedicated financial management software, automate IFR generation, and train FM staff. |\n| R07 | 2 | 3 | Duplicate budget lines could cause audit findings. | Enforce strict budget\u2011coding procedures and cross\u2011check with World Bank templates. |\n| R08 | 2 | 3 | Retroactive financing limits cash availability for early activities. | Maintain a cash\u2011flow buffer and align expenditures with eligible\u2011expenditure windows. |\n| R09 | 3 | 4 | NRA operational milestones are PBC\u2011linked; delay stalls downstream activities. | Set monthly milestone tracking, early recruitment, and regular IMSC reviews. |\n| R10 | 3 | 3 | Achieving 60\u202f% coverage may be slower than planned. | Intensify enrolment campaigns, monitor weekly enrolment rates, and deploy additional mobile units as needed. |\n| R11 | 3 | 3 | Informal workers\u2019 reluctance reduces coverage of the poorest. | Tailor outreach, assure no tax penalties, and simplify enrolment procedures. |\n| R12 | 3 | 3 | Poor communication can leave vulnerable groups out. | Deploy multi\u2011channel communication (TV, radio, SMS, community agents) and conduct feedback loops. |\n| R13 | 2 | 3 | Legal amendments could stall activities. | Establish a legal\u2011monitoring unit and maintain dialogue with the Ministry of Justice. |\n| R14 | 2 | 3 | Data\u2011protection law changes could create compliance gaps. | Periodic review of Law\u202f09\u201108, update privacy\u2011by\u2011design controls accordingly. |\n| R15 | 2 | 2 | E\u2011waste is a minor but manageable environmental risk. | Adopt certified e\u2011waste recycling procedures and include disposal clauses in procurement. |\n| R16 | 4 | 4 | Climate shocks can dramatically increase beneficiary numbers. | Build flexible targeting algorithms and reserve contingency funds for emergency responses. |\n| R17 | 3 | 3 | Economic downturn may affect government fiscal space. | Diversify financing sources and maintain a contingency reserve within the loan. |\n\nStep 5 \u2013 Consolidate  \nAll identified risks are distinct and supported by evidence; the register contains 17 risks.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-MAR-SecondIdentityTargetingSocialProtection\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Legacy data inconsistencies may cause inaccurate enrolment and false exclusions in the NPR.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct comprehensive data cleaning, validation and biometric deduplication before enrolment; institute ongoing quality\u2011control checks.\",\n      \"evidence\": \"existing databases had inconsistent quality and data formats, including Arabic and Latin alphabets, likely leading to substantial inaccuracies and processing requirements.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient ICT infrastructure in remote civil\u2011registry offices could delay enrolment.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide backup power, satellite links, and a maintenance schedule; pre\u2011position spare equipment for isolated sites.\",\n      \"evidence\": \"some of the 2,200 Civil Registry Offices are in very isolated areas and require substantial investments in overall infrastructure, beyond new hardware and software.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Data\u2011privacy breach despite privacy\u2011by\u2011design approach.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement strong encryption, regular security audits, and staff training; monitor compliance with Law\u202f09\u201108.\",\n      \"evidence\": \"MoI adopted a privacy\u2011by\u2011design approach to guarantee data privacy and protection.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"End\u2011to\u2011end Error, Fraud and Corruption (EFC) monitoring system may be ineffective.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage experienced anti\u2011fraud vendor, pilot the EFC system, and refine based on monitoring results.\",\n      \"evidence\": \"design and development of an end\u2011to\u2011end Error, Fraud, and Corruption (EFC) monitoring system and mitigation strategy to reduce its rate.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Transition of NPR/SR management to the newly created NRA may stall.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed hand\u2011over plan, recruit NRA staff early, and provide capacity\u2011building workshops.\",\n      \"evidence\": \"Implementation of the NPR and the SR will be managed by the DIST \u2026 until the NRA is operational.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Use of Excel for IFRs may affect financial reporting quality and timeliness.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt dedicated financial management software, automate IFR generation, and train FM staff.\",\n      \"evidence\": \"use of a spreadsheet \u2018Excel\u2019 \u2026 may lead to challenges in quality and timeliness of IFRs and annual financial statements.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Duplication or overlap of budget lines (e.g., AMO\u2011TADAMON) could cause reporting errors.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce strict budget\u2011coding procedures and cross\u2011check with World Bank templates.\",\n      \"evidence\": \"risk of duplication or overlap due to the use of the same budget line \u2018AMO\u2011TADAMON\u2019 to justify expenditure.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Retroactive financing limited to 12\u2011month\u2011old expenditures may create cash\u2011flow gaps.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain a cash\u2011flow buffer and align expenditures with eligible\u2011expenditure windows.\",\n      \"evidence\": \"Retroactive financing may only be provided \u2026 for eligible expenditures incurred not more than 12\u202fmonths before signing.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Delay in NRA operationalisation and staff recruitment (PBC\u2011linked).\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set monthly milestone tracking, recruit key staff early, and conduct regular IMSC reviews.\",\n      \"evidence\": \"PBCs target NRA operationalisation and staff recruitment by FY26 (see Table\u202f2).\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"NPR coverage target (\u226560\u202f% of population) may be missed on schedule.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Intensify enrolment campaigns, monitor weekly enrolment numbers, and deploy additional mobile units as needed.\",\n      \"evidence\": \"The NPR national rollout strategy aims to expand coverage to more than 60\u202fpercent of the total population by end of\u202f2024.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Informal\u2011sector workers may avoid enrolment fearing tax implications.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Tailor outreach, assure no tax penalties, and simplify enrolment procedures for informal workers.\",\n      \"evidence\": \"workers in the informal sector are wary of providing their information \u2026 due to perceived risks of making them susceptible to taxation.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Vulnerable groups could be excluded due to inadequate communication and outreach.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deploy multi\u2011channel communication (TV, radio, SMS, community agents) and conduct feedback loops to improve awareness.\",\n      \"evidence\": \"Potential negative social impacts \u2026 mainly related to the exclusion of some vulnerable groups due to inefficient or inadequate public communication and outreach efforts.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Amendments to Law\u202f72\u201118 or its decrees could disrupt implementation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a legal\u2011monitoring unit and maintain dialogue with the Ministry of Justice to anticipate changes.\",\n      \"evidence\": \"Law\u202fno.\u202f72\u201118 and the three implementing decrees provide a solid legal and institutional framework.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Changes to data\u2011protection law (Law\u202f09\u201108) may create compliance gaps.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Periodically review Law\u202f09\u201108 and update privacy\u2011by\u2011design controls accordingly.\",\n      \"evidence\": \"The project will follow national regulations related to personal data protection (Law\u202f09\u201108).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Improper disposal of e\u2011waste from mobile units and equipment.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Adopt certified e\u2011waste recycling procedures and include disposal clauses in procurement contracts.\",\n      \"evidence\": \"Risks associated with the use of electronic devices (such as mobile units) include the potential generation of e\u2011waste and its improper disposal.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Climate\u2011related shocks (drought, floods) may increase demand for social protection.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Build flexible targeting algorithms and reserve contingency funds for emergency response to climate events.\",\n      \"evidence\": \"Morocco has undergone several overlapping shocks \u2026 climate change \u2026 droughts \u2026 represent significant risks to the Moroccan economy.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Economic recession from COVID\u201119 could affect fiscal space and beneficiary ability.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Diversify financing sources and maintain a contingency reserve within the loan to absorb fiscal shocks.\",\n      \"evidence\": \"The COVID\u201119 pandemic led to the first recession in over two decades due to reduced economic activity.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Legacy data inconsistencies may cause inaccurate enrolment and false exclusions in the NPR.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct comprehensive data cleaning, validation and biometric deduplication before enrolment; institute ongoing quality\u2011control checks.",
+        "evidence": "existing databases had inconsistent quality and data formats, including Arabic and Latin alphabets, likely leading to substantial inaccuracies and processing requirements."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient ICT infrastructure in remote civil\u2011registry offices could delay enrolment.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide backup power, satellite links, and a maintenance schedule; pre\u2011position spare equipment for isolated sites.",
+        "evidence": "some of the 2,200 Civil Registry Offices are in very isolated areas and require substantial investments in overall infrastructure, beyond new hardware and software."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Data\u2011privacy breach despite privacy\u2011by\u2011design approach.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement strong encryption, regular security audits, and staff training; monitor compliance with Law\u202f09\u201108.",
+        "evidence": "MoI adopted a privacy\u2011by\u2011design approach to guarantee data privacy and protection."
+      },
+      {
+        "risk_id": "R04",
+        "description": "End\u2011to\u2011end Error, Fraud and Corruption (EFC) monitoring system may be ineffective.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage experienced anti\u2011fraud vendor, pilot the EFC system, and refine based on monitoring results.",
+        "evidence": "design and development of an end\u2011to\u2011end Error, Fraud, and Corruption (EFC) monitoring system and mitigation strategy to reduce its rate."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Transition of NPR/SR management to the newly created NRA may stall.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a detailed hand\u2011over plan, recruit NRA staff early, and provide capacity\u2011building workshops.",
+        "evidence": "Implementation of the NPR and the SR will be managed by the DIST \u2026 until the NRA is operational."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Use of Excel for IFRs may affect financial reporting quality and timeliness.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Adopt dedicated financial management software, automate IFR generation, and train FM staff.",
+        "evidence": "use of a spreadsheet \u2018Excel\u2019 \u2026 may lead to challenges in quality and timeliness of IFRs and annual financial statements."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Duplication or overlap of budget lines (e.g., AMO\u2011TADAMON) could cause reporting errors.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Enforce strict budget\u2011coding procedures and cross\u2011check with World Bank templates.",
+        "evidence": "risk of duplication or overlap due to the use of the same budget line \u2018AMO\u2011TADAMON\u2019 to justify expenditure."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Retroactive financing limited to 12\u2011month\u2011old expenditures may create cash\u2011flow gaps.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Maintain a cash\u2011flow buffer and align expenditures with eligible\u2011expenditure windows.",
+        "evidence": "Retroactive financing may only be provided \u2026 for eligible expenditures incurred not more than 12\u202fmonths before signing."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Delay in NRA operationalisation and staff recruitment (PBC\u2011linked).",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set monthly milestone tracking, recruit key staff early, and conduct regular IMSC reviews.",
+        "evidence": "PBCs target NRA operationalisation and staff recruitment by FY26 (see Table\u202f2)."
+      },
+      {
+        "risk_id": "R10",
+        "description": "NPR coverage target (\u226560\u202f% of population) may be missed on schedule.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Intensify enrolment campaigns, monitor weekly enrolment numbers, and deploy additional mobile units as needed.",
+        "evidence": "The NPR national rollout strategy aims to expand coverage to more than 60\u202fpercent of the total population by end of\u202f2024."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Informal\u2011sector workers may avoid enrolment fearing tax implications.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Tailor outreach, assure no tax penalties, and simplify enrolment procedures for informal workers.",
+        "evidence": "workers in the informal sector are wary of providing their information \u2026 due to perceived risks of making them susceptible to taxation."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Vulnerable groups could be excluded due to inadequate communication and outreach.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy multi\u2011channel communication (TV, radio, SMS, community agents) and conduct feedback loops to improve awareness.",
+        "evidence": "Potential negative social impacts \u2026 mainly related to the exclusion of some vulnerable groups due to inefficient or inadequate public communication and outreach efforts."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Amendments to Law\u202f72\u201118 or its decrees could disrupt implementation.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Establish a legal\u2011monitoring unit and maintain dialogue with the Ministry of Justice to anticipate changes.",
+        "evidence": "Law\u202fno.\u202f72\u201118 and the three implementing decrees provide a solid legal and institutional framework."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Changes to data\u2011protection law (Law\u202f09\u201108) may create compliance gaps.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Periodically review Law\u202f09\u201108 and update privacy\u2011by\u2011design controls accordingly.",
+        "evidence": "The project will follow national regulations related to personal data protection (Law\u202f09\u201108)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Improper disposal of e\u2011waste from mobile units and equipment.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Adopt certified e\u2011waste recycling procedures and include disposal clauses in procurement contracts.",
+        "evidence": "Risks associated with the use of electronic devices (such as mobile units) include the potential generation of e\u2011waste and its improper disposal."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Climate\u2011related shocks (drought, floods) may increase demand for social protection.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Build flexible targeting algorithms and reserve contingency funds for emergency response to climate events.",
+        "evidence": "Morocco has undergone several overlapping shocks \u2026 climate change \u2026 droughts \u2026 represent significant risks to the Moroccan economy."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Economic recession from COVID\u201119 could affect fiscal space and beneficiary ability.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Diversify financing sources and maintain a contingency reserve within the loan to absorb fiscal shocks.",
+        "evidence": "The COVID\u201119 pandemic led to the first recession in over two decades due to reduced economic activity."
+      }
+    ]
+  },
+  "parse_error": null
+}

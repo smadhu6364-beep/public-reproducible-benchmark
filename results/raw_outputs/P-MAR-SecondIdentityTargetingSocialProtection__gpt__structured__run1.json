@@ -1,0 +1,180 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T04:11:17.369406+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n**Step\u202f1 \u2013 Frame the project**  \n- **Objective:** Expand coverage of the Digital Civil and Social Identifier (DCSID) and strengthen inclusion of the National Population Registry (NPR) and Social Registry (SR) \u2013 especially in rural/remote areas \u2013 to improve targeting and access to social protection.  \n- **Scope & Components:** 1) Strengthen/extend NPR and operationalize the National Registry Agency (NRA); 2) Expand/enhance SR; 3) Project Management, Capacity Building & M&E.  \n- **Delivery model:** Implemented by the Ministry of Interior (MoI) through a Project Management Unit (PMU) and Inter\u2011ministerial Steering Committee (IMSC); World Bank provides financing, technical supervision and performance\u2011based conditions.  \n- **Timeline:** Expected approval\u202f04\u2011Dec\u20112024; closing\u202f31\u2011Dec\u20112028; PBCs spread FY25\u2011FY29.  \n- **Budget:** US$70\u202fmillion total (US$43\u202fM NPR, US$23\u202fM SR, US$3.825\u202fM PMU).  \n- **Key stakeholders:** Borrower (Kingdom of Morocco), MoI (implementing agency), PMU, IMSC, NRA, World Bank, EU (communication), CNSS, other ministries, beneficiaries (women, youth, disabled, remote populations).  \n- **External dependencies:** Legal framework (Law\u202f72\u201118, decrees, Law\u202f09\u201108 data\u2011protection), civil\u2011registry offices, biometric solution providers, ICT infrastructure (mobile units, satellite links), climate\u2011related shocks, macro\u2011economic conditions.\n\n**Step\u202f2 \u2013 Category sweep**  \nFor each risk category I identified candidate risks directly mentioned in the document (quotes shown in Step\u202f3).\n\n**Step\u202f3 \u2013 Evidence filter**  \nAll candidates retained have a supporting sentence/section \u2264\u202f25\u202fwords extracted from the appraisal text.\n\n**Step\u202f4 \u2013 Assess**  \nEach risk is assigned Likelihood (1\u202f=\u202fRare \u2026 5\u202f=\u202fAlmost Certain) and Impact (1\u202f=\u202fInsignificant \u2026 5\u202f=\u202fCatastrophic) with a brief justification and a concrete mitigation.\n\n**Step\u202f5 \u2013 Consolidate**  \nDuplicates merged; 17 material risks remain, each fully supported by the documentation.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-MAR-SecondIdentityTargetingSocialProtection\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inaccurate or low\u2011quality data in the NPR due to integration of multiple legacy databases.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement rigorous data cleaning, validation rules and continuous quality monitoring during enrollment and updates.\",\n      \"evidence\": \"Existing databases had inconsistent quality and data formats, likely leading to substantial inaccuracies (Section\u202f11).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Failure or delays in the biometric solution for NPR enrollment and authentication.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure long\u2011term maintenance contracts, conduct regular system testing, and keep backup hardware/software components.\",\n      \"evidence\": \"Design, supply, commissioning, and maintenance of the biometric solution of the NPR (Table\u202f80).\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Generation of e\u2011waste from mobile units and ICT equipment with improper disposal.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Enforce the MoI e\u2011waste management procedure, partner with certified recyclers, and train staff on disposal protocols.\",\n      \"evidence\": \"Risks associated with the use of electronic devices (such as mobile units) include the potential generation of e\u2011waste and its improper disposal (Section\u202f85).\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate Error, Fraud and Corruption (EFC) monitoring leading to leakage or fraud.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and operationalize a robust end\u2011to\u2011end EFC monitoring system with regular audits and whistle\u2011blower channels.\",\n      \"evidence\": \"Design and develop an end\u2011to\u2011end Error, Fraud, and Corruption (EFC) monitoring system (Section\u202f30).\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Reliance on Excel spreadsheets for financial reporting may cause data quality and timeliness issues.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt dedicated financial management software and provide staff training on its use.\",\n      \"evidence\": \"Use of a spreadsheet \u201cExcel\u201d may lead to challenges in quality and timeliness of IFRs (Section\u202f69).\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Duplication or overlap of expenditures due to the same budget line (AMO\u2011TADAMON) being used for multiple programs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement clear budget coding, cross\u2011check allocations, and conduct periodic audit reviews.\",\n      \"evidence\": \"Risk of duplication or overlap due to the use of the same budget line \u201cAMO\u2011TADAMON\u201d (Section\u202f69).\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Retroactive financing limit (20\u202f% of loan) may be insufficient to cover eligible past expenditures.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritize retroactive claims, seek additional donor support if gaps remain, and align expenditures with the cap early.\",\n      \"evidence\": \"Retroactive financing up to 20\u202f% of the World Bank loan amount is available (Section\u202f74).\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Delay in achieving the NPR coverage target of >60\u202f% of the population by end\u20112024.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor enrollment rates monthly, allocate extra resources to remote areas, and adjust outreach tactics as needed.\",\n      \"evidence\": \"The NPR national rollout aims to expand coverage to more than 60\u202f% of the total population by the end of 2024 (Section\u202f32).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Operationalization of the NRA may be delayed, hindering coordinated management of NPR and SR.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Fast\u2011track recruitment, define clear governance procedures, and provide capacity\u2011building support to NRA staff.\",\n      \"evidence\": \"The NRA operationalization will be essential to ensuring that the initiative and project efforts are sustainable (Section\u202f27).\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Delay in completing the SR process evaluation and manual validation required for PBCs.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Assign a dedicated team with fixed deadlines and integrate evaluation milestones into the overall project schedule.\",\n      \"evidence\": \"Process evaluation of the SR and development of the procedures manual are required (Sections\u202f38\u201139).\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Exclusion of vulnerable groups due to inefficient or inadequate public communication and outreach.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the Stakeholder Engagement Plan with multi\u2011channel outreach, monitor enrollment gaps, and adjust messaging promptly.\",\n      \"evidence\": \"Potential negative social impacts related to exclusion of vulnerable groups due to inefficient communication (Section\u202f85).\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Informal\u2011sector workers may resist providing personal data, limiting enrollment.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct targeted awareness campaigns emphasizing privacy safeguards and the non\u2011taxation purpose of data collection.\",\n      \"evidence\": \"Workers in the informal sector are wary of providing their information to the government (Section\u202f53).\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Data\u2011privacy breach or non\u2011compliance with Moroccan data\u2011protection law (Law\u202f09\u201108).\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Apply privacy\u2011by\u2011design, conduct regular security audits, and enforce strict access controls per Law\u202f09\u201108.\",\n      \"evidence\": \"Mitigation measures related to data privacy and protection follow national regulations (Law\u202f09\u201108) (Section\u202f87).\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Changes in legal or environmental\u2011social frameworks could render project activities non\u2011compliant.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Maintain continuous legal review, update procedures as needed, and engage the World Bank\u2019s legal advisors early.\",\n      \"evidence\": \"The project will rely on the Borrower\u2019s ESF to comply with ESS2 requirements (Section\u202f88).\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Climate\u2011related shocks (droughts, floods) could increase vulnerability of target households, affecting project outcomes.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate\u2011risk data into targeting algorithms and design flexible emergency response mechanisms.\",\n      \"evidence\": \"Climate\u2011related shocks, primarily droughts, represent significant risks to the Moroccan economy (Section\u202f3).\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"MoI and PMU capacity may be strained by rapid expansion of NPR/SR, affecting implementation quality.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen institutional capacity through the Center of Excellence, targeted training, and additional technical assistance.\",\n      \"evidence\": \"Rapid expansion has strained the government\u2019s and the MoI\u2019s capacity to operationalize the NRA (Section\u202f52).\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Macroeconomic shocks (inflation, recession) could reduce fiscal space for government contributions to social programs.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain fiscal buffers, explore flexible financing arrangements, and adjust program design to cost\u2011effective delivery.\",\n      \"evidence\": \"The 2022 inflationary terms\u2011of\u2011trade shock led to fluctuations in GDP growth and slowdown of economic recovery (Section\u202f3).\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Coordination challenges with the EU on communication and fraud\u2011management components may cause delays.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Establish regular joint coordination meetings, shared work plans, and clear points of contact.\",\n      \"evidence\": \"The EU is collaborating with Morocco\u2019s MoI on communication aspects and the first version of the fraud management system (Section\u202f51).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inaccurate or low\u2011quality data in the NPR due to integration of multiple legacy databases.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement rigorous data cleaning, validation rules and continuous quality monitoring during enrollment and updates.",
+        "evidence": "Existing databases had inconsistent quality and data formats, likely leading to substantial inaccuracies (Section\u202f11)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Failure or delays in the biometric solution for NPR enrollment and authentication.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure long\u2011term maintenance contracts, conduct regular system testing, and keep backup hardware/software components.",
+        "evidence": "Design, supply, commissioning, and maintenance of the biometric solution of the NPR (Table\u202f80)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Generation of e\u2011waste from mobile units and ICT equipment with improper disposal.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Enforce the MoI e\u2011waste management procedure, partner with certified recyclers, and train staff on disposal protocols.",
+        "evidence": "Risks associated with the use of electronic devices (such as mobile units) include the potential generation of e\u2011waste and its improper disposal (Section\u202f85)."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate Error, Fraud and Corruption (EFC) monitoring leading to leakage or fraud.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop and operationalize a robust end\u2011to\u2011end EFC monitoring system with regular audits and whistle\u2011blower channels.",
+        "evidence": "Design and develop an end\u2011to\u2011end Error, Fraud, and Corruption (EFC) monitoring system (Section\u202f30)."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Reliance on Excel spreadsheets for financial reporting may cause data quality and timeliness issues.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt dedicated financial management software and provide staff training on its use.",
+        "evidence": "Use of a spreadsheet \u201cExcel\u201d may lead to challenges in quality and timeliness of IFRs (Section\u202f69)."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Duplication or overlap of expenditures due to the same budget line (AMO\u2011TADAMON) being used for multiple programs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement clear budget coding, cross\u2011check allocations, and conduct periodic audit reviews.",
+        "evidence": "Risk of duplication or overlap due to the use of the same budget line \u201cAMO\u2011TADAMON\u201d (Section\u202f69)."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Retroactive financing limit (20\u202f% of loan) may be insufficient to cover eligible past expenditures.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Prioritize retroactive claims, seek additional donor support if gaps remain, and align expenditures with the cap early.",
+        "evidence": "Retroactive financing up to 20\u202f% of the World Bank loan amount is available (Section\u202f74)."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Delay in achieving the NPR coverage target of >60\u202f% of the population by end\u20112024.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor enrollment rates monthly, allocate extra resources to remote areas, and adjust outreach tactics as needed.",
+        "evidence": "The NPR national rollout aims to expand coverage to more than 60\u202f% of the total population by the end of 2024 (Section\u202f32)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Operationalization of the NRA may be delayed, hindering coordinated management of NPR and SR.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Fast\u2011track recruitment, define clear governance procedures, and provide capacity\u2011building support to NRA staff.",
+        "evidence": "The NRA operationalization will be essential to ensuring that the initiative and project efforts are sustainable (Section\u202f27)."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Delay in completing the SR process evaluation and manual validation required for PBCs.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Assign a dedicated team with fixed deadlines and integrate evaluation milestones into the overall project schedule.",
+        "evidence": "Process evaluation of the SR and development of the procedures manual are required (Sections\u202f38\u201139)."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Exclusion of vulnerable groups due to inefficient or inadequate public communication and outreach.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement the Stakeholder Engagement Plan with multi\u2011channel outreach, monitor enrollment gaps, and adjust messaging promptly.",
+        "evidence": "Potential negative social impacts related to exclusion of vulnerable groups due to inefficient communication (Section\u202f85)."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Informal\u2011sector workers may resist providing personal data, limiting enrollment.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct targeted awareness campaigns emphasizing privacy safeguards and the non\u2011taxation purpose of data collection.",
+        "evidence": "Workers in the informal sector are wary of providing their information to the government (Section\u202f53)."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Data\u2011privacy breach or non\u2011compliance with Moroccan data\u2011protection law (Law\u202f09\u201108).",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Apply privacy\u2011by\u2011design, conduct regular security audits, and enforce strict access controls per Law\u202f09\u201108.",
+        "evidence": "Mitigation measures related to data privacy and protection follow national regulations (Law\u202f09\u201108) (Section\u202f87)."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Changes in legal or environmental\u2011social frameworks could render project activities non\u2011compliant.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Maintain continuous legal review, update procedures as needed, and engage the World Bank\u2019s legal advisors early.",
+        "evidence": "The project will rely on the Borrower\u2019s ESF to comply with ESS2 requirements (Section\u202f88)."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Climate\u2011related shocks (droughts, floods) could increase vulnerability of target households, affecting project outcomes.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate\u2011risk data into targeting algorithms and design flexible emergency response mechanisms.",
+        "evidence": "Climate\u2011related shocks, primarily droughts, represent significant risks to the Moroccan economy (Section\u202f3)."
+      },
+      {
+        "risk_id": "R16",
+        "description": "MoI and PMU capacity may be strained by rapid expansion of NPR/SR, affecting implementation quality.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Strengthen institutional capacity through the Center of Excellence, targeted training, and additional technical assistance.",
+        "evidence": "Rapid expansion has strained the government\u2019s and the MoI\u2019s capacity to operationalize the NRA (Section\u202f52)."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Macroeconomic shocks (inflation, recession) could reduce fiscal space for government contributions to social programs.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain fiscal buffers, explore flexible financing arrangements, and adjust program design to cost\u2011effective delivery.",
+        "evidence": "The 2022 inflationary terms\u2011of\u2011trade shock led to fluctuations in GDP growth and slowdown of economic recovery (Section\u202f3)."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Coordination challenges with the EU on communication and fraud\u2011management components may cause delays.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Establish regular joint coordination meetings, shared work plans, and clear points of contact.",
+        "evidence": "The EU is collaborating with Morocco\u2019s MoI on communication aspects and the first version of the fraud management system (Section\u202f51)."
+      }
+    ]
+  },
+  "parse_error": null
+}

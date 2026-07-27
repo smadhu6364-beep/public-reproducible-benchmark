@@ -1,0 +1,159 @@
+{
+  "run_file": "P-MAR-SecondIdentityTargetingSocialProtection__gpt__zero_shot__run1.json",
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inaccurate or duplicate identity data due to poor quality of legacy databases could exclude eligible citizens and undermine targeting.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement rigorous data cleaning, biometric deduplication, and pilot testing before national rollout; continuously monitor data quality through EFC system.",
+      "evidence": "Existing databases have inconsistent quality and formats, risking inaccuracies and false exclusions (page 4)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Biometric enrollment may fail in remote or isolated areas lacking reliable power or connectivity, limiting coverage of vulnerable populations.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deploy mobile enrollment units with satellite links, provide backup power, and schedule regular maintenance visits to remote CSCs.",
+      "evidence": "Mobile units and satellite equipment are used to enroll people in isolated areas (page 11)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Operationalization of the National Registry Agency (NRA) could be delayed due to institutional capacity constraints and simultaneous system rollout.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Phase NRA staffing and governance setup ahead of full system hand\u2011over; use interim management by DIST until NRA is fully functional.",
+      "evidence": "Rapid expansion strained MoI capacity; operationalizing NRA is challenging (page 52)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary risk from reliance on Excel spreadsheets and overlapping budget lines may cause reporting errors and audit findings.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt the new FM software for IFR preparation; create distinct budget codes for project activities to avoid duplication.",
+      "evidence": "Use of Excel and duplicate budget line AMO\u2011TADAMON identified as FM risk (page 22)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Potential duplication of expenditures with other World Bank\u2011financed programs could lead to over\u2011statement of costs.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Cross\u2011check project expenditures against existing World Bank program budgets; require justification for any shared cost items.",
+      "evidence": "Risk of duplication due to same budget line for programs already financed by the World Bank (page 22)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Informal sector workers may avoid enrollment fearing tax exposure, reducing coverage and equity of the system.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct targeted outreach explaining confidentiality safeguards; involve trade unions and NGOs to build trust among informal workers.",
+      "evidence": "Informal workers are wary of providing information due to perceived taxation risks (page 53)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Insufficient communication could exclude vulnerable groups (women, disabled, remote residents) from registering for DCSID.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement inclusive communication campaigns via TV, radio, SMS, and community facilitators; monitor enrollment gaps and adjust outreach.",
+      "evidence": "Exclusion risk due to inefficient communication and unclear registration processes (page 85)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Improper disposal of electronic equipment (mobile units, laptops) may generate e\u2011waste and environmental harm.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Follow MoI asset\u2011management e\u2011waste procedures; partner with certified recyclers and conduct staff training on disposal protocols.",
+      "evidence": "Risks associated with use of electronic devices include potential generation of e\u2011waste (page 85)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Changes in data\u2011protection regulations or non\u2011compliance could halt system deployment or lead to legal challenges.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Embed privacy\u2011by\u2011design; continuously monitor legal updates; conduct periodic compliance audits against Law 09\u201108 and ESF requirements.",
+      "evidence": "Project must follow national data\u2011protection law (Law 09\u201108) and best practices (page 55)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Increasing frequency and severity of climate\u2011related shocks may overwhelm social\u2011protection targeting capacity.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen real\u2011time data updates in SR; develop rapid\u2011response protocols for drought/flood events; allocate contingency funds for emergency transfers.",
+      "evidence": "Climate\u2011related shocks (droughts, floods) represent significant risks to the economy and target population (pages 2\u20113)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Integrating DCSID into multiple social programs may encounter interoperability failures, delaying digital authentication rollout.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Adopt standardized APIs, conduct phased integration testing with each program, and maintain a dedicated technical liaison team.",
+      "evidence": "Goal to integrate DCSID into 6\u20118 programs; PBCs track digital authentication (pages 34\u201135)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "MoI and PMU may lack sufficient skilled personnel to maintain and upgrade the NPR/SR platforms over the project life.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish the Center of Excellence, provide continuous training, and implement knowledge\u2011transfer agreements with technology partners.",
+      "evidence": "Capacity strain noted; Center of Excellence to support sustainability (pages 52\u201154)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Procurement of maintenance contracts for biometric and IT systems could be delayed, affecting system uptime.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Use the World Bank\u2019s STEP system for early procurement planning; pre\u2011qualify vendors and set clear timelines in the POM.",
+      "evidence": "Procurement risks considered low but require POM procedures to guarantee timely completion (page 79)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Data breach or unauthorized access to biometric information could erode public trust and trigger legal liabilities.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Implement robust encryption, role\u2011based access controls, regular security audits, and incident\u2011response plans aligned with national law.",
+      "evidence": "Data privacy and protection measures are part of project design; risk of exclusion linked to privacy concerns (pages 55\u201157)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Currency fluctuations between EUR, USD and MAD may affect the real value of financing and cost estimates.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Lock exchange rates for major disbursements; include a modest contingency buffer in the budget for exchange\u2011rate movements.",
+      "evidence": "Currency equivalents listed (MAD 10.86 = EUR1, EUR 0.89 = US$1) indicating exposure to FX risk (datasheet)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Stakeholder risk is assessed as Substantial. Given the complex nature of the operation and the involvement of multiple stakeholders in the implementation of the National Population Register (NPR) and the Social Registry (SR), the Project Management Unit (PMU) will need to put considerable effort into ensuring better coordination to achieve the PDO. The national rollout and the improvement of the NPR and the SR will need strong stakeholder engagement, including citizens concerned by social protection programs who are often poor and vulnerable.",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The communication strategy will continue to inform all stakeholders involved in project implementation and will capitalize on lessons learned from the first Identity and Targeting for Social Protection project (P155198). The PMU envisions improving the grievance mechanism at local and national levels and establishing a system to promote citizen engagement and transparency. The Inter-Ministerial Steering Committee is responsible for developing guidelines for the strategic policy for the envisaged reform and ensuring a link with the ongoing social protection reform. Technical work will also cover a process evaluation to identify challenges, propose remedies, and provide recommendations to enhance system implementation at central and local levels."
+    }
+  ]
+}

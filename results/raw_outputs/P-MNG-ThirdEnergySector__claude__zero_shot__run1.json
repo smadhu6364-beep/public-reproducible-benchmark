@@ -1,0 +1,162 @@
+{
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-26T17:03:28.307186+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-MNG-ThirdEnergySector\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Electricity tariffs set below the cost of service cause persistent financial deficits across sector utilities, threatening the ongoing operational and financial viability of energy infrastructure.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Utilize analytical support and technical assistance under the project to assist the government in formulating and implementing a comprehensive tariff reform strategy and utility financial sustainability plan.\",\n      \"evidence\": \"The current electricity price is below the cost of service causing financial difficulties for sector utilities.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Administrative and technical capacity constraints within the implementing entity could lead to implementation delays and contract management inefficiencies.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a dedicated Project Management Office (PMO) under the Ministry of Energy, engage an Owner's Engineer to support procurement and supervision, and provide targeted capacity-building programs.\",\n      \"evidence\": \"Previous infrastructure projects in Mongolia have experienced implementation delays due to the administrative and technical capacity constraints of the implementing agencies.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"An aging, rigid coal-fired Combined Heat and Power (CHP) generation fleet limits system flexibility and restricts the dispatch and grid integration of Variable Renewable Energy (VRE).\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Reinforce the 220kV transmission backbone to expand transfer capacity and conduct technical assistance studies on grid planning and VRE integration strategies.\",\n      \"evidence\": \"Most of the CHP units are aging... inefficient and highly polluting. The CHP plants make the power system inflexible, making it indispatchable...\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Overhead high-voltage transmission line construction and operation pose bird collision and habitat disruption risks along sensitive ecological zones and wetlands.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Realign the transmission line corridor away from sensitive wetlands, install flight diverters and bird-friendly tower solutions, and execute a comprehensive Bird Management Plan.\",\n      \"evidence\": \"Transmission lines in Mongolia often involve bird collision and other biodiversity issues\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Extreme winter conditions, severe cold, high wind loads, and climate hazards could cause structural damage to transmission infrastructure and disrupt project construction.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply climate-resilient design and engineering standards for transmission towers and insulators to withstand extreme wind loading, freezing temperatures, and natural hazards.\",\n      \"evidence\": \"Mongolia is prone to risks from climate hazards such as flooding, wildfires, and landslides, with exposure to drought and extreme cold...\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"High reliance on imported construction materials (75-80%) exposes the project to supply chain disruptions, border delays, and material cost volatility.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct early supply market intelligence, perform advance procurement planning, and incorporate rated criteria evaluating material sourcing and delivery strategies.\",\n      \"evidence\": \"The construction sector in Mongolia has been heavily reliant on imports, with statistics showing that 75-80% of construction materials are sourced from outside...\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The short construction season in Mongolia risks civil works overruns into winter, causing project completion delays of up to an entire year.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Initiate advance procurement to ensure contracts are awarded prior to the start of the construction season, and evaluate contractors on their technical plans for seasonal optimization.\",\n      \"evidence\": \"the seasonal nature of civil works in Mongolia adds more risks... If it cannot be completed before winter, the Project will have more delays\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Substandard or unqualified local construction materials could compromise structural integrity and safety standards of transmission infrastructure.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate non-price rated evaluation criteria assessing material quality control strategies, and enforce mandatory quality testing supervised by the Owner's Engineer.\",\n      \"evidence\": \"40% of construction materials were found unqualified in the local market.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Civil works along the right-of-way may cause temporary disruption to local herders' pasture access, water wells, and community safety.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the Stakeholder Engagement Plan (SEP), Resettlement Policy Framework (RPF), and operate a accessible two-stage project Grievance Redress Mechanism (GRM).\",\n      \"evidence\": \"temporary social risks and impacts... temporary restriction of access to resources by local herders (for example, pasture, wells, etc.)\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Frequent turnover of decision-making officials and high-level political interference in procurement decisions may cause significant procedural delays.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish clear procurement workflows and delegation of authority in the Project Operational Manual, maintain oversight through the Project Steering Committee, and enforce World Bank review procedures.\",\n      \"evidence\": \"Frequent change of the decision-making officials for the Project. Interference of the high-level officials in procurement decision making which leads to delays.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Evaluation Committee members' lack of familiarity with World Bank procurement regulations and English bidding documentation could prolong contract evaluations.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Provide structured training on World Bank procurement regulations, evaluation procedures, and standard bidding documents for PMO staff and Evaluation Committee members prior to procurement launching.\",\n      \"evidence\": \"Evaluation Committee members normally do not have knowledge and experience in procurement for Bank-financed projects...\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Complex Treasury Single Account flow-of-funds procedures involving local currency investment sub-accounts could create disbursement bottlenecks and vendor payment delays.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a segregated USD Designated Account with commercial zero-balance pass-through mechanisms and defined payment approval workflows in the Financial Management Manual.\",\n      \"evidence\": \"Delays and bottlenecks in the project funds flow arrangements that got complicated with the addition of an investment project account within the Treasury...\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Gender-based biases and structural obstacles in the power sector limit female representation and career progression in engineering and management roles.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct a comprehensive gender gap assessment, introduce gender-responsive HR practices, provide targeted professional development, and monitor workforce gender target metrics.\",\n      \"evidence\": \"gender-based biases may be an obstacle to women\u2019s employment and especially to career progression at NPTG.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Lack of grid redundancy in single-circuit transmission corridors leads to severe prolonged power supply outages during line faults.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construct a second 220kV double-circuit transmission line between Baganuur and Choir substations to establish full double-circuit redundancy.\",\n      \"evidence\": \"The region served by the existing Baganuur-Choir single circuit line experienced a supply outage of 33 hours in 2021 caused by a fault on the line.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Delays in establishing the Project Management Office and finalizing operational documentation could postpone project effectiveness and early implementation.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set the adoption of the Project Operational Manual and formal establishment of the PMO as legal conditions of loan effectiveness.\",\n      \"evidence\": \"PMO is not yet in place and no financial management staff has been appointed\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Occupational health and safety hazards during construction and maintenance including high-voltage exposure, work at height, and electromagnetic fields.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce Labor Management Procedures (LMP), align safety protocols with World Bank Environmental, Health, and Safety Guidelines, and require full-time contractor OHS specialists.\",\n      \"evidence\": \"occupational health and safety (OHS) risks associated with live power lines, working at height, electric and magnetic fields (EMF).\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-MNG-ThirdEnergySector",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Electricity tariffs set below the cost of service cause persistent financial deficits across sector utilities, threatening the ongoing operational and financial viability of energy infrastructure.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Utilize analytical support and technical assistance under the project to assist the government in formulating and implementing a comprehensive tariff reform strategy and utility financial sustainability plan.",
+        "evidence": "The current electricity price is below the cost of service causing financial difficulties for sector utilities."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Administrative and technical capacity constraints within the implementing entity could lead to implementation delays and contract management inefficiencies.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a dedicated Project Management Office (PMO) under the Ministry of Energy, engage an Owner's Engineer to support procurement and supervision, and provide targeted capacity-building programs.",
+        "evidence": "Previous infrastructure projects in Mongolia have experienced implementation delays due to the administrative and technical capacity constraints of the implementing agencies."
+      },
+      {
+        "risk_id": "R03",
+        "description": "An aging, rigid coal-fired Combined Heat and Power (CHP) generation fleet limits system flexibility and restricts the dispatch and grid integration of Variable Renewable Energy (VRE).",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Reinforce the 220kV transmission backbone to expand transfer capacity and conduct technical assistance studies on grid planning and VRE integration strategies.",
+        "evidence": "Most of the CHP units are aging... inefficient and highly polluting. The CHP plants make the power system inflexible, making it indispatchable..."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Overhead high-voltage transmission line construction and operation pose bird collision and habitat disruption risks along sensitive ecological zones and wetlands.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Realign the transmission line corridor away from sensitive wetlands, install flight diverters and bird-friendly tower solutions, and execute a comprehensive Bird Management Plan.",
+        "evidence": "Transmission lines in Mongolia often involve bird collision and other biodiversity issues"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Extreme winter conditions, severe cold, high wind loads, and climate hazards could cause structural damage to transmission infrastructure and disrupt project construction.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply climate-resilient design and engineering standards for transmission towers and insulators to withstand extreme wind loading, freezing temperatures, and natural hazards.",
+        "evidence": "Mongolia is prone to risks from climate hazards such as flooding, wildfires, and landslides, with exposure to drought and extreme cold..."
+      },
+      {
+        "risk_id": "R06",
+        "description": "High reliance on imported construction materials (75-80%) exposes the project to supply chain disruptions, border delays, and material cost volatility.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct early supply market intelligence, perform advance procurement planning, and incorporate rated criteria evaluating material sourcing and delivery strategies.",
+        "evidence": "The construction sector in Mongolia has been heavily reliant on imports, with statistics showing that 75-80% of construction materials are sourced from outside..."
+      },
+      {
+        "risk_id": "R07",
+        "description": "The short construction season in Mongolia risks civil works overruns into winter, causing project completion delays of up to an entire year.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Initiate advance procurement to ensure contracts are awarded prior to the start of the construction season, and evaluate contractors on their technical plans for seasonal optimization.",
+        "evidence": "the seasonal nature of civil works in Mongolia adds more risks... If it cannot be completed before winter, the Project will have more delays"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Substandard or unqualified local construction materials could compromise structural integrity and safety standards of transmission infrastructure.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Incorporate non-price rated evaluation criteria assessing material quality control strategies, and enforce mandatory quality testing supervised by the Owner's Engineer.",
+        "evidence": "40% of construction materials were found unqualified in the local market."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Civil works along the right-of-way may cause temporary disruption to local herders' pasture access, water wells, and community safety.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement the Stakeholder Engagement Plan (SEP), Resettlement Policy Framework (RPF), and operate a accessible two-stage project Grievance Redress Mechanism (GRM).",
+        "evidence": "temporary social risks and impacts... temporary restriction of access to resources by local herders (for example, pasture, wells, etc.)"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Frequent turnover of decision-making officials and high-level political interference in procurement decisions may cause significant procedural delays.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish clear procurement workflows and delegation of authority in the Project Operational Manual, maintain oversight through the Project Steering Committee, and enforce World Bank review procedures.",
+        "evidence": "Frequent change of the decision-making officials for the Project. Interference of the high-level officials in procurement decision making which leads to delays."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Evaluation Committee members' lack of familiarity with World Bank procurement regulations and English bidding documentation could prolong contract evaluations.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Provide structured training on World Bank procurement regulations, evaluation procedures, and standard bidding documents for PMO staff and Evaluation Committee members prior to procurement launching.",
+        "evidence": "Evaluation Committee members normally do not have knowledge and experience in procurement for Bank-financed projects..."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Complex Treasury Single Account flow-of-funds procedures involving local currency investment sub-accounts could create disbursement bottlenecks and vendor payment delays.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a segregated USD Designated Account with commercial zero-balance pass-through mechanisms and defined payment approval workflows in the Financial Management Manual.",
+        "evidence": "Delays and bottlenecks in the project funds flow arrangements that got complicated with the addition of an investment project account within the Treasury..."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Gender-based biases and structural obstacles in the power sector limit female representation and career progression in engineering and management roles.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct a comprehensive gender gap assessment, introduce gender-responsive HR practices, provide targeted professional development, and monitor workforce gender target metrics.",
+        "evidence": "gender-based biases may be an obstacle to women\u2019s employment and especially to career progression at NPTG."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Lack of grid redundancy in single-circuit transmission corridors leads to severe prolonged power supply outages during line faults.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct a second 220kV double-circuit transmission line between Baganuur and Choir substations to establish full double-circuit redundancy.",
+        "evidence": "The region served by the existing Baganuur-Choir single circuit line experienced a supply outage of 33 hours in 2021 caused by a fault on the line."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Delays in establishing the Project Management Office and finalizing operational documentation could postpone project effectiveness and early implementation.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set the adoption of the Project Operational Manual and formal establishment of the PMO as legal conditions of loan effectiveness.",
+        "evidence": "PMO is not yet in place and no financial management staff has been appointed"
+      },
+      {
+        "risk_id": "R16",
+        "description": "Occupational health and safety hazards during construction and maintenance including high-voltage exposure, work at height, and electromagnetic fields.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce Labor Management Procedures (LMP), align safety protocols with World Bank Environmental, Health, and Safety Guidelines, and require full-time contractor OHS specialists.",
+        "evidence": "occupational health and safety (OHS) risks associated with live power lines, working at height, electric and magnetic fields (EMF)."
+      }
+    ]
+  },
+  "parse_error": null
+}

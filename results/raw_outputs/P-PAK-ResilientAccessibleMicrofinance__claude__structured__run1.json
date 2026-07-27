@@ -1,0 +1,108 @@
+{
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T02:38:36.512913+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\n### Step 1 - Frame the Project\n- **Objective (PDO)**: To enhance access to microcredit and support resilience of the microfinance sector and its borrowers.\n- **Scope & Components**:\n  - **Component 1: Climate Risk Fund (CRF)** ($125M total: $102M IDA Credit + $23M GSFF Grant)\n    - *Product 1*: Pre-Climate Event Innovative Agricultural Liquidity (IAL) - $20M pilot for climate-smart micro-loans bundled with agritech services (selected via Agriculture Finance Innovation Challenge / AFIC).\n    - *Product 2*: Post-Climate Event Contingent Liquidity Facility (CLF) - $105M contingent credit line for post-flood recovery, loan restructuring, and top-ups.\n    - *Parametric Insurance Backstop*: Reinsurance mechanism to inject capital into CRF post-extreme flood events, funded by GSFF grant and investment income.\n- **Delivery Model**: Trust structure owned by the Government of Pakistan (GoP) and managed by the State Bank of Pakistan (SBP) as Trustee on a pro-bono basis. Governance via an Oversight Committee and Working Committee. On-lending via Microfinance Providers (MFBs, NBMFCs, RSPs).\n- **Timeline**: Approval ~March 17, 2025; Closing ~December 31, 2029.\n- **Budget**: $125 million total ($102 million IDA Credit, $23 million GSFF Trust Funds).\n- **Key Stakeholders**: Ministry of Finance (MoF), SBP (Trustee/Executing Agency), SECP, MFPs (MFBs, NBMFCs, RSPs), PMIC, PMN, ATCs, microfinance borrowers (women, youth, smallholders, rural households), World Bank, GSFF, IFC, ADB.\n- **External Dependencies & Conditions**:\n  - Legal conditions: Execution/registration of Trust Deed (Condition 5.01(a)), adoption of Project Operations Manual (POM) (Condition 5.01(b)), execution of Co-financing Agreement (Condition 5.01(c)).\n  - Budgetary condition: Formal PKR budget allocation request for Category 2 disbursement (Condition B.1(b)).\n  - International reinsurance market availability for annual parametric insurance purchases.\n\n---\n\n### Step 2 & 3 - Category Sweep & Evidence Filter\n\n1. **Political / Regulatory**:\n   - *Risk*: Delay in Trust Deed execution and legal registration between MoF and SBP delaying project effectiveness.\n   - *Evidence*: Effectiveness Condition 5.01(a) requires Trust Deed execution and registration under Recipient legal requirements.\n\n2. **Financial**:\n   - *Risk*: Disbursement freeze under Category 2 due to missing local currency (PKR) budget allocation requests.\n   - *Evidence*: Condition B.1(b) states no withdrawals under Category 2 until sufficient currency is requested in budget allocation.\n   - *Risk*: Annual parametric insurance backstop becomes unaffordable due to reinsurance rate spikes or low investment yield.\n   - *Evidence*: Para 47 notes $26M budgeted for premiums, subject to annual decision by Oversight Committee based on review of CRF financial position.\n   - *Risk*: Sectoral de-risking and disintermediation away from smallholder agricultural lending due to perceived flood exposure.\n   - *Evidence*: Para 10 states agriculture share in MFB lending dropped from 34% to 28% (and 16% to 4.9% for NBMFCs), indicating de-risking away from small farmers.\n\n3. **External**:\n   - *Risk*: Catastrophic flood events (e.g., 1-in-20-year flood) exceeding total capital capacity of the $125M CRF.\n   - *Evidence*: Para 11 estimates a 1-in-20-year flood impacts 705,000 borrowers and $189 million in lending, exceeding fund size.\n\n4. **Schedule**:\n   - *Risk*: Operational delays in flood trigger verification and loss calculation impeding deployment of CLF liquidity within 60 days.\n   - *Evidence*: Para 15(b) defines key PDO target as percentage of CRF liquidity deployed within 60 days of qualifying floods.\n\n5. **Stakeholder**:\n   - *Risk*: MFP non-compliance with the 55% female beneficiary target due to loan officer bias, leading to financial borrowing penalties.\n   - *Evidence*: Para 49 requires at least 55% female beneficiaries, with MFPs paying higher borrowing costs upon deviation.\n\n6. **Environmental**:\n   - *Risk*: Cumulative environmental contamination from agricultural loan clustering in specific geographic belts.\n   - *Evidence*: Para 54 states environmental risks occur from cumulative impacts of loan clustering causing increased fertilizer/pesticide use.\n\n7. **Technical**:\n   - *Risk*: Friction and operational delays in establishing MFP partnerships with pre-selected Agriculture Technology Companies (ATCs).\n   - *Evidence*: Para 26 specifies that MFPs availing IAL must partner with at least one ATC selected under the AFIC challenge.\n\n8. **Organizational**:\n   - *Risk*: Post-flood spike in non-performing loans (NPLs) eroding MFP capital adequacy ratios (CAR) below regulatory thresholds.\n   - *Evidence*: Para 9 notes past floods caused MFB NPLs to surge 25.7% and CAR to drop from 14.9% to 11.7% (below 15% minimum).\n\n---\n\n### Step 4 & 5 - Assessment & Consolidation\nAll 10 identified risks are directly grounded in document text, pass the evidence filter, cover all key risk categories, and have clear text-grounded mitigations.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-PAK-ResilientAccessibleMicrofinance\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in executing and legally registering the Trust Deed between MoF and SBP could postpone project effectiveness and initial CRF capitalization.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Establish standard operating procedures and legal draft templates early between MoF and SBP to expedite Trust Deed registration.\",\n      \"evidence\": \"The Trust Deed... has been executed between the Recipient... and State Bank of Pakistan and registered in accordance with legal requirements\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Delays or shortfalls in securing national budget allocation in PKR for Category 2 financing could block disbursement of project funds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"MoF and SBP will integrate project allocation requests directly into the annual national budget submission cycle.\",\n      \"evidence\": \"No withdrawals can take place under Category 2 until the Recipient has ensured... a sufficient amount in its currency has been requested in its budget allocation\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Severe 1-in-20-year flood events could cause damage claims exceeding the total $125 million capital size of the Climate Risk Fund.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement a layered risk framework combining capital buffers with an annual international parametric reinsurance backstop to absorb extreme tail risk.\",\n      \"evidence\": \"A 1-in-a-20-year flood... would impact 705,000 borrowers and US$189 million in lending.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Reinsurance market rate increases or lower investment returns could make annual parametric insurance backstop premiums unaffordable.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct annual financial and technical reviews of insurance products and utilize GSFF grant funds combined with CRF investment yield.\",\n      \"evidence\": \"subject to an annual decision by the CRF Oversight Committee, following technical and financial review... and review of the CRF\u2019s financial position\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Complexities in verifying flood triggers and calculating losses post-disaster could delay deployment of recovery liquidity beyond 60 days.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish pre-defined parametric triggers, empirical risk models, and third-party data collection protocols in the Project Operating Manual.\",\n      \"evidence\": \"CRF liquidity which is deployed to originate loans within 60 days of qualifying floods (percentage)\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Microfinance providers may fail to achieve the 55% female beneficiary target due to loan officer biases and social constraints.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct SBP-led loan officer awareness training, implement financial literacy programs for women, and enforce higher borrowing rates for non-compliant MFPs.\",\n      \"evidence\": \"at least 55% of the beneficiaries... are women, with the safeguard that the MFPs will be required to pay a higher borrowing cost\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Geographically concentrated micro-lending in agricultural belts could cause cumulative environmental damage from fertilizer and pesticide usage.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply Environmental and Social Management Systems (ESMS) screeners, enforce negative lists, and promote climate-smart sustainable agricultural technology practices via ATCs.\",\n      \"evidence\": \"cumulative impacts of clustering of loans in geographical areas... where project interventions may increase use of fertilizers, pesticides and other chemicals\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Difficulties in structuring operational partnerships between MFPs and Agriculture Technology Companies could slow adoption of bundled agritech loans.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Run the Agriculture Finance Innovation Challenge (AFIC) to pre-select viable ATCs and provide standardized partnership frameworks in the POM.\",\n      \"evidence\": \"MFPs that avail the IAL product will have to partner with at least one ATC selected under the AFIC.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Persistent perception of high flood risks may cause MFPs to continue de-risking away from smallholder agricultural lending.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Offer pre-disaster IAL liquidity bundled with productivity-boosting agritech advisory, and guaranteed post-flood contingent liquidity.\",\n      \"evidence\": \"The share of agriculture in total lending of MFBs has declined... indicating that the sector is de-risking away from small farmers\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Severe post-flood spikes in non-performing loans and provisioning could erode MFP capital adequacy ratios below regulatory requirements.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide immediate contingent liquidity via the CLF to allow MFPs to restructure existing loans and issue recovery top-up loans.\",\n      \"evidence\": \"NPLs of MFBs... surged by 25.7 percent... provisioning expenses... surged by 50.8 percent... capital adequacy declined from 14.9 percent to 11.7 percent\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in executing and legally registering the Trust Deed between MoF and SBP could postpone project effectiveness and initial CRF capitalization.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Establish standard operating procedures and legal draft templates early between MoF and SBP to expedite Trust Deed registration.",
+        "evidence": "The Trust Deed... has been executed between the Recipient... and State Bank of Pakistan and registered in accordance with legal requirements"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delays or shortfalls in securing national budget allocation in PKR for Category 2 financing could block disbursement of project funds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "MoF and SBP will integrate project allocation requests directly into the annual national budget submission cycle.",
+        "evidence": "No withdrawals can take place under Category 2 until the Recipient has ensured... a sufficient amount in its currency has been requested in its budget allocation"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Severe 1-in-20-year flood events could cause damage claims exceeding the total $125 million capital size of the Climate Risk Fund.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement a layered risk framework combining capital buffers with an annual international parametric reinsurance backstop to absorb extreme tail risk.",
+        "evidence": "A 1-in-a-20-year flood... would impact 705,000 borrowers and US$189 million in lending."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Reinsurance market rate increases or lower investment returns could make annual parametric insurance backstop premiums unaffordable.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct annual financial and technical reviews of insurance products and utilize GSFF grant funds combined with CRF investment yield.",
+        "evidence": "subject to an annual decision by the CRF Oversight Committee, following technical and financial review... and review of the CRF\u2019s financial position"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Complexities in verifying flood triggers and calculating losses post-disaster could delay deployment of recovery liquidity beyond 60 days.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish pre-defined parametric triggers, empirical risk models, and third-party data collection protocols in the Project Operating Manual.",
+        "evidence": "CRF liquidity which is deployed to originate loans within 60 days of qualifying floods (percentage)"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Microfinance providers may fail to achieve the 55% female beneficiary target due to loan officer biases and social constraints.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct SBP-led loan officer awareness training, implement financial literacy programs for women, and enforce higher borrowing rates for non-compliant MFPs.",
+        "evidence": "at least 55% of the beneficiaries... are women, with the safeguard that the MFPs will be required to pay a higher borrowing cost"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Geographically concentrated micro-lending in agricultural belts could cause cumulative environmental damage from fertilizer and pesticide usage.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply Environmental and Social Management Systems (ESMS) screeners, enforce negative lists, and promote climate-smart sustainable agricultural technology practices via ATCs.",
+        "evidence": "cumulative impacts of clustering of loans in geographical areas... where project interventions may increase use of fertilizers, pesticides and other chemicals"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Difficulties in structuring operational partnerships between MFPs and Agriculture Technology Companies could slow adoption of bundled agritech loans.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Run the Agriculture Finance Innovation Challenge (AFIC) to pre-select viable ATCs and provide standardized partnership frameworks in the POM.",
+        "evidence": "MFPs that avail the IAL product will have to partner with at least one ATC selected under the AFIC."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Persistent perception of high flood risks may cause MFPs to continue de-risking away from smallholder agricultural lending.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Offer pre-disaster IAL liquidity bundled with productivity-boosting agritech advisory, and guaranteed post-flood contingent liquidity.",
+        "evidence": "The share of agriculture in total lending of MFBs has declined... indicating that the sector is de-risking away from small farmers"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Severe post-flood spikes in non-performing loans and provisioning could erode MFP capital adequacy ratios below regulatory requirements.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide immediate contingent liquidity via the CLF to allow MFPs to restructure existing loans and issue recovery top-up loans.",
+        "evidence": "NPLs of MFBs... surged by 25.7 percent... provisioning expenses... surged by 50.8 percent... capital adequacy declined from 14.9 percent to 11.7 percent"
+      }
+    ]
+  },
+  "parse_error": null
+}
