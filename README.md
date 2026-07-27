@@ -47,12 +47,12 @@ Two things to know before running: **use the venv** (bare `python` here lacks
 matplotlib, so the figures step fails late), and the full grid at 2-3 runs costs
 **$42-63 synchronously**, which exceeds CLAUDE.md's $30 guard. Decided
 2026-07-21 (Madhu): use `--batch` (claude+gpt at ~50% off, opensource stays
-synchronous) to bring 2 runs to ~$24, under the guard — see
+synchronous) to bring 2 runs to ~$24, under the guard, see
 [`results/preflight_report.md`](results/preflight_report.md) §2 for the
 options this was chosen from, and
 [`docs/run_playbook.md`](docs/run_playbook.md) §6a for the batch submit/check
-workflow. The batch code path is tested against mocked provider responses only
-— it has never been exercised against a live API call.
+workflow. The batch code path is tested against mocked provider responses only.
+It has never been exercised against a live API call.
 
 ## Setup
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 cp .env.example .env   # then fill in API keys
 ```
 
-Activate the venv before running anything — the bare `python` on PATH may be
+Activate the venv before running anything: the bare `python` on PATH may be
 missing `matplotlib`, which fails only at the figures step.
 
 ## Running tests
@@ -82,9 +82,9 @@ driver (`extract.py`), greedy semantic matching and its scoring driver
 (`validate_threshold.py`), recall/precision/category aggregation, the
 RQ-scoping variants, and the opt-in contamination check (`metrics.py`), the
 leakage-check FAIL/WARN/PASS aggregation driver (`audit_corpus.py`),
-model/judge response parsing and driver logic — including a permanent
+model/judge response parsing and driver logic (including a permanent
 regression test for the bool-as-int scoring bug found and fixed 2026-07-20, and
-for a real `judge.py` tuple-unpacking regression found and fixed 2026-07-21 —
+for a real `judge.py` tuple-unpacking regression found and fixed 2026-07-21),
 Method B sampling determinism and **blinding integrity**
 (`build_rater_packets.py`), the run driver's append-only, reproducibility,
 leakage, and cost guards, the batch-API request/response shapes and
