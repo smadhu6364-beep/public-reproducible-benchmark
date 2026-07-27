@@ -1,0 +1,144 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T16:02:53.622005+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Climate-induced flooding, heavy precipitation, and extreme heat risk damaging bridges, link roads, and agricultural market assets, disrupting connectivity.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate climate-resilient engineering parameters, cantilever abutments, scour protection, raised deck soffits, and 'Green Roads for Water' concepts into civil works.\",\n      \"evidence\": \"The key climate and natural hazards present in Sierra Leone are flooding, landslides, extreme heat, and wildfire.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Macroeconomic instability, high inflation, and severe fiscal stress risk delaying government counterpart funding and straining local construction capacity.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Secure US$74 million IDA grant funding for baseline core investments and implement flexible disbursement arrangements to buffer fiscal pressures.\",\n      \"evidence\": \"macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks, and a slowdown of trade activities.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Unfunded financial gap on ongoing SCADeP bridge contracts threatens completion of critical rural bridges if government funding fails to materialize.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Reallocate US$4 million from project IDA grant resources under Subcomponent 2(b) after SCADeP funds are exhausted, contingent on formal government commitment.\",\n      \"evidence\": \"The total cost of the four signed contracts is US$33.3 million against a total budget of US$26.2 million under SCADeP.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Institutional fragmentation and overlapping responsibilities across multiple transport and agricultural agencies risk causing coordination delays and implementation friction.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a National Project Steering Committee (NPSC) for inter-agency alignment and assign technical Focal Points from SLRA and MAFS to support the PCIU.\",\n      \"evidence\": \"The institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Low revenue collection by the Road Maintenance Fund Administration risks inadequate long-term maintenance of newly constructed roads and bridges.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Deploy Bridge and Road Asset Management Systems (BMS/RAMS) to prioritize maintenance budgets, and deliver technical assistance to optimize road fund sustainability.\",\n      \"evidence\": \"In 2020, the RMFA collected approximately US$12.5 million equivalent... which is a small fraction of the actual support needed for road maintenance\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"High baseline financial management risk due to the implementing unit's limited prior experience with World Bank FM procedures and control weaknesses.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit a dedicated FM Specialist and Internal Auditor, adopt an approved FM manual, procure accounting software, and conduct specialized FM training.\",\n      \"evidence\": \"The FM risk before considering the mitigating measures is 'High' mainly due to: (i) Insufficient experience of MTA with the World Bank\u2019s FM procedures\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Substantial procurement capacity risks and delays due to lack of a pre-existing procurement unit within the Project Coordination and Implementation Unit.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a dedicated procurement function in PCIU staffed with qualified specialists, adopt STEP tracking, and implement the approved PPSD.\",\n      \"evidence\": \"The PCIU does not have a procurement unit currently and it will be established and staffed with a qualified and experienced person\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Risk of Sexual Exploitation, Abuse, and Sexual Harassment (SEA/SH) during civil works and public transport operations.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt and implement a project-specific SEA/SH Action Plan, establish confidential grievance channels, install CCTV/lighting, and conduct operator training.\",\n      \"evidence\": \"the Recipient shall... adopt and disclose the Sexual Exploitation and Abuse/Sexual Harassment Action Plan consistent with the ESCP and relevant ESSs.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"High baseline rate of road crash fatalities and lack of synchronized crash data threaten safety on urban and rural project corridors.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement targeted corridor road safety spot improvements, install traffic signals and guardrails, and establish a national road safety database and guidelines.\",\n      \"evidence\": \"WHO estimates that Sierra Leone has 33 road crash fatalities per 100,000 population annually, recording the third highest road crash fatality rate\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Gender and digital divide among rural farmers risk limiting access to and adoption of the upgraded Agricultural Market Information System (AMIS).\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop Integrated Voice Response (IVR) systems, partner with women's groups/NGOs for field outreach, and provide hands-on digital literacy training to rural users.\",\n      \"evidence\": \"exclusive reliance on AMIS mobile apps for accessing data and information could indeed pose a barrier for rural women who have less access to smartphones\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Resistance or friction during the formalization and fleet expansion of unregulated informal paratransit operators in Freetown.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a 'lease-operate-own' model engaging corporatized operator entities, provide professionalization training, and involve SLPTA in operator transition management.\",\n      \"evidence\": \"Public transport services are experiencing a rapid growth of unregulated informal providers, operating minibuses, locally called poda-podas.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Legal covenant and effectiveness conditions regarding key staff recruitment, manual adoption, and account opening risk delaying project startup.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize Project Preparation Advance (PPA) resources to advance procurement of key staff, PIM drafting, and fiduciary setup prior to grant effectiveness.\",\n      \"evidence\": \"The Recipient has: (i) established a procurement unit... and (ii) hired a financial management specialist, an internal auditor, and a social specialist\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Potential physical or economic displacement resulting from civil works for bridge link roads and market facilities requiring land acquisition.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt, disclose, and implement updated Resettlement Action Plans (RAPs) and maintain active community consultation and local grievance redress mechanisms.\",\n      \"evidence\": \"the Recipient shall: (i) adopt and disclose... (iii) the updated Resettlement Action Plan for Component 2;\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Limited technical and financial capacity within local councils and market committees to ensure long-term maintenance of constructed market infrastructure.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Deliver tailored training on revenue generation, fund management, and asset maintenance planning to local councils, market committees, and market queens.\",\n      \"evidence\": \"local councils are responsible for the establishment and administration of market centers and related facilities per the Local Government Act 2022.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Climate-induced flooding, heavy precipitation, and extreme heat risk damaging bridges, link roads, and agricultural market assets, disrupting connectivity.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Incorporate climate-resilient engineering parameters, cantilever abutments, scour protection, raised deck soffits, and 'Green Roads for Water' concepts into civil works.",
+        "evidence": "The key climate and natural hazards present in Sierra Leone are flooding, landslides, extreme heat, and wildfire."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Macroeconomic instability, high inflation, and severe fiscal stress risk delaying government counterpart funding and straining local construction capacity.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Secure US$74 million IDA grant funding for baseline core investments and implement flexible disbursement arrangements to buffer fiscal pressures.",
+        "evidence": "macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks, and a slowdown of trade activities."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Unfunded financial gap on ongoing SCADeP bridge contracts threatens completion of critical rural bridges if government funding fails to materialize.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Reallocate US$4 million from project IDA grant resources under Subcomponent 2(b) after SCADeP funds are exhausted, contingent on formal government commitment.",
+        "evidence": "The total cost of the four signed contracts is US$33.3 million against a total budget of US$26.2 million under SCADeP."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Institutional fragmentation and overlapping responsibilities across multiple transport and agricultural agencies risk causing coordination delays and implementation friction.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a National Project Steering Committee (NPSC) for inter-agency alignment and assign technical Focal Points from SLRA and MAFS to support the PCIU.",
+        "evidence": "The institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Low revenue collection by the Road Maintenance Fund Administration risks inadequate long-term maintenance of newly constructed roads and bridges.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Deploy Bridge and Road Asset Management Systems (BMS/RAMS) to prioritize maintenance budgets, and deliver technical assistance to optimize road fund sustainability.",
+        "evidence": "In 2020, the RMFA collected approximately US$12.5 million equivalent... which is a small fraction of the actual support needed for road maintenance"
+      },
+      {
+        "risk_id": "R06",
+        "description": "High baseline financial management risk due to the implementing unit's limited prior experience with World Bank FM procedures and control weaknesses.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit a dedicated FM Specialist and Internal Auditor, adopt an approved FM manual, procure accounting software, and conduct specialized FM training.",
+        "evidence": "The FM risk before considering the mitigating measures is 'High' mainly due to: (i) Insufficient experience of MTA with the World Bank\u2019s FM procedures"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Substantial procurement capacity risks and delays due to lack of a pre-existing procurement unit within the Project Coordination and Implementation Unit.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a dedicated procurement function in PCIU staffed with qualified specialists, adopt STEP tracking, and implement the approved PPSD.",
+        "evidence": "The PCIU does not have a procurement unit currently and it will be established and staffed with a qualified and experienced person"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Risk of Sexual Exploitation, Abuse, and Sexual Harassment (SEA/SH) during civil works and public transport operations.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Adopt and implement a project-specific SEA/SH Action Plan, establish confidential grievance channels, install CCTV/lighting, and conduct operator training.",
+        "evidence": "the Recipient shall... adopt and disclose the Sexual Exploitation and Abuse/Sexual Harassment Action Plan consistent with the ESCP and relevant ESSs."
+      },
+      {
+        "risk_id": "R09",
+        "description": "High baseline rate of road crash fatalities and lack of synchronized crash data threaten safety on urban and rural project corridors.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement targeted corridor road safety spot improvements, install traffic signals and guardrails, and establish a national road safety database and guidelines.",
+        "evidence": "WHO estimates that Sierra Leone has 33 road crash fatalities per 100,000 population annually, recording the third highest road crash fatality rate"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Gender and digital divide among rural farmers risk limiting access to and adoption of the upgraded Agricultural Market Information System (AMIS).",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop Integrated Voice Response (IVR) systems, partner with women's groups/NGOs for field outreach, and provide hands-on digital literacy training to rural users.",
+        "evidence": "exclusive reliance on AMIS mobile apps for accessing data and information could indeed pose a barrier for rural women who have less access to smartphones"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Resistance or friction during the formalization and fleet expansion of unregulated informal paratransit operators in Freetown.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a 'lease-operate-own' model engaging corporatized operator entities, provide professionalization training, and involve SLPTA in operator transition management.",
+        "evidence": "Public transport services are experiencing a rapid growth of unregulated informal providers, operating minibuses, locally called poda-podas."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Legal covenant and effectiveness conditions regarding key staff recruitment, manual adoption, and account opening risk delaying project startup.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize Project Preparation Advance (PPA) resources to advance procurement of key staff, PIM drafting, and fiduciary setup prior to grant effectiveness.",
+        "evidence": "The Recipient has: (i) established a procurement unit... and (ii) hired a financial management specialist, an internal auditor, and a social specialist"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Potential physical or economic displacement resulting from civil works for bridge link roads and market facilities requiring land acquisition.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt, disclose, and implement updated Resettlement Action Plans (RAPs) and maintain active community consultation and local grievance redress mechanisms.",
+        "evidence": "the Recipient shall: (i) adopt and disclose... (iii) the updated Resettlement Action Plan for Component 2;"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Limited technical and financial capacity within local councils and market committees to ensure long-term maintenance of constructed market infrastructure.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deliver tailored training on revenue generation, fund management, and asset maintenance planning to local councils, market committees, and market queens.",
+        "evidence": "local councils are responsible for the establishment and administration of market centers and related facilities per the Local Government Act 2022."
+      }
+    ]
+  },
+  "parse_error": null
+}

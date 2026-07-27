@@ -1,0 +1,180 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T16:01:13.672979+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Macroeconomic pressures, soaring inflation, and fiscal constraints in Sierra Leone could inflate project construction costs and strain government counterpart funding.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate adequate price and physical contingencies into procurement contracts and closely monitor economic indices during implementation.\",\n      \"evidence\": \"I. STRATEGIC CONTEXT, Country Context: macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"High vulnerability to severe natural hazards such as river flooding, landslides, and extreme heat risks damaging transport and market infrastructure and causing connectivity disruptions.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Apply climate-resilient engineering design standards including elevated bridge decks, right-sized culverts, scour protection, and heat-resistant paving materials.\",\n      \"evidence\": \"I. STRATEGIC CONTEXT, Country Context: The key climate and natural hazards present in Sierra Leone are flooding, landslides, extreme heat, and wildfire.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Institutional fragmentation and overlapping mandates among transport agencies may result in poor coordination and project implementation delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Operate a three-layered institutional structure led by a National Project Steering Committee and unified PCIU to streamline inter-agency coordination.\",\n      \"evidence\": \"I. STRATEGIC CONTEXT, Institutional Context: institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Insufficient revenue collection by the Road Maintenance Fund Administration could lead to inadequate long-term maintenance of newly built roads and bridges.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Support the development of a national transport strategy to reform road maintenance financing and deploy digital asset management systems (BMS/RAMS).\",\n      \"evidence\": \"I. STRATEGIC CONTEXT, Institutional Context: The funding to road investment and maintenance is also insufficient. In 2020, the RMFA collected... a small fraction\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Substantial financial management risks due to MTA's limited experience with World Bank fiduciary procedures and internal control weaknesses.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a dedicated FM unit in PCIU, recruit a qualified FM Specialist and Internal Auditor, adopt an FM Manual, and open a segregated account.\",\n      \"evidence\": \"ANNEX 7: Financial Management Assessment: overall FM risks were rated as \u2018High\u2019 before mitigation... Insufficient experience of MTA with the World Bank\u2019s FM procedures\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Absence of an established procurement unit and experienced procurement staff in the PCIU at entry could delay tender processes and contract awards.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit qualified procurement staff prior to project effectiveness, adopt STEP tracking, and implement a detailed Project Procurement Strategy for Development.\",\n      \"evidence\": \"ANNEX 6: Procurement Management Assessment: The PCIU does not have a procurement unit currently and it will be established and staffed\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Fiscal stress may prevent the Government of Sierra Leone from fulfilling its committed funding share for ongoing SCADeP bridge contracts.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Allocate US$4 million under project Subcomponent 2(b) to cover the bridge funding gap after full utilization of SCADeP resources.\",\n      \"evidence\": \"Component 2: Resilient Rural Bridges and Link Roads: leaves a funding gap of about US$7.1 million... government has committed to cover the remaining US$3.1 million\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Prolonged rainy seasons and rising river water levels can suspend civil works and delay bridge and link road construction.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Schedule foundation and sub-structure works during the dry season and utilize incremental launching construction methods for bridge superstructures.\",\n      \"evidence\": \"ANNEX 5: Climate Change Mitigation: In 2023, Sierra Leone experienced a prolonged rainy season... leading to a rise in water levels... civil works... were suspended\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Unanticipated subsurface geotechnical conditions at bridge river crossings could require foundation design modifications and cause cost overruns.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct mandatory post-award geotechnical site investigations to verify pile depths and engage independent supervision consultants for design reviews.\",\n      \"evidence\": \"ANNEX 2: Component 2: Additional geotechnical investigation is proposed for the bridges after the contract award to establish, particularly, the foundation or pile depth.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Vulnerability to fraud, corruption, and collusion in contracting processes could impair project value for money and resource allocation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce mandatory STEP use, check beneficial ownership, verify bidder bank guarantees, conduct internal/external audits, and publish contract awards publicly.\",\n      \"evidence\": \"ANNEX 6: Table 6.1: Fraud and corruption risks (including collusion and outside interference) in contracting process\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Risks of Sexual Exploitation, Abuse, and Sexual Harassment (SEA/SH) during civil works construction and urban public transit operations.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt and implement an SEA/SH Action Plan, enforce worker codes of conduct, install CCTV cameras on public buses, and establish reporting hotlines.\",\n      \"evidence\": \"DATASHEET, Legal Covenants: (iv) the Sexual Exploitation and Abuse/Sexual Harassment Action Plan consistent with the ESCP and relevant ESSs.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Delays in adopting or disclosing required Environmental and Social standards instruments (ESIA, ESMP, RAP, LMP) could hold up project disbursements and works.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Utilize Project Preparation Advance (PPA) funding to complete, consult on, and disclose all required E&S instruments within mandated post-effectiveness deadlines.\",\n      \"evidence\": \"DATASHEET, Legal Covenants: adopt and disclose the updated Environmental and Social Management Plan for Components 1 and 3; (ii) the Environmental and Social Impact Assessment\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Lack of a synchronized digital road safety database and manual crash reporting hamper effective road safety monitoring and targeted interventions.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Develop national road safety guidelines, build a synchronized digital road safety database, and install physical safety features on high-risk transit corridors.\",\n      \"evidence\": \"I. STRATEGIC CONTEXT, Transport Connectivity: There is no systematic database on road safety, and Sierra Leone Road Safety Authority (SLRSA) and the police department collect road incidents manually\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Lack of all-season market infrastructure and processing facilities leads to severe post-harvest commodity losses for rural agricultural producers.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Construct and upgrade aggregation centers, storage facilities, and solar-powered cold storage in bridge catchment areas.\",\n      \"evidence\": \"I. STRATEGIC CONTEXT, Agricultural Market Access: lack of market infrastructure pushes farmers to face higher post-harvest losses (20\u201330 percent of farm produce)\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Capital constraints and operational informality among private bus operators could hinder participation in the urban public transport fleet renewal program.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Structure a lease-operate-own concession scheme to lower upfront capital barriers and formalize informal operator associations into corporate entities.\",\n      \"evidence\": \"Component 1: Resilient Urban Transport: Scheme mobilizes private capital through the concession contract, while resolving the financial constraints of the private sector in fleet capital investment.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Limited smartphone ownership and digital literacy among rural women could restrict their access to the upgraded Agricultural Market Information System (AMIS).\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Partner with local women's organizations and community groups to offer offline market information channels alongside digital literacy training.\",\n      \"evidence\": \"ANNEX 2: Component 3: evidence shows that rural women and farmers often have limited access to mobile phones based on factors such as literacy rates, income levels\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Weak technical and administrative capacity in local councils could lead to inadequate operation and maintenance of constructed agricultural market facilities.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide targeted capacity building to local councils on revenue collection systems, asset management, and fund allocation for market maintenance.\",\n      \"evidence\": \"ANNEX 2: Component 3: Ownership structure: local councils are responsible for the establishment and administration of market centers... councils will establish a revenue collection system\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Inadequate financial management software and unaligned accounting systems in PCIU could cause delays in financial reporting and audit compliance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Procure suitable accounting software within 90 days of effectiveness and conduct comprehensive FM and disbursement training for project staff.\",\n      \"evidence\": \"DATASHEET, Legal Covenants: identified and procured appropriate software for use in Project accounting; and (ii) carried out a training in financial management\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Macroeconomic pressures, soaring inflation, and fiscal constraints in Sierra Leone could inflate project construction costs and strain government counterpart funding.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Incorporate adequate price and physical contingencies into procurement contracts and closely monitor economic indices during implementation.",
+        "evidence": "I. STRATEGIC CONTEXT, Country Context: macroeconomic environment, which is characterized by intensified fiscal pressures, soaring inflation driven by global supply shocks"
+      },
+      {
+        "risk_id": "R02",
+        "description": "High vulnerability to severe natural hazards such as river flooding, landslides, and extreme heat risks damaging transport and market infrastructure and causing connectivity disruptions.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Apply climate-resilient engineering design standards including elevated bridge decks, right-sized culverts, scour protection, and heat-resistant paving materials.",
+        "evidence": "I. STRATEGIC CONTEXT, Country Context: The key climate and natural hazards present in Sierra Leone are flooding, landslides, extreme heat, and wildfire."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Institutional fragmentation and overlapping mandates among transport agencies may result in poor coordination and project implementation delays.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Operate a three-layered institutional structure led by a National Project Steering Committee and unified PCIU to streamline inter-agency coordination.",
+        "evidence": "I. STRATEGIC CONTEXT, Institutional Context: institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Insufficient revenue collection by the Road Maintenance Fund Administration could lead to inadequate long-term maintenance of newly built roads and bridges.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Support the development of a national transport strategy to reform road maintenance financing and deploy digital asset management systems (BMS/RAMS).",
+        "evidence": "I. STRATEGIC CONTEXT, Institutional Context: The funding to road investment and maintenance is also insufficient. In 2020, the RMFA collected... a small fraction"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Substantial financial management risks due to MTA's limited experience with World Bank fiduciary procedures and internal control weaknesses.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a dedicated FM unit in PCIU, recruit a qualified FM Specialist and Internal Auditor, adopt an FM Manual, and open a segregated account.",
+        "evidence": "ANNEX 7: Financial Management Assessment: overall FM risks were rated as \u2018High\u2019 before mitigation... Insufficient experience of MTA with the World Bank\u2019s FM procedures"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Absence of an established procurement unit and experienced procurement staff in the PCIU at entry could delay tender processes and contract awards.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit qualified procurement staff prior to project effectiveness, adopt STEP tracking, and implement a detailed Project Procurement Strategy for Development.",
+        "evidence": "ANNEX 6: Procurement Management Assessment: The PCIU does not have a procurement unit currently and it will be established and staffed"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Fiscal stress may prevent the Government of Sierra Leone from fulfilling its committed funding share for ongoing SCADeP bridge contracts.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Allocate US$4 million under project Subcomponent 2(b) to cover the bridge funding gap after full utilization of SCADeP resources.",
+        "evidence": "Component 2: Resilient Rural Bridges and Link Roads: leaves a funding gap of about US$7.1 million... government has committed to cover the remaining US$3.1 million"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Prolonged rainy seasons and rising river water levels can suspend civil works and delay bridge and link road construction.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Schedule foundation and sub-structure works during the dry season and utilize incremental launching construction methods for bridge superstructures.",
+        "evidence": "ANNEX 5: Climate Change Mitigation: In 2023, Sierra Leone experienced a prolonged rainy season... leading to a rise in water levels... civil works... were suspended"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Unanticipated subsurface geotechnical conditions at bridge river crossings could require foundation design modifications and cause cost overruns.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct mandatory post-award geotechnical site investigations to verify pile depths and engage independent supervision consultants for design reviews.",
+        "evidence": "ANNEX 2: Component 2: Additional geotechnical investigation is proposed for the bridges after the contract award to establish, particularly, the foundation or pile depth."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Vulnerability to fraud, corruption, and collusion in contracting processes could impair project value for money and resource allocation.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce mandatory STEP use, check beneficial ownership, verify bidder bank guarantees, conduct internal/external audits, and publish contract awards publicly.",
+        "evidence": "ANNEX 6: Table 6.1: Fraud and corruption risks (including collusion and outside interference) in contracting process"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Risks of Sexual Exploitation, Abuse, and Sexual Harassment (SEA/SH) during civil works construction and urban public transit operations.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Adopt and implement an SEA/SH Action Plan, enforce worker codes of conduct, install CCTV cameras on public buses, and establish reporting hotlines.",
+        "evidence": "DATASHEET, Legal Covenants: (iv) the Sexual Exploitation and Abuse/Sexual Harassment Action Plan consistent with the ESCP and relevant ESSs."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Delays in adopting or disclosing required Environmental and Social standards instruments (ESIA, ESMP, RAP, LMP) could hold up project disbursements and works.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize Project Preparation Advance (PPA) funding to complete, consult on, and disclose all required E&S instruments within mandated post-effectiveness deadlines.",
+        "evidence": "DATASHEET, Legal Covenants: adopt and disclose the updated Environmental and Social Management Plan for Components 1 and 3; (ii) the Environmental and Social Impact Assessment"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Lack of a synchronized digital road safety database and manual crash reporting hamper effective road safety monitoring and targeted interventions.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Develop national road safety guidelines, build a synchronized digital road safety database, and install physical safety features on high-risk transit corridors.",
+        "evidence": "I. STRATEGIC CONTEXT, Transport Connectivity: There is no systematic database on road safety, and Sierra Leone Road Safety Authority (SLRSA) and the police department collect road incidents manually"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Lack of all-season market infrastructure and processing facilities leads to severe post-harvest commodity losses for rural agricultural producers.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Construct and upgrade aggregation centers, storage facilities, and solar-powered cold storage in bridge catchment areas.",
+        "evidence": "I. STRATEGIC CONTEXT, Agricultural Market Access: lack of market infrastructure pushes farmers to face higher post-harvest losses (20\u201330 percent of farm produce)"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Capital constraints and operational informality among private bus operators could hinder participation in the urban public transport fleet renewal program.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Structure a lease-operate-own concession scheme to lower upfront capital barriers and formalize informal operator associations into corporate entities.",
+        "evidence": "Component 1: Resilient Urban Transport: Scheme mobilizes private capital through the concession contract, while resolving the financial constraints of the private sector in fleet capital investment."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Limited smartphone ownership and digital literacy among rural women could restrict their access to the upgraded Agricultural Market Information System (AMIS).",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Partner with local women's organizations and community groups to offer offline market information channels alongside digital literacy training.",
+        "evidence": "ANNEX 2: Component 3: evidence shows that rural women and farmers often have limited access to mobile phones based on factors such as literacy rates, income levels"
+      },
+      {
+        "risk_id": "R17",
+        "description": "Weak technical and administrative capacity in local councils could lead to inadequate operation and maintenance of constructed agricultural market facilities.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide targeted capacity building to local councils on revenue collection systems, asset management, and fund allocation for market maintenance.",
+        "evidence": "ANNEX 2: Component 3: Ownership structure: local councils are responsible for the establishment and administration of market centers... councils will establish a revenue collection system"
+      },
+      {
+        "risk_id": "R18",
+        "description": "Inadequate financial management software and unaligned accounting systems in PCIU could cause delays in financial reporting and audit compliance.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Procure suitable accounting software within 90 days of effectiveness and conduct comprehensive FM and disbursement training for project staff.",
+        "evidence": "DATASHEET, Legal Covenants: identified and procured appropriate software for use in Project accounting; and (ii) carried out a training in financial management"
+      }
+    ]
+  },
+  "parse_error": null
+}

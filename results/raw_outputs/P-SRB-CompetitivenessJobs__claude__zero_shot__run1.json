@@ -1,0 +1,153 @@
+{
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T16:06:20.260243+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-SRB-CompetitivenessJobs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Weak strategic planning and policy implementation deficits across state administration could impair project execution and cross-ministerial reform coordination.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish an inter-ministerial Policy Planning, Monitoring, and Coordination Working Group led by the Public Policy Secretariat to oversee performance targets and coordinate reforms.\",\n      \"evidence\": \"Section I.A, Paragraph 3: 'recognizing that weak planning and implementation deficits are among the most significant risks to the reform program.'\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Lack of World Bank fiduciary and procurement experience in implementing agencies (PPS, MoE, MoLEVSA) may cause project delays and procurement non-compliance.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit qualified procurement and financial management specialists into PPS and MoLEVSA prior to implementation and provide intensive Bank procurement training.\",\n      \"evidence\": \"Section VI.D, Paragraph 86: 'most of the entities involved in project implementation, have no experience in implementing World Bank-funded projects and with Bank procurement'\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Complex clearance procedures between the Public Policy Secretariat and line ministries could delay procurement evaluations and contract approvals.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish clear timeline agreements for evaluation clearances between PPS and line ministries, and implement close Bank monitoring of procurement schedules.\",\n      \"evidence\": \"Annex 4, Table 32: 'arrangements for clearance of evaluation reports by the PPS may lead to procurement delays due to consultation with the respective implementing institutions'\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Overlapping mandates and non-transparent operating structures among Ministry of Economy development agencies (SIEPA, Development Fund, AOFI, NARR) could hinder investment and export promotion reforms.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Formulate and officially adopt an overarching strategic framework and action plan to restructure MoE agencies, consolidate support functions, and introduce systematic M&E.\",\n      \"evidence\": \"Section III.A, Paragraph 29: 'The system of support provided by the MoE's agencies is complex and non-transparent... agencies have overlapping mandates, little coordination'\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"High tax wedges on low wages combined with social benefit withdrawal rules create strong work disincentives, trapping social assistance beneficiaries in formal unemployment.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Design and pilot an in-work cash transfer program for social financial assistance recipients to offset benefit reductions and lower effective marginal tax rates upon formal employment.\",\n      \"evidence\": \"Section III.A, Paragraph 51: 'Serbia has one of the highest tax wedges on low-paying jobs... and a social assistance benefit that is reduced by at least one dinar'\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Severe dispersion and high average caseloads per case worker across NES branch offices prevent effective individual client case management and job matching.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Introduce a special registry for temporarily inactive jobseekers, reassign administrative staff to case management, and implement a standardized case worker certification system.\",\n      \"evidence\": \"Section III.A, Paragraph 46: 'the average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices'\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Low and fluctuating budgetary expenditure on Active Labor Market Programs (ALMPs) risks curtailing effective employment assistance to jobseekers.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Condition results-based loan disbursements on maintaining ALMP allocations and deploy statistical profiling to target scarce resources to high-risk jobseekers.\",\n      \"evidence\": \"Annex 3, Paragraph 25: 'ALMPs represented only 0.05 percent of GDP in 2013... low relative to other Eastern European countries'\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Grant-financed enterprise innovation subprojects supported by the Innovation Fund could cause localized physical environmental impacts during product prototyping or testing.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Subject all sub-grant applications to Environmental and Social Management Framework screening and mandate site-specific Environmental Management Plans for Category B subprojects.\",\n      \"evidence\": \"Section VI.F, Paragraph 90: 'Direct, physical environmental impacts could arise under Component 2 on Innovation... Mini & Matching Grant Programs... development of new or significantly improved technologies'\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Academic incentives favoring scientific publications over commercialization and lack of tech transfer mechanisms impede market application of public research.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a centralized Technology Transfer Facility at the Innovation Fund and introduce performance-based financing criteria for public research institutes.\",\n      \"evidence\": \"Section III.A, Paragraph 41: 'very strong academic culture... with little incentives for protection of intellectual property or its commercialization... public research sector suffers from being disconnected'\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Insufficient initial funding allocated to the Technology Transfer Facility may restrict the volume and demonstration impact of technology transfer transactions.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Require minimum state budget allocations of EUR 0.9 million annually for the TTF in 2017\u20132018 under DLI 4 and prepare proposals for donor scaling-up.\",\n      \"evidence\": \"Section III.A, Paragraph 41: 'Current TTF funding under SRITPP (i.e. EUR 1.18 mn) is deemed insufficient to finance and demonstrate a strong tech transfer pipeline'\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Failure to achieve Disbursement-Linked Indicators (DLIs) within specified calendar semesters would cause delays or reductions in results-based loan disbursements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Utilize targeted technical assistance under Part B to support DLI execution, monitor progress semi-annually, and utilize partial payment mechanisms where permitted.\",\n      \"evidence\": \"Section III.B, Paragraph 58: 'In the event a DLI is not achieved, a request for reassessment may be submitted... Part A reimburses EEPs conditioned on achievement of DLIs.'\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Political economy resistance and leadership turnover within public research institutes could stall structural legislative and financing reforms in the public R&D sector.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct rigorous independent international audits and RDI self-assessments to build consensus around evidence-based reform scenarios prior to legislative submission.\",\n      \"evidence\": \"Annex 3, Paragraph 17: 'comprehensive national reforms have been sporadic... largely due to political economy considerations, including severe resources constraints and intermittent leadership'\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Low baseline private sector spending on research and development limits commercial demand for joint innovation projects and technology licensing.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Provide matching grant co-financing to innovative private firms to lower financial and technological risk associated with early-stage commercial R&D investments.\",\n      \"evidence\": \"Annex 3, Paragraph 14: '0.24 percent of GDP on business R&D expenditures is much lower than the EU average of 1.3 percent.'\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Insufficient employer outreach and declining vacancy registrations at the National Employment Service constrain formal job matching performance.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt an NES employer outreach action plan, set annual targets for direct employer visits, and monitor vacancy collection KPIs.\",\n      \"evidence\": \"Section III.A, Paragraph 46: 'Currently, only a small share of job matches... are carried out by the NES... number of vacancies in the NES registry remains largely insufficient'\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Policy advice or regulatory reform proposals developed under technical assistance activities could generate unexpected indirect environmental or social risks.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Engage an Independent Environmental and Social Expert to systematically screen all Technical Assistance terms of reference and outputs against World Bank safeguard policies.\",\n      \"evidence\": \"Section VI.F, Paragraph 91: 'Possible indirect environmental and social impacts may result from TA provided under the Project, particularly related to reforms in Components 1 and 2'\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SRB-CompetitivenessJobs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Weak strategic planning and policy implementation deficits across state administration could impair project execution and cross-ministerial reform coordination.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish an inter-ministerial Policy Planning, Monitoring, and Coordination Working Group led by the Public Policy Secretariat to oversee performance targets and coordinate reforms.",
+        "evidence": "Section I.A, Paragraph 3: 'recognizing that weak planning and implementation deficits are among the most significant risks to the reform program.'"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Lack of World Bank fiduciary and procurement experience in implementing agencies (PPS, MoE, MoLEVSA) may cause project delays and procurement non-compliance.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit qualified procurement and financial management specialists into PPS and MoLEVSA prior to implementation and provide intensive Bank procurement training.",
+        "evidence": "Section VI.D, Paragraph 86: 'most of the entities involved in project implementation, have no experience in implementing World Bank-funded projects and with Bank procurement'"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Complex clearance procedures between the Public Policy Secretariat and line ministries could delay procurement evaluations and contract approvals.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish clear timeline agreements for evaluation clearances between PPS and line ministries, and implement close Bank monitoring of procurement schedules.",
+        "evidence": "Annex 4, Table 32: 'arrangements for clearance of evaluation reports by the PPS may lead to procurement delays due to consultation with the respective implementing institutions'"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Overlapping mandates and non-transparent operating structures among Ministry of Economy development agencies (SIEPA, Development Fund, AOFI, NARR) could hinder investment and export promotion reforms.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Formulate and officially adopt an overarching strategic framework and action plan to restructure MoE agencies, consolidate support functions, and introduce systematic M&E.",
+        "evidence": "Section III.A, Paragraph 29: 'The system of support provided by the MoE's agencies is complex and non-transparent... agencies have overlapping mandates, little coordination'"
+      },
+      {
+        "risk_id": "R05",
+        "description": "High tax wedges on low wages combined with social benefit withdrawal rules create strong work disincentives, trapping social assistance beneficiaries in formal unemployment.",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Design and pilot an in-work cash transfer program for social financial assistance recipients to offset benefit reductions and lower effective marginal tax rates upon formal employment.",
+        "evidence": "Section III.A, Paragraph 51: 'Serbia has one of the highest tax wedges on low-paying jobs... and a social assistance benefit that is reduced by at least one dinar'"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Severe dispersion and high average caseloads per case worker across NES branch offices prevent effective individual client case management and job matching.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Introduce a special registry for temporarily inactive jobseekers, reassign administrative staff to case management, and implement a standardized case worker certification system.",
+        "evidence": "Section III.A, Paragraph 46: 'the average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices'"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Low and fluctuating budgetary expenditure on Active Labor Market Programs (ALMPs) risks curtailing effective employment assistance to jobseekers.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Condition results-based loan disbursements on maintaining ALMP allocations and deploy statistical profiling to target scarce resources to high-risk jobseekers.",
+        "evidence": "Annex 3, Paragraph 25: 'ALMPs represented only 0.05 percent of GDP in 2013... low relative to other Eastern European countries'"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Grant-financed enterprise innovation subprojects supported by the Innovation Fund could cause localized physical environmental impacts during product prototyping or testing.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Subject all sub-grant applications to Environmental and Social Management Framework screening and mandate site-specific Environmental Management Plans for Category B subprojects.",
+        "evidence": "Section VI.F, Paragraph 90: 'Direct, physical environmental impacts could arise under Component 2 on Innovation... Mini & Matching Grant Programs... development of new or significantly improved technologies'"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Academic incentives favoring scientific publications over commercialization and lack of tech transfer mechanisms impede market application of public research.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a centralized Technology Transfer Facility at the Innovation Fund and introduce performance-based financing criteria for public research institutes.",
+        "evidence": "Section III.A, Paragraph 41: 'very strong academic culture... with little incentives for protection of intellectual property or its commercialization... public research sector suffers from being disconnected'"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Insufficient initial funding allocated to the Technology Transfer Facility may restrict the volume and demonstration impact of technology transfer transactions.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Require minimum state budget allocations of EUR 0.9 million annually for the TTF in 2017\u20132018 under DLI 4 and prepare proposals for donor scaling-up.",
+        "evidence": "Section III.A, Paragraph 41: 'Current TTF funding under SRITPP (i.e. EUR 1.18 mn) is deemed insufficient to finance and demonstrate a strong tech transfer pipeline'"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Failure to achieve Disbursement-Linked Indicators (DLIs) within specified calendar semesters would cause delays or reductions in results-based loan disbursements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Utilize targeted technical assistance under Part B to support DLI execution, monitor progress semi-annually, and utilize partial payment mechanisms where permitted.",
+        "evidence": "Section III.B, Paragraph 58: 'In the event a DLI is not achieved, a request for reassessment may be submitted... Part A reimburses EEPs conditioned on achievement of DLIs.'"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Political economy resistance and leadership turnover within public research institutes could stall structural legislative and financing reforms in the public R&D sector.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct rigorous independent international audits and RDI self-assessments to build consensus around evidence-based reform scenarios prior to legislative submission.",
+        "evidence": "Annex 3, Paragraph 17: 'comprehensive national reforms have been sporadic... largely due to political economy considerations, including severe resources constraints and intermittent leadership'"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Low baseline private sector spending on research and development limits commercial demand for joint innovation projects and technology licensing.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Provide matching grant co-financing to innovative private firms to lower financial and technological risk associated with early-stage commercial R&D investments.",
+        "evidence": "Annex 3, Paragraph 14: '0.24 percent of GDP on business R&D expenditures is much lower than the EU average of 1.3 percent.'"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Insufficient employer outreach and declining vacancy registrations at the National Employment Service constrain formal job matching performance.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt an NES employer outreach action plan, set annual targets for direct employer visits, and monitor vacancy collection KPIs.",
+        "evidence": "Section III.A, Paragraph 46: 'Currently, only a small share of job matches... are carried out by the NES... number of vacancies in the NES registry remains largely insufficient'"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Policy advice or regulatory reform proposals developed under technical assistance activities could generate unexpected indirect environmental or social risks.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Engage an Independent Environmental and Social Expert to systematically screen all Technical Assistance terms of reference and outputs against World Bank safeguard policies.",
+        "evidence": "Section VI.F, Paragraph 91: 'Possible indirect environmental and social impacts may result from TA provided under the Project, particularly related to reforms in Components 1 and 2'"
+      }
+    ]
+  },
+  "parse_error": null
+}

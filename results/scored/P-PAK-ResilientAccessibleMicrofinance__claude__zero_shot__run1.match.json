@@ -1,0 +1,176 @@
+{
+  "run_file": "P-PAK-ResilientAccessibleMicrofinance__claude__zero_shot__run1.json",
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R01",
+      "similarity": 0.469,
+      "gen_category": "organizational",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R02",
+      "similarity": 0.456,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Recurrent extreme flooding events cause massive borrower default, severe capital depletion, and liquidity shortages across microfinance banks.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Operationalize the Climate Risk Fund (CRF) to provide rapid contingent liquidity (CLF) and leverage an international parametric insurance backstop to inject external capital after extreme floods.",
+      "evidence": "Paragraph 9: NPLs of MFBs in flood impacted areas surged by 25.7 percent... capital adequacy declined from 14.9 percent to 11.7 percent"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Surging post-disaster non-performing loans (NPLs) increase provisioning expenses and severely impair microfinance providers' balance sheets.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Allow eligible MFPs to utilize post-flood CRF liquidity to restructure existing loans, offer top-up financing, and disburse new recovery loans to preserve asset quality.",
+      "evidence": "Paragraph 9: provisioning expenses (recognition of losses and cleaning of books stemming from NPLs) surged by 50.8 percent from June to September 2022"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Microfinance institutions disintermediate away from smallholder agriculture due to perceived climate vulnerability, increasing financial exclusion in rural areas.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Deploy pre-climate event Innovative Agricultural Liquidity (IAL) bundled with agritech advisory services to increase farm yields, lower default risk, and de-risk agricultural lending.",
+      "evidence": "Paragraph 10: share of agriculture in total lending of MFBs has declined from 34 percent in FY19 to 28 percent in FY24"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Rapid sector expansion shifts toward short-term, consumptive nano loans rather than productive microfinance, undermining long-term borrower economic resilience.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Incentivize productive micro-lending through dedicated CRF funding streams for climate-smart agriculture and targeted enterprise growth.",
+      "evidence": "Paragraph 7: rapid growth in nano loans... indicates an alarming pivot away from lending for productive purposes to consumption smoothing."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Gender inequalities and loan officer biases impede post-disaster access to emergency microfinance for female borrowers.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Mandate that at least 55% of MFP post-disaster beneficiaries are women, enforce financial surcharges on non-compliant MFPs, and conduct SBP gender bias training and financial literacy programs.",
+      "evidence": "Paragraph 49: post-disaster assistance often fails to reach women equitably... restricted access to social protection further compounds their vulnerability"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Volatile pricing or limited availability in international reinsurance markets increases parametric insurance premium costs, threatening CRF capital sustainability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct annual financial and technical modeling through the CRF Oversight Committee to decide on optimal risk layering and reinsurance purchases funded via GSFF grants and investment yields.",
+      "evidence": "Paragraph 30: decision to secure parametric insurance for the CRF will be undertaken by the CRF Oversight Committee on an annual basis"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Parametric trigger thresholds or government emergency declaration criteria may fail to match actual localized flood damages, causing basis risk and payout delays.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish dual independent activation triggers based on both formal disaster declarations and verified MFP portfolio impact thresholds in the Project Operations Manual.",
+      "evidence": "Paragraph 31: activation of the post climate event products... will be subject to two independent triggers... independently verifiable and empirically grounded"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Delays in local currency budget allocations by the recipient government could block Category 2 credit disbursements for project implementation.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Ensure timely MoF submission and tracking of annual national budget allocations for counterpart funds as required under disbursement conditions.",
+      "evidence": "Conditions B.1(b): No withdrawals can take place under Category 2 until the Recipient has ensured... sufficient amount in its currency has been requested"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Administrative delays in executing and legally registering the Trust Deed or adopting the Project Operations Manual could hold up project effectiveness.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Utilize standard State Bank of Pakistan trust structures and established legal frameworks to expedite Trust Deed execution, registration, and manual adoption.",
+      "evidence": "Conditions 5.01(a): Trust Deed, in form and substance acceptable to the Association, has been executed... and registered in accordance with legal requirements"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Geographical clustering of micro-loans in agricultural regions may cause cumulative environmental degradation from excessive chemical and pesticide usage.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement Environmental and Social Management Systems (ESMS) across participating MFPs and bundle loans with sustainable agritech practices.",
+      "evidence": "Paragraph 54: cumulative impacts of clustering of loans in geographical areas... may increase use of fertilizers, pesticides and other chemicals."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Slow uptake or operational friction between MFPs and Agriculture Technology Companies (ATCs) could impede implementation of the IAL product.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Run the Agriculture Finance Innovation Challenge (AFIC) to select top-tier ATCs, demonstrate clear commercial viability, and mandate MFP-ATC partnerships in the POM.",
+      "evidence": "Paragraph 26: MFPs that avail the IAL product will have to partner with at least one ATC selected under the AFIC."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Institutional friction between split regulatory authorities (SBP for MFBs and SECP for NBMFCs) could delay uniform CRF operationalization.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish multi-stakeholder governance via an Oversight Committee and Working Committee chaired by SBP, incorporating SECP and MoF representation.",
+      "evidence": "Paragraph 6: 11 microfinance banks (MFBs) regulated by the SBP, 39 non-bank microfinance companies (NBMFCs)... regulated by the SECP"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Broader macroeconomic crisis, high domestic interest rates (KIBOR), and PKR currency volatility elevate borrowing costs and default rates across the sector.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Structure CRF liquidity in local currency and maintain flexible, market-informed pricing mechanisms while subsidizing key vulnerable segments like women.",
+      "evidence": "Paragraph 8: impact of these shocks was exacerbated by the macroeconomic crisis brewing since late 2019"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Operational bottlenecks in verifying flood impacts and disbursing funds post-event could delay emergency loan deployment beyond the target 60-day window.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Pre-arrange data sharing protocols, streamline third-party verification procedures, and leverage SBP\u2019s existing microfinance department for rapid disbursement approvals.",
+      "evidence": "Annex 1 Results Framework: CRF liquidity which is deployed to originate loans within 60 days of qualifying floods"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is Substantial. The political context in Pakistan remains fluid. However, there has been significant decline in political uncertainty and associated policy instability in recent months, especially in the backdrop of the general elections. Given that a new government took the helm recently and the fact that policy priorities are still being defined, political risks, in particular in the context of the project, remain substantial.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In the implementation stage, the risks will be mitigated through frequent monitoring and oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is High. While fiscal consolidation measures have supported short-term stabilization, macroeconomic risks remain high amid a high debt burden (72 percent of GDP), heavy financial sector exposure to government debt, large external financing needs, weak confidence, and little progress with structural reforms. Significant risks include potential worsening of external conditions, further natural disasters, and a slowdown or reversals in policy adjustment.",
+      "category": "external",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Risks are partly mitigated by government commitment to implementation of reforms under the ongoing International Monetary Fund program, World Bank support to structural policy reforms in the fiscal and power sectors, strong government commitment to the reforms supported by the operation, and the availability of dedicated World Bank technical assistance to implement key reforms."
+    }
+  ]
+}

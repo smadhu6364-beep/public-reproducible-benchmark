@@ -1,0 +1,135 @@
+{
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T15:51:50.968363+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the Project\n- Project Objective: Enhance agricultural productivity of small and medium-scale farmers and improve value addition along priority value chains in Participating States.\n- Scope: Phased intervention across initial 6 states (Cross River, Enugu, Kaduna, Kano, Lagos, Kogi) expanding up to 3 additional states; targets 60,000 direct beneficiaries (35% women) and 300,000 indirect farm household members across priority value chains (rice, maize, cassava, wheat, cocoa, cashew, poultry, aquaculture, horticulture).\n- Components:\n  1. Component 1: Production and Productivity Enhancement (US$40m)\n  2. Component 2: Primary Processing, Value Addition, Post-Harvest Management and Women and Youth Empowerment (US$92m)\n  3. Component 3: Infrastructure Support to Agri-business Clusters (US$40m)\n  4. Component 4: Technical Assistance, Knowledge Management and Communication (US$10.5m)\n  5. Component 5: Project Management and Coordination (US$17.5m)\n- Delivery Model: Investment Project Financing (100% IDA financing) implemented via Federal Ministry of Agriculture and Rural Development (FMARD), National Coordination Office (NCO), State Coordination Offices (SCOs), and existing State Financial Management Units (PFMUs/FPFMD), delivering matching grants, infrastructure, and technical assistance.\n- Timeline: Start Date 23-Mar-2017; Expected Effectiveness 31-Oct-2017; Expected Closing Date 30-Sep-2023.\n- Total Budget: US$200.00 million (IDA Credit).\n- Key Stakeholders: FMARD, Federal Ministry of Finance, State Ministries of Agriculture, NCO, SCOs, PFMUs, small and medium producers, commercial agribusiness off-takers, research institutions.\n- External Dependencies: Subnational government participation, state-level institutional capacity, macroeconomic volatility (oil revenues), private sector buyer integration.\n\nStep 2 - Category Sweep\n- technical: Low state procurement capacity (PAD para 89); Risk of adulterated or low-quality agro-inputs supplied to farmers (PAD Annex 2 para 28).\n- financial: Financial management risk of unretired advances and inadequate expenditure documentation in PFMUs/FPFMD (PAD para 88); Sensitivity of farm enterprise returns to output price decreases (PAD para 80 / Annex 5 para 8).\n- schedule: Delay in contract approvals due to high-level state/federal executive approval thresholds (PAD para 89).\n- stakeholder: Producer-buyer contract failure or weak integration in business alliances (PAD para 22); Gender disparity in access to land, inputs, and financial services (PAD para 8).\n- political_regulatory: Erratic tariff policies and cross-border smuggling affecting domestic crop competitiveness (PAD Annex 6).\n- environmental: Environmental contamination from pesticide/fertilizer runoff and civil works waste (PAD para 99); Involuntary land acquisition or restricted land access due to infrastructure investments (PAD para 100d).\n- organizational: Multi-layered implementation governance across national and state offices (PAD Annex 3 para 16); Transition delays in competitive recruitment and deployment of PIU staff (PAD para 41).\n- external: State-level fiscal crunch and tension resulting from national oil price shocks (PAD para 2).\n\nStep 3 - Evidence Filter\nAll candidate risks are directly supported by exact statements in Report No: PAD1114. None are assumed or extrapolated beyond the document text.\n\nStep 4 - Assess\nEach risk is assigned Likelihood (1-5) and Impact (1-5), supported by evidence and assigned concrete, non-generic mitigations stated in or derived directly from project design.\n\nStep 5 - Consolidate\nConsolidated into 13 distinct, well-evidenced risks spanning all mandatory risk categories.\n\nFINAL JSON:\n{\"project_id\":\"P-NGA-AgroProcessingLivelihood\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Financial management control breakdown due to unretired travel advances and inadequate documentation of eligible expenditures in PFMUs and FPFMD.\",\"category\":\"financial\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Implement an enhanced accountability framework in the Financial Procedures Manual, including strict acquittal rules for travel advances and risk-based internal auditing.\",\"evidence\":\"The key issues noted within the PFMUs and FPFMD are unretired advances and inadequate documentation of the eligible expenditures incurred.\"},{\"risk_id\":\"R02\",\"description\":\"Sensitivity of farm enterprise financial viability to reductions in agricultural output market prices.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Establish business alliances and forward off-take contracts with price-smoothing arrangements, alongside market information platforms to help farmers time sales.\",\"evidence\":\"The project is highly robust to increase in prices of inputs (cost) while being sensitive to a reduction in output prices (benefits).\"},{\"risk_id\":\"R03\",\"description\":\"Low procurement implementation capacity and lack of standardized procurement tools across state coordination offices.\",\"category\":\"technical\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Recruit experienced procurement officers and hire an external procurement consultant to build capacity across NCO and SCOs under Bank oversight.\",\"evidence\":\"The procurement capacity is still considered low and most of the states do not have procurement tools in place.\"},{\"risk_id\":\"R04\",\"description\":\"Proliferation of adulterated or low-quality seeds, fertilizers, and agro-chemicals in domestic input markets.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Strengthen capacity of regulatory bodies (Seed Council, Fertilizer Department) for input quality assurance and publish accredited lists of agro-dealers.\",\"evidence\":\"support to FMARD in improving quality control of inputs and information to farmers on input markets and agro-dealers\"},{\"risk_id\":\"R05\",\"description\":\"Delays in contract execution caused by high-level pre-determined contract approval thresholds at State Executive Council and Federal Executive Council levels.\",\"category\":\"schedule\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Establish streamlined contract review schedules and engage State Steering Committees early to fast-track contract award approvals.\",\"evidence\":\"approval of contract awards at a pre-determined threshold is the prerogative of the Governor and the State Executive Council\"},{\"risk_id\":\"R06\",\"description\":\"Coordination bottlenecks and operational friction across multiple federal and state implementation structures.\",\"category\":\"organizational\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Enforce standard operating procedures defined in the Project Implementation Manual and conduct joint quarterly technical review meetings.\",\"evidence\":\"inherent risks and issues of multiple implementation levels\"},{\"risk_id\":\"R07\",\"description\":\"Delays in project execution during the 18-month competitive recruitment and replacement of existing implementation staff.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Maintain temporary transition arrangements using existing CADP staff while expediting competitive recruitment under World Bank review.\",\"evidence\":\"selection and replacement of CADP staff will be completed, following the agreed selection procedures in compliance with World Bank policies\"},{\"risk_id\":\"R08\",\"description\":\"Inability or failure of smallholders and commercial buyers to sustain business alliance contracts and out-grower market linkages.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Provide dedicated technical assistance, business planning support, and third-party facilitation to structure legally sound, mutually beneficial out-grower contracts.\",\"evidence\":\"inability of buyers and sellers to successfully integrate into local, national, and/or international value chains market\"},{\"risk_id\":\"R09\",\"description\":\"Persistent gender gaps limiting female farmers' access to land, agricultural inputs, finance, and productive assets.\",\"category\":\"stakeholder\",\"likelihood\":4,\"impact\":3,\"mitigation\":\"Execute a dedicated Women and Youth Empowerment sub-component providing targeted start-up grants, mentorship, and gender tracker monitoring.\",\"evidence\":\"women in Nigeria, compared with men, have relatively limited access to productive agricultural land, inputs and services.\"},{\"risk_id\":\"R10\",\"description\":\"Soil, surface water, and habitat contamination resulting from agricultural chemical runoffs and small civil works waste.\",\"category\":\"environmental\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Implement the Environmental and Social Management Framework (ESMF) and Integrated Pest Management Plan (IPMP) with mandatory site-specific screening.\",\"evidence\":\"The adverse impact could include contamination of soils and surface water, waste generation, dust pollution, disruption in natural habitats\"},{\"risk_id\":\"R11\",\"description\":\"Involuntary land acquisition or restriction of common land access caused by infrastructure investments and aggregation center construction.\",\"category\":\"environmental\",\"likelihood\":2,\"impact\":4,\"mitigation\":\"Screen all infrastructure sites using the Resettlement Policy Framework (RPF) and prepare Resettlement Action Plans (RAPs) with full compensation prior to works.\",\"evidence\":\"infrastructure investments could result in involuntary re-settlement and land requisition\"},{\"risk_id\":\"R12\",\"description\":\"Macroeconomic downturn and state government liquidity crunches caused by national oil price shocks.\",\"category\":\"external\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Structure project financing with 100% IDA funding to eliminate state counterpart funding dependencies and implement performance-based resource allocations.\",\"evidence\":\"The collapse of oil prices and the liquidity crunch revived tensions between federal government and subnational governments\"},{\"risk_id\":\"R13\",\"description\":\"Trade policy shifts and cross-border smuggling undermining the market competitiveness of domestic value chain commodities like rice.\",\"category\":\"political_regulatory\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Engage FMARD and Federal Steering Committee in policy dialogue to maintain stable agricultural trade policies and enhance domestic processing quality.\",\"evidence\":\"Erratic protectionist tariffs, which encourage smuggling of rice across borders\"}]}",
+  "parsed_risks": {
+    "project_id": "P-NGA-AgroProcessingLivelihood",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Financial management control breakdown due to unretired travel advances and inadequate documentation of eligible expenditures in PFMUs and FPFMD.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Implement an enhanced accountability framework in the Financial Procedures Manual, including strict acquittal rules for travel advances and risk-based internal auditing.",
+        "evidence": "The key issues noted within the PFMUs and FPFMD are unretired advances and inadequate documentation of the eligible expenditures incurred."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Sensitivity of farm enterprise financial viability to reductions in agricultural output market prices.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish business alliances and forward off-take contracts with price-smoothing arrangements, alongside market information platforms to help farmers time sales.",
+        "evidence": "The project is highly robust to increase in prices of inputs (cost) while being sensitive to a reduction in output prices (benefits)."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Low procurement implementation capacity and lack of standardized procurement tools across state coordination offices.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Recruit experienced procurement officers and hire an external procurement consultant to build capacity across NCO and SCOs under Bank oversight.",
+        "evidence": "The procurement capacity is still considered low and most of the states do not have procurement tools in place."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Proliferation of adulterated or low-quality seeds, fertilizers, and agro-chemicals in domestic input markets.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Strengthen capacity of regulatory bodies (Seed Council, Fertilizer Department) for input quality assurance and publish accredited lists of agro-dealers.",
+        "evidence": "support to FMARD in improving quality control of inputs and information to farmers on input markets and agro-dealers"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays in contract execution caused by high-level pre-determined contract approval thresholds at State Executive Council and Federal Executive Council levels.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish streamlined contract review schedules and engage State Steering Committees early to fast-track contract award approvals.",
+        "evidence": "approval of contract awards at a pre-determined threshold is the prerogative of the Governor and the State Executive Council"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Coordination bottlenecks and operational friction across multiple federal and state implementation structures.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Enforce standard operating procedures defined in the Project Implementation Manual and conduct joint quarterly technical review meetings.",
+        "evidence": "inherent risks and issues of multiple implementation levels"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delays in project execution during the 18-month competitive recruitment and replacement of existing implementation staff.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain temporary transition arrangements using existing CADP staff while expediting competitive recruitment under World Bank review.",
+        "evidence": "selection and replacement of CADP staff will be completed, following the agreed selection procedures in compliance with World Bank policies"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inability or failure of smallholders and commercial buyers to sustain business alliance contracts and out-grower market linkages.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide dedicated technical assistance, business planning support, and third-party facilitation to structure legally sound, mutually beneficial out-grower contracts.",
+        "evidence": "inability of buyers and sellers to successfully integrate into local, national, and/or international value chains market"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Persistent gender gaps limiting female farmers' access to land, agricultural inputs, finance, and productive assets.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Execute a dedicated Women and Youth Empowerment sub-component providing targeted start-up grants, mentorship, and gender tracker monitoring.",
+        "evidence": "women in Nigeria, compared with men, have relatively limited access to productive agricultural land, inputs and services."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Soil, surface water, and habitat contamination resulting from agricultural chemical runoffs and small civil works waste.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement the Environmental and Social Management Framework (ESMF) and Integrated Pest Management Plan (IPMP) with mandatory site-specific screening.",
+        "evidence": "The adverse impact could include contamination of soils and surface water, waste generation, dust pollution, disruption in natural habitats"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Involuntary land acquisition or restriction of common land access caused by infrastructure investments and aggregation center construction.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Screen all infrastructure sites using the Resettlement Policy Framework (RPF) and prepare Resettlement Action Plans (RAPs) with full compensation prior to works.",
+        "evidence": "infrastructure investments could result in involuntary re-settlement and land requisition"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Macroeconomic downturn and state government liquidity crunches caused by national oil price shocks.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Structure project financing with 100% IDA funding to eliminate state counterpart funding dependencies and implement performance-based resource allocations.",
+        "evidence": "The collapse of oil prices and the liquidity crunch revived tensions between federal government and subnational governments"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Trade policy shifts and cross-border smuggling undermining the market competitiveness of domestic value chain commodities like rice.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage FMARD and Federal Steering Committee in policy dialogue to maintain stable agricultural trade policies and enhance domestic processing quality.",
+        "evidence": "Erratic protectionist tariffs, which encourage smuggling of rice across borders"
+      }
+    ]
+  },
+  "parse_error": null
+}
