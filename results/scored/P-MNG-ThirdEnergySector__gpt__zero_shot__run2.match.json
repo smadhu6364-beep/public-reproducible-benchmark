@@ -1,0 +1,228 @@
+{
+  "run_file": "P-MNG-ThirdEnergySector__gpt__zero_shot__run2.json",
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "gpt",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R04",
+      "similarity": 0.644,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R05",
+      "similarity": 0.564,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R03",
+      "similarity": 0.49,
+      "gen_category": "external",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R01",
+      "similarity": 0.485,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Construction may be delayed if the 220\u202fkV line is not completed before the winter season, forcing work to pause until the next construction window.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Advance procurement and mobilization to start civil works early; develop a detailed seasonal work plan and secure winter\u2011grade materials to allow limited winter construction.",
+      "evidence": "If it cannot be completed before winter, the Project will have more delays with waiting for the next construction season."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Limited local capacity to supply 220\u202fkV poles, conductors and related equipment may cause supply gaps and quality issues.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Engage qualified international suppliers early, include quality\u2011control clauses in contracts, and provide technical assistance to develop local fabricators.",
+      "evidence": "no local company who can produce metal poles and conductors meeting the standards for 220kV lines and equipment for substations."
+    },
+    {
+      "risk_id": "R03",
+      "description": "New PMO staff may lack experience with World Bank fiduciary procedures, risking improper use of loan proceeds.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit experienced financial officers, conduct intensive FM training, and implement a robust FMM with Bank oversight during the first year.",
+      "evidence": "PMO is not yet in place and no financial management staff has been appointed; lack of experience may cause FM risks."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Budget overruns could arise from heavy reliance on imported construction materials and a 40% unqualified material rate in the local market.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement strict material quality assurance, pre\u2011qualify suppliers, and include contingency buffers in the budget for price escalations.",
+      "evidence": "75\u201180% of construction materials are sourced from outside; 40% of construction materials were found unqualified in the local market."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bird collisions and avian biodiversity impacts may occur despite route realignment, affecting environmental compliance.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Install flight diverters, conduct regular avian monitoring, and adapt tower designs to minimize collision risk.",
+      "evidence": "Transmission lines in Mongolia often involve bird collision and other biodiversity issues; BMP addresses potential impacts on avifauna."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Construction activities could temporarily restrict herders' access to pasture and water, leading to community grievances.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Develop a community liaison plan, schedule works to avoid peak grazing periods, and provide alternative water points where needed.",
+      "evidence": "temporary restriction of access to resources by local herders (for example, pasture, wells, etc.)"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Extreme weather (high winds, snow, earthquakes, floods) may damage transmission towers, compromising grid reliability.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Apply enhanced engineering standards for wind loading, snow, freezing, seismic and flood resistance in tower design and conduct periodic inspections.",
+      "evidence": "enhanced engineering and design standards that consider weather and natural hazards in the tower structures design."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Changes in government officials after elections could disrupt project continuity and decision\u2011making.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain regular briefings with incoming officials, secure formal commitments in the PSC charter, and document implementation milestones.",
+      "evidence": "Potential changes in Government officials involved in project activities due to election cycle."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Current electricity tariffs are below cost, risking utility financial deficits that may affect loan repayment and project sustainability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Support tariff reform studies, implement cost\u2011reflective pricing mechanisms, and establish a reserve fund to cover short\u2011term deficits.",
+      "evidence": "current electricity price is below the cost of service causing financial difficulties for sector utilities; deficit could reach 36% of system costs."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Private investors may develop less renewable capacity than expected, reducing the project's private\u2011capital\u2011enabling impact.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Offer risk\u2011mitigation instruments (e.g., guarantees), streamline curtailment rules, and provide market\u2011information support to attract investors.",
+      "evidence": "only 100\u202fMW will be developed by private investors, translating to US$110\u202fmillion in private capital enabling."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Perceived corruption and high\u2011level official interference in procurement could cause delays and reputational risk.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Adopt transparent e\u2011GP procurement, enforce conflict\u2011of\u2011interest policies, and involve independent observers in evaluation committees.",
+      "evidence": "High level of corruption perception. Interference of the high-level officials in procurement decision making which leads to delays."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Administrative and technical capacity constraints of implementing agencies may lead to implementation delays.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish the PMO early, provide targeted capacity\u2011building workshops, and embed an Owner\u2019s Engineer to fill expertise gaps.",
+      "evidence": "previous infrastructure projects in Mongolia have experienced implementation delays due to the administrative and technical capacity constraints of the implementing agencies."
+    },
+    {
+      "risk_id": "R13",
+      "description": "The existing single\u2011circuit Baganuur\u2011Choir line is a bottleneck, risking supply outages until the new line is operational.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Prioritize rapid construction of the double\u2011circuit line and implement interim load\u2011shedding protocols to manage outages.",
+      "evidence": "Baganuur\u2011Choir corridor remains as a bottleneck for power transmission because it lacks redundancy with only a single circuit 220kV line."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Pandemic\u2011related border closures could disrupt import of construction materials, inflating costs and causing schedule slips.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Maintain buffer stocks of critical materials, diversify supplier base, and monitor global logistics to adjust procurement timelines.",
+      "evidence": "any potential risks related to the pandemic or border closures could have a significant impact on the sector, potentially leading to increased costs and delays."
+    },
+    {
+      "risk_id": "R15",
+      "description": "If audit quality is poor or findings are not acted upon, financial mismanagement may go undetected.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Engage a reputable external auditor, enforce timely implementation of audit recommendations, and conduct periodic internal audits.",
+      "evidence": "Unqualified auditors may audit the project implementation. Poor follow\u2011up on audit findings."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risks are rated Substantial. The parliamentary election was held in June 2024 and a new coalition government was formed, with representation of all three major political parties. While there may be risks of disagreement on the approval of individual projects, these risks will be mitigated by the strong alignment of the proposed operation with the NRP and the new Government Action Plan for 2024-2028.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Continued engagement with key stakeholders, including government and the parliament, through ongoing analytical and technical support on VRE integration and energy sector reform, will help mitigate risks going forward. The Development Partner Group, co-chaired by the World Bank and UNDP, will also offer a donor coordination platform to maintain political momentum for RE integration."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The macroeconomic risk is rated Substantial. Mongolia's economic outlook is dependent on global macroeconomic factors, in particular commodity prices. Despite recent positive short-term developments from coal and agricultural exports, Mongolia still needs to strengthen fiscal and external buffers to respond to future shocks and continue reforms aimed at diversifying the economy.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "To mitigate these risks and manage external balances, the World Bank has been, and will continue to be, supporting the authorities in restoring fiscal and external buffers through analytical and advisory work."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The sector strategies and policies risk is rated Substantial. Substantial risk still exists due to institutional fragmentation, lack of policies to promote RE projects, and lack of clear commitment of reforms, especially related to tariff reforms that are crucial to make the sector viable and be able to refinance projects.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigation measures include actively engaging in multi-stakeholder coordination meetings and providing technical advice and capacity building to key stakeholders."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The institutional capacity for implementation and sustainability risk is rated Substantial. The implementing agency MOE and NPTG have experience implementing World Bank-funded projects; however, there is a substantial risk that newly hired PMO staff may not have sufficient capacity, which could potentially lead to implementation delays.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The PMO will be strengthened with experienced consultants and targeted training and capacity building. Mitigating measures include the World Bank's scrutiny of PMO members' selection, including a review of the TOR and providing no objection to the qualification criteria of the staff."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Fiduciary risk is rated Substantial. There are substantial risks due to the reliance of MOE on a newly constituted PMO, which may cause delays in processing payments, conducting IFRs, and other reporting requirements; the construction sector in Mongolia is often subject to delays and cost overruns. Potential procurement risks include (i) likelihood of time and cost overruns due to weak contract management capacity, and (ii) significant procurement delays due to delayed initiation of procurement and establishment of needed staffing arrangements.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Capacity building through customized training and TA is a central element of the Project, along with strong project supervision and contract management capacity building; MOE will continue to directly provide intensive support to the PMO. Procurement risks are mitigated by (a) establishing a PMO with appropriate procurement and technical staff per FIDIC contract standards; (b) clearly defined workflow in decision-making within the MOE/PMO procurement manual; and (c) extensive market engagement to stimulate market participation."
+    }
+  ]
+}

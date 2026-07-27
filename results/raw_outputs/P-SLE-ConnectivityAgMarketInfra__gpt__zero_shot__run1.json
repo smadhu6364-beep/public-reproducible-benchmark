@@ -1,0 +1,243 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:55:49.790350+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Severe flooding during construction could damage bridge foundations and delay works.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Apply flood\u2011resilient design, schedule critical works outside peak rainy season, and install temporary cofferdams.\",\n      \"evidence\": \"Component 2.1 description of flood\u2011adaptation measures for bridges (Annex\u202f5).\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Extreme heat may cause premature deterioration of road and bridge pavements.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Use heat\u2011resistant materials, incorporate expansion joints, and specify thermal design limits in specifications.\",\n      \"evidence\": \"Annex\u202f5 climate\u2011adaptation measures mention weather\u2011resistant materials for bridges and roads.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Fragmented institutional responsibilities could lead to coordination failures among ministries and agencies.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen NPSC oversight, define clear roles in the Project Implementation Manual, and hold monthly coordination meetings.\",\n      \"evidence\": \"Section\u202f15 notes institutional fragmentation and overlapping responsibilities.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"The PCIU lacks an established procurement unit and qualified staff, risking ineffective procurement.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit qualified procurement specialists before effectiveness, provide World Bank procurement training, and set up a record\u2011keeping system.\",\n      \"evidence\": \"Annex\u202f6 procurement risk assessment: \u201cPCIU is yet to be established and the capacity of procurement staff\u2026 low.\u201d\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"MTA\u2019s limited experience with World Bank financial\u2011management procedures may cause compliance gaps.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire a FM specialist, develop a FM manual, and conduct targeted FM training for staff.\",\n      \"evidence\": \"Annex\u202f7 FM assessment cites \u201cInsufficient experience of MTA with the World Bank\u2019s FM procedures.\u201d\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"A US$7.1\u202fmillion financing gap for four SCADeP bridges could postpone their completion.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure the GoSL\u2019s pledged fiscal contribution, explore private\u2011sector bridge financing, and activate contingency funds if needed.\",\n      \"evidence\": \"Component\u202f2 sub\u2011component\u202fb description of the US$7.1\u202fm gap and GoSL commitment.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Prolonged rainy seasons may suspend civil works, extending the project schedule.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt incremental launching construction method, build weather buffers into the timeline, and monitor forecasts closely.\",\n      \"evidence\": \"Section\u202f9 notes the incremental launching method to avoid delays from rainy seasons.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Corruption or fraud in procurement could inflate costs and undermine project integrity.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Implement transparent bidding, use STEP for monitoring, enforce anti\u2011corruption training, and conduct regular PPRs.\",\n      \"evidence\": \"Annex\u202f6 lists fraud and corruption risks and mitigation measures.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Limited competition in tendering may lead to higher prices and lower quality.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Aggregate small packages, run outreach to private sector, and publish clear tender documents.\",\n      \"evidence\": \"Annex\u202f6 procurement risk assessment mentions \u201cInsufficient competition in procurement.\u201d\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Absence of a systematic road\u2011safety database hampers evidence\u2011based safety policy.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a national road\u2011safety information system and integrate data collection into the RAMS platform.\",\n      \"evidence\": \"Section\u202f8 states \u201cThere is no systematic database on road safety.\u201d\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Gender gaps may limit women\u2019s access to transport services and market facilities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Incorporate gender\u2011sensitive design (lighting, sidewalks, women\u2011only spaces), set hiring targets, and run outreach through women\u2019s groups.\",\n      \"evidence\": \"Gender sections describe gender\u2011informed designs for components\u202f1\u20113.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Low mobile\u2011phone penetration among rural women could reduce uptake of the AMIS mobile app.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide community\u2011based information channels, conduct digital\u2011literacy trainings, and use radio/TV to disseminate market data.\",\n      \"evidence\": \"Section on AMIS notes limited phone access for rural women and need for alternative channels.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Insufficient post\u2011completion funding may jeopardize bridge and road maintenance.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Establish bridge management system with cost\u2011recovery mechanisms, train local councils on revenue collection, and embed O&M budgets in RMFA.\",\n      \"evidence\": \"Critical Assumption\u202f2: \u201cFunding is available and project bridges and link roads are adequately maintained after project closing.\u201d\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Increased flood frequency could cause scour around bridge piers, threatening structural integrity.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Design with right\u2011sized drains, install scour protection, and schedule regular underwater inspections.\",\n      \"evidence\": \"Component\u202f2.1 design includes scour protection and flood\u2011resilient standards.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Unclear CERC activation procedures may delay emergency response funding.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Finalize CERC manual and Emergency Action Plan before implementation, train staff on trigger criteria.\",\n      \"evidence\": \"Component\u202f5 description of CERC and need for manual.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Delay in establishing the National Project Steering Committee could weaken project oversight.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Meet the 60\u2011day covenant, allocate resources, and appoint members promptly after effectiveness.\",\n      \"evidence\": \"Legal covenants schedule\u202f2, Section\u202fI.A.2(a) require NPSC within 60\u202fdays.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Inadequate climate data may lead to under\u2011designed flood protection for bridges.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Use climate\u2011proofed design parameters, update flood quantification methods, and apply safety factors.\",\n      \"evidence\": \"Annex\u202f5 notes need to factor climate change into design flood levels.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Bus fleet expansion may not keep pace with rising urban travel demand, worsening congestion.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement lease\u2011operate\u2011own scheme, prioritize bus lanes, and regularly update demand forecasts.\",\n      \"evidence\": \"Component\u202f1 sub\u2011component\u202fc describes fleet renewal and demand growth to 750,000 trips/day by\u202f2033.\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"If market infrastructure is delayed, post\u2011harvest losses could remain high, reducing farmer incomes.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Fast\u2011track construction, monitor milestones weekly, and allocate contingency funds for critical path items.\",\n      \"evidence\": \"Component\u202f3 notes post\u2011harvest losses of 20\u201130\u202f% and need for timely market upgrades.\"\n    },\n    {\n      \"risk_id\": \"R20\",\n      \"description\": \"Sexual harassment incidents on public transport may deter women\u2019s use of services.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Install CCTV on buses, set up a hotline, conduct SH awareness training for operators.\",\n      \"evidence\": \"Component\u202f1 sub\u2011component\u202fc mentions CCTV and SH response measures.\"\n    },\n    {\n      \"risk_id\": \"R21\",\n      \"description\": \"Weak grievance redress mechanisms could lead to community dissatisfaction and project delays.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a transparent GRM, publicize procedures, and ensure timely response within set timelines.\",\n      \"evidence\": \"Section\u202fV outlines Grievance Redress Services.\"\n    },\n    {\n      \"risk_id\": \"R22\",\n      \"description\": \"High inflation and fiscal pressures may erode real project costs and affect budgeting.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Include cost\u2011escalation clauses, monitor macro\u2011economic indicators, and adjust budgets annually.\",\n      \"evidence\": \"Country Context notes \u201csoaring inflation driven by global supply shocks\u201d and fiscal pressures.\"\n    },\n    {\n      \"risk_id\": \"R23\",\n      \"description\": \"Limited capacity of local contractors may affect construction quality and timelines.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct pre\u2011qualification, provide technical training, and assign qualified supervision consultants.\",\n      \"evidence\": \"Annex\u202f6 procurement risk assessment cites \u201clack of knowledge in using World Bank\u2019s Procurement Regulations.\u201d\"\n    },\n    {\n      \"risk_id\": \"R24\",\n      \"description\": \"Zero\u2011emission bus technology may be infeasible, limiting GHG mitigation benefits.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Perform feasibility study, adopt hybrid or high\u2011efficiency diesel buses if electric not viable, and revisit later.\",\n      \"evidence\": \"Component\u202f1 notes bus fleet may use zero\u2011emission or hybrid buses if technically feasible.\"\n    },\n    {\n      \"risk_id\": \"R25\",\n      \"description\": \"Weak data management for BMS/RAMS could impair asset\u2011management decisions.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop GIS\u2011based BMS, train staff, and integrate with RAMS for real\u2011time monitoring.\",\n      \"evidence\": \"Component\u202f2 sub\u2011component\u202fc describes establishment of climate\u2011resilient BMS.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Severe flooding during construction could damage bridge foundations and delay works.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Apply flood\u2011resilient design, schedule critical works outside peak rainy season, and install temporary cofferdams.",
+        "evidence": "Component 2.1 description of flood\u2011adaptation measures for bridges (Annex\u202f5)."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Extreme heat may cause premature deterioration of road and bridge pavements.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Use heat\u2011resistant materials, incorporate expansion joints, and specify thermal design limits in specifications.",
+        "evidence": "Annex\u202f5 climate\u2011adaptation measures mention weather\u2011resistant materials for bridges and roads."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Fragmented institutional responsibilities could lead to coordination failures among ministries and agencies.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen NPSC oversight, define clear roles in the Project Implementation Manual, and hold monthly coordination meetings.",
+        "evidence": "Section\u202f15 notes institutional fragmentation and overlapping responsibilities."
+      },
+      {
+        "risk_id": "R04",
+        "description": "The PCIU lacks an established procurement unit and qualified staff, risking ineffective procurement.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit qualified procurement specialists before effectiveness, provide World Bank procurement training, and set up a record\u2011keeping system.",
+        "evidence": "Annex\u202f6 procurement risk assessment: \u201cPCIU is yet to be established and the capacity of procurement staff\u2026 low.\u201d"
+      },
+      {
+        "risk_id": "R05",
+        "description": "MTA\u2019s limited experience with World Bank financial\u2011management procedures may cause compliance gaps.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire a FM specialist, develop a FM manual, and conduct targeted FM training for staff.",
+        "evidence": "Annex\u202f7 FM assessment cites \u201cInsufficient experience of MTA with the World Bank\u2019s FM procedures.\u201d"
+      },
+      {
+        "risk_id": "R06",
+        "description": "A US$7.1\u202fmillion financing gap for four SCADeP bridges could postpone their completion.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure the GoSL\u2019s pledged fiscal contribution, explore private\u2011sector bridge financing, and activate contingency funds if needed.",
+        "evidence": "Component\u202f2 sub\u2011component\u202fb description of the US$7.1\u202fm gap and GoSL commitment."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Prolonged rainy seasons may suspend civil works, extending the project schedule.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Adopt incremental launching construction method, build weather buffers into the timeline, and monitor forecasts closely.",
+        "evidence": "Section\u202f9 notes the incremental launching method to avoid delays from rainy seasons."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Corruption or fraud in procurement could inflate costs and undermine project integrity.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Implement transparent bidding, use STEP for monitoring, enforce anti\u2011corruption training, and conduct regular PPRs.",
+        "evidence": "Annex\u202f6 lists fraud and corruption risks and mitigation measures."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Limited competition in tendering may lead to higher prices and lower quality.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Aggregate small packages, run outreach to private sector, and publish clear tender documents.",
+        "evidence": "Annex\u202f6 procurement risk assessment mentions \u201cInsufficient competition in procurement.\u201d"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Absence of a systematic road\u2011safety database hampers evidence\u2011based safety policy.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a national road\u2011safety information system and integrate data collection into the RAMS platform.",
+        "evidence": "Section\u202f8 states \u201cThere is no systematic database on road safety.\u201d"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Gender gaps may limit women\u2019s access to transport services and market facilities.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Incorporate gender\u2011sensitive design (lighting, sidewalks, women\u2011only spaces), set hiring targets, and run outreach through women\u2019s groups.",
+        "evidence": "Gender sections describe gender\u2011informed designs for components\u202f1\u20113."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Low mobile\u2011phone penetration among rural women could reduce uptake of the AMIS mobile app.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide community\u2011based information channels, conduct digital\u2011literacy trainings, and use radio/TV to disseminate market data.",
+        "evidence": "Section on AMIS notes limited phone access for rural women and need for alternative channels."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Insufficient post\u2011completion funding may jeopardize bridge and road maintenance.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Establish bridge management system with cost\u2011recovery mechanisms, train local councils on revenue collection, and embed O&M budgets in RMFA.",
+        "evidence": "Critical Assumption\u202f2: \u201cFunding is available and project bridges and link roads are adequately maintained after project closing.\u201d"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Increased flood frequency could cause scour around bridge piers, threatening structural integrity.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Design with right\u2011sized drains, install scour protection, and schedule regular underwater inspections.",
+        "evidence": "Component\u202f2.1 design includes scour protection and flood\u2011resilient standards."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Unclear CERC activation procedures may delay emergency response funding.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Finalize CERC manual and Emergency Action Plan before implementation, train staff on trigger criteria.",
+        "evidence": "Component\u202f5 description of CERC and need for manual."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Delay in establishing the National Project Steering Committee could weaken project oversight.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Meet the 60\u2011day covenant, allocate resources, and appoint members promptly after effectiveness.",
+        "evidence": "Legal covenants schedule\u202f2, Section\u202fI.A.2(a) require NPSC within 60\u202fdays."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Inadequate climate data may lead to under\u2011designed flood protection for bridges.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Use climate\u2011proofed design parameters, update flood quantification methods, and apply safety factors.",
+        "evidence": "Annex\u202f5 notes need to factor climate change into design flood levels."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Bus fleet expansion may not keep pace with rising urban travel demand, worsening congestion.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement lease\u2011operate\u2011own scheme, prioritize bus lanes, and regularly update demand forecasts.",
+        "evidence": "Component\u202f1 sub\u2011component\u202fc describes fleet renewal and demand growth to 750,000 trips/day by\u202f2033."
+      },
+      {
+        "risk_id": "R19",
+        "description": "If market infrastructure is delayed, post\u2011harvest losses could remain high, reducing farmer incomes.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Fast\u2011track construction, monitor milestones weekly, and allocate contingency funds for critical path items.",
+        "evidence": "Component\u202f3 notes post\u2011harvest losses of 20\u201130\u202f% and need for timely market upgrades."
+      },
+      {
+        "risk_id": "R20",
+        "description": "Sexual harassment incidents on public transport may deter women\u2019s use of services.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Install CCTV on buses, set up a hotline, conduct SH awareness training for operators.",
+        "evidence": "Component\u202f1 sub\u2011component\u202fc mentions CCTV and SH response measures."
+      },
+      {
+        "risk_id": "R21",
+        "description": "Weak grievance redress mechanisms could lead to community dissatisfaction and project delays.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Establish a transparent GRM, publicize procedures, and ensure timely response within set timelines.",
+        "evidence": "Section\u202fV outlines Grievance Redress Services."
+      },
+      {
+        "risk_id": "R22",
+        "description": "High inflation and fiscal pressures may erode real project costs and affect budgeting.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Include cost\u2011escalation clauses, monitor macro\u2011economic indicators, and adjust budgets annually.",
+        "evidence": "Country Context notes \u201csoaring inflation driven by global supply shocks\u201d and fiscal pressures."
+      },
+      {
+        "risk_id": "R23",
+        "description": "Limited capacity of local contractors may affect construction quality and timelines.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct pre\u2011qualification, provide technical training, and assign qualified supervision consultants.",
+        "evidence": "Annex\u202f6 procurement risk assessment cites \u201clack of knowledge in using World Bank\u2019s Procurement Regulations.\u201d"
+      },
+      {
+        "risk_id": "R24",
+        "description": "Zero\u2011emission bus technology may be infeasible, limiting GHG mitigation benefits.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Perform feasibility study, adopt hybrid or high\u2011efficiency diesel buses if electric not viable, and revisit later.",
+        "evidence": "Component\u202f1 notes bus fleet may use zero\u2011emission or hybrid buses if technically feasible."
+      },
+      {
+        "risk_id": "R25",
+        "description": "Weak data management for BMS/RAMS could impair asset\u2011management decisions.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop GIS\u2011based BMS, train staff, and integrate with RAMS for real\u2011time monitoring.",
+        "evidence": "Component\u202f2 sub\u2011component\u202fc describes establishment of climate\u2011resilient BMS."
+      }
+    ]
+  },
+  "parse_error": null
+}

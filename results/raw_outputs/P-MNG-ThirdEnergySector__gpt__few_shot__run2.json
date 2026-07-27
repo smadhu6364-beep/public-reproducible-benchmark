@@ -1,0 +1,180 @@
+{
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:47:46.096452+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-MNG-ThirdEnergySector\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Construction may be delayed if the transmission line is not completed before the winter construction season.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Advance procurement and civil works planning; start activities early to align with the short construction season and include winter contingency.\",\n      \"evidence\": \"If it cannot be completed before winter, the Project will have more delays with waiting for the next construction season.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient local capacity to manufacture 220\u202fkV poles and conductors could cause procurement bottlenecks.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct early market engagement, pre\u2011qualify suppliers, and arrange imports of certified components with strict quality\u2011assurance clauses.\",\n      \"evidence\": \"no local company who can produce metal poles and conductors meeting the standards for 220kV lines.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"New Project Management Office (PMO) staff lack experience in World Bank financial management procedures.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit a qualified financial officer before loan signing and provide intensive FM training with ongoing Bank support.\",\n      \"evidence\": \"PMO is not yet in place and no financial management staff has been appointed.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Weak budgeting and cost controls may lead to funds being used for unintended purposes.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement robust budgeting, quarterly variance analysis, and require PSC approval of any major re\u2011allocations.\",\n      \"evidence\": \"Poor budgeting: The project funds not used for the intended purposes.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Bird collisions and biodiversity impacts could arise from the new overhead transmission line.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the Bird Management Plan, install flight diverters, and monitor avifauna along the corridor.\",\n      \"evidence\": \"Transmission lines often involve bird collision and other biodiversity issues; a Bird Management Plan was prepared.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Construction activities may cause soil erosion, noise, and disturbance to local wildlife and communities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Apply erosion control measures, dust suppression, noise limits, and conduct community notification prior to works.\",\n      \"evidence\": \"Construction ... heavy equipment and construction noise and disturbance on bird sensitive areas, soil erosion during minor civil work.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Temporary restriction of pasture and water access could affect local herders and raise social tensions.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a community liaison plan, provide compensation or alternative access, and schedule works to minimize disruption.\",\n      \"evidence\": \"Community safety during the construction phase, with temporary restriction of access to resources by local herders.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Grievances may not be resolved promptly, eroding community trust.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Publicize the GRM widely, train staff on response timelines, and monitor grievance logs for timely closure.\",\n      \"evidence\": \"The project level grievance redress mechanism (GRM) will replicate the mechanisms ... two\u2011stage approach.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Changes in government officials after elections could disrupt project continuity.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage promptly with incoming officials, secure written commitments, and embed continuity clauses in MoE agreements.\",\n      \"evidence\": \"Potential changes in Government officials involved in project activities due to election cycle.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Perceived corruption and high\u2011level interference in procurement may cause delays and reputational risk.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Adopt transparent procurement with independent evaluation, anti\u2011corruption safeguards, and regular monitoring by the Bank.\",\n      \"evidence\": \"High level of corruption perception. Interference of the high\u2011level officials in procurement decision making.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Design may not withstand extreme climate events, leading to premature failures.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply enhanced engineering standards for wind, snow, temperature, earthquake and flood as defined in the EHSG.\",\n      \"evidence\": \"Enhanced engineering and design standards that consider weather and natural hazards ... wind loading, earthquake and flood.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Heavy reliance on imported construction materials makes the project vulnerable to border closures or pandemic disruptions.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Identify alternative local suppliers, maintain buffer inventories, and monitor global logistics to adjust schedules as needed.\",\n      \"evidence\": \"75\u201180% of construction materials are sourced from outside the country; pandemic or border closures could have significant impact.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Occupational health and safety risks from live lines, work at height, and EMF exposure.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement strict OHS protocols, worker training, EMF monitoring, signage, and emergency procedures.\",\n      \"evidence\": \"OHS risks associated with live power lines, working at height, electric and magnetic fields (EMF).\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Delay or shortfall in counterpart funding could stall component\u20112 capacity\u2011building activities.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Establish an escrow account for counterpart funds, require quarterly reporting, and enforce contractual penalties for delays.\",\n      \"evidence\": \"Borrower shall provide ... counterpart funds ... in a timely manner, minimum amount $840,000.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Local contractors lack sufficient human resources and technical capacity, risking procurement delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct market sounding, provide targeted capacity\u2011building, and consider joint ventures with experienced foreign firms.\",\n      \"evidence\": \"Many local companies lack human resources; no local company can produce metal poles and conductors meeting standards.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Insufficient ongoing capacity building may limit sustainability of project outcomes.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a continuous training program, periodic competency assessments, and refresher courses for PMO staff.\",\n      \"evidence\": \"Capacity building activities ... moderate social risk; ongoing stakeholder engagement required for sustainability.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Private investors may not develop the expected volume of VRE projects, reducing financial returns.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Offer de\u2011risking instruments, guarantee grid access, and align tariff reforms to improve project bankability.\",\n      \"evidence\": \"Only 100\u202fMW expected private development; monetary estimate US$110\u202fmillion captured in results framework.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Audit findings may not be addressed, weakening financial controls and increasing misuse risk.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Create a formal audit\u2011follow\u2011up action plan, assign responsibility, and monitor implementation with Bank oversight.\",\n      \"evidence\": \"Poor follow\u2011up on audit findings: PMO does not address audit findings noted by the auditors.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-MNG-ThirdEnergySector",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Construction may be delayed if the transmission line is not completed before the winter construction season.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Advance procurement and civil works planning; start activities early to align with the short construction season and include winter contingency.",
+        "evidence": "If it cannot be completed before winter, the Project will have more delays with waiting for the next construction season."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient local capacity to manufacture 220\u202fkV poles and conductors could cause procurement bottlenecks.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct early market engagement, pre\u2011qualify suppliers, and arrange imports of certified components with strict quality\u2011assurance clauses.",
+        "evidence": "no local company who can produce metal poles and conductors meeting the standards for 220kV lines."
+      },
+      {
+        "risk_id": "R03",
+        "description": "New Project Management Office (PMO) staff lack experience in World Bank financial management procedures.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Recruit a qualified financial officer before loan signing and provide intensive FM training with ongoing Bank support.",
+        "evidence": "PMO is not yet in place and no financial management staff has been appointed."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Weak budgeting and cost controls may lead to funds being used for unintended purposes.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement robust budgeting, quarterly variance analysis, and require PSC approval of any major re\u2011allocations.",
+        "evidence": "Poor budgeting: The project funds not used for the intended purposes."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Bird collisions and biodiversity impacts could arise from the new overhead transmission line.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement the Bird Management Plan, install flight diverters, and monitor avifauna along the corridor.",
+        "evidence": "Transmission lines often involve bird collision and other biodiversity issues; a Bird Management Plan was prepared."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Construction activities may cause soil erosion, noise, and disturbance to local wildlife and communities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply erosion control measures, dust suppression, noise limits, and conduct community notification prior to works.",
+        "evidence": "Construction ... heavy equipment and construction noise and disturbance on bird sensitive areas, soil erosion during minor civil work."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Temporary restriction of pasture and water access could affect local herders and raise social tensions.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Develop a community liaison plan, provide compensation or alternative access, and schedule works to minimize disruption.",
+        "evidence": "Community safety during the construction phase, with temporary restriction of access to resources by local herders."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Grievances may not be resolved promptly, eroding community trust.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Publicize the GRM widely, train staff on response timelines, and monitor grievance logs for timely closure.",
+        "evidence": "The project level grievance redress mechanism (GRM) will replicate the mechanisms ... two\u2011stage approach."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Changes in government officials after elections could disrupt project continuity.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage promptly with incoming officials, secure written commitments, and embed continuity clauses in MoE agreements.",
+        "evidence": "Potential changes in Government officials involved in project activities due to election cycle."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Perceived corruption and high\u2011level interference in procurement may cause delays and reputational risk.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Adopt transparent procurement with independent evaluation, anti\u2011corruption safeguards, and regular monitoring by the Bank.",
+        "evidence": "High level of corruption perception. Interference of the high\u2011level officials in procurement decision making."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Design may not withstand extreme climate events, leading to premature failures.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply enhanced engineering standards for wind, snow, temperature, earthquake and flood as defined in the EHSG.",
+        "evidence": "Enhanced engineering and design standards that consider weather and natural hazards ... wind loading, earthquake and flood."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Heavy reliance on imported construction materials makes the project vulnerable to border closures or pandemic disruptions.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Identify alternative local suppliers, maintain buffer inventories, and monitor global logistics to adjust schedules as needed.",
+        "evidence": "75\u201180% of construction materials are sourced from outside the country; pandemic or border closures could have significant impact."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Occupational health and safety risks from live lines, work at height, and EMF exposure.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement strict OHS protocols, worker training, EMF monitoring, signage, and emergency procedures.",
+        "evidence": "OHS risks associated with live power lines, working at height, electric and magnetic fields (EMF)."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Delay or shortfall in counterpart funding could stall component\u20112 capacity\u2011building activities.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Establish an escrow account for counterpart funds, require quarterly reporting, and enforce contractual penalties for delays.",
+        "evidence": "Borrower shall provide ... counterpart funds ... in a timely manner, minimum amount $840,000."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Local contractors lack sufficient human resources and technical capacity, risking procurement delays.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct market sounding, provide targeted capacity\u2011building, and consider joint ventures with experienced foreign firms.",
+        "evidence": "Many local companies lack human resources; no local company can produce metal poles and conductors meeting standards."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Insufficient ongoing capacity building may limit sustainability of project outcomes.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement a continuous training program, periodic competency assessments, and refresher courses for PMO staff.",
+        "evidence": "Capacity building activities ... moderate social risk; ongoing stakeholder engagement required for sustainability."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Private investors may not develop the expected volume of VRE projects, reducing financial returns.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Offer de\u2011risking instruments, guarantee grid access, and align tariff reforms to improve project bankability.",
+        "evidence": "Only 100\u202fMW expected private development; monetary estimate US$110\u202fmillion captured in results framework."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Audit findings may not be addressed, weakening financial controls and increasing misuse risk.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Create a formal audit\u2011follow\u2011up action plan, assign responsibility, and monitor implementation with Bank oversight.",
+        "evidence": "Poor follow\u2011up on audit findings: PMO does not address audit findings noted by the auditors."
+      }
+    ]
+  },
+  "parse_error": null
+}

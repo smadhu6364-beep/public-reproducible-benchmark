@@ -1,0 +1,108 @@
+{
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:57:46.574628+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MNG-ThirdEnergySector\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in project implementation due to insufficient coordination and communication among the PMO, MOE, MOF, and relevant implementing agencies.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear project implementation structure and ensure regular communication among stakeholders.\",\n      \"evidence\": \"Implementation Arrangements: Contract implementation may suffer delays.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial management risks, including poor budgeting, accounting, and internal control.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare a detailed Financial Management Manual and conduct regular audits and monitoring.\",\n      \"evidence\": \"Financial Management: Poor budgeting and accounting.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement risks, including delays, corruption, and insufficient contractor capacity.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct supply market intelligence, prepare clear procurement documents, and ensure transparent evaluation processes.\",\n      \"evidence\": \"Procurement Risk Assessment: Market complexity and competitiveness.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental and social risks, including impacts on bird habitats and local communities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the Environmental and Social Management Plan and conduct regular monitoring and stakeholder engagement.\",\n      \"evidence\": \"Environmental and Social: Potential impacts on bird habitats and local communities.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Dependence on imported construction materials and potential supply chain disruptions.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify supply chains, identify local alternatives, and develop a contingency plan for potential disruptions.\",\n      \"evidence\": \"Procurement Risk Assessment: Cost trends and sustainability.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Regulatory and policy risks, including changes in government policies or laws.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor regulatory developments, engage with government stakeholders, and develop a contingency plan for potential changes.\",\n      \"evidence\": \"Country Context: Regulatory and policy framework.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Technical risks, including difficulties in integrating renewable energy sources into the grid.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough technical studies, develop a detailed integration plan, and ensure regular monitoring and maintenance.\",\n      \"evidence\": \"Technical and Economic Analysis: Integration of renewable energy sources.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Climate change risks, including impacts on the project's infrastructure and operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct climate risk assessments, develop a climate resilience plan, and ensure regular monitoring and adaptation.\",\n      \"evidence\": \"Climate Change and Resilience: Project's contribution to climate change mitigation and adaptation.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Stakeholder engagement risks, including insufficient community participation and feedback.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a stakeholder engagement plan, ensure regular community participation and feedback, and address grievances promptly.\",\n      \"evidence\": \"Stakeholder Engagement: Community participation and feedback.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Gender equality risks, including insufficient opportunities for female employment and career advancement.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a gender action plan, provide training and capacity building for female employees, and monitor progress.\",\n      \"evidence\": \"Gender: Female employment and career advancement opportunities.\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MNG-ThirdEnergySector",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in project implementation due to insufficient coordination and communication among the PMO, MOE, MOF, and relevant implementing agencies.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear project implementation structure and ensure regular communication among stakeholders.",
+        "evidence": "Implementation Arrangements: Contract implementation may suffer delays."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial management risks, including poor budgeting, accounting, and internal control.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prepare a detailed Financial Management Manual and conduct regular audits and monitoring.",
+        "evidence": "Financial Management: Poor budgeting and accounting."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement risks, including delays, corruption, and insufficient contractor capacity.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct supply market intelligence, prepare clear procurement documents, and ensure transparent evaluation processes.",
+        "evidence": "Procurement Risk Assessment: Market complexity and competitiveness."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental and social risks, including impacts on bird habitats and local communities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement the Environmental and Social Management Plan and conduct regular monitoring and stakeholder engagement.",
+        "evidence": "Environmental and Social: Potential impacts on bird habitats and local communities."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Dependence on imported construction materials and potential supply chain disruptions.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Diversify supply chains, identify local alternatives, and develop a contingency plan for potential disruptions.",
+        "evidence": "Procurement Risk Assessment: Cost trends and sustainability."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Regulatory and policy risks, including changes in government policies or laws.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor regulatory developments, engage with government stakeholders, and develop a contingency plan for potential changes.",
+        "evidence": "Country Context: Regulatory and policy framework."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Technical risks, including difficulties in integrating renewable energy sources into the grid.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct thorough technical studies, develop a detailed integration plan, and ensure regular monitoring and maintenance.",
+        "evidence": "Technical and Economic Analysis: Integration of renewable energy sources."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Climate change risks, including impacts on the project's infrastructure and operations.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct climate risk assessments, develop a climate resilience plan, and ensure regular monitoring and adaptation.",
+        "evidence": "Climate Change and Resilience: Project's contribution to climate change mitigation and adaptation."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Stakeholder engagement risks, including insufficient community participation and feedback.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a stakeholder engagement plan, ensure regular community participation and feedback, and address grievances promptly.",
+        "evidence": "Stakeholder Engagement: Community participation and feedback."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Gender equality risks, including insufficient opportunities for female employment and career advancement.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a gender action plan, provide training and capacity building for female employees, and monitor progress.",
+        "evidence": "Gender: Female employment and career advancement opportunities."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,153 @@
+{
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:33:48.964141+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Frame the project  \n- Objective:\u202fImprove the effectiveness and coordination of selected public programmes to alleviate constraints to competitiveness and job creation (investment & export promotion, innovation, active labour\u2011market programmes, labour intermediation, activation of social\u2011assistance beneficiaries).  \n- Scope & components:\u202fFour main components \u2013 (1) Policy planning, monitoring and coordination (PPMC); (2) Investment and export promotion; (3) Innovation (Innovation Fund, matching\u2011grants, Technology Transfer Facility, public\u2011research reforms); (4) Labour (NES reforms, ALMPs, cash\u2011transfer for social\u2011assistance beneficiaries).\u202fPart\u202fA uses results\u2011based financing (DLIs); Part\u202fB funds technical assistance and project management.  \n- Delivery model:\u202fResults\u2011based financing (reimburse eligible expenditure programmes on achievement of DLIs) plus traditional TA funding.  \n- Timeline:\u202fImplementation start\u202f26\u2011Aug\u20112015; effectiveness\u202f15\u2011Jan\u20112016; implementation end\u202f31\u2011Mar\u20112019; expected closing\u202f30\u2011Jun\u20112019.  \n- Budget:\u202fTotal cost\u202fEUR\u202f352.48\u202fm (USD\u202f100\u202fm); Bank financing\u202fEUR\u202f89.5\u202fm; Borrower financing\u202fEUR\u202f262.98\u202fm.  \n- Key stakeholders:\u202fBorrower\u202fMinistry of Finance; coordinating agency\u202fPublic Policy Secretariat (PPS); implementing ministries\u202fEconomy, Education\u2011Science\u2011Tech\u2011Development, Labour\u2011Employment\u2011Veteran\u2011Social\u2011Affairs (MoLEVSA) and National Employment Service (NES); Innovation Fund; IMF (Precautionary Stand\u2011By Agreement); EU Delegation/IPA; World Bank team.  \n- External dependencies:\u202fIMF programme, EU\u2011IPA funding, existing payroll & budgeting systems, external donor projects (WB CIIP, USAID, EIB/EBRD), macro\u2011economic environment.\n\nStep 2 \u2013 Category sweep (risk identified with supporting text)  \nTechnical  \n1. Lack of functional technology\u2011transfer capacity (DLI\u202f4).  \nFinancial  \n2. Fiduciary risk rated substantial.  \nSchedule  \n3. Potential procurement delays due to PPS clearance of evaluation reports.  \n4. PPS lacks adequate capacity for Bank\u2011funded projects and procurement procedures.  \nStakeholder  \n5. Weak inter\u2011ministerial policy coordination (identified as a major weakness).  \nPolitical/Regulatory  \n6. MoE investment\u2011export support system is complex, non\u2011transparent and agencies have overlapping mandates.  \nExternal  \n7. High public\u2011debt ratio (over\u202f70\u202f% of GDP in\u202f2014).  \n8. Poor investment\u2011climate ranking (91st in Doing Business, worst in construction permits & tax).  \nOrganizational  \n9. Extensive ALMP data are not being translated into concrete analysis.  \n10. Design of cash\u2011transfer for social\u2011assistance beneficiaries may be challenging.  \n11. Non\u2011achievement of DLIs can trigger disbursement delays (re\u2011assessment procedure).  \n12. NES procurement staff lack capacity for Bank\u2011funded procurements.  \nEnvironmental  \n13. Possible direct environmental impacts from Innovation component (Mini & Matching Grants).  \nOrganizational (labour)  \n14. Very high caseload per NES case\u2011worker (200\u20112\u202f000 unemployed per worker).  \nPolitical/Regulatory (social\u2011assistance)  \n15. Very high tax wedge on low\u2011paying jobs; benefits drop by least one dinar per dinar earned formally.\n\nStep 3 \u2013 Evidence filter  \nAll 15 risks are directly supported by quoted statements (\u226425\u202fwords) from the appraisal document.\n\nStep 4 \u2013 Assess & mitigate  \n\n|Risk|Likelihood (1\u20115)|Impact (1\u20115)|Justification|Mitigation|\n|---|---|---|---|---|\n|R01\u202fTTF capacity|3|4|TTF capacity currently insufficient; no entity with demonstrable transaction capacity.|Secure additional funding, recruit expert staff, fast\u2011track deployment of service lines.|\n|R02\u202fFiduciary risk|4|5|\u201cOverall combined fiduciary risk and financial management residual risk are rated as substantial.\u201d|Strengthen internal controls, conduct regular audits, provide intensive FM training to PPS and ministries.|\n|R03\u202fProcurement clearance delays|3|3|\u201cPotential procurement delays: arrangements for clearance of evaluation reports by the PPS may lead to procurement delays.\u201d|Set firm clearance timelines, parallel review streams, Bank monitoring of milestones.|\n|R04\u202fPPS capacity gap|4|4|\u201cThe assessment concluded that the PPS does not have adequate capacity in Bank funded projects and with Bank procurement procedures.\u201d|Hire experienced procurement/FIDUCIARY specialist, deliver on\u2011the\u2011job training, develop SOPs.|\n|R05\u202fWeak policy coordination|3|4|\u201cPolicy coordination is among the weakest points for Serbia.\u201d|Formalise PPMC Working Group charter, schedule semi\u2011annual reviews, link KPIs to ministerial performance contracts.|\n|R06\u202fMoE agency complexity|3|4|\u201cThe system of support provided by the MoE\u2019s agencies is complex and non\u2011transparent. The agencies have overlapping mandates, no coordination.\u201d|Conduct agency mapping, define clear mandates, merge/restructure agencies, introduce performance\u2011based budgeting.|\n|R07\u202fHigh public debt|3|5|\u201cPublic debt to GDP ratio sharply increased \u2026 to over\u202f70\u202f% in\u202f2014.\u201d|Maintain fiscal consolidation, align disbursements with IMF targets, build contingency buffers.|\n|R08\u202fPoor investment climate|3|4|\u201cSerbia ranks 91st \u2026 worst in Construction Permits and Paying Taxes.\u201d|Support regulatory reforms, simplify permits, tax\u2011administration streamlining, monitor Doing\u2011Business indicators.|\n|R09\u202fALMP data not used|3|3|\u201cExtensive data collection \u2026 this information should be better translated into concrete analysis of the effects of programs.\u201d|Create dedicated data\u2011analysis unit, train staff in impact\u2011evaluation, embed results in DLI reporting.|\n|R10\u202fCash\u2011transfer design risk|3|4|\u201cThe cash transfer \u2026 will be designed \u2026 to make formal work worthwhile compared to receiving benefits.\u201d|Pilot on a small cohort, involve beneficiaries in design, conduct feasibility study before scaling.|\n|R11\u202fDLI non\u2011achievement|3|4|\u201cIf a DLI is not achieved, a \u2018request for reassessment\u2019 may be submitted \u2026 must provide a justification and an Action Plan.\u201d|Implement robust monitoring, early evidence collection, maintain buffer funds for partial payments.|\n|R12\u202fNES procurement capacity|3|3|\u201cStaff do not have capacity in Bank\u2011funded projects and with Bank procurement procedures.\u201d|Hire procurement specialist for NES, provide targeted training, use joint PPS\u2011NES procurement support.|\n|R13\u202fEnvironmental impacts from Innovation|2|2|\u201cDirect, physical environmental impacts could arise \u2026 The main environmental concern deals with the Mini & Matching Grant Programs.\u201d|Apply ESMF screening to all Innovation grants, require EMP where needed, monitor compliance.|\n|R14\u202fHigh NES caseload|4|3|\u201cThe average caseload varies between around\u202f200 to over\u202f2\u202f000 registered unemployed per case worker across branch offices.\u201d|Introduce active\u2011job\u2011seeker registry, re\u2011allocate staff, certify case\u2011workers, set caseload caps.|\n|R15\u202fHigh tax wedge on low\u2011pay jobs|2|3|\u201cSerbia has one of the highest tax wedges on low\u2011paying jobs \u2026 benefits drop by least one dinar per dinar earned formally.\u201d|Model tax\u2011benefit scenarios, redesign social\u2011assistance formula, pilot in\u2011work benefit for target group.|\n\nStep 5 \u2013 Consolidate  \nAll risks are distinct; no duplicates remain. The register contains 15 material risks supported by the appraisal document.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-SRB-CompetitivenessJobs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Absence of a functional technology\u2011transfer facility limits commercialization of public research.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure additional funding, recruit expert staff, and fast\u2011track deployment of TTF service lines.\",\n      \"evidence\": \"No public entity with demonstrable TT transaction capacity exists\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Overall fiduciary risk is rated substantial, threatening financial integrity.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Strengthen internal controls, conduct regular audits, and provide intensive financial\u2011management training to PPS and ministries.\",\n      \"evidence\": \"Overall combined fiduciary risk and financial management residual risk are rated as substantial.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement may be delayed by PPS clearance of evaluation reports.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set firm clearance timelines, use parallel review streams, and monitor milestones closely with the Bank.\",\n      \"evidence\": \"Potential procurement delays: arrangements for clearance of evaluation reports by the PPS may lead to procurement delays\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"PPS lacks adequate capacity for Bank\u2011funded projects and procurement procedures.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Hire experienced procurement/FIDUCIARY specialist, deliver on\u2011the\u2011job training, and develop standard operating procedures.\",\n      \"evidence\": \"The assessment concluded that the PPS does not have adequate capacity in Bank funded projects and with Bank procurement procedures\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Weak inter\u2011ministerial policy coordination may impede reform implementation.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Formalise PPMC Working Group charter, schedule semi\u2011annual reviews, and link KPIs to ministerial performance contracts.\",\n      \"evidence\": \"Policy coordination is among the weakest points for Serbia.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"MoE investment\u2011export support system is complex, non\u2011transparent and suffers overlapping mandates.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct agency mapping, define clear mandates, restructure overlapping bodies, and introduce performance\u2011based budgeting.\",\n      \"evidence\": \"The system of support provided by the MoE\u2019s agencies is complex and non\u2011transparent. The agencies have overlapping mandates, no coordination\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"High public\u2011debt ratio and recent recessions create macro\u2011economic instability.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Maintain fiscal consolidation, align disbursements with IMF targets, and keep contingency buffers for adverse shocks.\",\n      \"evidence\": \"Public debt to GDP ratio sharply increased from 36 percent in 2009 to over 70 percent in 2014.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Serbia\u2019s poor investment\u2011climate ranking (construction permits, taxes) may deter investors.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Support regulatory reforms, streamline permitting processes, and simplify tax administration in coordination with EU/IMF programmes.\",\n      \"evidence\": \"Serbia ranks 91st out of 189 economies in the 2015 Doing Business Report, worst in Construction Permits and Paying Taxes.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Extensive ALMP data are not being translated into actionable analysis for programme design.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Create a dedicated data\u2011analysis unit, train staff in impact\u2011evaluation, and embed results in DLI reporting.\",\n      \"evidence\": \"Extensive data collection on beneficiaries of ALMPs... this information should be better translated into concrete analysis of the effects of programs\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Design and implementation of the cash\u2011transfer for social\u2011assistance beneficiaries may face technical and fiscal challenges.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Pilot the scheme on a small cohort, involve beneficiaries in design, and conduct a feasibility study before scaling.\",\n      \"evidence\": \"The cash transfer ... will be designed in a way so as to make formal work worthwhile compared to receiving benefits.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Failure to meet DLIs could trigger disbursement delays and require reassessment.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement robust monitoring, collect evidence early, and maintain buffer funds for partial payments.\",\n      \"evidence\": \"If a DLI is not achieved, a \u201crequest for reassessment\u201d may be submitted by the Government, which must provide a justification and an Action Plan.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"NES procurement staff lack experience with Bank\u2011funded procurements.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Hire a procurement specialist for NES, provide targeted training, and use joint PPS\u2011NES procurement support.\",\n      \"evidence\": \"Staff do not have capacity in Bank\u2011funded projects and with Bank procurement procedures.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Innovation component (Mini & Matching Grants) may generate direct environmental impacts.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Apply ESMF screening to all Innovation grants, require EMP where needed, and monitor compliance.\",\n      \"evidence\": \"Direct, physical environmental impacts could arise under Component 2 on Innovation... The main environmental concern deals with the Mini & Matching Grant Programs.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"NES case\u2011workers handle an excessively high caseload (200\u20112\u202f000 per worker).\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Introduce an active\u2011job\u2011seeker registry, re\u2011allocate staff, certify case\u2011workers, and set caseload caps.\",\n      \"evidence\": \"The average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Very high tax wedge on low\u2011paying jobs reduces incentive for formal employment.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Model tax\u2011benefit scenarios, redesign social\u2011assistance formula, and pilot an in\u2011work benefit for target groups.\",\n      \"evidence\": \"Serbia has one of the highest tax wedges on low\u2011paying jobs \u2026 benefits drop by least one dinar per dinar earned formally.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SRB-CompetitivenessJobs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Absence of a functional technology\u2011transfer facility limits commercialization of public research.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure additional funding, recruit expert staff, and fast\u2011track deployment of TTF service lines.",
+        "evidence": "No public entity with demonstrable TT transaction capacity exists"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Overall fiduciary risk is rated substantial, threatening financial integrity.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Strengthen internal controls, conduct regular audits, and provide intensive financial\u2011management training to PPS and ministries.",
+        "evidence": "Overall combined fiduciary risk and financial management residual risk are rated as substantial."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement may be delayed by PPS clearance of evaluation reports.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set firm clearance timelines, use parallel review streams, and monitor milestones closely with the Bank.",
+        "evidence": "Potential procurement delays: arrangements for clearance of evaluation reports by the PPS may lead to procurement delays"
+      },
+      {
+        "risk_id": "R04",
+        "description": "PPS lacks adequate capacity for Bank\u2011funded projects and procurement procedures.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Hire experienced procurement/FIDUCIARY specialist, deliver on\u2011the\u2011job training, and develop standard operating procedures.",
+        "evidence": "The assessment concluded that the PPS does not have adequate capacity in Bank funded projects and with Bank procurement procedures"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Weak inter\u2011ministerial policy coordination may impede reform implementation.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Formalise PPMC Working Group charter, schedule semi\u2011annual reviews, and link KPIs to ministerial performance contracts.",
+        "evidence": "Policy coordination is among the weakest points for Serbia."
+      },
+      {
+        "risk_id": "R06",
+        "description": "MoE investment\u2011export support system is complex, non\u2011transparent and suffers overlapping mandates.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct agency mapping, define clear mandates, restructure overlapping bodies, and introduce performance\u2011based budgeting.",
+        "evidence": "The system of support provided by the MoE\u2019s agencies is complex and non\u2011transparent. The agencies have overlapping mandates, no coordination"
+      },
+      {
+        "risk_id": "R07",
+        "description": "High public\u2011debt ratio and recent recessions create macro\u2011economic instability.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Maintain fiscal consolidation, align disbursements with IMF targets, and keep contingency buffers for adverse shocks.",
+        "evidence": "Public debt to GDP ratio sharply increased from 36 percent in 2009 to over 70 percent in 2014."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Serbia\u2019s poor investment\u2011climate ranking (construction permits, taxes) may deter investors.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Support regulatory reforms, streamline permitting processes, and simplify tax administration in coordination with EU/IMF programmes.",
+        "evidence": "Serbia ranks 91st out of 189 economies in the 2015 Doing Business Report, worst in Construction Permits and Paying Taxes."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Extensive ALMP data are not being translated into actionable analysis for programme design.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Create a dedicated data\u2011analysis unit, train staff in impact\u2011evaluation, and embed results in DLI reporting.",
+        "evidence": "Extensive data collection on beneficiaries of ALMPs... this information should be better translated into concrete analysis of the effects of programs"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Design and implementation of the cash\u2011transfer for social\u2011assistance beneficiaries may face technical and fiscal challenges.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Pilot the scheme on a small cohort, involve beneficiaries in design, and conduct a feasibility study before scaling.",
+        "evidence": "The cash transfer ... will be designed in a way so as to make formal work worthwhile compared to receiving benefits."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Failure to meet DLIs could trigger disbursement delays and require reassessment.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement robust monitoring, collect evidence early, and maintain buffer funds for partial payments.",
+        "evidence": "If a DLI is not achieved, a \u201crequest for reassessment\u201d may be submitted by the Government, which must provide a justification and an Action Plan."
+      },
+      {
+        "risk_id": "R12",
+        "description": "NES procurement staff lack experience with Bank\u2011funded procurements.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Hire a procurement specialist for NES, provide targeted training, and use joint PPS\u2011NES procurement support.",
+        "evidence": "Staff do not have capacity in Bank\u2011funded projects and with Bank procurement procedures."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Innovation component (Mini & Matching Grants) may generate direct environmental impacts.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Apply ESMF screening to all Innovation grants, require EMP where needed, and monitor compliance.",
+        "evidence": "Direct, physical environmental impacts could arise under Component 2 on Innovation... The main environmental concern deals with the Mini & Matching Grant Programs."
+      },
+      {
+        "risk_id": "R14",
+        "description": "NES case\u2011workers handle an excessively high caseload (200\u20112\u202f000 per worker).",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Introduce an active\u2011job\u2011seeker registry, re\u2011allocate staff, certify case\u2011workers, and set caseload caps.",
+        "evidence": "The average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Very high tax wedge on low\u2011paying jobs reduces incentive for formal employment.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Model tax\u2011benefit scenarios, redesign social\u2011assistance formula, and pilot an in\u2011work benefit for target groups.",
+        "evidence": "Serbia has one of the highest tax wedges on low\u2011paying jobs \u2026 benefits drop by least one dinar per dinar earned formally."
+      }
+    ]
+  },
+  "parse_error": null
+}

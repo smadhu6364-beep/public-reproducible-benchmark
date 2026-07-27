@@ -1,0 +1,108 @@
+{
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:15:00.950015+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-NGA-AgroProcessingLivelihood\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate implementation capacity at state level\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity building for state-level staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Delays in procurement processes\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Streamline procurement processes and provide training for procurement staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inadequate financial management\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity building for financial management staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental and social risks associated with agricultural intensification\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct environmental and social impact assessments and develop mitigation measures\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate stakeholder engagement and participation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a stakeholder engagement plan and provide training for staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate monitoring and evaluation\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a monitoring and evaluation plan and provide training for staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate infrastructure support\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide infrastructure support and develop a maintenance plan\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inadequate support for women and youth\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a plan to support women and youth and provide training for staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate support for smallholder farmers\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a plan to support smallholder farmers and provide training for staff\",\n      \"evidence\": \"Annex 3\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate risk management\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a risk management plan and provide training for staff\",\n      \"evidence\": \"Annex 3\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-NGA-AgroProcessingLivelihood",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate implementation capacity at state level",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity building for state-level staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delays in procurement processes",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Streamline procurement processes and provide training for procurement staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inadequate financial management",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity building for financial management staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental and social risks associated with agricultural intensification",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct environmental and social impact assessments and develop mitigation measures",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate stakeholder engagement and participation",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a stakeholder engagement plan and provide training for staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate monitoring and evaluation",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a monitoring and evaluation plan and provide training for staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate infrastructure support",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide infrastructure support and develop a maintenance plan",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inadequate support for women and youth",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a plan to support women and youth and provide training for staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate support for smallholder farmers",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a plan to support smallholder farmers and provide training for staff",
+        "evidence": "Annex 3"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate risk management",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a risk management plan and provide training for staff",
+        "evidence": "Annex 3"
+      }
+    ]
+  },
+  "parse_error": null
+}

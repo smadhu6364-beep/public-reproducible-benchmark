@@ -1,0 +1,108 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:08:34.044557+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate maintenance of urban and rural roads may lead to disruptions in connectivity and increased travel times.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Regular maintenance and repair of roads, as well as the implementation of a road maintenance fund.\",\n      \"evidence\": \"The transport sector of Sierra Leone plays a key role in economic and social development but is still underdeveloped relative to its needs.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Lack of all-season transport infrastructure may lead to increased travel times and costs for farmers and traders.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construction of climate-resilient bridges and link roads to improve all-season access to markets and services.\",\n      \"evidence\": \"Sierra Leone faces significant transport challenges characterized by its wide network of river systems, exposure to climate change related natural hazards, and the absence of bridges at river crossings.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Institutional fragmentation and insufficient funding may hinder the effective implementation of the project.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establishment of a National Project Steering Committee (NPSC) and a Project Coordination and Implementation Unit (PCIU) to oversee project implementation and coordination.\",\n      \"evidence\": \"The institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Climate change may exacerbate flooding and other extreme climate events, affecting the project's infrastructure and operations.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Integration of climate resilience considerations into project design and implementation, including the use of climate-resilient materials and construction techniques.\",\n      \"evidence\": \"Climate change is projected to intensify the frequency of heavy rainfall events during the rainy season, leading to increased flood risks for riverine communities.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Limited access to markets and services may affect the livelihoods of farmers and traders, particularly women.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construction of agricultural market infrastructure and provision of training and support to farmers, traders, and value chain actors, with a focus on women's empowerment.\",\n      \"evidence\": \"Women represent 70 percent of the agricultural labor force, often playing important roles in food crop production, harvesting, and marketing activities.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate financial management and accounting systems may lead to inefficiencies and mismanagement of project funds.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establishment of a financial management system, including a designated account, and provision of training and support to project staff on financial management and accounting.\",\n      \"evidence\": \"The World Bank conducted a FM assessment to determine the adequacy of the FM arrangements of the Finance Unit of the proposed PCIU of the MTA.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Procurement risks, including corruption and inefficiencies, may affect the project's implementation and outcomes.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implementation of procurement procedures and guidelines, including the use of the World Bank's Procurement Regulations and the Systematic Tracking of Exchanges in Procurement (STEP) system.\",\n      \"evidence\": \"Procurement under the proposed project will be carried out in accordance with the World Bank 'Procurement Regulations for IPF Borrowers'.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Limited capacity and skills of project staff and stakeholders may hinder the effective implementation of the project.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provision of training and support to project staff and stakeholders, including capacity-building activities and technical assistance.\",\n      \"evidence\": \"The project will finance project implementation support and capacity-building activities for project staff on transport sector contributions to GHG emissions and appropriate mitigation options.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Environmental and social risks, including the potential for environmental degradation and social displacement, may affect the project's outcomes and reputation.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implementation of environmental and social management plans, including the conduct of environmental and social impact assessments and the development of mitigation measures.\",\n      \"evidence\": \"The project will finance climate resilience and GHG emissions mitigation measures under each project component, as described in Table 5.1.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Political and regulatory risks, including changes in government policies and regulations, may affect the project's implementation and outcomes.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Establishment of a stakeholder engagement plan, including regular communication and consultation with government agencies, stakeholders, and communities.\",\n      \"evidence\": \"The project will use a range of citizen engagement mechanisms, including roadshows, television, radio, town hall meetings, open forum, and social media.\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate maintenance of urban and rural roads may lead to disruptions in connectivity and increased travel times.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Regular maintenance and repair of roads, as well as the implementation of a road maintenance fund.",
+        "evidence": "The transport sector of Sierra Leone plays a key role in economic and social development but is still underdeveloped relative to its needs."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Lack of all-season transport infrastructure may lead to increased travel times and costs for farmers and traders.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construction of climate-resilient bridges and link roads to improve all-season access to markets and services.",
+        "evidence": "Sierra Leone faces significant transport challenges characterized by its wide network of river systems, exposure to climate change related natural hazards, and the absence of bridges at river crossings."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Institutional fragmentation and insufficient funding may hinder the effective implementation of the project.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establishment of a National Project Steering Committee (NPSC) and a Project Coordination and Implementation Unit (PCIU) to oversee project implementation and coordination.",
+        "evidence": "The institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among the multiple agencies operating with overlapping responsibilities."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Climate change may exacerbate flooding and other extreme climate events, affecting the project's infrastructure and operations.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Integration of climate resilience considerations into project design and implementation, including the use of climate-resilient materials and construction techniques.",
+        "evidence": "Climate change is projected to intensify the frequency of heavy rainfall events during the rainy season, leading to increased flood risks for riverine communities."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Limited access to markets and services may affect the livelihoods of farmers and traders, particularly women.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construction of agricultural market infrastructure and provision of training and support to farmers, traders, and value chain actors, with a focus on women's empowerment.",
+        "evidence": "Women represent 70 percent of the agricultural labor force, often playing important roles in food crop production, harvesting, and marketing activities."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate financial management and accounting systems may lead to inefficiencies and mismanagement of project funds.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establishment of a financial management system, including a designated account, and provision of training and support to project staff on financial management and accounting.",
+        "evidence": "The World Bank conducted a FM assessment to determine the adequacy of the FM arrangements of the Finance Unit of the proposed PCIU of the MTA."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Procurement risks, including corruption and inefficiencies, may affect the project's implementation and outcomes.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implementation of procurement procedures and guidelines, including the use of the World Bank's Procurement Regulations and the Systematic Tracking of Exchanges in Procurement (STEP) system.",
+        "evidence": "Procurement under the proposed project will be carried out in accordance with the World Bank 'Procurement Regulations for IPF Borrowers'."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Limited capacity and skills of project staff and stakeholders may hinder the effective implementation of the project.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provision of training and support to project staff and stakeholders, including capacity-building activities and technical assistance.",
+        "evidence": "The project will finance project implementation support and capacity-building activities for project staff on transport sector contributions to GHG emissions and appropriate mitigation options."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Environmental and social risks, including the potential for environmental degradation and social displacement, may affect the project's outcomes and reputation.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implementation of environmental and social management plans, including the conduct of environmental and social impact assessments and the development of mitigation measures.",
+        "evidence": "The project will finance climate resilience and GHG emissions mitigation measures under each project component, as described in Table 5.1."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Political and regulatory risks, including changes in government policies and regulations, may affect the project's implementation and outcomes.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Establishment of a stakeholder engagement plan, including regular communication and consultation with government agencies, stakeholders, and communities.",
+        "evidence": "The project will use a range of citizen engagement mechanisms, including roadshows, television, radio, town hall meetings, open forum, and social media."
+      }
+    ]
+  },
+  "parse_error": null
+}

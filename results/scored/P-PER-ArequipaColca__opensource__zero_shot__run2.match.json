@@ -1,0 +1,211 @@
+{
+  "run_file": "P-PER-ArequipaColca__opensource__zero_shot__run2.json",
+  "project_id": "P-PER-ArequipaColca",
+  "model": "opensource",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R03",
+      "similarity": 0.633,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R04",
+      "similarity": 0.577,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.558,
+      "gen_category": "financial",
+      "gt_category": "organizational",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate infrastructure and basic services hinder tourism potential",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Invest in infrastructure upgrades, such as roads, water, and sanitation facilities",
+      "evidence": "Section 10, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Limited accessibility to tourism destinations due to poor road connections",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Improve road connections and invest in transportation infrastructure",
+      "evidence": "Section 10, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Insufficient investment in tourism products and services",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide training and capacity-building programs for local tourism operators",
+      "evidence": "Section 10, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Insufficient destination promotion and management",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a destination marketing and promotion plan, and establish a destination management organization",
+      "evidence": "Section 10, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Climate hazards pose a challenge to tourism development",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Implement climate-resilient infrastructure and develop a climate change adaptation plan",
+      "evidence": "Section 11, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate governance and coordination among stakeholders",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a project steering committee and consultative committee to ensure coordination and collaboration among stakeholders",
+      "evidence": "Section 47, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Delays in budget allocation and execution",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop a detailed budget and implementation plan, and establish a project implementation unit",
+      "evidence": "Section 62, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inaccuracies in accounting and financial reporting",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement a robust financial management system, and conduct regular audits and financial reporting",
+      "evidence": "Section 62, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Unclear internal coordination and roles within the project implementation unit",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear roles and responsibilities within the project implementation unit, and develop a project operational manual",
+      "evidence": "Section 62, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Potential inaccuracies in procurement processes",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop a procurement strategy and plan, and establish a procurement committee to ensure transparency and fairness",
+      "evidence": "Section 63, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Risks associated with climate change and natural hazards",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Conduct a climate risk assessment, and develop a climate change adaptation and mitigation plan",
+      "evidence": "Section 59, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Risks associated with the project's fiduciary management",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a fiduciary management system, and conduct regular audits and financial reporting",
+      "evidence": "Section 61, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Risks associated with the project's social and environmental impacts",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Conduct a social and environmental impact assessment, and develop a plan to mitigate and manage potential impacts",
+      "evidence": "Section 21, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Risks associated with the project's governance and institutional framework",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a clear governance and institutional framework, and ensure coordination and collaboration among stakeholders",
+      "evidence": "Section 44, Project Appraisal Document"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Risks associated with the project's implementation and execution",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop a detailed implementation plan, and establish a project implementation unit to ensure effective execution",
+      "evidence": "Section 45, Project Appraisal Document"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Peru is in a period of substantial political uncertainty (low popular support for the executive and Congress, high political fragmentation); a new government assumes office July 2026 and regional elections are scheduled October 2026. Since GORE Arequipa (a regional government) is the implementing agency, regional government changes could slow implementation or shift priorities; high-level changes at MINCETUR could also affect oversight commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Focus on highly needed, consensus-driven investments; maintain buy-in and continuous dialogue with the tourism private sector; engage proactively with any new authorities on project opportunities; use implementation arrangements that are technically strong, highly competent, and relatively shielded from political influence and staff turnover."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Tourism projects are inherently complex, involving infrastructure, capacity building, and multiple government levels/sectors plus private-sector and community stakeholders. Capacity must be built at GORE Arequipa given no precedent for multisectoral regional investment programs in Peru, and historic national-regional coordination weaknesses. The project also does not budget for O&M of delivered sites/infrastructure, which falls to designated stakeholders.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Institutional capacity building via the Project (incl. GFPP) to ready GORE for implementation; World Bank support on PIU composition and key staff selection; coordination arrangements/agreements between the PIU and local partners in charge of operating sites, to align on design, implementation, and handover."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Combined fiduciary risk with GORE Arequipa is Substantial, reflecting the entity's lack of prior experience with World Bank or other MDB-financed operations in both financial management and procurement.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A fiduciary assessment identified capacity gaps and informed mitigation measures; recruit dedicated FM and Procurement Specialists supported by qualified administrative staff; detail minimum FM/procurement procedures aligned with WB requirements in the Project Operational Manual; use SIAF for financial transactions/reporting and STEP for procurement planning/monitoring; targeted WB training, regular fiduciary supervision, and annual audits."
+    },
+    {
+      "risk_id": "R04",
+      "description": "E&S risk reflects the scope/nature of planned interventions, works located in environmentally and culturally sensitive areas, and GORE Arequipa's limited institutional capacity to manage risks per the Environmental and Social Framework (ESF).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthen PIU capacity to manage E&S risks with adequate resources/staffing; elaborate and implement project-level instruments (Stakeholder Engagement Plan, Labor Management Plan, SEA/SH Plan) plus intervention-level instruments with specific mitigation measures."
+    }
+  ]
+}

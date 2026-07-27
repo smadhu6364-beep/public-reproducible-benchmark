@@ -1,0 +1,153 @@
+{
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:28:51.857076+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Frame the project  \n- Objective: Enhance access to micro\u2011credit and support resilience of the micro\u2011finance sector and its borrowers.  \n- Scope & Components: Establish and operationalise a Climate Risk Fund (CRF) with two products \u2013 Innovative Agricultural Liquidity (US$20\u202fm) and Contingent Liquidity Facility (US$105\u202fm).  \n- Delivery model: CRF set up as a Trust owned by the Government of Pakistan, administered by the State Bank of Pakistan (SBP) as Trustee; governance through Oversight and Working Committees; Project Operations Manual (POM) governs implementation.  \n- Timeline: Expected approval 17\u202fMar\u202f2025, closing 31\u202fDec\u202f2029 (\u22485\u2011year implementation).  \n- Budget: Total operation cost US$125\u202fm (US$102\u202fm IDA credit + US$23\u202fm GSFF grant).  \n- Key stakeholders: GoP (Ministry of Finance, SBP), World Bank/IDA, GSFF, IFC, ADB, Pakistan Microfinance Investment Company (PMIC), Pakistan Microfinance Network (PMN), micro\u2011finance banks (MFBs) and non\u2011bank MFIs, Agricultural Technology Companies (ATCs), borrowers (women, youth, rural).  \n- External dependencies: Climate\u2011risk triggers (government emergency declaration or portfolio impact), third\u2011party flood\u2011risk modelling data, parametric insurance back\u2011stop, availability of ATCs via the Agriculture Finance Innovation Challenge (AFIC).\n\nStep 2 \u2013 Category sweep (candidate risks with supporting evidence)  \nTechnical: inaccurate climate\u2011risk modelling; mis\u2011aligned insurance trigger; data\u2011quality from third parties.  \nFinancial: insufficient capital if CRF scope expands; shortfall for insurance premium; macro\u2011economic shock eroding sector liquidity.  \nSchedule: delay in Trust Deed/POM execution; disbursement delays via IFR reporting.  \nStakeholder: low uptake by MFPs due to ATC partnership requirement; gender\u2011allocation shortfall; stakeholder coordination.  \nPolitical/Regulatory: legal restriction on amending Trust Deed; need for government emergency declaration to trigger CRF.  \nEnvironmental: increased fertilizer/pesticide use from agritech loans.  \nOrganizational: Oversight Committee decision delays; weaknesses in M&E data quality.  \nExternal: reliance on third\u2011party data providers; increasing frequency of extreme floods.\n\nStep 3 \u2013 Evidence filter  \nAll listed risks are directly quoted in the appraisal document (see evidence statements below).\n\nStep 4 \u2013 Assess & mitigate  \nLikelihood (1\u20115) and Impact (1\u20115) assigned per risk with brief justification; concrete mitigation actions drafted.\n\nStep 5 \u2013 Consolidate  \n15 distinct risks retained (no duplicates).\n\nFINAL JSON:\n{\n  \"project_id\": \"P-PAK-ResilientAccessibleMicrofinance\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delay in execution of Trust Deed and adoption of Project Operations Manual could postpone CRF establishment.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set internal legal deadline; conduct weekly review; obtain early sign\u2011off from Ministry of Finance and SBP before project start.\",\n      \"evidence\": \"Conditions 5.01(a) and 5.01(b) require the Trust Deed executed and State Bank adopt the Project Operations Manual before effectiveness.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inaccurate climate risk modelling may lead to improper trigger thresholds and delayed or inappropriate disbursement.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Contract reputable modelling firms, conduct peer review, update models annually and validate against historical flood events.\",\n      \"evidence\": \"Catastrophe modelling will be undertaken; risk modelling will be the basis for pricing and triggers.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Insufficient capital if CRF scope expands beyond flood coverage without additional financing.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Include a contingency financing clause, pre\u2011negotiate donor bridge loans, and maintain a reserve within the CRF.\",\n      \"evidence\": \"Enhancing the scope of climate risks covered by the CRF may require additional capital; any additional financing subject to approval.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Funding shortfall for parametric insurance premium could prevent back\u2011stop activation.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure a multi\u2011year insurance contract; earmark grant and investment income in an escrow account for premiums.\",\n      \"evidence\": \"Insurance premium budget US$26\u202fmillion, half from GSFF grant and half from CRF investment income; annual decision by Oversight Committee.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Increased use of fertilizers and pesticides from agritech loans may cause localized environmental degradation.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Embed environmental safeguards in loan terms, promote integrated pest management, and monitor chemical use via MIS.\",\n      \"evidence\": \"Cumulative impacts may increase use of fertilizers, pesticides, worsening air quality and soil contamination; impacts localized.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Low uptake by micro\u2011finance providers due to mandatory partnership with ATCs could limit liquidity flow.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide technical assistance and incentives to MFPs for ATC partnership; streamline AFIC selection; offer capacity\u2011building grants.\",\n      \"evidence\": \"MFPs that avail the IAL product will have to partner with at least one ATC selected under the AFIC.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Failure to achieve 55% women beneficiary target could undermine gender\u2011equity objectives.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce gender allocation clause with penalty (higher borrowing cost), monitor gender disbursement quarterly, and provide gender\u2011focused training.\",\n      \"evidence\": \"Ensure at least 55% of beneficiaries of CRF liquidity are women; MFPs pay higher borrowing cost if deviation.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Reliance on third\u2011party data providers may compromise trigger data quality and timeliness.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Contract multiple data sources, establish a data validation protocol, and include service\u2011level agreements for timely delivery.\",\n      \"evidence\": \"Data required to evaluate triggers will be provided by third\u2011party service providers (e.g., credit rating agencies, flood risk modelling firms).\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Ongoing macro\u2011economic crisis could erode sector liquidity, reducing effectiveness of CRF support.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Build a CRF capital buffer, coordinate with fiscal authorities for stabilization measures, and diversify funding sources.\",\n      \"evidence\": \"Impact of shocks exacerbated by macroeconomic crisis since 2019; erosion of liquidity and capital of MFBs.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Oversight Committee may delay strategic decisions such as securing insurance, affecting timely fund deployment.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Define clear decision timelines (e.g., within 10 days of trigger) and assign delegated authority for interim actions.\",\n      \"evidence\": \"Oversight Committee will be tasked with strategic decisions, such as making a determination on whether to secure parametric insurance.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Legal restriction on amending the Trust Deed without consent could hinder necessary project adjustments.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Include a pre\u2011approved amendment clause for project\u2011related changes and obtain a written consent framework in advance.\",\n      \"evidence\": \"Trust Deed shall not be amended, abrogated, or waived without prior written consent of the Association.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Disbursement delays due to IFR reporting and pooled\u2011account setup could slow liquidity provision.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Automate IFR submission, set an internal 30\u2011day review window, and provide staff training on reporting procedures.\",\n      \"evidence\": \"Disbursement will be report based; each IFR submitted to Bank within 45 days; pooled account front\u2011loaded for CRF capitalization.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Weaknesses in M&E data quality may affect monitoring of project outcomes.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Strengthen MIS, conduct regular data audits, and provide capacity\u2011building for M&E staff.\",\n      \"evidence\": \"SBP will work to further strengthen its M&E including the quality of data collection.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Misalignment of insurance trigger with actual flood impacts could result in insufficient payout.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Align trigger parameters with government emergency declarations and sector\u2011impact thresholds; run joint simulation exercises annually.\",\n      \"evidence\": \"Two independent triggers: one activates CRF, another unlocks insurance payout; thresholds detailed in POM.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Increasing frequency of extreme floods may exceed the CRF\u2019s capital capacity.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Perform periodic stress testing, consider scaling up CRF capital or adding additional reinsurance arrangements.\",\n      \"evidence\": \"CRF will only provide support in instances the flooding event is classified as \u2018large\u2019 or \u2018extreme\u2019; climate risks increasing.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delay in execution of Trust Deed and adoption of Project Operations Manual could postpone CRF establishment.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set internal legal deadline; conduct weekly review; obtain early sign\u2011off from Ministry of Finance and SBP before project start.",
+        "evidence": "Conditions 5.01(a) and 5.01(b) require the Trust Deed executed and State Bank adopt the Project Operations Manual before effectiveness."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inaccurate climate risk modelling may lead to improper trigger thresholds and delayed or inappropriate disbursement.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Contract reputable modelling firms, conduct peer review, update models annually and validate against historical flood events.",
+        "evidence": "Catastrophe modelling will be undertaken; risk modelling will be the basis for pricing and triggers."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Insufficient capital if CRF scope expands beyond flood coverage without additional financing.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Include a contingency financing clause, pre\u2011negotiate donor bridge loans, and maintain a reserve within the CRF.",
+        "evidence": "Enhancing the scope of climate risks covered by the CRF may require additional capital; any additional financing subject to approval."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Funding shortfall for parametric insurance premium could prevent back\u2011stop activation.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure a multi\u2011year insurance contract; earmark grant and investment income in an escrow account for premiums.",
+        "evidence": "Insurance premium budget US$26\u202fmillion, half from GSFF grant and half from CRF investment income; annual decision by Oversight Committee."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Increased use of fertilizers and pesticides from agritech loans may cause localized environmental degradation.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Embed environmental safeguards in loan terms, promote integrated pest management, and monitor chemical use via MIS.",
+        "evidence": "Cumulative impacts may increase use of fertilizers, pesticides, worsening air quality and soil contamination; impacts localized."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Low uptake by micro\u2011finance providers due to mandatory partnership with ATCs could limit liquidity flow.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide technical assistance and incentives to MFPs for ATC partnership; streamline AFIC selection; offer capacity\u2011building grants.",
+        "evidence": "MFPs that avail the IAL product will have to partner with at least one ATC selected under the AFIC."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Failure to achieve 55% women beneficiary target could undermine gender\u2011equity objectives.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Enforce gender allocation clause with penalty (higher borrowing cost), monitor gender disbursement quarterly, and provide gender\u2011focused training.",
+        "evidence": "Ensure at least 55% of beneficiaries of CRF liquidity are women; MFPs pay higher borrowing cost if deviation."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Reliance on third\u2011party data providers may compromise trigger data quality and timeliness.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Contract multiple data sources, establish a data validation protocol, and include service\u2011level agreements for timely delivery.",
+        "evidence": "Data required to evaluate triggers will be provided by third\u2011party service providers (e.g., credit rating agencies, flood risk modelling firms)."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Ongoing macro\u2011economic crisis could erode sector liquidity, reducing effectiveness of CRF support.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Build a CRF capital buffer, coordinate with fiscal authorities for stabilization measures, and diversify funding sources.",
+        "evidence": "Impact of shocks exacerbated by macroeconomic crisis since 2019; erosion of liquidity and capital of MFBs."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Oversight Committee may delay strategic decisions such as securing insurance, affecting timely fund deployment.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Define clear decision timelines (e.g., within 10 days of trigger) and assign delegated authority for interim actions.",
+        "evidence": "Oversight Committee will be tasked with strategic decisions, such as making a determination on whether to secure parametric insurance."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Legal restriction on amending the Trust Deed without consent could hinder necessary project adjustments.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Include a pre\u2011approved amendment clause for project\u2011related changes and obtain a written consent framework in advance.",
+        "evidence": "Trust Deed shall not be amended, abrogated, or waived without prior written consent of the Association."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Disbursement delays due to IFR reporting and pooled\u2011account setup could slow liquidity provision.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Automate IFR submission, set an internal 30\u2011day review window, and provide staff training on reporting procedures.",
+        "evidence": "Disbursement will be report based; each IFR submitted to Bank within 45 days; pooled account front\u2011loaded for CRF capitalization."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Weaknesses in M&E data quality may affect monitoring of project outcomes.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Strengthen MIS, conduct regular data audits, and provide capacity\u2011building for M&E staff.",
+        "evidence": "SBP will work to further strengthen its M&E including the quality of data collection."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Misalignment of insurance trigger with actual flood impacts could result in insufficient payout.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Align trigger parameters with government emergency declarations and sector\u2011impact thresholds; run joint simulation exercises annually.",
+        "evidence": "Two independent triggers: one activates CRF, another unlocks insurance payout; thresholds detailed in POM."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Increasing frequency of extreme floods may exceed the CRF\u2019s capital capacity.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Perform periodic stress testing, consider scaling up CRF capital or adding additional reinsurance arrangements.",
+        "evidence": "CRF will only provide support in instances the flooding event is classified as \u2018large\u2019 or \u2018extreme\u2019; climate risks increasing."
+      }
+    ]
+  },
+  "parse_error": null
+}

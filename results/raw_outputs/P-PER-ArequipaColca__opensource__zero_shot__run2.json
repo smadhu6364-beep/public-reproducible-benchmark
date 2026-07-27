@@ -1,0 +1,153 @@
+{
+  "project_id": "P-PER-ArequipaColca",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:48:01.774167+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-PER-ArequipaColca\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate infrastructure and basic services hinder tourism potential\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Invest in infrastructure upgrades, such as roads, water, and sanitation facilities\",\n      \"evidence\": \"Section 10, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Limited accessibility to tourism destinations due to poor road connections\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Improve road connections and invest in transportation infrastructure\",\n      \"evidence\": \"Section 10, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Insufficient investment in tourism products and services\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building programs for local tourism operators\",\n      \"evidence\": \"Section 10, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Insufficient destination promotion and management\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a destination marketing and promotion plan, and establish a destination management organization\",\n      \"evidence\": \"Section 10, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Climate hazards pose a challenge to tourism development\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Implement climate-resilient infrastructure and develop a climate change adaptation plan\",\n      \"evidence\": \"Section 11, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inadequate governance and coordination among stakeholders\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a project steering committee and consultative committee to ensure coordination and collaboration among stakeholders\",\n      \"evidence\": \"Section 47, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Delays in budget allocation and execution\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed budget and implementation plan, and establish a project implementation unit\",\n      \"evidence\": \"Section 62, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Inaccuracies in accounting and financial reporting\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement a robust financial management system, and conduct regular audits and financial reporting\",\n      \"evidence\": \"Section 62, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Unclear internal coordination and roles within the project implementation unit\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish clear roles and responsibilities within the project implementation unit, and develop a project operational manual\",\n      \"evidence\": \"Section 62, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Potential inaccuracies in procurement processes\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop a procurement strategy and plan, and establish a procurement committee to ensure transparency and fairness\",\n      \"evidence\": \"Section 63, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Risks associated with climate change and natural hazards\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Conduct a climate risk assessment, and develop a climate change adaptation and mitigation plan\",\n      \"evidence\": \"Section 59, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Risks associated with the project's fiduciary management\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a fiduciary management system, and conduct regular audits and financial reporting\",\n      \"evidence\": \"Section 61, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Risks associated with the project's social and environmental impacts\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a social and environmental impact assessment, and develop a plan to mitigate and manage potential impacts\",\n      \"evidence\": \"Section 21, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Risks associated with the project's governance and institutional framework\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear governance and institutional framework, and ensure coordination and collaboration among stakeholders\",\n      \"evidence\": \"Section 44, Project Appraisal Document\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Risks associated with the project's implementation and execution\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a detailed implementation plan, and establish a project implementation unit to ensure effective execution\",\n      \"evidence\": \"Section 45, Project Appraisal Document\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-PER-ArequipaColca",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate infrastructure and basic services hinder tourism potential",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Invest in infrastructure upgrades, such as roads, water, and sanitation facilities",
+        "evidence": "Section 10, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Limited accessibility to tourism destinations due to poor road connections",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Improve road connections and invest in transportation infrastructure",
+        "evidence": "Section 10, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Insufficient investment in tourism products and services",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building programs for local tourism operators",
+        "evidence": "Section 10, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Insufficient destination promotion and management",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a destination marketing and promotion plan, and establish a destination management organization",
+        "evidence": "Section 10, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Climate hazards pose a challenge to tourism development",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Implement climate-resilient infrastructure and develop a climate change adaptation plan",
+        "evidence": "Section 11, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inadequate governance and coordination among stakeholders",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a project steering committee and consultative committee to ensure coordination and collaboration among stakeholders",
+        "evidence": "Section 47, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delays in budget allocation and execution",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a detailed budget and implementation plan, and establish a project implementation unit",
+        "evidence": "Section 62, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Inaccuracies in accounting and financial reporting",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a robust financial management system, and conduct regular audits and financial reporting",
+        "evidence": "Section 62, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Unclear internal coordination and roles within the project implementation unit",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish clear roles and responsibilities within the project implementation unit, and develop a project operational manual",
+        "evidence": "Section 62, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Potential inaccuracies in procurement processes",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop a procurement strategy and plan, and establish a procurement committee to ensure transparency and fairness",
+        "evidence": "Section 63, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Risks associated with climate change and natural hazards",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Conduct a climate risk assessment, and develop a climate change adaptation and mitigation plan",
+        "evidence": "Section 59, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Risks associated with the project's fiduciary management",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a fiduciary management system, and conduct regular audits and financial reporting",
+        "evidence": "Section 61, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Risks associated with the project's social and environmental impacts",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct a social and environmental impact assessment, and develop a plan to mitigate and manage potential impacts",
+        "evidence": "Section 21, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Risks associated with the project's governance and institutional framework",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear governance and institutional framework, and ensure coordination and collaboration among stakeholders",
+        "evidence": "Section 44, Project Appraisal Document"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Risks associated with the project's implementation and execution",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop a detailed implementation plan, and establish a project implementation unit to ensure effective execution",
+        "evidence": "Section 45, Project Appraisal Document"
+      }
+    ]
+  },
+  "parse_error": null
+}

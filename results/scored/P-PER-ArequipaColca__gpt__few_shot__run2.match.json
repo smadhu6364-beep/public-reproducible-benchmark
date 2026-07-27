@@ -1,0 +1,238 @@
+{
+  "run_file": "P-PER-ArequipaColca__gpt__few_shot__run2.json",
+  "project_id": "P-PER-ArequipaColca",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R03",
+      "similarity": 0.627,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R16",
+      "gt_risk_id": "R01",
+      "similarity": 0.463,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R17",
+      "gt_risk_id": "R04",
+      "similarity": 0.461,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delayed recruitment of key PIU staff (technical coordinator, environmental/social head, etc.) could hinder project start\u2011up.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Prepare detailed TORs and start recruitment before loan effectiveness; use interim consultants if needed; enforce two\u2011month hiring deadline.",
+      "evidence": "FM risk section notes delayed recruitment of FM staff; PIU must appoint key staff within two months after effectiveness."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Budget allocation and execution delays may postpone implementation and disbursements.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Initiate budget allocation immediately after loan signing; establish monthly execution tracking and corrective action plan.",
+      "evidence": "Fiduciary section cites budget allocation and execution delays as a risk to project readiness and disbursement."
+    },
+    {
+      "risk_id": "R03",
+      "description": "GORE Arequipa PIU lacks experience managing World Bank\u2011financed projects, risking fiduciary and ESG compliance.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Implement targeted training on WB fiduciary, procurement, ESG standards; assign experienced external advisors to mentor PIU staff.",
+      "evidence": "Implementation section states GORE lacks experience with WB\u2011financed projects, requiring capacity building for fiduciary, environmental, and social aspects."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Heavy rains, floods, landslides and seismic activity could damage upgraded roads and tourism sites.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Incorporate climate\u2011resilient engineering (drainage, slope stabilization, seismic design); conduct hazard mapping and third\u2011party design reviews.",
+      "evidence": "Key climate and natural hazard risks include heavy rains, flooding, landslides, and high seismic activity affecting infrastructure."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Failure to secure required Interinstitutional Agreements with municipalities may block disbursements.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Negotiate template agreements early; obtain signatures from all participating municipalities before first disbursement; monitor compliance.",
+      "evidence": "Disbursement condition: no withdrawals until Bank receives at least three signed Interinstitutional Agreements."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Fragmented coordination among ministries, regional and local authorities could cause implementation delays.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Define clear TORs for steering and consultative committees; schedule regular joint meetings and shared reporting mechanisms.",
+      "evidence": "Steering and consultative committees are established to coordinate across ministries and levels of government."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Complex procurement environment and limited experience may lead to procurement delays or non\u2011compliance.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Finalize Project Procurement Strategy Document; train logistics office staff; use standard WB bidding documents for all procurements.",
+      "evidence": "Procurement will follow WB regulations; GORE\u2019s logistics office prepared a Project Procurement Strategy Document."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Private sector investment may not materialize, reducing leverage and expected job creation.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop PPP frameworks and investment promotion packages; secure pre\u2011qualification of private partners; provide fiscal incentives and risk guarantees.",
+      "evidence": "Private investors are preparing a US$126\u202fmillion program contingent on upgraded infrastructure and tourism flows."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Global tourism demand shocks (e.g., new pandemic, recession) could lower arrivals and revenue.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Diversify source markets (domestic, regional, niche); strengthen digital marketing; create flexible tourism products to adapt to demand shifts.",
+      "evidence": "Tourism contributed 9.3\u202f% of GDP; pandemic caused severe drop; future arrivals depend on global demand."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Risks of sexual exploitation and harassment may affect women participants and staff.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Enforce SEA/SH Action Plan, conduct awareness training, establish confidential reporting channels, monitor incidents regularly.",
+      "evidence": "Project includes SEA/SH Action Plan to address sexual exploitation and harassment risks."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Construction activities could cause environmental degradation if mitigation measures are insufficient.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement Environmental Management Plan; use low\u2011impact construction techniques; monitor reforestation progress; manage waste responsibly.",
+      "evidence": "Component includes reforestation of 174\u202fha and mitigation measures such as PV panels and drainage."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Delay in signing the Cooperation Agreement between MINCETUR and GORE may postpone fund utilization.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Set a firm deadline for signing; assign legal team to track progress; involve Bank liaison to ensure timely execution.",
+      "evidence": "Cooperation Agreement between MINCETUR and GORE must be signed in form satisfactory to the Bank."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Cost overruns on road and infrastructure works could exhaust the allocated budget.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use detailed cost estimates with contingency reserve; conduct independent cost reviews; monitor expenditures monthly and adjust forecasts.",
+      "evidence": "Road upgrades involve extensive civil works; cost overruns are a common risk in large infrastructure projects."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Insufficient maintenance arrangements may lead to rapid degradation of upgraded assets.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Create an O&M fund, train local operators, establish maintenance contracts with clear performance indicators.",
+      "evidence": "Design includes maintenance arrangements to ensure sustainability of improved roads."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Inadequate stakeholder engagement could generate grievances and community opposition.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Roll out Stakeholder Engagement Plan; hold community workshops; maintain transparent grievance redress mechanism with timely response.",
+      "evidence": "Borrower must prepare and implement Stakeholder Engagement Plan and grievance mechanism."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Political instability or changes in regional leadership may affect project continuity.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Obtain multi\u2011year political commitments; embed project in regional development plan; maintain continuous dialogue with elected officials.",
+      "evidence": "Recent years have seen increased political instability; project relies on GORE Arequipa governance."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Non\u2011compliance with environmental and social safeguards could trigger Bank sanctions.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Develop and implement ESMP; conduct regular compliance audits; provide staff training on safeguards and reporting.",
+      "evidence": "Environmental and Social Risk Classification is Substantial; FM risk rated Substantial, requiring safeguards compliance."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Data gaps for M&E indicators (e.g., lodging arrivals) may impair performance monitoring.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Set up dedicated data collection unit; formalize data sharing agreements with MINCETUR/INEI; use digital platform for real\u2011time monitoring.",
+      "evidence": "M&E relies on data from MINCETUR, INEI, and new surveys; baseline and periodic data collection required."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Peru is in a period of substantial political uncertainty (low popular support for the executive and Congress, high political fragmentation); a new government assumes office July 2026 and regional elections are scheduled October 2026. Since GORE Arequipa (a regional government) is the implementing agency, regional government changes could slow implementation or shift priorities; high-level changes at MINCETUR could also affect oversight commitment.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Focus on highly needed, consensus-driven investments; maintain buy-in and continuous dialogue with the tourism private sector; engage proactively with any new authorities on project opportunities; use implementation arrangements that are technically strong, highly competent, and relatively shielded from political influence and staff turnover."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Tourism projects are inherently complex, involving infrastructure, capacity building, and multiple government levels/sectors plus private-sector and community stakeholders. Capacity must be built at GORE Arequipa given no precedent for multisectoral regional investment programs in Peru, and historic national-regional coordination weaknesses. The project also does not budget for O&M of delivered sites/infrastructure, which falls to designated stakeholders.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Institutional capacity building via the Project (incl. GFPP) to ready GORE for implementation; World Bank support on PIU composition and key staff selection; coordination arrangements/agreements between the PIU and local partners in charge of operating sites, to align on design, implementation, and handover."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Combined fiduciary risk with GORE Arequipa is Substantial, reflecting the entity's lack of prior experience with World Bank or other MDB-financed operations in both financial management and procurement.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A fiduciary assessment identified capacity gaps and informed mitigation measures; recruit dedicated FM and Procurement Specialists supported by qualified administrative staff; detail minimum FM/procurement procedures aligned with WB requirements in the Project Operational Manual; use SIAF for financial transactions/reporting and STEP for procurement planning/monitoring; targeted WB training, regular fiduciary supervision, and annual audits."
+    },
+    {
+      "risk_id": "R04",
+      "description": "E&S risk reflects the scope/nature of planned interventions, works located in environmentally and culturally sensitive areas, and GORE Arequipa's limited institutional capacity to manage risks per the Environmental and Social Framework (ESF).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strengthen PIU capacity to manage E&S risks with adequate resources/staffing; elaborate and implement project-level instruments (Stakeholder Engagement Plan, Labor Management Plan, SEA/SH Plan) plus intervention-level instruments with specific mitigation measures."
+    }
+  ]
+}

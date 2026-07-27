@@ -1,0 +1,212 @@
+{
+  "run_file": "P-PAK-ResilientAccessibleMicrofinance__gpt__few_shot__run2.json",
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R16",
+      "gt_risk_id": "R01",
+      "similarity": 0.634,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R02",
+      "similarity": 0.469,
+      "gen_category": "environmental",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Flood\u2011related shocks could cause a sharp rise in non\u2011performing loans and erode capital adequacy of microfinance providers.",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Activate the Climate Risk Fund\u2019s contingent liquidity facility immediately after a qualifying flood and use parametric insurance back\u2011stop to replenish capital.",
+      "evidence": "NPLs surged 25.7% after 2022 floods; capital adequacy fell from 14.9% to 11.7% (Sect. 9\u201110)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The CRF is initially funded only for flood risk, leaving the sector exposed to drought, extreme heat and other climate events.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Secure additional financing and expand the CRF\u2019s coverage to other climate hazards after the first project phase, based on updated risk modelling.",
+      "evidence": "CRF will eventually cover all climate risks but current funding is limited to flood risk (Sect. 21\u201122)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Reliance on the State Bank of Pakistan (SBP) as sole trustee and implementation partner may create capacity or governance bottlenecks.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish robust Oversight and Working Committees, regular independent audits, and clear performance\u2011based milestones for SBP.",
+      "evidence": "CRF will be owned by GoP and managed by SBP as Trustee (Sect. 23\u201124)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The Trust structure could be subject to political interference or misuse of ring\u2011fenced assets.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Include strict fiduciary clauses in the Trust deed, require Board\u2011level approvals for any amendment, and conduct quarterly external reviews.",
+      "evidence": "Trust modality creates a ring\u2011fenced, autonomous structure; benefits include crowd\u2011in of additional funds (Sect. 39\u201140)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Multiple large flood events could deplete the CRF\u2019s capital, limiting its ability to provide contingent liquidity.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Maintain a parametric insurance back\u2011stop and pre\u2011agree additional capital injections from IDA or private investors for extreme scenarios.",
+      "evidence": "Expansion of coverage to additional climate risks will require adequate risk modelling and financial support (Sect. 30\u201131)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Microfinance providers may misuse or inefficiently allocate CRF liquidity, leading to higher defaults.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Tie CRF disbursements to performance indicators, conduct quarterly loan\u2011portfolio reviews, and enforce repayment monitoring.",
+      "evidence": "Liquidity will be passed to MFPs for restructuring, top\u2011up or new recovery loans (Sect. 28\u201129)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Women may not receive the targeted share of CRF\u2011supported loans, undermining gender equity goals.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Enforce the 55% women beneficiary threshold, apply higher borrowing costs for non\u2011compliance, and monitor gender disbursement monthly.",
+      "evidence": "At least 55% of beneficiaries of MFPs benefiting from CRF liquidity must be women (Sect. 49)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Delays in verifying flood triggers could postpone CRF disbursement, reducing its effectiveness.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Define clear, objective trigger thresholds, use multiple third\u2011party data sources, and pre\u2011approve rapid decision protocols for SBP.",
+      "evidence": "Activation will be subject to two independent triggers; data from third\u2011party service providers (Sect. 31\u201132)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Agricultural\u2011technology loans may increase fertilizer and pesticide use, causing localized environmental degradation.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Integrate environmental safeguards in loan covenants, require sustainable agritech practices, and monitor chemical usage through MIS.",
+      "evidence": "Cumulative impacts may increase use of fertilizers, pesticides; impacts expected to be localized (Sect. 54)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Grievance Redress Service may be ineffective, leading to stakeholder dissatisfaction and reputational risk.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement a transparent, time\u2011bound complaints handling process, publish quarterly grievance reports, and conduct independent audits of GRS.",
+      "evidence": "Grievance Redress Service will be established and integrated into the project (Sect. 50)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "The microfinance sector currently reaches only ~26% of its potential market, limiting project impact.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Partner with Pakistan Microfinance Network and NGOs to conduct outreach campaigns targeting underserved regions and borrower segments.",
+      "evidence": "Sector serves 26.2% of potential market of 40\u202fmillion borrowers (Sect. 7)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Exchange\u2011rate fluctuations between USD and PKR could erode the real value of project financing.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Use hedging instruments or maintain a foreign\u2011exchange reserve buffer within the CRF\u2019s capital structure.",
+      "evidence": "Currency equivalents: PKR\u202f278.64\u202f=\u202fUS$1 (Datasheet)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Coordination challenges with multiple donors (ADB, IFC, GIZ) could cause overlapping activities or gaps.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Create a joint donor coordination forum, share work plans, and align timelines through a unified implementation matrix.",
+      "evidence": "Project builds on complementarities with ADB, IFC, GIZ, etc. (Sect. 34\u201135)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Reliance on third\u2011party flood\u2011risk data may lead to inaccurate trigger assessments.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Validate data against at least two independent modelling firms and establish a data\u2011quality review panel before trigger activation.",
+      "evidence": "Data will be provided by third\u2011party service providers (e.g., flood risk modelling firms) (Sect. 31)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Legal covenants prohibit amendment of the Trust deed without Association consent, potentially delaying needed changes.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Negotiate a pre\u2011approved amendment protocol with the Association during project start\u2011up and document contingency scenarios.",
+      "evidence": "Trust deed cannot be amended without prior written consent of the Association (Legal Covenants section)."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Shifts in Government of Pakistan priorities could reduce political support for the RAM project.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain continuous high\u2011level engagement with GoP ministries, align project outputs with national climate and financial inclusion strategies, and secure formal policy endorsements.",
+      "evidence": "Project aligns with GoP development priorities on climate change, financial inclusion, and economic empowerment (Sect. 3)."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Inaccurate or delayed interim financial reports could lead to mis\u2011allocation of disbursements.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement automated IFR generation, conduct quarterly internal audits, and require external audit sign\u2011off before each disbursement tranche.",
+      "evidence": "Disbursement based on Interim Financial Reports; internal and external audits are stipulated (Sect. 51\u201153)."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Post\u2011project sustainability of the CRF may be jeopardized if no revenue\u2011generating mechanism is established.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a revolving\u2011fund model where interest earnings and insurance premiums replenish capital, and explore private\u2011sector co\u2011financing for Phase\u202f2.",
+      "evidence": "Additional financing may be required for expanded coverage; Phase\u202f2 may involve a guarantee facility (Sect. 30\u201133)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and Governance risk is Substantial. The political context in Pakistan remains fluid. However, there has been significant decline in political uncertainty and associated policy instability in recent months, especially in the backdrop of the general elections. Given that a new government took the helm recently and the fact that policy priorities are still being defined, political risks, in particular in the context of the project, remain substantial.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "In the implementation stage, the risks will be mitigated through frequent monitoring and oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is High. While fiscal consolidation measures have supported short-term stabilization, macroeconomic risks remain high amid a high debt burden (72 percent of GDP), heavy financial sector exposure to government debt, large external financing needs, weak confidence, and little progress with structural reforms. Significant risks include potential worsening of external conditions, further natural disasters, and a slowdown or reversals in policy adjustment.",
+      "category": "external",
+      "sort_rating": "High",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Risks are partly mitigated by government commitment to implementation of reforms under the ongoing International Monetary Fund program, World Bank support to structural policy reforms in the fiscal and power sectors, strong government commitment to the reforms supported by the operation, and the availability of dedicated World Bank technical assistance to implement key reforms."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "run_file": "P-UK-FreeBreakfastClubs__gpt__structured__run1.json",
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "gpt",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R01",
+      "similarity": 0.587,
+      "gen_category": "stakeholder",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.572,
+      "gen_category": "technical",
+      "gt_category": "organizational",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "CRM system not delivered by November 2025, delaying onboarding of cohort 1 schools.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Allocate a dedicated development team, set weekly milestones, conduct early user testing, and prepare a manual onboarding fallback process.",
+      "evidence": "develop a customer relationship management system internally, working towards a minimum-viable product from November 2025."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Call\u2011centre pilot for data collection may encounter implementation problems, affecting data quality.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Pilot the call centre in a limited region, establish clear SOPs, and have alternative data capture methods ready.",
+      "evidence": "start commercial processes to begin a call-centre pilot to support data collection."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Insufficient physical space in some schools could prevent delivery of the 30\u2011minute breakfast club.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage technical estate advisers early to assess space, provide guidance on reconfiguring areas or using temporary modular units.",
+      "evidence": "technical estate advisers to test what schools can do to mitigate any space constraints."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Delay in obtaining timely approval and budget confirmation from HM Treasury could postpone programme start.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Engage Treasury early, submit a detailed business case, and secure provisional funding commitments.",
+      "evidence": "timely approval and budget confirmation from HM Treasury"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Limited availability of skilled staff and resources in DfE and the education sector may hinder delivery.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Recruit additional staff, provide targeted training, and supplement with contracted specialist advisers.",
+      "evidence": "availability of skilled staff and resources, in both DfE and the education sector"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Potential gap in breakfast provision for schools transitioning from the NSBP after its July 2026 closure.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Coordinate transition timelines, guarantee places for NSBP schools, and offer interim support during handover.",
+      "evidence": "guaranteed a place to ensure they do not have a gap in provision after the closure of the NSBP in July 2026"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Delay in enactment of the Children\u2019s Wellbeing and Schools Bill could affect the mandatory duty timing.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Monitor legislative progress, develop interim guidance, and align rollout dates with expected enactment.",
+      "evidence": "Children's Wellbeing and Schools Bill will place a duty on state-funded schools"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Confusion over the funding model, especially previous disadvantage\u2011level variations, may reduce school participation.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide clear, simplified guidance, run webinars, and set up a helpdesk to answer queries.",
+      "evidence": "variation by disadvantage levels was deemed to be complicated for mainstream schools, resulting in confusion"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Schools may fail to meet required food standards, leading to regulatory breaches.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Deliver food\u2011standards training, supply approved menu templates, and conduct compliance audits.",
+      "evidence": "Food provided must be in line with school food standards"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Procurement delays for additional advisers could limit support for schools during rollout.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Use existing framework contracts to fast\u2011track recruitment, set strict procurement timelines, and monitor progress closely.",
+      "evidence": "procurement process to increase the number of advisers supporting schools through the educational and children's social care framework"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Lower value for money compared to the 'do minimum' option in year 1, due to the shorter funding period available for the preferred option's new cohorts of schools.",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delivery risks around staffing and food costs for schools newly onboarded to the free breakfast clubs programme.",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated through early adopter (EA) scheme insights and support funding."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Uncertainty in the labour-market benefits (parental workforce participation gains) the programme is expected to deliver.",
+      "category": "external",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Addressed through conservative assumptions in the economic modelling."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:01:55.893241+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Project framing  \n- **Objective:** Enhance climate\u2011resilient transport connectivity and agricultural market access in selected areas of Sierra Leone.  \n- **Scope & Components:** (1) Resilient Urban Transport (US$17\u202fm); (2) Resilient Rural Bridges & Link Roads (US$44\u202fm); (3) Resilient Agriculture Market Infrastructure (US$8\u202fm); (4) Project Management Support (US$5\u202fm); (5) Contingent Emergency Response Component (CERC \u2013 US$0).  \n- **Delivery model:** IDA grant (US$74\u202fm) administered by the Ministry of Transport and Aviation (MTA) through a Project Coordination and Implementation Unit (PCIU) and overseen by a National Project Steering Committee (NPSC).  \n- **Timeline:** Expected approval\u202f29\u2011May\u20112024; expected closing\u202f31\u2011Dec\u20112029 (\u22485\u202fyears).  \n- **Budget:** Total operation cost US$74\u202fmillion, fully financed by IDA.  \n- **Key stakeholders:** GoSL (MTA, SLRA, SLPTA, MoF, MAFS), World Bank, development partners (EU, KfW, GIZ, AfDB, AFD, IFAD, FAO), private sector (bus operators, contractors, market traders), NGOs and women\u2019s groups.  \n- **External dependencies:** Climate\u2011change trends (floods, landslides, extreme heat), successful financing of the SCADeP bridge gap, procurement capacity, private\u2011sector lease\u2011operate\u2011own financing for buses.\n\nStep 2 \u2013 Category sweep (candidate risks with supporting text)  \n\n| Category | Candidate risk | Evidence (\u226425\u202fwords) |\n|----------|----------------|----------------------|\n| technical | Floods/landslides damaging bridges/roads | \u201cSierra Leone is highly vulnerable to natural hazards\u2026 flooding, landslides\u2026 climate change expected to exacerbate flooding\u2026 bridge, road, and markets damage\u201d (Sec\u202f10). |\n| technical | Procurement unit not established on time | \u201cPCIU does not have a procurement unit currently and it will be established and staffed\u2026\u201d (Procurement risk). |\n| technical | Limited capacity to use RAMS/BMS | \u201cSLRA continues to build and update the RAMS inventory and has adequate capacity to utilize it\u201d (Critical assumptions) \u2013 implies risk if capacity lacking. |\n| financial | Funding gap for SCADeP bridge works | \u201cFunding gap of about US$7.1\u202fmillion\u2026 GoSL fiscal stress\u2026 will partially address the financial gap\u201d (Comp\u202f2b). |\n| financial | High fiduciary risk (FM) | \u201cFM risk before mitigation is \u2018High\u2019\u2026 insufficient experience of MTA with World Bank FM procedures\u201d (Annex\u202f7). |\n| financial | Construction cost overruns | \u201cConstruction projects in Sub\u2011Saharan Africa experienced cost overrun of more than 15\u202f%\u201d (Sec\u202f56). |\n| schedule | NPSC not set up within 60\u202fdays | \u201cRecipient shall not later than 60\u202fdays\u2026 establish a National Project Steering Committee\u201d (Legal covenants). |\n| schedule | Rainy\u2011season construction delays | \u201cCivil works\u2026 may be suspended due to prolonged rainy season\u201d (Comp\u202f2b). |\n| stakeholder | Institutional fragmentation/coordination gaps | \u201cInstitutional framework\u2026 fragmented and lacks systematic coordination among multiple agencies\u201d (Sec\u202f15). |\n| stakeholder | Resistance from informal transport operators | \u201cPrivate sector is the major provider\u2026 informal operators\u2026 unregulated\u201d (Sec\u202f3 of Comp\u202f1). |\n| stakeholder | Gender\u2011based harassment in public transport | \u201cCCTV cameras to track and reduce incidences of harassment/violence\u2026 SH/SEA action plan\u201d (Comp\u202f1c). |\n| political_regulatory | Political polarization affecting commitment | \u201cCountry faces\u2026 governance challenges and political polarization\u201d (Country context). |\n| environmental | Potential non\u2011compliance with environmental safeguards | \u201cConstruction will follow environment\u2011friendly norms\u2026 but risk of non\u2011compliance\u201d (Sec\u202f2). |\n| organizational | Staff turnover in PCIU undermining continuity | \u201cPCIU will recruit\u2026 procurement specialist, FM specialist, internal auditor, social specialist\u201d (Implementation arrangements) \u2013 risk of loss. |\n| external | Private\u2011sector lease\u2011operate\u2011own financing may fall short | \u201cPrivate sector financing\u2026 lease\u2011operate\u2011own\u2026 covers about 50\u202f% of capital cost\u201d (Private Capital Facilitation). |\n\nStep 3 \u2013 Evidence filter  \nAll listed risks are directly supported by quoted statements; none are removed.\n\nStep 4 \u2013 Assessment & mitigation  \n\n| ID | Likelihood (1\u20115) | Impact (1\u20115) | Justification | Mitigation |\n|----|------------------|--------------|---------------|------------|\n| R01 | 4 | 5 | Climate trends already causing floods; bridges are critical assets. | Apply climate\u2011resilient design (higher freeboard, robust drainage), conduct regular post\u2011construction monitoring. |\n| R02 | 3 | 4 | Procurement unit creation is a pre\u2011condition; delays would stall works. | Fast\u2011track recruitment, use interim external procurement experts, monitor via STEP. |\n| R03 | 3 | 3 | RAMS/BMS are new; staff may lack expertise. | Provide targeted training, embed technical assistance, hire dedicated asset\u2011management officers. |\n| R04 | 3 | 4 | US$7.1\u202fm gap exists; GoSL fiscal stress noted. | Secure additional donor/partner financing, phase bridge works, include contingency. |\n| R05 | 3 | 4 | FM risk rated High; MTA lacks experience. | Implement FM action plan (training, manuals, external audits, segregation of duties). |\n| R06 | 3 | 4 | Regional evidence of >15\u202f% overruns; sensitivity analysis shows IRR drop. | Use fixed\u2011price contracts, include cost contingency, rigorous contractor supervision. |\n| R07 | 2 | 3 | Legal covenant mandates 60\u2011day deadline; manageable but critical. | Appoint NPSC members before project effectiveness, define clear terms of reference. |\n| R08 | 4 | 4 | Rainy season historically halts works; bridges located in flood\u2011prone zones. | Schedule critical civil works in dry months, adopt weather\u2011resistant construction methods, build temporary access roads. |\n| R09 | 3 | 4 | Fragmented institutions risk duplicated effort and delays. | Strengthen NPSC coordination role, formal MoUs, joint monthly steering meetings. |\n| R10 | 3 | 3 | Informal operators dominate market; may oppose formal bus scheme. | Conduct stakeholder workshops, offer incentives (lease terms, training), integrate operators into formal system. |\n| R11 | 2 | 3 | Harassment risk acknowledged; mitigation planned. | Implement SH/SEA action plan, install CCTV, establish hotline, conduct gender\u2011sensitivity training. |\n| R12 | 2 | 4 | Political polarization could affect budgetary support. | Obtain cross\u2011party endorsements, embed project in national development plans, maintain transparent reporting. |\n| R13 | 2 | 3 | Environmental safeguards are required; non\u2011compliance possible. | Conduct thorough ESIA, monitor via E&S Management Plan, enforce mitigation measures. |\n| R14 | 2 | 3 | Recruitment plan exists; turnover risk moderate. | Offer competitive contracts, continuous capacity\u2011building, maintain detailed handover documentation. |\n| R15 | 3 | 3 | Private financing covers only half of bus fleet cost. | Diversify financing (green bonds, donor grants), include performance\u2011based payments, secure guarantees. |\n\nStep 5 \u2013 Consolidation  \nAll 15 risks are distinct and supported by the appraisal document; they are retained.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Floods and landslides could damage newly built bridges and link roads, disrupting connectivity.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Incorporate climate\u2011resilient design (higher freeboard, robust drainage, scour protection) and conduct regular post\u2011construction monitoring.\",\n      \"evidence\": \"Sierra Leone is highly vulnerable to natural hazards... flooding, landslides... climate change expected to exacerbate flooding... bridge, road, and markets damage\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Delay in establishing a functional procurement unit within the PCIU may postpone contract awards.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Fast\u2011track recruitment, use interim external procurement experts, and monitor progress through STEP.\",\n      \"evidence\": \"PCIU does not have a procurement unit currently and it will be established and staffed with a qualified and experienced person before the project effectiveness.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Insufficient technical capacity to operate the RAMS/BMS asset\u2011management systems could limit effective maintenance.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide targeted training, embed technical assistance, and hire dedicated asset\u2011management officers.\",\n      \"evidence\": \"SLRA continues to build and update the RAMS inventory and has adequate capacity to utilize it.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"A US$7.1\u202fmillion financing gap for SCADeP bridge works may remain unfilled due to GoSL fiscal constraints.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Secure additional donor financing, phase bridge construction, and include a contingency line in the budget.\",\n      \"evidence\": \"Funding gap of about US$7.1 million... GoSL fiscal stress... will partially address the financial gap.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"High fiduciary risk stemming from MTA's limited experience with World Bank financial management procedures.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the FM action plan: staff training, FM manual, segregation of duties, and regular external audits.\",\n      \"evidence\": \"FM risk before mitigation is 'High'... insufficient experience of MTA with World Bank FM procedures.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Construction cost overruns could erode the project\u2019s economic viability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Use fixed\u2011price contracts, embed a cost contingency, and enforce rigorous contractor supervision.\",\n      \"evidence\": \"Construction projects in Sub\u2011Saharan Africa experienced cost overrun of more than 15%.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Failure to establish the National Project Steering Committee within 60\u202fdays may weaken governance.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint NPSC members before project effectiveness and define clear terms of reference.\",\n      \"evidence\": \"Recipient shall not later than 60 days... establish a National Project Steering Committee.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Heavy rains could halt bridge and road construction, extending the implementation schedule.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Schedule critical works in the dry season, adopt weather\u2011resistant construction methods, and build temporary access routes.\",\n      \"evidence\": \"Civil works may be suspended due to prolonged rainy season.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Institutional fragmentation among ministries may cause coordination failures and project delays.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Strengthen NPSC oversight, formalize MoUs, and hold regular joint steering meetings.\",\n      \"evidence\": \"Institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among multiple agencies.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Informal transport operators may resist the bus fleet modernization and formalization process.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Engage operators early, offer lease incentives, and provide training to integrate them into the formal system.\",\n      \"evidence\": \"Private sector is the major provider of transport services... informal operators... unregulated.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Gender\u2011based harassment on public transport could deter women\u2019s usage and undermine social goals.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Implement the SH/SEA action plan, install CCTV, establish a hotline, and conduct gender\u2011sensitivity training.\",\n      \"evidence\": \"CCTV cameras to track and reduce incidences of harassment/violence... SH/SEA action plan.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Political polarization may lead to shifting priorities and reduced government support.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Secure cross\u2011party endorsements, embed the project in national development frameworks, and maintain transparent reporting.\",\n      \"evidence\": \"Country faces postconflict attributes of governance challenges and political polarization.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Non\u2011compliance with environmental safeguards could trigger project delays or penalties.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct a thorough ESIA, monitor via the Environmental and Social Management Plan, and enforce mitigation measures.\",\n      \"evidence\": \"Construction will follow environment\u2011friendly norms and design parameters.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"High turnover of key PCIU staff may lead to loss of institutional knowledge.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Offer competitive contracts, continuous capacity\u2011building, and maintain detailed handover documentation.\",\n      \"evidence\": \"PCIU will recruit procurement specialist, FM specialist, internal auditor, and social specialist before project effectiveness.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Private\u2011sector lease\u2011operate\u2011own financing may fall short of covering the full bus fleet cost.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Diversify financing sources (green bonds, donor grants), include performance\u2011based payments, and secure guarantee mechanisms.\",\n      \"evidence\": \"Private sector financing is channeled in the lease\u2011operate\u2011own approach and covers about 50% of capital cost.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Floods and landslides could damage newly built bridges and link roads, disrupting connectivity.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Incorporate climate\u2011resilient design (higher freeboard, robust drainage, scour protection) and conduct regular post\u2011construction monitoring.",
+        "evidence": "Sierra Leone is highly vulnerable to natural hazards... flooding, landslides... climate change expected to exacerbate flooding... bridge, road, and markets damage"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delay in establishing a functional procurement unit within the PCIU may postpone contract awards.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Fast\u2011track recruitment, use interim external procurement experts, and monitor progress through STEP.",
+        "evidence": "PCIU does not have a procurement unit currently and it will be established and staffed with a qualified and experienced person before the project effectiveness."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Insufficient technical capacity to operate the RAMS/BMS asset\u2011management systems could limit effective maintenance.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide targeted training, embed technical assistance, and hire dedicated asset\u2011management officers.",
+        "evidence": "SLRA continues to build and update the RAMS inventory and has adequate capacity to utilize it."
+      },
+      {
+        "risk_id": "R04",
+        "description": "A US$7.1\u202fmillion financing gap for SCADeP bridge works may remain unfilled due to GoSL fiscal constraints.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Secure additional donor financing, phase bridge construction, and include a contingency line in the budget.",
+        "evidence": "Funding gap of about US$7.1 million... GoSL fiscal stress... will partially address the financial gap."
+      },
+      {
+        "risk_id": "R05",
+        "description": "High fiduciary risk stemming from MTA's limited experience with World Bank financial management procedures.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement the FM action plan: staff training, FM manual, segregation of duties, and regular external audits.",
+        "evidence": "FM risk before mitigation is 'High'... insufficient experience of MTA with World Bank FM procedures."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Construction cost overruns could erode the project\u2019s economic viability.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Use fixed\u2011price contracts, embed a cost contingency, and enforce rigorous contractor supervision.",
+        "evidence": "Construction projects in Sub\u2011Saharan Africa experienced cost overrun of more than 15%."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Failure to establish the National Project Steering Committee within 60\u202fdays may weaken governance.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Appoint NPSC members before project effectiveness and define clear terms of reference.",
+        "evidence": "Recipient shall not later than 60 days... establish a National Project Steering Committee."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Heavy rains could halt bridge and road construction, extending the implementation schedule.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Schedule critical works in the dry season, adopt weather\u2011resistant construction methods, and build temporary access routes.",
+        "evidence": "Civil works may be suspended due to prolonged rainy season."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Institutional fragmentation among ministries may cause coordination failures and project delays.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Strengthen NPSC oversight, formalize MoUs, and hold regular joint steering meetings.",
+        "evidence": "Institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination among multiple agencies."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Informal transport operators may resist the bus fleet modernization and formalization process.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Engage operators early, offer lease incentives, and provide training to integrate them into the formal system.",
+        "evidence": "Private sector is the major provider of transport services... informal operators... unregulated."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Gender\u2011based harassment on public transport could deter women\u2019s usage and undermine social goals.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Implement the SH/SEA action plan, install CCTV, establish a hotline, and conduct gender\u2011sensitivity training.",
+        "evidence": "CCTV cameras to track and reduce incidences of harassment/violence... SH/SEA action plan."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Political polarization may lead to shifting priorities and reduced government support.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Secure cross\u2011party endorsements, embed the project in national development frameworks, and maintain transparent reporting.",
+        "evidence": "Country faces postconflict attributes of governance challenges and political polarization."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Non\u2011compliance with environmental safeguards could trigger project delays or penalties.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Conduct a thorough ESIA, monitor via the Environmental and Social Management Plan, and enforce mitigation measures.",
+        "evidence": "Construction will follow environment\u2011friendly norms and design parameters."
+      },
+      {
+        "risk_id": "R14",
+        "description": "High turnover of key PCIU staff may lead to loss of institutional knowledge.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Offer competitive contracts, continuous capacity\u2011building, and maintain detailed handover documentation.",
+        "evidence": "PCIU will recruit procurement specialist, FM specialist, internal auditor, and social specialist before project effectiveness."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Private\u2011sector lease\u2011operate\u2011own financing may fall short of covering the full bus fleet cost.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Diversify financing sources (green bonds, donor grants), include performance\u2011based payments, and secure guarantee mechanisms.",
+        "evidence": "Private sector financing is channeled in the lease\u2011operate\u2011own approach and covers about 50% of capital cost."
+      }
+    ]
+  },
+  "parse_error": null
+}

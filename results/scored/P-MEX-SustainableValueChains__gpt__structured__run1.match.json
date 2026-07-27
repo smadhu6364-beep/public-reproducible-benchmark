@@ -1,0 +1,219 @@
+{
+  "run_file": "P-MEX-SustainableValueChains__gpt__structured__run1.json",
+  "project_id": "P-MEX-SustainableValueChains",
+  "model": "gpt",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R04",
+      "similarity": 0.63,
+      "gen_category": "external",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.556,
+      "gen_category": "technical",
+      "gt_category": "technical",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R03",
+      "similarity": 0.509,
+      "gen_category": "financial",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R01",
+      "similarity": 0.487,
+      "gen_category": "financial",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Insufficient MRV capacity hampers verification of borrowers\u2019 sustainability performance.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide technical assistance to develop standardized MRV tools, fund validation services, and train both borrowers and lenders on data collection.",
+      "evidence": "Limited availability of credible MRV systems constrains lenders\u2019 capacity to evaluate the environmental performance and credit risk of borrowers."
+    },
+    {
+      "risk_id": "R02",
+      "description": "High validation and verification costs for SLLs may be passed to borrowers after pilot, reducing uptake.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Phase\u2011in cost sharing, keep a subsidy pool for early borrowers, and negotiate cost\u2011recovery limits in loan agreements.",
+      "evidence": "ex\u2011ante validation and ex\u2011post verification costs of SLLs \u2026 after the piloting stage, this cost is expected to be shifted to the borrowers."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Operationalising the new Sustainability\u2011Linked Loan instrument may encounter implementation challenges.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Pilot SLLs with detailed guidelines, engage an independent validation entity, and embed step\u2011down pricing incentives to encourage compliance.",
+      "evidence": "particular focus will be given to developing the detailed framework for operationalising this instrument in line with industry standards."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Credit risk of beneficiary enterprises could lead to loan defaults affecting NAFIN and PFIs.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Strengthen credit assessment, use risk\u2011sharing mechanisms (e.g., guarantees), and monitor loan performance with early\u2011warning indicators.",
+      "evidence": "NAFIN will assume the credit risk of the BEs when lending directly and of the PFIs on second\u2011tier operations."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Insufficient private co\u2011financing (20\u202f% BE, 30\u202f% PFI) may limit project scale.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Create incentive packages for private investors, secure anchor\u2011company commitments early, and track co\u2011financing targets quarterly.",
+      "evidence": "minimum 20\u202f% co\u2011financing from BE \u2026 minimum 30\u202f% co\u2011financing from PFIs and BEs \u2026 mobilise US$89\u202fM private capital."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Foreign\u2011exchange risk for USD\u2011denominated loans could affect borrowers and NAFIN.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Limit USD exposure, provide FX hedging support via swaps, and require natural\u2011hedge justification in loan eligibility criteria.",
+      "evidence": "NAFIN will manage the FX risk on its own balance sheet using Mexico\u2019s well\u2011developed currency swap market."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Delay in adopting the Project Operations Manual may postpone implementation activities.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Set clear milestones for POM finalisation, conduct interim reviews, and allocate dedicated staff to fast\u2011track approval.",
+      "evidence": "The Borrower shall adopt the Project Operations Manual in form and substance satisfactory to the Bank."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Procurement capacity gaps at NAFIN could cause delays or non\u2011compliance with WB rules.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint a qualified procurement professional, provide hands\u2011on training from the Bank, and implement a monitoring checklist for each procurement.",
+      "evidence": "NAFIN\u2019s experience has mainly focused on overseeing\u2026 not directly involved\u2026 NAFIN will appoint an internal procurement professional\u2026 Bank will provide hands\u2011on training."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Low uptake by SMEs due to limited technical capacity and high transaction costs.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Run targeted outreach, simplify application procedures, subsidise MRV costs, and provide bundled TA to reduce transaction burdens.",
+      "evidence": "SMEs lack adequate access to the loan products \u2026 high MRV costs and limited capacity to structure, appraise and monitor investments."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Gender gap may limit participation of women\u2011led firms, affecting inclusive outcomes.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Introduce gender\u2011inclusive eligibility criteria, conduct dedicated outreach to women\u2011owned firms, and offer gender\u2011focused capacity\u2011building workshops.",
+      "evidence": "Women\u2011owned/led firms have lower access to formal financing\u2026 only 42\u202f% have accessed credit\u2026 Project will address gender gap by channeling financing to women\u2011inclusive enterprises."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Changes in Sustainable Taxonomy or related regulations could affect eligibility of loans.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Maintain continuous dialogue with the Ministry of Finance, embed flexibility clauses in the POM, and monitor regulatory updates closely.",
+      "evidence": "Mexico has launched a Sustainable Taxonomy and a Sustainable Financing Mobilisation Strategy\u2026 market for sustainable finance instruments remains nascent."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Climate\u2011related physical risks (extreme weather) may impair beneficiary firms\u2019 operations and loan repayment.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Integrate climate\u2011risk assessments into loan underwriting, promote resilience\u2011enhancing investments, and explore insurance or risk\u2011pooling mechanisms.",
+      "evidence": "Mexico is highly vulnerable to climate change\u2026 translate into increased operational costs, reduced productivity, and heightened financial distress for SMEs and mid\u2011caps."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Limited market acceptance of SLL/GL instruments could reduce demand for financing.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Leverage anchor\u2011company commitments, showcase pilot successes, and develop demand\u2011generation campaigns with industry associations.",
+      "evidence": "the market for sustainable finance instruments remains nascent and concentrated among large corporations."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Potential fraud or corruption in loan disbursement and monitoring.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Implement strict anti\u2011corruption controls, independent audits, and a robust grievance redress mechanism as required by the loan agreement.",
+      "evidence": "arrangements for preventing, detecting, reporting, investigation, remediation \u2026 compliance with the Anti\u2011Corruption Guidelines."
+    },
+    {
+      "risk_id": "R15",
+      "description": "PFIs have limited experience offering green or sustainable loans, affecting loan quality and monitoring.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide dedicated TA to PFIs, develop standard appraisal templates, and set up a PFI\u2011specific MRV support unit.",
+      "evidence": "less than 15\u202f% of Mexican banks offer dedicated green or sustainable loan products; green lending represents less than 1\u202f% of their loan books."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "The Project channels financing to SMEs/mid-caps via NAFIN through Green Loans (GLs) and Sustainability-Linked Loans (SLLs). For GLs, E&S risk is limited (resources go to a pre-screened positive list), but SLLs operate as corporate loans, making site-specific impacts harder to trace and creating risk around traceability of environmental outcomes and possible greenwashing if sustainability targets are weak or under-monitored.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN prepared an Environmental and Social Management System (ESMS) summary covering main E&S risks by key sector, disclosed at appraisal."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Introduction of new financial instruments (notably SLLs) not currently deployed in Mexico, which may lack sufficient demand, drives the technical design risk rating.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Substantial TA to NAFIN, PFIs, and beneficiary enterprises (BEs) to support instrument design/deployment; GFPP grant to advance instrument design during preparation; NAFIN required to prepare and adopt a Sustainable Finance Framework (covering SLLs and GLs) acceptable to the Bank prior to effectiveness; draw on global best practices from comparable SLL facilities; Bank hands-on support during initial deployment."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The Project requires close coordination and participation of several stakeholders: different units within NAFIN, participating financial institutions (PFIs), beneficiary enterprises, and large anchor companies heading the green value chains (GVCs).",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Develop and deploy engagement/communication strategies pre-implementation via GFPP plus ongoing TA; establish a dedicated project implementation team within NAFIN with clear roles/responsibilities; formalize PFI participation through legal agreements defining reporting obligations and performance expectations; proactive NAFIN/WB engagement with anchor companies to encourage supplier-firm participation."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Risk that SMEs, mid-caps, and participating financial institutions may not take up the new SLL/GL products at the expected pace or scale, given evolving global sustainability policies, limited familiarity with the instruments, and possible overestimation of market demand.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "NAFIN business-development efforts for sustainable finance; targeted awareness and capacity-building for potential borrowers; TA to help beneficiary enterprises prepare Sustainability Plans and green investment proposals; monitor product uptake with scope to adjust instrument design/eligibility criteria, subject to Bank approval."
+    }
+  ]
+}

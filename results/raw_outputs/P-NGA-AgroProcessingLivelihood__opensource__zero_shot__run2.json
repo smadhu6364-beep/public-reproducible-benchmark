@@ -1,0 +1,108 @@
+{
+  "project_id": "P-NGA-AgroProcessingLivelihood",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:15:41.943347+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-NGA-AgroProcessingLivelihood\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in project implementation due to slow disbursement of funds\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Regular monitoring of disbursement and implementation progress, and close communication with the World Bank and other stakeholders to address any issues promptly\",\n      \"evidence\": \"Section IV. IMPLEMENTATION ARRANGEMENTS, 1. Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inadequate capacity of project staff and partners to implement the project effectively\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provision of training and capacity building programs for project staff and partners, and recruitment of additional staff with necessary expertise\",\n      \"evidence\": \"Section IV. IMPLEMENTATION ARRANGEMENTS, 1. Institutional and Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Insufficient participation of beneficiaries, particularly women and youth, in project activities\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Inclusive project design and implementation, with specific measures to encourage participation of women and youth, such as training and business planning support\",\n      \"evidence\": \"Section III. PROJECT DESCRIPTION, 2. Project Beneficiaries\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental and social impacts of project activities, such as soil and water pollution\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implementation of environmental and social management plans, and monitoring of potential impacts\",\n      \"evidence\": \"Section VI. APPRAISAL SUMMARY, 6. Environmental (including safeguard)\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Inadequate financial management and accounting systems, leading to mismanagement of funds\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establishment of robust financial management and accounting systems, and regular audits and monitoring\",\n      \"evidence\": \"Section IV. IMPLEMENTATION ARRANGEMENTS, 2. Financial Management (FM) and Disbursement Arrangements\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Delays in procurement processes, leading to delays in project implementation\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Streamlined procurement processes, and close monitoring of procurement progress\",\n      \"evidence\": \"Section IV. IMPLEMENTATION ARRANGEMENTS, 3. Procurement\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate infrastructure, such as roads and storage facilities, to support project activities\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Investment in infrastructure development, such as roads and storage facilities, and identification of alternative solutions\",\n      \"evidence\": \"Section III. PROJECT DESCRIPTION, 1. Project Components\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Limited access to markets and lack of market information, affecting project beneficiaries' ability to sell their products\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provision of market information and support to beneficiaries to access markets, such as through business alliances and out-grower schemes\",\n      \"evidence\": \"Section III. PROJECT DESCRIPTION, 1. Project Components\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Inadequate grievance redress mechanisms, leading to unresolved conflicts and project delays\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Establishment of effective grievance redress mechanisms, and regular monitoring of grievances\",\n      \"evidence\": \"Section VI. APPRAISAL SUMMARY, 7. World Bank Grievance Redress\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Changes in government policies or regulations, affecting project implementation and outcomes\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Regular monitoring of policy and regulatory changes, and close communication with government stakeholders to address any issues promptly\",\n      \"evidence\": \"Section I. STRATEGIC CONTEXT, 2. Sectoral and Institutional Context\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-NGA-AgroProcessingLivelihood",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in project implementation due to slow disbursement of funds",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Regular monitoring of disbursement and implementation progress, and close communication with the World Bank and other stakeholders to address any issues promptly",
+        "evidence": "Section IV. IMPLEMENTATION ARRANGEMENTS, 1. Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inadequate capacity of project staff and partners to implement the project effectively",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provision of training and capacity building programs for project staff and partners, and recruitment of additional staff with necessary expertise",
+        "evidence": "Section IV. IMPLEMENTATION ARRANGEMENTS, 1. Institutional and Implementation Arrangements"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Insufficient participation of beneficiaries, particularly women and youth, in project activities",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Inclusive project design and implementation, with specific measures to encourage participation of women and youth, such as training and business planning support",
+        "evidence": "Section III. PROJECT DESCRIPTION, 2. Project Beneficiaries"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental and social impacts of project activities, such as soil and water pollution",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implementation of environmental and social management plans, and monitoring of potential impacts",
+        "evidence": "Section VI. APPRAISAL SUMMARY, 6. Environmental (including safeguard)"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Inadequate financial management and accounting systems, leading to mismanagement of funds",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establishment of robust financial management and accounting systems, and regular audits and monitoring",
+        "evidence": "Section IV. IMPLEMENTATION ARRANGEMENTS, 2. Financial Management (FM) and Disbursement Arrangements"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Delays in procurement processes, leading to delays in project implementation",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Streamlined procurement processes, and close monitoring of procurement progress",
+        "evidence": "Section IV. IMPLEMENTATION ARRANGEMENTS, 3. Procurement"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate infrastructure, such as roads and storage facilities, to support project activities",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Investment in infrastructure development, such as roads and storage facilities, and identification of alternative solutions",
+        "evidence": "Section III. PROJECT DESCRIPTION, 1. Project Components"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Limited access to markets and lack of market information, affecting project beneficiaries' ability to sell their products",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provision of market information and support to beneficiaries to access markets, such as through business alliances and out-grower schemes",
+        "evidence": "Section III. PROJECT DESCRIPTION, 1. Project Components"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Inadequate grievance redress mechanisms, leading to unresolved conflicts and project delays",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Establishment of effective grievance redress mechanisms, and regular monitoring of grievances",
+        "evidence": "Section VI. APPRAISAL SUMMARY, 7. World Bank Grievance Redress"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Changes in government policies or regulations, affecting project implementation and outcomes",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Regular monitoring of policy and regulatory changes, and close communication with government stakeholders to address any issues promptly",
+        "evidence": "Section I. STRATEGIC CONTEXT, 2. Sectoral and Institutional Context"
+      }
+    ]
+  },
+  "parse_error": null
+}

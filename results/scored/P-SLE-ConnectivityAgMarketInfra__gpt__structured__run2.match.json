@@ -1,0 +1,230 @@
+{
+  "run_file": "P-SLE-ConnectivityAgMarketInfra__gpt__structured__run2.json",
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "gpt",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R16",
+      "gt_risk_id": "R03",
+      "similarity": 0.579,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R04",
+      "similarity": 0.546,
+      "gen_category": "technical",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Bridge designs may be insufficient for future flood levels, leading to structural failure.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Commission independent climate\u2011scenario design review and apply higher safety margins; include robust scour protection.",
+      "evidence": "Design will incorporate right\u2011sizing drains and culverts to accommodate heavy precipitation, but future flood intensity may exceed assumptions."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delay in establishing a functional procurement unit within the PCIU.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Recruit qualified procurement staff and set up the unit before project effectiveness; monitor progress weekly.",
+      "evidence": "PCIU does not have a procurement unit currently and it will be established and staffed with a qualified and experienced person before the project effectiveness."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Digital Bridge Management System (BMS) and RAMS may be delayed, reducing asset\u2011management capability.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Allocate dedicated budget and timeline; engage experienced IT vendor; track milestones through STEP.",
+      "evidence": "Support the development of a digital bridge management system (BMS) and the operationalization of the RAMS."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Low mobile\u2011phone penetration among rural women could limit AMIS adoption.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide community\u2011based AMIS dissemination via SMS/voice and train women on app use; partner with NGOs for outreach.",
+      "evidence": "Women may have limited access to smartphones; alternative communication channels would be necessary."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Bridge construction may be delayed by prolonged rainy season.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Build schedule buffers, use weather\u2011resistant construction methods, and monitor forecasts to adjust work plans.",
+      "evidence": "Construction will use incremental launching method, which will be appropriate to avoid delays from potential prolonged rainy seasons."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Procurement process could face inefficiencies and delays.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement regular procurement clinics, aggregate small contracts, and use STEP for real\u2011time monitoring.",
+      "evidence": "Procurement risk assessment found inefficiencies and delays, and insufficient competition in procurement."
+    },
+    {
+      "risk_id": "R07",
+      "description": "National Project Steering Committee may not be established within the 60\u2011day covenant.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Assign senior MTA official to drive NPSC formation; set internal 45\u2011day deadline and report status to World Bank.",
+      "evidence": "Recipient shall not later than sixty (60) days of the Effective Date, establish a National Project Steering Committee (NPSC)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Funding gap for SCADeP bridge works due to GoSL fiscal stress.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Secure additional GoSL budget commitment, explore donor co\u2011financing, and prioritize bridge works in early disbursements.",
+      "evidence": "Leaves a funding gap of about US$7.1\u202fmillion which was initially planned to be filled by the GoSL fiscal support."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Construction cost overruns (>15\u202f%) could erode project viability.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish a 10\u202f% contingency, enforce strict cost\u2011control procedures, and conduct monthly budget variance reviews.",
+      "evidence": "About 43\u202fpercent of construction projects in Sub\u2011Saharan Africa experienced cost overrun of more than 15\u202fpercent."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Institutional fragmentation may cause coordination failures among ministries and agencies.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Create a joint coordination forum under the NPSC with clear terms of reference and regular inter\u2011agency meetings.",
+      "evidence": "Institutional framework for transport sector management in Sierra Leone is fragmented and lacks systematic coordination."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Risk of gender\u2011based harassment/violence on public transport vehicles.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Install CCTV, set up a gender\u2011sensitive hotline, and conduct mandatory harassment\u2011prevention training for drivers and operators.",
+      "evidence": "CCTV cameras to track and reduce incidences of harassment/violence."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Delay in adopting the Environmental and Social Management Plan and related safeguards.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Prepare draft ESMP/RAP before effectiveness; assign legal team to certify compliance within 30\u202fdays.",
+      "evidence": "Recipient shall adopt and disclose the updated Environmental and Social Management Plan ... within thirty (30) days after the Effective Date."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Non\u2011compliance with World Bank procurement regulations could trigger audit findings.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide procurement staff with WB procurement\u2011regulation training; appoint a compliance officer to review all tender documents.",
+      "evidence": "Procurement will be carried out in accordance with the World Bank \u2018Procurement Regulations for IPF Borrowers\u2019."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Extreme heat may deteriorate road and bridge pavements, increasing maintenance costs.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Specify heat\u2011resistant materials in design specifications and schedule periodic pavement condition inspections.",
+      "evidence": "Extreme heat can deteriorate road and bridge pavements."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Flooding and erosion could damage bridges, roads and market facilities.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate higher freeboard, robust scour protection, and erosion\u2011control structures; maintain drainage systems regularly.",
+      "evidence": "River floods can cause erosion, sand/debris deposition, bridge, road and markets damage."
+    },
+    {
+      "risk_id": "R16",
+      "description": "High fiduciary risk due to weak public financial management and control environment.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Strengthen the FM unit, hire qualified FM specialist and internal auditor, and conduct quarterly internal audits.",
+      "evidence": "FM risk before mitigation is \u2018High\u2019 mainly due to insufficient experience of MTA with World Bank FM procedures."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Intensifying climate hazards (floods, landslides, extreme heat) may exceed design assumptions.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Integrate updated climate\u2011risk assessments into design standards and develop adaptive emergency response plans.",
+      "evidence": "Sierra Leone is highly vulnerable to natural hazards and climate change impacts, including flooding, landslides, extreme heat."
+    },
+    {
+      "risk_id": "R18",
+      "description": "CERC activation may be required but uncommitted funds could be insufficient for emergency response.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Define clear CERC trigger criteria, pre\u2011identify supplemental financing sources, and maintain a contingency reserve.",
+      "evidence": "CERC component allows rapid reallocation of uncommitted funds in the event of an eligible emergency."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance is rated Substantial. This project's activities are not highly sensitive to moderate perturbations in the political dispensation, although pronounced degeneration in political stability could still undermine their implementation. The more likely risk is that poor governance may affect implementation for the road sector, resulting in reduced commitment during implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through close supervision, strict adherence to the criteria for beneficiary selection, and fiduciary oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed as Substantial. Sierra Leone's post-pandemic recovery was disrupted by concurrent domestic and external shocks. Inflation and exchange rate depreciation reached record levels, depressing economic activity and triggering a severe cost-of-living crisis. Fiscal accounts have deteriorated on account of macroeconomic headwinds and policy slippages, and risks to debt sustainability have intensified. The economy is projected to grow at 3.8 percent on average during 2023-2025, below the long-term trend, and this baseline is vulnerable to downside risks given recent fiscal slippages and expenditure overruns. The macroeconomic risk may raise concerns about contractors' cost overrun and delay of payment.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Key macroeconomic reforms will help reduce the imbalances and avoid the downside risks. The project is 100 percent financed by IDA which will help mitigate the macroeconomic challenges to project implementation."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk is rated Substantial. The key fiduciary risks are related to the overall governance context of the project, the risk that procurement of project works may be delayed and/or result in higher-than-expected bid prices or poorly performing contractors, and difficulty retaining qualified procurement and FM professionals in the PCIU.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated by implementing an action plan that aims to strengthen the accountability and control framework for project implementation and improve overall fiduciary performance, and by ensuring adequate procurement and FM training. The PPSD will establish appropriate prequalification requirements and adopt standard lessons from experience procuring similar works contracts in Sierra Leone. The FM risk will be further mitigated by recruiting an internal auditor under PCIU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project's E&S risk is Substantial (para 74, explicitly pointing to section V.D for detail - para 74 states both environment risk and social risk are rated Substantial 'as indicated in section V.D'). Section V.D (paras 64-68): overall E&S risk classification is Substantial, with eight of ten Environmental and Social Standards (ESS) applying. Environmental risk is Substantial: construction activities are expected to generate air/noise nuisance, construction waste, and traffic/worker safety issues, and Component 2 in particular could affect downstream water users (water quality/hydrology, navigation, fish catch, riparian vegetation), with some impacts potentially long-term or irreversible (e.g. accidental spill of used oil/electrolytes/hazardous materials into the river during construction). Social risk is also Substantial: key risks include physical and economic displacement of boat/ferry operators, loaders, and traders after bridge construction; SEA/SH risks from the contractor workforce; elite capture in market-infrastructure interventions; social exclusion of vulnerable groups (persons with disabilities, women/small traders, the landless, elders); and secondary risks including potential child labor, communicable-disease spread from the contractor workforce, and local conflict over benefit-sharing from downstream impacts.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Standard measures per the ESIA/ESMP to be prepared for project activities, including energy-efficiency measures per World Bank EHS Guidelines/GIIPs; a site-specific SEA/SH risk assessment and commensurate GBV/SEA/SH action plan; the Environmental and Social Commitment Plan (ESCP) and Stakeholder Engagement Plan (SEP), disclosed April 19, 2024; hiring a social specialist with GBV/SEA/SH experience before project effectiveness; an ESIA and Resettlement Action Plan/livelihoods restoration plan already under development for the seven originally-planned bridges, with updated ESIA/ESMP/RAP and a SEA/SH action plan to be disclosed within one month of effectiveness; and a functional grievance mechanism (GM) plus Labor Management Procedures (LMP) for project workers."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:57:18.152426+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MNG-ThirdEnergySector\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delays in project implementation due to insufficient coordination and communication among the PMO, MOF, and relevant implementing agencies.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear project implementation structure and define the workflow in the decision-making and performance responsibilities within the MOE/PMO.\",\n      \"evidence\": \"ANNEX 1: Implementation Arrangements and Support Plan, Section 3.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial management risks, including poor budgeting, accounting, and internal control.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Prepare a Financial Management Manual (FMM) and conduct regular variance analyses to explain differences between planned and actual expenditures.\",\n      \"evidence\": \"ANNEX 1: Implementation Arrangements and Support Plan, Section 9.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Procurement risks, including market complexity, borrower experience, and cost trends.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct supply market intelligence, prepare a 'Matrix sheet for responses to the Bank's comments', and verify the qualification and capacity of the recommended bidder/consultant.\",\n      \"evidence\": \"ANNEX 1: Implementation Arrangements and Support Plan, Section 31.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Environmental and social risks, including bird collision, soil erosion, and community safety.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the Environmental and Social Management Plan (ESMP) and conduct regular monitoring and reporting.\",\n      \"evidence\": \"Section IV. PROJECT APPRAISAL SUMMARY, Subsection D. Environmental and Social.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Climate change risks, including increased frequency and severity of extreme weather events.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Incorporate climate resilience measures into the project design and implementation, including enhanced engineering and design standards.\",\n      \"evidence\": \"Section IV. PROJECT APPRAISAL SUMMARY, Subsection A. Technical and Economic Analysis.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Dependence on a single external systems integrator, concentrating delivery and continuity risk.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Contractual performance milestones, source-code escrow, and knowledge transfer to in-house staff.\",\n      \"evidence\": \"Not explicitly mentioned, but inferred from the project's dependence on external financing and technical assistance.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Regulatory risks, including changes in government policies or regulations.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor regulatory developments and maintain close communication with relevant government agencies.\",\n      \"evidence\": \"Section I. STRATEGIC CONTEXT, Subsection B. Sectoral and Institutional Context.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Tariff reform risks, including potential impact on the project's financial viability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a tariff reform study and develop a strategy to ensure the project's financial viability.\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION, Subsection D. Rationale for Bank Involvement and Role of Partners.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Grid integration risks, including technical challenges in integrating renewable energy sources.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a grid study and develop a plan to address technical challenges in integrating renewable energy sources.\",\n      \"evidence\": \"Section II. PROJECT DESCRIPTION, Subsection B. Project Components.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Stakeholder engagement risks, including potential opposition from local communities or other stakeholders.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a stakeholder engagement plan and conduct regular consultations with local communities and other stakeholders.\",\n      \"evidence\": \"Section V. GRIEVANCE REDRESS SERVICES.\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MNG-ThirdEnergySector",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in project implementation due to insufficient coordination and communication among the PMO, MOF, and relevant implementing agencies.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear project implementation structure and define the workflow in the decision-making and performance responsibilities within the MOE/PMO.",
+        "evidence": "ANNEX 1: Implementation Arrangements and Support Plan, Section 3."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial management risks, including poor budgeting, accounting, and internal control.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Prepare a Financial Management Manual (FMM) and conduct regular variance analyses to explain differences between planned and actual expenditures.",
+        "evidence": "ANNEX 1: Implementation Arrangements and Support Plan, Section 9."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Procurement risks, including market complexity, borrower experience, and cost trends.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct supply market intelligence, prepare a 'Matrix sheet for responses to the Bank's comments', and verify the qualification and capacity of the recommended bidder/consultant.",
+        "evidence": "ANNEX 1: Implementation Arrangements and Support Plan, Section 31."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Environmental and social risks, including bird collision, soil erosion, and community safety.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement the Environmental and Social Management Plan (ESMP) and conduct regular monitoring and reporting.",
+        "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, Subsection D. Environmental and Social."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Climate change risks, including increased frequency and severity of extreme weather events.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Incorporate climate resilience measures into the project design and implementation, including enhanced engineering and design standards.",
+        "evidence": "Section IV. PROJECT APPRAISAL SUMMARY, Subsection A. Technical and Economic Analysis."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Dependence on a single external systems integrator, concentrating delivery and continuity risk.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Contractual performance milestones, source-code escrow, and knowledge transfer to in-house staff.",
+        "evidence": "Not explicitly mentioned, but inferred from the project's dependence on external financing and technical assistance."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Regulatory risks, including changes in government policies or regulations.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Monitor regulatory developments and maintain close communication with relevant government agencies.",
+        "evidence": "Section I. STRATEGIC CONTEXT, Subsection B. Sectoral and Institutional Context."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Tariff reform risks, including potential impact on the project's financial viability.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct a tariff reform study and develop a strategy to ensure the project's financial viability.",
+        "evidence": "Section II. PROJECT DESCRIPTION, Subsection D. Rationale for Bank Involvement and Role of Partners."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Grid integration risks, including technical challenges in integrating renewable energy sources.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct a grid study and develop a plan to address technical challenges in integrating renewable energy sources.",
+        "evidence": "Section II. PROJECT DESCRIPTION, Subsection B. Project Components."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Stakeholder engagement risks, including potential opposition from local communities or other stakeholders.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a stakeholder engagement plan and conduct regular consultations with local communities and other stakeholders.",
+        "evidence": "Section V. GRIEVANCE REDRESS SERVICES."
+      }
+    ]
+  },
+  "parse_error": null
+}

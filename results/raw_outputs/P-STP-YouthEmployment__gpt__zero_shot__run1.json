@@ -1,0 +1,198 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:45:20.987695+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-STP-YouthEmployment\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Training institutions lack adequate equipment, infrastructure and staff, risking delayed or low\u2011quality delivery of market\u2011aligned courses.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Phase upgrades, procure modern equipment, fund staff recruitment and training, and monitor capacity against a standardized checklist.\",\n      \"evidence\": \"Section 12: capacity constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Geographic isolation of Pr\u00edncipe may hinder construction logistics and beneficiary access to the new training centre.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop detailed transport plans, use local contractors, and provide remote\u2011learning modules and transport subsidies for participants.\",\n      \"evidence\": \"Section 30: Pr\u00edncipe\u2019s geographic isolation and limited skilled\u2011worker pool constrain diversification and growth.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Increased frequency of floods, storms and landslides could disrupt construction and training activities.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply climate\u2011resilient design (EDGE, rainwater harvesting), install backup generators, and schedule works outside peak hazard periods.\",\n      \"evidence\": \"Section 4 & 61: STP vulnerable to coastal floods, storms, landslides; climate events may disrupt service delivery.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays in recording financial transactions and internal audits may weaken fiduciary controls.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint an experienced accountant, customize the accounting system for timely reporting, and enforce quarterly audit reviews.\",\n      \"evidence\": \"Section 56: FM risks include delays in recording transactions and internal audit reviews.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Procurement may be slowed if AFAP and ministries fail to coordinate technical specifications and evaluation committees.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish joint procurement task\u2011forces, finalize TORs early, and set clear timelines for evaluation panels.\",\n      \"evidence\": \"Section 57: procurement performance depends on close collaboration between AFAP and MLSSS.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Only 6\u202f% of youth are enrolled in TVET, limiting the pool of participants for the project.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Intensive outreach, scholarships covering transport/accommodation, and partnerships with schools to raise awareness and enrollment.\",\n      \"evidence\": \"Section 12: Only six percent of STP\u2019s youth are currently enrolled in TVET.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Female participants may face gender\u2011based violence or sexual exploitation during training or internships.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Hire GBV/SEA specialist, enforce strict codes of conduct, provide safe facilities and grievance mechanisms.\",\n      \"evidence\": \"Legal covenants: AFAP must hire a Social Specialist with GBV/SEA expertise.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient private\u2011sector commitment could limit apprenticeship slots and on\u2011the\u2011job training opportunities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Create Workforce Development Committees, offer performance\u2011based compensation to firms, and set minimum placement targets.\",\n      \"evidence\": \"Section 27: Employers engaged via Workforce Development Committees and partial compensation based on student numbers.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Failure to meet IDA disbursement conditions could postpone fund releases.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Track all pre\u2011conditions, submit required reports on schedule, and maintain a compliance checklist.\",\n      \"evidence\": \"Conditions section: Disbursement requires execution of Sub\u2011Grant forms and payment agent hiring.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The new labor\u2011market information system may remain under\u2011utilized, reducing its impact on employment services.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide intensive staff training, integrate system with existing databases, and set usage KPIs linked to funding.\",\n      \"evidence\": \"Section 32: Employment Observatory never fully operationalized; new system to be cloud\u2011based.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"The Contingent Emergency Response Component manual might be delayed, limiting rapid response to crises.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Draft the CERC manual during project set\u2011up, obtain early approval, and train staff on activation procedures.\",\n      \"evidence\": \"Section 47: CERC manual to be prepared and adopted after project effectiveness.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Risk of elite capture or exclusion of the most vulnerable if targeting criteria are not transparent.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Use USR data for objective selection, publish criteria, and monitor grievance redress outcomes.\",\n      \"evidence\": \"Section 59: Risks of exclusion and elite capture if benefits not equitably distributed.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Climate\u2011smart curricula may not be adopted by firms, limiting relevance of training.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Involve employers in curriculum design via Workforce Development Committees and conduct post\u2011training adoption surveys.\",\n      \"evidence\": \"Section 27: Committees will identify skills gaps, including climate\u2011smart agriculture.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Low uptake of labor\u2011mobility information could reduce migration\u2011linked job opportunities.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Promote the Employability Portal, partner with overseas employers, and run information campaigns on safe migration.\",\n      \"evidence\": \"Section 24: Labor mobility approach includes portal and partnerships with destination employers.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Insufficient monitoring and evaluation capacity may lead to poor data quality and limited learning.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Hire Data/IT assistant, conduct regular data audits, and provide M&E training to PIU staff.\",\n      \"evidence\": \"Legal covenants: AFAP must hire a Data/IT assistant within 60 days of effectiveness.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Political or administrative changes in ministries could affect project governance and continuity.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Formalize the coordination committee with clear terms of reference and maintain regular ministerial briefings.\",\n      \"evidence\": \"Section 49: Coordination committee established under authority of the Minister of Labor.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Severe weather events could damage the new training centre on Pr\u00edncipe, causing cost overruns.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Apply EDGE certification, incorporate flood\u2011resilient design, and secure appropriate construction insurance.\",\n      \"evidence\": \"Section 31: Construction will meet EDGE standards and include climate\u2011resilient design.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Limited private\u2011sector capacity may not absorb all trained youth, leading to unemployment after training.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Scale self\u2011employment grants, entrepreneurship boosters, and linkages to export markets to create alternative jobs.\",\n      \"evidence\": \"Section 3: Economy dominated by few medium/large firms; MSMEs are 92\u202f% but low\u2011productivity.\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"Corruption or fraud in procurement and grant disbursement could erode project credibility and funds.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce World Bank procurement rules, conduct independent audits, and publish procurement outcomes publicly.\",\n      \"evidence\": \"Section 57: Procurement to follow World Bank regulations and anti\u2011fraud guidelines.\"\n    },\n    {\n      \"risk_id\": \"R20\",\n      \"description\": \"Insufficient digital connectivity may limit use of the Employability Portal and data systems.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Invest in connectivity upgrades, provide backup power, and test portal performance before rollout.\",\n      \"evidence\": \"Section 28: Physical investments include connectivity upgrades to enable access to digital technologies.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-STP-YouthEmployment",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Training institutions lack adequate equipment, infrastructure and staff, risking delayed or low\u2011quality delivery of market\u2011aligned courses.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Phase upgrades, procure modern equipment, fund staff recruitment and training, and monitor capacity against a standardized checklist.",
+        "evidence": "Section 12: capacity constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Geographic isolation of Pr\u00edncipe may hinder construction logistics and beneficiary access to the new training centre.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop detailed transport plans, use local contractors, and provide remote\u2011learning modules and transport subsidies for participants.",
+        "evidence": "Section 30: Pr\u00edncipe\u2019s geographic isolation and limited skilled\u2011worker pool constrain diversification and growth."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Increased frequency of floods, storms and landslides could disrupt construction and training activities.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply climate\u2011resilient design (EDGE, rainwater harvesting), install backup generators, and schedule works outside peak hazard periods.",
+        "evidence": "Section 4 & 61: STP vulnerable to coastal floods, storms, landslides; climate events may disrupt service delivery."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays in recording financial transactions and internal audits may weaken fiduciary controls.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint an experienced accountant, customize the accounting system for timely reporting, and enforce quarterly audit reviews.",
+        "evidence": "Section 56: FM risks include delays in recording transactions and internal audit reviews."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Procurement may be slowed if AFAP and ministries fail to coordinate technical specifications and evaluation committees.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish joint procurement task\u2011forces, finalize TORs early, and set clear timelines for evaluation panels.",
+        "evidence": "Section 57: procurement performance depends on close collaboration between AFAP and MLSSS."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Only 6\u202f% of youth are enrolled in TVET, limiting the pool of participants for the project.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Intensive outreach, scholarships covering transport/accommodation, and partnerships with schools to raise awareness and enrollment.",
+        "evidence": "Section 12: Only six percent of STP\u2019s youth are currently enrolled in TVET."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Female participants may face gender\u2011based violence or sexual exploitation during training or internships.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Hire GBV/SEA specialist, enforce strict codes of conduct, provide safe facilities and grievance mechanisms.",
+        "evidence": "Legal covenants: AFAP must hire a Social Specialist with GBV/SEA expertise."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient private\u2011sector commitment could limit apprenticeship slots and on\u2011the\u2011job training opportunities.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Create Workforce Development Committees, offer performance\u2011based compensation to firms, and set minimum placement targets.",
+        "evidence": "Section 27: Employers engaged via Workforce Development Committees and partial compensation based on student numbers."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Failure to meet IDA disbursement conditions could postpone fund releases.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Track all pre\u2011conditions, submit required reports on schedule, and maintain a compliance checklist.",
+        "evidence": "Conditions section: Disbursement requires execution of Sub\u2011Grant forms and payment agent hiring."
+      },
+      {
+        "risk_id": "R10",
+        "description": "The new labor\u2011market information system may remain under\u2011utilized, reducing its impact on employment services.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide intensive staff training, integrate system with existing databases, and set usage KPIs linked to funding.",
+        "evidence": "Section 32: Employment Observatory never fully operationalized; new system to be cloud\u2011based."
+      },
+      {
+        "risk_id": "R11",
+        "description": "The Contingent Emergency Response Component manual might be delayed, limiting rapid response to crises.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Draft the CERC manual during project set\u2011up, obtain early approval, and train staff on activation procedures.",
+        "evidence": "Section 47: CERC manual to be prepared and adopted after project effectiveness."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Risk of elite capture or exclusion of the most vulnerable if targeting criteria are not transparent.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Use USR data for objective selection, publish criteria, and monitor grievance redress outcomes.",
+        "evidence": "Section 59: Risks of exclusion and elite capture if benefits not equitably distributed."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Climate\u2011smart curricula may not be adopted by firms, limiting relevance of training.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Involve employers in curriculum design via Workforce Development Committees and conduct post\u2011training adoption surveys.",
+        "evidence": "Section 27: Committees will identify skills gaps, including climate\u2011smart agriculture."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Low uptake of labor\u2011mobility information could reduce migration\u2011linked job opportunities.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Promote the Employability Portal, partner with overseas employers, and run information campaigns on safe migration.",
+        "evidence": "Section 24: Labor mobility approach includes portal and partnerships with destination employers."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Insufficient monitoring and evaluation capacity may lead to poor data quality and limited learning.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Hire Data/IT assistant, conduct regular data audits, and provide M&E training to PIU staff.",
+        "evidence": "Legal covenants: AFAP must hire a Data/IT assistant within 60 days of effectiveness."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Political or administrative changes in ministries could affect project governance and continuity.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Formalize the coordination committee with clear terms of reference and maintain regular ministerial briefings.",
+        "evidence": "Section 49: Coordination committee established under authority of the Minister of Labor."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Severe weather events could damage the new training centre on Pr\u00edncipe, causing cost overruns.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Apply EDGE certification, incorporate flood\u2011resilient design, and secure appropriate construction insurance.",
+        "evidence": "Section 31: Construction will meet EDGE standards and include climate\u2011resilient design."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Limited private\u2011sector capacity may not absorb all trained youth, leading to unemployment after training.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Scale self\u2011employment grants, entrepreneurship boosters, and linkages to export markets to create alternative jobs.",
+        "evidence": "Section 3: Economy dominated by few medium/large firms; MSMEs are 92\u202f% but low\u2011productivity."
+      },
+      {
+        "risk_id": "R19",
+        "description": "Corruption or fraud in procurement and grant disbursement could erode project credibility and funds.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Enforce World Bank procurement rules, conduct independent audits, and publish procurement outcomes publicly.",
+        "evidence": "Section 57: Procurement to follow World Bank regulations and anti\u2011fraud guidelines."
+      },
+      {
+        "risk_id": "R20",
+        "description": "Insufficient digital connectivity may limit use of the Employability Portal and data systems.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Invest in connectivity upgrades, provide backup power, and test portal performance before rollout.",
+        "evidence": "Section 28: Physical investments include connectivity upgrades to enable access to digital technologies."
+      }
+    ]
+  },
+  "parse_error": null
+}

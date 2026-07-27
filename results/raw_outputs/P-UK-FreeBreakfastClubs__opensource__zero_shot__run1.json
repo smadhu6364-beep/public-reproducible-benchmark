@@ -1,0 +1,117 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:33:22.013621+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-UK-FreeBreakfastClubs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Insufficient funding for schools to deliver free breakfast clubs, leading to reduced participation and effectiveness\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct regular reviews of school funding and adjust as necessary to ensure adequate support\",\n      \"evidence\": \"Financial case: funding approach\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Difficulty in recruiting and retaining skilled staff to deliver free breakfast clubs, impacting quality of provision\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and support for staff, and consider incentives for recruitment and retention\",\n      \"evidence\": \"Management case: programme governance\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inequitable access to free breakfast clubs, with some schools or areas struggling to participate or deliver effective provision\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Monitor participation and delivery, and provide targeted support to schools or areas that need it\",\n      \"evidence\": \"Strategic case: accessibility and affordability challenges\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delays or difficulties in implementing the customer relationship management system, impacting school support and engagement\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritize system development and testing, and provide alternative support mechanisms in the interim\",\n      \"evidence\": \"Commercial case: customer relationship management system\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Insufficient or inadequate food provision, impacting pupil health and wellbeing\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop and enforce food standards, and monitor school compliance\",\n      \"evidence\": \"Key assumptions: food provided must be in line with school food standards\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Difficulty in engaging parents and carers, impacting participation and effectiveness of free breakfast clubs\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Develop targeted engagement strategies, and provide support for schools to build relationships with parents and carers\",\n      \"evidence\": \"Evaluation plan: explore parent and school perspectives\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate infrastructure or resources, impacting ability of schools to deliver free breakfast clubs\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct needs assessments, and provide support for schools to develop necessary infrastructure and resources\",\n      \"evidence\": \"Key assumptions: schools are provided with initial funding to cover essential equipment, training and systems\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Changes in government policy or funding, impacting the viability or effectiveness of free breakfast clubs\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Monitor policy developments, and engage with stakeholders to advocate for the programme\",\n      \"evidence\": \"Rationale for the choice of preferred option: aligns with strategic objectives\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Difficulty in collecting and analyzing data, impacting evaluation and improvement of free breakfast clubs\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop and implement effective data collection and analysis systems, and provide support for schools to use data to inform practice\",\n      \"evidence\": \"Evaluation plan: assess programme delivery\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate support for schools with complex delivery challenges, impacting effectiveness of free breakfast clubs\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide targeted support for schools with complex needs, and develop strategies to address specific challenges\",\n      \"evidence\": \"Commercial case: support package for schools\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Difficulty in managing and mitigating risks, impacting overall effectiveness and sustainability of free breakfast clubs\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop and implement effective risk management processes, and provide support for schools to manage and mitigate risks\",\n      \"evidence\": \"Risk and issue management: overall cautious approach to risk\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Insufficient funding for schools to deliver free breakfast clubs, leading to reduced participation and effectiveness",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct regular reviews of school funding and adjust as necessary to ensure adequate support",
+        "evidence": "Financial case: funding approach"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Difficulty in recruiting and retaining skilled staff to deliver free breakfast clubs, impacting quality of provision",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and support for staff, and consider incentives for recruitment and retention",
+        "evidence": "Management case: programme governance"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inequitable access to free breakfast clubs, with some schools or areas struggling to participate or deliver effective provision",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Monitor participation and delivery, and provide targeted support to schools or areas that need it",
+        "evidence": "Strategic case: accessibility and affordability challenges"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delays or difficulties in implementing the customer relationship management system, impacting school support and engagement",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prioritize system development and testing, and provide alternative support mechanisms in the interim",
+        "evidence": "Commercial case: customer relationship management system"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Insufficient or inadequate food provision, impacting pupil health and wellbeing",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop and enforce food standards, and monitor school compliance",
+        "evidence": "Key assumptions: food provided must be in line with school food standards"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Difficulty in engaging parents and carers, impacting participation and effectiveness of free breakfast clubs",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Develop targeted engagement strategies, and provide support for schools to build relationships with parents and carers",
+        "evidence": "Evaluation plan: explore parent and school perspectives"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate infrastructure or resources, impacting ability of schools to deliver free breakfast clubs",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct needs assessments, and provide support for schools to develop necessary infrastructure and resources",
+        "evidence": "Key assumptions: schools are provided with initial funding to cover essential equipment, training and systems"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Changes in government policy or funding, impacting the viability or effectiveness of free breakfast clubs",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Monitor policy developments, and engage with stakeholders to advocate for the programme",
+        "evidence": "Rationale for the choice of preferred option: aligns with strategic objectives"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Difficulty in collecting and analyzing data, impacting evaluation and improvement of free breakfast clubs",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop and implement effective data collection and analysis systems, and provide support for schools to use data to inform practice",
+        "evidence": "Evaluation plan: assess programme delivery"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate support for schools with complex delivery challenges, impacting effectiveness of free breakfast clubs",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide targeted support for schools with complex needs, and develop strategies to address specific challenges",
+        "evidence": "Commercial case: support package for schools"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Difficulty in managing and mitigating risks, impacting overall effectiveness and sustainability of free breakfast clubs",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop and implement effective risk management processes, and provide support for schools to manage and mitigate risks",
+        "evidence": "Risk and issue management: overall cautious approach to risk"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,153 @@
+{
+  "project_id": "P-UK-PadeswoodCCUS",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:47:12.180771+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n**Step 1 \u2013 Frame the project**  \n- **Objective:** Deploy CCS at Padeswood cement plant to decarbonise cement production and meet UK net\u2011zero targets.  \n- **Scope & components:** First\u2011at\u2011scale UK cement plant with CCS capture unit, CO\u2082 transport & storage (T&S) network, supported by ICC Contract and CIF grant.  \n- **Delivery model:** Government\u2011backed business model (Revenue Support Agreement, up\u2011to\u201150\u202f% capital grant), open\u2011book cost modelling, independent technical/financial/legal assurance.  \n- **Timeline:** FID expected June\u202f2025; option to delay 4\u202fmonths (COD\u202f+\u202f5\u202fmonths). 25\u2011year T&S network lifespan.  \n- **Budget:** Capital costs partially funded by grant (\u226450\u202f%); overall funding envelope \u00a321.7\u202fbn for HyNet/ECC clusters.  \n- **Key stakeholders:** Department for Energy Security & Net Zero (DESNZ), Ofgem, Low Carbon Contracts Company (LCCC), DESNZ Central Grants & Loans (CGL), Cluster Sponsor Function, EY, WSP, Ashurst, cement operator, UK government (SoSDA).  \n- **External dependencies:** UK Continental Shelf CO\u2082 storage capacity, UK Carbon\u2011Border Adjustment Mechanism (CBAM) 2027, Energy Act\u202f2023 spending powers, CCS Network Code compliance.\n\n**Step 2 \u2013 Category sweep**  \nFor each risk category I searched the text for statements that imply something could go wrong.\n\n| Category | Candidate risk (evidence) |\n|----------|----------------------------|\n| technical | First\u2011of\u2011a\u2011kind CCS integration at cement plant \u2013 \u201cPadeswood will be the first at\u2011scale UK cement plant incorporating Carbon Capture and Storage (CCS) technology\u201d. |\n| financial | RSA may not deliver payments \u2013 section heading \u201c5.4.1 Revenue Support Agreement (RSA)\u201d. |\n| financial | Project could be discontinued \u2013 \u201c5.4.2 Discontinuation risk for Padeswood\u201d. |\n| financial | Exchequer funding via SoSDA could be delayed \u2013 \u201c5.4.3 Exchequer funding Secretary of State direct agreements (SoSDA)\u201d. |\n| financial | Fraud risk \u2013 \u201c5.4.4 Fraud\u201d. |\n| financial | Cross\u2011chain and cross\u2011cutting risks \u2013 \u201c5.4.6 Cross-chain and cross-cutting risks\u201d. |\n| schedule | Delay of FID/COD \u2013 \u201cOption 2: Padeswood Delayed\u2026 resulting in a subsequent 5\u2011month delay to COD\u201d. |\n| stakeholder | Industry may shift production abroad if CCUS not funded \u2013 \u201cWithout investment in CCUS, companies may de\u2011prioritise their UK interests and shift production elsewhere\u201d. |\n| political_regulatory | CBAM introduction could affect competitiveness \u2013 \u201cThe UK Carbon\u2011Border Adjustment Mechanism (CBAM)\u2026 will be introduced in 2027. However, unabated UK sites would be competing with sites overseas\u201d. |\n| political_regulatory | Changes to CCS Network Code could affect compliance \u2013 \u201cPadeswood is compliant with the CCS Network Code\u201d. |\n| environmental | Failure to achieve emissions reductions \u2013 \u201cPadeswood will deliver essential emissions reductions to contribute to \u2026 NDCs and CB6\u201d. |\n| organizational | Governance coordination across multiple bodies \u2013 \u201cPadeswood will be overseen through a range of bodies including Ofgem, LCCC, DESNZ CGL, DESNZ Cluster Function Team\u201d. |\n| external | Dependence on UK Continental Shelf storage capacity \u2013 \u201cestimated 78\u202fgigatonnes of potential CO\u2082 storage capacity in the UK Continental Shelf\u201d. |\n| external | Market barriers require government intervention \u2013 \u201cindustry is not able to deploy CCUS on its own\u2026 government intervention is required for an interim period\u201d. |\n| technical | Cost model relies on inflation & energy assumptions \u2013 \u201cOpen Book Model \u2026 integrating \u2026 inflation and energy assumptions\u201d. |\n\n**Step 3 \u2013 Evidence filter**  \nAll candidates above are directly quoted or referenced in the source text; none were discarded.\n\n**Step 4 \u2013 Assess & mitigate**  \nLikelihood (1\u202f=\u202frare,\u202f5\u202f=\u202falmost certain) and Impact (1\u202f=\u202fminor,\u202f5\u202f=\u202fcatastrophic) were assigned based on the language of the source and typical project experience. Mitigations are concrete actions mentioned or implied in the document (e.g., independent assurance, contractual safeguards, early agreements).\n\n**Step 5 \u2013 Consolidate**  \nNo exact duplicates were found; each risk is retained. The final register contains 15 risks.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-UK-PadeswoodCCUS\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Technical challenges arising from first\u2011of\u2011a\u2011kind CCS integration at a cement plant.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Secure independent technical assurance (WSP), conduct pilot trials, and allocate contingency budget for unforeseen engineering issues.\",\n      \"evidence\": \"Padeswood will be the first at\u2011scale UK cement plant incorporating Carbon Capture and Storage (CCS) technology.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Revenue Support Agreement (RSA) may not deliver expected per\u2011tonne payments.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Negotiate firm payment terms, include escrow or performance bond, and monitor cash\u2011flow against capture volumes.\",\n      \"evidence\": \"5.4.1 Revenue Support Agreement (RSA)\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Project could be discontinued before completion.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement milestone\u2011based funding releases and secure political commitment through formal agreements.\",\n      \"evidence\": \"5.4.2 Discontinuation risk for Padeswood\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delay or reduction of Exchequer funding via SoSDA.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Finalize SoSDA terms early, maintain alternative financing lines, and embed funding triggers in the project schedule.\",\n      \"evidence\": \"5.4.3 Exchequer funding Secretary of State direct agreements (SoSDA)\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Fraud affecting project finances.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Apply strict procurement controls, regular independent audits, and fraud\u2011prevention training for all contractors.\",\n      \"evidence\": \"5.4.4 Fraud\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Cross\u2011chain and cross\u2011cutting integration risks with other CCUS projects.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a dedicated interface management team and integrated schedule across all cluster projects.\",\n      \"evidence\": \"5.4.6 Cross-chain and cross-cutting risks\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Delay of Final Investment Decision leading to a 5\u2011month later Commercial Operation Date.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Align spurline procurement with FID timeline, include schedule buffers, and monitor critical path activities weekly.\",\n      \"evidence\": \"Option 2: Padeswood Delayed\u2026 resulting in a subsequent 5\u2011month delay to COD\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Industry may shift cement production abroad if UK CCUS is not implemented, causing carbon leakage.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure competitive capture cost, engage industry early, and advocate for supportive policies to retain UK production.\",\n      \"evidence\": \"Without investment in CCUS, companies may de\u2011prioritise their UK interests and shift production elsewhere\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Introduction of CBAM in 2027 could reduce competitiveness of an unabated UK cement plant.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Design capture cost to meet or beat CBAM carbon price, and secure early compliance certification.\",\n      \"evidence\": \"The UK Carbon\u2011Border Adjustment Mechanism (CBAM)\u2026 will be introduced in 2027. However, unabated UK sites would be competing with sites overseas\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Future changes to the CCS Network Code could affect project compliance.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Monitor regulatory updates, embed flexibility in design, and maintain dialogue with Ofgem and the Network Code authority.\",\n      \"evidence\": \"Padeswood is compliant with the CCS Network Code\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Failure to achieve projected emissions reductions, jeopardising NDC/CB6 contributions.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Implement rigorous performance monitoring, enforce capture guarantees in the ICC contract, and apply penalties for under\u2011delivery.\",\n      \"evidence\": \"Padeswood will deliver essential emissions reductions to contribute to \u2026 NDCs and CB6\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Coordination challenges among multiple oversight bodies could cause delays or governance gaps.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Define clear roles, establish a joint steering committee, and require regular reporting from all agencies.\",\n      \"evidence\": \"Padeswood will be overseen through a range of bodies including Ofgem, LCCC, DESNZ CGL, DESNZ Cluster Function Team\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Limited availability or allocation of UK Continental Shelf CO\u2082 storage capacity.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Secure binding storage contracts early and develop contingency storage sites or alternative basins.\",\n      \"evidence\": \"estimated 78\u202fgigatonnes of potential CO\u2082 storage capacity in the UK Continental Shelf\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Policy shift reducing government intervention could remove needed market support.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Diversify financing (private investment, export markets) and maintain active engagement with policy makers.\",\n      \"evidence\": \"industry is not able to deploy CCUS on its own\u2026 government intervention is required for an interim period\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Inaccurate inflation or energy price assumptions in the Open Book Model could inflate cost estimates.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct regular sensitivity analyses, update assumptions annually, and hold a contingency reserve for cost overruns.\",\n      \"evidence\": \"Open Book Model \u2026 integrating \u2026 inflation and energy assumptions\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-PadeswoodCCUS",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Technical challenges arising from first\u2011of\u2011a\u2011kind CCS integration at a cement plant.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Secure independent technical assurance (WSP), conduct pilot trials, and allocate contingency budget for unforeseen engineering issues.",
+        "evidence": "Padeswood will be the first at\u2011scale UK cement plant incorporating Carbon Capture and Storage (CCS) technology."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Revenue Support Agreement (RSA) may not deliver expected per\u2011tonne payments.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Negotiate firm payment terms, include escrow or performance bond, and monitor cash\u2011flow against capture volumes.",
+        "evidence": "5.4.1 Revenue Support Agreement (RSA)"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Project could be discontinued before completion.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement milestone\u2011based funding releases and secure political commitment through formal agreements.",
+        "evidence": "5.4.2 Discontinuation risk for Padeswood"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delay or reduction of Exchequer funding via SoSDA.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Finalize SoSDA terms early, maintain alternative financing lines, and embed funding triggers in the project schedule.",
+        "evidence": "5.4.3 Exchequer funding Secretary of State direct agreements (SoSDA)"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Fraud affecting project finances.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Apply strict procurement controls, regular independent audits, and fraud\u2011prevention training for all contractors.",
+        "evidence": "5.4.4 Fraud"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Cross\u2011chain and cross\u2011cutting integration risks with other CCUS projects.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a dedicated interface management team and integrated schedule across all cluster projects.",
+        "evidence": "5.4.6 Cross-chain and cross-cutting risks"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delay of Final Investment Decision leading to a 5\u2011month later Commercial Operation Date.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Align spurline procurement with FID timeline, include schedule buffers, and monitor critical path activities weekly.",
+        "evidence": "Option 2: Padeswood Delayed\u2026 resulting in a subsequent 5\u2011month delay to COD"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Industry may shift cement production abroad if UK CCUS is not implemented, causing carbon leakage.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure competitive capture cost, engage industry early, and advocate for supportive policies to retain UK production.",
+        "evidence": "Without investment in CCUS, companies may de\u2011prioritise their UK interests and shift production elsewhere"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Introduction of CBAM in 2027 could reduce competitiveness of an unabated UK cement plant.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Design capture cost to meet or beat CBAM carbon price, and secure early compliance certification.",
+        "evidence": "The UK Carbon\u2011Border Adjustment Mechanism (CBAM)\u2026 will be introduced in 2027. However, unabated UK sites would be competing with sites overseas"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Future changes to the CCS Network Code could affect project compliance.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Monitor regulatory updates, embed flexibility in design, and maintain dialogue with Ofgem and the Network Code authority.",
+        "evidence": "Padeswood is compliant with the CCS Network Code"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Failure to achieve projected emissions reductions, jeopardising NDC/CB6 contributions.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Implement rigorous performance monitoring, enforce capture guarantees in the ICC contract, and apply penalties for under\u2011delivery.",
+        "evidence": "Padeswood will deliver essential emissions reductions to contribute to \u2026 NDCs and CB6"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Coordination challenges among multiple oversight bodies could cause delays or governance gaps.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Define clear roles, establish a joint steering committee, and require regular reporting from all agencies.",
+        "evidence": "Padeswood will be overseen through a range of bodies including Ofgem, LCCC, DESNZ CGL, DESNZ Cluster Function Team"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Limited availability or allocation of UK Continental Shelf CO\u2082 storage capacity.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Secure binding storage contracts early and develop contingency storage sites or alternative basins.",
+        "evidence": "estimated 78\u202fgigatonnes of potential CO\u2082 storage capacity in the UK Continental Shelf"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Policy shift reducing government intervention could remove needed market support.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Diversify financing (private investment, export markets) and maintain active engagement with policy makers.",
+        "evidence": "industry is not able to deploy CCUS on its own\u2026 government intervention is required for an interim period"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Inaccurate inflation or energy price assumptions in the Open Book Model could inflate cost estimates.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct regular sensitivity analyses, update assumptions annually, and hold a contingency reserve for cost overruns.",
+        "evidence": "Open Book Model \u2026 integrating \u2026 inflation and energy assumptions"
+      }
+    ]
+  },
+  "parse_error": null
+}

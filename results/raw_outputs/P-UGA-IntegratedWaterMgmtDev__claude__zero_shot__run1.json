@@ -1,0 +1,162 @@
+{
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:02:15.572742+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-UGA-IntegratedWaterMgmtDev\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Ongoing conflict in South Sudan could worsen regional instability, driving further refugee influxes into Uganda and overstretching local public services and water natural resources.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Coordinate closely with UNHCR and OPM through the Comprehensive Refugee Response Framework (CRRF) and invest in long-term sustainable water supply infrastructure in hosting districts.\",\n      \"evidence\": \"The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Fiduciary and contract management weaknesses within MWE and NWSC could cause processing delays, multiple contract amendments, and significant time/cost overruns during civil works execution.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Recruit dedicated procurement consultants, conduct capacity-building training on World Bank Procurement Regulations, and implement contract management plans for high-value contracts.\",\n      \"evidence\": \"weakness resulted in multiple amendments during contract implementation resulting in cost and time overruns.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Incomplete needs assessments and inadequate geotechnical studies prior to construction could lead to extensive design changes and variations during contract implementation.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Require outcome-based needs assessments and comprehensive geotechnical studies during the detailed engineering design phase prior to bidding.\",\n      \"evidence\": \"incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Limited capacity of local domestic contractors to execute complex water and sanitation projects could result in slow construction progress or sub-standard work quality.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Package works contracts to match market capacity, encourage joint ventures and subconsultants, and utilize open international competitive procurement.\",\n      \"evidence\": \"limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Incomplete operationalization of the project module within MWE's Integrated Financial Management System (IFMS) increases the risk of financial reporting errors and processing delays.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Fully operationalize the IFMS project module at MWE and maintain qualified financial management specialists within the Project Support Team.\",\n      \"evidence\": \"the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"High climate variability, extreme temperatures, and intense rainfall events could cause severe water stress, flooding, and physical damage to raw water intakes and infrastructure.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate-resilient engineering designs, implement water source buffer protection, and conduct catchment management activities such as reforestation and soil conservation.\",\n      \"evidence\": \"high climate variability and underdeveloped water resources infrastructure could result in significant water stress in areas of the country.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"An influx of construction labor into project host communities could trigger social conflicts, gender-based violence (GBV), sexual exploitation, and increased local transmission of STDs/HIV.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Mandate worker codes of conduct, enforce labor influx management plans, maximize local workforce recruitment, and conduct mandatory GBV and HIV prevention training.\",\n      \"evidence\": \"Long walks to water sources trigger serious social consequences, particularly GBV... Labor influx... potential GBV in Project areas.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Land acquisition and pipeline rights-of-way alignment could cause physical and temporary economic displacement of local populations, leading to grievances and land disputes.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Develop and implement site-specific Resettlement Action Plans (RAPs) prior to civil works, pay timely compensation, and establish functional local Grievance Redress Mechanisms.\",\n      \"evidence\": \"road encroachment and potential works like plants, pump stations and storage tanks may have land acquisition implications and displacement\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Insufficient dry-season river flows in the Namatala River could undermine water supply reliability for Mbale Town while breaching required downstream environmental flow thresholds.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct an Augmented Water Supply Study before construction to evaluate source impoundment, borehole supplementation, and alternative supply expansion options.\",\n      \"evidence\": \"Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Regional Umbrella Water Authorities (UWAs) may experience initial operating losses in newly gazetted small towns due to low revenue collection rates and high initial operation costs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce cost-reflective tariffs with a minimum 25% margin, automate tariff adjustments, convert systems to low-cost solar power, and apply performance-based operator contracts.\",\n      \"evidence\": \"Several of the systems will show operating losses in the first years of operation, but these losses will gradually decrease\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Improper operation of fecal sludge treatment facilities and wastewater lagoons could cause untreated effluent discharges, odor nuisance, water body contamination, and public health risks.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Ensure facility designs include percolate treatment, construct watertight structures, provide operator training, and regularly monitor treated effluent quality against NEMA standards.\",\n      \"evidence\": \"sludge management and wastewater effluent discharges that exceed standards; possible impacts on surface and/or ground water due to leakages\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Lack of structured coordination among humanitarian partners, local governments, and MWE in refugee districts could result in ill-sited boreholes and groundwater contamination risks.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish formal multi-agency coordination mechanisms under MWE, OPM, and UNHCR to streamline water resource planning and borehole positioning.\",\n      \"evidence\": \"lack of coordination resulted in boreholes being drilled too close to each other or too close to shallow pit latrines, risking contamination\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Prolonged internal administrative approval processes within government agencies could delay payments to vendors and contractors, slowing project execution.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish an automated payment tracking system, enforce payment processing timelines, and strengthen internal audit and accounting workflows.\",\n      \"evidence\": \"delays in paying vendors due to prolonged internal approval processes.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Shifting refugee settlements from free emergency humanitarian water supply to paid user-tariff schemes under public utilities may meet social resistance or policy transition hurdles.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Collaborate with UNHCR and OPM on designing progressive refugee tariff policies linked to socio-economic support and conduct extensive community consultation.\",\n      \"evidence\": \"refugees in settlements currently do not pay for water, the UNHCR and OPM are collaborating with the MWE on designing a new water tariff policy\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Over-reliance on diesel-powered mechanized pumping schemes exposes water schemes to high fuel costs, volatile operational expenses, and frequent service interruptions.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Prioritize solar-powered piped water systems and gravity-fed schemes during project design to minimize diesel reliance and lower running costs.\",\n      \"evidence\": \"long-term savings on fuel and capital maintenance make solar pumping systems more cost-effective than alternative mechanized pumping systems.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Turnover of qualified financial management and procurement staff within MWE and NWSC could impair institutional memory and slow project implementation.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Maintain competitive staffing conditions, recruit dedicated PST specialists, and conduct regular hand-holding training sessions.\",\n      \"evidence\": \"turnover of qualified and experienced staff is noticed.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UGA-IntegratedWaterMgmtDev",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Ongoing conflict in South Sudan could worsen regional instability, driving further refugee influxes into Uganda and overstretching local public services and water natural resources.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Coordinate closely with UNHCR and OPM through the Comprehensive Refugee Response Framework (CRRF) and invest in long-term sustainable water supply infrastructure in hosting districts.",
+        "evidence": "The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Fiduciary and contract management weaknesses within MWE and NWSC could cause processing delays, multiple contract amendments, and significant time/cost overruns during civil works execution.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit dedicated procurement consultants, conduct capacity-building training on World Bank Procurement Regulations, and implement contract management plans for high-value contracts.",
+        "evidence": "weakness resulted in multiple amendments during contract implementation resulting in cost and time overruns."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Incomplete needs assessments and inadequate geotechnical studies prior to construction could lead to extensive design changes and variations during contract implementation.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Require outcome-based needs assessments and comprehensive geotechnical studies during the detailed engineering design phase prior to bidding.",
+        "evidence": "incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Limited capacity of local domestic contractors to execute complex water and sanitation projects could result in slow construction progress or sub-standard work quality.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Package works contracts to match market capacity, encourage joint ventures and subconsultants, and utilize open international competitive procurement.",
+        "evidence": "limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Incomplete operationalization of the project module within MWE's Integrated Financial Management System (IFMS) increases the risk of financial reporting errors and processing delays.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Fully operationalize the IFMS project module at MWE and maintain qualified financial management specialists within the Project Support Team.",
+        "evidence": "the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors"
+      },
+      {
+        "risk_id": "R06",
+        "description": "High climate variability, extreme temperatures, and intense rainfall events could cause severe water stress, flooding, and physical damage to raw water intakes and infrastructure.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate-resilient engineering designs, implement water source buffer protection, and conduct catchment management activities such as reforestation and soil conservation.",
+        "evidence": "high climate variability and underdeveloped water resources infrastructure could result in significant water stress in areas of the country."
+      },
+      {
+        "risk_id": "R07",
+        "description": "An influx of construction labor into project host communities could trigger social conflicts, gender-based violence (GBV), sexual exploitation, and increased local transmission of STDs/HIV.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Mandate worker codes of conduct, enforce labor influx management plans, maximize local workforce recruitment, and conduct mandatory GBV and HIV prevention training.",
+        "evidence": "Long walks to water sources trigger serious social consequences, particularly GBV... Labor influx... potential GBV in Project areas."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Land acquisition and pipeline rights-of-way alignment could cause physical and temporary economic displacement of local populations, leading to grievances and land disputes.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Develop and implement site-specific Resettlement Action Plans (RAPs) prior to civil works, pay timely compensation, and establish functional local Grievance Redress Mechanisms.",
+        "evidence": "road encroachment and potential works like plants, pump stations and storage tanks may have land acquisition implications and displacement"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Insufficient dry-season river flows in the Namatala River could undermine water supply reliability for Mbale Town while breaching required downstream environmental flow thresholds.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct an Augmented Water Supply Study before construction to evaluate source impoundment, borehole supplementation, and alternative supply expansion options.",
+        "evidence": "Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Regional Umbrella Water Authorities (UWAs) may experience initial operating losses in newly gazetted small towns due to low revenue collection rates and high initial operation costs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce cost-reflective tariffs with a minimum 25% margin, automate tariff adjustments, convert systems to low-cost solar power, and apply performance-based operator contracts.",
+        "evidence": "Several of the systems will show operating losses in the first years of operation, but these losses will gradually decrease"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Improper operation of fecal sludge treatment facilities and wastewater lagoons could cause untreated effluent discharges, odor nuisance, water body contamination, and public health risks.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Ensure facility designs include percolate treatment, construct watertight structures, provide operator training, and regularly monitor treated effluent quality against NEMA standards.",
+        "evidence": "sludge management and wastewater effluent discharges that exceed standards; possible impacts on surface and/or ground water due to leakages"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Lack of structured coordination among humanitarian partners, local governments, and MWE in refugee districts could result in ill-sited boreholes and groundwater contamination risks.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish formal multi-agency coordination mechanisms under MWE, OPM, and UNHCR to streamline water resource planning and borehole positioning.",
+        "evidence": "lack of coordination resulted in boreholes being drilled too close to each other or too close to shallow pit latrines, risking contamination"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Prolonged internal administrative approval processes within government agencies could delay payments to vendors and contractors, slowing project execution.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish an automated payment tracking system, enforce payment processing timelines, and strengthen internal audit and accounting workflows.",
+        "evidence": "delays in paying vendors due to prolonged internal approval processes."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Shifting refugee settlements from free emergency humanitarian water supply to paid user-tariff schemes under public utilities may meet social resistance or policy transition hurdles.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Collaborate with UNHCR and OPM on designing progressive refugee tariff policies linked to socio-economic support and conduct extensive community consultation.",
+        "evidence": "refugees in settlements currently do not pay for water, the UNHCR and OPM are collaborating with the MWE on designing a new water tariff policy"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Over-reliance on diesel-powered mechanized pumping schemes exposes water schemes to high fuel costs, volatile operational expenses, and frequent service interruptions.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prioritize solar-powered piped water systems and gravity-fed schemes during project design to minimize diesel reliance and lower running costs.",
+        "evidence": "long-term savings on fuel and capital maintenance make solar pumping systems more cost-effective than alternative mechanized pumping systems."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Turnover of qualified financial management and procurement staff within MWE and NWSC could impair institutional memory and slow project implementation.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Maintain competitive staffing conditions, recruit dedicated PST specialists, and conduct regular hand-holding training sessions.",
+        "evidence": "turnover of qualified and experienced staff is noticed."
+      }
+    ]
+  },
+  "parse_error": null
+}

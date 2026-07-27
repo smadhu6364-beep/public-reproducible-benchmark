@@ -1,0 +1,59 @@
+{
+  "run_file": "P-MNG-ThirdEnergySector__opensource__structured__run2.json",
+  "project_id": "P-MNG-ThirdEnergySector",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risks are rated Substantial. The parliamentary election was held in June 2024 and a new coalition government was formed, with representation of all three major political parties. While there may be risks of disagreement on the approval of individual projects, these risks will be mitigated by the strong alignment of the proposed operation with the NRP and the new Government Action Plan for 2024-2028.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Continued engagement with key stakeholders, including government and the parliament, through ongoing analytical and technical support on VRE integration and energy sector reform, will help mitigate risks going forward. The Development Partner Group, co-chaired by the World Bank and UNDP, will also offer a donor coordination platform to maintain political momentum for RE integration."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The macroeconomic risk is rated Substantial. Mongolia's economic outlook is dependent on global macroeconomic factors, in particular commodity prices. Despite recent positive short-term developments from coal and agricultural exports, Mongolia still needs to strengthen fiscal and external buffers to respond to future shocks and continue reforms aimed at diversifying the economy.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "To mitigate these risks and manage external balances, the World Bank has been, and will continue to be, supporting the authorities in restoring fiscal and external buffers through analytical and advisory work."
+    },
+    {
+      "risk_id": "R03",
+      "description": "The sector strategies and policies risk is rated Substantial. Substantial risk still exists due to institutional fragmentation, lack of policies to promote RE projects, and lack of clear commitment of reforms, especially related to tariff reforms that are crucial to make the sector viable and be able to refinance projects.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigation measures include actively engaging in multi-stakeholder coordination meetings and providing technical advice and capacity building to key stakeholders."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The institutional capacity for implementation and sustainability risk is rated Substantial. The implementing agency MOE and NPTG have experience implementing World Bank-funded projects; however, there is a substantial risk that newly hired PMO staff may not have sufficient capacity, which could potentially lead to implementation delays.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The PMO will be strengthened with experienced consultants and targeted training and capacity building. Mitigating measures include the World Bank's scrutiny of PMO members' selection, including a review of the TOR and providing no objection to the qualification criteria of the staff."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Fiduciary risk is rated Substantial. There are substantial risks due to the reliance of MOE on a newly constituted PMO, which may cause delays in processing payments, conducting IFRs, and other reporting requirements; the construction sector in Mongolia is often subject to delays and cost overruns. Potential procurement risks include (i) likelihood of time and cost overruns due to weak contract management capacity, and (ii) significant procurement delays due to delayed initiation of procurement and establishment of needed staffing arrangements.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Capacity building through customized training and TA is a central element of the Project, along with strong project supervision and contract management capacity building; MOE will continue to directly provide intensive support to the PMO. Procurement risks are mitigated by (a) establishing a PMO with appropriate procurement and technical staff per FIDIC contract standards; (b) clearly defined workflow in decision-making within the MOE/PMO procurement manual; and (c) extensive market engagement to stimulate market participation."
+    }
+  ]
+}

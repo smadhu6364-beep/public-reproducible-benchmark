@@ -1,0 +1,108 @@
+{
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T21:03:58.300719+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-SLE-ConnectivityAgMarketInfra\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate funding for road maintenance may hinder the project's sustainability\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a road maintenance fund and explore alternative funding sources\",\n      \"evidence\": \"Page 6, Section B. Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient capacity of the Road Maintenance Fund Administration (RMFA) may affect road maintenance\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide training and capacity-building support to RMFA staff\",\n      \"evidence\": \"Page 6, Section B. Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Climate change may exacerbate flooding and landslides, affecting transport infrastructure\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Incorporate climate-resilient design standards in transport infrastructure\",\n      \"evidence\": \"Page 2, Section A. Country Context\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate public transport services may hinder access to jobs and services\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Improve public transport services and infrastructure\",\n      \"evidence\": \"Page 3, Section B. Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Limited access to agricultural markets may affect farmers' livelihoods\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Improve agricultural market infrastructure and access to markets\",\n      \"evidence\": \"Page 5, Section B. Sectoral and Institutional Context\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Institutional fragmentation may hinder effective project implementation\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a clear project implementation structure and coordination mechanism\",\n      \"evidence\": \"Page 16, Section III. IMPLEMENTATION ARRANGEMENTS\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Limited financial management capacity may affect project financial management\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide financial management training and support to project staff\",\n      \"evidence\": \"Page 58, Section VII. ANNEX 7: Financial Management Assessment\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Procurement risks may affect project implementation\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a procurement plan and monitoring mechanism\",\n      \"evidence\": \"Page 55, Section VI. ANNEX 6: Procurement Management Assessment\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Environmental and social risks may affect project implementation\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct environmental and social impact assessments and develop mitigation measures\",\n      \"evidence\": \"Page 24, Section D. Environmental and Social\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Limited stakeholder engagement may affect project sustainability\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a stakeholder engagement plan and monitoring mechanism\",\n      \"evidence\": \"Page 30, Section VII. RESULTS FRAMEWORK AND MONITORING\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-SLE-ConnectivityAgMarketInfra",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate funding for road maintenance may hinder the project's sustainability",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a road maintenance fund and explore alternative funding sources",
+        "evidence": "Page 6, Section B. Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient capacity of the Road Maintenance Fund Administration (RMFA) may affect road maintenance",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide training and capacity-building support to RMFA staff",
+        "evidence": "Page 6, Section B. Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Climate change may exacerbate flooding and landslides, affecting transport infrastructure",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Incorporate climate-resilient design standards in transport infrastructure",
+        "evidence": "Page 2, Section A. Country Context"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate public transport services may hinder access to jobs and services",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Improve public transport services and infrastructure",
+        "evidence": "Page 3, Section B. Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Limited access to agricultural markets may affect farmers' livelihoods",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Improve agricultural market infrastructure and access to markets",
+        "evidence": "Page 5, Section B. Sectoral and Institutional Context"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Institutional fragmentation may hinder effective project implementation",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a clear project implementation structure and coordination mechanism",
+        "evidence": "Page 16, Section III. IMPLEMENTATION ARRANGEMENTS"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Limited financial management capacity may affect project financial management",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide financial management training and support to project staff",
+        "evidence": "Page 58, Section VII. ANNEX 7: Financial Management Assessment"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Procurement risks may affect project implementation",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a procurement plan and monitoring mechanism",
+        "evidence": "Page 55, Section VI. ANNEX 6: Procurement Management Assessment"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Environmental and social risks may affect project implementation",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct environmental and social impact assessments and develop mitigation measures",
+        "evidence": "Page 24, Section D. Environmental and Social"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Limited stakeholder engagement may affect project sustainability",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a stakeholder engagement plan and monitoring mechanism",
+        "evidence": "Page 30, Section VII. RESULTS FRAMEWORK AND MONITORING"
+      }
+    ]
+  },
+  "parse_error": null
+}

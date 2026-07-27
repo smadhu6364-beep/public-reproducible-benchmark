@@ -1,0 +1,68 @@
+{
+  "run_file": "P-SRB-CompetitivenessJobs__opensource__few_shot__run1.json",
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Program success relies on continuous, engaged commitment from the Prime Minister, Deputy PM, Minister of Finance, Minister of Education/Science/Technological Development, Minister of Labor/Employment/Veterans/Social Affairs, and the Public Policy Secretariat (PPS); line ministries must sustain interest in policy coordination or the loan will not disburse. Risk is heightened by political instability, frequent historical changes in ministers/senior staff, and excessive concentration of decision-making at the top (per the Bank's Systematic Country Diagnostic).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strong communications with the public, private sector, civil society, and EU Delegation to maintain a broad-based reform coalition; Bank coordinates communications with the PM's office; periodic PPMC Working Group consultations with private sector/civil society; ongoing close consultation with the EU Delegation in Serbia."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Significant downside macroeconomic risks: lower-than-expected Eurozone recovery could hurt Serbia's exports, remittances, and capital flows (EU countries are its largest trading partners). Materializing fiscal risks (e.g. SOE subsidy reduction difficulties) or weakening growth/currency would require even greater fiscal consolidation in 2015-2016 to keep public debt sustainable; reduced exports/FDI or greater consolidation could dampen anticipated reform impact.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Bank works closely with government and the IMF to keep SOE/public-utility reform on track and ensure it generates required fiscal savings."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Project works across three ministries (MoE plus development agencies, MoESTD, MoLEVSA) plus the PPS, creating implementation complexity for both government and Bank. Achieving the DLIs requires substantial external technical assistance, but Bank supervision resources are limited and the government is reluctant to borrow for TA (would rather minimize loan-funded TA or substitute other donor resources), risking inadequate TA resourcing.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Team seeks complementary resources (e.g. CIIP Trust Fund) and leverages work from other WBG projects; collaborates with other donors such as the EU and USAID."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall coordination sits with the Public Policy Secretariat (PPS), created only in spring 2014 under the new government; as a new institution it lacks capacity and a full set of official administrative procedures for cross-ministry policy coordination. Substantial risk to both project implementation (fiduciary/safeguards requirements, cross-ministry results reporting) and coordination of the inter-ministerial PPMC Working Group.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "PPS expected to hire additional personnel for fiduciary requirements and project coordination; Bank provides TA through the CIIP trust fund to strengthen PPS capacity."
+    },
+    {
+      "risk_id": "R05",
+      "description": "PPS currently has no fiduciary experience managing Bank projects.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Build capacity by establishing a Project Implementation Unit (PIU) within the PPS responsible for implementation, adequately staffing its fiduciary functions."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Reforms create both winners and losers, and losers are often more visible and organized at the time of reform (e.g. beneficiaries of MoE incentives/subsidies, National Employment Service case-workers, researchers at research institutes slated for restructuring).",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Government to clearly communicate reform objectives, expected outcomes, and benefits throughout the process."
+    }
+  ]
+}

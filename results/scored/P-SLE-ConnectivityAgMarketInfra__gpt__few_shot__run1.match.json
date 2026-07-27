@@ -1,0 +1,301 @@
+{
+  "run_file": "P-SLE-ConnectivityAgMarketInfra__gpt__few_shot__run1.json",
+  "project_id": "P-SLE-ConnectivityAgMarketInfra",
+  "model": "gpt",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R03",
+      "similarity": 0.587,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R22",
+      "gt_risk_id": "R01",
+      "similarity": 0.546,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R04",
+      "similarity": 0.522,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Fragmented institutional framework and weak coordination among transport ministries and agencies may cause implementation delays and inefficiencies.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish clear coordination mechanisms through the NPSC, regular joint planning meetings, and a shared project management information system.",
+      "evidence": "Key challenges in sectoral management include institutional fragmentation, insufficient funding, and capacity constraints (Section III.A)."
+    },
+    {
+      "risk_id": "R02",
+      "description": "The PCIU procurement unit does not exist yet, risking procurement delays, non\u2011compliance and weak contract management.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Recruit qualified procurement staff before effectiveness, provide intensive training on World Bank regulations and STEP, and set up a robust record\u2011keeping system.",
+      "evidence": "Procurement unit not currently established; staffing required before project effectiveness (Annex 6, point 2)."
+    },
+    {
+      "risk_id": "R03",
+      "description": "High fiduciary risk due to limited MTA experience with World Bank financial management procedures.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement the FM Action Plan: hire FM specialist, internal auditor, adopt FM manual, and conduct regular external audits and supervision.",
+      "evidence": "FM risk before mitigation rated \u2018High\u2019; weaknesses in control environment (Annex 7, point 3)."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Extreme rainfall and flooding may damage bridges and link roads during construction or operation.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Apply climate\u2011resilient design standards (elevated decks, oversized culverts, scour protection) and schedule critical works outside peak rainy season.",
+      "evidence": "Climate change expected to intensify heavy rainfall; bridges designed with flood\u2011resilient measures (Annex 5, Table 5.1)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Construction cost overruns of 25% or more could erode project economics.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Include contingency budgets, enforce strict contract price escalation clauses, and conduct regular cost\u2011control reviews.",
+      "evidence": "Sensitivity analysis assumes 25% increase in capital costs; still viable (Annex 3, point 9)."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Rainy season may halt bridge works using incremental launching, causing schedule slippage.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop a detailed construction schedule with weather buffers, and prioritize works on sites less exposed to floods.",
+      "evidence": "Bridge construction uses incremental launching to avoid delays from prolonged rainy seasons (Section 9)."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Procurement staff lack knowledge of World Bank Procurement Regulations and STEP, risking non\u2011compliance.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Provide regular procurement clinics, hands\u2011on STEP training, and mentorship from experienced World Bank procurement advisors.",
+      "evidence": "Procurement risk assessment notes limited knowledge of World Bank\u2019s Procurement Regulations and STEP (Annex 6, point 8)."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Potential gender\u2011based violence and sexual harassment on public transport could undermine social acceptance.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Install CCTV, establish a hotline, conduct SH awareness campaigns, and enforce strict operator codes of conduct.",
+      "evidence": "Component 1 includes CCTV to reduce harassment; SH action plan to be adopted (Section 1(b))."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Low mobile phone penetration among rural women may limit use of the upgraded AMIS platform.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Complement digital tools with community\u2011based dissemination, training sessions, and partnerships with women\u2019s groups for information relay.",
+      "evidence": "Rural women have limited access to smartphones; alternative communication channels recommended (Component 3, paragraph on AMIS)."
+    },
+    {
+      "risk_id": "R10",
+      "description": "CERC funds may not be mobilized quickly enough in an emergency, reducing responsiveness.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Finalize CERC Manual and Emergency Action Plan before project start; conduct simulation exercises to test rapid fund release.",
+      "evidence": "CERC component included to allow rapid reallocation of uncommitted funds (Component 5)."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Absence of a systematic road\u2011safety database hampers evidence\u2011based safety interventions.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Develop a national road\u2011safety information system as part of the national road safety guidelines and integrate data collection into MTA operations.",
+      "evidence": "No systematic database on road safety; data gaps noted (Section 8)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Funding gap for SCADeP bridge works relies on GoSL fiscal support, which may be constrained.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Secure binding fiscal commitment from GoSL, explore alternative financing (e.g., private sector lease\u2011operate\u2011own), and monitor disbursement milestones.",
+      "evidence": "SCADeP bridges have a US$7.1\u202fmillion gap; GoSL to cover US$3.1\u202fmillion (Component 2, sub\u2011component b)."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Weak internal controls increase risk of fraud, collusion and corruption in procurement and disbursements.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Enforce strict procurement transparency, publish bidding documents, use independent audit, and implement a robust grievance redress mechanism.",
+      "evidence": "Procurement risk assessment highlights fraud and corruption risks; mitigation measures listed (Annex 6, Table 6.1)."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Post\u2011project operation and maintenance funding for bridges and roads may be insufficient, threatening asset longevity.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate O&M cost lines into the Road Maintenance Fund, establish user\u2011fee mechanisms where appropriate, and train local councils on asset management.",
+      "evidence": "Assumption that funding is available for bridge and road maintenance after project closing (Critical Assumptions, point 2)."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Delay in establishing the National Project Steering Committee within 60\u202fdays could weaken project oversight.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Include NPSC establishment as a pre\u2011effective condition and monitor compliance through the World Bank\u2019s supervision team.",
+      "evidence": "Legal covenant requires NPSC to be established within 60\u202fdays (Legal Covenants, Schedule\u202f2, Section\u202fI.A.2(a))."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Design assumptions for flood levels may be inaccurate, reducing bridge resilience over its 100\u2011year design life.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Incorporate adaptive design margins, conduct periodic climate\u2011risk reassessments, and allow for retro\u2011fitting if future flood projections exceed design values.",
+      "evidence": "Design flood levels may not fully capture future climate change; contractor must factor projected flood quantities (Annex\u202f5)."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Agricultural market facilities may not meet climate\u2011resilient building codes, leading to damage from floods or heat.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Apply the climate\u2011resilient standards outlined in the ESMP, conduct third\u2011party inspections, and use weather\u2011resistant materials.",
+      "evidence": "Market infrastructure to follow climate\u2011resilient building codes and include tree planting, solar power (Component\u202f3)."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Private bus operators may be unable to meet lease payments, jeopardizing fleet renewal.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Perform rigorous financial viability assessments of operators, structure lease terms with flexible payment schedules, and provide technical assistance for revenue management.",
+      "evidence": "Bus lease scheme aims to cover ~50\u202f% of capital cost; feasibility depends on operator capacity (Component\u202f1, sub\u2011component\u202fc)."
+    },
+    {
+      "risk_id": "R19",
+      "description": "Inadequate data collection for AMIS could produce inaccurate market price information.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Standardize data collection protocols, train enumerators, and implement automated validation checks within the AMIS platform.",
+      "evidence": "Challenges identified: limited capacity to integrate value chains and timely data collection for AMIS (Component\u202f3, paragraph on AMIS)."
+    },
+    {
+      "risk_id": "R20",
+      "description": "High road\u2011crash fatality rate may persist if safety features are not fully functional or maintained.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Install and regularly inspect safety features (guardrails, markings, signals), and enforce traffic regulations through SLRSA.",
+      "evidence": "Sierra Leone has 33 road\u2011crash fatalities per 100\u202f000; safety features to be installed (Component\u202f1, sub\u2011component\u202fa)."
+    },
+    {
+      "risk_id": "R21",
+      "description": "Recruitment delays for key PCIU staff (procurement specialist, FM specialist) could postpone project start\u2011up activities.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Launch competitive recruitment early, set firm hiring deadlines, and use interim consultants if needed.",
+      "evidence": "PCIU to recruit procurement specialist, FM specialist before project effectiveness (Annex\u202f6, Action\u202f2 &\u202f3)."
+    },
+    {
+      "risk_id": "R22",
+      "description": "Political polarization may hinder adoption of transport policy reforms and budget allocations.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engage political leaders early, build cross\u2011party consensus through the NPSC, and align reforms with national development plans.",
+      "evidence": "Country context notes post\u2011conflict governance challenges and political polarization (Section\u202fA, Country Context)."
+    },
+    {
+      "risk_id": "R23",
+      "description": "Extreme heat may degrade road and bridge pavements faster than anticipated, increasing maintenance costs.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Specify heat\u2011resistant materials in design specifications and schedule periodic condition assessments.",
+      "evidence": "Extreme heat identified as a climate risk affecting pavement durability (Annex\u202f5, Table\u202f5.1)."
+    },
+    {
+      "risk_id": "R24",
+      "description": "Insufficient competition in procurement could lead to higher prices and lower quality.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Aggregate small packages, conduct market outreach, and enforce transparent bidding processes with minimum competition thresholds.",
+      "evidence": "Procurement risk assessment notes insufficient competition; mitigation includes aggregation and private\u2011sector sensitisation (Annex\u202f6, Table\u202f6.1)."
+    },
+    {
+      "risk_id": "R25",
+      "description": "Weak grievance redress mechanisms may allow community dissatisfaction to grow, affecting project acceptance.",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Implement the project\u2011specific grievance redress service, publicize procedures, and ensure timely response within set timelines.",
+      "evidence": "Grievance redress services described in Section\u202fV and monitoring indicators (Project Management Support)."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance is rated Substantial. This project's activities are not highly sensitive to moderate perturbations in the political dispensation, although pronounced degeneration in political stability could still undermine their implementation. The more likely risk is that poor governance may affect implementation for the road sector, resulting in reduced commitment during implementation.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated through close supervision, strict adherence to the criteria for beneficiary selection, and fiduciary oversight."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Macroeconomic risk is assessed as Substantial. Sierra Leone's post-pandemic recovery was disrupted by concurrent domestic and external shocks. Inflation and exchange rate depreciation reached record levels, depressing economic activity and triggering a severe cost-of-living crisis. Fiscal accounts have deteriorated on account of macroeconomic headwinds and policy slippages, and risks to debt sustainability have intensified. The economy is projected to grow at 3.8 percent on average during 2023-2025, below the long-term trend, and this baseline is vulnerable to downside risks given recent fiscal slippages and expenditure overruns. The macroeconomic risk may raise concerns about contractors' cost overrun and delay of payment.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Key macroeconomic reforms will help reduce the imbalances and avoid the downside risks. The project is 100 percent financed by IDA which will help mitigate the macroeconomic challenges to project implementation."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk is rated Substantial. The key fiduciary risks are related to the overall governance context of the project, the risk that procurement of project works may be delayed and/or result in higher-than-expected bid prices or poorly performing contractors, and difficulty retaining qualified procurement and FM professionals in the PCIU.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "These risks will be mitigated by implementing an action plan that aims to strengthen the accountability and control framework for project implementation and improve overall fiduciary performance, and by ensuring adequate procurement and FM training. The PPSD will establish appropriate prequalification requirements and adopt standard lessons from experience procuring similar works contracts in Sierra Leone. The FM risk will be further mitigated by recruiting an internal auditor under PCIU."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The project's E&S risk is Substantial (para 74, explicitly pointing to section V.D for detail - para 74 states both environment risk and social risk are rated Substantial 'as indicated in section V.D'). Section V.D (paras 64-68): overall E&S risk classification is Substantial, with eight of ten Environmental and Social Standards (ESS) applying. Environmental risk is Substantial: construction activities are expected to generate air/noise nuisance, construction waste, and traffic/worker safety issues, and Component 2 in particular could affect downstream water users (water quality/hydrology, navigation, fish catch, riparian vegetation), with some impacts potentially long-term or irreversible (e.g. accidental spill of used oil/electrolytes/hazardous materials into the river during construction). Social risk is also Substantial: key risks include physical and economic displacement of boat/ferry operators, loaders, and traders after bridge construction; SEA/SH risks from the contractor workforce; elite capture in market-infrastructure interventions; social exclusion of vulnerable groups (persons with disabilities, women/small traders, the landless, elders); and secondary risks including potential child labor, communicable-disease spread from the contractor workforce, and local conflict over benefit-sharing from downstream impacts.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Standard measures per the ESIA/ESMP to be prepared for project activities, including energy-efficiency measures per World Bank EHS Guidelines/GIIPs; a site-specific SEA/SH risk assessment and commensurate GBV/SEA/SH action plan; the Environmental and Social Commitment Plan (ESCP) and Stakeholder Engagement Plan (SEP), disclosed April 19, 2024; hiring a social specialist with GBV/SEA/SH experience before project effectiveness; an ESIA and Resettlement Action Plan/livelihoods restoration plan already under development for the seven originally-planned bridges, with updated ESIA/ESMP/RAP and a SEA/SH action plan to be disclosed within one month of effectiveness; and a functional grievance mechanism (GM) plus Labor Management Procedures (LMP) for project workers."
+    }
+  ]
+}

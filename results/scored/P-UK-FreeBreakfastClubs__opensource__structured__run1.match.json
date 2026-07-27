@@ -1,0 +1,41 @@
+{
+  "run_file": "P-UK-FreeBreakfastClubs__opensource__structured__run1.json",
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "opensource",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": true,
+  "embedding_model": null,
+  "threshold": 0.45,
+  "matches": [],
+  "gen_risks": [],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Lower value for money compared to the 'do minimum' option in year 1, due to the shorter funding period available for the preferred option's new cohorts of schools.",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delivery risks around staffing and food costs for schools newly onboarded to the free breakfast clubs programme.",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated through early adopter (EA) scheme insights and support funding."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Uncertainty in the labour-market benefits (parental workforce participation gains) the programme is expected to deliver.",
+      "category": "external",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Addressed through conservative assumptions in the economic modelling."
+    }
+  ]
+}

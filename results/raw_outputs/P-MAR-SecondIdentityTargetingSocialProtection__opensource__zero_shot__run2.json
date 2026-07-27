@@ -1,0 +1,153 @@
+{
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T19:11:49.947603+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-MAR-SecondIdentityTargetingSocialProtection\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate communication and outreach efforts may lead to exclusion of vulnerable groups from the NPR and SR\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement inclusive communication and engagement strategies, and provide guidance and clarification on social program targeting and eligibility criteria\",\n      \"evidence\": \"Section 55, MoI adopted a privacy-by-design approach\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Data privacy and protection issues may compromise the trust of the population in the NPR and SR systems\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Strengthen data protection through software development and related training for workers handling personal data, and follow national regulations related to personal data protection\",\n      \"evidence\": \"Section 55, MoI adopted a privacy-by-design approach\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Inefficient or inadequate public communication and outreach efforts may lead to unclear registration processes\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement inclusive communication and engagement strategies, and provide guidance and clarification on social program targeting and eligibility criteria\",\n      \"evidence\": \"Section 55, MoI adopted a privacy-by-design approach\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"The use of a spreadsheet and data extracted from the national budget execution software may lead to challenges in terms of quality and timeliness in the preparation of IFRs and project annual financial statements\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Make effective the use of the software to be developed and installed to facilitate the preparation of IFRs and annual financial statements\",\n      \"evidence\": \"Section 69, FM performance of the first Identity and Targeting for Social Protection Project\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"The risk of duplication or overlap due to the use of the same budget line to justify expenditure on programs already financed by the World Bank\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Identify or create all budget codes within the MoI budget that can support the implementation of PBC-related activities\",\n      \"evidence\": \"Section 69, FM performance of the first Identity and Targeting for Social Protection Project\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"The project's environmental risk is assessed as Moderate, with potential negative impacts related to the use of electronic devices and generation of e-waste\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Adhere to sustainable procurement practices, and implement a robust e-waste management procedure\",\n      \"evidence\": \"Section 85, project's overall E&S risks\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"The project's social risk is assessed as Moderate, with potential negative social impacts related to the exclusion of some vulnerable groups\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement inclusive communication and engagement strategies, and provide guidance and clarification on social program targeting and eligibility criteria\",\n      \"evidence\": \"Section 85, project's overall E&S risks\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"The lack of a cash transfer program that would adequately support poor and vulnerable households may impact the project's effectiveness\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement the DSB program, which aims to harmonize existing cash or in-kind transfer programs and expand coverage to children aged 0 to 6, those beyond middle school age up to 21, children with disabilities, and poor and vulnerable families without children\",\n      \"evidence\": \"Section 64, design and implementation of the reform\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"The project's success relies on the leadership and ownership at the highest levels of government\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure continued support and commitment from the government, and maintain a high-level steering committee to oversee the project's implementation\",\n      \"evidence\": \"Section 62, leadership and ownership at the highest levels of government\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"The project's implementation may be impacted by the COVID-19 pandemic and other external shocks\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a contingency plan to address potential external shocks, and ensure flexibility in the project's implementation schedule and budget\",\n      \"evidence\": \"Section 3, Morocco has undergone several overlapping shocks in recent years\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"The project's technical risk is related to the development and implementation of the NPR and SR systems\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project's technical requirements are well-defined, and that the implementation team has the necessary expertise and resources to develop and implement the systems\",\n      \"evidence\": \"Section 26, Component 1: Strengthening and extending coverage of the NPR and the operationalization of the NRA\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"The project's financial risk is related to the management of the project's budget and finances\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project's financial management systems are robust, and that the project team has the necessary expertise and resources to manage the budget and finances\",\n      \"evidence\": \"Section 67, FM assessment was carried out in accordance with the World Bank Policy and Directive\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"The project's operational risk is related to the implementation of the project's activities and the management of the project's operations\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project's operational systems are robust, and that the project team has the necessary expertise and resources to implement the project's activities\",\n      \"evidence\": \"Section 56, Implementation arrangements for the proposed project\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"The project's reputational risk is related to the potential impact of the project on the government's reputation\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Ensure that the project is implemented in a transparent and accountable manner, and that the project's benefits are communicated effectively to stakeholders\",\n      \"evidence\": \"Section 20, This operation will adopt a participatory approach and strong engagement with the relevant project stakeholders\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"The project's sustainability risk is related to the potential impact of the project on the environment and the community\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure that the project is implemented in a sustainable manner, and that the project's benefits are maintained over time\",\n      \"evidence\": \"Section 62, The leadership and ownership at the highest levels of government were critical to the success of putting in place and rolling out the NPR and SR\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate communication and outreach efforts may lead to exclusion of vulnerable groups from the NPR and SR",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement inclusive communication and engagement strategies, and provide guidance and clarification on social program targeting and eligibility criteria",
+        "evidence": "Section 55, MoI adopted a privacy-by-design approach"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Data privacy and protection issues may compromise the trust of the population in the NPR and SR systems",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Strengthen data protection through software development and related training for workers handling personal data, and follow national regulations related to personal data protection",
+        "evidence": "Section 55, MoI adopted a privacy-by-design approach"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Inefficient or inadequate public communication and outreach efforts may lead to unclear registration processes",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement inclusive communication and engagement strategies, and provide guidance and clarification on social program targeting and eligibility criteria",
+        "evidence": "Section 55, MoI adopted a privacy-by-design approach"
+      },
+      {
+        "risk_id": "R04",
+        "description": "The use of a spreadsheet and data extracted from the national budget execution software may lead to challenges in terms of quality and timeliness in the preparation of IFRs and project annual financial statements",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Make effective the use of the software to be developed and installed to facilitate the preparation of IFRs and annual financial statements",
+        "evidence": "Section 69, FM performance of the first Identity and Targeting for Social Protection Project"
+      },
+      {
+        "risk_id": "R05",
+        "description": "The risk of duplication or overlap due to the use of the same budget line to justify expenditure on programs already financed by the World Bank",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Identify or create all budget codes within the MoI budget that can support the implementation of PBC-related activities",
+        "evidence": "Section 69, FM performance of the first Identity and Targeting for Social Protection Project"
+      },
+      {
+        "risk_id": "R06",
+        "description": "The project's environmental risk is assessed as Moderate, with potential negative impacts related to the use of electronic devices and generation of e-waste",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Adhere to sustainable procurement practices, and implement a robust e-waste management procedure",
+        "evidence": "Section 85, project's overall E&S risks"
+      },
+      {
+        "risk_id": "R07",
+        "description": "The project's social risk is assessed as Moderate, with potential negative social impacts related to the exclusion of some vulnerable groups",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement inclusive communication and engagement strategies, and provide guidance and clarification on social program targeting and eligibility criteria",
+        "evidence": "Section 85, project's overall E&S risks"
+      },
+      {
+        "risk_id": "R08",
+        "description": "The lack of a cash transfer program that would adequately support poor and vulnerable households may impact the project's effectiveness",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement the DSB program, which aims to harmonize existing cash or in-kind transfer programs and expand coverage to children aged 0 to 6, those beyond middle school age up to 21, children with disabilities, and poor and vulnerable families without children",
+        "evidence": "Section 64, design and implementation of the reform"
+      },
+      {
+        "risk_id": "R09",
+        "description": "The project's success relies on the leadership and ownership at the highest levels of government",
+        "category": "political_regulatory",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Ensure continued support and commitment from the government, and maintain a high-level steering committee to oversee the project's implementation",
+        "evidence": "Section 62, leadership and ownership at the highest levels of government"
+      },
+      {
+        "risk_id": "R10",
+        "description": "The project's implementation may be impacted by the COVID-19 pandemic and other external shocks",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 5,
+        "mitigation": "Develop a contingency plan to address potential external shocks, and ensure flexibility in the project's implementation schedule and budget",
+        "evidence": "Section 3, Morocco has undergone several overlapping shocks in recent years"
+      },
+      {
+        "risk_id": "R11",
+        "description": "The project's technical risk is related to the development and implementation of the NPR and SR systems",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure that the project's technical requirements are well-defined, and that the implementation team has the necessary expertise and resources to develop and implement the systems",
+        "evidence": "Section 26, Component 1: Strengthening and extending coverage of the NPR and the operationalization of the NRA"
+      },
+      {
+        "risk_id": "R12",
+        "description": "The project's financial risk is related to the management of the project's budget and finances",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure that the project's financial management systems are robust, and that the project team has the necessary expertise and resources to manage the budget and finances",
+        "evidence": "Section 67, FM assessment was carried out in accordance with the World Bank Policy and Directive"
+      },
+      {
+        "risk_id": "R13",
+        "description": "The project's operational risk is related to the implementation of the project's activities and the management of the project's operations",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure that the project's operational systems are robust, and that the project team has the necessary expertise and resources to implement the project's activities",
+        "evidence": "Section 56, Implementation arrangements for the proposed project"
+      },
+      {
+        "risk_id": "R14",
+        "description": "The project's reputational risk is related to the potential impact of the project on the government's reputation",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Ensure that the project is implemented in a transparent and accountable manner, and that the project's benefits are communicated effectively to stakeholders",
+        "evidence": "Section 20, This operation will adopt a participatory approach and strong engagement with the relevant project stakeholders"
+      },
+      {
+        "risk_id": "R15",
+        "description": "The project's sustainability risk is related to the potential impact of the project on the environment and the community",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Ensure that the project is implemented in a sustainable manner, and that the project's benefits are maintained over time",
+        "evidence": "Section 62, The leadership and ownership at the highest levels of government were critical to the success of putting in place and rolling out the NPR and SR"
+      }
+    ]
+  },
+  "parse_error": null
+}

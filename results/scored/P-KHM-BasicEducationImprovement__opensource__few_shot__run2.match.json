@@ -1,0 +1,168 @@
+{
+  "run_file": "P-KHM-BasicEducationImprovement__opensource__few_shot__run2.json",
+  "project_id": "P-KHM-BasicEducationImprovement",
+  "model": "opensource",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R14",
+      "gt_risk_id": "R01",
+      "similarity": 0.564,
+      "gen_category": "stakeholder",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delays in project implementation due to overloaded FM staff",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Appoint adequate FM staff, including government officers and consultants, within three months of project signing",
+      "evidence": "FM assessment"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays in receiving technical inputs for procurement",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Enhance coordination between implementing departments to expedite acquisition of technical inputs",
+      "evidence": "Procurement assessment"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Governance risks, including corrupt practices in procurement",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Implement enhanced disclosure of procurement information and establish a procurement complaint handling mechanism",
+      "evidence": "Procurement assessment"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate capacity for contract supervision and management",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide targeted contract management training to the project's procurement team",
+      "evidence": "Procurement assessment"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Delays in internal clearance from procurement review committee",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign a focal person to ensure effective coordination within technical departments and across ministries",
+      "evidence": "Procurement assessment"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Climate-related hazards, including floods, extreme heat, and tropical cyclones",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Incorporate climate-resilient design standards in new infrastructure, including elevated foundations and energy-efficient systems",
+      "evidence": "Climate change considerations"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Limited access to affordable and quality childcare services",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Develop sustainable early childcare services, including construction of childcare centers and provision of training and equipment",
+      "evidence": "Sectoral context"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Insufficient teacher capacity to effectively fulfill their roles",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide teacher training and mentoring support, including targeted instruction and coaching",
+      "evidence": "Sectoral context"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Shortages of key inputs, including textbooks and infrastructure deficiencies",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Procure and distribute teaching and learning materials, including textbooks and digital tools",
+      "evidence": "Sectoral context"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Poor human resources management, impeding efficient utilization of allocated resources",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a functioning education staff management system, including modernization of HRMIS",
+      "evidence": "Sectoral context"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Gender disparities in employment quality and limited access to formal, better-paid, and secure forms of employment for women",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide childcare options for women working in factories and track the percentage of women employed or reemployed as a result of these interventions",
+      "evidence": "Gender analysis"
+    },
+    {
+      "risk_id": "R12",
+      "description": "GBV prevalence in the education sector, particularly among vulnerable populations",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Conduct GBV-related teacher training programs and integrate GBV programs into project design",
+      "evidence": "GBV analysis"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Limited data on GBV prevalence, particularly among primary school-aged children",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct research and data collection on GBV prevalence, particularly among primary school-aged children",
+      "evidence": "GBV analysis"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Disability and inclusion challenges in the education sector",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Ensure that newly constructed school buildings adhere to universal design principles and provide accessible learning environments",
+      "evidence": "Disability and inclusion analysis"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Climate change impacts on education infrastructure and continuity",
+      "category": "environmental",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Integrate climate change considerations into project design, including climate-resilient infrastructure and remote learning capabilities",
+      "evidence": "Climate change considerations"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Environment and Social risk is rated Substantial due to (a) limited institutional capacity to manage environmental and social risks and impacts; (b) nationwide implementation of the project's activities; (c) possible exclusion of vulnerable groups (such as poor children, children with disabilities, and indigenous groups); and (d) other risks involving child protection, occupational health and safety, labor issues, and sexual exploitation, abuse and harassment (SEA/SH).",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The project will develop a capacity-building plan for the Environmental and Social Safeguards Office and Project Management Unit, including hiring dedicated environmental and social specialists and providing targeted training. It will establish robust monitoring mechanisms to ensure support for vulnerable groups (universal design in new school/WASH construction, materials adapted for visually impaired students), strict adherence to worker codes of conduct, complaint redress and referral mechanisms, and construction site safety measures to protect school children and communities from labor influx and construction-related risks."
+    }
+  ]
+}

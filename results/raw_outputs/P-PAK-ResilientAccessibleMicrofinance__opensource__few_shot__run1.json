@@ -1,0 +1,108 @@
+{
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "opensource",
+  "model_version": "Meta-Llama-3.3-70B-Instruct",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:31:03.139916+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "```json\n{\n  \"project_id\": \"P-PAK-ResilientAccessibleMicrofinance\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Inadequate risk modelling may lead to ineffective CRF triggers and payouts.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct thorough risk modelling and regularly review and update triggers and payout criteria.\",\n      \"evidence\": \"Section III, Project Implementation\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Insufficient funding for CRF may limit its ability to provide liquidity to MFPs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Explore additional funding sources and consider increasing the CRF's capitalization.\",\n      \"evidence\": \"Section II, Project Components\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Dependence on SBP as Trustee may create implementation risks if SBP's capacity is insufficient.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Ensure SBP has adequate capacity and resources to fulfill its role as Trustee.\",\n      \"evidence\": \"Section III, Project Implementation\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Inadequate governance structure may hinder effective decision-making and oversight.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a robust governance structure with clear roles and responsibilities.\",\n      \"evidence\": \"Section III, Project Implementation\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Climate-related disasters may exceed the CRF's capacity to provide support.\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Regularly review and update the CRF's capacity to respond to climate-related disasters.\",\n      \"evidence\": \"Section I, Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Inequitable access to CRF liquidity may exacerbate existing gender disparities.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Implement measures to ensure equitable access to CRF liquidity, particularly for women.\",\n      \"evidence\": \"Section II, Project Components\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inadequate monitoring and evaluation may hinder the project's ability to achieve its objectives.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a robust monitoring and evaluation framework to track progress and outcomes.\",\n      \"evidence\": \"Section IV, Project Appraisal Summary\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Regulatory risks may impact the CRF's ability to operate effectively.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage with regulatory authorities to ensure a favorable regulatory environment.\",\n      \"evidence\": \"Section II, Project Components\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Environmental risks associated with agricultural lending may not be adequately mitigated.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement environmental risk management measures, such as negative lists and environmental assessments.\",\n      \"evidence\": \"Section C, Environmental, Social and Legal Operational Policies\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Inadequate citizen engagement may lead to ineffective project design and implementation.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a citizen engagement plan to ensure effective two-way interactions with beneficiaries.\",\n      \"evidence\": \"Section II, Project Components\"\n    }\n  ]\n}\n```",
+  "parsed_risks": {
+    "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Inadequate risk modelling may lead to ineffective CRF triggers and payouts.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct thorough risk modelling and regularly review and update triggers and payout criteria.",
+        "evidence": "Section III, Project Implementation"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Insufficient funding for CRF may limit its ability to provide liquidity to MFPs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Explore additional funding sources and consider increasing the CRF's capitalization.",
+        "evidence": "Section II, Project Components"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Dependence on SBP as Trustee may create implementation risks if SBP's capacity is insufficient.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure SBP has adequate capacity and resources to fulfill its role as Trustee.",
+        "evidence": "Section III, Project Implementation"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inadequate governance structure may hinder effective decision-making and oversight.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a robust governance structure with clear roles and responsibilities.",
+        "evidence": "Section III, Project Implementation"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Climate-related disasters may exceed the CRF's capacity to provide support.",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Regularly review and update the CRF's capacity to respond to climate-related disasters.",
+        "evidence": "Section I, Strategic Context"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Inequitable access to CRF liquidity may exacerbate existing gender disparities.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement measures to ensure equitable access to CRF liquidity, particularly for women.",
+        "evidence": "Section II, Project Components"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inadequate monitoring and evaluation may hinder the project's ability to achieve its objectives.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a robust monitoring and evaluation framework to track progress and outcomes.",
+        "evidence": "Section IV, Project Appraisal Summary"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Regulatory risks may impact the CRF's ability to operate effectively.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage with regulatory authorities to ensure a favorable regulatory environment.",
+        "evidence": "Section II, Project Components"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Environmental risks associated with agricultural lending may not be adequately mitigated.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement environmental risk management measures, such as negative lists and environmental assessments.",
+        "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Inadequate citizen engagement may lead to ineffective project design and implementation.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Establish a citizen engagement plan to ensure effective two-way interactions with beneficiaries.",
+        "evidence": "Section II, Project Components"
+      }
+    ]
+  },
+  "parse_error": null
+}

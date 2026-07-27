@@ -1,0 +1,14 @@
+{
+  "project_id": "P-PAK-ResilientAccessibleMicrofinance",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T20:26:30.870562+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "",
+  "parsed_risks": null,
+  "parse_error": "structured response missing a 'FINAL JSON:' marker followed by a JSON object"
+}

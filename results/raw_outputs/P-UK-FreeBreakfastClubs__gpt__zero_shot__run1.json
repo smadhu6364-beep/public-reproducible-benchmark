@@ -1,0 +1,198 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-27T22:23:29.204445+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\n  \"project_id\": \"P-UK-FreeBreakfastClubs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Delay in passage of the Children\u2019s Wellbeing and Schools Bill could postpone the mandatory duty, leaving schools without a legal requirement to run free breakfast clubs.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Engage early with legislative drafters, develop interim voluntary guidance for schools, and prepare a contingency rollout plan.\",\n      \"evidence\": \"The Children\u2019s Wellbeing and Schools Bill will place a duty on state-funded schools to offer a breakfast club.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Future years\u2019 funding may not be secured, threatening programme continuity after year\u202f1.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Prepare a robust multi\u2011year business case, secure provisional budget commitments, and set aside a contingency reserve.\",\n      \"evidence\": \"Funding for future years will be agreed separately through business cases.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"The internal CRM system may not be ready by the November\u202f2025 MVP deadline, hindering school onboarding and support.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Allocate a dedicated development team, adopt agile milestones, and retain a manual onboarding fallback process.\",\n      \"evidence\": \"Develop a customer relationship management system internally, working towards a minimum\u2011viable product from November 2025.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"The call\u2011centre pilot for data collection could fail to capture accurate attendance data, affecting funding calculations and monitoring.\",\n      \"category\": \"technical\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Pilot with clear KPIs, conduct early user testing, and retain school self\u2011reporting as a backup data source.\",\n      \"evidence\": \"Start commercial processes to begin a call\u2011centre pilot to support data collection.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Cohort\u202f1 schools may miss the April\u202f2026 start date, compressing implementation timelines.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Set weekly progress checkpoints, provide early guidance packs, and allocate rapid\u2011response support for delayed schools.\",\n      \"evidence\": \"Cohort 1 will begin delivery in April 2026.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"A gap between the NSBP ending in July\u202f2026 and FBC start in September\u202f2026 could leave pupils without breakfast provision.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Arrange interim bridging provision, communicate transition timelines early, and align procurement to ensure continuity.\",\n      \"evidence\": \"NSBP will end in July 2026... invited to join the FBC programme, starting in September 2026.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Complexity of the funding model may cause confusion among schools, reducing uptake.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Produce clear guidance, run webinars, and offer a dedicated help\u2011desk to answer funding queries.\",\n      \"evidence\": \"Variation by disadvantage levels was deemed complicated; simplified model intended to be easier to understand.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient staffing for supervised childcare and food preparation could compromise club quality, especially in high\u2011disadvantage schools.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide recruitment incentives, leverage local\u2011authority staffing support, and allow flexible staffing ratios where appropriate.\",\n      \"evidence\": \"Staffing levels are estimated and rounded... typical staffing patterns for mainstream, SEND and specialist settings.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Food supply chain disruptions may prevent schools from meeting required food standards.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Qualify multiple approved suppliers, maintain buffer stock, and monitor market conditions continuously.\",\n      \"evidence\": \"Food provided must be in line with school food standards.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Labour\u2011market inflation could outpace area cost adjustments, leading to under\u2011funded schools.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Review area adjustments annually and embed an inflation buffer within the funding formula.\",\n      \"evidence\": \"Apply an area cost adjustment to the funding to account for variations in the labour market.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Persistently high pupil absence post\u2011pandemic may lower club take\u2011up, weakening the projected benefit\u2011cost ratio.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Promote health\u2011safety measures, offer flexible attendance options, and monitor attendance trends to adjust outreach.\",\n      \"evidence\": \"School absence significantly increased following the pandemic... still not returned to pre\u2011pandemic levels.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Advisers procured via the education and children\u2019s social care framework may under\u2011perform, affecting school support.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Include strict performance clauses, conduct regular monitoring, and retain internal backup advisers.\",\n      \"evidence\": \"Procurement process to increase the number of advisers supporting schools through the educational and children's social care framework.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"The independent evaluation may not deliver timely insights, limiting programme adjustments.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Set clear interim reporting milestones, appoint an evaluation steering committee, and ensure rapid dissemination of findings.\",\n      \"evidence\": \"Evaluation will be independently commissioned and run from 2026 to 2028, with interim and final reporting.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"A change in government priorities could reduce political support and resources for the programme.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Embed the duty in legislation, build cross\u2011party advocacy, and showcase early success metrics.\",\n      \"evidence\": \"The government has committed to create a new mandatory free breakfast club duty for all state\u2011funded schools.\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Data\u2011privacy concerns around the CRM and call\u2011centre could lead to compliance breaches.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct a Data Protection Impact Assessment, enforce GDPR\u2011compliant safeguards, and provide staff training.\",\n      \"evidence\": \"Develop a customer relationship management system... schools engage with the department for 'first line' support.\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Funding rates for special schools may be insufficient given higher per\u2011child costs, creating inequitable provision.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Monitor special\u2011school cost data and adjust the per\u2011child rate if disparities emerge.\",\n      \"evidence\": \"At special schools, the funding rate is: \u00a31,000 start\u2011up grant, daily amount of \u00a318.95, \u00a33.23 for every child.\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Governance processes may not flag emerging issues promptly, delaying corrective action.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce monthly project\u2011board reviews, define clear escalation paths, and assign dedicated risk owners.\",\n      \"evidence\": \"Risks and issues are reviewed regularly, with challenges escalated as appropriate to the SRO and project directors through the monthly project board.\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Area cost adjustments could over\u2011fund low\u2011cost regions, wasting taxpayer money.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Periodically recalibrate adjustments against actual cost data and adjust allocations accordingly.\",\n      \"evidence\": \"Apply an area cost adjustment to the funding to account for variations in the labour market.\"\n    },\n    {\n      \"risk_id\": \"R19\",\n      \"description\": \"Schools not meeting the 40% FSM threshold for Cohort\u202f1 may feel excluded, harming stakeholder relations.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Communicate transparent eligibility criteria and offer alternative support mechanisms for other schools.\",\n      \"evidence\": \"Cohort 1... schools with 40% or more FSM 'Ever 6' pupils will be eligible to apply for a place.\"\n    },\n    {\n      \"risk_id\": \"R20\",\n      \"description\": \"If attainment benefits are lower than forecast, the benefit\u2011cost ratio could fall below 1, questioning value for money.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Track early attainment outcomes, adjust programme scale, and implement cost\u2011efficiency measures as needed.\",\n      \"evidence\": \"Sensitivity analysis halving attainment benefits still returns a positive BCR of 1.19.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delay in passage of the Children\u2019s Wellbeing and Schools Bill could postpone the mandatory duty, leaving schools without a legal requirement to run free breakfast clubs.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Engage early with legislative drafters, develop interim voluntary guidance for schools, and prepare a contingency rollout plan.",
+        "evidence": "The Children\u2019s Wellbeing and Schools Bill will place a duty on state-funded schools to offer a breakfast club."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Future years\u2019 funding may not be secured, threatening programme continuity after year\u202f1.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Prepare a robust multi\u2011year business case, secure provisional budget commitments, and set aside a contingency reserve.",
+        "evidence": "Funding for future years will be agreed separately through business cases."
+      },
+      {
+        "risk_id": "R03",
+        "description": "The internal CRM system may not be ready by the November\u202f2025 MVP deadline, hindering school onboarding and support.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Allocate a dedicated development team, adopt agile milestones, and retain a manual onboarding fallback process.",
+        "evidence": "Develop a customer relationship management system internally, working towards a minimum\u2011viable product from November 2025."
+      },
+      {
+        "risk_id": "R04",
+        "description": "The call\u2011centre pilot for data collection could fail to capture accurate attendance data, affecting funding calculations and monitoring.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Pilot with clear KPIs, conduct early user testing, and retain school self\u2011reporting as a backup data source.",
+        "evidence": "Start commercial processes to begin a call\u2011centre pilot to support data collection."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Cohort\u202f1 schools may miss the April\u202f2026 start date, compressing implementation timelines.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Set weekly progress checkpoints, provide early guidance packs, and allocate rapid\u2011response support for delayed schools.",
+        "evidence": "Cohort 1 will begin delivery in April 2026."
+      },
+      {
+        "risk_id": "R06",
+        "description": "A gap between the NSBP ending in July\u202f2026 and FBC start in September\u202f2026 could leave pupils without breakfast provision.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Arrange interim bridging provision, communicate transition timelines early, and align procurement to ensure continuity.",
+        "evidence": "NSBP will end in July 2026... invited to join the FBC programme, starting in September 2026."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Complexity of the funding model may cause confusion among schools, reducing uptake.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Produce clear guidance, run webinars, and offer a dedicated help\u2011desk to answer funding queries.",
+        "evidence": "Variation by disadvantage levels was deemed complicated; simplified model intended to be easier to understand."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient staffing for supervised childcare and food preparation could compromise club quality, especially in high\u2011disadvantage schools.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide recruitment incentives, leverage local\u2011authority staffing support, and allow flexible staffing ratios where appropriate.",
+        "evidence": "Staffing levels are estimated and rounded... typical staffing patterns for mainstream, SEND and specialist settings."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Food supply chain disruptions may prevent schools from meeting required food standards.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Qualify multiple approved suppliers, maintain buffer stock, and monitor market conditions continuously.",
+        "evidence": "Food provided must be in line with school food standards."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Labour\u2011market inflation could outpace area cost adjustments, leading to under\u2011funded schools.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Review area adjustments annually and embed an inflation buffer within the funding formula.",
+        "evidence": "Apply an area cost adjustment to the funding to account for variations in the labour market."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Persistently high pupil absence post\u2011pandemic may lower club take\u2011up, weakening the projected benefit\u2011cost ratio.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Promote health\u2011safety measures, offer flexible attendance options, and monitor attendance trends to adjust outreach.",
+        "evidence": "School absence significantly increased following the pandemic... still not returned to pre\u2011pandemic levels."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Advisers procured via the education and children\u2019s social care framework may under\u2011perform, affecting school support.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Include strict performance clauses, conduct regular monitoring, and retain internal backup advisers.",
+        "evidence": "Procurement process to increase the number of advisers supporting schools through the educational and children's social care framework."
+      },
+      {
+        "risk_id": "R13",
+        "description": "The independent evaluation may not deliver timely insights, limiting programme adjustments.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Set clear interim reporting milestones, appoint an evaluation steering committee, and ensure rapid dissemination of findings.",
+        "evidence": "Evaluation will be independently commissioned and run from 2026 to 2028, with interim and final reporting."
+      },
+      {
+        "risk_id": "R14",
+        "description": "A change in government priorities could reduce political support and resources for the programme.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Embed the duty in legislation, build cross\u2011party advocacy, and showcase early success metrics.",
+        "evidence": "The government has committed to create a new mandatory free breakfast club duty for all state\u2011funded schools."
+      },
+      {
+        "risk_id": "R15",
+        "description": "Data\u2011privacy concerns around the CRM and call\u2011centre could lead to compliance breaches.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Conduct a Data Protection Impact Assessment, enforce GDPR\u2011compliant safeguards, and provide staff training.",
+        "evidence": "Develop a customer relationship management system... schools engage with the department for 'first line' support."
+      },
+      {
+        "risk_id": "R16",
+        "description": "Funding rates for special schools may be insufficient given higher per\u2011child costs, creating inequitable provision.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Monitor special\u2011school cost data and adjust the per\u2011child rate if disparities emerge.",
+        "evidence": "At special schools, the funding rate is: \u00a31,000 start\u2011up grant, daily amount of \u00a318.95, \u00a33.23 for every child."
+      },
+      {
+        "risk_id": "R17",
+        "description": "Governance processes may not flag emerging issues promptly, delaying corrective action.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Enforce monthly project\u2011board reviews, define clear escalation paths, and assign dedicated risk owners.",
+        "evidence": "Risks and issues are reviewed regularly, with challenges escalated as appropriate to the SRO and project directors through the monthly project board."
+      },
+      {
+        "risk_id": "R18",
+        "description": "Area cost adjustments could over\u2011fund low\u2011cost regions, wasting taxpayer money.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Periodically recalibrate adjustments against actual cost data and adjust allocations accordingly.",
+        "evidence": "Apply an area cost adjustment to the funding to account for variations in the labour market."
+      },
+      {
+        "risk_id": "R19",
+        "description": "Schools not meeting the 40% FSM threshold for Cohort\u202f1 may feel excluded, harming stakeholder relations.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Communicate transparent eligibility criteria and offer alternative support mechanisms for other schools.",
+        "evidence": "Cohort 1... schools with 40% or more FSM 'Ever 6' pupils will be eligible to apply for a place."
+      },
+      {
+        "risk_id": "R20",
+        "description": "If attainment benefits are lower than forecast, the benefit\u2011cost ratio could fall below 1, questioning value for money.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Track early attainment outcomes, adjust programme scale, and implement cost\u2011efficiency measures as needed.",
+        "evidence": "Sensitivity analysis halving attainment benefits still returns a positive BCR of 1.19."
+      }
+    ]
+  },
+  "parse_error": null
+}
