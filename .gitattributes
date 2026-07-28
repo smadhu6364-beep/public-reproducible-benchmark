@@ -1,0 +1,9 @@
+# Normalize line endings so Windows (VS Code / MiKTeX) and Linux (Cowork
+# sandbox) sessions stop producing whole-file rewrites that are really just
+# CRLF<->LF churn. Added 2026-07-28 after a git status showed 748 files
+# "modified" with zero actual content difference (verified via diff after
+# stripping \r) - pure line-ending noise, not real edits.
+* text=auto eol=lf
+*.pdf -text
+*.png -text
+*.jpg -text
