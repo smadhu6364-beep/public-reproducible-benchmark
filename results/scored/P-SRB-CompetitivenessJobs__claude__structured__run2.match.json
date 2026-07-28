@@ -1,0 +1,227 @@
+{
+  "run_file": "P-SRB-CompetitivenessJobs__claude__structured__run2.json",
+  "project_id": "P-SRB-CompetitivenessJobs",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R04",
+      "similarity": 0.763,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R02",
+      "similarity": 0.559,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R03",
+      "similarity": 0.541,
+      "gen_category": "organizational",
+      "gt_category": "technical",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R09",
+      "gt_risk_id": "R05",
+      "similarity": 0.54,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R06",
+      "similarity": 0.462,
+      "gen_category": "political_regulatory",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Weak inter-ministerial policy coordination and strategic planning capacity across participating line ministries may hinder project implementation.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish an inter-ministerial Policy Planning, Monitoring, and Coordination (PPMC) Working Group led by the Public Policy Secretariat with formal institutional mandates.",
+      "evidence": "According to the Bank\u2019s 2015 Systematic Country Diagnostic, policy coordination is among the weakest points for Serbia."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Implementing institutions (PPS, MoE, MoLEVSA) lack prior experience with World Bank procurement guidelines, creating risks of implementation delays.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Hire experienced, dedicated procurement and financial management specialists in PPS and MoLEVSA, and conduct intensive procurement training during project launch.",
+      "evidence": "The assessment concluded that most of the entities involved in project implementation, have no experience in implementing World Bank-funded projects"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Ongoing fiscal consolidation and public sector budget constraints could limit required co-funding for active labor market programs and public initiatives.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Utilize Results-Based Financing Disbursement-Linked Indicators (DLIs) to ring-fence and incentivize state budget allocations for successful ALMPs.",
+      "evidence": "The recent reduction in civil service salaries, the ongoing constraints in the civil service to hire new workers, and budget limitation"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Political economy resistance and leadership changes may delay structural reforms in the public research and development institute (RDI) sector.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Deploy independent international experts to conduct transparent RDI performance audits and develop consensus around performance-based funding models.",
+      "evidence": "This is largely due to political economy considerations, including severe resources constraints and intermittent leadership with ownership over these issues."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Excessive caseloads per caseworker in National Employment Service (NES) branch offices prevent effective job search assistance and client profiling.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Separate active jobseekers from inactive registrants, redeploy administrative staff to frontline casework, and introduce a standardized caseworker certification program.",
+      "evidence": "Currently, the average caseload varies between around 200 to over 2,000 registered unemployed per case worker across branch offices"
+    },
+    {
+      "risk_id": "R06",
+      "description": "High tax wedges and rapid benefit reduction disincentivize social financial assistance beneficiaries from entering formal low-wage employment.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Design and pilot an in-work cash transfer benefit program for social assistance recipients transitioning into formal jobs to lower the effective tax wedge.",
+      "evidence": "Serbia has one of the highest tax wedges on low-paying jobs in the entire ECA Region and a social assistance benefit that is reduced"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Discontinuation of donor funding cycles risks paralyzing enterprise innovation matching grant schemes and technology transfer operations.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Institutionalize enterprise matching grants and technology transfer funding by embedding explicit annual allocations into the Republican Budget via DLIs.",
+      "evidence": "the IF could not launch a new call for proposals in 2015"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Sub-projects supported by Innovation Fund matching grants may cause negative environmental impacts during product and material development.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Screen all sub-projects using Environmental and Social Management Framework (ESMF) procedures and engage an independent Environmental and Social Expert.",
+      "evidence": "The main environmental concern deals with the Mini & Matching Grant Programs, housed within and administered by the existing Innovation Fund"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Delays in establishing the Project Implementation Unit and adopting the Project Operations Manual could postpone project effectiveness.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Advance key procurement selections for PIU staff and finalize the Project Operations Manual prior to loan effectiveness deadlines.",
+      "evidence": "PIU has been established within the PPS in a manner satisfactory to the Bank and has selected at least the PIU director"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Overlapping mandates and lack of transparency among Ministry of Economy development agencies reduce the impact of investment and export promotion.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Adopt and execute a comprehensive strategic action plan to restructure MoE agencies (SIEPA, Development Fund, AOFI, NARR) and improve cost-benefit analysis.",
+      "evidence": "The system of support provided by the MoE\u2019s agencies is complex and non-transparent... agencies have overlapping mandates, little coordination between them"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Public research institutes remain disconnected from market demand, generating minimal commercial technology transfer and industrial innovation.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Establish a centralized Technology Transfer Facility at the Innovation Fund and introduce performance-based research financing incentives.",
+      "evidence": "Serbia\u2019s public research sector suffers from the traditional post-transition malaise of being disconnected from contemporary needs and trends"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Perceptions of corruption in public administrative practices could undermine procurement transparency and public trust.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Mandate public disclosure of contract awards on official websites, enforce Bank anti-corruption guidelines, and conduct regular Bank ex-post procurement reviews.",
+      "evidence": "Perceived level of corruption in the country is high."
+    },
+    {
+      "risk_id": "R13",
+      "description": "External macroeconomic instability or severe natural disasters could disrupt macroeconomic growth and government reform implementation.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Structure project financing around flexible Disbursement-Linked Indicators and maintain alignment with the IMF Precautionary Stand-By Agreement.",
+      "evidence": "The disastrous floods of May 2014 triggered a further recession."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Program success relies on continuous, engaged commitment from the Prime Minister, Deputy PM, Minister of Finance, Minister of Education/Science/Technological Development, Minister of Labor/Employment/Veterans/Social Affairs, and the Public Policy Secretariat (PPS); line ministries must sustain interest in policy coordination or the loan will not disburse. Risk is heightened by political instability, frequent historical changes in ministers/senior staff, and excessive concentration of decision-making at the top (per the Bank's Systematic Country Diagnostic).",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Strong communications with the public, private sector, civil society, and EU Delegation to maintain a broad-based reform coalition; Bank coordinates communications with the PM's office; periodic PPMC Working Group consultations with private sector/civil society; ongoing close consultation with the EU Delegation in Serbia."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Significant downside macroeconomic risks: lower-than-expected Eurozone recovery could hurt Serbia's exports, remittances, and capital flows (EU countries are its largest trading partners). Materializing fiscal risks (e.g. SOE subsidy reduction difficulties) or weakening growth/currency would require even greater fiscal consolidation in 2015-2016 to keep public debt sustainable; reduced exports/FDI or greater consolidation could dampen anticipated reform impact.",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Bank works closely with government and the IMF to keep SOE/public-utility reform on track and ensure it generates required fiscal savings."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Project works across three ministries (MoE plus development agencies, MoESTD, MoLEVSA) plus the PPS, creating implementation complexity for both government and Bank. Achieving the DLIs requires substantial external technical assistance, but Bank supervision resources are limited and the government is reluctant to borrow for TA (would rather minimize loan-funded TA or substitute other donor resources), risking inadequate TA resourcing.",
+      "category": "technical",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Team seeks complementary resources (e.g. CIIP Trust Fund) and leverages work from other WBG projects; collaborates with other donors such as the EU and USAID."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Overall coordination sits with the Public Policy Secretariat (PPS), created only in spring 2014 under the new government; as a new institution it lacks capacity and a full set of official administrative procedures for cross-ministry policy coordination. Substantial risk to both project implementation (fiduciary/safeguards requirements, cross-ministry results reporting) and coordination of the inter-ministerial PPMC Working Group.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "PPS expected to hire additional personnel for fiduciary requirements and project coordination; Bank provides TA through the CIIP trust fund to strengthen PPS capacity."
+    },
+    {
+      "risk_id": "R05",
+      "description": "PPS currently has no fiduciary experience managing Bank projects.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Build capacity by establishing a Project Implementation Unit (PIU) within the PPS responsible for implementation, adequately staffing its fiduciary functions."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Reforms create both winners and losers, and losers are often more visible and organized at the time of reform (e.g. beneficiaries of MoE incentives/subsidies, National Employment Service case-workers, researchers at research institutes slated for restructuring).",
+      "category": "stakeholder",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Government to clearly communicate reform objectives, expected outcomes, and benefits throughout the process."
+    }
+  ]
+}
