@@ -1,0 +1,144 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "gpt",
+  "model_version": "gpt-oss-120b",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T04:00:55.238216+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\nStep 1 \u2013 Frame the project  \n- Objective: Deliver free breakfast clubs (FBC) in all state\u2011funded primary schools in England, providing food and \u226530\u202fmin supervised childcare before school.  \n- Scope: National rollout year\u202f1 (April\u202f2026\u2011March\u202f2027) adding ~2,000 schools (500 in Cohort\u202f1, 1,750 in Cohort\u202f2) to the existing 750 early\u2011adopter (EA) schools.  \n- Components: Funding grants (start\u2011up \u00a31,000, daily \u00a325 + \u00a31 per child), hybrid internal/external delivery, CRM system, call\u2011centre pilot, advisory support via the education & children\u2019s social care framework, local\u2011authority assistance.  \n- Delivery model: Section\u202f14 grants to schools; internal CRM development; contracted advisers; optional call\u2011centre.  \n- Timeline: CRM MVP by Nov\u202f2025; Cohort\u202f1 start Apr\u202f2026; NSBP closure Jul\u202f2026; Cohort\u202f2 start Sep\u202f2026; evaluation 2026\u20112028.  \n- Budget: Funded from the Best Start in Life budget; \u00a31,000 start\u2011up + variable daily rates; overall affordable for up to 2,250 schools.  \n- Key stakeholders: Department for Education (DfE), senior responsible officer (SRO) & project board, HM Treasury, schools, local authorities, sector partners, advisers, pupils/parents, evaluation team.  \n- External dependencies: Children\u2019s Wellbeing and Schools Bill (legislative duty), closure of the National School Breakfast Programme (NSBP), labour\u2011market cost adjustments, procurement processes.\n\nStep 2 \u2013 Category sweep (candidate risks with supporting text)  \nTechnical  \n1. CRM system may not be ready on time \u2013 \u201cWe will develop a customer relationship management system internally, working towards a minimum\u2011viable product from November\u202f2025.\u201d  \n2. Call\u2011centre pilot may encounter implementation problems \u2013 \u201cWe will also start commercial processes to begin a call\u2011centre pilot to support data collection.\u201d  \n3. Food\u2011standards compliance risk \u2013 \u201cFood provided must be in line with school food standards.\u201d  \n\nFinancial  \n4. Delay in HM Treasury budget approval \u2013 \u201cThe programme's success depends on timely approval and budget confirmation from HM Treasury.\u201d  \n5. Uncertainty of funding for future years \u2013 \u201cFunding for future years will be agreed separately through business cases.\u201d  \n\nSchedule  \n6. Cohort\u202f1 start\u2011up could slip \u2013 \u201cCohort\u202f1 will begin delivery in April\u202f2026.\u201d  \n7. Transition from NSBP may be mistimed \u2013 \u201cAll schools \u2026 would be guaranteed a place \u2026 after the closure of the NSBP in July\u202f2026.\u201d  \n\nStakeholder  \n8. Low uptake of school applications \u2013 \u201cSchools with 40\u202f% or more FSM \u2026 will be eligible to apply for a place.\u201d  \n9. Local\u2011authority capacity to support schools \u2013 \u201cWe will fund local authorities to support schools and the wider system to effectively deliver free breakfast clubs.\u201d  \n10. Insufficient collaboration with sector partners \u2013 \u201cThe programme's success depends on \u2026 effective collaboration with the sector partners \u2026\u201d  \n\nPolitical/Regulatory  \n11. Delay in the Children\u2019s Wellbeing and Schools Bill \u2013 \u201cChildren's Wellbeing and Schools Bill will place a duty on state\u2011funded schools to offer a breakfast club.\u201d  \n12. Food\u2011standards compliance (also political) \u2013 same as risk\u202f3.  \n\nOrganizational  \n13. Availability of skilled staff \u2013 \u201cavailability of skilled staff and resources, in both DfE and the education sector.\u201d  \n14. Governance bottlenecks \u2013 \u201cProgramme governance is multi\u2011layered, with primary oversight at the senior responsible officer (SRO) led \u2018free breakfast clubs project board\u2019.\u201d  \n\nExternal  \n15. Area cost adjustments may misalign funding \u2013 \u201cAcross all settings, we apply an area cost adjustment to the funding to account for variations in the labour market.\u201d  \n\nStep 3 \u2013 Evidence filter  \nAll listed risks are directly supported by quoted statements; no risk is removed.\n\nStep 4 \u2013 Assess & Mitigate (likelihood 1\u20115, impact 1\u20115)  \n\n| ID | Likelihood | Impact | Justification | Mitigation |\n|----|------------|--------|---------------|------------|\n| R01 | 3 | 4 | Internal software projects often face schedule slips. | Set a detailed development plan, allocate dedicated team, conduct early user testing, and prepare a manual onboarding fallback. |\n| R02 | 3 | 3 | New commercial process; pilot may encounter technical or staffing issues. | Pilot with limited scope, define clear SOPs, and retain alternative data\u2011submission methods (e.g., spreadsheet upload). |\n| R03 | 2 | 4 | Schools are accustomed to standards, but breach would be regulatory. | Issue clear guidance, provide compliance checklists, and conduct periodic audits/training. |\n| R04 | 3 | 5 | Funding delay would halt grant payments and rollout. | Early engagement with Treasury, submit detailed business case, secure provisional approval, and maintain contingency cash reserves. |\n| R05 | 3 | 4 | Future\u2011year funding not guaranteed could threaten sustainability. | Develop a multi\u2011year funding roadmap, demonstrate early benefits, align with Treasury priorities, and explore alternative financing. |\n| R06 | 2 | 4 | Start\u2011up delay would push the whole schedule. | Create a detailed rollout checklist, monitor readiness weekly, and allocate contingency resources to meet the April\u202f2026 target. |\n| R07 | 2 | 3 | Mis\u2011alignment with NSBP closure could leave a provision gap. | Align transition timelines, provide bridge funding for July\u2011Sept\u202f2026, and communicate clearly with affected schools. |\n| R08 | 3 | 3 | Application eligibility may limit number of schools joining. | Run targeted outreach, simplify application process, and offer incentives (e.g., priority support). |\n| R09 | 3 | 3 | Local authorities may lack capacity to deliver support. | Provide training, dedicated support staff, and monitor workload through regular reporting. |\n| R10 | 3 | 3 | Poor collaboration could impede delivery of advisory services. | Formal partnership agreements, regular coordination meetings, and shared performance metrics. |\n| R11 | 2 | 5 | If the Bill is delayed, the statutory duty is absent. | Track legislative progress, engage MPs, and prepare interim guidance for schools. |\n| R12 | 3 | 3 | Skilled staff shortages could affect programme operations. | Recruit temporary staff, cross\u2011train existing personnel, and offer incentives for retention. |\n| R13 | 2 | 3 | Multi\u2011layered governance may slow decisions. | Streamline decision pathways, define clear escalation routes, and set decision\u2011making time\u2011boxes. |\n| R14 | 2 | 2 | Labour\u2011market cost variations could cause funding mismatches. | Review area adjustments annually and adjust grant rates accordingly. |\n\nStep 5 \u2013 Consolidate  \nRisk\u202f3 (food\u2011standards) is retained under political_regulatory; duplicate removed. Final set: 14 risks.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-UK-FreeBreakfastClubs\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"CRM system may not be ready by the November 2025 MVP, delaying school onboarding.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Set a detailed development plan, allocate dedicated team, conduct early user testing, and prepare a manual onboarding fallback.\",\n      \"evidence\": \"We will develop a customer relationship management system internally, working towards a minimum-viable product from November 2025.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Call-centre pilot could face implementation problems, affecting data collection support.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Pilot with limited scope, define clear SOPs, and retain alternative data-submission methods such as spreadsheet upload.\",\n      \"evidence\": \"We will also start commercial processes to begin a call-centre pilot to support data collection.\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Food provided may not meet school food standards, leading to regulatory breach.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Issue clear guidance, provide compliance checklists, and conduct periodic audits and training for schools.\",\n      \"evidence\": \"Food provided must be in line with school food standards.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Delay in HM Treasury approval could postpone funding and rollout.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Engage Treasury early, submit detailed business case, secure provisional approval, and keep contingency cash reserves.\",\n      \"evidence\": \"The programme's success depends on timely approval and budget confirmation from HM Treasury.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Uncertainty over funding for future years may threaten programme sustainability.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Develop a multi-year funding roadmap, demonstrate early benefits, and align with Treasury priorities.\",\n      \"evidence\": \"Funding for future years will be agreed separately through business cases.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Cohort 1 may not start delivery in April 2026 as planned.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Create a detailed rollout checklist, monitor readiness weekly, and allocate contingency resources to meet the April 2026 target.\",\n      \"evidence\": \"Cohort 1 will begin delivery in April 2026.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Transition from NSBP may be mistimed, creating a provision gap.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Align transition timelines, provide bridge funding for July\u2011September 2026, and communicate clearly with affected schools.\",\n      \"evidence\": \"All schools ... would be guaranteed a place ... after the closure of the NSBP in July 2026.\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Insufficient school applications could limit rollout reach.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Run targeted outreach, simplify the application process, and offer incentives such as priority support.\",\n      \"evidence\": \"Schools with 40% or more FSM ... will be eligible to apply for a place.\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Local authorities may lack capacity to support schools effectively.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Provide training, dedicated support staff, and monitor workload through regular reporting.\",\n      \"evidence\": \"We will fund local authorities to support schools and the wider system to effectively deliver free breakfast clubs.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Poor collaboration with sector partners could hinder delivery of advisory support.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish formal partnership agreements, hold regular coordination meetings, and share performance metrics.\",\n      \"evidence\": \"The programme's success depends on ... effective collaboration with the sector partners ...\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Delay in the Children\u2019s Wellbeing and Schools Bill would postpone the statutory duty.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Track legislative progress, engage MPs, and prepare interim guidance for schools.\",\n      \"evidence\": \"Children's Wellbeing and Schools Bill will place a duty on state-funded schools to offer a breakfast club.\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Limited availability of skilled staff in DfE and the education sector may affect programme delivery.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit temporary staff, cross\u2011train existing personnel, and offer retention incentives.\",\n      \"evidence\": \"availability of skilled staff and resources, in both DfE and the education sector.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Multi-layered governance could create decision\u2011making bottlenecks.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Streamline decision pathways, define clear escalation routes, and set decision\u2011making time\u2011boxes.\",\n      \"evidence\": \"Programme governance is multi-layered, with primary oversight at the senior responsible officer (SRO) led 'free breakfast clubs project board'.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Area cost adjustments may cause funding mismatches due to labour\u2011market variations.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 2,\n      \"mitigation\": \"Review area adjustments annually and adjust grant rates accordingly.\",\n      \"evidence\": \"Across all settings, we apply an area cost adjustment to the funding to account for variations in the labour market.\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "CRM system may not be ready by the November 2025 MVP, delaying school onboarding.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Set a detailed development plan, allocate dedicated team, conduct early user testing, and prepare a manual onboarding fallback.",
+        "evidence": "We will develop a customer relationship management system internally, working towards a minimum-viable product from November 2025."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Call-centre pilot could face implementation problems, affecting data collection support.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Pilot with limited scope, define clear SOPs, and retain alternative data-submission methods such as spreadsheet upload.",
+        "evidence": "We will also start commercial processes to begin a call-centre pilot to support data collection."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Food provided may not meet school food standards, leading to regulatory breach.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Issue clear guidance, provide compliance checklists, and conduct periodic audits and training for schools.",
+        "evidence": "Food provided must be in line with school food standards."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Delay in HM Treasury approval could postpone funding and rollout.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Engage Treasury early, submit detailed business case, secure provisional approval, and keep contingency cash reserves.",
+        "evidence": "The programme's success depends on timely approval and budget confirmation from HM Treasury."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Uncertainty over funding for future years may threaten programme sustainability.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Develop a multi-year funding roadmap, demonstrate early benefits, and align with Treasury priorities.",
+        "evidence": "Funding for future years will be agreed separately through business cases."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Cohort 1 may not start delivery in April 2026 as planned.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Create a detailed rollout checklist, monitor readiness weekly, and allocate contingency resources to meet the April 2026 target.",
+        "evidence": "Cohort 1 will begin delivery in April 2026."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Transition from NSBP may be mistimed, creating a provision gap.",
+        "category": "schedule",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Align transition timelines, provide bridge funding for July\u2011September 2026, and communicate clearly with affected schools.",
+        "evidence": "All schools ... would be guaranteed a place ... after the closure of the NSBP in July 2026."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Insufficient school applications could limit rollout reach.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Run targeted outreach, simplify the application process, and offer incentives such as priority support.",
+        "evidence": "Schools with 40% or more FSM ... will be eligible to apply for a place."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Local authorities may lack capacity to support schools effectively.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide training, dedicated support staff, and monitor workload through regular reporting.",
+        "evidence": "We will fund local authorities to support schools and the wider system to effectively deliver free breakfast clubs."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Poor collaboration with sector partners could hinder delivery of advisory support.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish formal partnership agreements, hold regular coordination meetings, and share performance metrics.",
+        "evidence": "The programme's success depends on ... effective collaboration with the sector partners ..."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Delay in the Children\u2019s Wellbeing and Schools Bill would postpone the statutory duty.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Track legislative progress, engage MPs, and prepare interim guidance for schools.",
+        "evidence": "Children's Wellbeing and Schools Bill will place a duty on state-funded schools to offer a breakfast club."
+      },
+      {
+        "risk_id": "R12",
+        "description": "Limited availability of skilled staff in DfE and the education sector may affect programme delivery.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Recruit temporary staff, cross\u2011train existing personnel, and offer retention incentives.",
+        "evidence": "availability of skilled staff and resources, in both DfE and the education sector."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Multi-layered governance could create decision\u2011making bottlenecks.",
+        "category": "organizational",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Streamline decision pathways, define clear escalation routes, and set decision\u2011making time\u2011boxes.",
+        "evidence": "Programme governance is multi-layered, with primary oversight at the senior responsible officer (SRO) led 'free breakfast clubs project board'."
+      },
+      {
+        "risk_id": "R14",
+        "description": "Area cost adjustments may cause funding mismatches due to labour\u2011market variations.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Review area adjustments annually and adjust grant rates accordingly.",
+        "evidence": "Across all settings, we apply an area cost adjustment to the funding to account for variations in the labour market."
+      }
+    ]
+  },
+  "parse_error": null
+}
