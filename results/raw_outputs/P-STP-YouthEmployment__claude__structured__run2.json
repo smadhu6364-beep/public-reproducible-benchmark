@@ -1,0 +1,117 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:25:44.858283+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\n### Step 1 - Frame the Project\n* **Project Name & ID**: Sao Tome and Principe Youth Employment Opportunities Project (P512332)\n* **Objective**: Strengthen employment support systems and expand pathways to more and better jobs for targeted youth in priority value chains.\n* **Scope**: Upgrade 5 public training institutions in S\u00e3o Tom\u00e9; construct a new multi-use technical training center in Pr\u00edncipe; modernize the labor market information system (LMIS) and launch an Employability Portal; expand Youth Internships (1,600 youth); deliver Youth Self-Employment packages (3,000 youth); support MSME productivity/expansion (240 firms); and provide Inclusion Scholarships (1,000 youth).\n* **Components**: \n  1. *Institutional Foundations for More and Better Jobs* (US$10.55m)\n  2. *Pathways to More and Better Jobs* (US$8.90m)\n  3. *Project Management & Learning* (US$1.55m)\n  4. *Contingent Emergency Response Component (CERC)* (US$0.00m)\n* **Delivery Model**: Implemented by MLSSS via DTEFP, with fiduciary/safeguards functions managed by AFAP. Operates through a unified Project Implementation Unit (PIU) shared with the Social Protection, Resilience and Recovery Project (SPRRP).\n* **Timeline**: Expected Board Approval: July 8, 2026; Expected Closing Date: June 30, 2031.\n* **Budget**: US$21.00 million (100% IDA Grant).\n* **Key Stakeholders**: Ministry of Labor, Solidarity and Social Security (MLSSS); Fiduciary and Project Administration Agency (AFAP); Ministry of Education, Culture, Science, and Higher Education (MECSHE); Ministry of Environment, Youth, and Sustainable Tourism (MEYST); Ministry of Agriculture, Fisheries, and Rural Development (MAFRD); Regional Government of Pr\u00edncipe; TVET Institutions (CFP-BB, CFP-BSTP, EHT, CATAP, FCT-USTP); UNDP; and private sector employers.\n* **External Dependencies**: Stable power/internet connectivity; active employer participation in internship/matching platforms; international labor mobility agreements (e.g., CPLP / Portugal).\n\n---\n\n### Step 2 - Category Sweep\n* **technical**:\n  * *LMIS/Portal Adoption Risk*: Prior tools (ILO Employment Observatory, Employability Portal) were never fully operationalized or launched (*Section II.D, Subcomponent 1.2*).\n  * *TVET Operational Capacity Risk*: Public TVET institutions suffer from outdated equipment, limited infrastructure, operating budget gaps, and staffing shortages (*Section I.B, para 12*).\n* **financial**:\n  * *Beneficiary Sub-grant/Stipend Disbursement Delays*: Fund disbursement for grants/stipends may be delayed due to non-compliance with selection criteria or payment agent processing (*Section IV.B, para 56*).\n* **schedule**:\n  * *Multi-Stakeholder Workplan Delays*: Coordination across multiple ministries and training entities risks delaying annual workplan preparation and activity rollouts (*Section IV.B, para 56*).\n* **stakeholder**:\n  * *Exclusion & Elite Capture*: Disadvantaged youth, women, and remote populations (e.g., non-capital, non-USR registered) risk being excluded or displaced by elite capture in grant/scholarship selection (*Section IV.C, para 59*).\n  * *SEA/SH & Workplace Safety Risks*: Vulnerable young women participating in internships and training face risks of sexual exploitation, abuse, and harassment (*Section IV.C, para 59*).\n* **political_regulatory**:\n  * *Inter-Ministerial Institutional Fragmentation*: Overlapping mandates for TVET, entrepreneurship, and employment across MLSSS, MECSHE, MEF, MEYST, and MAFRD risk operational friction (*Section I.B, para 15*).\n* **environmental**:\n  * *Physical Climate Hazard Disruptions*: Floods, storms, and sea-level rise risk damaging physical assets and disrupting training schedules (*Section I.A, para 4 & Section IV.C, para 61*).\n  * *Construction & Solid Waste Environmental Impacts*: Rehabilitation of centers and construction of the Pr\u00edncipe training facility generate construction debris and e-waste in a sensitive island/biosphere environment (*Section IV.C, para 58*).\n* **organizational**:\n  * *Fiduciary & Technical Coordination Bottlenecks*: Delays by line ministries in providing TORs and technical specs to AFAP risk stalling procurement processes (*Section IV.B, para 57*).\n* **external**:\n  * *Power Grid & Connectivity Outages*: Unreliable electricity access and power cuts caused by rainfall/floods risk disabling the digital LMIS and Employability Portal (*Section II.D, Subcomponent 1.2, para 33*).\n\n---\n\n### Step 3 - Evidence Filter\nAll candidate risks above are supported directly by statements in the PAD text. No unsupported or hypothetical risks are retained.\n\n---\n\n### Step 4 - Assess & Propose Mitigations\n1. **R01 (Technical)**: L=3, I=3. *Justification*: Historical precedent shows past portal and observatory initiatives failed to achieve operationalization. *Mitigation*: Map existing tools, design cloud-based architecture, and build partnerships with private employers and overseas portals.\n2. **R02 (Technical)**: L=3, I=4. *Justification*: Existing TVET institutions lack modern equipment, adequate budgets, and qualified instructors. *Mitigation*: Support centers via direct cost-compensation agreements tied to enrollment targets and centralized procurement of modern tools by AFAP.\n3. **R03 (Financial)**: L=3, I=3. *Justification*: Complex eligibility rules and verification steps for thousands of grants/stipends can bottleneck disbursements. *Mitigation*: Update FM section of POM with clear beneficiary criteria and execute payments through an experienced, contracted payment service provider.\n4. **R04 (Schedule)**: L=3, I=3. *Justification*: Involving multiple line ministries in review processes frequently stalls annual workplan approvals. *Mitigation*: Institutionalize a Minister-led Coordination Committee comprising key directors to streamline inter-agency approvals.\n5. **R05 (Stakeholder)**: L=3, I=4. *Justification*: Marginalized youth outside urban centers or social registries face structural barriers to program access. *Mitigation*: Mandate USR targeting, geographic quotas, 50% female participation targets, and targeted community outreach.\n6. **R06 (Stakeholder)**: L=2, I=4. *Justification*: Vulnerable young women in workplace placements are exposed to potential exploitation and harassment. *Mitigation*: Appoint an AFAP Social Specialist with SEA/SH expertise, enforce workplace codes of conduct, and integrate a project GRM.\n7. **R07 (Political/Regulatory)**: L=3, I=3. *Justification*: Institutional mandates for skills, employment, and entrepreneurship are scattered across five ministries. *Mitigation*: Unify project management under a single MLSSS PIU and establish formal cross-ministerial coordination mechanisms.\n8. **R08 (Environmental)**: L=3, I=3. *Justification*: High vulnerability to flash floods and severe coastal storms can temporarily halt physical training and construction activities. *Mitigation*: Apply climate-resilient building/rehabilitation designs and adopt flexible, phased training schedules.\n9. **R09 (Environmental)**: L=2, I=3. *Justification*: Civil works in UNESCO biosphere reserve zones carry risk of uncontrolled waste and debris generation. *Mitigation*: Require contractors to implement site-specific ESMPs, waste management plans, and adhere to IFC EDGE building standards.\n10. **R10 (Organizational)**: L=3, I=3. *Justification*: Weak collaboration or delayed TOR submissions from MLSSS stall AFAP's procurement timeline. *Mitigation*: Enforce 45/60-day legal covenants for hiring technical specialists and define joint workflow timelines in the Project Operations Manual.\n11. **R11 (External)**: L=4, I=3. *Justification*: Frequent power grid instability disrupts continuous access to online servers and digital systems. *Mitigation*: Procure backup power generators for systems infrastructure and host the Employability Portal on cloud-based architecture.\n\n---\n\n### Step 5 - Consolidate\n11 unique, highly specific risks derived from text evidence across all required categories. Clean mapping into the required JSON schema structure follows.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-STP-YouthEmployment\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Failure to operationalize and sustain the new LMIS and Employability Portal due to technical complexity and historical adoption challenges.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Conduct comprehensive mapping of existing DTEFP tools, design cloud-based architecture, and partner with private entities to leverage existing job-matching solutions.\",\n      \"evidence\": \"an 'Employment Observatory' was previously developed with support from... ILO but never fully operationalized, and a digital 'Employability Portal'... was conceived but never launched.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Inability of public TVET institutions to deliver quality, market-aligned training due to severe resource, infrastructure, and staffing gaps.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish Workforce Development Committees, partially compensate centers based on student targets, and centralize equipment procurement through AFAP.\",\n      \"evidence\": \"capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps, and weak employer participation in curricula design\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Delays in disbursing sub-grants, stipends, and scholarships to youth and MSME beneficiaries due to non-compliance or fiduciary verification checks.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate explicit eligibility and verification criteria in the Project Operations Manual and execute disbursements through a contracted payment service provider.\",\n      \"evidence\": \"delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Project implementation delays caused by slow annual workplan preparation and complex approvals across multiple institutional stakeholders.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a Ministerial Coordination Committee to streamline annual workplan reviews and enforce operational timelines established in the POM.\",\n      \"evidence\": \"delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Exclusion of vulnerable youth, women, and non-capital populations or exposure to elite capture during beneficiary selection for grants and scholarships.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Utilize Unique Social Registry data for objective socio-economic targeting, enforce a 50% female quota, and implement transparent outreach in underserved areas.\",\n      \"evidence\": \"risks of exclusion, which may arise if project benefits are not equitably distributed... as well as risks of elite capture in the selection of beneficiaries\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Risks of sexual exploitation, abuse, and sexual harassment (SEA/SH) targeting young women during professional training and internship placements.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Appoint an AFAP Social Specialist with SEA/SH expertise, enforce strict workplace codes of conduct, and implement a dedicated Grievance Redress Mechanism.\",\n      \"evidence\": \"risks of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women participating in training and work placements\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Institutional fragmentation and overlapping mandates across MLSSS, MECSHE, MEF, MEYST, and MAFRD hindering cohesive policy execution.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Unify implementation under a single MLSSS PIU and establish formal cross-ministerial coordination channels under the authority of the Minister of Labor.\",\n      \"evidence\": \"MLSSS holds the primary mandate... MECSHE oversees longer-term... Entrepreneurship support is currently under... MEF... Sectoral ministries... also have a role to play\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Recurrent natural hazards such as floods, storms, and sea-level rise causing physical damage to facilities and disruptions to training schedules.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate climate-resilient design and EDGE standards in infrastructure construction/rehabilitation, and utilize phased, flexible training schedules.\",\n      \"evidence\": \"increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery, potentially leading to short delays\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Environmental degradation and waste management hazards arising from civil rehabilitation works and construction of the Pr\u00edncipe training center.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Mandate environmental screening, contractor waste management plans, adherence to ESMP guidelines, and compliance with EDGE green building standards.\",\n      \"evidence\": \"Project activities may result in the generation of solid waste, obsolete equipment, and minor construction debris... in a sensitive island environment.\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Procurement and execution bottlenecks resulting from delayed technical inputs and specification handovers between MLSSS and AFAP.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Recruit dedicated PIU technical specialists within 45-60 days of effectiveness and establish strict TOR submission workflows within the POM.\",\n      \"evidence\": \"A key factor for good procurement performance will be the ability of AFAP and the MLSSS to work in close collaboration\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Frequent electrical outages and connectivity disruptions impairing the continuous operation of digital LMIS tools and the Employability Portal.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Procure backup power generators for system hardware, implement cloud-based platform architecture, and support off-grid solar energy systems.\",\n      \"evidence\": \"specifically intense rainfall and floods which may disrupt electricity access, the project will support the purchase of power generators\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-STP-YouthEmployment",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Failure to operationalize and sustain the new LMIS and Employability Portal due to technical complexity and historical adoption challenges.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct comprehensive mapping of existing DTEFP tools, design cloud-based architecture, and partner with private entities to leverage existing job-matching solutions.",
+        "evidence": "an 'Employment Observatory' was previously developed with support from... ILO but never fully operationalized, and a digital 'Employability Portal'... was conceived but never launched."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Inability of public TVET institutions to deliver quality, market-aligned training due to severe resource, infrastructure, and staffing gaps.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish Workforce Development Committees, partially compensate centers based on student targets, and centralize equipment procurement through AFAP.",
+        "evidence": "capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps, and weak employer participation in curricula design"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in disbursing sub-grants, stipends, and scholarships to youth and MSME beneficiaries due to non-compliance or fiduciary verification checks.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate explicit eligibility and verification criteria in the Project Operations Manual and execute disbursements through a contracted payment service provider.",
+        "evidence": "delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Project implementation delays caused by slow annual workplan preparation and complex approvals across multiple institutional stakeholders.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a Ministerial Coordination Committee to streamline annual workplan reviews and enforce operational timelines established in the POM.",
+        "evidence": "delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Exclusion of vulnerable youth, women, and non-capital populations or exposure to elite capture during beneficiary selection for grants and scholarships.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Utilize Unique Social Registry data for objective socio-economic targeting, enforce a 50% female quota, and implement transparent outreach in underserved areas.",
+        "evidence": "risks of exclusion, which may arise if project benefits are not equitably distributed... as well as risks of elite capture in the selection of beneficiaries"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Risks of sexual exploitation, abuse, and sexual harassment (SEA/SH) targeting young women during professional training and internship placements.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Appoint an AFAP Social Specialist with SEA/SH expertise, enforce strict workplace codes of conduct, and implement a dedicated Grievance Redress Mechanism.",
+        "evidence": "risks of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women participating in training and work placements"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Institutional fragmentation and overlapping mandates across MLSSS, MECSHE, MEF, MEYST, and MAFRD hindering cohesive policy execution.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Unify implementation under a single MLSSS PIU and establish formal cross-ministerial coordination channels under the authority of the Minister of Labor.",
+        "evidence": "MLSSS holds the primary mandate... MECSHE oversees longer-term... Entrepreneurship support is currently under... MEF... Sectoral ministries... also have a role to play"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Recurrent natural hazards such as floods, storms, and sea-level rise causing physical damage to facilities and disruptions to training schedules.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate climate-resilient design and EDGE standards in infrastructure construction/rehabilitation, and utilize phased, flexible training schedules.",
+        "evidence": "increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery, potentially leading to short delays"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Environmental degradation and waste management hazards arising from civil rehabilitation works and construction of the Pr\u00edncipe training center.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Mandate environmental screening, contractor waste management plans, adherence to ESMP guidelines, and compliance with EDGE green building standards.",
+        "evidence": "Project activities may result in the generation of solid waste, obsolete equipment, and minor construction debris... in a sensitive island environment."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Procurement and execution bottlenecks resulting from delayed technical inputs and specification handovers between MLSSS and AFAP.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Recruit dedicated PIU technical specialists within 45-60 days of effectiveness and establish strict TOR submission workflows within the POM.",
+        "evidence": "A key factor for good procurement performance will be the ability of AFAP and the MLSSS to work in close collaboration"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Frequent electrical outages and connectivity disruptions impairing the continuous operation of digital LMIS tools and the Employability Portal.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Procure backup power generators for system hardware, implement cloud-based platform architecture, and support off-grid solar energy systems.",
+        "evidence": "specifically intense rainfall and floods which may disrupt electricity access, the project will support the purchase of power generators"
+      }
+    ]
+  },
+  "parse_error": null
+}

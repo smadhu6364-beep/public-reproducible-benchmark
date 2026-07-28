@@ -1,0 +1,186 @@
+{
+  "run_file": "P-UK-PadeswoodCCUS__claude__structured__run1.json",
+  "project_id": "P-UK-PadeswoodCCUS",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.483,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical integration and operational risk associated with deploying first-of-a-kind (FOAK) carbon capture technology at an operational cement plant.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Execute rigorous independent technical assurance (WSP) and implement joint Open Book Model cost and technical monitoring during delivery.",
+      "evidence": "Padeswood will be the first at-scale UK cement plant incorporating Carbon Capture and Storage (CCS) technology"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Cross-chain interface misalignments and operational mismatches between the Padeswood capture plant and the Liverpool Bay T&S network.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Active management through the DESNZ Cluster Sponsor Function and strict compliance with standard CCS Network Code protocols.",
+      "evidence": "Managing government-owned cross-chain delivery risks and operating model integration risks."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Spurline infrastructure construction misalignment delaying Padeswood FID and causing COD slippage.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Synchronise spurline construction milestones with project FID prerequisites under Cluster Sponsor Function oversight.",
+      "evidence": "FID is delayed by 4 months to align with their spurline timelines, resulting in a subsequent 5-month delay to COD."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Underutilisation of the T&S network capacity leading to degraded value for money across the HyNet cluster.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Enforce minimum capture performance thresholds and volume delivery requirements within the ICC Contract framework.",
+      "evidence": "Padeswood provides an opportunity to increase the T&S network utilisation and therefore the value for money of that investment."
+    },
+    {
+      "risk_id": "R05",
+      "description": "High upfront capital demands and long-term revenue uncertainty deterring private investment in FOAK CCUS deployment.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide capital co-funding up to 50% via the CIF grant and ongoing revenue stability via the 25-year ICC Contract structure.",
+      "evidence": "address key market barriers facing CCS deployment \u2013 such as high upfront costs, cross-chain risks, and revenue uncertainty"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Exposure of unabated cement production to escalating UK ETS carbon prices, impairing plant economic viability.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Deploy CCUS technology supported by ICC revenue payments to insulate cement operations from rising carbon liabilities.",
+      "evidence": "Without CCUS, the cement industry will increasingly be exposed to a rising carbon price, impacting competitiveness with imports."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Relocation of industrial capital investment overseas by internationally owned parent companies due to lower abatement costs abroad.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Provide long-term contractual revenue support and capital grants to maintain UK cement sector competitiveness.",
+      "evidence": "Without investment in CCUS, companies may de-prioritise their UK interests and shift production elsewhere where the cost is lower"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Decline in UK domestic cement production resulting in heightened reliance on carbon-intensive cement imports.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Co-fund CCUS deployment at Padeswood to preserve 820,000 tonnes/year domestic clinker capacity and safeguard UK supply chains.",
+      "evidence": "If cement production in the UK falls, we will become increasingly reliant on imports and increase our exposure to international cement markets."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Subsidy design non-compliance with Energy and Environment principles regarding polluter liability retention.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Structure the ICC business model under Section 129 Energy Act 2023 powers ensuring long-term polluter liabilities remain with the operator.",
+      "evidence": "notably that the subsidies do not to relieve the beneficiary from liabilities as a polluter."
+    },
+    {
+      "risk_id": "R010",
+      "description": "Friction or duplication across multi-body post-FID governance structures (DESNZ CGL, LCCC, Ofgem, Cluster Sponsor Function).",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Maintain clear post-FID role segregation and centralise cross-cutting risk coordination under the Cluster Sponsor Function.",
+      "evidence": "Coordinating the removal of barriers to successful delivery, such as resolution of regulatory and business model issues."
+    },
+    {
+      "risk_id": "R011",
+      "description": "Financial liabilities arising from Government Support Package (GSP) variation requests or unexpected remediation activities.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Utilise the Cluster Sponsor Function to evaluate variation requests and advise the Secretary of State on cost-effective remediation.",
+      "evidence": "remediation activities, and commission of new user selections, etc."
+    },
+    {
+      "risk_id": "R012",
+      "description": "Project cost inflation exceeding the \u00a321.7bn Final Funding Envelope (FFE) cap allocated by HMT.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Enforce rigorous affordability checks, joint Open Book Model auditing, and strict DESNZ budget planning controls.",
+      "evidence": "approved a Final Funding Envelope (FFE) of \u00a321.7bn in Real 2021 prices to support CCUS anchor projects"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Revenue Support Agreement (RSA) risk. RSA would be paid to the T&S Company (Eni) in two circumstances: where the network is underutilised, and where users are unavailable to inject CO2 and therefore are not paying user fees. [Financial Case Sec 5.4.1, p.14-15.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Padeswood joining the T&S network will reduce the level of network underutilisation and will therefore reduce RSA payments to the T&SCo."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Discontinuation risk for Padeswood: the potential for Padeswood to be unable to continue under the business model contract due to the actions of another party or events outside its control - a large-scale, programme-wide issue (e.g. leakage), a prolonged T&S issue, or external events such as Qualifying Change in Law (QCiL), Qualifying Shutdown Events, or Force Majeure. Projects connected via a spurline can also be exposed to an additional risk if the spurline FID is taken after T&S FID, which is not within the capture project's control. [Financial Case Sec 5.4.2, p.14-15.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The risk of having to make a discontinuation payment to Padeswood is judged to be a remote contingent liability given that it is very unlikely (<1%); spurline-timing risk is treated as a variation of the existing cross-chain risks already protected by the business model."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Exchequer funding / Secretary of State direct agreement (SoSDA) risk: LCCC is only liable to make payments to the extent it has received sufficient funds from HMG, creating a risk that Padeswood would have no recourse under its private-law contract with LCCC to obtain payments owed if HMG funding to LCCC were insufficient. [Financial Case Sec 5.4.3, p.14-15.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Secretary of State will sign a direct agreement with Padeswood (to which LCCC is also party) to fund payments directly where LCCC fails to pay; this does not increase DESNZ's overall liabilities or create a contingent liability, as it is an intragroup transaction."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fraud risk across the CCUS programme's grant and contract payments. [Financial Case Sec 5.4.4, p.14-15.]",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "A CCUS Fraud Management Strategy is being developed specifying the programme's strategic approach to deterrence, prevention, detection, and management of fraud and error, including counter-fraud governance and reporting structures and high-quality fraud risk assessments (FRAs) for the different tranches of the CCUS programme."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Financial sensitivities: several contractual terms are 'locked in' at Padeswood FID, but drivers of the financial impact continue to move post-FID - notably the carbon market price (Low ETS series used as the reference price for the extension period) and the opex reopener (higher opex expenditure payments), both of which could result in higher subsidy. Other financial sensitivities have the effect of reducing total subsidy. [Financial Case Sec 5.4.5, p.14-15.]",
+      "category": "external",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Sensitivity analysis has been conducted to estimate the scale of potential subsidy increase from each driver; offsetting sensitivities are also identified and tracked."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Cross-chain and cross-cutting risks. Cross-chain risks are risks the private sector is exposed to through the network but cannot mitigate against - T&S Construction delay, Padeswood Construction Delay, Padeswood Underperformance, T&S Underperformance, and Discontinuation Provisions; Padeswood joining the HyNet cluster increases HMG's exposure to compensation payments should the T&S network fail or become unavailable. Cross-cutting risks - inflation risk, carbon price risk, and OpEx risk - are those which are challenging for the private sector to price or relate to events outside their control. [Financial Case Sec 5.4.6, p.14-15; overlaps in subject matter with the Economic Case's Sec 3.4 Risk Appraisal tables, p.10-11, which quantify the value-for-money impact of the same named risks but are a modelling input rather than a risk-register entry, and are excised from planning text for leakage safety but not scored here.]",
+      "category": "external",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Risk allocation is designed so that each risk sits with the party best placed to manage it; the business model contracts and Network Code are structured to limit and price cross-chain exposure."
+    }
+  ]
+}

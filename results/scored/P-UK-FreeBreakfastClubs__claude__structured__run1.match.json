@@ -1,0 +1,149 @@
+{
+  "run_file": "P-UK-FreeBreakfastClubs__claude__structured__run1.json",
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R02",
+      "similarity": 0.674,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R01",
+      "similarity": 0.522,
+      "gen_category": "stakeholder",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delays or defects in delivering the internal CRM system MVP by November 2025 could disrupt the expression of interest process for Cohort 1 schools.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Prioritize core MVP functionality for onboarding and maintain manual fallback support procedures.",
+      "evidence": "develop a customer relationship management system internally, working towards a minimum-viable product from November 2025."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Onboarding delays during the transition of National School Breakfast Programme (NSBP) schools in July 2026 could lead to gaps in breakfast provision before Cohort 2 starts in September 2026.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Guarantee places for all NSBP schools and initiate early communication and onboarding ahead of July 2026.",
+      "evidence": "ensure they do not have a gap in provision after the closure of the NSBP in July 2026."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Schools with higher food procurement costs, external catering contracts, or high staffing ratios may be unable to operate within the standard grant funding model.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Deploy delivery advisers to assist schools in transitioning to low-cost in-house food provision and standard staffing ratios.",
+      "evidence": "Schools delivering their offer in-house, keeping food costs low, and staffing broadly in line with standard ratios were generally able to operate within the funding available."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Lack of timely approval or budget confirmation from HM Treasury for future financial years could delay or truncate national rollout beyond Year 1.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Submit early evaluation data from Year 1 and robust multi-year business cases to HM Treasury.",
+      "evidence": "The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Delays in passing the Children's Wellbeing and Schools Bill through Parliament could delay the implementation of the statutory duty on schools.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Drive voluntary adoption via Section 14 grant funding while actively supporting legislative progress.",
+      "evidence": "the Children's Wellbeing and Schools Bill will place a duty on state-funded schools with primary-aged children to offer a free breakfast club"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Physical space constraints in school buildings may prevent primary schools from safely accommodating all pupils attending breakfast clubs.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide technical estate advisers to evaluate school premises and recommend layout adaptations.",
+      "evidence": "continuing contracts of technical estate advisers to test what schools can do to mitigate any space constraints."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Shortages of skilled delivery personnel within DfE or supervisory staff within schools could impede effective breakfast club delivery.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Procure framework advisers and provide dedicated funding to local authorities to boost delivery capacity.",
+      "evidence": "and the availability of skilled staff and resources, in both DfE and the education sector."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Perceived administrative complexity or operational burden could reduce school leadership willingness to join optional early cohorts.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement a simplified flat-rate funding model and direct self-service support via the CRM system.",
+      "evidence": "This should ease the burden and potentially increase willingness to engage and join the programme."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Schools may fail to comply with statutory school food standards due to local catering or supply chain limitations.",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Provide standardized menu guidelines and compliant food supplier guidance to participating schools.",
+      "evidence": "Food provided must be in line with school food standards."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Day-to-day fluctuations in daily pupil attendance could cause volatile funding allocations and budget unpredictability for schools.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 2,
+      "mitigation": "Provide a fixed \u00a325 daily baseline amount to cover fixed operational costs regardless of attendance variation.",
+      "evidence": "there will always be a level of uncertainty at an individual school level and on a day-to-day basis."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Lower value for money compared to the 'do minimum' option in year 1, due to the shorter funding period available for the preferred option's new cohorts of schools.",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delivery risks around staffing and food costs for schools newly onboarded to the free breakfast clubs programme.",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated through early adopter (EA) scheme insights and support funding."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Uncertainty in the labour-market benefits (parental workforce participation gains) the programme is expected to deliver.",
+      "category": "external",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Addressed through conservative assumptions in the economic modelling."
+    }
+  ]
+}

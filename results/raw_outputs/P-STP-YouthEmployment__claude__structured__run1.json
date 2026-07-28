@@ -1,0 +1,126 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:25:10.383330+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the Project\n- **Project ID & Name**: P512332 / Sao Tome and Principe Youth Employment Opportunities Project\n- **Objective (PDO)**: Strengthen employment support systems and expand pathways to more and better jobs for targeted youth in priority value chains.\n- **Scope & Components**:\n  - Component 1: Institutional Foundations for More and Better Jobs (US$10.55m): Upgrading 5 training centers on S\u00e3o Tom\u00e9, building a new training center in Pr\u00edncipe (~US$5m), and modernizing DTEFP labor market information systems and Employability Portal.\n  - Component 2: Pathways to More and Better Jobs (US$8.90m): Youth internships (1,600 beneficiaries), self-employment support packages (3,000 youth), MSME productivity/growth grants (240 firms), and inclusion scholarships (1,000 youth).\n  - Component 3: Project Management & Learning (US$1.55m): PIU operations, fiduciary/safeguards support via AFAP, and impact evaluation.\n  - Component 4: Contingent Emergency Response Component (CERC) (US$0.00m).\n- **Delivery Model**: Implemented by Directorate of Labor, Employment, and Professional Training (DTEFP) under MLSSS, with fiduciary/safeguards managed by AFAP. Shared unified PIU with the SPRRP project. Third-party entities (e.g., REINA, TVET centers) and payment service providers contracted for specialized delivery.\n- **Timeline**: Approval July 8, 2026; Closing June 30, 2031 (5 years).\n- **Budget**: US$21.0 million (IDA Grant).\n- **Key Stakeholders**: MLSSS, MECSHE, MEYST, MAFRD, MEF, AFAP, Regional Government of Pr\u00edncipe, public TVET centers (CFP-BB, CFP-BSTP, EHT, CATAP, FCT-USTP), youth jobseekers, MSMEs, bilateral partners (Portugal, Brazil, UNDP, ILO).\n- **External Dependencies**: Labor market mobility pathways with foreign countries (e.g., Portugal), power grid stability for digital systems, electronic payment provider reliability.\n\nStep 2 & 3 - Category Sweep and Evidence Filter\n1. **Environmental**: Vulnerability to severe weather events, flash floods, and sea level rise disrupting activities and logistics. (Evidence: \"increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery\" - para 61).\n2. **Technical**: Power disruptions interrupting the digital labor market information system and Employability Portal. (Evidence: \"intense rainfall and floods which may disrupt electricity access\" - para 33).\n3. **Financial**: Delays in transaction recording, audit reports, or fund availability for beneficiary grants/stipends. (Evidence: \"delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria\" - para 56).\n4. **Organizational**: Implementation delays resulting from multi-stakeholder coordination requirements between line ministries and AFAP. (Evidence: \"delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders\" - para 56).\n5. **Stakeholder**: Risk of elite capture or exclusion of vulnerable youth, female applicants, and rural populations in grant/scholarship selection. (Evidence: \"risks of elite capture in the selection of beneficiaries\" - para 59).\n6. **Stakeholder**: Risk of Sexual Exploitation and Abuse (SEA) and Sexual Harassment (SH) facing young female trainees and interns. (Evidence: \"risks of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women\" - para 59).\n7. **Technical**: Outdated equipment, infrastructure gaps, and staffing shortages in public TVET centers compromising training quality. (Evidence: \"capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps\" - para 12).\n8. **Environmental**: Generation of minor construction debris and operational waste from supported micro-enterprises in island ecosystems. (Evidence: \"generation of solid waste, obsolete equipment, and minor construction debris\" - para 58).\n9. **Schedule**: Delays in constructing and commissioning the new training center on the geographically isolated island of Pr\u00edncipe. (Evidence: \"structural constraints specific to Pr\u00edncipe\u2014including geographic isolation and a severely limited pool of skilled workers\" - para 30).\n10. **External**: Unstructured youth emigration leading to brain drain or precarious employment abroad without proper certification. (Evidence: \"many Santomean migrants end up in precarious jobs with low wages, often below their skill level\" - para 10).\n11. **External**: Limited domestic private sector job absorption capacity restricting employment options for graduates and interns. (Evidence: \"STP\u2019s small-island context, where the entrepreneurial ecosystem is nascent and scalable innovation is limited\" - para 41).\n12. **Political/Regulatory**: Macroeconomic volatility and import cost inflation affecting project procurement costs and grant purchasing power. (Evidence: \"geopolitical turmoil (which drove volatility in fuel and food import costs), recurrent flooding, and an electricity crisis\" - para 2).\n\nStep 4 & 5 - Assess and Consolidate\nEvaluated likelihood/impact ratings, justifications, concrete mitigations, and ensured exact evidence quotes (<=25 words). Formatted into 12 structured risk entries.\n\nFINAL JSON:\n{\"project_id\":\"P-STP-YouthEmployment\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Increased frequency and severity of climate hazards, flash floods, and storms disrupting project service delivery and activity implementation.\",\"category\":\"environmental\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Incorporate climate-resilient engineering standards for training center facilities, maintain flexible project workplans, and utilize CERC activation if major climate shocks occur.\",\"evidence\":\"increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery\"},{\"risk_id\":\"R02\",\"description\":\"Unreliable electricity grid and flood hazards disrupting the continuous operation of the digital labor market system and Employability Portal.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Procure backup power generators, implement automated offline backup protocols, and host the Employment Observatory on a secure cloud-based platform.\",\"evidence\":\"intense rainfall and floods which may disrupt electricity access\"},{\"risk_id\":\"R03\",\"description\":\"Delays in financial reporting, transaction recording, and disbursement of sub-grants/stipends to beneficiaries due to complex fiduciary processes.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Appoint a dedicated financial accountant, customize the computerized accounting software, update POM FM guidelines, and contract a professional Payment Service Provider.\",\"evidence\":\"delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria\"},{\"risk_id\":\"R04\",\"description\":\"Inter-institutional coordination bottlenecks between MLSSS, AFAP, and sectoral line ministries causing delays in workplan approvals and technical specifications.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Establish a unified PIU combining SPRRP and project staff, operationalize a Ministerial Coordination Committee, and define detailed operational workflows in the POM.\",\"evidence\":\"delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders\"},{\"risk_id\":\"R05\",\"description\":\"Risk of elite capture and exclusion of vulnerable youth, women, and remote populations during beneficiary selection for grants, scholarships, and internships.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Utilize objective socio-economic targeting criteria based on the Unique Social Registry (USR), enforce a minimum 50% female participation quota, and conduct targeted outreach.\",\"evidence\":\"risks of elite capture in the selection of beneficiaries\"},{\"risk_id\":\"R06\",\"description\":\"Exposure of young female beneficiaries to sexual exploitation, abuse, and harassment (SEA/SH) during vocational training or internship placements.\",\"category\":\"stakeholder\",\"likelihood\":2,\"impact\":4,\"mitigation\":\"Hire a dedicated GBV/SEA/SH Social Specialist at AFAP, mandate SEA/SH prevention mechanisms in training agreements, and implement a responsive Grievance Redress Mechanism.\",\"evidence\":\"risks of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women\"},{\"risk_id\":\"R07\",\"description\":\"Public TVET institutions failing to deliver market-relevant training due to outdated equipment, infrastructure gaps, and instructor shortages.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Form Workforce Development Committees with private employers, fund instructor upskilling, and procure modern training equipment through performance-based institutional agreements.\",\"evidence\":\"capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps\"},{\"risk_id\":\"R08\",\"description\":\"Generation of construction debris and operational waste from sub-grant recipient micro-enterprises causing localized pollution in fragile island ecosystems.\",\"category\":\"environmental\",\"likelihood\":2,\"impact\":3,\"mitigation\":\"Apply ESF environmental screening to all sub-projects, enforce proper waste disposal practices during rehabilitation works, and provide environmental management training to MSMEs.\",\"evidence\":\"generation of solid waste, obsolete equipment, and minor construction debris\"},{\"risk_id\":\"R09\",\"description\":\"Schedule delays in designing, procuring, and constructing the new multi-use technical training center on the isolated island of Pr\u00edncipe.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Procure preliminary studies and architectural design consultancies early, utilize market-informed island cost estimates, and maintain close procurement oversight via AFAP.\",\"evidence\":\"structural constraints specific to Pr\u00edncipe\u2014including geographic isolation and a severely limited pool of skilled workers\"},{\"risk_id\":\"R10\",\"description\":\"Unstructured youth emigration leading to brain drain or precarious, low-wage employment abroad without formal skill recognition.\",\"category\":\"external\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Provide structured labor mobility orientation, align TVET training with destination country skill shortages, and mobilize technical assistance for Global Skill Partnerships.\",\"evidence\":\"many Santomean migrants end up in precarious jobs with low wages, often below their skill level\"},{\"risk_id\":\"R11\",\"description\":\"Limited absorption capacity and slow growth within the small domestic formal private sector constraining long-term graduate employment and MSME expansion.\",\"category\":\"external\",\"likelihood\":4,\"impact\":4,\"mitigation\":\"Provide comprehensive MSME incubation and grant packages to expand enterprise hiring capacity, while offering structured self-employment and labor mobility pathways.\",\"evidence\":\"STP\u2019s small-island context, where the entrepreneurial ecosystem is nascent and scalable innovation is limited\"},{\"risk_id\":\"R12\",\"description\":\"Macroeconomic volatility and import cost inflation eroding project procurement purchasing power and reducing real values of startup grants.\",\"category\":\"political_regulatory\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Conduct regular financial plan reviews, manage budget allocations flexibly through the project procurement plan, and provide financial management training to grant recipients.\",\"evidence\":\"geopolitical turmoil (which drove volatility in fuel and food import costs), recurrent flooding, and an electricity crisis\"}]}",
+  "parsed_risks": {
+    "project_id": "P-STP-YouthEmployment",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Increased frequency and severity of climate hazards, flash floods, and storms disrupting project service delivery and activity implementation.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Incorporate climate-resilient engineering standards for training center facilities, maintain flexible project workplans, and utilize CERC activation if major climate shocks occur.",
+        "evidence": "increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Unreliable electricity grid and flood hazards disrupting the continuous operation of the digital labor market system and Employability Portal.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Procure backup power generators, implement automated offline backup protocols, and host the Employment Observatory on a secure cloud-based platform.",
+        "evidence": "intense rainfall and floods which may disrupt electricity access"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Delays in financial reporting, transaction recording, and disbursement of sub-grants/stipends to beneficiaries due to complex fiduciary processes.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint a dedicated financial accountant, customize the computerized accounting software, update POM FM guidelines, and contract a professional Payment Service Provider.",
+        "evidence": "delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Inter-institutional coordination bottlenecks between MLSSS, AFAP, and sectoral line ministries causing delays in workplan approvals and technical specifications.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish a unified PIU combining SPRRP and project staff, operationalize a Ministerial Coordination Committee, and define detailed operational workflows in the POM.",
+        "evidence": "delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Risk of elite capture and exclusion of vulnerable youth, women, and remote populations during beneficiary selection for grants, scholarships, and internships.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Utilize objective socio-economic targeting criteria based on the Unique Social Registry (USR), enforce a minimum 50% female participation quota, and conduct targeted outreach.",
+        "evidence": "risks of elite capture in the selection of beneficiaries"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Exposure of young female beneficiaries to sexual exploitation, abuse, and harassment (SEA/SH) during vocational training or internship placements.",
+        "category": "stakeholder",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Hire a dedicated GBV/SEA/SH Social Specialist at AFAP, mandate SEA/SH prevention mechanisms in training agreements, and implement a responsive Grievance Redress Mechanism.",
+        "evidence": "risks of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Public TVET institutions failing to deliver market-relevant training due to outdated equipment, infrastructure gaps, and instructor shortages.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Form Workforce Development Committees with private employers, fund instructor upskilling, and procure modern training equipment through performance-based institutional agreements.",
+        "evidence": "capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Generation of construction debris and operational waste from sub-grant recipient micro-enterprises causing localized pollution in fragile island ecosystems.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Apply ESF environmental screening to all sub-projects, enforce proper waste disposal practices during rehabilitation works, and provide environmental management training to MSMEs.",
+        "evidence": "generation of solid waste, obsolete equipment, and minor construction debris"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Schedule delays in designing, procuring, and constructing the new multi-use technical training center on the isolated island of Pr\u00edncipe.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Procure preliminary studies and architectural design consultancies early, utilize market-informed island cost estimates, and maintain close procurement oversight via AFAP.",
+        "evidence": "structural constraints specific to Pr\u00edncipe\u2014including geographic isolation and a severely limited pool of skilled workers"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Unstructured youth emigration leading to brain drain or precarious, low-wage employment abroad without formal skill recognition.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide structured labor mobility orientation, align TVET training with destination country skill shortages, and mobilize technical assistance for Global Skill Partnerships.",
+        "evidence": "many Santomean migrants end up in precarious jobs with low wages, often below their skill level"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Limited absorption capacity and slow growth within the small domestic formal private sector constraining long-term graduate employment and MSME expansion.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide comprehensive MSME incubation and grant packages to expand enterprise hiring capacity, while offering structured self-employment and labor mobility pathways.",
+        "evidence": "STP\u2019s small-island context, where the entrepreneurial ecosystem is nascent and scalable innovation is limited"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Macroeconomic volatility and import cost inflation eroding project procurement purchasing power and reducing real values of startup grants.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Conduct regular financial plan reviews, manage budget allocations flexibly through the project procurement plan, and provide financial management training to grant recipients.",
+        "evidence": "geopolitical turmoil (which drove volatility in fuel and food import costs), recurrent flooding, and an electricity crisis"
+      }
+    ]
+  },
+  "parse_error": null
+}

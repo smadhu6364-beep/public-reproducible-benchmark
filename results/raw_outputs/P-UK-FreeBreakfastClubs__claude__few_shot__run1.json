@@ -1,0 +1,117 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:29:51.502344+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\"project_id\":\"P-UK-FreeBreakfastClubs\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Delay in developing the internal CRM minimum-viable product by November 2025 could impair the expression of interest process for Cohort 1 schools.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Prioritize core functional requirements for the MVP release by November 2025 and establish manual backup processes for school engagement.\",\"evidence\":\"develop a customer relationship management system internally, working towards a minimum-viable product from November 2025.\"},{\"risk_id\":\"R02\",\"description\":\"Transition of existing National School Breakfast Programme schools may result in delivery gaps when NSBP closes in July 2026 before September 2026 FBC launch.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Guarantee places for all 1,700+ participating NSBP schools and issue invitations early to ensure seamless onboarding.\",\"evidence\":\"ensure they do not have a gap in provision after the closure of the NSBP in July 2026.\"},{\"risk_id\":\"R03\",\"description\":\"Primary schools may experience physical space and estate constraints preventing effective delivery of breakfast clubs for all enrolled pupils.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Deploy technical estate advisers to evaluate spatial limitations and assist affected schools with space mitigation solutions.\",\"evidence\":\"continuing contracts of technical estate advisers to test what schools can do to mitigate any space constraints.\"},{\"risk_id\":\"R04\",\"description\":\"Uncertainty in daily turnout and operational costs at individual school levels may create funding deficits or unexpected cost variances.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Provide \u00a31,000 initial set-up grants combined with standard daily fixed (\u00a325) and variable per-pupil funding allocations.\",\"evidence\":\"evidence-based, but there will always be a level of uncertainty at an individual school level and on a day-to-day basis.\"},{\"risk_id\":\"R05\",\"description\":\"Delays or withholding of timely budget approval and confirmation from HM Treasury could disrupt ongoing rollout and expansion.\",\"category\":\"financial\",\"likelihood\":2,\"impact\":5,\"mitigation\":\"Maintain rigorous analytical modelling, present evidence from early adopters, and engage early with HM Treasury via project board governance.\",\"evidence\":\"The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury\"},{\"risk_id\":\"R06\",\"description\":\"Shortages in skilled personnel within DfE or participating schools could impede program execution and club supervision.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Procure external specialist support advisers through established commercial frameworks and pilot call-centre operational assistance.\",\"evidence\":\"availability of skilled staff and resources, in both DfE and the education sector.\"},{\"risk_id\":\"R07\",\"description\":\"Delays in passing or enacting the Children's Wellbeing and Schools Bill could undermine the statutory foundation for mandatory school delivery.\",\"category\":\"political_regulatory\",\"likelihood\":2,\"impact\":4,\"mitigation\":\"Drive voluntary engagement through grant incentives and phased onboarding ahead of statutory duty commencement.\",\"evidence\":\"Children's Wellbeing and Schools Bill will place a duty on state-funded schools with primary-aged children\"},{\"risk_id\":\"R08\",\"description\":\"Upfront Year 1 operational expenditures incurred before attainment benefits accrue after one year could undermine early cost-benefit metrics.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Track and highlight immediate short-term benefits, such as childcare savings and parental workforce participation, alongside longer-term attainment data.\",\"evidence\":\"costs are incurred upfront while attainment benefits only materialise after at least one year.\"},{\"risk_id\":\"R09\",\"description\":\"Historical funding complexity based on disadvantage levels may confuse mainstream school leaders and decrease willingness to participate.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Implement a simplified, predictable funding model with flat daily rates and clear per-pupil allocations.\",\"evidence\":\"variation by disadvantage levels was deemed to be complicated for mainstream schools, resulting in confusion.\"},{\"risk_id\":\"R10\",\"description\":\"Onboarding approximately 2,000 schools across two cohorts within Year 1 may exceed program administrative and operational capacity.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Deploy a hybrid delivery model combining internal DfE capacity with external specialist advisers and funded local authority support.\",\"evidence\":\"combining in-house capability with contracted specialist support to assist onboarding of around 2,000 schools over 2 cohorts.\"},{\"risk_id\":\"R11\",\"description\":\"Lack of alignment with broader government programs or local authority initiatives could lead to operational friction and fragmented service delivery.\",\"category\":\"external\",\"likelihood\":2,\"impact\":3,\"mitigation\":\"Provide dedicated funding to local authorities to support system integration and maintain multi-layered governance across government missions.\",\"evidence\":\"The programme's success depends on several factors... alignment with other government programmes\"}]}",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delay in developing the internal CRM minimum-viable product by November 2025 could impair the expression of interest process for Cohort 1 schools.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Prioritize core functional requirements for the MVP release by November 2025 and establish manual backup processes for school engagement.",
+        "evidence": "develop a customer relationship management system internally, working towards a minimum-viable product from November 2025."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Transition of existing National School Breakfast Programme schools may result in delivery gaps when NSBP closes in July 2026 before September 2026 FBC launch.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Guarantee places for all 1,700+ participating NSBP schools and issue invitations early to ensure seamless onboarding.",
+        "evidence": "ensure they do not have a gap in provision after the closure of the NSBP in July 2026."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Primary schools may experience physical space and estate constraints preventing effective delivery of breakfast clubs for all enrolled pupils.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy technical estate advisers to evaluate spatial limitations and assist affected schools with space mitigation solutions.",
+        "evidence": "continuing contracts of technical estate advisers to test what schools can do to mitigate any space constraints."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Uncertainty in daily turnout and operational costs at individual school levels may create funding deficits or unexpected cost variances.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide \u00a31,000 initial set-up grants combined with standard daily fixed (\u00a325) and variable per-pupil funding allocations.",
+        "evidence": "evidence-based, but there will always be a level of uncertainty at an individual school level and on a day-to-day basis."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays or withholding of timely budget approval and confirmation from HM Treasury could disrupt ongoing rollout and expansion.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Maintain rigorous analytical modelling, present evidence from early adopters, and engage early with HM Treasury via project board governance.",
+        "evidence": "The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Shortages in skilled personnel within DfE or participating schools could impede program execution and club supervision.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Procure external specialist support advisers through established commercial frameworks and pilot call-centre operational assistance.",
+        "evidence": "availability of skilled staff and resources, in both DfE and the education sector."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delays in passing or enacting the Children's Wellbeing and Schools Bill could undermine the statutory foundation for mandatory school delivery.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Drive voluntary engagement through grant incentives and phased onboarding ahead of statutory duty commencement.",
+        "evidence": "Children's Wellbeing and Schools Bill will place a duty on state-funded schools with primary-aged children"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Upfront Year 1 operational expenditures incurred before attainment benefits accrue after one year could undermine early cost-benefit metrics.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Track and highlight immediate short-term benefits, such as childcare savings and parental workforce participation, alongside longer-term attainment data.",
+        "evidence": "costs are incurred upfront while attainment benefits only materialise after at least one year."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Historical funding complexity based on disadvantage levels may confuse mainstream school leaders and decrease willingness to participate.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement a simplified, predictable funding model with flat daily rates and clear per-pupil allocations.",
+        "evidence": "variation by disadvantage levels was deemed to be complicated for mainstream schools, resulting in confusion."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Onboarding approximately 2,000 schools across two cohorts within Year 1 may exceed program administrative and operational capacity.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Deploy a hybrid delivery model combining internal DfE capacity with external specialist advisers and funded local authority support.",
+        "evidence": "combining in-house capability with contracted specialist support to assist onboarding of around 2,000 schools over 2 cohorts."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Lack of alignment with broader government programs or local authority initiatives could lead to operational friction and fragmented service delivery.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Provide dedicated funding to local authorities to support system integration and maintain multi-layered governance across government missions.",
+        "evidence": "The programme's success depends on several factors... alignment with other government programmes"
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,228 @@
+{
+  "run_file": "P-STP-YouthEmployment__claude__zero_shot__run2.json",
+  "project_id": "P-STP-YouthEmployment",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R01",
+      "similarity": 0.667,
+      "gen_category": "organizational",
+      "gt_category": "political_regulatory",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R02",
+      "similarity": 0.576,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R03",
+      "similarity": 0.541,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R16",
+      "gt_risk_id": "R04",
+      "similarity": 0.534,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "High dependence on Official Development Assistance and low domestic revenue mobilization create fiscal volatility that could impact project sustainability.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Utilize grant-based IDA financing for full project funding and lock in multi-year resource commitments within the Project Operations Manual.",
+      "evidence": "Persistently low domestic revenue mobilization has kept STP heavily dependent on Official Development Assistance (ODA), leaving fiscal revenues highly volatile."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Recurrent extreme climate events such as floods and coastal storms may damage infrastructure, disrupt electricity, and delay service delivery.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Adopt climate-resilient EDGE design standards for center construction, procure backup power generators, and include a Contingent Emergency Response Component (CERC).",
+      "evidence": "STP is vulnerable to coastal and riparian floods, severe storms... may cause disruptions in service delivery, potentially leading to short delays."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Cross-ministerial coordination complexities across MLSSS, MECSHE, MEYST, and MAFRD may cause delays in annual workplan preparation and execution.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish a Strategic Coordination Committee under the Minister of Labor and formalize inter-institutional roles in the Project Operations Manual.",
+      "evidence": "delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Fiduciary management bottlenecks within AFAP, including delayed transaction recording and internal audit backlogs, could hinder project implementation.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Designate a dedicated project accountant, customize the financial accounting software, and expand external audit scope within six months of effectiveness.",
+      "evidence": "delays in recording financial transactions... internal audit reviews not conducted in a timely manner, leading to identification of weak controls"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Non-compliance with selection criteria or payment processing issues could delay grant and stipend disbursements to vulnerable youth and MSMEs.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Define objective eligibility criteria in the POM, leverage the Unique Social Registry, and execute direct transfers via a contracted electronic Payment Service Provider.",
+      "evidence": "delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Social exclusion or elite capture in selecting beneficiaries for scholarships, sub-grants, and internships could prevent marginalized youth from participating.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use objective socio-economic data from the Unique Social Registry, mandate a minimum 50% quota for women, and maintain an active Grievance Redress Mechanism.",
+      "evidence": "risks of exclusion, which may arise if project benefits are not equitably distributed... risks of elite capture in the selection of beneficiaries"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Risks of sexual exploitation, abuse, and sexual harassment (SEA/SH) during training sessions or employer workplace placements, particularly affecting young women.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Hire a dedicated Social/GBV Specialist within 45 days of effectiveness, integrate SEA/SH prevention codes into institutional agreements, and establish confidential reporting channels.",
+      "evidence": "community health and safety risks, including risks of sexual exploitation and abuse (SEA) and sexual harassment (SH), particularly for young women"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Sub-grants to micro-enterprises in agriculture, fisheries, or tourism might cause localized environmental degradation or pollution if improperly managed.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Require environmental risk screening for all sub-grant proposals and train business incubators and MSMEs on ESG standards and sustainable practices.",
+      "evidence": "small business grants could support micro-enterprises... that may indirectly place pressure on sensitive ecosystems or cause localized pollution"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Geographic isolation, transport constraints, and high material supply costs on Pr\u00edncipe Island could cause construction cost overruns and timeline delays for the new training center.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Conduct early site-specific engineering assessments, centralize procurement through AFAP, and build realistic cost buffers into the procurement plan.",
+      "evidence": "Pr\u00edncipe\u2014home to just about 10,000 people\u2014is more than 170 km away and experiences compounded isolation."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Existing public TVET institutions suffer from outdated equipment, staff gaps, and weak industry linkages, threatening training quality.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Provide direct financing for modern equipment procurement, instructor upskilling, and establish Workforce Development Committees with private sector employers.",
+      "evidence": "capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps, and weak employer participation"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Weak institutional capacity and fragmented existing tools at DTEFP could impede the operationalization of the new labor market information system.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Recruit specialized technical consultants, provide targeted staff training, and modernize DTEFP office equipment and cloud-based architecture.",
+      "evidence": "Services for labor intermediation... remain at an early stage of development... tools and processes... are currently fragmented, underutilized, and poorly interconnected."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Delays in hiring key environmental, social, TVET, and IT specialists within legal covenants timelines could stall initial project implementation.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Initiate early drafting of terms of reference and leverage the existing restructured SPRRP Project Implementation Unit team to maintain momentum.",
+      "evidence": "hire or appoint, not later than forty-five (45) days after Effectiveness: (i) one Environmental Specialist... (ii) one Social Specialist"
+    },
+    {
+      "risk_id": "R13",
+      "description": "STP's small, highly informal private sector may lack sufficient absorption capacity to hire trained youth in wage employment.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Combine wage employment support with self-employment starter packages, MSME productivity growth grants, and labor mobility orientation.",
+      "evidence": "Micro and small enterprises make up 92 percent of all firms... Most are household-run and provide few job opportunities."
+    },
+    {
+      "risk_id": "R14",
+      "description": "High desire among youth to emigrate may result in skilled graduate flight without yielding economic returns to the local domestic economy.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Integrate structured labor mobility frameworks (such as Global Skill Partnerships) and pre-departure guidance to maximize remittance flows and formal overseas placement.",
+      "evidence": "68 percent of youth are considering leaving the country in search of better opportunities abroad... emigration has yielded limited economic benefits"
+    },
+    {
+      "risk_id": "R15",
+      "description": "Unreliable power supply and grid failures could disrupt digital operations, cloud databases, and the online Employability Portal.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Procure backup power generators for DTEFP and deploy cloud-based software architectures with offline-capable data synchronization capabilities.",
+      "evidence": "Structural constraints such as costly and unreliable electricity... intense rainfall and floods which may disrupt electricity access"
+    },
+    {
+      "risk_id": "R16",
+      "description": "Interagency bottlenecks between technical teams at MLSSS and fiduciary specialists at AFAP could slow contract drafting and evaluation processes.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish clear procurement workflows in the Project Operations Manual and mandate joint bi-weekly progress reviews between MLSSS and AFAP.",
+      "evidence": "A key factor for good procurement performance will be the ability of AFAP and the MLSSS to work in close collaboration"
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Frequent government changes and the cross-ministerial nature of the jobs agenda can shift policy direction, counterpart arrangements, and implementation momentum; further changes may follow the mid-2026 legislative/parliamentary elections. Success depends on sustained coordination across labor, education, tourism, agriculture, and finance ministries plus private-sector engagement.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Anchor the project within MLSSS (core employment-promotion mandate); strengthen technical ownership at directorate level rather than relying on political leadership; establish a formal coordination committee and a unified PIU; continue policy dialogue with Government during implementation."
+    },
+    {
+      "risk_id": "R02",
+      "description": "STP's fragile growth outlook, narrow fiscal space, and dependence on external financing leave it highly vulnerable to external shocks (energy/food price swings, donor-disbursement delays, climate events), which may weaken labor demand, reduce firms' absorption capacity, and constrain the Government's ability to sustain recurrent-cost interventions (training, stipends, employment services).",
+      "category": "external",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Prioritize low-cost, scalable interventions; combine supply-side investments with direct job-creation support; target sectors with growth potential and external demand linkages (incl. labor mobility); coordinate with other World Bank macro-fiscal/energy/private-sector engagements in STP."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Limited experience of MLSSS and DTEFP in delivering complex labor-market interventions at scale; fragmented institutional landscape; multiple implementation partners; nascent capacity in labor-market analytics, employment intermediation, and cross-sectoral coordination; sustainability risk if new systems/programs are not institutionalized within government structures and budgets.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Leverage existing institutions/mechanisms rather than parallel structures (existing MLSSS PIU, coordination committee, AFAP for fiduciary/safeguards); finance targeted TA and staffing; invest in durable institutional assets (labor-market information system, employability portal, strengthened training institutions, formalized service-provider arrangements); use the learning agenda and impact evaluation to identify cost-effective interventions for scale-up."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Complex procurement in a small-island context: residual FM risk is moderate but residual procurement risk is substantial, driven by the complexity of civil works in a remote island context, the large number of technical-assistance contracts, and the multiplicity of projects already handled by AFAP.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Agree ToRs and technical specifications between AFAP and the World Bank before initiating any procurement (prior and post-review); reinforce AFAP procurement and contract-management capacity incl. specialized support for civil-works supervision; embed dedicated fiduciary controls for the grants/stipends payment mechanism in the Project Operations Manual; continue and adapt the risk assessment during implementation."
+    }
+  ]
+}
