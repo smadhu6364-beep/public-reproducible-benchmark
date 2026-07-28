@@ -1,0 +1,144 @@
+{
+  "project_id": "P-UK-PadeswoodCCUS",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:33:27.081387+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-UK-PadeswoodCCUS\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Integrating FOAK carbon capture technology at an operational cement plant at scale introduces potential technical integration and performance risks.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct independent technical assurance via third-party experts and enforce strict performance thresholds within the Industrial Carbon Capture contract.\",\n      \"evidence\": \"Padeswood will be the first at-scale UK cement plant incorporating Carbon Capture and Storage (CCS) technology\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Spurline development delays could force a 4-month delay to Final Investment Decision (FID) and a 5-month delay to Commercial Operation Date (COD).\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Proactively align spurline delivery timelines and project FID milestones via the Cluster Sponsor Function oversight body.\",\n      \"evidence\": \"FID is delayed by 4 months to align with their spurline timelines, resulting in a subsequent 5-month delay to COD\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Rising carbon prices and exposure to unabated overseas competition risk carbon leakage and loss of market share prior to full CCUS operation.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Deploy Industrial Carbon Capture revenue support contracts to bridge the operating cost gap and maintain market competitiveness.\",\n      \"evidence\": \"Without CCUS, the cement industry will increasingly be exposed to a rising carbon price, impacting competitiveness with imports.\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Internationally owned corporate parent may de-prioritise UK interests and reallocate investment overseas if UK decarbonisation frameworks lag.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Provide long-term policy and commercial certainty through 25-year business model frameworks and Grant Funding Agreements.\",\n      \"evidence\": \"Most UK cement sites are operated by companies that are internationally owned and make investment decisions on a global basis.\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"High upfront capital expenditure during capture facility construction creates risk of cost overruns and funding shortfalls.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Provide upfront capital support via the CCS Infrastructure Fund (CIF) Grant up to 50% of eligible costs using an Open Book Model.\",\n      \"evidence\": \"The CCS Infrastructure Fund (CIF) Grant, which provides upfront capital support during the construction phase, up to 50% of Padeswood\u2019s eligible capital costs.\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Interdependent cross-chain interfaces between the Padeswood capture plant and the broader HyNet T&S network create operational delivery risks.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Establish a dedicated Cluster Sponsor Function to actively manage cross-chain delivery and operating model integration risks.\",\n      \"evidence\": \"Managing government-owned cross-chain delivery risks and operating model integration risks.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Fluctuations in captured CO2 volumes or operational disruptions create income uncertainty under long-term support contracts.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Structure revenue support under a Contract-for-Difference model tying payments to captured CO2 performance and volume thresholds.\",\n      \"evidence\": \"address key market barriers facing CCS deployment \u2013 such as high upfront costs, cross-chain risks, and revenue uncertainty\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Premature project discontinuation during development or operation could result in major write-downs of public capital and unfulfilled carbon targets.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 5,\n      \"mitigation\": \"Enforce Secretary of State Direct Agreements (SoSDA) and continuous compliance monitoring by LCCC and DESNZ CGL.\",\n      \"evidence\": \"5.4.2 Discontinuation risk for Padeswood\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Potential fraudulent claims or financial mismanagement in grant drawdowns and revenue support disbursement.\",\n      \"category\": \"financial\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Implement Open Book Model cost assessments, independent financial assurance, and CGL grant compliance oversight.\",\n      \"evidence\": \"5.4.4 Fraud\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Exchequer financial exposure under Secretary of State Direct Agreements (SoSDA) and Government Support Package variations during remediation.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Subject all variation requests and Government Support Package decisions to rigorous review by the Cluster Sponsor Function and SRO.\",\n      \"evidence\": \"5.4.3 Exchequer funding Secretary of State direct agreements (SoSDA)\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Underutilisation of the HyNet transport and storage network capacity if captured CO2 volumes fall short of projections.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Monitor unutilised capacity metrics and accelerate competitive selection for build-out users to maximize network utilisation.\",\n      \"evidence\": \"Volume of unutilised network capacity (Mtpa) across the clusters by 2030\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Implementation of the UK Carbon Border Adjustment Mechanism (CBAM) in 2027 may expose unabated domestic cement production if capture deployment slips.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Align project delivery milestones with 2027 CBAM timelines to ensure domestic decarbonised cement is market-ready.\",\n      \"evidence\": \"The UK Carbon-Border Adjustment Mechanism (CBAM)... will be introduced in 2027. However, unabated UK sites would be competing with sites overseas.\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Shortages in specialized CCUS supply chain capacity and technical skills could delay construction and upskilling objectives.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Monitor supply chain spend, support regional workforce training, and track skill level metrics over the support contract lifespan.\",\n      \"evidence\": \"Stimulate the CCUS supply chain, jobs, and skills, over the support contracts\u2019 lifespans\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Operational reliance on external network operator T&SCo (Liverpool Bay) and economic regulation by Ofgem introduces third-party dependency risk.\",\n      \"category\": \"external\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Require strict adherence to the CCS Network Code and coordinate multi-party oversight through the DESNZ Cluster Sponsor Function.\",\n      \"evidence\": \"Ofgem: Economic Regulator for T&S Network Users and T&SCo (Liverpool Bay)\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UK-PadeswoodCCUS",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Integrating FOAK carbon capture technology at an operational cement plant at scale introduces potential technical integration and performance risks.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct independent technical assurance via third-party experts and enforce strict performance thresholds within the Industrial Carbon Capture contract.",
+        "evidence": "Padeswood will be the first at-scale UK cement plant incorporating Carbon Capture and Storage (CCS) technology"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Spurline development delays could force a 4-month delay to Final Investment Decision (FID) and a 5-month delay to Commercial Operation Date (COD).",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Proactively align spurline delivery timelines and project FID milestones via the Cluster Sponsor Function oversight body.",
+        "evidence": "FID is delayed by 4 months to align with their spurline timelines, resulting in a subsequent 5-month delay to COD"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Rising carbon prices and exposure to unabated overseas competition risk carbon leakage and loss of market share prior to full CCUS operation.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Deploy Industrial Carbon Capture revenue support contracts to bridge the operating cost gap and maintain market competitiveness.",
+        "evidence": "Without CCUS, the cement industry will increasingly be exposed to a rising carbon price, impacting competitiveness with imports."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Internationally owned corporate parent may de-prioritise UK interests and reallocate investment overseas if UK decarbonisation frameworks lag.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Provide long-term policy and commercial certainty through 25-year business model frameworks and Grant Funding Agreements.",
+        "evidence": "Most UK cement sites are operated by companies that are internationally owned and make investment decisions on a global basis."
+      },
+      {
+        "risk_id": "R05",
+        "description": "High upfront capital expenditure during capture facility construction creates risk of cost overruns and funding shortfalls.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Provide upfront capital support via the CCS Infrastructure Fund (CIF) Grant up to 50% of eligible costs using an Open Book Model.",
+        "evidence": "The CCS Infrastructure Fund (CIF) Grant, which provides upfront capital support during the construction phase, up to 50% of Padeswood\u2019s eligible capital costs."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Interdependent cross-chain interfaces between the Padeswood capture plant and the broader HyNet T&S network create operational delivery risks.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Establish a dedicated Cluster Sponsor Function to actively manage cross-chain delivery and operating model integration risks.",
+        "evidence": "Managing government-owned cross-chain delivery risks and operating model integration risks."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Fluctuations in captured CO2 volumes or operational disruptions create income uncertainty under long-term support contracts.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Structure revenue support under a Contract-for-Difference model tying payments to captured CO2 performance and volume thresholds.",
+        "evidence": "address key market barriers facing CCS deployment \u2013 such as high upfront costs, cross-chain risks, and revenue uncertainty"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Premature project discontinuation during development or operation could result in major write-downs of public capital and unfulfilled carbon targets.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Enforce Secretary of State Direct Agreements (SoSDA) and continuous compliance monitoring by LCCC and DESNZ CGL.",
+        "evidence": "5.4.2 Discontinuation risk for Padeswood"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Potential fraudulent claims or financial mismanagement in grant drawdowns and revenue support disbursement.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Implement Open Book Model cost assessments, independent financial assurance, and CGL grant compliance oversight.",
+        "evidence": "5.4.4 Fraud"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Exchequer financial exposure under Secretary of State Direct Agreements (SoSDA) and Government Support Package variations during remediation.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Subject all variation requests and Government Support Package decisions to rigorous review by the Cluster Sponsor Function and SRO.",
+        "evidence": "5.4.3 Exchequer funding Secretary of State direct agreements (SoSDA)"
+      },
+      {
+        "risk_id": "R11",
+        "description": "Underutilisation of the HyNet transport and storage network capacity if captured CO2 volumes fall short of projections.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Monitor unutilised capacity metrics and accelerate competitive selection for build-out users to maximize network utilisation.",
+        "evidence": "Volume of unutilised network capacity (Mtpa) across the clusters by 2030"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Implementation of the UK Carbon Border Adjustment Mechanism (CBAM) in 2027 may expose unabated domestic cement production if capture deployment slips.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Align project delivery milestones with 2027 CBAM timelines to ensure domestic decarbonised cement is market-ready.",
+        "evidence": "The UK Carbon-Border Adjustment Mechanism (CBAM)... will be introduced in 2027. However, unabated UK sites would be competing with sites overseas."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Shortages in specialized CCUS supply chain capacity and technical skills could delay construction and upskilling objectives.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Monitor supply chain spend, support regional workforce training, and track skill level metrics over the support contract lifespan.",
+        "evidence": "Stimulate the CCUS supply chain, jobs, and skills, over the support contracts\u2019 lifespans"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Operational reliance on external network operator T&SCo (Liverpool Bay) and economic regulation by Ofgem introduces third-party dependency risk.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Require strict adherence to the CCS Network Code and coordinate multi-party oversight through the DESNZ Cluster Sponsor Function.",
+        "evidence": "Ofgem: Economic Regulator for T&S Network Users and T&SCo (Liverpool Bay)"
+      }
+    ]
+  },
+  "parse_error": null
+}

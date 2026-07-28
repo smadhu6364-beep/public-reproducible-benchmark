@@ -1,0 +1,117 @@
+{
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:31:17.924337+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: Create a new mandatory free breakfast club duty for state-funded primary schools in England to ensure children are ready to learn and increase household incomes.\n- Scope: Year 1 national rollout targeting ~2,000 additional schools across two main cohorts: Cohort 1 (~500 high-disadvantage schools starting April 2026) and Cohort 2 (~1,750 schools including former NSBP participants starting September 2026).\n- Components: Direct section 14 grants to schools, internal CRM MVP system development, technical estate support advisers, call-centre data collection pilot, local authority delivery support funding, and independent evaluation (2026\u20132028).\n- Delivery Model: Hybrid internal (DfE management and internal CRM) and external model (contracted support via educational frameworks, estate advisers, and local authorities).\n- Timeline: April 2026 to March 2027 (Year 1 rollout); CRM MVP target in November 2025; NSBP closure in July 2026.\n- Budget: Year 1 within the Best Start in Life budget allocation; future years to be agreed separately.\n- Key Stakeholders: DfE (SRO, Project Board), HM Treasury, Local Authorities, primary/special/AP schools, parents/carers, and framework contractors.\n- External Dependencies: Passage of the Children's Wellbeing and Schools Bill, HM Treasury budget approvals, and sector labor/staff availability.\n\nStep 2 - Category sweep\n- technical:\n  1. Internal CRM MVP failure or delay before November 2025 EOI launch (Commercial case: \"develop a customer relationship management system internally, working towards a minimum-viable product from November 2025\").\n  2. Physical space constraints at primary schools restricting club setup (Commercial case: \"technical estate advisers to test what schools can do to mitigate any space constraints\").\n- financial:\n  3. Delays in HM Treasury timely budget approval and confirmation (Management case: \"The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury\").\n  4. Mismatch or shortfalls between daily funding rates and actual school-level costs (Financial case / Key assumptions: \"there will always be a level of uncertainty at an individual school level and on a day-to-day basis\").\n  5. Multi-year funding availability unconfirmed beyond Year 1 (Financial case: \"Funding for future years will be agreed separately through business cases\").\n- schedule:\n  6. Transition delays for NSBP schools causing a gap in provision after NSBP ends in July 2026 (Commercial case: \"ensure they do not have a gap in provision after the closure of the NSBP in July 2026\").\n- stakeholder:\n  7. Low school engagement or reluctance to participate due to administrative/operational burden (Financial case: \"simplified, with a view to being easier to understand and fairer for schools. This should ease the burden and potentially increase willingness to engage\").\n- political_regulatory:\n  8. Legislative delay in passing the Children's Wellbeing and Schools Bill establishing the mandatory school duty (Strategic case: \"the Children's Wellbeing and Schools Bill will place a duty on state-funded schools\").\n- environmental:\n  9. Non-compliance with mandatory School Food Standards or food supply limitations (Key assumptions: \"Food provided must be in line with school food standards\").\n- organizational:\n  10. Shortage of skilled delivery staff and supervisory resources within DfE and schools (Management case: \"availability of skilled staff and resources, in both DfE and the education sector\").\n- external:\n  11. Operational failure or procurement delays for the external call-centre data collection pilot (Commercial case: \"start commercial processes to begin a call-centre pilot to support data collection\").\n\nStep 3 - Evidence filter\nAll 11 risks are directly grounded in explicit quotes/sections of the summary business case. None are invented or assumed.\n\nStep 4 - Assess likelihood, impact, and mitigation\n- R01 (political_regulatory): Likelihood 2, Impact 4. Legislative delays could undermine statutory enforcement. Mitigation: Voluntary onboarding via Section 14 grants ahead of statutory force.\n- R02 (financial): Likelihood 2, Impact 5. HMT approval delays would halt grant distribution. Mitigation: Maintain regular business case alignment and SRO engagement with HMT.\n- R03 (technical): Likelihood 3, Impact 3. CRM MVP delays affect Cohort 1 EOI. Mitigation: Prioritize core EOI features for MVP and prepare temporary manual application fallbacks.\n- R04 (technical): Likelihood 3, Impact 3. Hall space constraints limit intake. Mitigation: Deploy technical estate advisers to conduct individual site appraisals and space optimizations.\n- R05 (schedule): Likelihood 3, Impact 4. Disruption during NSBP phase-out in July 2026. Mitigation: Guarantee Cohort 2 places for all 1,700+ NSBP schools and auto-enroll where eligible.\n- R06 (stakeholder): Likelihood 3, Impact 4. Low school opt-in reduces reach. Mitigation: Provide \u00a31,000 upfront set-up grants and simplified flat-rate funding alongside LA support.\n- R07 (financial): Likelihood 3, Impact 3. Flat daily rates (\u00a325 + \u00a31/child) may not cover actual local cost spikes. Mitigation: Monitor actual expenditure via evaluation data and adjust area cost adjustments annually.\n- R08 (financial): Likelihood 3, Impact 4. Multi-year budget uncertainty post-2027. Mitigation: Early submission of multi-year business cases based on evaluation data from Year 1.\n- R09 (organizational): Likelihood 3, Impact 3. Staffing shortages in DfE/schools limit oversight. Mitigation: Grant local authority funding to build regional delivery and supervisory capacity.\n- R10 (environmental): Likelihood 2, Impact 3. Non-compliance with School Food Standards. Mitigation: Issue standardized menu planning guides and commercial procurement tools for schools.\n- R11 (external): Likelihood 2, Impact 2. Failure of call-centre pilot affects data tracking. Mitigation: Utilize existing administrative data channels as a backup data collection mechanism.\n\nStep 5 - Consolidate\n11 unique, strictly supported risks identified and formatted into the target JSON structure.\n\nFINAL JSON:\n{\"project_id\":\"P-UK-FreeBreakfastClubs\",\"risks\":[{\"risk_id\":\"R01\",\"description\":\"Delays in enacting the Children's Wellbeing and Schools Bill could prevent the government from enforcing the statutory duty on schools to provide free breakfast clubs.\",\"category\":\"political_regulatory\",\"likelihood\":2,\"impact\":4,\"mitigation\":\"Proceed with voluntary opt-in onboarding funded via Section 14 grants ahead of formal statutory enactment.\",\"evidence\":\"the Children's Wellbeing and Schools Bill will place a duty on state-funded schools with primary-aged children to offer a free breakfast club\"},{\"risk_id\":\"R02\",\"description\":\"Delays or unexpected conditions in obtaining formal budget confirmation from HM Treasury could disrupt grant distribution and national rollout timing.\",\"category\":\"financial\",\"likelihood\":2,\"impact\":5,\"mitigation\":\"Engage proactively with HM Treasury through the project board and Major Projects Portfolio tracking to secure timely approvals.\",\"evidence\":\"The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury\"},{\"risk_id\":\"R03\",\"description\":\"The internal CRM system minimum-viable product (MVP) may not be ready by November 2025, delaying EOI processing for Cohort 1.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Focus internal IT development strictly on critical EOI features for the MVP and establish manual processing fallbacks.\",\"evidence\":\"we would develop a customer relationship management system internally, working towards a minimum-viable product from November 2025.\"},{\"risk_id\":\"R04\",\"description\":\"Physical space and facility constraints at primary school estates may prevent schools from hosting required breakfast club numbers.\",\"category\":\"technical\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Deploy technical estate advisers to evaluate school premises and advise on space optimization and facility adaptations.\",\"evidence\":\"continuing contracts of technical estate advisers to test what schools can do to mitigate any space constraints.\"},{\"risk_id\":\"R05\",\"description\":\"Transition delays between the end of the National School Breakfast Programme in July 2026 and Cohort 2 launch in September 2026 could leave a gap in provision.\",\"category\":\"schedule\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Guarantee places for all participating NSBP schools in Cohort 2 and streamline transfer processes prior to July 2026.\",\"evidence\":\"ensure they do not have a gap in provision after the closure of the NSBP in July 2026.\"},{\"risk_id\":\"R06\",\"description\":\"Eligible primary schools may refuse or delay joining the programme due to perceived administrative complexities or capacity constraints.\",\"category\":\"stakeholder\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Simplify funding rules to a predictable model (\u00a31,000 start-up plus daily rates) and provide support through local authorities.\",\"evidence\":\"simplified, with a view to being easier to understand and fairer for schools. This should ease the burden and potentially increase willingness to engage\"},{\"risk_id\":\"R07\",\"description\":\"Standardized funding rates may not cover actual operational costs for schools facing unique staffing, food, or localized cost pressures.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Apply Area Cost Adjustments and utilize findings from evaluation studies to review and adjust daily rate structures.\",\"evidence\":\"there will always be a level of uncertainty at an individual school level and on a day-to-day basis.\"},{\"risk_id\":\"R08\",\"description\":\"Uncertainty surrounding multi-year funding approvals beyond Year 1 could impair long-term strategic planning and school retention.\",\"category\":\"financial\",\"likelihood\":3,\"impact\":4,\"mitigation\":\"Submit subsequent multi-year business cases early using preliminary evidence from Year 1 national rollout and early adopters.\",\"evidence\":\"Funding for future years will be agreed separately through business cases.\"},{\"risk_id\":\"R09\",\"description\":\"Shortages of skilled delivery staff or managerial capacity in DfE and schools could disrupt club operations and oversight.\",\"category\":\"organizational\",\"likelihood\":3,\"impact\":3,\"mitigation\":\"Provide dedicated funding to local authorities and leverage education framework advisers to bolster local recruitment and management.\",\"evidence\":\"availability of skilled staff and resources, in both DfE and the education sector.\"},{\"risk_id\":\"R10\",\"description\":\"Schools may fail to maintain compliance with mandatory School Food Standards due to food cost inflation or procurement challenges.\",\"category\":\"environmental\",\"likelihood\":2,\"impact\":3,\"mitigation\":\"Provide central procurement toolkits, standardized menus, and commercial advisor support to help schools meet standards cost-effectively.\",\"evidence\":\"Food provided must be in line with school food standards.\"},{\"risk_id\":\"R11\",\"description\":\"Delays or operational issues in setting up the call-centre pilot could hinder accurate data collection and attendance tracking.\",\"category\":\"external\",\"likelihood\":2,\"impact\":2,\"mitigation\":\"Accelerate commercial procurement timelines and utilize existing administrative data reporting mechanisms as an interim solution.\",\"evidence\":\"start commercial processes to begin a call-centre pilot to support data collection.\"}]}",
+  "parsed_risks": {
+    "project_id": "P-UK-FreeBreakfastClubs",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Delays in enacting the Children's Wellbeing and Schools Bill could prevent the government from enforcing the statutory duty on schools to provide free breakfast clubs.",
+        "category": "political_regulatory",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Proceed with voluntary opt-in onboarding funded via Section 14 grants ahead of formal statutory enactment.",
+        "evidence": "the Children's Wellbeing and Schools Bill will place a duty on state-funded schools with primary-aged children to offer a free breakfast club"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Delays or unexpected conditions in obtaining formal budget confirmation from HM Treasury could disrupt grant distribution and national rollout timing.",
+        "category": "financial",
+        "likelihood": 2,
+        "impact": 5,
+        "mitigation": "Engage proactively with HM Treasury through the project board and Major Projects Portfolio tracking to secure timely approvals.",
+        "evidence": "The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury"
+      },
+      {
+        "risk_id": "R03",
+        "description": "The internal CRM system minimum-viable product (MVP) may not be ready by November 2025, delaying EOI processing for Cohort 1.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Focus internal IT development strictly on critical EOI features for the MVP and establish manual processing fallbacks.",
+        "evidence": "we would develop a customer relationship management system internally, working towards a minimum-viable product from November 2025."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Physical space and facility constraints at primary school estates may prevent schools from hosting required breakfast club numbers.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Deploy technical estate advisers to evaluate school premises and advise on space optimization and facility adaptations.",
+        "evidence": "continuing contracts of technical estate advisers to test what schools can do to mitigate any space constraints."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Transition delays between the end of the National School Breakfast Programme in July 2026 and Cohort 2 launch in September 2026 could leave a gap in provision.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Guarantee places for all participating NSBP schools in Cohort 2 and streamline transfer processes prior to July 2026.",
+        "evidence": "ensure they do not have a gap in provision after the closure of the NSBP in July 2026."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Eligible primary schools may refuse or delay joining the programme due to perceived administrative complexities or capacity constraints.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Simplify funding rules to a predictable model (\u00a31,000 start-up plus daily rates) and provide support through local authorities.",
+        "evidence": "simplified, with a view to being easier to understand and fairer for schools. This should ease the burden and potentially increase willingness to engage"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Standardized funding rates may not cover actual operational costs for schools facing unique staffing, food, or localized cost pressures.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply Area Cost Adjustments and utilize findings from evaluation studies to review and adjust daily rate structures.",
+        "evidence": "there will always be a level of uncertainty at an individual school level and on a day-to-day basis."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Uncertainty surrounding multi-year funding approvals beyond Year 1 could impair long-term strategic planning and school retention.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Submit subsequent multi-year business cases early using preliminary evidence from Year 1 national rollout and early adopters.",
+        "evidence": "Funding for future years will be agreed separately through business cases."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Shortages of skilled delivery staff or managerial capacity in DfE and schools could disrupt club operations and oversight.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Provide dedicated funding to local authorities and leverage education framework advisers to bolster local recruitment and management.",
+        "evidence": "availability of skilled staff and resources, in both DfE and the education sector."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Schools may fail to maintain compliance with mandatory School Food Standards due to food cost inflation or procurement challenges.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Provide central procurement toolkits, standardized menus, and commercial advisor support to help schools meet standards cost-effectively.",
+        "evidence": "Food provided must be in line with school food standards."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Delays or operational issues in setting up the call-centre pilot could hinder accurate data collection and attendance tracking.",
+        "category": "external",
+        "likelihood": 2,
+        "impact": 2,
+        "mitigation": "Accelerate commercial procurement timelines and utilize existing administrative data reporting mechanisms as an interim solution.",
+        "evidence": "start commercial processes to begin a call-centre pilot to support data collection."
+      }
+    ]
+  },
+  "parse_error": null
+}

@@ -1,0 +1,202 @@
+{
+  "run_file": "P-UK-FreeBreakfastClubs__claude__zero_shot__run1.json",
+  "project_id": "P-UK-FreeBreakfastClubs",
+  "model": "claude",
+  "prompt_strategy": "zero_shot",
+  "run_index": 1,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R02",
+      "similarity": 0.628,
+      "gen_category": "political_regulatory",
+      "gt_category": "organizational",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R01",
+      "similarity": 0.534,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R14",
+      "gt_risk_id": "R03",
+      "similarity": 0.523,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delay or failure in passing the Children's Wellbeing and Schools Bill could compromise the statutory mandate requiring primary schools to provide free breakfast clubs.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Engage closely with parliamentary stakeholders to track legislative progress and provide preliminary non-statutory guidance for voluntary school adoption.",
+      "evidence": "Children's Wellbeing and Schools Bill will place a duty on state-funded schools with primary-aged children to offer a free breakfast club"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Primary schools may lack sufficient physical dining or kitchen space to accommodate mandatory breakfast club provision for all pupils on roll.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Deploy technical estate advisers to evaluate school premises and advise on spatial reconfiguration and flexible delivery options.",
+      "evidence": "...continuing contracts of technical estate advisers to test what schools can do to mitigate any space constraints."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in developing the internal CRM minimum-viable product by November 2025 could disrupt the Cohort 1 expression of interest process and onboarding support.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement agile development sprints with dedicated internal resources and prepare fallback manual onboarding workflows.",
+      "evidence": "...develop a customer relationship management system internally, working towards a minimum-viable product from November 2025."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Simplified funding rates (\u00a325 daily plus \u00a31 per pupil) may fail to cover costs for schools facing high food inflation or non-standard staffing ratios.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Monitor early rollout expenditure data closely and provide Section 14 grant adjustments or guidance on efficient food procurement.",
+      "evidence": "Schools delivering their offer in-house, keeping food costs low, and staffing broadly in line with standard ratios were generally able to operate..."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Closure of the National School Breakfast Programme in July 2026 could leave participating schools with a gap in provision before Cohort 2 starts in September 2026.",
+      "category": "schedule",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Guarantee transition places for all current NSBP schools and streamline early application and grant transfer processes.",
+      "evidence": "...ensure they do not have a gap in provision after the closure of the NSBP in July 2026."
+    },
+    {
+      "risk_id": "R06",
+      "description": "School leaders may be reluctant to participate in rollout cohorts due to administrative burdens or concerns over delivery complexity.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Simplify funding structures, provide \u00a31,000 upfront start-up grants, and offer first-line support materials to minimize friction.",
+      "evidence": "...potentially increase willingness to engage and join the programme."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Delays or reductions in budget approvals from HM Treasury for future years could destabilize national rollout expansion beyond Year 1.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Submit robust business case updates early, supported by early adopter and Year 1 evaluation findings, to secure timely settlement approvals.",
+      "evidence": "The programme's success depends on several factors. These include timely approval and budget confirmation from HM Treasury..."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Shortages of qualified supervisory and catering personnel across the education sector could hinder schools' ability to staff clubs safely.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Issue flexible staffing model guidance to schools and coordinate with sector partners to assist in recruitment planning.",
+      "evidence": "...availability of skilled staff and resources, in both DfE and the education sector."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Special schools and alternative provision settings may face complex operational challenges that standard mainstream support structures do not address.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Procure specialized advisers through the educational framework and maintain tailored funding rates for special settings.",
+      "evidence": "To support schools with more complex delivery challenges, we launched a procurement process to increase the number of advisers..."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Schools may fail to comply with statutory school food standards due to catering limitations or cost pressures.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Provide clear nutritional templates and pre-approved compliant menu options during onboarding, backed by compliance monitoring.",
+      "evidence": "Food provided must be in line with school food standards."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Delays in commercial procurement for the call-centre pilot could lead to gaps in data collection and operational oversight.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Fast-track procurement timelines and establish interim online data submission channels for participating schools.",
+      "evidence": "We will also start commercial processes to begin a call-centre pilot to support data collection."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Relying on only one term of Early Adopter scheme findings may obscure unforeseen long-term delivery issues when scaling to 2,000 schools.",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement an iterative mixed-methods evaluation plan running from 2026 to 2028 to capture emerging operational lessons.",
+      "evidence": "...at the point of writing, this business case had one term's worth of learning."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Uneven capacity or engagement among local authorities could lead to inconsistent implementation support across different geographic regions.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide dedicated local authority grant funding alongside clear guidance toolkits to standardize delivery expectations.",
+      "evidence": "...fund local authorities to support schools and the wider system to effectively deliver free breakfast clubs."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Fluctuations in daily pupil attendance could cause unpredictable funding allocations for schools under the \u00a31 per child model.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Maintain the guaranteed \u00a325 daily fixed base rate and \u00a31,000 start-up grant to ensure financial stability against variable attendance.",
+      "evidence": "...there will always be a level of uncertainty at an individual school level and on a day-to-day basis."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Upfront expansion costs without immediate short-term educational attainment gains could prompt value-for-money criticisms during early rollout.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Highlight immediate labor-market and household savings benefits while communicating the multi-year timeline for educational attainment returns.",
+      "evidence": "...costs are incurred upfront while attainment benefits only materialise after at least one year."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Lower value for money compared to the 'do minimum' option in year 1, due to the shorter funding period available for the preferred option's new cohorts of schools.",
+      "category": "financial",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": null
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delivery risks around staffing and food costs for schools newly onboarded to the free breakfast clubs programme.",
+      "category": "organizational",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Mitigated through early adopter (EA) scheme insights and support funding."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Uncertainty in the labour-market benefits (parental workforce participation gains) the programme is expected to deliver.",
+      "category": "external",
+      "sort_rating": null,
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "Addressed through conservative assumptions in the economic modelling."
+    }
+  ]
+}

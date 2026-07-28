@@ -1,0 +1,153 @@
+{
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "zero_shot",
+  "run_index": 2,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:26:19.363042+00:00",
+  "prompt_sha256": "3fe2222cc9295284323a8573eddbe9658c0ec7e0539d7e252b7c78252e724fda",
+  "raw_response_text": "{\"project_id\": \"P-UGA-IntegratedWaterMgmtDev\", \"risks\": [{\"risk_id\": \"R01\", \"description\": \"Regional instability and ongoing conflict in South Sudan could cause further massive refugee inflows into Uganda, overburdening public services and water infrastructure in host districts.\", \"category\": \"external\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Implement long-term sustainable water and sanitation infrastructure in host districts and establish joint coordination mechanisms with OPM and UNHCR.\", \"evidence\": \"The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan.\"}, {\"risk_id\": \"R02\", \"description\": \"High climate variability, severe droughts, and intense precipitation leading to floods could damage water infrastructure and threaten raw water sources.\", \"category\": \"environmental\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Incorporate climate resilience into engineering designs, construct water source protection buffer zones, and implement catchment reforestation and soil conservation.\", \"evidence\": \"high climate variability and underdeveloped water resources infrastructure could result in significant water stress in areas of the country.\"}, {\"risk_id\": \"R03\", \"description\": \"Low dry-season water flows in the Namatala River could cause water deficits in Mbale Town and fail to satisfy required environmental flows for downstream ecosystems.\", \"category\": \"technical\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Conduct an Augmented Water Supply Study prior to construction to evaluate and implement storage impoundment, supplementary boreholes, or Manafwa system expansion.\", \"evidence\": \"Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF.\"}, {\"risk_id\": \"R04\", \"description\": \"Weaknesses in procurement and contract management across implementing agencies could lead to processing delays, contract variations, and cost/time overruns.\", \"category\": \"organizational\", \"likelihood\": 4, \"impact\": 4, \"mitigation\": \"Recruit dedicated procurement consultants, establish Project Support Teams, and deliver specialized training on World Bank procurement regulations and FIDIC contract management.\", \"evidence\": \"weakness... resulted in multiple amendments during contract implementation resulting in cost and time overruns.\"}, {\"risk_id\": \"R05\", \"description\": \"Incomplete needs assessments and insufficient geotechnical studies during early design phases could cause major design changes and costly variations during civil works.\", \"category\": \"technical\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Mandate comprehensive geotechnical studies and outcome-based needs assessments during the feasibility and detailed design stages prior to bidding.\", \"evidence\": \"incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation\"}, {\"risk_id\": \"R06\", \"description\": \"Limited technical and financial capacity among domestic contractors for complex water infrastructure works could cause construction delays or poor execution quality.\", \"category\": \"external\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Package contracts appropriately for market capacity, conduct wider market sounding/dissemination, and encourage joint ventures with capable international firms.\", \"evidence\": \"limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope\"}, {\"risk_id\": \"R07\", \"description\": \"Delay in fully operationalizing the IFMS project module at MWE and irregular internal audit sharing increase risks of financial reporting inaccuracies.\", \"category\": \"financial\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Fully operationalize the IFMS project module at MWE, retain qualified accounting staff, and submit quarterly internal audit reports to the World Bank.\", \"evidence\": \"the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors and inaccuracy\"}, {\"risk_id\": \"R08\", \"description\": \"Land acquisition and involuntary economic or physical displacement along pipeline routes and facility sites could trigger community grievances and civil works delays.\", \"category\": \"stakeholder\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Prepare and implement site-specific Resettlement Action Plans (RAPs), ensure prompt compensation payments, and establish dedicated project grievance redress mechanisms.\", \"evidence\": \"road encroachment and potential works like plants, pump stations and storage tanks may have land acquisition implications and displacement\"}, {\"risk_id\": \"R09\", \"description\": \"Influx of external construction labor into project host communities could lead to social disruption, health risks, and potential gender-based violence (GBV).\", \"category\": \"stakeholder\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Enforce mandatory worker codes of conduct, maximize local workforce hiring, implement labor influx management plans, and conduct community/worker GBV awareness training.\", \"evidence\": \"The proposed project will apply upmost due diligence in the management and monitoring of labor influx to minimize any potential GBV in Project areas.\"}, {\"risk_id\": \"R10\", \"description\": \"Newly designated Umbrella Water Authorities (UWAs) may face initial operating losses and revenue deficits in small towns, threatening long-term operation and maintenance.\", \"category\": \"financial\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Enforce tariff guidelines that cover full operating costs plus a 25% margin, automate cost-indexed tariff adjustments, and build UWA commercial management capacity.\", \"evidence\": \"Several of the systems will show operating losses in the first years of operation, but these losses will gradually decrease as production increases.\"}, {\"risk_id\": \"R11\", \"description\": \"High population pressure, poor agricultural land use, and wetland encroachment in catchments cause soil erosion and siltation, degrading raw water source quality.\", \"category\": \"environmental\", \"likelihood\": 4, \"impact\": 3, \"mitigation\": \"Implement sub-catchment management plans focusing on soil and water conservation, riverbank revegetation, buffer zone protection, and alternative community livelihoods.\", \"evidence\": \"high population pressure, poor land use management practices, and wetland encroachment are leading to excessive land degradation and water quality and quantity challenges\"}, {\"risk_id\": \"R12\", \"description\": \"Mishandling of existing Asbestos Cement (AC) pipes during system rehabilitation poses serious environmental, occupational, and public health hazards.\", \"category\": \"technical\", \"likelihood\": 2, \"impact\": 4, \"mitigation\": \"Enforce strict asbestos management protocols in ESMPs for safe removal, packaging, transport, and disposal in compliance with NEMA guidelines.\", \"evidence\": \"improper handling of asbestos cement (AC) pipes, OHS risks\"}, {\"risk_id\": \"R13\", \"description\": \"Delays by the Government of Uganda in making timely counterpart funding contributions for land acquisition and RAP compensations could stall civil works implementation.\", \"category\": \"financial\", \"likelihood\": 3, \"impact\": 4, \"mitigation\": \"Ensure GoU allocates adequate counterpart funds in annual sector budget allocations and track release schedules prior to contract execution.\", \"evidence\": \"The GoU will be responsible for providing US$8 million in counterpart financing to cover... acquisition of land, and any compensation\"}, {\"risk_id\": \"R14\", \"description\": \"Inadequate coordination among multiple implementing departments, local authorities, and humanitarian agencies could lead to redundant infrastructure or improper site placement.\", \"category\": \"organizational\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Utilize MWE's Sector Liaison Department for central coordination, engage a Project Support Team, and streamline planning through the Water and Environment Sector Working Group.\", \"evidence\": \"In Uganda, a lack of coordination resulted in boreholes being drilled too close to each other or too close to shallow pit latrines\"}, {\"risk_id\": \"R15\", \"description\": \"Taking over management of financially unviable small towns with high operating costs could strain NWSC's cash flow and compromise capital investment capacity.\", \"category\": \"financial\", \"likelihood\": 3, \"impact\": 3, \"mitigation\": \"Apply standard due diligence assessments prior to town transfers, enforce automatic tariff indexation, and maintain a sustainable balance of grant and on-lending financing.\", \"evidence\": \"The NWSC, however, is hesitant to take on additional debt given that its projected cash flow is earmarked for implementing a 10-year capital investment plan\"}]}",
+  "parsed_risks": {
+    "project_id": "P-UGA-IntegratedWaterMgmtDev",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Regional instability and ongoing conflict in South Sudan could cause further massive refugee inflows into Uganda, overburdening public services and water infrastructure in host districts.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Implement long-term sustainable water and sanitation infrastructure in host districts and establish joint coordination mechanisms with OPM and UNHCR.",
+        "evidence": "The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan."
+      },
+      {
+        "risk_id": "R02",
+        "description": "High climate variability, severe droughts, and intense precipitation leading to floods could damage water infrastructure and threaten raw water sources.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Incorporate climate resilience into engineering designs, construct water source protection buffer zones, and implement catchment reforestation and soil conservation.",
+        "evidence": "high climate variability and underdeveloped water resources infrastructure could result in significant water stress in areas of the country."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Low dry-season water flows in the Namatala River could cause water deficits in Mbale Town and fail to satisfy required environmental flows for downstream ecosystems.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct an Augmented Water Supply Study prior to construction to evaluate and implement storage impoundment, supplementary boreholes, or Manafwa system expansion.",
+        "evidence": "Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Weaknesses in procurement and contract management across implementing agencies could lead to processing delays, contract variations, and cost/time overruns.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Recruit dedicated procurement consultants, establish Project Support Teams, and deliver specialized training on World Bank procurement regulations and FIDIC contract management.",
+        "evidence": "weakness... resulted in multiple amendments during contract implementation resulting in cost and time overruns."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Incomplete needs assessments and insufficient geotechnical studies during early design phases could cause major design changes and costly variations during civil works.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Mandate comprehensive geotechnical studies and outcome-based needs assessments during the feasibility and detailed design stages prior to bidding.",
+        "evidence": "incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Limited technical and financial capacity among domestic contractors for complex water infrastructure works could cause construction delays or poor execution quality.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Package contracts appropriately for market capacity, conduct wider market sounding/dissemination, and encourage joint ventures with capable international firms.",
+        "evidence": "limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Delay in fully operationalizing the IFMS project module at MWE and irregular internal audit sharing increase risks of financial reporting inaccuracies.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Fully operationalize the IFMS project module at MWE, retain qualified accounting staff, and submit quarterly internal audit reports to the World Bank.",
+        "evidence": "the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors and inaccuracy"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Land acquisition and involuntary economic or physical displacement along pipeline routes and facility sites could trigger community grievances and civil works delays.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Prepare and implement site-specific Resettlement Action Plans (RAPs), ensure prompt compensation payments, and establish dedicated project grievance redress mechanisms.",
+        "evidence": "road encroachment and potential works like plants, pump stations and storage tanks may have land acquisition implications and displacement"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Influx of external construction labor into project host communities could lead to social disruption, health risks, and potential gender-based violence (GBV).",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce mandatory worker codes of conduct, maximize local workforce hiring, implement labor influx management plans, and conduct community/worker GBV awareness training.",
+        "evidence": "The proposed project will apply upmost due diligence in the management and monitoring of labor influx to minimize any potential GBV in Project areas."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Newly designated Umbrella Water Authorities (UWAs) may face initial operating losses and revenue deficits in small towns, threatening long-term operation and maintenance.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Enforce tariff guidelines that cover full operating costs plus a 25% margin, automate cost-indexed tariff adjustments, and build UWA commercial management capacity.",
+        "evidence": "Several of the systems will show operating losses in the first years of operation, but these losses will gradually decrease as production increases."
+      },
+      {
+        "risk_id": "R11",
+        "description": "High population pressure, poor agricultural land use, and wetland encroachment in catchments cause soil erosion and siltation, degrading raw water source quality.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Implement sub-catchment management plans focusing on soil and water conservation, riverbank revegetation, buffer zone protection, and alternative community livelihoods.",
+        "evidence": "high population pressure, poor land use management practices, and wetland encroachment are leading to excessive land degradation and water quality and quantity challenges"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Mishandling of existing Asbestos Cement (AC) pipes during system rehabilitation poses serious environmental, occupational, and public health hazards.",
+        "category": "technical",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Enforce strict asbestos management protocols in ESMPs for safe removal, packaging, transport, and disposal in compliance with NEMA guidelines.",
+        "evidence": "improper handling of asbestos cement (AC) pipes, OHS risks"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Delays by the Government of Uganda in making timely counterpart funding contributions for land acquisition and RAP compensations could stall civil works implementation.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Ensure GoU allocates adequate counterpart funds in annual sector budget allocations and track release schedules prior to contract execution.",
+        "evidence": "The GoU will be responsible for providing US$8 million in counterpart financing to cover... acquisition of land, and any compensation"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Inadequate coordination among multiple implementing departments, local authorities, and humanitarian agencies could lead to redundant infrastructure or improper site placement.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Utilize MWE's Sector Liaison Department for central coordination, engage a Project Support Team, and streamline planning through the Water and Environment Sector Working Group.",
+        "evidence": "In Uganda, a lack of coordination resulted in boreholes being drilled too close to each other or too close to shallow pit latrines"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Taking over management of financially unviable small towns with high operating costs could strain NWSC's cash flow and compromise capital investment capacity.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Apply standard due diligence assessments prior to town transfers, enforce automatic tariff indexation, and maintain a sustainable balance of grant and on-lending financing.",
+        "evidence": "The NWSC, however, is hesitant to take on additional debt given that its projected cash flow is earmarked for implementing a 10-year capital investment plan"
+      }
+    ]
+  },
+  "parse_error": null
+}

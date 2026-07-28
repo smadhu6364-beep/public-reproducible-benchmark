@@ -1,0 +1,228 @@
+{
+  "run_file": "P-UGA-IntegratedWaterMgmtDev__claude__structured__run2.json",
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "claude",
+  "prompt_strategy": "structured",
+  "run_index": 2,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "threshold": 0.45,
+  "matches": [
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R05",
+      "similarity": 0.757,
+      "gen_category": "political_regulatory",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R02",
+      "similarity": 0.576,
+      "gen_category": "financial",
+      "gt_category": "organizational",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R12",
+      "gt_risk_id": "R04",
+      "similarity": 0.512,
+      "gen_category": "stakeholder",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R03",
+      "similarity": 0.467,
+      "gen_category": "schedule",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Ongoing conflict in South Sudan could accelerate refugee inflows and strain local public resources and water infrastructure.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Coordinate closely with OPM and UNHCR to deploy IDA 18 sub-window investments that expand bulk water capacity for both refugees and host communities.",
+      "evidence": "The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Low dry-season water flow in the Namatala River may lead to supply shortfalls for Mbale Municipality and violate minimum environmental flows.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Execute an Augmented Water Supply Study before construction to implement source augmentation measures including storage impoundments and borehole integration.",
+      "evidence": "Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Extreme climate variability, droughts, and flooding events could damage water infrastructure and compromise raw water source availability.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate catchment protection measures, riverbank re-vegetation, and climate-resilient engineering standards into all infrastructure designs.",
+      "evidence": "climate change is expected to result in more intense precipitation that is likely to lead to damaging and life-threatening floods"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Procurement processing inefficiencies across IAs may cause significant implementation delays at each stage of the project cycle.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Hire experienced procurement consultants within the Project Support Team, conduct continuous staff training on World Bank NPF regulations, and use tracking systems.",
+      "evidence": "inefficiency in processing, causing delays at each stage of the procurement cycle"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Gaps in contract management skills among IA staff could lead to contract time and cost overruns during works execution.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Provide mandatory FIDIC contract management training, assign dedicated technical specialists, and enforce formal Contract Management Plans with full-time on-site presence.",
+      "evidence": "weakness (indicated in key issues in the next paragraph) resulted in multiple amendments during contract implementation resulting in cost and time overruns."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate geotechnical studies and incomplete needs assessments could cause major design variations and cost increases during construction.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Mandate comprehensive geotechnical investigations and outcome-based design reviews prior to finalizing works procurement packages.",
+      "evidence": "incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Limited technical and financial capacity of domestic contractors may hinder execution of complex water supply works.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Structure procurement packaging to attract experienced international firms, encourage joint ventures, and allow adequate mobilization time.",
+      "evidence": "limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Prolonged internal approval processes at MWE could delay vendor payments and hamper contractor cash flows.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Establish an automated payment tracking system with strict approval turnaround times and strengthen accounts and internal audit verification processes.",
+      "evidence": "delays in paying vendors due to prolonged internal approval processes"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Non-operationalization of the IFMS project module at MWE risks financial management errors and delayed reporting.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Fully operationalize the IFMS project module at MWE and maintain qualified financial management specialists in the PST to ensure accurate financial reporting.",
+      "evidence": "the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Umbrella Water Authorities may experience initial operating losses in newly managed small schemes before achieving full cost recovery.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Enforce cost-recovery tariff guidelines with a minimum 25% margin, automate cost indexation adjustments, and implement professionalization support contracts.",
+      "evidence": "Several of the systems will show operating losses in the first years of operation, but these losses will gradually decrease"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Labor influx into local communities during construction could result in social misconduct, gender-based violence (GBV), and disease transmission.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Enforce worker codes of conduct, prioritize local hiring, isolate worker camps from local settlements, and mandate regular community and worker GBV/HIV awareness sessions.",
+      "evidence": "Potential impacts during construction may include... social misdemeanor by workers (labor influx)."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Land acquisition for water supply systems could cause physical and economic displacement of project-affected persons.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement approved site-specific Resettlement Action Plans (RAPs), deliver timely compensation prior to works commencement, and operate project Grievance Redress Mechanisms.",
+      "evidence": "Mbale, 919 PAPs are expected... For Busia, the RAP has identified 173 PAPs who will all face temporary economic displacement."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Inadequate service provision to refugee host communities could undermine social cohesion and Uganda's open-door refugee policy.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement integrated water schemes serving both host communities (83%) and refugees (17%) and engage local leadership through structured consultations.",
+      "evidence": "The inability to address the development needs of host communities may undermine Uganda\u2019s long-standing open-door refugee policy."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Improper handling and disposal of existing Asbestos Cement (AC) pipes during rehabilitation could pose environmental and health hazards.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Incorporate specialized NEMA-compliant asbestos handling, packaging, transport, and hazardous disposal protocols into civil works ESMPs.",
+      "evidence": "improper handling of asbestos cement (AC) pipes... requirements for handling such hazardous materials."
+    },
+    {
+      "risk_id": "R15",
+      "description": "National water sector funding gaps may hinder long-term implementation of Uganda's Sector Strategic Investment Plan targets.",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Conduct a sector financing study under Component 4 to identify commercial financing, public-private partnership (PPP), and alternative investment options.",
+      "evidence": "unlikely that Uganda will have adequate WSS funding to achieve the national sector targets and SDGs."
+    }
+  ],
+  "gt_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Political and governance risk: as detailed in the CPF, significant political uncertainty is not foreseen, but governance and effective public-sector management present substantial risks.",
+      "category": "political_regulatory",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project will mitigate these risks through (a) strengthening the MWE's regulatory framework; (b) carrying out a citizen engagement strategy; and (c) strengthening project implementation efforts in close coordination with local government officials and development partners. The World Bank's procurement processes will also help safeguard the Project from corruption."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Institutional capacity for implementation and sustainability risk: the Umbrella Water Authority (UWA) as a regional service delivery model for small towns and RGCs was recently introduced. Although the decision to scale up this model was informed by extensive analytical work and a pilot project, the UWA model was only recently operationalized.",
+      "category": "organizational",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The Project will support implementation of a professionalized monitoring system focused on enhancing revenue collection approaches (billing software, cashless/mobile payment systems) and on strengthening integration of specialized private operators through improved contract management. The implementation team will use the Utility Performance Monitoring and Information System (UPMIS) tool to regularly review UWA and NWSC performance."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Fiduciary risk: the Procurement risk is rated Substantial while the FM risk is Moderate. The risks identified relate to delays and skills gaps at different stages of procurement processing.",
+      "category": "financial",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "IWMDP will benefit from the lessons learned and mechanisms put in place under the predecessor project (WMDP); detailed mitigation measures for the procurement risk are set out in the Appraisal (Procurement) section."
+    },
+    {
+      "risk_id": "R04",
+      "description": "The environmental and social risk is deemed Substantial given (a) potential opposition to the introduction of a new service delivery model, including new tariffs and catchment management measures; (b) the influx of new workers in small towns and RGCs; and (c) potentially adverse environmental impacts from the construction and operation of the proposed investments.",
+      "category": "environmental",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The environmental and social risk will be managed through the application of an Environmental and Social Management Framework (ESMF), a Resettlement Policy Framework (RPF), and related safeguards instruments (Environmental and Social Impact Assessment, Resettlement Action Plans)."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Other risks (social tensions in districts hosting refugees): tensions between refugees and citizens are caused by inequity in access to and payment for water supply and sanitation (WSS) services. While refugees in the settlements benefit from humanitarian aid and GoU support, Ugandans in host communities receive limited support for services and infrastructure, causing social tension that may result in Project implementation delays given potential community opposition to the works.",
+      "category": "other",
+      "sort_rating": "Substantial",
+      "likelihood": null,
+      "impact": null,
+      "mitigation": "The GoU has prioritized development efforts for poor districts hosting refugees while remaining firmly committed to its policy on refugee protection. The Project will manage this risk by designing WSS facilities and catchment management measures that benefit both host communities and refugees, and by ensuring the Project's social and communication management plan is applied and adequately supervised. There are no known existing risks to the refugee protection framework or reputational risks for the Project."
+    }
+  ]
+}

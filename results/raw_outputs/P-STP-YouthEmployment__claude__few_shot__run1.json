@@ -1,0 +1,144 @@
+{
+  "project_id": "P-STP-YouthEmployment",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "few_shot",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:24:08.690744+00:00",
+  "prompt_sha256": "d10db7ea40d5ad99b16649aae3c78f72fce78d8a163e8fc76293ebe4677de13a",
+  "raw_response_text": "{\n  \"project_id\": \"P-STP-YouthEmployment\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Involvement of multiple line ministries and agencies across project components may cause institutional coordination friction and implementation delays.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a Ministerial Coordination Committee under the Minister of Labor and utilize a restructured PIU shared with SPRRP.\",\n      \"evidence\": \"Section IV.B Financial Management: ...delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders...\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Public TVET institutions face capacity constraints due to outdated equipment, limited infrastructure, operating deficits, and instructor gaps.\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide direct financial compensation for training delivery costs, procure modern equipment, and rehabilitate existing facilities through AFAP.\",\n      \"evidence\": \"Section I.B Sectoral Context: ...capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps...\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Construction of the US$5 million training center on Pr\u00edncipe faces severe logistical constraints, cost risks, and delays due to geographic insularity.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Procure detailed technical designs early, enforce EDGE Level 1 green building standards, and manage budget adjustments through procurement plan revisions.\",\n      \"evidence\": \"Section II.D Subcomponent 1.1: ...structural constraints specific to Pr\u00edncipe\u2014including geographic isolation and a severely limited pool of skilled workers...\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Financial management bottlenecks at AFAP, including transaction recording delays and late internal audit reviews, could impede project disbursements.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint a dedicated financial management accountant, customize accounting software, and update the financial procedures in the Project Operations Manual.\",\n      \"evidence\": \"Section IV.B Financial Management: FM risks identified include: (i) delays in recording financial transactions and generating financial reports; (ii) internal audit reviews...\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Delays in MLSSS providing technical inputs and specifications to AFAP could stall procurement of civil works, goods, and key consultancies.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Establish formal workflow protocols between MLSSS technical leads and AFAP fiduciary specialists, detailed in the Project Operations Manual.\",\n      \"evidence\": \"Section IV.B Procurement: A key factor for good procurement performance will be the ability of AFAP and the MLSSS to work in close collaboration...\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Delays or non-compliance in beneficiary selection criteria could interrupt cash stipend and sub-grant transfers for youth and MSMEs.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Contract a qualified electronic Payment Service Provider and satisfy formal disbursement conditions prior to sub-grant and stipend releases.\",\n      \"evidence\": \"Section IV.B Financial Management: ...delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Vulnerable youth outside the capital or unindexed in databases face potential exclusion and elite capture during project beneficiary selection.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Utilize objective socio-economic data from the Unique Social Registry, enforce geographic quotas, and operationalize a project Grievance Redress Mechanism.\",\n      \"evidence\": \"Section IV.C ESF: ...risks of exclusion, which may arise if project benefits are not equitably distributed... as well as risks of elite capture...\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Female participants in training centers, internships, and work placements face risks of sexual exploitation, abuse, and sexual harassment.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Appoint a dedicated Social Specialist with GBV/SEA-SH expertise and enforce code-of-conduct and safety mechanisms across participating training centers and employers.\",\n      \"evidence\": \"Section IV.C ESF: ...community health and safety risks, including risks of sexual exploitation and abuse (SEA) and sexual harassment (SH)...\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Micro-enterprise grants and facility rehabilitation works could generate solid waste, construction debris, or cause localized environmental degradation in sensitive ecosystems.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Appoint an Environmental Specialist, mandate environmental screening for MSME sub-grants, and enforce environmental management guidelines for civil works.\",\n      \"evidence\": \"Section IV.C ESF: ...small business grants could support micro-enterprises in agriculture, fisheries, or tourism that may indirectly place pressure on sensitive ecosystems...\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Delays in recruiting core PIU technical staff (TVET specialist, IT assistant, E&S specialists) could overburden existing staff and slow component rollout.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce legal covenants mandating the appointment of key specialists within 45 to 60 days of project effectiveness.\",\n      \"evidence\": \"Legal Covenants: The Recipient shall cause AFAP to hire or appoint, not later than sixty (60) days after Effectiveness: (i) a TVET specialist...\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Recurrent flooding, storms, and sea-level rise could disrupt training activities, delay infrastructure works, and impact beneficiary livelihoods.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Apply climate-resilient engineering standards for physical works, install backup generators, and incorporate flexible training schedules.\",\n      \"evidence\": \"Section IV.C Assessment of adaptation risks: ...increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery...\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"The new digital Employability Portal and upgraded LMIS risk underutilization or power disruption, mirroring past unoperationalized labor observatory systems.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Adopt a cloud-based architecture, procure backup power systems, and contract specialized technical assistance for system development and user training.\",\n      \"evidence\": \"Section II.D Subcomponent 1.2: ...an 'Employment Observatory' was previously developed with support from the ILO but never fully operationalized...\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Dominance of low-productivity informal firms in STP limits the domestic private sector's structural capacity to absorb interns into permanent wage jobs.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Combine internship schemes with self-employment startup grants, productive inclusion packages, and MSME growth support.\",\n      \"evidence\": \"Section I.A Country Context: Micro and small enterprises make up 92 percent of all firms in STP... Most are household-run and provide few job opportunities.\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"High youth emigration sentiment (68%) without legal structures may result in uncoordinated brain drain or precarious irregular migration outcomes.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Incorporate structured labor mobility orientation sessions, align skills with destination country demands, and support formal international labor mobility channels.\",\n      \"evidence\": \"Section I.B Sectoral Context: A recent survey found that 68 percent of youth are considering leaving the country in search of better opportunities abroad...\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-STP-YouthEmployment",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Involvement of multiple line ministries and agencies across project components may cause institutional coordination friction and implementation delays.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a Ministerial Coordination Committee under the Minister of Labor and utilize a restructured PIU shared with SPRRP.",
+        "evidence": "Section IV.B Financial Management: ...delays in preparing annual workplans and implementing interventions due to the involvement of multiple stakeholders..."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Public TVET institutions face capacity constraints due to outdated equipment, limited infrastructure, operating deficits, and instructor gaps.",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide direct financial compensation for training delivery costs, procure modern equipment, and rehabilitate existing facilities through AFAP.",
+        "evidence": "Section I.B Sectoral Context: ...capacity remains constrained by outdated equipment, limited infrastructure, insufficient operating budgets, staffing gaps..."
+      },
+      {
+        "risk_id": "R03",
+        "description": "Construction of the US$5 million training center on Pr\u00edncipe faces severe logistical constraints, cost risks, and delays due to geographic insularity.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Procure detailed technical designs early, enforce EDGE Level 1 green building standards, and manage budget adjustments through procurement plan revisions.",
+        "evidence": "Section II.D Subcomponent 1.1: ...structural constraints specific to Pr\u00edncipe\u2014including geographic isolation and a severely limited pool of skilled workers..."
+      },
+      {
+        "risk_id": "R04",
+        "description": "Financial management bottlenecks at AFAP, including transaction recording delays and late internal audit reviews, could impede project disbursements.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint a dedicated financial management accountant, customize accounting software, and update the financial procedures in the Project Operations Manual.",
+        "evidence": "Section IV.B Financial Management: FM risks identified include: (i) delays in recording financial transactions and generating financial reports; (ii) internal audit reviews..."
+      },
+      {
+        "risk_id": "R05",
+        "description": "Delays in MLSSS providing technical inputs and specifications to AFAP could stall procurement of civil works, goods, and key consultancies.",
+        "category": "schedule",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Establish formal workflow protocols between MLSSS technical leads and AFAP fiduciary specialists, detailed in the Project Operations Manual.",
+        "evidence": "Section IV.B Procurement: A key factor for good procurement performance will be the ability of AFAP and the MLSSS to work in close collaboration..."
+      },
+      {
+        "risk_id": "R06",
+        "description": "Delays or non-compliance in beneficiary selection criteria could interrupt cash stipend and sub-grant transfers for youth and MSMEs.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Contract a qualified electronic Payment Service Provider and satisfy formal disbursement conditions prior to sub-grant and stipend releases.",
+        "evidence": "Section IV.B Financial Management: ...delays in availing funds for beneficiaries resulting from possible non-compliance in selection criteria."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Vulnerable youth outside the capital or unindexed in databases face potential exclusion and elite capture during project beneficiary selection.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Utilize objective socio-economic data from the Unique Social Registry, enforce geographic quotas, and operationalize a project Grievance Redress Mechanism.",
+        "evidence": "Section IV.C ESF: ...risks of exclusion, which may arise if project benefits are not equitably distributed... as well as risks of elite capture..."
+      },
+      {
+        "risk_id": "R08",
+        "description": "Female participants in training centers, internships, and work placements face risks of sexual exploitation, abuse, and sexual harassment.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Appoint a dedicated Social Specialist with GBV/SEA-SH expertise and enforce code-of-conduct and safety mechanisms across participating training centers and employers.",
+        "evidence": "Section IV.C ESF: ...community health and safety risks, including risks of sexual exploitation and abuse (SEA) and sexual harassment (SH)..."
+      },
+      {
+        "risk_id": "R09",
+        "description": "Micro-enterprise grants and facility rehabilitation works could generate solid waste, construction debris, or cause localized environmental degradation in sensitive ecosystems.",
+        "category": "environmental",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Appoint an Environmental Specialist, mandate environmental screening for MSME sub-grants, and enforce environmental management guidelines for civil works.",
+        "evidence": "Section IV.C ESF: ...small business grants could support micro-enterprises in agriculture, fisheries, or tourism that may indirectly place pressure on sensitive ecosystems..."
+      },
+      {
+        "risk_id": "R10",
+        "description": "Delays in recruiting core PIU technical staff (TVET specialist, IT assistant, E&S specialists) could overburden existing staff and slow component rollout.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce legal covenants mandating the appointment of key specialists within 45 to 60 days of project effectiveness.",
+        "evidence": "Legal Covenants: The Recipient shall cause AFAP to hire or appoint, not later than sixty (60) days after Effectiveness: (i) a TVET specialist..."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Recurrent flooding, storms, and sea-level rise could disrupt training activities, delay infrastructure works, and impact beneficiary livelihoods.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Apply climate-resilient engineering standards for physical works, install backup generators, and incorporate flexible training schedules.",
+        "evidence": "Section IV.C Assessment of adaptation risks: ...increased frequency and severity of natural hazards and climate shocks may cause disruptions in service delivery..."
+      },
+      {
+        "risk_id": "R12",
+        "description": "The new digital Employability Portal and upgraded LMIS risk underutilization or power disruption, mirroring past unoperationalized labor observatory systems.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Adopt a cloud-based architecture, procure backup power systems, and contract specialized technical assistance for system development and user training.",
+        "evidence": "Section II.D Subcomponent 1.2: ...an 'Employment Observatory' was previously developed with support from the ILO but never fully operationalized..."
+      },
+      {
+        "risk_id": "R13",
+        "description": "Dominance of low-productivity informal firms in STP limits the domestic private sector's structural capacity to absorb interns into permanent wage jobs.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Combine internship schemes with self-employment startup grants, productive inclusion packages, and MSME growth support.",
+        "evidence": "Section I.A Country Context: Micro and small enterprises make up 92 percent of all firms in STP... Most are household-run and provide few job opportunities."
+      },
+      {
+        "risk_id": "R14",
+        "description": "High youth emigration sentiment (68%) without legal structures may result in uncoordinated brain drain or precarious irregular migration outcomes.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Incorporate structured labor mobility orientation sessions, align skills with destination country demands, and support formal international labor mobility channels.",
+        "evidence": "Section I.B Sectoral Context: A recent survey found that 68 percent of youth are considering leaving the country in search of better opportunities abroad..."
+      }
+    ]
+  },
+  "parse_error": null
+}

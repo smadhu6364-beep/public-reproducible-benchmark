@@ -1,0 +1,180 @@
+{
+  "project_id": "P-UGA-IntegratedWaterMgmtDev",
+  "model": "claude",
+  "model_version": "gemini-flash-latest",
+  "prompt_strategy": "structured",
+  "run_index": 1,
+  "temperature": 0.1,
+  "temperature_applied": true,
+  "run_date": "2026-07-28T14:27:47.499735+00:00",
+  "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
+  "raw_response_text": "REASONING:\n\nStep 1 - Frame the project\n- Objective: To improve access to water supply and sanitation services, integrated water resources management, and operational performance of water and sanitation service providers in Project areas.\n- Scope: Investments across small towns, rural growth centers (RGCs), large towns (Gulu, Mbale, Adjumani), refugee host communities (Yumbe, Arua, Moyo, Adjumani, Lamwo, Kiryandongo), and catchment/water resources management across Upper Nile, Kyoga, and Albert Water Management Zones (WMZs).\n- Components: \n  1) Component 1: WSS in Small Towns and RGCs and Support to Districts Hosting Refugees (US$161.5M);\n  2) Component 2: WSS in Large Towns and Support to Districts Hosting Refugees (US$120.5M);\n  3) Component 3: Water Resources Management (US$25.5M);\n  4) Component 4: Project Implementation and Institutional Strengthening (US$5.5M).\n- Delivery Model: Implemented by Ministry of Water and Environment (MWE) and National Water and Sewerage Corporation (NWSC), using umbrella water authorities (UWAs), local governments, and private operators.\n- Timeline: 6 years (Expected Approval: June 14, 2018; Expected Closing: December 2, 2024).\n- Budget: Total US$313M (IDA Credit US$251M, IDA Grant US$29M, GoU Counterpart US$8M, KfW Parallel Financing US$25M).\n- Key Stakeholders: MWE, NWSC, MoFPED, OPM, UNHCR, UWAs, local governments, host communities, refugees.\n- External Dependencies: Regional stability in South Sudan, co-financing from KfW for Gulu WTP, refugee protection framework adequacy, and subsidiary agreement execution.\n\nStep 2 - Category sweep\n- technical: Incomplete needs assessments/geotechnical studies causing design changes; dry-season flow deficiencies at Namatala intake affecting environmental flow; infrastructure vulnerabilities to flooding/droughts.\n- financial: IFMS project module not operationalized at MWE; delays in paying vendors due to internal approvals; NWSC/UWA operating loss risks in small towns with high operating costs.\n- schedule: Inefficiencies in procurement processing; delays in preparing spec/ToR; construction delays and cost overruns.\n- stakeholder: Labor influx social friction/GBV; long water collection distances causing GBV/social issues.\n- political_regulatory: Resistance to transition from free water to tariff policy in refugee settlements.\n- environmental: Severe climate events (floods, droughts, evapotranspiration); improper handling/disposal of hazardous Asbestos Cement (AC) pipes; disturbance to hippopotamus habitat at Busia WTP.\n- organizational: Internal audit reports not shared regularly with WB; staff turnover and contract management skill gaps; limited office/storage space for procurement records.\n- external: Ongoing conflict in South Sudan causing refugee surge and public service pressure; limited capacity of domestic contractors for complex works.\n\nStep 3 - Evidence filter\nAll identified candidate risks above are explicitly documented in the text (e.g., Section I context, Section V key risks, Section VI appraisal on FM/Procurement/Safeguards, and Annexes 1-4).\n\nStep 4 - Assess\nAssign likelihood (1-5), impact (1-5), one-line justifications, and concrete mitigations for each candidate risk.\n\nStep 5 - Consolidate\nConsolidate into 18 distinct, non-overlapping, well-supported risk entries covering all required categories.\n\nFINAL JSON:\n{\n  \"project_id\": \"P-UGA-IntegratedWaterMgmtDev\",\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Escalation of South Sudan conflict leading to a surge in refugee influx that overwhelms public services and natural resources in host districts.\",\n      \"category\": \"external\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Coordinate closely with OPM, UNHCR, and local authorities to adjust WSS capacity plans and prioritize flexible, scalable infrastructure in refugee-hosting districts.\",\n      \"evidence\": \"continuation of this conflict could affect export earnings and place an excessive amount of pressure on Uganda\u2019s public services and natural resources.\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Limited domestic contracting capacity leading to non-responsive bids or substandard execution of complex water infrastructure works.\",\n      \"category\": \"external\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Package contracts appropriately, perform market sounding, encourage joint ventures, and widely disseminate bidding opportunities to attract capable international contractors.\",\n      \"evidence\": \"limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Social friction or resistance when transitioning refugees from free emergency water provision to a paid tariff structure.\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Implement community sensitization programs, introduce pro-poor progressive tariffs, and collaborate with OPM and UNHCR on refugee water policy design.\",\n      \"evidence\": \"given that refugees in settlements currently do not pay for water, the UNHCR and OPM are collaborating with the MWE on designing a new water tariff policy\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Failure to operationalize the IFMS project module at MWE resulting in accounting errors and inaccurate project financial reports.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Fully operationalize the IFMS project module at MWE and maintain dedicated qualified financial management specialists within the Project Support Team.\",\n      \"evidence\": \"the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors and inaccuracy of financial reports\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Prolonged internal approval processes causing significant delays in vendor payments and potential contractor claims.\",\n      \"category\": \"financial\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Establish a transparent payment approval tracking system and hold approving officers accountable to streamline internal approval workflows.\",\n      \"evidence\": \"delays in paying vendors due to prolonged internal approval processes\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Financial non-viability of service providers (NWSC and UWAs) due to high operating costs in newly transferred small towns.\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Implement automatic cost-indexing tariffs, professionalization contracts, solar pumping conversions, and efficiency enhancement programs to lower unit costs.\",\n      \"evidence\": \"small towns that are or will be part of the NWSC\u2019s service area have higher than average operating costs.\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Inefficiencies across procurement processing stages causing severe schedule slippage in contract awards.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Engage experienced procurement specialists in the PST, train Procurement Disposal Unit staff on WB procedures, and enforce strict procurement tracking timelines.\",\n      \"evidence\": \"inefficiency in processing, causing delays at each stage of the procurement cycle\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"Construction delays and cost overruns stemming from initial cost underestimation and poor contractor performance.\",\n      \"category\": \"schedule\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Complete detailed engineering designs before procurement, establish comprehensive contract management plans, and enforce active on-site supervision.\",\n      \"evidence\": \"delayed construction and underestimation of the cost of works\"\n    },\n    {\n      \"risk_id\": \"R09\",\n      \"description\": \"Incomplete needs assessments and inadequate geotechnical investigations leading to major design variations during execution.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct rigorous geotechnical studies, complete baseline needs assessments, and perform thorough design reviews prior to issuing bidding documents.\",\n      \"evidence\": \"incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation\"\n    },\n    {\n      \"risk_id\": \"R10\",\n      \"description\": \"Seasonal low flows in Namatala River failing to meet projected Mbale water demands while threatening minimum environmental flows.\",\n      \"category\": \"technical\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct an Augmented Water Supply Study prior to construction to implement source protection, water impoundment, or borehole augmentation options.\",\n      \"evidence\": \"Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF.\"\n    },\n    {\n      \"risk_id\": \"R11\",\n      \"description\": \"Failure to regularly share internal audit review reports with the World Bank, reducing fiduciary oversight and assurance.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 3,\n      \"mitigation\": \"Enforce mandatory quarterly submission of internal audit reports to the World Bank and monitor follow-up actions through the MoFPED Audit Committee.\",\n      \"evidence\": \"ministry internal audit review reports are not shared regularly with the World Bank\"\n    },\n    {\n      \"risk_id\": \"R12\",\n      \"description\": \"Gaps in contract management capacity and high staff turnover leading to poor supervision of complex civil works.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 3,\n      \"mitigation\": \"Provide specialized training on FIDIC contract management, retain key PST personnel, and deploy qualified supervising engineers full-time on site.\",\n      \"evidence\": \"gaps in contract management skills\"\n    },\n    {\n      \"risk_id\": \"R13\",\n      \"description\": \"Inadequate physical office space and record storage for PDU staff leading to poor documentation control and audit risks.\",\n      \"category\": \"organizational\",\n      \"likelihood\": 3,\n      \"impact\": 2,\n      \"mitigation\": \"Provide dedicated lockable filing space, upgrade physical archiving facilities, and mandate digital document management via STEP.\",\n      \"evidence\": \"limited office space for PDU staff and inadequate storage capacity for procurement records\"\n    },\n    {\n      \"risk_id\": \"R14\",\n      \"description\": \"Increased climate variability, extreme rainfall, and droughts damaging water infrastructure and destabilizing raw water yields.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Integrate climate-resilient engineering standards, implement buffer zone protection, catchment afforestation, and real-time hydrological monitoring.\",\n      \"evidence\": \"increased temperatures would produce higher levels of potential evapotranspiration... intense precipitation that is likely to lead to damaging and life-threatening floods\"\n    },\n    {\n      \"risk_id\": \"R15\",\n      \"description\": \"Improper handling and disposal of hazardous Asbestos Cement (AC) pipes during rehabilitation works posing occupational and public health hazards.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 4,\n      \"mitigation\": \"Enforce strict AC pipe management procedures following NEMA guidelines, including proper PPE, safe containment, specialized transport, and controlled disposal.\",\n      \"evidence\": \"improper handling of asbestos cement (AC) pipes, OHS risks\"\n    },\n    {\n      \"risk_id\": \"R16\",\n      \"description\": \"Disturbance or habitat degradation of hippopotamus populations during construction and operation of the Busia Water Treatment Plant.\",\n      \"category\": \"environmental\",\n      \"likelihood\": 2,\n      \"impact\": 3,\n      \"mitigation\": \"Consult Uganda Wildlife Authority and enforce a site-specific Wildlife Management Plan to protect hippopotamus habitats during civil works.\",\n      \"evidence\": \"impact on hippopotamus at the WTP site was identified as a key impact that needs to be adequately mitigated\"\n    },\n    {\n      \"risk_id\": \"R17\",\n      \"description\": \"Labor influx into local communities causing social disruption, potential gender-based violence (GBV), and spread of communicable diseases.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 3,\n      \"impact\": 4,\n      \"mitigation\": \"Mandate worker codes of conduct, prioritize local labor hiring, establish labor camp management plans, and conduct community sensitization on GBV/HIV.\",\n      \"evidence\": \"management and monitoring of labor influx to minimize any potential GBV in Project areas\"\n    },\n    {\n      \"risk_id\": \"R18\",\n      \"description\": \"Long travel distances to unimproved water sources exposing women and children to heightened risk of gender-based violence and harassment.\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Construct localized piped water supply systems and community water points within 200m walking distance to eliminate long travel times.\",\n      \"evidence\": \"Long walks to water sources trigger serious social consequences, including GBV, such as sexual assaults of women and girls\"\n    }\n  ]\n}",
+  "parsed_risks": {
+    "project_id": "P-UGA-IntegratedWaterMgmtDev",
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Escalation of South Sudan conflict leading to a surge in refugee influx that overwhelms public services and natural resources in host districts.",
+        "category": "external",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Coordinate closely with OPM, UNHCR, and local authorities to adjust WSS capacity plans and prioritize flexible, scalable infrastructure in refugee-hosting districts.",
+        "evidence": "continuation of this conflict could affect export earnings and place an excessive amount of pressure on Uganda\u2019s public services and natural resources."
+      },
+      {
+        "risk_id": "R02",
+        "description": "Limited domestic contracting capacity leading to non-responsive bids or substandard execution of complex water infrastructure works.",
+        "category": "external",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Package contracts appropriately, perform market sounding, encourage joint ventures, and widely disseminate bidding opportunities to attract capable international contractors.",
+        "evidence": "limited capacity of domestic contractors to conduct projects of this nature, complexity, and scope"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Social friction or resistance when transitioning refugees from free emergency water provision to a paid tariff structure.",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Implement community sensitization programs, introduce pro-poor progressive tariffs, and collaborate with OPM and UNHCR on refugee water policy design.",
+        "evidence": "given that refugees in settlements currently do not pay for water, the UNHCR and OPM are collaborating with the MWE on designing a new water tariff policy"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Failure to operationalize the IFMS project module at MWE resulting in accounting errors and inaccurate project financial reports.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Fully operationalize the IFMS project module at MWE and maintain dedicated qualified financial management specialists within the Project Support Team.",
+        "evidence": "the project module of the IFMS has not been fully operationalized at the MWE, which increases the risk of errors and inaccuracy of financial reports"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Prolonged internal approval processes causing significant delays in vendor payments and potential contractor claims.",
+        "category": "financial",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Establish a transparent payment approval tracking system and hold approving officers accountable to streamline internal approval workflows.",
+        "evidence": "delays in paying vendors due to prolonged internal approval processes"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Financial non-viability of service providers (NWSC and UWAs) due to high operating costs in newly transferred small towns.",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Implement automatic cost-indexing tariffs, professionalization contracts, solar pumping conversions, and efficiency enhancement programs to lower unit costs.",
+        "evidence": "small towns that are or will be part of the NWSC\u2019s service area have higher than average operating costs."
+      },
+      {
+        "risk_id": "R07",
+        "description": "Inefficiencies across procurement processing stages causing severe schedule slippage in contract awards.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Engage experienced procurement specialists in the PST, train Procurement Disposal Unit staff on WB procedures, and enforce strict procurement tracking timelines.",
+        "evidence": "inefficiency in processing, causing delays at each stage of the procurement cycle"
+      },
+      {
+        "risk_id": "R08",
+        "description": "Construction delays and cost overruns stemming from initial cost underestimation and poor contractor performance.",
+        "category": "schedule",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Complete detailed engineering designs before procurement, establish comprehensive contract management plans, and enforce active on-site supervision.",
+        "evidence": "delayed construction and underestimation of the cost of works"
+      },
+      {
+        "risk_id": "R09",
+        "description": "Incomplete needs assessments and inadequate geotechnical investigations leading to major design variations during execution.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct rigorous geotechnical studies, complete baseline needs assessments, and perform thorough design reviews prior to issuing bidding documents.",
+        "evidence": "incomplete needs assessments and inadequate attention to geotechnical studies leading to design changes/variations during implementation"
+      },
+      {
+        "risk_id": "R10",
+        "description": "Seasonal low flows in Namatala River failing to meet projected Mbale water demands while threatening minimum environmental flows.",
+        "category": "technical",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Conduct an Augmented Water Supply Study prior to construction to implement source protection, water impoundment, or borehole augmentation options.",
+        "evidence": "Namatala\u2019s dry weather flows in some cases may not be sufficient to meet projected water demand and maintain an adequate EF."
+      },
+      {
+        "risk_id": "R11",
+        "description": "Failure to regularly share internal audit review reports with the World Bank, reducing fiduciary oversight and assurance.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 3,
+        "mitigation": "Enforce mandatory quarterly submission of internal audit reports to the World Bank and monitor follow-up actions through the MoFPED Audit Committee.",
+        "evidence": "ministry internal audit review reports are not shared regularly with the World Bank"
+      },
+      {
+        "risk_id": "R12",
+        "description": "Gaps in contract management capacity and high staff turnover leading to poor supervision of complex civil works.",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 3,
+        "mitigation": "Provide specialized training on FIDIC contract management, retain key PST personnel, and deploy qualified supervising engineers full-time on site.",
+        "evidence": "gaps in contract management skills"
+      },
+      {
+        "risk_id": "R13",
+        "description": "Inadequate physical office space and record storage for PDU staff leading to poor documentation control and audit risks.",
+        "category": "organizational",
+        "likelihood": 3,
+        "impact": 2,
+        "mitigation": "Provide dedicated lockable filing space, upgrade physical archiving facilities, and mandate digital document management via STEP.",
+        "evidence": "limited office space for PDU staff and inadequate storage capacity for procurement records"
+      },
+      {
+        "risk_id": "R14",
+        "description": "Increased climate variability, extreme rainfall, and droughts damaging water infrastructure and destabilizing raw water yields.",
+        "category": "environmental",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Integrate climate-resilient engineering standards, implement buffer zone protection, catchment afforestation, and real-time hydrological monitoring.",
+        "evidence": "increased temperatures would produce higher levels of potential evapotranspiration... intense precipitation that is likely to lead to damaging and life-threatening floods"
+      },
+      {
+        "risk_id": "R15",
+        "description": "Improper handling and disposal of hazardous Asbestos Cement (AC) pipes during rehabilitation works posing occupational and public health hazards.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 4,
+        "mitigation": "Enforce strict AC pipe management procedures following NEMA guidelines, including proper PPE, safe containment, specialized transport, and controlled disposal.",
+        "evidence": "improper handling of asbestos cement (AC) pipes, OHS risks"
+      },
+      {
+        "risk_id": "R16",
+        "description": "Disturbance or habitat degradation of hippopotamus populations during construction and operation of the Busia Water Treatment Plant.",
+        "category": "environmental",
+        "likelihood": 2,
+        "impact": 3,
+        "mitigation": "Consult Uganda Wildlife Authority and enforce a site-specific Wildlife Management Plan to protect hippopotamus habitats during civil works.",
+        "evidence": "impact on hippopotamus at the WTP site was identified as a key impact that needs to be adequately mitigated"
+      },
+      {
+        "risk_id": "R17",
+        "description": "Labor influx into local communities causing social disruption, potential gender-based violence (GBV), and spread of communicable diseases.",
+        "category": "stakeholder",
+        "likelihood": 3,
+        "impact": 4,
+        "mitigation": "Mandate worker codes of conduct, prioritize local labor hiring, establish labor camp management plans, and conduct community sensitization on GBV/HIV.",
+        "evidence": "management and monitoring of labor influx to minimize any potential GBV in Project areas"
+      },
+      {
+        "risk_id": "R18",
+        "description": "Long travel distances to unimproved water sources exposing women and children to heightened risk of gender-based violence and harassment.",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Construct localized piped water supply systems and community water points within 200m walking distance to eliminate long travel times.",
+        "evidence": "Long walks to water sources trigger serious social consequences, including GBV, such as sexual assaults of women and girls"
+      }
+    ]
+  },
+  "parse_error": null
+}
