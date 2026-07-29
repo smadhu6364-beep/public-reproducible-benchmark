@@ -466,17 +466,37 @@ before a final answer \cite{wei2022cot}. Few-shot demonstrations are
 synthetic, purpose-built for this study, and never drawn from a real
 corpus project, so that no project's few-shot example can leak information
 about that same project's held-out ground truth. The structured condition
-is parsed by extracting the JSON object following a literal
-\texttt{FINAL JSON:} marker via a greedy regular expression anchored to the
-end of the response; this anchors to the \emph{first} occurrence of the
-marker and captures to the end of the string, so a response that emits the
-marker more than once (for example, a model visibly reconsidering its own
-answer) fails to parse entirely rather than recovering the later, intended
-JSON object. This is a real, disclosed characteristic of the parsing
-implementation, not a hypothetical edge case; if structured-condition parse
-failures in Section~\ref{sec:results} are disproportionately high relative
-to zero-shot and few-shot, this parsing contract -- not necessarily weaker
-underlying reasoning -- is the first explanation to rule out.
+is parsed by taking everything following a literal
+\texttt{FINAL JSON:} marker and decoding one or more sequential top-level
+JSON values from it, stopping cleanly once the remainder no longer starts a
+decodable value; multiple bare risk objects with no enclosing array are
+treated as the risks list, a bare top-level array is accepted in place of
+the required object, and trailing prose after an otherwise-complete JSON
+value no longer causes a failure.
+
+An earlier version of this parser instead anchored a single greedy regular
+expression to the end of the response, silently discarding every JSON value
+after the first and rejecting a bare array outright. This was caught, not
+assumed benign, after the \texttt{opensource}/\texttt{structured} cell
+showed an implausible 100\% parse-failure rate (42 of 42 runs) -- treated as
+a signal to audit the parser rather than accepted at face value as a
+genuine model collapse. Root-causing that cell's raw responses against the
+schema found the failure was structural (the parsing contract, not the risk
+content) and not specific to one model. Applying the fix as a backfill
+against the same immutable raw response text already on disk -- never
+regenerating or altering a real model call -- recovered 39 of 88 parse
+failures grid-wide (down to 49), and cut the
+\texttt{opensource}/\texttt{structured} cell specifically from 42 of 42
+failures to 7 of 42. We report this in detail because a result this size,
+left uninvestigated, would have produced a materially wrong RQ2/RQ3 finding
+-- a fabricated total collapse in one cell -- from a measurement artifact
+rather than a real model behavior. The results in
+Section~\ref{sec:results} reflect the corrected parser throughout; the
+remaining 49 grid-wide parse failures were checked individually and are
+genuine content issues (invalid categories outside the fixed taxonomy,
+missing required fields, or, for one project specifically, output
+truncation consistent with the hidden-reasoning-token behavior already
+disclosed above), not further parsing artifacts.
 
 \begin{table}[t]
 \centering
@@ -661,17 +681,180 @@ rollover policy (Section~\ref{sec:limitations}).
 \section{Results}
 \label{sec:results}
 
-\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} As of 2026-07-29,
-\texttt{results/raw\_outputs/} contains 392 real generations and every one of
-the 189 (project $\times$ model $\times$ prompt) grid cells has at least 2
-real runs, so Method A (semantic matching against ground truth; RQ1/RQ2
-aggregates) can now be honestly written from
-\texttt{results/metrics\_preliminary.json}. Method B (human-rater agreement,
-\texttt{src/compute\_kappa.py}) still cannot: rater recruitment
+As of 2026-07-29, \texttt{results/raw\_outputs/} contains 392 real
+generations and every one of the 189 (project $\times$ model $\times$
+prompt) grid cells has at least 2 real runs. Method A (semantic matching
+against ground truth) is reported below for RQ1--RQ3. Method B (blinded
+human-rater agreement) is not: rater recruitment
 (\texttt{docs/rater\_recruitment\_outreach.md}) has not started, so no real
-rater scores exist yet. Do not insert illustrative or placeholder numbers
-here under any circumstance, and do not write this section without the
-authors' explicit go-ahead even for the Method A portion alone.
+rater scores exist yet, and that subsection is left as an explicit
+placeholder rather than filled with anything illustrative.
+
+All figures below exclude the 5-project short-register subgroup unless
+stated otherwise (Section~\ref{sec:methods}); that subgroup is reported
+separately in Section~\ref{sec:rq1-results}, since its precision behaves
+differently enough that folding it into the corpus-wide mean would obscure
+both numbers. A parse failure -- the response could not be validated
+against the output schema (Section~\ref{sec:methods}) -- counts as
+\texttt{recall}~$=0$ for that run but is excluded from that run's precision
+and category-accuracy, since neither is well-defined with zero generated
+risks to score; this asymmetry means precision and category-accuracy means
+are computed over fewer runs than recall means in any cell with parse
+failures, and are reported as such rather than silently pooled.
+
+\subsection{RQ1: Completeness and Accuracy vs.\ Human Registers}
+\label{sec:rq1-results}
+Corpus-wide (302 runs, excluding the short-register subgroup), generated
+registers recover 55.6\% of ground-truth risks on average (mean recall
+0.556) and 23.0\% of generated risks correspond to a real ground-truth risk
+(mean precision 0.230); among matched pairs, the generated risk is filed
+under the correct one of eight categories 45.0\% of the time (mean category
+accuracy 0.450). Read plainly: across all three models and all three
+prompting strategies, a generated register recovers roughly half of what a
+human risk register actually contains, and roughly three-quarters of what
+it generates does not correspond to anything in the human-authored
+register at all. This is a more cautious picture than the blind expert-review study
+discussed in Section~\ref{sec:related}, whose reviewers scored ChatGPT's
+output above the human baseline on the same task
+\cite{ecam2024chatgpt_exceed_humans} -- a difference
+we attribute to evaluation design rather than a contradiction: expert
+review scores plausibility and completeness as perceived by a reader, while
+semantic matching against a specific, real, independently authored register
+penalizes a generated risk for not corresponding to anything in that exact
+document, even when it would read as sensible in isolation. Both signals
+are informative; this study's contribution is showing what the
+ground-truth-matched picture looks like specifically, which no
+prior work in Table~\ref{tab:gap} reports.
+
+The 5-project short-register subgroup (90 runs) tells a sharper version of
+the same story: mean recall is 0.682 -- \emph{higher} than the corpus-wide
+figure -- while mean precision collapses to 0.095. Models do not
+meaningfully shorten their output for a project whose real human register
+is genuinely short; they generate a broadly similar volume of risks
+regardless of the real register's size, so recall holds up while precision
+craters. This is evidence against a simple ``models under-generate''
+account of the recall gap above, and toward a ``models do not calibrate
+output volume to the real risk surface of a specific project'' account
+instead -- a distinction that matters for RQ3 below.
+
+\subsection{RQ2: Variation Across Models and Prompting Strategies}
+\label{sec:rq2-results}
+\begin{table}[t]
+\centering
+\small
+\caption{Method A results by model and prompting strategy (corpus-wide, excl.\ short-register subgroup; 32 runs/cell)}
+\label{tab:rq2}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+\textbf{Model} & \textbf{Prompt} & \textbf{Fail} & \textbf{Rec.} & \textbf{Prec.} & \textbf{Cat.\ Acc.} \\
+\midrule
+Gemini (proprietary) & zero-shot & 2 & 0.675 & 0.229 & 0.365 \\
+Gemini (proprietary) & few-shot & 1 & 0.693 & 0.245 & 0.363 \\
+Gemini (proprietary) & structured & 1 & 0.612 & 0.229 & 0.393 \\
+gpt-oss-120b (open-wt.\ \#1) & zero-shot & 5 & 0.614 & 0.196 & 0.450 \\
+gpt-oss-120b (open-wt.\ \#1) & few-shot & 8 & 0.521 & 0.183 & 0.474 \\
+gpt-oss-120b (open-wt.\ \#1) & structured & 7 & 0.539 & 0.202 & 0.503 \\
+Llama-3.3-70B (open-wt.\ \#2) & zero-shot & 5 & 0.494 & 0.243 & 0.456 \\
+Llama-3.3-70B (open-wt.\ \#2) & few-shot & 10 & 0.409 & 0.258 & 0.532 \\
+Llama-3.3-70B (open-wt.\ \#2) & structured & 5 & 0.408 & 0.274 & 0.630 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Model choice separates recall more cleanly than prompting strategy does.
+Gemini, the sole proprietary model in this lineup (Table~\ref{tab:models}),
+leads recall in all three prompting conditions (0.612--0.693) with the
+fewest parse failures of any model (1--2 of 32 per cell, 4.2\% overall);
+Llama-3.3-70B trails recall in all three conditions (0.408--0.494).
+gpt-oss-120b sits between the two on recall (0.521--0.614) but ties
+Llama-3.3-70B on total parse failures (20 of 96 runs each, 20.8\%), for
+different underlying reasons -- Section~\ref{sec:methods}'s disclosed
+parser fix and the two models' remaining, genuinely-content failures are
+broken out in that section, not repeated here.
+
+Recall and category accuracy move in opposite directions across models,
+which is the more interesting RQ2 finding than either number alone.
+Llama-3.3-70B has the lowest recall of the three but the highest category
+accuracy in every one of its own three prompting conditions (0.456--0.630,
+peaking under structured prompting), and the highest precision of the three
+models in two of three conditions. Read together with the short-register
+finding in Section~\ref{sec:rq1-results}, this is consistent with a more
+conservative generation pattern: fewer risks identified overall, but a
+larger share of what is identified is both real (matched) and correctly
+categorized -- the opposite failure mode from a model that over-generates
+broadly plausible but unmatched or mis-filed risks. Structured prompting
+improves category accuracy over the other two prompting strategies for
+every model (Gemini: 0.393 vs.\ 0.363--0.365; gpt-oss-120b: 0.503 vs.\
+0.450--0.474; Llama-3.3-70B: 0.630 vs.\ 0.456--0.532), a small but
+consistent effect across all three models -- the clearest
+prompting-strategy effect in this grid. Structured prompting's effect on
+recall is not consistent in the same way (it is Gemini's
+\emph{lowest}-recall condition but not the other two models'), so
+``structured reasoning helps'' is only supported here for category accuracy
+specifically, not as a general claim.
+
+\subsection{RQ3: Category-Level Failure Modes}
+\label{sec:rq3-results}
+\begin{table}[t]
+\centering
+\small
+\caption{Missed and hallucinated risks by category (corpus-wide, excl.\ short-register subgroup)}
+\label{tab:rq3}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Category} & \textbf{Missed} & \textbf{Hallucinated} \\
+\midrule
+Political/Regulatory & 191 & 163 \\
+Financial & 130 & 497 \\
+External & 110 & 205 \\
+Organizational & 94 & 372 \\
+Technical & 69 & 511 \\
+Stakeholder & 30 & 426 \\
+Environmental & 47 & 357 \\
+Schedule & 0 & 238 \\
+Other (non-taxonomy, ground truth only) & 10 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Political/regulatory risk is the category models most systematically fail
+to identify at all: 191 ground-truth political/regulatory risks have no
+matched generated counterpart, more than any other category, while its
+hallucination count (163) is comparatively low -- models are not confusing
+other risks for political/regulatory ones, they are simply not surfacing
+real political/regulatory risk from the planning documentation as often as
+a human author does. Schedule risk shows the opposite pattern in its purest
+form: zero ground-truth schedule risks are missed (every real schedule risk
+in every register is recovered), while 238 generated risks labeled schedule
+have no ground-truth match -- models treat schedule risk as a near-default,
+safe category to generate even when the specific project's real register
+does not support it. Financial (497), technical (511), and stakeholder
+(426) hallucination counts are the three highest in absolute terms, but
+unlike schedule, all three also have real missed counts (130, 69, and 30
+respectively), so their story is over-generation alongside genuine
+omission, not pure over-generation. The ``other'' row (10 missed, 0
+hallucinated) reflects a small number of ground-truth risks whose original
+human-authored category did not map cleanly onto this study's fixed
+eight-category taxonomy during ground-truth construction; no generated risk
+was ever scored into this bucket by design, so its hallucination count is
+mechanically zero and not a finding.
+
+Read against Section~\ref{sec:rq1-results}'s short-register finding, the
+RQ3 picture is one of poor calibration rather than uniform weakness:
+models under-surface a specific, real category of risk
+(political/regulatory) that appears to require closer reading of a
+project's specific governance and regulatory context, while over-generating
+categories (schedule above all) that are safe, generic completions of
+almost any project-planning narrative regardless of whether that
+specific project's real risk profile supports them.
+
+\subsection{Method B: Human Expert Ratings}
+\textbf{[PLACEHOLDER.]} Blinded rating collection has not started; rater
+recruitment (\texttt{docs/rater\_recruitment\_outreach.md}) is the
+long-lead-time blocker (Section~\ref{sec:rater-status}). This subsection
+will report mean Likert scores and Fleiss' $\kappa$ per dimension, overall
+and broken out by model and prompting strategy, once real rater data exists
+-- not before.
 
 \section{Discussion and Limitations}
 \label{sec:limitations}
@@ -756,6 +939,7 @@ of this exposure; nonetheless, this is disclosed here as a real property of
 the experimental setup rather than omitted.
 
 \subsection{Rater Recruitment Status}
+\label{sec:rater-status}
 Method B's protocol -- sampling design, blinding mechanism, and the Fleiss'
 $\kappa$ computation itself -- is fully implemented and tested against a
 hand-derived worked example prior to this draft. Recruitment of the 3--5
@@ -814,10 +998,56 @@ silently conflated with a stable model, but a rollover occurring would
 still be a real threat to the comparability of runs collected on either
 side of it.
 
+\subsection{Future Work}
+\label{sec:future-work}
+Three directions follow directly from what this study's own results and
+limitations expose, rather than from generic extension of the design.
+
+\textbf{Closing the recall gap with retrieval or structured knowledge.}
+RQ1--RQ3 show a specific, not-uniform failure pattern: models
+systematically under-surface political/regulatory risk
+(Section~\ref{sec:rq3-results}) and do not calibrate output volume to a
+project's real risk surface (Section~\ref{sec:rq1-results}), rather than
+failing evenly across the board. Both the classification benchmark and the
+case-study agent discussed in Section~\ref{sec:related} point toward
+retrieval-augmented or taxonomy-grounded prompting as a plausible fix for
+exactly this kind of category-specific gap; this study's design (fixed
+zero-shot/few-shot/structured comparison) does not test that direction, and
+a natural next step is a fourth condition that grounds generation in a
+structured risk taxonomy or retrieved prior registers, evaluated with the
+same semantic-matching pipeline already built here.
+
+\textbf{Method B and its interaction with Method A.} Once human ratings
+exist (Section~\ref{sec:rater-status}), the natural follow-up question is
+where Method A and Method B agree and disagree at the level of individual
+registers, not only at the aggregate level each reports separately in this
+paper -- for example, whether the low-precision, high-recall pattern found
+in the short-register subgroup (Section~\ref{sec:rq1-results}) is one human
+raters penalize heavily, mildly, or not at all, which the semantic-matching
+signal alone cannot answer.
+
+\textbf{Contamination-controlled replication as model rosters change.} The
+free-tier model lineup used here (Section~\ref{sec:methods}) is a
+disclosed, real constraint on this study's model roster, not a claim that
+these three models are the ideal or final comparison set. As pretraining
+cutoffs move past this corpus's publication dates and as model access
+economics change, re-running this same released pipeline
+(Section~\ref{sec:methods}) against a different or larger model roster --
+particularly once the pretraining-contamination analysis in
+Section~\ref{sec:limitations} can be completed on a full
+\texttt{publication\_date}-labeled corpus rather than the 10-of-21 subset
+available now -- would test whether the recall/precision/category-accuracy
+pattern found here is a property of these specific models or a more general
+property of current-generation LLMs applied to this task.
+
 \section{Conclusion}
 
-\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} Conclusions cannot be drawn
-before Section~\ref{sec:results} contains real findings.
+\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS. Now unblocked: Results
+(Section~\ref{sec:results}) contains real findings, which was the only
+stated blocker here -- but writing the Conclusion itself was not part of
+what was approved in this pass, so it is left as a placeholder pending a
+separate go-ahead rather than written unprompted.]} Conclusions cannot be
+drawn before Section~\ref{sec:results} contains real findings.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
