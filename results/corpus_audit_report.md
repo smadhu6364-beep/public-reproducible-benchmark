@@ -2,7 +2,7 @@
 
 Report-only. No manifest, ground-truth, or processed-text file was modified by this run.
 
-**Summary: 19 PASS / 1 WARN / 1 FAIL** (of 21 included projects)
+**Summary: 18 PASS / 2 WARN / 1 FAIL** (of 21 included projects)
 
 ## P-MAR-SecondIdentityTargetingSocialProtection - FAIL
 - Check 1 (page-range): PASS - declared=[8, 9, 36] found=[8, 36] total_pages=48
@@ -10,6 +10,12 @@ Report-only. No manifest, ground-truth, or processed-text file was modified by t
 - Check 2 (leak check): FAIL
   - [verbatim_phrase] risk=R01: `the first Identity and Targeting for Social Protection`
   - [distinctive_code] risk=R01: `P155198`
+
+## P-UK-FreeBreakfastClubs - WARN
+- Check 1 (page-range): SKIPPED - HTML-only publication, no PDF/pagination - see check2b
+- Check 2 (leak check): PASS
+- Check 2b (live HTML re-fetch, FreeBreakfastClubs only): WARN
+  - could not re-fetch live HTML: <urlopen error Tunnel connection failed: 403 Forbidden>
 
 ## P-UK-PadeswoodCCUS - WARN
 - Check 1 (page-range): WARN - declared=[10, 11, 14, 15] found=[9, 10, 14] total_pages=17
@@ -101,11 +107,6 @@ Report-only. No manifest, ground-truth, or processed-text file was modified by t
 - Check 1 (page-range): PASS - declared=[9, 10, 27, 28, 78, 79] found=[10, 27, 78] total_pages=127
   - raw scan detail: {'key_risks_pages': [27, 78], 'sort_table_pages': [10, 27]}
 - Check 2 (leak check): PASS
-
-## P-UK-FreeBreakfastClubs - PASS
-- Check 1 (page-range): SKIPPED - HTML-only publication, no PDF/pagination - see check2b
-- Check 2 (leak check): PASS
-- Check 2b (live HTML re-fetch, FreeBreakfastClubs only): PASS
 
 ## P-UK-HyNetCCUSCluster - PASS
 - Check 1 (page-range): PASS - declared=[13, 14, 20, 21, 27, 32, 36, 37, 38] found=[13, 20, 27, 32, 36] total_pages=45

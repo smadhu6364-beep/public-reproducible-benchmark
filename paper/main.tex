@@ -161,11 +161,13 @@ described only in the abstract.
 \section{Related Work}
 \label{sec:related}
 
-\textit{Citation note: entries below use provisional \texttt{references.bib}
-keys. Several still carry a "TODO: verify" flag pending full-text
-confirmation of author lists, venues, and page numbers - see
-\texttt{docs/lit\_review\_foundation.md}. Resolve every TODO before
-submission.}
+\textit{Citation note: as of 2026-07-29, all entries in \texttt{references.bib}
+have been individually verified against primary sources (author lists,
+venues, pages) - no "TODO: verify" flags remain. Still open: Kruthik's
+domain-expert read-through of the five closest prior-work papers (see
+\texttt{docs/lit\_review\_foundation.md}, NEXT ACTIONS \#2) and a sanity
+check of the gap table below against his own knowledge of the field. Do not
+treat this section as submission-ready until that review is done.}
 
 \subsection{AI in Project Management}
 Systematic reviews of AI in project management consistently find that
@@ -654,14 +656,17 @@ rollover policy (Section~\ref{sec:limitations}).
 \section{Results}
 \label{sec:results}
 
-\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} This section is blocked on a
-real experiment run. As of this draft revision, \texttt{results/raw\_outputs/}
-contains zero real generations: the model tier and full pipeline are built
-and tested, but the run itself is pending provider-account billing setup.
-Populate this section from \texttt{results/metrics.json} (Method A: RQ1/RQ2
-aggregates) and the Method B rater-agreement output
-(\texttt{src/compute\_kappa.py}) once real data exists. Do not insert
-illustrative or placeholder numbers here under any circumstance.
+\textbf{[PLACEHOLDER - DO NOT SUBMIT AS-IS.]} As of 2026-07-29,
+\texttt{results/raw\_outputs/} contains 392 real generations and every one of
+the 189 (project $\times$ model $\times$ prompt) grid cells has at least 2
+real runs, so Method A (semantic matching against ground truth; RQ1/RQ2
+aggregates) can now be honestly written from
+\texttt{results/metrics\_preliminary.json}. Method B (human-rater agreement,
+\texttt{src/compute\_kappa.py}) still cannot: rater recruitment
+(\texttt{docs/rater\_recruitment\_outreach.md}) has not started, so no real
+rater scores exist yet. Do not insert illustrative or placeholder numbers
+here under any circumstance, and do not write this section without the
+authors' explicit go-ahead even for the Method A portion alone.
 
 \section{Discussion and Limitations}
 \label{sec:limitations}
