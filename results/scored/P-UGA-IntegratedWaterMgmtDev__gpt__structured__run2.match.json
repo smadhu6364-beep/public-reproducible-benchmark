@@ -4,11 +4,173 @@
   "model": "gpt",
   "prompt_strategy": "structured",
   "run_index": 2,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R10",
+      "gt_risk_id": "R05",
+      "similarity": 0.636,
+      "gen_category": "stakeholder",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R01",
+      "similarity": 0.494,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Incomplete needs assessment and inadequate geotechnical studies may cause design changes, leading to time and cost overruns.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct thorough design reviews, include contingency budgets, engage experienced consultants, and enforce strict change\u2011control procedures.",
+      "evidence": "Incomplete needs assessment and inadequate attention to geotechnical studies ... resulting in design changes/variations during construction and consequently time and cost overruns."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Limited domestic contracting capacity could delay works and increase costs, requiring reliance on international firms.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Perform market sounding, allow joint\u2011venture bids, and provide capacity\u2011building for local firms.",
+      "evidence": "Limited domestic contracting capacity to conduct projects of this nature, complexity, and scope; most contracts will be done by international firms."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Extreme temperature and precipitation variability may cause floods that damage water infrastructure.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Integrate climate\u2011resilient designs, flood protection, buffer zones and early\u2011warning systems into all infrastructure.",
+      "evidence": "Extreme temperature will likely trigger increased evapotranspiration and precipitation variability, leading to floods that can damage infrastructure."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Dry\u2011season flows at the Namatala intake may be insufficient, threatening water supply and environmental flow requirements.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Complete the Augmented Water Supply Study and consider storage or alternative sources to guarantee minimum environmental flow.",
+      "evidence": "Namatala\u2019s dry weather flows ... may not be sufficient to meet projected water demand and maintain an adequate EF."
+    },
+    {
+      "risk_id": "R05",
+      "description": "UWAs can meet O&M costs but lack revenue for capital investments, risking service gaps.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Set up a revolving fund, adjust tariffs for full cost recovery, and secure additional donor financing for capital works.",
+      "evidence": "UWAs can cover their routine O&M costs, but they do not generate enough revenue to cover capital investments."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Debt service on the IDA loan could strain NWSC cash flow.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Phase debt service, align repayments with cash\u2011flow forecasts, and keep a reserve fund for contingencies.",
+      "evidence": "Annual payments of principal and service charge would correspond to less than 1.4% of total revenues after 2025."
+    },
+    {
+      "risk_id": "R07",
+      "description": "IFMS project module not operational may cause financial reporting errors.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Prioritise full activation of the IFMS project module, train finance staff and apply manual cross\u2011checks during transition.",
+      "evidence": "Project module of the IFMS is not yet fully operational ... increases the risk of errors and inaccuracy of financial reports."
+    },
+    {
+      "risk_id": "R08",
+      "description": "PDU staff lack procurement experience and are over\u2011burdened, leading to procurement delays.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Recruit procurement consultants, provide targeted World Bank procurement training, and augment PDU staffing.",
+      "evidence": "PDU staff have no experience in using World Bank Procurement Regulations and have a heavy workload; leads to delays."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Delays in preparing specifications and Terms of Reference may postpone tendering.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign a dedicated technical team to draft specifications early and use standard templates for ToRs.",
+      "evidence": "Delays in preparing specifications, statement of requirements, and ToR by the User Departments."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Large refugee influx puts excessive pressure on water resources and public services.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Coordinate with UNHCR/OPM to integrate refugee water needs, expand supply capacity and develop a refugee water tariff.",
+      "evidence": "Estimated one million South Sudanese refugees have already migrated to Uganda, placing excessive pressure on Uganda\u2019s public services and natural resources."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Long water\u2011collection distances expose women and girls to gender\u2011based violence.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Install piped water points nearer households, ensure gender\u2011segregated facilities and conduct GBV awareness/training.",
+      "evidence": "Women and girls bear the heaviest burden for water collection; long walks trigger GBV such as sexual assaults."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Complex coordination among many agencies may cause implementation delays.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Create a formal inter\u2011agency coordination framework with regular meetings and clear roles for WESLD and focal points.",
+      "evidence": "Given the number of departments ... the MWE\u2019s WESLD will take the responsibility for overall coordination and communication."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Regional instability from the South\u2011Sudan conflict could disrupt project financing and operations.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Monitor regional security, develop contingency plans and maintain dialogue with donors to adjust implementation as needed.",
+      "evidence": "The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Handling of asbestos\u2011cement pipes poses health and environmental hazards.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Follow NEMA asbestos\u2011handling guidelines, embed safe removal/disposal procedures in contracts and train workers on hazardous\u2011material safety.",
+      "evidence": "Management measures for the removal, packaging, transportation and disposal of existing asbestos waste, following additional guidance that will be provided by NEMA."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Turnover of qualified staff reduces institutional memory and capacity.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Introduce staff\u2011retention incentives, succession planning and knowledge\u2011management systems.",
+      "evidence": "Turnover of qualified and experienced staff is noticed."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Internal audit reports are not regularly shared with the World Bank, limiting oversight.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish a schedule for timely sharing of internal\u2011audit reports with the World Bank and assign a liaison officer.",
+      "evidence": "Ministry internal audit review reports are not shared regularly with the World Bank."
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

@@ -4,11 +4,217 @@
   "model": "gpt",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R15",
+      "gt_risk_id": "R05",
+      "similarity": 0.624,
+      "gen_category": "external",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R11",
+      "gt_risk_id": "R03",
+      "similarity": 0.486,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R13",
+      "gt_risk_id": "R02",
+      "similarity": 0.458,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Incomplete geotechnical studies may cause design changes and cost overruns.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct comprehensive geotechnical investigations before final design and include cost contingency.",
+      "evidence": "Incomplete needs assessments and inadequate attention to geotechnical studies... resulting in design changes/variations during construction and consequently time and cost overruns."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Minimum environmental flow may not be maintained during dry season, harming downstream users and ecosystems.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Install flow\u2011monitoring devices, design intakes with buffer storage, and enforce minimum\u2011EF compliance.",
+      "evidence": "Namatala\u2019s dry weather flows may not be sufficient... downstream users and aquatic biota could be affected if minimum EF is not maintained."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Leakage from sewers, sludge drying beds and wastewater ponds if O&M is inadequate.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement strict O&M protocols, periodic inspections, and rapid repair mechanisms.",
+      "evidence": "Leakages from sewers, sludge drying beds and wastewater stabilization ponds will be minimized by regular monitoring and maintenance."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Improper handling of asbestos\u2011cement pipes poses health and environmental hazards.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Follow ESMF asbestos\u2011handling procedures and use certified disposal contractors.",
+      "evidence": "For AC pipes, the Environmental Management Plan includes management measures for removal, packaging, transportation and disposal of existing asbestos waste."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Small\u2011dam safety risks due to inadequate design or inspection.",
+      "category": "technical",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Use qualified engineers, adhere to Small\u2011Dam Guidelines, and conduct independent safety audits.",
+      "evidence": "Qualified engineers are used to design these dams; Small Dam Guidelines will be used to ensure adherence to generic dam safety measures."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Low technical expertise for solar\u2011powered water schemes may delay implementation.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide targeted technical assistance and capacity\u2011building workshops for solar pump installation.",
+      "evidence": "The most important barrier to solar schemes is the low level of technical expertise on solar energy among WASH stakeholders."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Underestimation of construction costs leading to overruns.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Use detailed cost estimates, apply a contingency buffer, and monitor expenditures monthly.",
+      "evidence": "Delayed construction and underestimation of the cost of works attributed to preparation of designs for works during the Project life."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Revenue collection may be insufficient where tariffs do not cover costs.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Review and adjust tariffs, improve billing systems, and strengthen revenue\u2011collection mechanisms.",
+      "evidence": "In some regions, cost recovery is not achieved. The NWSC\u2019s financial analysis shows tariffs cover O&M but not investment costs."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Debt service on the IDA loan could strain NWSC cash flow.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Phase loan repayments, maintain cost\u2011recovery ratios above 1.1, and explore refinancing options.",
+      "evidence": "Annual payments of principal and service charge would correspond to less than 1.4\u202f% of total annual revenues after 2025."
+    },
+    {
+      "risk_id": "R10",
+      "description": "UWAs depend on donor subsidies for capital investments.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish a revolving financing facility and progressive tariff policy to build internal funding.",
+      "evidence": "UWAs are still dependent on public financing for capital investments and for providing assistance on O&M related\u2011activities."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Procurement delays due to PDU staff\u2019s lack of experience and heavy workload.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Recruit a procurement consultant experienced with World Bank rules and provide on\u2011the\u2011job training.",
+      "evidence": "PDU staff have no experience in using World Bank Procurement Regulations and have a heavy workload."
+    },
+    {
+      "risk_id": "R12",
+      "description": "Delays in preparing specifications and Terms of Reference.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Assign dedicated technical officers to draft ToRs early and set firm internal deadlines.",
+      "evidence": "Delays in preparing specifications, statement of requirements, and ToRs by the User Departments."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Vendor payments delayed by internal approval bottlenecks.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement a payment\u2011tracking system with clear SLA for approvals and senior management oversight.",
+      "evidence": "Delays in paying vendors due to delays in internal approving processes."
+    },
+    {
+      "risk_id": "R14",
+      "description": "Staff turnover reduces institutional memory and continuity.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 2,
+      "mitigation": "Offer retention incentives, document procedures, and ensure knowledge\u2011transfer hand\u2011over plans.",
+      "evidence": "Turnover of qualified and experienced staff is noticed."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Large refugee influx increases pressure on water resources and host communities.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Coordinate with UNHCR for joint water\u2011service planning and scale up infrastructure with buffer capacity.",
+      "evidence": "An estimated one million South Sudanese refugees have already migrated to Uganda\u2026 pressure on Uganda\u2019s public services and natural resources."
+    },
+    {
+      "risk_id": "R16",
+      "description": "Long water\u2011collection distances increase gender\u2011based violence risk.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Locate water points within 200\u202fm of households and run gender\u2011sensitive awareness campaigns.",
+      "evidence": "Women and girls bear the heaviest burden for water collection. Long walks\u2026 trigger serious social consequences, including GBV."
+    },
+    {
+      "risk_id": "R17",
+      "description": "Labor influx may lead to GBV and other social issues.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Include a Labour\u2011Influx Management Plan, enforce contractor code\u2011of\u2011conduct, and monitor compliance.",
+      "evidence": "Measures to address labour influx include a code of conduct\u2026 to minimize any potential GBV in the Project areas."
+    },
+    {
+      "risk_id": "R18",
+      "description": "Coordination challenges among multiple agencies could cause delays.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Strengthen the PST, schedule regular inter\u2011agency meetings, and use a shared project\u2011management platform.",
+      "evidence": "Given the number of departments\u2026 the WESLD will take responsibility for overall coordination and communication."
+    },
+    {
+      "risk_id": "R19",
+      "description": "Regional instability from the South\u2011Sudan conflict threatens project execution.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Maintain security monitoring, develop contingency scenarios, and keep implementation schedules flexible.",
+      "evidence": "The most critical risk to this outlook is regional instability, particularly from the ongoing conflict in South Sudan."
+    },
+    {
+      "risk_id": "R20",
+      "description": "Climate\u2011change\u2011induced floods and droughts threaten water\u2011supply reliability.",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Integrate climate\u2011resilient designs, catchment protection, flood\u2011proof structures, and early\u2011warning systems.",
+      "evidence": "A high\u2011level screening\u2026 extreme temperature\u2026 increase in precipitation\u2026 likely to cause floods."
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

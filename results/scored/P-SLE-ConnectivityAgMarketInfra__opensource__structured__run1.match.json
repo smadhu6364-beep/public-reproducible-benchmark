@@ -4,11 +4,100 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R04",
+      "similarity": 0.632,
+      "gen_category": "technical",
+      "gt_category": "environmental",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R01",
+      "similarity": 0.571,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R02",
+      "similarity": 0.511,
+      "gen_category": "financial",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical risks: design and construction risks, such as the risk of bridge collapse or road damage due to climate-related events.",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Conduct regular monitoring and maintenance of infrastructure.",
+      "evidence": "The project documentation highlights the risk of bridge collapse or road damage due to climate-related events."
+    },
+    {
+      "risk_id": "R02",
+      "description": "Financial risks: cost overruns, delays in disbursement, or changes in exchange rates.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct regular budget reviews and ensure timely disbursement of funds.",
+      "evidence": "The project documentation highlights the risk of cost overruns, delays in disbursement, or changes in exchange rates."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Schedule risks: delays in construction or implementation, such as delays in the completion of bridge construction.",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a detailed project schedule and conduct regular progress monitoring.",
+      "evidence": "The project documentation highlights the risk of delays in construction or implementation."
+    },
+    {
+      "risk_id": "R04",
+      "description": "Stakeholder risks: community resistance, lack of engagement, or inadequate consultation with stakeholders.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct regular stakeholder engagement and consultation activities.",
+      "evidence": "The project documentation highlights the risk of community resistance, lack of engagement, or inadequate consultation with stakeholders."
+    },
+    {
+      "risk_id": "R05",
+      "description": "Political/Regulatory risks: changes in government policies, laws, or regulations that may affect the project.",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Conduct regular monitoring of regulatory changes and engage with government stakeholders.",
+      "evidence": "The project documentation highlights the risk of changes in government policies, laws, or regulations that may affect the project."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Environmental risks: damage to natural habitats, pollution, or other environmental impacts.",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Conduct environmental impact assessments and develop strategies to minimize environmental damage.",
+      "evidence": "The project documentation highlights the risk of damage to natural habitats, pollution, or other environmental impacts."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Organizational risks: capacity constraints, lack of coordination, or inadequate institutional arrangements.",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a detailed institutional arrangement and conduct regular capacity-building activities.",
+      "evidence": "The project documentation highlights the risk of capacity constraints, lack of coordination, or inadequate institutional arrangements."
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

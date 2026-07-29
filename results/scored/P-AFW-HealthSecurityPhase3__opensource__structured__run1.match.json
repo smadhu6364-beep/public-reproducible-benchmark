@@ -4,11 +4,138 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
   "matches": [],
-  "gen_risks": [],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate laboratory capacity",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Strengthen laboratory capacity through training and equipment provision",
+      "evidence": "Section II, Component 2, Subcomponent 2.2"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient surveillance systems",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Strengthen surveillance systems through training and equipment provision",
+      "evidence": "Section II, Component 2, Subcomponent 2.1"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Ineffective emergency response mechanisms",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Strengthen emergency response mechanisms through training and equipment provision",
+      "evidence": "Section II, Component 3, Subcomponent 3.1"
+    },
+    {
+      "risk_id": "R04",
+      "description": "High reliance on donor funding",
+      "category": "financial",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Diversify funding sources, improve financial management",
+      "evidence": "Section IV, Financial Management"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Potential for financial constraints in recipient countries",
+      "category": "financial",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Improve financial management, provide technical assistance to recipient countries",
+      "evidence": "Section IV, Financial Management"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Delays in project implementation",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a detailed project schedule, provide regular progress updates",
+      "evidence": "Section III, Implementation Arrangements"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Ineffective engagement and participation of stakeholders",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a stakeholder engagement plan, provide regular progress updates",
+      "evidence": "Section III, Implementation Arrangements"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Changes in government policies or priorities",
+      "category": "political_regulatory",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop a flexible project design, provide regular progress updates to governments and stakeholders",
+      "evidence": "Section I, Strategic Context"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Potential for laboratory waste",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a laboratory waste management plan, provide training on laboratory waste management",
+      "evidence": "Section II, Component 2, Subcomponent 2.2"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Use of chemicals and equipment that could harm the environment",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a plan for the safe use and disposal of chemicals and equipment",
+      "evidence": "Section II, Component 2, Subcomponent 2.2"
+    },
+    {
+      "risk_id": "R11",
+      "description": "Ineffective organizational structures and systems",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a detailed project organizational structure, provide training on project management",
+      "evidence": "Section III, Implementation Arrangements"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Climate change",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop a plan to address the impacts of climate change on the project",
+      "evidence": "Section I, Strategic Context"
+    },
+    {
+      "risk_id": "R13",
+      "description": "Conflict",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop a plan to address the impacts of conflict on the project",
+      "evidence": "Section I, Strategic Context"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Economic instability",
+      "category": "external",
+      "likelihood": 5,
+      "impact": 5,
+      "mitigation": "Develop a plan to address the impacts of economic instability on the project",
+      "evidence": "Section I, Strategic Context"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

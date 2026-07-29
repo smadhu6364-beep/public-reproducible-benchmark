@@ -4,11 +4,127 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R04",
+      "similarity": 0.647,
+      "gen_category": "technical",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R03",
+      "similarity": 0.632,
+      "gen_category": "schedule",
+      "gt_category": "stakeholder",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R01",
+      "similarity": 0.604,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate capacity of NAFIN and PFIs to design and implement sustainable finance products",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide technical assistance and capacity building to NAFIN and PFIs",
+      "evidence": "NAFIN has limited experience in designing and implementing sustainable finance products"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Limited access to long-term financing for SMEs and mid-caps",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Provide financing and co-financing options to SMEs and mid-caps",
+      "evidence": "SMEs do not have adequate access to the loan products needed to invest in green technologies"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in project implementation due to inadequate capacity of NAFIN and PFIs",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Provide technical assistance and capacity building to NAFIN and PFIs",
+      "evidence": "NAFIN's experience has mainly focused on overseeing and reviewing procurement processes"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Limited participation of PFIs and beneficiary enterprises in the project",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Engage with PFIs and beneficiary enterprises through outreach and awareness-raising activities",
+      "evidence": "NAFIN will channel financing through its existing network of financial intermediaries"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Changes in government policies or regulations that may affect the project's implementation",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Monitor policy and regulatory changes and adjust the project's implementation accordingly",
+      "evidence": "The government has introduced policies and instruments to promote sustainable finance"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Climate-related risks, such as extreme weather events, that may affect the project's implementation",
+      "category": "environmental",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Incorporate climate risk management into the project's design and implementation",
+      "evidence": "Mexico faces significant climate vulnerability due to its exposure to extreme weather events"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate environmental and social risk management by NAFIN and PFIs",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide training and capacity building on environmental and social risk management to NAFIN and PFIs",
+      "evidence": "Environmental and Social (E&S) risk is assessed as Substantial"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate governance and management structures within NAFIN and PFIs",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Provide technical assistance and capacity building to NAFIN and PFIs",
+      "evidence": "NAFIN has a strong track record in implementing traditional, second-tier credit lines and guarantee programs"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Economic downturn or crisis that may affect the project's implementation",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Monitor economic trends and adjust the project's implementation accordingly",
+      "evidence": "The project is expected to bring significant economic, financial, environmental, technical, and social benefits"
+    },
+    {
+      "risk_id": "R10",
+      "description": "Changes in global market trends or conditions that may affect the project's implementation",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Monitor global market trends and adjust the project's implementation accordingly",
+      "evidence": "The project supports Mexico's NDC 3.0 and the National Climate Change Strategy in both their adaptation and mitigation goals"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

@@ -4,11 +4,48 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 2,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R04",
+      "similarity": 0.473,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical risk - Design and construction flaws",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Ensure proper design and construction, conduct regular inspections and maintenance, and provide training to operators.",
+      "evidence": "Project documentation highlights the importance of proper design and construction"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Financial risk - NWSC's tariff",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Conduct a tariff review, explore alternative financing options, and implement cost-saving measures.",
+      "evidence": "NWSC's current tariff may not be sufficient to cover operational and maintenance costs"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Environmental risk - Water pollution",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement environmental mitigation measures, conduct regular monitoring, and provide training to operators.",
+      "evidence": "Project may have environmental impacts, such as water pollution"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

@@ -4,11 +4,101 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R02",
+      "similarity": 0.529,
+      "gen_category": "environmental",
+      "gt_category": "organizational",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R01",
+      "similarity": 0.499,
+      "gen_category": "stakeholder",
+      "gt_category": "financial",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Difficulty in collaboration with sector partners",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish clear communication channels and regular meetings with sector partners",
+      "evidence": "The programme's success depends on... effective collaboration with the sector partners"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Uncertainty in funding for future years",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Develop a comprehensive funding plan and engage with HM Treasury",
+      "evidence": "Funding for future years will be agreed separately through business cases"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in national rollout",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a detailed project timeline and monitor progress regularly",
+      "evidence": "The programme will start national rollout in year 1 by funding EA schools, NSBP schools and a new cohort, with future cohorts staggered"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Low participation from eligible schools",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide incentives and support for eligible schools to participate",
+      "evidence": "Schools with 40% or more FSM 'Ever 6' pupils will be eligible to apply for a place"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Changes in legislation or policy",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Monitor policy changes and engage with relevant stakeholders",
+      "evidence": "The Children's Wellbeing and Schools Bill will place a duty on state-funded schools to offer a breakfast club"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Difficulty in meeting school food standards",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Provide guidance and support for schools to meet food standards",
+      "evidence": "Food provided must be in line with school food standards"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Insufficient skilled staff and resources",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a recruitment plan and provide training for staff",
+      "evidence": "The programme's success depends on... the availability of skilled staff and resources"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Delays in approval and budget confirmation from HM Treasury",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Engage with HM Treasury and develop a contingency plan",
+      "evidence": "The programme's success depends on... timely approval and budget confirmation from HM Treasury"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

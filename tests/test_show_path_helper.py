@@ -99,14 +99,13 @@ class TestNoUnguardedRelativeToRepoRoot(unittest.TestCase):
     # so an edit that moves the code doesn't silently keep the allowlist valid
     # for the wrong line.
     ALLOWED = {
-        # Shifted again 2026-07-23 by the free-tier provider redesign (new
-        # _openai_compatible_call/call_claude/call_gpt/call_opensource
-        # docstrings + the --batch-inapplicable note) - same constants, same
-        # justification, just further down the file.
-        ("run_experiments.py", 916),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
-        ("run_experiments.py", 1140),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1243),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
-        ("run_experiments.py", 1451),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        # Shifted again 2026-07-29 by parse_model_response's rewrite (added
+        # _extract_json_values + the project_id backfill logic) - same
+        # constants, same justification, just further down the file.
+        ("run_experiments.py", 982),   # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
+        ("run_experiments.py", 1206),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1309),  # BATCH_JOBS_LOG -> fixed constant, no CLI override
+        ("run_experiments.py", 1517),  # raw_output_path -> fixed RAW_OUTPUTS_DIR, no CLI override
         ("validate_threshold.py", 191),  # PILOT_PATH -> fixed constant, no CLI override
     }
 

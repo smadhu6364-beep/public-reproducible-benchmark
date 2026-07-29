@@ -4,11 +4,75 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
   "matches": [],
-  "gen_risks": [],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Ineffective monitoring and evaluation systems",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a robust monitoring and evaluation framework, including regular progress reports and evaluations",
+      "evidence": "The project's success relies on effective monitoring and evaluation"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Inefficient allocation of resources",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Conduct regular budget reviews and allocate resources effectively",
+      "evidence": "The project's budget is EUR 89.5 million"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in project implementation",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a detailed project timeline and track progress regularly",
+      "evidence": "The project will be implemented over a period of four years"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Ineffective stakeholder coordination",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a stakeholder engagement plan and facilitate regular communication",
+      "evidence": "The project involves multiple stakeholders, including government agencies"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Environmental impacts of innovation and technology transfer",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Conduct an environmental impact assessment and implement mitigation measures",
+      "evidence": "The project includes innovation and technology transfer components"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Ineffective institutional capacity",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Establish a capacity-building plan and provide training and support to implementing institutions",
+      "evidence": "The project requires effective institutional capacity and coordination"
+    },
+    {
+      "risk_id": "R07",
+      "description": "External factors affecting project success",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Monitor external factors and adjust the project plan as needed",
+      "evidence": "The project is subject to external factors, such as economic trends and global market conditions"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

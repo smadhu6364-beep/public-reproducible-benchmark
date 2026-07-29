@@ -77,6 +77,79 @@ class TestParseModelResponse(unittest.TestCase):
         self.assertIsNone(err)
         self.assertEqual(parsed["project_id"], "P-TEST")
 
+    def test_structured_bare_array_instead_of_object(self):
+        # Real observed behavior: model wraps FINAL JSON in a bare array
+        # rather than the required {"project_id":..., "risks":[...]} object.
+        risk = _valid_register()["risks"][0]
+        text = "REASONING: ...\nFINAL JSON: [" + json.dumps(risk) + "]"
+        parsed, err = rx.parse_model_response(text, "structured", expected_project_id="P-TEST")
+        self.assertIsNone(err)
+        self.assertEqual(parsed["project_id"], "P-TEST")
+        self.assertEqual(len(parsed["risks"]), 1)
+
+    def test_structured_bare_comma_separated_objects_no_wrapper(self):
+        # Real observed behavior: model lists risk objects comma-separated
+        # with no enclosing array at all after FINAL JSON:.
+        r1 = _valid_register()["risks"][0]
+        r2 = dict(r1, risk_id="R02", description="A second concrete risk.")
+        text = "REASONING: ...\nFINAL JSON:\n" + json.dumps(r1) + ",\n" + json.dumps(r2)
+        parsed, err = rx.parse_model_response(text, "structured", expected_project_id="P-TEST")
+        self.assertIsNone(err)
+        self.assertEqual(len(parsed["risks"]), 2)
+        self.assertEqual(parsed["risks"][1]["risk_id"], "R02")
+
+    def test_structured_trailing_prose_after_json_recovered(self):
+        # Real observed behavior: explanatory prose appended after an
+        # otherwise-complete JSON value breaks a strict end-of-string anchor.
+        body = json.dumps(_valid_register(project_id="P-TEST"))
+        text = "REASONING: ...\nFINAL JSON: " + body + "\n\nLet me know if you need anything else!"
+        parsed, err = rx.parse_model_response(text, "structured")
+        self.assertIsNone(err)
+        self.assertEqual(parsed["project_id"], "P-TEST")
+
+    def test_missing_project_id_backfilled_from_expected(self):
+        reg = _valid_register()
+        del reg["project_id"]
+        parsed, err = rx.parse_model_response(json.dumps(reg), "zero_shot", expected_project_id="P-BACKFILLED")
+        self.assertIsNone(err)
+        self.assertEqual(parsed["project_id"], "P-BACKFILLED")
+
+    def test_missing_project_id_without_expected_still_fails(self):
+        reg = _valid_register()
+        del reg["project_id"]
+        parsed, err = rx.parse_model_response(json.dumps(reg), "zero_shot")
+        self.assertIsNone(parsed)
+        self.assertIn("project_id", err)
+
+    def test_risk_register_key_normalized_to_risks(self):
+        # Real observed behavior: model uses "risk_register" as the array
+        # key instead of the schema's required "risks".
+        reg = _valid_register()
+        reg["risk_register"] = reg.pop("risks")
+        parsed, err = rx.parse_model_response(json.dumps(reg), "zero_shot")
+        self.assertIsNone(err)
+        self.assertEqual(len(parsed["risks"]), 1)
+        self.assertNotIn("risk_register", parsed)
+
+    def test_category_case_mismatch_normalized(self):
+        # Real observed behavior: model writes "External" (valid category,
+        # wrong case) instead of the schema's required lowercase "external".
+        reg = _valid_register()
+        reg["risks"][0]["category"] = "Schedule"
+        parsed, err = rx.parse_model_response(json.dumps(reg), "zero_shot")
+        self.assertIsNone(err)
+        self.assertEqual(parsed["risks"][0]["category"], "schedule")
+
+    def test_invalid_category_still_rejected_not_papered_over(self):
+        # Real observed model behavior (gpt/few_shot): inventing a category
+        # outside the fixed taxonomy is a genuine finding, not a formatting
+        # bug - must still fail, never silently remapped or accepted.
+        reg = _valid_register()
+        reg["risks"][0]["category"] = "legal"
+        parsed, err = rx.parse_model_response(json.dumps(reg), "zero_shot", expected_project_id="P-TEST")
+        self.assertIsNone(parsed)
+        self.assertIn("legal", err)
+
 
 class TestParseJudgeResponse(unittest.TestCase):
     def test_valid_scores(self):

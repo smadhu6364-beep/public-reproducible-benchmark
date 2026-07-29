@@ -646,16 +646,59 @@ def resolve_model_version(model_label: str) -> str:
 # Response parsing
 # ---------------------------------------------------------------------------
 
-_FINAL_JSON_RE = re.compile(r"FINAL JSON:\s*(\{.*\})\s*\Z", re.DOTALL)
-_BARE_JSON_RE = re.compile(r"\{.*\}", re.DOTALL)
+
+def _extract_json_values(text: str) -> list:
+    """Decode one or more sequential top-level JSON values from text, skipping
+    whitespace/comma separators between them, starting from the first '{' or
+    '[' found. Stops (without error) as soon as remaining content no longer
+    starts a decodable JSON value - that remainder is treated as trailing
+    prose, not a failure.
+
+    This recovers three real, observed model behaviors that a single
+    anchored regex + json.loads cannot: (1) a bare JSON array instead of the
+    required top-level object, (2) explanatory prose appended after an
+    otherwise-complete JSON value, and (3) multiple bare risk objects listed
+    comma-separated with no enclosing array at all - each decodes as its own
+    top-level value in sequence.
+    """
+    start_obj = text.find("{")
+    start_arr = text.find("[")
+    candidates = [i for i in (start_obj, start_arr) if i != -1]
+    if not candidates:
+        return []
+    i = min(candidates)
+    n = len(text)
+    decoder = json.JSONDecoder()
+    values: list = []
+    while i < n:
+        while i < n and (text[i].isspace() or text[i] == ","):
+            i += 1
+        if i >= n:
+            break
+        try:
+            val, end = decoder.raw_decode(text, i)
+        except json.JSONDecodeError:
+            break
+        values.append(val)
+        i = end
+    return values
 
 
-def parse_model_response(raw_text: str, prompt_strategy: str) -> tuple[Optional[dict], Optional[str]]:
+def parse_model_response(
+    raw_text: str, prompt_strategy: str, expected_project_id: Optional[str] = None
+) -> tuple[Optional[dict], Optional[str]]:
     """Returns (parsed_risks, parse_error). Exactly one is None.
 
     zero_shot/few_shot: expect the ENTIRE response to be a single JSON object.
-    structured: expect 'REASONING: ...' followed by 'FINAL JSON: {...}';
-    only the JSON after the FINAL JSON: marker is parsed and validated.
+    structured: expect 'REASONING: ...' followed by 'FINAL JSON: ...'; only
+    the content after the FINAL JSON: marker is parsed and validated.
+
+    expected_project_id backfills a missing top-level "project_id" field
+    (known independently from which cell this call was for - not something a
+    model needs to correctly restate to prove it did the risk-identification
+    task). This does NOT relax anything about the *risk* content itself:
+    invalid categories, missing required risk fields, wrong types, etc. all
+    still fail schema validation exactly as before.
     """
     import jsonschema
 
@@ -664,29 +707,52 @@ def parse_model_response(raw_text: str, prompt_strategy: str) -> tuple[Optional[
 
     text = raw_text.strip()
     if prompt_strategy == "structured":
-        m = _FINAL_JSON_RE.search(text)
-        if not m:
+        marker = "FINAL JSON:"
+        idx = text.find(marker)
+        if idx == -1:
             return None, "structured response missing a 'FINAL JSON:' marker followed by a JSON object"
-        json_text = m.group(1)
+        json_text = text[idx + len(marker):].strip()
     else:
         # Defensive: models sometimes wrap JSON in markdown fences despite
         # instructions not to. Strip fences if present, then require the
         # remainder to parse as JSON outright.
-        fence_stripped = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
-        json_text = fence_stripped
+        json_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text, flags=re.MULTILINE).strip()
 
-    try:
-        parsed = json.loads(json_text)
-    except json.JSONDecodeError as e:
-        # Last-resort fallback: try to find the first {...} blob anywhere in
-        # the text before giving up, since some models add stray prose.
-        m2 = _BARE_JSON_RE.search(json_text)
-        if not m2:
-            return None, f"JSON parse failed and no JSON object found: {e}"
-        try:
-            parsed = json.loads(m2.group(0))
-        except json.JSONDecodeError as e2:
-            return None, f"JSON parse failed: {e2}"
+    values = _extract_json_values(json_text)
+    if not values:
+        return None, "JSON parse failed and no JSON object found"
+
+    # Multiple sequential top-level values means the model listed bare risk
+    # objects comma-separated with no enclosing array - treat the sequence
+    # itself as the risks list rather than discarding everything after the
+    # first object.
+    parsed = values[0] if len(values) == 1 else values
+
+    if isinstance(parsed, list):
+        parsed = {"risks": parsed}
+    if isinstance(parsed, dict) and "risks" not in parsed and "risk_register" in parsed:
+        # Observed model behavior: same list of risk objects, synonym key
+        # name. Not a different shape - normalize the key, don't touch the
+        # list's contents. (Only reachable when parsed came from a single
+        # dict value - the multi-value/list case above already produced a
+        # dict with "risks" set, so this branch never sees it.)
+        risk_list = parsed["risk_register"]
+        parsed = {k: v for k, v in parsed.items() if k != "risk_register"}
+        parsed["risks"] = risk_list
+    if isinstance(parsed, dict) and "project_id" not in parsed and expected_project_id:
+        parsed = {**parsed, "project_id": expected_project_id}
+    if isinstance(parsed, dict) and isinstance(parsed.get("risks"), list):
+        # Observed model behavior: a category that is one of the 8 valid
+        # values except for capitalization ("External" vs "external"). Fix
+        # casing only - a category that isn't in the taxonomy at all under
+        # any casing (e.g. "legal", "market") is a genuine finding and must
+        # still fail validation below, unchanged.
+        valid_categories = {c.lower() for c in schema["$defs"]["risk"]["properties"]["category"]["enum"]}
+        for risk in parsed["risks"]:
+            if isinstance(risk, dict) and isinstance(risk.get("category"), str):
+                lowered = risk["category"].lower()
+                if lowered in valid_categories and risk["category"] != lowered:
+                    risk["category"] = lowered
 
     try:
         jsonschema.validate(instance=parsed, schema=schema)
@@ -873,7 +939,7 @@ def _finalize_run(
             f"run_index; if calling this directly, pick an unused run_index."
         )
 
-    parsed, parse_error = parse_model_response(raw_text, prompt_strategy)
+    parsed, parse_error = parse_model_response(raw_text, prompt_strategy, expected_project_id=project_id)
     run_date = datetime.now(timezone.utc).isoformat()
 
     record = {
