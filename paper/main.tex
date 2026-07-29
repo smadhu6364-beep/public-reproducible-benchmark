@@ -199,13 +199,18 @@ The closest prior work evaluates ChatGPT against expert judgment on
 construction-project risk identification and mitigation, finding strong
 performance on generic, checklist-style risks but weaker performance on
 context-specific risks -- typically the highest-severity ones
-\cite{asce2025exploring_chatgpt_risk}. Related studies report similar
-patterns using GPT-3.5 and GPT-4 under expert or focus-group evaluation
-\cite{aladag2023assessing_chatgpt,ecam2024chatgpt_exceed_humans}, including
+\cite{asce2025exploring_chatgpt_risk}. Related studies report the same
+generic-strong/specific-weak split under expert or focus-group evaluation,
+though their headline verdicts on ChatGPT differ: one finds moderate
+overall performance \cite{aladag2023assessing_chatgpt}, while another --
+itself an explicitly blind, anonymous-peer-review design -- finds
+ChatGPT's scores exceed the human average on the same task, even as
+reviewers still preferred human answers for practicality and specificity
+\cite{ecam2024chatgpt_exceed_humans}. Further related work includes
 one evaluation structured explicitly around the ISO 31000 risk-management
 process rather than an ad hoc rubric \cite{esrel2023iso31000_chatgpt}, and
-one develops a fine-tuned agent (RiskGPT) evaluated on a small set of case
-studies rather than a public benchmark \cite{wen2025riskgpt}. Adjacent
+one that develops a fine-tuned agent (RiskGPT) evaluated on a small set of
+case studies rather than a public benchmark \cite{wen2025riskgpt}. Adjacent
 generative applications include LLM-assisted contract review via
 knowledge-graph augmentation \cite{contractkg2023llm} and a direct
 comparison of generative-AI versus human project managers on planning
@@ -294,7 +299,7 @@ Evaluated against expert opinion, not real ground truth & Semantic matching agai
 Construction-sector only & Cross-sector public corpus (World Bank + UK) \\
 No public, reproducible benchmark & Corpus manifest, prompts, and code released \\
 Known weak-category behavior never quantified per category & Per-category recall/precision failure-mode analysis (RQ3) \\
-Non-blind rating designs criticized in prior work & Blinded rating protocol, Fleiss' $\kappa$ reported \\
+No formal inter-rater agreement statistic reported, even where blind & Blinded protocol with Fleiss' $\kappa$ across 3--5 raters (RQ1/RQ3) \\
 \bottomrule
 \end{tabular}
 \end{table}
