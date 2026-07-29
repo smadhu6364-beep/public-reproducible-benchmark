@@ -4,11 +4,117 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R01",
+      "similarity": 0.523,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R03",
+      "similarity": 0.482,
+      "gen_category": "organizational",
+      "gt_category": "financial",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R04",
+      "similarity": 0.472,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R02",
+      "similarity": 0.458,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Risk of data management and integration issues related to the Dynamic Social Registry",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Ensure that the Dynamic Social Registry is developed and implemented with robust data management and integration systems",
+      "evidence": "Project documentation mentions the risk of data management and integration issues"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Risk of delays in disbursement or misallocation of funds",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Ensure that financial management systems are in place to manage the budget and ensure timely disbursement of funds",
+      "evidence": "Project documentation mentions the risk of delays in disbursement or misallocation of funds"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Risk of delays in implementation, particularly related to the development and rollout of the Dynamic Social Registry",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Ensure that a detailed implementation schedule is developed and monitored regularly to minimize delays",
+      "evidence": "Project documentation mentions the risk of delays in implementation"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Risk of coordination and communication issues among stakeholders",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Ensure that stakeholder coordination and communication mechanisms are in place to minimize risks related to stakeholder management",
+      "evidence": "Project documentation mentions the risk of coordination and communication issues among stakeholders"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Risk of changes in government priorities or policies",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Ensure that the project is aligned with government priorities and policies and that any changes in government priorities or policies are monitored and addressed",
+      "evidence": "Project documentation mentions the risk of changes in government priorities or policies"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Risk of environmental implications related to the use of technology and data management",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Ensure that environmental implications of the use of technology and data management are considered and mitigated",
+      "evidence": "Project documentation mentions the use of technology and data management"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Risk of capacity and capability issues related to the implementing agencies",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Ensure that the implementing agencies have the necessary capacity and capability to implement the project",
+      "evidence": "Project documentation mentions the risk of capacity and capability issues related to the implementing agencies"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Risk of external factors, such as economic downturns or natural disasters",
+      "category": "external",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Ensure that external factors, such as economic downturns or natural disasters, are monitored and addressed",
+      "evidence": "Project documentation mentions the risk of external factors"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

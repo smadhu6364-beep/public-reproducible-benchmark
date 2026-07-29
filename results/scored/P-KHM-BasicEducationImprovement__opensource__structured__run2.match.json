@@ -4,11 +4,93 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 2,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R06",
+      "gt_risk_id": "R01",
+      "similarity": 0.536,
+      "gen_category": "environmental",
+      "gt_category": "environmental",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Delays in rollout of EGL program",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide technical assistance and training to support the rollout of the EGL program",
+      "evidence": "The project will support rolling out both EGR and EGM programs for Grades 1\u20133 in all provinces"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays in disbursement due to overloaded FM staff",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Hire additional FM staff and provide training to support disbursement",
+      "evidence": "The fiduciary risk for the project is rated Moderate"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in completion of activities due to inadequate budgeting",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Review and revise the budget to ensure adequate funding for activities",
+      "evidence": "The project is expected to be completed by 2030"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Lack of support from local communities",
+      "category": "stakeholder",
+      "likelihood": 2,
+      "impact": 3,
+      "mitigation": "Engage with local communities through consultations and inclusive decision-making",
+      "evidence": "The project will actively involve citizens through extensive consultations"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Changes in government policies or laws",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Monitor changes in government policies and laws and adjust the project accordingly",
+      "evidence": "The project is aligned with the Country Partnership Framework for Cambodia"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Inadequate climate-resilient construction of school buildings",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Ensure that school buildings are constructed with climate-resilient materials and designs",
+      "evidence": "The project will integrate activities to address climate vulnerabilities"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate capacity or leadership",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Provide training and capacity-building support to project staff and leaders",
+      "evidence": "The project will strengthen the education system\u2019s support to rural and disadvantaged children"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Natural disasters or economic crises",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a contingency plan to respond to natural disasters or economic crises",
+      "evidence": "Natural disasters caused by climate change pose significant challenges for Cambodia"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

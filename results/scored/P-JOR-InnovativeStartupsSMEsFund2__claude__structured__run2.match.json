@@ -4,11 +4,164 @@
   "model": "claude",
   "prompt_strategy": "structured",
   "run_index": 2,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R01",
+      "gt_risk_id": "R01",
+      "similarity": 0.626,
+      "gen_category": "external",
+      "gt_category": "external",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R04",
+      "gt_risk_id": "R02",
+      "similarity": 0.479,
+      "gen_category": "stakeholder",
+      "gt_category": "other",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Geopolitical volatility and regional economic shocks in the MENA region could depress venture capital activity and discourage private investor participation.",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Diversify fund commitments across multiple technology verticals and leverage strategic co-investment partnerships with international DFIs to de-risk private capital.",
+      "evidence": "Jordan\u2019s small, open economy continues to face vulnerabilities tied to its position in a geopolitically volatile region."
+    },
+    {
+      "risk_id": "R02",
+      "description": "High turnover of core technical and investment staff at the PMU could impair project implementation capacity and delay capital deployment.",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Retain existing qualified ISSF staff by offering competitive market-rate compensation structures and institutionalizing core operational processes.",
+      "evidence": "In the initial years of operation, ISSF faced challenges linked to, for example, high turnover of the team."
+    },
+    {
+      "risk_id": "R03",
+      "description": "Expiration of ISSF's current corporate charter in 2029 creates a legal mismatch with standard 10\u201312 year VC return horizons.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Update ISSF's Articles of Association prior to project effectiveness to convert ISSF into an open-ended private shareholding company.",
+      "evidence": "return on investment usually takes 10-12 years after capital deployment, whereas currently the ISSF Private Shareholding Company \u2018ends\u2019 in 2029."
+    },
+    {
+      "risk_id": "R04",
+      "description": "High-growth Jordanian startups may relocate their HQs to GCC countries seeking expansion capital, potentially diluting local economic impact.",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Enforce Side Letter legal covenants requiring beneficiary funds to invest equivalent capital into startups maintaining primary operations and staff in Jordan.",
+      "evidence": "Availability of long-term funding and market size in the Gulf Cooperation Council (GCC) countries... prompt high-growth Jordanian startups to expand elsewhere"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Global and regional venture capital downturns could hamper the project's ability to mobilize $150 million in target private capital.",
+      "category": "financial",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Co-invest alongside institutional lead investors and DFIs like IFC, and utilize matching Fund of Funds equity structures to crowd in private investors.",
+      "evidence": "Despite the global downturn in VC returns in the aftermath of the COVID-19 pandemic..."
+    },
+    {
+      "risk_id": "R06",
+      "description": "Excessive exposure of project resources to a single VC fund or individual startup could lead to disproportionate capital loss.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Enforce strict investment caps in the Project Operations Manual, limiting exposure to any single fund to 15% of loan size and direct co-investments to $500,000.",
+      "evidence": "To mitigate and manage concentration risks, the current ISSF Investment Strategy sets out the limit on ISSF investment in one VC fund."
+    },
+    {
+      "risk_id": "R07",
+      "description": "Underlying VC fund managers could engage in fraud, mismanagement, or regulatory non-compliance, leading to financial loss.",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Mandate comprehensive Legal, Corporate, and Operational Due Diligence (ODD) prior to capital commitment and maintain continuous ODD oversight.",
+      "evidence": "ensure that underlying funds follow robust operational practices and have the tools and capacity to monitor risks such as fraud, mismanagement, or regulatory non-compliance."
+    },
+    {
+      "risk_id": "R08",
+      "description": "Inadequate PMU capacity regarding World Bank Environmental and Social Standards (ESS) could cause compliance delays or risk mismanagement.",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Appoint a qualified E&S officer to the PMU and establish an Environmental and Social Management System (ESMS) after effectiveness.",
+      "evidence": "ISSF requires improved E&S risks and impacts management capacity, especially in the implementation of the World Bank Environmental and Social Standards (ESS)."
+    },
+    {
+      "risk_id": "R09",
+      "description": "Improper e-waste disposal by beneficiary tech SMEs could result in environmental pollution and public health hazards.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Incorporate mandatory E&S screening criteria into sub-venture application processes and mandate good e-waste recycling practices in fund legal documents.",
+      "evidence": "SMEs\u2019 supported activities may cause environmental impacts connected to mismanagement of e-waste, including pollution, Occupational Health and Safety..."
+    },
+    {
+      "risk_id": "R10",
+      "description": "Workers in beneficiary ICT startups may face workplace discrimination, poor employment conditions, or sexual exploitation, abuse, and harassment (SEA/SH).",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement ESCP gap-filling measures on labor rights, enforce workplace codes of conduct, and establish confidential SEA/SH-sensitive grievance mechanisms.",
+      "evidence": "Additional labor risks related to ICT start-ups include terms and conditions of employment, discrimination, and sexual harassment..."
+    },
+    {
+      "risk_id": "R11",
+      "description": "Tech startups supported by the fund could encounter data privacy breaches, cybersecurity vulnerabilities, or exacerbate the digital divide.",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Establish data privacy guidelines and social risk screening checklists within the ESMS for financial intermediaries and target tech ventures.",
+      "evidence": "the proposed Project could entail social risks, including poor labor and working conditions, limited stakeholder engagement, the digital divide, data privacy and security risks"
+    },
+    {
+      "risk_id": "R12",
+      "description": "Women and youth entrepreneurs may face persistent social or structural barriers preventing equal participation in equity funding.",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Implement a Gender Action Plan with targeted outreach, enforce a 30% target for female-owned/led beneficiaries, and mandate female representation on the ISSF Board/IC.",
+      "evidence": "there is a risk that they may not fully benefit if specific barriers to their participation are not effectively addressed."
+    },
+    {
+      "risk_id": "R13",
+      "description": "Gaps in Jordanian national labor law regarding non-discrimination, worker organizations, and supply chain oversight may conflict with World Bank ESS2.",
+      "category": "political_regulatory",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Adopt specific gap-filling measures set forth in the Environmental and Social Commitment Plan (ESCP) to ensure full compliance with ESS2 standards.",
+      "evidence": "There are gaps with ESS2 in the following areas: lack of non-discrimination provisions based on gender, disability and citizenship; worker\u2019s organizations"
+    },
+    {
+      "risk_id": "R14",
+      "description": "Prolonged investment approval processes and governance reviews could delay capital allocation to beneficiary VC funds and startups.",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Streamline governance by separating Board oversight from Investment Committee management and conduct biannual beneficiary surveys to optimize turnaround times.",
+      "evidence": "when it comes to the duration of the investment review/approval processes."
+    },
+    {
+      "risk_id": "R15",
+      "description": "Climate change hazards such as severe droughts and extreme weather events could disrupt startup supply chains and physical business operations.",
+      "category": "environmental",
+      "likelihood": 2,
+      "impact": 2,
+      "mitigation": "Apply Paris Alignment screening criteria to project investments and allocate 10% of total capital toward greentech and climate-resilient solutions.",
+      "evidence": "expected decrease in total precipitation, with increased variability in the location, timing, and quantity of rainfall; increased drought occurrence, and more frequent extreme events."
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

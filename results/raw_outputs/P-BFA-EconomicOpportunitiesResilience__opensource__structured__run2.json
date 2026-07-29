@@ -9,6 +9,82 @@
   "run_date": "2026-07-25T18:08:30.579502+00:00",
   "prompt_sha256": "9e73a98849e48201c7f05c41bc0c2bf55a2e3e7d7fd832e167c6eb801c19dd0d",
   "raw_response_text": "REASONING:\n\nStep 1 - Frame the project:\n- Objective: Increase access to economic opportunities for poor and vulnerable households and strengthen the adaptive social protection system.\n- Scope: The project includes four main components: Socioeconomic Empowerment for Poor and Vulnerable Households, Strengthening the Adaptive Social Protection Information System, Institutional Capacity Building and Learning, and Project Coordination Management.\n- Delivery model: The project will be implemented by the Ministry of Family and Solidarity (MFS), with support from other government agencies, NGOs, and international organizations.\n- Timeline: The project is expected to run from 2026 to 2031.\n- Budget: The total project cost is US$120 million, consisting of US$100 million IDA credit and US$20 million from the SASPP MDTF.\n- Key stakeholders: The MFS, other government agencies, NGOs, international organizations, and beneficiary households.\n- External dependencies: The project relies on the government's commitment to social protection, the availability of funding, and the security situation in the country.\n\nStep 2 - Category sweep:\n- Technical: The project's technical risks include the complexity of implementing a social protection system, the need for accurate data collection and management, and the potential for technological failures.\n- Financial: The project's financial risks include the potential for funding shortfalls, delays in disbursement, and inefficient use of resources.\n- Schedule: The project's schedule risks include delays in implementation, potential changes in government priorities, and the impact of security issues on project timelines.\n- Stakeholder: The project's stakeholder risks include the potential for beneficiary households to not participate or benefit from the project, and the risk of opposition from other stakeholders.\n- Political_regulatory: The project's political and regulatory risks include changes in government policies or priorities, potential conflicts with other government agencies, and the risk of non-compliance with regulatory requirements.\n- Environmental: The project's environmental risks include the potential impact of climate change on beneficiary households and the need for sustainable practices in project implementation.\n- Organizational: The project's organizational risks include the potential for inadequate capacity or resources within the MFS, and the risk of poor coordination with other stakeholders.\n- External: The project's external risks include the potential impact of security issues, economic downturns, and other external factors on project implementation and outcomes.\n\nStep 3 - Evidence filter:\nBased on the provided text, the following risks are directly supported by evidence:\n- Technical: Complexity of implementing a social protection system (Section II, Component 2).\n- Financial: Potential for funding shortfalls (Section IV, Financial Management).\n- Schedule: Delays in implementation due to security issues (Section III, Implementation Arrangements).\n- Stakeholder: Potential for beneficiary households to not participate or benefit from the project (Section II, Project Beneficiaries).\n- Political_regulatory: Changes in government policies or priorities (Section I, Strategic Context).\n- Environmental: Impact of climate change on beneficiary households (Section I, Strategic Context).\n- Organizational: Inadequate capacity or resources within the MFS (Section III, Implementation Arrangements).\n- External: Impact of security issues on project implementation (Section III, Implementation Arrangements).\n\nStep 4 - Assess:\nFor each surviving risk, assign likelihood (1-5) and impact (1-5) with a one-line justification, and propose a concrete mitigation:\n- R01: Technical risk of complexity in implementing a social protection system (Likelihood: 4, Impact: 4) - Mitigation: Provide technical assistance and capacity building to the MFS.\n- R02: Financial risk of funding shortfalls (Likelihood: 3, Impact: 5) - Mitigation: Diversify funding sources and establish a contingency fund.\n- R03: Schedule risk of delays due to security issues (Likelihood: 5, Impact: 5) - Mitigation: Develop a contingency plan and establish alternative implementation arrangements.\n- R04: Stakeholder risk of beneficiary households not participating or benefiting (Likelihood: 4, Impact: 4) - Mitigation: Conduct outreach and awareness-raising activities, and establish a grievance redress mechanism.\n- R05: Political_regulatory risk of changes in government policies or priorities (Likelihood: 3, Impact: 5) - Mitigation: Establish a strong partnership with the government and conduct regular policy dialogue.\n- R06: Environmental risk of climate change impact on beneficiary households (Likelihood: 5, Impact: 5) - Mitigation: Integrate climate-resilient practices into project implementation and provide support to beneficiary households to adapt to climate change.\n- R07: Organizational risk of inadequate capacity or resources within the MFS (Likelihood: 4, Impact: 4) - Mitigation: Provide capacity building and technical assistance to the MFS, and establish a partnership with other organizations to support implementation.\n- R08: External risk of security issues impacting project implementation (Likelihood: 5, Impact: 5) - Mitigation: Develop a contingency plan, establish alternative implementation arrangements, and conduct regular security assessments.\n\nStep 5 - Consolidate:\nMerge duplicates and keep as many risks as the evidence supports. The above risks are distinct and supported by evidence in the provided text.\n\nFINAL JSON:\n{\n  \"risks\": [\n    {\n      \"risk_id\": \"R01\",\n      \"description\": \"Technical risk of complexity in implementing a social protection system\",\n      \"category\": \"technical\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide technical assistance and capacity building to the MFS\",\n      \"evidence\": \"Section II, Component 2\"\n    },\n    {\n      \"risk_id\": \"R02\",\n      \"description\": \"Financial risk of funding shortfalls\",\n      \"category\": \"financial\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Diversify funding sources and establish a contingency fund\",\n      \"evidence\": \"Section IV, Financial Management\"\n    },\n    {\n      \"risk_id\": \"R03\",\n      \"description\": \"Schedule risk of delays due to security issues\",\n      \"category\": \"schedule\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a contingency plan and establish alternative implementation arrangements\",\n      \"evidence\": \"Section III, Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R04\",\n      \"description\": \"Stakeholder risk of beneficiary households not participating or benefiting\",\n      \"category\": \"stakeholder\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Conduct outreach and awareness-raising activities, and establish a grievance redress mechanism\",\n      \"evidence\": \"Section II, Project Beneficiaries\"\n    },\n    {\n      \"risk_id\": \"R05\",\n      \"description\": \"Political_regulatory risk of changes in government policies or priorities\",\n      \"category\": \"political_regulatory\",\n      \"likelihood\": 3,\n      \"impact\": 5,\n      \"mitigation\": \"Establish a strong partnership with the government and conduct regular policy dialogue\",\n      \"evidence\": \"Section I, Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R06\",\n      \"description\": \"Environmental risk of climate change impact on beneficiary households\",\n      \"category\": \"environmental\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Integrate climate-resilient practices into project implementation and provide support to beneficiary households to adapt to climate change\",\n      \"evidence\": \"Section I, Strategic Context\"\n    },\n    {\n      \"risk_id\": \"R07\",\n      \"description\": \"Organizational risk of inadequate capacity or resources within the MFS\",\n      \"category\": \"organizational\",\n      \"likelihood\": 4,\n      \"impact\": 4,\n      \"mitigation\": \"Provide capacity building and technical assistance to the MFS, and establish a partnership with other organizations to support implementation\",\n      \"evidence\": \"Section III, Implementation Arrangements\"\n    },\n    {\n      \"risk_id\": \"R08\",\n      \"description\": \"External risk of security issues impacting project implementation\",\n      \"category\": \"external\",\n      \"likelihood\": 5,\n      \"impact\": 5,\n      \"mitigation\": \"Develop a contingency plan, establish alternative implementation arrangements, and conduct regular security assessments\",\n      \"evidence\": \"Section III, Implementation Arrangements\"\n    }\n  ]\n}",
-  "parsed_risks": null,
-  "parse_error": "parsed JSON does not conform to output_schema.json: 'project_id' is a required property"
+  "parsed_risks": {
+    "risks": [
+      {
+        "risk_id": "R01",
+        "description": "Technical risk of complexity in implementing a social protection system",
+        "category": "technical",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide technical assistance and capacity building to the MFS",
+        "evidence": "Section II, Component 2"
+      },
+      {
+        "risk_id": "R02",
+        "description": "Financial risk of funding shortfalls",
+        "category": "financial",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Diversify funding sources and establish a contingency fund",
+        "evidence": "Section IV, Financial Management"
+      },
+      {
+        "risk_id": "R03",
+        "description": "Schedule risk of delays due to security issues",
+        "category": "schedule",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop a contingency plan and establish alternative implementation arrangements",
+        "evidence": "Section III, Implementation Arrangements"
+      },
+      {
+        "risk_id": "R04",
+        "description": "Stakeholder risk of beneficiary households not participating or benefiting",
+        "category": "stakeholder",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Conduct outreach and awareness-raising activities, and establish a grievance redress mechanism",
+        "evidence": "Section II, Project Beneficiaries"
+      },
+      {
+        "risk_id": "R05",
+        "description": "Political_regulatory risk of changes in government policies or priorities",
+        "category": "political_regulatory",
+        "likelihood": 3,
+        "impact": 5,
+        "mitigation": "Establish a strong partnership with the government and conduct regular policy dialogue",
+        "evidence": "Section I, Strategic Context"
+      },
+      {
+        "risk_id": "R06",
+        "description": "Environmental risk of climate change impact on beneficiary households",
+        "category": "environmental",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Integrate climate-resilient practices into project implementation and provide support to beneficiary households to adapt to climate change",
+        "evidence": "Section I, Strategic Context"
+      },
+      {
+        "risk_id": "R07",
+        "description": "Organizational risk of inadequate capacity or resources within the MFS",
+        "category": "organizational",
+        "likelihood": 4,
+        "impact": 4,
+        "mitigation": "Provide capacity building and technical assistance to the MFS, and establish a partnership with other organizations to support implementation",
+        "evidence": "Section III, Implementation Arrangements"
+      },
+      {
+        "risk_id": "R08",
+        "description": "External risk of security issues impacting project implementation",
+        "category": "external",
+        "likelihood": 5,
+        "impact": 5,
+        "mitigation": "Develop a contingency plan, establish alternative implementation arrangements, and conduct regular security assessments",
+        "evidence": "Section III, Implementation Arrangements"
+      }
+    ],
+    "project_id": "P-BFA-EconomicOpportunitiesResilience"
+  },
+  "parse_error": null
 }

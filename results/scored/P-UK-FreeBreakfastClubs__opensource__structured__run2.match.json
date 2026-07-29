@@ -4,11 +4,75 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 2,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
   "matches": [],
-  "gen_risks": [],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Ineffective collaboration with sector partners",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Establish clear communication channels and regular meetings with sector partners",
+      "evidence": "effective collaboration with the sector partners"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Funding uncertainty for future years",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a comprehensive funding plan and secure commitments from HM Treasury",
+      "evidence": "Funding for future years will be agreed separately"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in national rollout",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a detailed project timeline and track progress regularly",
+      "evidence": "The programme will support all schools with primary-aged children"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Low stakeholder engagement or participation",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Develop a stakeholder engagement plan and provide regular updates and feedback mechanisms",
+      "evidence": "The evaluation will adopt an iterative, mixed-methods approach"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Legislative or policy changes affecting the programme",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Monitor legislative and policy developments and adapt the programme accordingly",
+      "evidence": "The Children's Wellbeing and Schools Bill will place a duty"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Organizational governance or structure issues",
+      "category": "organizational",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Establish clear governance structures and ensure effective communication between stakeholders",
+      "evidence": "Programme governance is multi-layered"
+    },
+    {
+      "risk_id": "R07",
+      "description": "External factors affecting the programme, such as HM Treasury approval",
+      "category": "external",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Develop a comprehensive risk management plan and engage with external stakeholders regularly",
+      "evidence": "timely approval and budget confirmation from HM Treasury"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

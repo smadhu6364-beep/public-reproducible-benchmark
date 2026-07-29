@@ -4,11 +4,117 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 2,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R07",
+      "gt_risk_id": "R03",
+      "similarity": 0.565,
+      "gen_category": "organizational",
+      "gt_category": "organizational",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R02",
+      "similarity": 0.523,
+      "gen_category": "schedule",
+      "gt_category": "technical",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R04",
+      "similarity": 0.497,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R05",
+      "similarity": 0.454,
+      "gen_category": "external",
+      "gt_category": "environmental",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Inadequate stakeholder engagement",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish a stakeholder engagement plan, ensure inclusive and participatory processes, and provide training on ethical data security protocols",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Delays, governance issues, weak contract management, and limited market competition in fragile settings",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implement a financial management system, ensure transparency and accountability, and provide training on contract management and procurement",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Potential delays in implementation due to political instability, security risks, and governance challenges",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a detailed implementation schedule, ensure regular monitoring and reporting, and provide training on project management and coordination",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Inadequate engagement with local communities, civil society organizations, and other stakeholders",
+      "category": "stakeholder",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish a stakeholder engagement plan, ensure inclusive and participatory processes, and provide training on community engagement and participation",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Changes in government policies, laws, or regulations that may affect the project's implementation",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish a regulatory framework, ensure compliance with laws and regulations, and provide training on policy and regulatory issues",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Impacts on water quality, disposal and management of building/construction wastes, occupational health and safety risks, and nuisances related to air and noise emissions",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Implement an environmental management plan, ensure compliance with environmental regulations, and provide training on environmental management and sustainability",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate institutional capacity, weak governance, and insufficient human resources",
+      "category": "organizational",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Establish an institutional capacity building plan, ensure adequate human resources, and provide training on governance, management, and leadership",
+      "evidence": "Project documentation"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Climate change, conflicts, and other external factors that may affect the project's implementation",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Develop a risk management plan, ensure compliance with international standards, and provide training on risk management and mitigation",
+      "evidence": "Project documentation"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

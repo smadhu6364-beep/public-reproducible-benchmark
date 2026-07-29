@@ -4,11 +4,101 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R01",
+      "similarity": 0.476,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R03",
+      "gt_risk_id": "R06",
+      "similarity": 0.462,
+      "gen_category": "schedule",
+      "gt_category": "external",
+      "category_agree": false
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical risk of capture efficiency",
+      "category": "technical",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Regular monitoring and maintenance of CCUS equipment",
+      "evidence": "process emissions account for roughly 60% of total emissions"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Financial risk of revenue uncertainty",
+      "category": "financial",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Revenue Support Agreement (RSA) to provide long-term certainty over income",
+      "evidence": "high upfront costs, cross-chain risks, and revenue uncertainty"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Schedule risk of delay to COD",
+      "category": "schedule",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Clear risk allocation and commercial incentives to minimize delays",
+      "evidence": "5-month delay to COD if FID is delayed"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Stakeholder risk of impact on local communities",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Engagement with local stakeholders and communities to address concerns",
+      "evidence": "securing the future of the UK cement industry"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Political/Regulatory risk of changes to government support",
+      "category": "political_regulatory",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Regular review of regulatory frameworks and government support",
+      "evidence": "Government Support through the Industrial Carbon Capture (ICC) business model"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Environmental risk of CO2 leakage",
+      "category": "environmental",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Regular monitoring of CO2 storage and implementation of leakage prevention measures",
+      "evidence": "emissions cannot be fully abated through fuel switching, electrification or methods to increase efficiency"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Organizational risk of ineffective governance",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Clear definition of roles and responsibilities among stakeholders",
+      "evidence": "Governance and Oversight through DESNZ, LCCC, and Ofgem"
+    },
+    {
+      "risk_id": "R08",
+      "description": "External risk of delay to CBAM implementation",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Monitoring of CBAM implementation timeline and adaptation of project plans as necessary",
+      "evidence": "implementation of the CBAM in 2027"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",

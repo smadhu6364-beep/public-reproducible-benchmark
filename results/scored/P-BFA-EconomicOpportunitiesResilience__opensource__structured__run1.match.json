@@ -4,11 +4,118 @@
   "model": "opensource",
   "prompt_strategy": "structured",
   "run_index": 1,
-  "parse_failed": true,
-  "embedding_model": null,
+  "parse_failed": false,
+  "embedding_model": "all-MiniLM-L6-v2",
   "threshold": 0.45,
-  "matches": [],
-  "gen_risks": [],
+  "matches": [
+    {
+      "gen_risk_id": "R08",
+      "gt_risk_id": "R05",
+      "similarity": 0.52,
+      "gen_category": "external",
+      "gt_category": "other",
+      "category_agree": false
+    },
+    {
+      "gen_risk_id": "R02",
+      "gt_risk_id": "R04",
+      "similarity": 0.511,
+      "gen_category": "financial",
+      "gt_category": "financial",
+      "category_agree": true
+    },
+    {
+      "gen_risk_id": "R05",
+      "gt_risk_id": "R03",
+      "similarity": 0.471,
+      "gen_category": "political_regulatory",
+      "gt_category": "political_regulatory",
+      "category_agree": true
+    }
+  ],
+  "gen_risks": [
+    {
+      "risk_id": "R01",
+      "description": "Technical failure of the social registry and payment systems",
+      "category": "technical",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Regular maintenance and updates of the systems, as well as training for staff",
+      "evidence": "Section II, Component 2"
+    },
+    {
+      "risk_id": "R02",
+      "description": "Insufficient funding for the project",
+      "category": "financial",
+      "likelihood": 2,
+      "impact": 5,
+      "mitigation": "Regular monitoring of the budget and identification of potential funding sources",
+      "evidence": "Section IV, Financial Management"
+    },
+    {
+      "risk_id": "R03",
+      "description": "Delays in implementation",
+      "category": "schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "mitigation": "Regular monitoring of the project's progress and identification of potential bottlenecks",
+      "evidence": "Section III, Project Implementation"
+    },
+    {
+      "risk_id": "R04",
+      "description": "Lack of cooperation from stakeholders",
+      "category": "stakeholder",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Regular communication and engagement with stakeholders",
+      "evidence": "Section II, Role of Partners"
+    },
+    {
+      "risk_id": "R05",
+      "description": "Changes in government policies or regulations",
+      "category": "political_regulatory",
+      "likelihood": 2,
+      "impact": 4,
+      "mitigation": "Regular monitoring of policy changes and adaptation of the project's implementation",
+      "evidence": "Section I, Strategic Context"
+    },
+    {
+      "risk_id": "R06",
+      "description": "Environmental impacts of the project",
+      "category": "environmental",
+      "likelihood": 1,
+      "impact": 3,
+      "mitigation": "Environmental assessment and implementation of mitigation measures",
+      "evidence": "Section C, Environmental, Social and Legal Operational Policies"
+    },
+    {
+      "risk_id": "R07",
+      "description": "Inadequate capacity of implementing agencies",
+      "category": "organizational",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Capacity building and training for staff",
+      "evidence": "Section III, Institutional and Implementation Arrangements"
+    },
+    {
+      "risk_id": "R08",
+      "description": "Security risks",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implementation of security measures and contingency planning",
+      "evidence": "Section I, Strategic Context"
+    },
+    {
+      "risk_id": "R09",
+      "description": "Climate change and economic shocks",
+      "category": "external",
+      "likelihood": 4,
+      "impact": 5,
+      "mitigation": "Implementation of climate-resilient measures and economic empowerment activities",
+      "evidence": "Section I, Strategic Context"
+    }
+  ],
   "gt_risks": [
     {
       "risk_id": "R01",
