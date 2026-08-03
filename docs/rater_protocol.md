@@ -5,7 +5,7 @@ starting point for Madhu/Kruthik to accept, edit, or override — not a settled
 decision. Sections marked **OPEN** are genuinely undecided and need a call
 from the project owners, not an engineering default.
 
-**Purpose:** CLAUDE.md specifies Method B as "expert Likert ratings + Fleiss'
+**Purpose:** PROJECT_SPEC.md specifies Method B as "expert Likert ratings + Fleiss'
 kappa," alongside Method A (semantic matching vs. ground truth) and Method C
 (LLM-as-judge, supplementary only). This document is the missing protocol for
 Method B: what raters see, what they score, how registers are sampled and
@@ -91,7 +91,7 @@ question when the human register itself is imperfect or incomplete.
 
 The full grid is 3 models × 3 prompts × **21** projects (the corpus grew from
 18 to 21 included projects after this document was first drafted) =
-**189 combinations**, each with 2–3 runs (CLAUDE.md). Rating all of it — well
+**189 combinations**, each with 2–3 runs (PROJECT_SPEC.md). Rating all of it — well
 over ~470 registers — is not realistic for 3–5 volunteer/practitioner raters.
 **Proposal:**
 
@@ -199,7 +199,7 @@ against each other, not against a converged consensus).
   metadata for RQ3. Implemented directly with numpy rather than adding
   `scipy.stats`/`statsmodels` (neither is pinned in `requirements.txt`) —
   the formula is short and well-defined enough that a transparent direct
-  implementation avoids a new dependency per CLAUDE.md's "ask before adding
+  implementation avoids a new dependency per PROJECT_SPEC.md's "ask before adding
   anything" rule. Verified against an independently hand-derived worked
   example in `tests/test_compute_kappa.py` (22 tests) — see that file
   before trusting a number out of this script on inspection alone. A
@@ -245,7 +245,7 @@ Kruthik has a reason to prefer a form.
   sample size. If recruited raters are volunteering time rather than being
   compensated, this may be too much — worth confirming with actual
   candidates before finalizing §3.1's sample size, not after.
-- CLAUDE.md specifies **3–5 raters**; this document assumes recruiting
+- PROJECT_SPEC.md specifies **3–5 raters**; this document assumes recruiting
   toward the middle of that range (4) but works unmodified at 3 or 5 — the
   sampling and kappa design in §3–4 don't depend on the exact count.
 - **Rater recruitment status is unknown to me** (this session has no
@@ -258,7 +258,7 @@ Kruthik has a reason to prefer a form.
 
 ## 7. Cross-references
 
-- `CLAUDE.md` — Method B is specified here as "expert Likert ratings +
+- `PROJECT_SPEC.md` — Method B is specified here as "expert Likert ratings +
   Fleiss' kappa," and raters/reviewers must never see leakage-adjacent
   ground truth.
 - `prompts/output_schema.json` — the generation schema being rendered into

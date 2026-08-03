@@ -3,11 +3,11 @@
 Not part of `src/audit_corpus.py`'s own output (that stays purely mechanical
 and gets overwritten on every re-run) - this is a one-off, dated human review
 of the 4 non-PASS findings from the run recorded in
-`results/corpus_audit_report.md`, written by the VS Code session after
+`results/corpus_audit_report.md`, written after
 manually re-checking each one against the source PDF / processed text /
 ground truth JSON. Report-only, same as the script: nothing below was
-auto-fixed. Madhu/Cowork should treat this as a starting point for the fix
-decision the task asked for, not as the fix itself.
+auto-fixed. Treat this as a starting point for the fix decision the task
+asked for, not as the fix itself.
 
 ## P-UK-PadeswoodCCUS - WARN on check 1 - likely a false positive
 

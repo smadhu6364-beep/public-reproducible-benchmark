@@ -4,7 +4,7 @@ Likert scores from completed rater assignment sheets).
 The formula itself is verified against an INDEPENDENTLY computed worked
 example (hand-derived in this file's comments, re-derived via a completely
 separate code path here, not copied from an external citation this session
-cannot fully verify from memory - CLAUDE.md's "never fabricate data or
+cannot fully verify from memory - PROJECT_SPEC.md's "never fabricate data or
 citations" rule applies to test fixtures too, not just paper content).
 
 Run: python -m unittest discover -s tests

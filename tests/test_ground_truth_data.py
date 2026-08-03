@@ -180,7 +180,7 @@ class TestManifestProvenanceFields(unittest.TestCase):
     World Bank project ID (Pxxxxxx) in their notes field, so they are not
     unidentifiable, just not directly linkable without going through the WB
     project database by hand. Not fixed by guessing/constructing URLs myself
-    (a wrong or dead URL recorded as fact would be worse than none - CLAUDE.md's
+    (a wrong or dead URL recorded as fact would be worse than none - PROJECT_SPEC.md's
     never-fabricate rule applies to provenance links too). This test locks in
     the current 5 as a known, disclosed set so the gap can't silently grow -
     any NEW included project must have at least one of the two URL fields."""

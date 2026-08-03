@@ -4,7 +4,7 @@
 > This report was written for the original paid model triple (Anthropic
 > Claude / OpenAI GPT / Together AI Llama), which was replaced after all
 > three provider accounts hit real billing/quota errors on the first spend
-> attempt - see `CLAUDE.md`'s RQ2 correction note and
+> attempt - see `PROJECT_SPEC.md`'s RQ2 correction note and
 > `docs/model_tier_recommendation.md`'s dated addendum. The current lineup
 > (Gemini + 2 SambaNova-served open-weight models, all free-tier - moved off
 > Groq the same day after its free tier proved unable to serve this
@@ -53,7 +53,7 @@ manifest rows with no artifacts are correctly `set_aside` (AIM4Learning) or
 The guard behaves exactly as designed:
 
 ```
-COST GUARD: estimated $63.16 exceeds the $30 threshold (CLAUDE.md).
+COST GUARD: estimated $63.16 exceeds the $30 threshold (PROJECT_SPEC.md).
 Re-run with --confirm-cost to proceed, after checking the estimate above is sane.
 ```
 
@@ -73,7 +73,7 @@ decided configuration (`claude-sonnet-5` / `gpt-5.6-terra` /
 
 Per-model, per run: claude $7.76 · gpt $10.34 · opensource $2.96.
 
-**CLAUDE.md asks for two things that cannot both hold at current pricing:**
+**PROJECT_SPEC.md asks for two things that cannot both hold at current pricing:**
 "2-3 runs each" (Methodology rules) and "STOP for confirmation if projected cost
 > $30" (Coding standards). The guard is doing its job; the plan is what needs a
 decision. This is a research-design call, so it is flagged here rather than
@@ -105,7 +105,7 @@ quoted in the paper should be recomputed once, from the config actually used.
 
 **(b) The Sonnet 5 introductory rate expires 2026-08-31.** Already documented in
 the memo (post-intro: $3/$15, i.e. claude rises from $7.76 to $11.63 per run).
-Restating it here only because of the collision with the timeline: CLAUDE.md's
+Restating it here only because of the collision with the timeline: PROJECT_SPEC.md's
 deadline for "corpus + pipeline + full experiment run" is **end of August 2026**.
 That is zero margin. If the grid slips into September, 2 runs goes from $42.11
 to roughly $49.85. Worth running before the deadline for pricing reasons, not
@@ -130,7 +130,7 @@ cap. Treat $42/$63 as realistic, not padded.
 `python src/check_env.py` reports all three providers `not configured`; there is
 no `.env` file yet. Sampling, blinding, extraction, matching, metrics, and
 figures all run without it, but **no model call can happen until `.env` is
-created from `.env.example` and the three keys are filled in.** Per CLAUDE.md
+created from `.env.example` and the three keys are filled in.** Per PROJECT_SPEC.md
 that is a keys-handling step, so it is left entirely to Madhu — I did not create
 the file.
 
@@ -141,7 +141,7 @@ provider calls stubbed):
 
 - **Reproducibility contract:** `run_one` writes `model_version`, `run_date`,
   `temperature`, `prompt_sha256` into both the raw record and
-  `results/run_config.jsonl`, exactly as CLAUDE.md requires.
+  `results/run_config.jsonl`, exactly as PROJECT_SPEC.md requires.
 - **Append-only:** re-running the same `run_index` raises `FileExistsError`;
   `next_free_run_index` accumulates 1→2→3 and tracks each cell independently.
 - **Filename round-trip:** `run_experiments.raw_output_path` →

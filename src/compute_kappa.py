@@ -40,7 +40,7 @@ DESIGN, per rater_protocol.md section 4:
 
 IMPLEMENTATION NOTE - why not scipy.stats or statsmodels: rater_protocol.md
 section 4 names both as having Fleiss' kappa implementations. Neither is
-currently pinned in requirements.txt, and CLAUDE.md requires asking before
+currently pinned in requirements.txt, and PROJECT_SPEC.md requires asking before
 adding a new dependency. The formula itself (Fleiss 1971) is short,
 well-defined, and implemented directly below with numpy (already pinned) -
 more transparent for a paper's methodology section than an opaque library

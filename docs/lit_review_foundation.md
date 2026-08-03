@@ -238,9 +238,9 @@ intersection is empty, which is the gap.
    limitations. Deadline: 2 weeks.
 3. **[Either]** Set up shared Zotero library + Google Scholar alerts ("LLM risk
    register", "large language model risk identification project").
-4. **[Claude Code session]** Save this file into the repo as
-   `docs/lit_review_foundation.md` and seed `paper/references.bib` with entries for the
-   confirmed papers (leave TODO fields where the exact venue/pages need verification
-   from full text). ✅ done this session.
+4. **[Done]** This file saved into the repo as
+   `docs/lit_review_foundation.md`, and `paper/references.bib` seeded with entries for
+   the confirmed papers (leave TODO fields where the exact venue/pages need
+   verification from full text).
 5. **[Both]** After the 5 must-reads: 1-hour call to pressure-test the gap table. If
    any gap is weaker than claimed here, revise before writing a word of the paper.

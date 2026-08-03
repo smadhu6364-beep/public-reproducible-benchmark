@@ -9,7 +9,7 @@ billing/quota errors on the first actual spend attempt, so all 3 slots moved
 to free-tier providers (Google Gemini + Groq). Groq's free tier then turned
 out to have a hard 8,000 TPM per-request cap that this project's real
 ~30-34K-token prompts exceed ~4x - not fixable by retry/pacing - so the
-"gpt" and "opensource" slots moved again, to SambaNova Cloud. See CLAUDE.md's
+"gpt" and "opensource" slots moved again, to SambaNova Cloud. See PROJECT_SPEC.md's
 RQ2 correction note, docs/model_tier_recommendation.md's dated addenda, and
 run_experiments.py's call_claude/call_gpt/call_opensource docstrings for
 exactly what each slot calls now.

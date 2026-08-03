@@ -1,6 +1,6 @@
 # metrics.py review — two analysis-scoping findings (report-only)
 
-**RESOLVED 2026-07-21 (Madhu, via AskUserQuestion).** Finding 1: both
+**RESOLVED 2026-07-21 (Madhu's call).** Finding 1: both
 recommendations adopted — the asymmetry is documented in the paper draft
 (Section III.F) AND `compute_all()` now also reports
 `by_model_and_prompt_corpus_wide_only` / `by_category_corpus_wide_only`

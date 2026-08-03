@@ -8,7 +8,7 @@ qualifying criteria already live in `rater_recruitment_outreach.md`). All
 web-sourced facts are dated **2026-07-20** and cited at the end.
 
 **Independently re-verified 2026-07-21** before committing (this project's
-standing practice - see `HANDOFF_VSCODE_SESSION.md`): 3 load-bearing figures
+standing practice): 3 load-bearing figures
 were spot-checked against primary sources and 3 corrections applied inline
 below - APM's membership count (was slightly stale), and Respondent.io's
 incentive ceiling for senior/in-person raters (was capped too low, which
@@ -34,7 +34,7 @@ if they stall.
 
 ## The number that changes the strategy: n = 3-5, not 300
 
-CLAUDE.md needs only **3-5 raters**. That is a *small-n, high-match* recruit, not
+PROJECT_SPEC.md needs only **3-5 raters**. That is a *small-n, high-match* recruit, not
 a survey. The implication is important and often missed: **broadcasting to a big
 association or a subreddit is a worse fit than a handful of warm, targeted
 asks.** You are not trying to fill a panel; you are trying to find 3-5 people who
@@ -168,7 +168,7 @@ to source hard-to-reach professionals fast. Per-participant cost (sourced
 - Prolific: ~**$320-$800** total — cheapest, but you may burn screening cost and
   still not find on-profile senior PMs; better as a supplement than the sole
   source.
-- **Cost-guard note:** CLAUDE.md's $30 threshold is specifically about **API
+- **Cost-guard note:** PROJECT_SPEC.md's $30 threshold is specifically about **API
   spend**, so it does not literally bind here — but the project's cost-awareness
   posture does. This is a *separate* budget line the project owners must approve,
   and it is the concrete lever behind the outreach doc's volunteer-vs-paid

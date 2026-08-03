@@ -2,7 +2,7 @@
 
 Implements docs/rater_protocol.md sections 3.1 (sampling) and 3.2 (blinding),
 which that document explicitly flagged as "Not yet built." Method B is the
-expert-Likert-rating arm of the study (CLAUDE.md); this script decides WHICH
+expert-Likert-rating arm of the study (PROJECT_SPEC.md); this script decides WHICH
 generated registers get rated, assigns each an opaque code, records the
 (gitignored) code->truth mapping, and lays out a per-rater randomized order.
 

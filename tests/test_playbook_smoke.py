@@ -294,7 +294,7 @@ class TestPlaybookChainRunsEndToEnd(unittest.TestCase):
             self.assertEqual(len(list(box.scored.glob("*.match.json"))), 2)
 
     def test_reinvoking_the_same_runs_target_is_idempotent(self):
-        # FIX 2026-07-25 (Cowork session): this is the actual daily-resumption
+        # FIX 2026-07-25: this is the actual daily-resumption
         # scenario (re-running `--runs 2` once a day until the grid clears) -
         # a cell already satisfied at the requested --runs target must NOT
         # get more runs piled on top just because the same command ran again.

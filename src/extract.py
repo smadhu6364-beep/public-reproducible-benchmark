@@ -5,7 +5,7 @@ file to data/processed/<project_id>.txt. Handles multi-file projects (several
 PDFs per project) and applies basic cleanup: repeated header/footer removal,
 page-number stripping, de-hyphenation, and whitespace normalization.
 
-LEAKAGE RULE (see CLAUDE.md, "critical"): only ever run this on planning /
+LEAKAGE RULE (see PROJECT_SPEC.md, "critical"): only ever run this on planning /
 appraisal documents -- and even then, the SORT risk-rating table and the Key
 Risks narrative section embedded IN those same PAD documents must never reach
 data/processed/. This module enforces that automatically:

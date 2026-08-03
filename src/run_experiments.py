@@ -6,7 +6,7 @@ documents). NOTE: this file is code-complete but CANNOT be run for a real
 experiment yet - .env has no real API keys configured as of this writing.
 The model-tier decision this note originally flagged as open (which tier of
 each of the 3 models to benchmark, a research-design/scope decision per
-CLAUDE.md, deliberately not picked in this file) is RESOLVED as of
+PROJECT_SPEC.md, deliberately not picked in this file) is RESOLVED as of
 2026-07-21 (Madhu) - all three are decided and pre-filled in .env.example
 (Claude Sonnet 5 intro pricing, GPT-5.6 Terra, Llama 3.3 70B Turbo via
 Together AI; see docs/model_tier_recommendation.md and
@@ -29,7 +29,7 @@ Responsibilities:
     identifying fields to results/run_config.jsonl.
   - Cost guard: before making ANY API call for a requested grid, estimate
     total token usage x per-model pricing, print the estimate, and refuse to
-    proceed without --confirm-cost if the estimate exceeds $30 (CLAUDE.md
+    proceed without --confirm-cost if the estimate exceeds $30 (PROJECT_SPEC.md
     cost-guard rule). Use --estimate-only to print the estimate and exit
     without calling any API regardless of size.
   - ADDED 2026-07-21 (Madhu's decision: build batch support, then run 2 at
@@ -55,7 +55,7 @@ Responsibilities:
 REDESIGNED 2026-07-23 (Madhu, budget-driven): the paid triple described
 above (Anthropic/OpenAI/Together AI) all hit real billing/quota errors on
 the first actual spend attempt. The model lineup moved to 3 genuinely
-free-tier models via Google Gemini and Groq - see CLAUDE.md's RQ2
+free-tier models via Google Gemini and Groq - see PROJECT_SPEC.md's RQ2
 correction note and docs/model_tier_recommendation.md's dated addendum.
 
 REDESIGNED AGAIN 2026-07-23 (later the same day): Groq's free tier turned
@@ -124,7 +124,7 @@ Known limitations, stated plainly:
     now sends max_completion_tokens unconditionally and defensively retries
     without temperature if the API specifically rejects it, recording the
     outcome as a `temperature_applied` field on every raw output record and
-    run_config.jsonl line rather than silently proceeding as if CLAUDE.md's
+    run_config.jsonl line rather than silently proceeding as if PROJECT_SPEC.md's
     "temperature 0-0.2 across all 3 models" held when it might not have for
     the GPT slot. Verified so far only via a mocked openai.OpenAI client
     (three scenarios: normal success, temperature-rejected retry, an
@@ -232,7 +232,7 @@ DEFAULT_MAX_OUTPUT_TOKENS = 24576
 # a shared constant costs nothing extra for models that don't need it (their
 # real completions stop well short of the ceiling regardless of how high it
 # is set).
-DEFAULT_TEMPERATURE = 0.1  # within CLAUDE.md's required 0-0.2 range
+DEFAULT_TEMPERATURE = 0.1  # within PROJECT_SPEC.md's required 0-0.2 range
 COST_GUARD_THRESHOLD_USD = 30.0
 
 # ADDED 2026-07-21: a 189-378-cell grid at real spend shouldn't need a human
@@ -248,7 +248,7 @@ RETRY_BASE_DELAY_SECONDS = 1.0
 PRICING_PER_MTOK: dict[str, tuple[float, float]] = {
     # REDESIGNED 2026-07-23 (Madhu, budget-driven - all 3 provider accounts
     # hit real billing/quota errors on the first actual spend attempt; see
-    # CLAUDE.md's RQ2 correction note and docs/model_tier_recommendation.md's
+    # PROJECT_SPEC.md's RQ2 correction note and docs/model_tier_recommendation.md's
     # dated addendum). The three models actually configured now are genuinely
     # free-tier - $0.00 per token is a real fact about these endpoints, not a
     # missing-data placeholder. Re-verify if free-tier terms ever change.
@@ -341,7 +341,7 @@ def assert_no_ground_truth_leakage() -> None:
                 f"LEAKAGE GUARD TRIPPED: prompts/few_shot.txt appears to reference "
                 f"real corpus project {pid!r}. The few-shot example MUST be a "
                 f"synthetic exemplar never drawn from this study's corpus (see "
-                f"CLAUDE.md leakage rule). Refusing to proceed."
+                f"PROJECT_SPEC.md leakage rule). Refusing to proceed."
             )
 
 
@@ -456,7 +456,7 @@ OPENROUTER_MODEL_ID = {
 def call_claude(prompt: str, model_version: str, temperature: float, max_tokens: int) -> tuple[str, bool]:
     """Returns (response_text, temperature_applied).
 
-    REDESIGNED 2026-07-23 (Madhu, budget-driven - see CLAUDE.md's RQ2
+    REDESIGNED 2026-07-23 (Madhu, budget-driven - see PROJECT_SPEC.md's RQ2
     correction note and docs/model_tier_recommendation.md's dated addendum):
     the "claude" slot now calls Google's Gemini API via its documented
     OpenAI-compatibility endpoint (ai.google.dev/gemini-api/docs/openai), not
@@ -1422,7 +1422,7 @@ def main() -> None:
         return
 
     if not (0.0 <= args.temperature <= 0.2):
-        parser.error(f"--temperature must be in [0, 0.2] per CLAUDE.md; got {args.temperature}")
+        parser.error(f"--temperature must be in [0, 0.2] per PROJECT_SPEC.md; got {args.temperature}")
 
     assert_no_ground_truth_leakage()
 
@@ -1458,7 +1458,7 @@ def main() -> None:
     if estimate["estimated_total_usd"] > COST_GUARD_THRESHOLD_USD and not args.confirm_cost:
         print(
             f"\nCOST GUARD: estimated ${estimate['estimated_total_usd']:.2f} exceeds "
-            f"the ${COST_GUARD_THRESHOLD_USD:.0f} threshold (CLAUDE.md). Re-run with "
+            f"the ${COST_GUARD_THRESHOLD_USD:.0f} threshold (PROJECT_SPEC.md). Re-run with "
             f"--confirm-cost to proceed, after checking the estimate above is sane.",
             file=sys.stderr,
         )
@@ -1490,9 +1490,9 @@ def main() -> None:
     n_ok = 0
     n_skipped_cells = 0
     for cell in cells:
-        # FIX 2026-07-25 (Cowork session): this used to be `for _ in
+        # FIX 2026-07-25: this used to be `for _ in
         # range(args.runs):` unconditionally, which re-invoking `--runs 2`
-        # daily (the project's actual resumption plan - see CLAUDE.md's RQ2
+        # daily (the project's actual resumption plan - see PROJECT_SPEC.md's RQ2
         # note) turned into "add 2 MORE runs every time", not "ensure 2
         # total" - confirmed for real via run_config.jsonl: a cell already
         # at 2/2 got run_index 3+4 appended (2026-07-24 re-run), and a cell

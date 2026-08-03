@@ -1,5 +1,5 @@
 # LLM Risk Register Benchmark - pinned dependencies (Python 3.11+)
-# Refresh pins deliberately; do not add new libraries without approval (see CLAUDE.md).
+# Refresh pins deliberately; do not add new libraries without approval (see PROJECT_SPEC.md).
 
 # PDF extraction
 PyMuPDF==1.24.10
@@ -23,7 +23,7 @@ sentence-transformers==3.2.1
 
 # Data + ML utilities
 # DECIDED 2026-07-22 (Madhu): pandas and scikit-learn removed - both were
-# pinned (and named in CLAUDE.md's approved library list) but never actually
+# pinned (and named in PROJECT_SPEC.md's approved library list) but never actually
 # imported anywhere in src/ or analysis/ (match.py's cosine similarity uses
 # numpy directly - see _cosine_matrix() - and nothing uses pandas). Found via
 # tests/test_requirements_consistency.py (Task F7). Re-add either one, with

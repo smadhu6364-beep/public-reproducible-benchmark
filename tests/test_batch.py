@@ -482,7 +482,7 @@ class TestCheckAndCollectBatches(unittest.TestCase):
 
         self.assertEqual(result["jobs"][0]["status"], "collected")
         self.assertEqual(result["jobs"][0]["n_ok"], 1)
-        # Same fields CLAUDE.md requires from a synchronous run - a reader of
+        # Same fields PROJECT_SPEC.md requires from a synchronous run - a reader of
         # run_config.jsonl or raw_outputs cannot tell this came from a batch.
         self.assertEqual(record["model_version"], "claude-sonnet-5")
         self.assertTrue(record["temperature_applied"])

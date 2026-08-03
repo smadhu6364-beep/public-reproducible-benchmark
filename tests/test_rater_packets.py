@@ -3,7 +3,7 @@
 This module is the one place where a silent bug invalidates human data rather
 than just producing a wrong number: if a packet reveals which model or prompt
 produced a register, or if the per-rater orders correlate, the expert-Likert
-arm (CLAUDE.md Method B) is compromised - and you would find out only after
+arm (PROJECT_SPEC.md Method B) is compromised - and you would find out only after
 raters had already read the packets. So the blinding assertions here are
 deliberately paranoid, and they check the SHAREABLE artifacts specifically
 (packets + rater_assignments), not just the internal data structures.
