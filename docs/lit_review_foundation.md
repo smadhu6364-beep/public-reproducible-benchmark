@@ -1,6 +1,6 @@
-# Literature Review Foundation — LLM Risk Register Benchmark
+# Literature Review Foundation: LLM Risk Register Benchmark
 
-**Status:** Working document, v1 — 18 July 2026
+**Status:** Working document, v1, 18 July 2026
 **Purpose:** Seed the Related Work section, prove the research gap, and guide what we build.
 **Rule:** Every entry below was found via live search and is verifiable. Before citing
 any paper in the final manuscript, download the full text and read at least the
@@ -8,10 +8,10 @@ abstract, method, and limitations sections. **Never cite from a summary alone.**
 
 ## How this list is organized
 
-Five themes. Our paper sits at the intersection of Themes 2, 3, and 4 — that
+Five themes. Our paper sits at the intersection of Themes 2, 3, and 4; that
 intersection is empty, which is the gap.
 
-- **Theme 1:** AI in project management (the broad field — establishes context)
+- **Theme 1:** AI in project management (the broad field, establishes context)
 - **Theme 2:** LLMs/ChatGPT for project risk management (the direct competitors)
 - **Theme 3:** NLP/text mining for risk extraction (the pre-LLM baseline methods)
 - **Theme 4:** LLM evaluation methodology (how to measure LLM output quality rigorously)
@@ -19,7 +19,7 @@ intersection is empty, which is the gap.
 
 ---
 
-## THEME 1 — AI in Project Management (context setting, ~4–5 citations in final paper)
+## THEME 1: AI in Project Management (context setting, ~4-5 citations in final paper)
 
 - **Salimimoghadam, S., Ghanbaripour, A.N., Tumpa, R.J., et al. (2025).** "The Rise
   of Artificial Intelligence in Project Management: A Systematic Literature Review of
@@ -50,7 +50,7 @@ intersection is empty, which is the gap.
 
 - **(2024).** "Artificial intelligence in open innovation project management: A
   systematic literature review." ScienceDirect (S2199853124002397).
-  *Use for:* only ~5 papers in their corpus discuss generative AI — quantifies how
+  *Use for:* only ~5 papers in their corpus discuss generative AI; quantifies how
   thin the genAI-in-PM literature is.
 
 - **Karshiboev, A., et al. (2026).** "The Impact of AI and Data Analytics on Project
@@ -61,7 +61,7 @@ intersection is empty, which is the gap.
 
 ---
 
-## THEME 2 — LLMs/ChatGPT for Project Risk Management (direct competitors — read all fully)
+## THEME 2: LLMs/ChatGPT for Project Risk Management (direct competitors, read all fully)
 
 - **(2025).** "Exploring Large Language Model AI tools in Construction Project Risk
   Assessment: ChatGPT Limitations in Risk Identification, Mitigation Strategies, and
@@ -69,7 +69,7 @@ intersection is empty, which is the gap.
   Vol 151, No 9.
   **CLOSEST COMPETITOR #1.** Mixed-method, ChatGPT vs expert evaluation on
   infrastructure projects. Finding: strong on generic/checklist risks, weak on unique
-  context-specific risks — the ones with the highest severity. Favorable UX; helps
+  context-specific risks, the ones with the highest severity. Favorable UX; helps
   junior practitioners most.
   *Their limits we exploit:* single model (ChatGPT), construction only, no public
   reproducible corpus, no ground-truth registers.
@@ -117,7 +117,7 @@ intersection is empty, which is the gap.
 
 ---
 
-## THEME 3 — Pre-LLM NLP/Text Mining for Risk Extraction (baseline lineage, ~3 citations)
+## THEME 3: Pre-LLM NLP/Text Mining for Risk Extraction (baseline lineage, ~3 citations)
 
 - **(2025).** "Large Language Models for Construction Risk Classification: A
   Comparative Study." *Buildings* 15(18):3379 (MDPI).
@@ -139,11 +139,11 @@ intersection is empty, which is the gap.
 
 ---
 
-## THEME 4 — LLM Evaluation Methodology (defends our evaluation design, ~4 citations)
+## THEME 4: LLM Evaluation Methodology (defends our evaluation design, ~4 citations)
 
 - **(2024, arXiv 2412.05579).** "LLMs-as-Judges: A Comprehensive Survey on LLM-based
   Evaluation Methods."
-  *Use for:* framework and known limitations of LLM-as-judge — justifies why Method C
+  *Use for:* framework and known limitations of LLM-as-judge; justifies why Method C
   is supplementary only.
 
 - **(2025, arXiv 2503.05061).** "No Free Labels: Limitations of LLM-as-a-Judge Without
@@ -164,20 +164,20 @@ intersection is empty, which is the gap.
 
 ---
 
-## THEME 5 — Benchmarking & Prompting (~2–3 citations)
+## THEME 5: Benchmarking & Prompting (~2-3 citations)
 
 - **Kappa/inter-rater methodology:** cite **Fleiss (1971)** for Fleiss' kappa and
-  **Landis & Koch (1977)** for interpretation bands — standard, uncontroversial,
+  **Landis & Koch (1977)** for interpretation bands, standard, uncontroversial,
   needed for Method B.
 - **Prompting strategies:** **Brown et al. (2020)** for few-shot in-context learning;
   **Wei et al. (2022)** for chain-of-thought. Foundational, **verify exact citations
   from the original arXiv/NeurIPS versions.**
 - **Thakur et al. (2024)** (cited in Theme 4 sources): argues Cohen's kappa over
-  percent agreement for judge-human alignment — directly supports our metric choice.
+  percent agreement for judge-human alignment: directly supports our metric choice.
 
 ---
 
-## GAP ANALYSIS — what the literature does NOT do (our paper's justification)
+## GAP ANALYSIS: what the literature does NOT do (our paper's justification)
 
 | # | Gap in existing work | Evidence | Our answer |
 |---|----------------------|----------|------------|
@@ -201,37 +201,37 @@ intersection is empty, which is the gap.
 
 - The ASCE 2025 paper (#8) and RiskGPT (#12) are close. Our defense is **G2+G3+G5**:
   multi-model, ground-truth-based, public benchmark. If a paper appears in the next 6
-  months doing exactly that, our contribution shrinks — monitor Google Scholar alerts
+  months doing exactly that, our contribution shrinks; monitor Google Scholar alerts
   for "LLM risk register", "LLM risk identification benchmark" monthly.
 - Reviewer will ask: "Why not fine-tune?" Answer in paper: we benchmark off-the-shelf
   capability because that is how practitioners actually use these tools (supported by
   #5: limited understanding is the adoption barrier; nobody is fine-tuning in a PMO).
 
-## WHAT WAS DONE TODAY (progress log — keep updating every session)
+## WHAT WAS DONE TODAY (progress log, keep updating every session)
 
 - **[18 Jul 2026]** Ran structured literature search across 4 query families (LLM+PM
   risk, ChatGPT risk evaluation, NLP risk extraction, LLM-as-judge). Compiled 24
   verified reference candidates across 5 themes. Built gap table G1–G8 mapped to
   RQ1–RQ3. Drafted the paper's gap statement.
 
-## LEARNING NOTES (for Madhu — the "why" behind each move)
+## LEARNING NOTES (for Madhu: the "why" behind each move)
 
 - A Related Work section is an argument, not a list. Themes 1–3 say "here is what
   exists," Theme 4 says "here is how to measure properly," and the gap table says
   "here is the hole we fill." Reviewers score exactly this structure.
-- The most dangerous papers are the closest ones (#8, #12, #15). You never hide them —
+- The most dangerous papers are the closest ones (#8, #12, #15). You never hide them:
   you cite them prominently and state precisely how you differ. Hiding a close
   competitor a reviewer knows about = instant rejection.
 - Ground truth beats opinion. Every prior study used expert panels; panels are
   subjective and non-reproducible. Our recall/precision against published registers is
-  the methodological upgrade — that is the paper's spine.
+  the methodological upgrade: that is the paper's spine.
 - 24 candidates → ~20–25 final citations is correct sizing for a 6–8 page IEEE
   conference paper (roughly: 5 context, 7 competitors, 3 baselines, 4 evaluation, 3
   methods/foundations, plus data sources).
 
 ## NEXT ACTIONS (in order)
 
-1. **[Madhu, this week — still the gate]** Pull 5 World Bank PADs + 5 UK IPA docs;
+1. **[Madhu, this week: still the gate]** Pull 5 World Bank PADs + 5 UK IPA docs;
    confirm risk registers are extractable. Nothing else proceeds until this passes.
 2. **[Kruthik]** Download full texts of #8, #9, #11, #12, #15 (the five must-reads).
    Write a half-page summary of each: method, sample size, evaluation design, stated
