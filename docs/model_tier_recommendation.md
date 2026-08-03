@@ -31,7 +31,7 @@ not reconcile with a real per-provider batch calculation either (~$24.02 for
 2 runs if Claude+GPT are batched and the open-source slot is not) - treat the
 batch figures here as illustrative of the *concept*, not as numbers to quote.
 
-**This was legwork, not a unilateral decision.** CLAUDE.md and the handoff
+**This was legwork, not a unilateral decision.** PROJECT_SPEC.md and the handoff
 were explicit that which paid model runs in each slot is Madhu's call; the
 analysis below made that call fast from a sourced shortlist with real cost
 estimates, and Madhu made it via a direct choice, not by default. **Nothing
@@ -162,9 +162,9 @@ reproducibility (open-weight models are re-hosted at varying quantizations).
 
 ---
 
-## Full-grid cost vs. CLAUDE.md's $30 cost guard
+## Full-grid cost vs. PROJECT_SPEC.md's $30 cost guard
 
-CLAUDE.md stops any full-grid run whose projected cost exceeds **$30** pending
+PROJECT_SPEC.md stops any full-grid run whose projected cost exceeds **$30** pending
 confirmation. Total grid cost = (Claude slot + GPT slot + open slot) × runs.
 Representative triples:
 
@@ -249,7 +249,7 @@ single one rejected the actual spend-incurring call:
 
 None of the three accounts had funded billing. Faced with a real budget
 constraint, Madhu chose to redesign the model lineup around genuinely
-free-tier providers rather than pay - see CLAUDE.md's RQ2 correction note
+free-tier providers rather than pay - see PROJECT_SPEC.md's RQ2 correction note
 for why this is a real, disclosed change to the comparison's shape, not a
 relabeling.
 
@@ -377,7 +377,7 @@ Updated: `run_experiments.py` (`GEMINI_BASE_URL`/`SAMBANOVA_BASE_URL`,
 `call_gpt`/`call_opensource`, `PRICING_PER_MTOK`), `check_env.py`
 (`check_gpt_slot`/`check_opensource_slot`), `.env`/`.env.example`
 (`SAMBANOVA_API_KEY` replaces `GROQ_API_KEY`; `OPENSOURCE_MODEL_NAME` reverts
-to `Meta-Llama-3.3-70B-Instruct`), `CLAUDE.md`'s RQ2 note, and this file.
+to `Meta-Llama-3.3-70B-Instruct`), `PROJECT_SPEC.md`'s RQ2 note, and this file.
 
 ## ADDENDUM 2026-07-23 (later the same day): the real full-grid attempt confirms the ~21-day estimate, and reveals Gemini has the same problem
 

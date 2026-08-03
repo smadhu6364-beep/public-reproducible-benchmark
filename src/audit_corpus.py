@@ -109,7 +109,7 @@ SORT_CATEGORY_HINTS = [
 ]
 
 # --- UK PDF docs: known section headings ------------------------------------
-# Hand-verified against the real PDFs 2026-07-19 (VS Code session). Searched
+# Hand-verified against the real PDFs 2026-07-19. Searched
 # here by literal heading text, independently of any previously-recorded
 # page number, per this task's brief.
 UK_HEADINGS: dict[str, list[tuple[str, re.Pattern]]] = {

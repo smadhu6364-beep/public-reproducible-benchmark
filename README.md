@@ -22,7 +22,7 @@ core failure-mode contribution).
 - `data/` corpus: `raw/` (PDFs, gitignored), `processed/` (text), `ground_truth/` (JSON registers, complete for all 21 included projects - 18 World Bank PADs + 3 UK business cases), `risk_source_audit/` (excised pages, audit-only, gitignored), `corpus_manifest.csv`
 - `prompts/` prompt templates + `output_schema.json` / `ground_truth_schema.json`
 - `src/` `extract.py`, `run_experiments.py` (sync + batch), `match.py`, `metrics.py`, `judge.py`, `check_env.py`, `audit_corpus.py`, `build_rater_packets.py`, `validate_threshold.py` - all implemented; no full experiment run yet (needs `.env` API keys - all 3 model slots are decided and pre-filled in `.env.example`)
-- `tests/` 438 unit tests covering the deterministic logic in `extract.py` (incl. the page-excision partition and the `--all` driver), `audit_corpus.py` (leakage detection and the FAIL/WARN/PASS aggregation driver), `match.py` (incl. its scoring driver), `validate_threshold.py` (the sweep/recommend statistics behind the 0.45 threshold decision), `metrics.py` (incl. the opt-in pretraining-cutoff contamination check), response parsing and driver logic (`run_experiments.py`/`judge.py`), batch-API request/response shapes and submit/collect (`run_experiments.py`), Method B sampling/blinding (`build_rater_packets.py`), the run driver's append-only + leakage + cost guards, `check_env.py`'s connectivity checks, `.env.example`/code consistency, git-level leakage guards (gitignore), ground-truth schema conformance, a static sweep guarding the out-of-repo-path `_show()` fix across 5 files, `run_experiments.py`'s and `metrics.py`'s synchronous CLI drivers, retry/backoff on transient provider errors, a requirements.txt-vs-imports consistency guard, a CLAUDE.md compliance self-check, an end-to-end playbook smoke test chaining run_experiments->match->metrics->figures, Method B's Fleiss' kappa computation (`compute_kappa.py`), and figure rendering - stubs the embedding model, the PDF reader, and all three model APIs (sync and batch), so it runs in a few seconds with no network/keys/spend. Run `python -m unittest discover -s tests`.
+- `tests/` 438 unit tests covering the deterministic logic in `extract.py` (incl. the page-excision partition and the `--all` driver), `audit_corpus.py` (leakage detection and the FAIL/WARN/PASS aggregation driver), `match.py` (incl. its scoring driver), `validate_threshold.py` (the sweep/recommend statistics behind the 0.45 threshold decision), `metrics.py` (incl. the opt-in pretraining-cutoff contamination check), response parsing and driver logic (`run_experiments.py`/`judge.py`), batch-API request/response shapes and submit/collect (`run_experiments.py`), Method B sampling/blinding (`build_rater_packets.py`), the run driver's append-only + leakage + cost guards, `check_env.py`'s connectivity checks, `.env.example`/code consistency, git-level leakage guards (gitignore), ground-truth schema conformance, a static sweep guarding the out-of-repo-path `_show()` fix across 5 files, `run_experiments.py`'s and `metrics.py`'s synchronous CLI drivers, retry/backoff on transient provider errors, a requirements.txt-vs-imports consistency guard, a PROJECT_SPEC.md compliance self-check, an end-to-end playbook smoke test chaining run_experiments->match->metrics->figures, Method B's Fleiss' kappa computation (`compute_kappa.py`), and figure rendering - stubs the embedding model, the PDF reader, and all three model APIs (sync and batch), so it runs in a few seconds with no network/keys/spend. Run `python -m unittest discover -s tests`.
 - `results/` `raw_outputs/` (append-only) + `scored/` + `rater_packets/` (Method B sampling/blinding, packets pending real generations); `analysis/` figures (pipeline in progress); `paper/` (Overleaf-linked)
 
 ## Running the pipeline
@@ -45,7 +45,7 @@ python src/build_rater_packets.py --min-uk-per-cell 1 --raters 4 # Method B samp
 
 Two things to know before running: **use the venv** (bare `python` here lacks
 matplotlib, so the figures step fails late), and the full grid at 2-3 runs costs
-**$42-63 synchronously**, which exceeds CLAUDE.md's $30 guard. Decided
+**$42-63 synchronously**, which exceeds PROJECT_SPEC.md's $30 guard. Decided
 2026-07-21 (Madhu): use `--batch` (claude+gpt at ~50% off, opensource stays
 synchronous) to bring 2 runs to ~$24, under the guard, see
 [`results/preflight_report.md`](results/preflight_report.md) §2 for the
@@ -96,7 +96,7 @@ doesn't), ground-truth schema conformance across all 21 registers, and a
 static sweep guarding the out-of-repo relative-path crash fix across all 5
 files it was applied to.
 
-See `CLAUDE.md` for frozen research questions and methodology rules, and
+See `PROJECT_SPEC.md` for frozen research questions and methodology rules, and
 `INCLUSION_CRITERIA.md` for corpus selection. Status: corpus (21/21) and
 pipeline are complete and unit-tested; Method A's matching threshold is
 validated against a hand-labeled set; Method B's sampling/blinding is built;

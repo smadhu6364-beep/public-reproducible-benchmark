@@ -2,17 +2,17 @@
 % LLM Risk Register Benchmark
 %
 % STATUS (2026-07-26): Draft working manuscript, NOT a submittable one -
-% deliberately expanded past IEEE's real 6-8 page target (CLAUDE.md) as a
+% deliberately expanded past IEEE's real 6-8 page target (PROJECT_SPEC.md) as a
 % working draft at Madhu's explicit instruction; must be trimmed back to
 % 6-8 pages before real submission. Currently compiles to 8 pages.
 % Real, non-fabricated content throughout: Sections I (framing/RQs), II
 % (Related Work), III (Methodology), and V (Discussion/Limitations) are
 % built from paper/methodology_notes.md, docs/lit_review_foundation.md,
-% INCLUSION_CRITERIA.md, docs/rater_protocol.md, CLAUDE.md, and
+% INCLUSION_CRITERIA.md, docs/rater_protocol.md, PROJECT_SPEC.md, and
 % data/corpus_manifest.csv - all real, previously-vetted project content
 % or data, not invented here. Every references.bib entry is now cited
 % somewhere in the paper (Related Work + Methodology).
-% 2026-07-25 (Cowork session): corrected a stale fact in V.1 (Pretraining
+% 2026-07-25: corrected a stale fact in V.1 (Pretraining
 % Contamination) - the Gemini-slot cutoff was recorded as January 2025
 % (researched against gemini-2.5-flash, no longer the model actually
 % dispatched); the model the pipeline now actually calls
@@ -20,9 +20,9 @@
 % March 2026 instead, per docs/model_cutoffs.md's THIRD update. Also folded
 % in the gpt-oss-120b LLMLagBench data point (three non-agreeing candidate
 % values, still not a single confirmed date) from that file's FOURTH update.
-% 2026-07-26 (VS Code session): substantially expanded III/V with real
+% 2026-07-26: substantially expanded III/V with real
 % content (rater protocol detail, free-tier quota numbers incl. the new
-% OpenRouter paid fallback - CLAUDE.md's dated addendum, an investigated
+% OpenRouter paid fallback - PROJECT_SPEC.md's dated addendum, an investigated
 % leak-check false positive on P-MAR, Method B's rater instructions
 % verbatim, corpus/model tables) and expanded II with every previously-
 % unused references.bib entry. No fabricated numbers anywhere -
@@ -33,7 +33,7 @@
 %   - Abstract: needs real RQ1-RQ3 headline findings (results/metrics.json
 %     does not exist yet as of this revision - the real experiment grid is
 %     running now under a free-tier model lineup with hard daily quotas;
-%     see HANDOFF_VSCODE_SESSION.md for real progress and a live, unresolved
+%     see docs/methodology_log.md for current status and a live, unresolved
 %     bug affecting how quickly it completes).
 %   - Section IV (Results): entirely blocked on real experiment data.
 %   - Section VI (Conclusion): cannot be written before Results exist.
@@ -53,7 +53,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{url}
-% T1 fontenc added 2026-07-25 (Cowork session): a real compile ERROR (not just
+% T1 fontenc added 2026-07-25: a real compile ERROR (not just
 % a warning) was found via a real pdflatex log - "Command \k unavailable in
 % encoding OT1" on Section V.1's "Pezik et al." citation (LLMLagBench author's
 % real name has a Polish ogonek, P\k{e}zik). Default OT1 encoding can't render

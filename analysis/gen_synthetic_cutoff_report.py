@@ -9,7 +9,7 @@ docstring for why those numbers are what they are) rather than duplicating
 that logic, and pairs them with placeholder model_cutoffs dates that are
 DELIBERATELY NOT the real published training-cutoff dates for these models
 (see docs/model_cutoffs.md for those, researched separately and never
-hardcoded into any code, per CLAUDE.md's no-fabrication rule and
+hardcoded into any code, per PROJECT_SPEC.md's no-fabrication rule and
 pretraining_cutoff_report()'s own docstring). Mixing real cutoff dates into
 an otherwise-100%-fabricated demo would be more misleading, not less - it
 would dress up a fake result with one real-looking fact. Keeping the whole

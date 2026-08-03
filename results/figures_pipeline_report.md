@@ -92,7 +92,7 @@ read as a gap.
 ## Caveats and hand-off notes
 
 - **These PNGs are synthetic.** They sit in `analysis/figures/` (the location
-  CLAUDE.md reserves for the paper's real figures) because the task specified
+  PROJECT_SPEC.md reserves for the paper's real figures) because the task specified
   that output path and asked for them to be rendered and inspected there - but
   they are disposable. Overwrite them by re-running the two commands below once
   real `results/scored/*.match.json` exists; the SYNTHETIC caption disappears

@@ -56,7 +56,7 @@ SHORT_REGISTER_SUBGROUP = {
     "P-PAK-ResilientAccessibleMicrofinance",
     "P-JOR-InnovativeStartupsSMEsFund2",
     "P-MAR-SecondIdentityTargetingSocialProtection",
-    # Added 2026-07-19 (Madhu, via AskUserQuestion): UK SBC with the thinnest
+    # Added 2026-07-19 (Madhu's call): UK SBC with the thinnest
     # register in the corpus - 3 one-line risk bullets, only 2 with a stated
     # mitigation, no likelihood/impact/rating of any kind. See
     # data/ground_truth/P-UK-FreeBreakfastClubs.json notes for full reasoning
@@ -189,7 +189,7 @@ def pretraining_cutoff_report(per_run: list[dict], model_cutoffs: dict[str, str]
     does anything if the CALLER supplies model_cutoffs explicitly. That is
     deliberate: which date each model's training cutoff falls on is a
     real-world fact about specific model versions that changes as new models
-    ship, not something to hardcode or guess here (CLAUDE.md: never fabricate
+    ship, not something to hardcode or guess here (PROJECT_SPEC.md: never fabricate
     data). Pass it in, e.g.:
         model_cutoffs = {"claude": "2025-XX-XX", "gpt": "2025-XX-XX", "opensource": "2024-XX-XX"}
     sourced from each provider's own model documentation at run time, not

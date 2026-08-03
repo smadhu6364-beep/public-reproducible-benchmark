@@ -124,7 +124,7 @@ automated cut blindly":
    uses a fully synthetic worked example for this reason.
 
 This methodology is written up in full in the paper draft's Methodology
-section (maintained separately per `CLAUDE.md` - `paper/` content is
+section (maintained separately per `PROJECT_SPEC.md` - `paper/` content is
 Overleaf-linked, not stored in this repo).
 
 ## Pretraining contamination (public documents)

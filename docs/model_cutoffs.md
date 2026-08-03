@@ -3,7 +3,7 @@
 > **STALE as of 2026-07-23 - do NOT use these dates for a real contamination
 > check.** The model tier researched below (Claude Sonnet 5, GPT-5.6 Terra,
 > Llama 3.3 70B) was retired the same day this file was written about, for a
-> budget-driven reason unrelated to these dates' accuracy - see CLAUDE.md's
+> budget-driven reason unrelated to these dates' accuracy - see PROJECT_SPEC.md's
 > RQ2 correction note and `docs/model_tier_recommendation.md`'s dated
 > addendum. The 3 models actually configured now are Google Gemini
 > (`gemini-2.5-flash`), and two Groq-served open-weight models
@@ -16,7 +16,7 @@
 > approximately - they are for entirely different models.
 
 Reference data for `metrics.pretraining_cutoff_report(per_run, model_cutoffs, ...)`.
-That function deliberately does NOT hardcode any cutoff date in code (CLAUDE.md's
+That function deliberately does NOT hardcode any cutoff date in code (PROJECT_SPEC.md's
 no-fabrication rule, and the function's own docstring) - it requires the caller to
 supply `model_cutoffs` explicitly. This file is that lookup, done once, with real
 citations, so whoever runs the real analysis doesn't have to re-research it from
@@ -72,9 +72,9 @@ re-research before running `pretraining_cutoff_report()` for real.**
   with one real-looking fact. The two files are intentionally kept separate;
   neither reads the other.
 
-## Re-research for the new model lineup (2026-07-23, Cowork session)
+## Re-research for the new model lineup (2026-07-23)
 
-Following the free-tier redesign (see CLAUDE.md's RQ2 note), the 3 models
+Following the free-tier redesign (see PROJECT_SPEC.md's RQ2 note), the 3 models
 configured at the time were `gemini-2.5-flash`, `openai/gpt-oss-120b` (via
 Groq), and `qwen/qwen3.6-27b` (via Groq). Researched directly against primary
 sources today - **1 of 3 confirmed, 2 genuinely unresolved**, reported
@@ -91,13 +91,13 @@ surfaced first.
 two open cells above (check the gpt-oss arXiv PDF directly, check Qwen's
 GitHub repo or technical report if one exists) or explicitly mark those two
 models as excluded from the contamination sub-analysis rather than guessing
-a plausible-sounding date - CLAUDE.md's "unknown = say unknown" rule applies
+a plausible-sounding date - PROJECT_SPEC.md's "unknown = say unknown" rule applies
 here exactly as it did to the Groq rate-limit question.
 
-## SECOND update (2026-07-23, VS Code session, later the same day): Groq -> SambaNova, `opensource` model itself changed
+## SECOND update (2026-07-23, later the same day): Groq -> SambaNova, `opensource` model itself changed
 
 Groq's free tier turned out to have a structural 8K TPM per-request cap this
-project's real prompts exceed ~4x (see CLAUDE.md's RQ2 note) - `gpt` and
+project's real prompts exceed ~4x (see PROJECT_SPEC.md's RQ2 note) - `gpt` and
 `opensource` moved to SambaNova Cloud. This changes what needs researching:
 
 | Project slug | Real model | Cutoff | Confidence |
@@ -110,12 +110,12 @@ Net effect: 2 of 3 slots' cutoffs are now real, confirmed facts
 (`gemini-flash-latest` pending a quick re-check of which model it currently
 aliases to; `Meta-Llama-3.3-70B-Instruct` reuses existing, solid research).
 Only `openai/gpt-oss-120b` remains genuinely unresolved - resolve it or
-explicitly exclude it from `pretraining_cutoff_report()`, per CLAUDE.md's
+explicitly exclude it from `pretraining_cutoff_report()`, per PROJECT_SPEC.md's
 "unknown = say unknown" rule, before running the real contamination check.
 
-## THIRD update (2026-07-23, Cowork session): `gemini-flash-latest` re-checked - real cutoff is materially different, not January 2025
+## THIRD update (2026-07-23): `gemini-flash-latest` re-checked - real cutoff is materially different, not January 2025
 
-CLAUDE.md's own RQ2 note (the "REAL FULL-GRID ATTEMPT" addendum) already
+PROJECT_SPEC.md's own RQ2 note (the "REAL FULL-GRID ATTEMPT" addendum) already
 recorded, from a real 429 error body during an actual full-grid attempt,
 that `gemini-flash-latest` currently resolves to **`gemini-3.6-flash`** - not
 `gemini-2.5-flash`, the model the January 2025 date above was researched
@@ -123,7 +123,7 @@ against. Re-researched directly rather than assume the old date carries over:
 
 | Project slug | Real model | Cutoff | Confidence |
 | --- | --- | --- | --- |
-| `claude` | `gemini-flash-latest` -> resolves to `gemini-3.6-flash` (confirmed via CLAUDE.md's real 429 error, not re-derived here) | **March 2026** | **Confirmed** - fetched `ai.google.dev/gemini-api/docs/models/gemini-3.6-flash` directly, which points to the model's official card at `deepmind.google/models/model-cards/gemini-3-6-flash/` (a real PDF, Published July 2026). States plainly under "Known Limitations": "The knowledge cutoff date for Gemini 3.6 Flash was March 2026." Do NOT confuse this with the page's separate "Latest update: July 2026" field - that is a release/refresh date, not a training cutoff, same distinction this file has flagged before for Qwen's announcement date. |
+| `claude` | `gemini-flash-latest` -> resolves to `gemini-3.6-flash` (confirmed via PROJECT_SPEC.md's real 429 error, not re-derived here) | **March 2026** | **Confirmed** - fetched `ai.google.dev/gemini-api/docs/models/gemini-3.6-flash` directly, which points to the model's official card at `deepmind.google/models/model-cards/gemini-3-6-flash/` (a real PDF, Published July 2026). States plainly under "Known Limitations": "The knowledge cutoff date for Gemini 3.6 Flash was March 2026." Do NOT confuse this with the page's separate "Latest update: July 2026" field - that is a release/refresh date, not a training cutoff, same distinction this file has flagged before for Qwen's announcement date. |
 
 **This supersedes the January 2025 figure in the very first table above for
 the `claude` slot specifically** - that figure was real and correctly sourced
@@ -137,7 +137,7 @@ publication date (check `corpus_manifest.csv` publication dates against
 March 2026 per-project, not just as one aggregate cutoff-vs-corpus
 comparison).
 
-## FOURTH update (2026-07-23, Cowork session): `gpt-oss-120b` - still not confirmed by OpenAI directly, one new data point, reported with the right caveats
+## FOURTH update (2026-07-23): `gpt-oss-120b` - still not confirmed by OpenAI directly, one new data point, reported with the right caveats
 
 Checked further while other cutoff gaps were being closed. Found a real,
 legitimate academic source this time (not an aggregator blog) -

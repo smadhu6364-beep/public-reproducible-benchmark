@@ -5,7 +5,7 @@ that matter and the traps that have actually bitten this project. Written
 2026-07-21; every command below was run (or `--help`-verified) against the repo
 as it stands, so the flags are real, not remembered.
 
-Read `CLAUDE.md` first for the frozen research questions and methodology rules.
+Read `PROJECT_SPEC.md` first for the frozen research questions and methodology rules.
 This document is *how*, not *what* or *why*.
 
 ---
@@ -39,7 +39,7 @@ lineup moved to Gemini + Groq. Groq's free tier then turned out to have a
 hard 8,000 TPM per-request cap that this project's real ~30-34K-token
 prompts exceed ~4x — a real smoke test confirmed this outright, not a
 pacing issue — so the `gpt`/`opensource` slots moved again, to SambaNova
-Cloud. See CLAUDE.md's RQ2 correction note and
+Cloud. See PROJECT_SPEC.md's RQ2 correction note and
 `docs/model_tier_recommendation.md`'s dated addenda for the full history.
 `.env.example` is now pre-filled with 3 genuinely free-tier models across
 just **2 real accounts**: Google Gemini (`GEMINI_API_KEY`, from
@@ -116,7 +116,7 @@ Prints per-model and total projected cost, makes **no API calls**.
 triple all hit real billing/quota errors on the first actual spend attempt
 (see `docs/model_tier_recommendation.md`'s dated addendum) and was replaced
 with 3 genuinely free-tier models. The estimate is now, correctly,
-**`estimated_total_usd: 0.0`** — verified directly, not assumed. CLAUDE.md's
+**`estimated_total_usd: 0.0`** — verified directly, not assumed. PROJECT_SPEC.md's
 $30 cost guard and `--confirm-cost` are effectively moot for this lineup
 (nothing will ever exceed $30), but both remain in the code as a safeguard
 if a future funded run reverts to paid providers.
@@ -138,7 +138,7 @@ Passing `--batch` against the current `.env` will fail (it still requires
 longer sets by default) — see `run_experiments.py`'s module docstring if a
 funded run ever needs to revive that path.
 
-- `--temperature` defaults to 0.1 and is hard-limited to [0, 0.2] per CLAUDE.md.
+- `--temperature` defaults to 0.1 and is hard-limited to [0, 0.2] per PROJECT_SPEC.md.
 - Raw outputs are **append-only**: `next_free_run_index` picks the lowest unused
   index, and `run_one` refuses to overwrite an existing file. Re-invoking adds
   runs rather than clobbering them — which also means a partial grid is safe to
@@ -190,7 +190,7 @@ the default keys and the variants deliberately cover different document sets.
 python src/judge.py --all
 ```
 
-Supplementary evidence per CLAUDE.md — never a headline result. The judge never
+Supplementary evidence per PROJECT_SPEC.md — never a headline result. The judge never
 sees the ground-truth register.
 
 ## 9. Figures
@@ -292,7 +292,7 @@ invalidate results:
 | `test_gitignore_leakage.py` | leakage-sensitive paths stay gitignored (and aren't already tracked via `git add -f`) |
 | `test_ground_truth_data.py` | all 21 ground-truth files conform to `ground_truth_schema.json` |
 | `test_requirements_consistency.py` | `requirements.txt` vs. actual imports in `src/`/`analysis/`, both directions |
-| `test_claude_md_compliance.py` | category enum + 1-5 scales + repo-structure directories match CLAUDE.md's own text |
+| `test_spec_compliance.py` | category enum + 1-5 scales + repo-structure directories match PROJECT_SPEC.md's own text |
 | `test_playbook_smoke.py` | the full `run_experiments.py`->`match.py`->`metrics.py`->`make_figures.py` chain, one shared sandbox |
 | `test_compute_kappa.py` | Fleiss' kappa formula (vs. an independently hand-derived example), CSV validation, full-overlap design, CLI |
 | `test_gen_synthetic_kappa_demo.py` | the kappa synthetic demo runs the real `compute_report()`, output is clearly labeled |

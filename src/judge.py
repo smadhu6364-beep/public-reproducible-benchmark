@@ -4,7 +4,7 @@ IMPLEMENTED 2026-07-19 with explicit user approval, after the project's own
 10-document ground-truth validation gate was crossed (18/18 non-set-aside
 documents). Method C is supplementary: primary evaluation is (A) semantic
 matching (match.py/metrics.py) and (B) expert Likert ratings with Fleiss'
-kappa (not yet implemented - human protocol, see HANDOFF_VSCODE_SESSION.md).
+kappa (not yet implemented - human protocol, see docs/rater_protocol.md).
 Per the evaluation-methodology literature cited in the paper draft (Section
 II.C - LLM-as-judge reliability is documented as unstable across near-
 identical prompts, systematically biased, and poorly calibrated in
@@ -216,7 +216,7 @@ def _default_judge_caller():
         # temperature=0.0 the way GPT-5.6 Terra's reasoning mode might (see
         # call_gpt's docstring), that's a lower-stakes issue for Method C
         # than for the main grid (Method C is supplementary, and its
-        # temperature isn't a CLAUDE.md-controlled variable) - so this is
+        # temperature isn't a PROJECT_SPEC.md-controlled variable) - so this is
         # just logged, not threaded into the judge result record.
         text, temperature_applied = call_fn(prompt, model_version, temperature=0.0, max_tokens=512)
         if not temperature_applied:

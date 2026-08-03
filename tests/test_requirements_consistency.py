@@ -9,7 +9,7 @@ Task F7. Two directions, both real drift risks:
      analysis/ (no stale/unused pins quietly bloating the dependency list).
 
 Both directions have narrow, explicitly-documented exceptions below -
-conditional imports and CLAUDE.md-approved-but-not-yet-used libraries -
+conditional imports and PROJECT_SPEC.md-approved-but-not-yet-used libraries -
 rather than a blanket escape hatch. Adding to either exception set should
 require the same kind of real citation already present here, mirroring
 tests/test_show_path_helper.py's ALLOWED-set convention.
@@ -41,7 +41,7 @@ IMPORT_TO_PACKAGE = {
 # (huggingface_hub, for an HF-hosted-inference path in run_experiments.py's
 # call_opensource() and check_env.py's open-source check) was REMOVED, not
 # just unused - the 2026-07-23 free-tier redesign (Gemini + Groq, see
-# CLAUDE.md's RQ2 correction note) retired that code path entirely rather
+# PROJECT_SPEC.md's RQ2 correction note) retired that code path entirely rather
 # than leaving it dormant, so there is no longer a real conditional import
 # to document. Add a new entry here, with the same kind of citation the
 # huggingface_hub one used to have, if a genuinely new conditional import
@@ -50,12 +50,12 @@ IMPORT_TO_PACKAGE = {
 KNOWN_OPTIONAL_UNPINNED_IMPORTS: dict[str, str] = {}
 
 # RESOLVED 2026-07-22 (Madhu): pandas and scikit-learn were both flagged
-# here as pinned-but-unused (named in CLAUDE.md's approved library list,
+# here as pinned-but-unused (named in PROJECT_SPEC.md's approved library list,
 # but no src/ or analysis/ script actually imported either - match.py's
 # cosine similarity uses numpy directly, _cosine_matrix()). Madhu's call was
 # to drop both pins rather than keep them for speculative future use - see
 # requirements.txt. This allowlist is intentionally empty now; if a future
-# CLAUDE.md-approved library is pinned before anything imports it, add an
+# PROJECT_SPEC.md-approved library is pinned before anything imports it, add an
 # entry here with the same kind of citation the pandas/scikit-learn entries
 # used to have, don't silently widen test_no_stale_unused_pin's tolerance.
 KNOWN_UNUSED_BUT_CLAUDE_MD_APPROVED: dict[str, str] = {}
@@ -121,7 +121,7 @@ class TestRequirementsMatchActualImports(unittest.TestCase):
             f"requirements.txt is missing a pin for: {missing} (imported in "
             f"src/ or analysis/ but not found, under the expected package "
             f"name, in requirements.txt). If this is a genuinely new "
-            f"dependency, CLAUDE.md requires asking before adding it - if "
+            f"dependency, PROJECT_SPEC.md requires asking before adding it - if "
             f"it's conditional/optional, add it to "
             f"KNOWN_OPTIONAL_UNPINNED_IMPORTS with a real citation of the "
             f"conditional call site."

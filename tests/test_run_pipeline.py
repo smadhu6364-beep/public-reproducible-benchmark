@@ -3,7 +3,7 @@
 Everything here runs with the provider call STUBBED - no network, no API keys,
 no spend. The point is that the first time run_one() executes end to end should
 not be the first call of a 567-call, $60 grid: the append-only guarantee, the
-reproducibility fields CLAUDE.md requires, the leakage guard, and the cost guard
+reproducibility fields PROJECT_SPEC.md requires, the leakage guard, and the cost guard
 should all be known-good before any money moves.
 
 Run: python -m unittest discover -s tests
@@ -94,7 +94,7 @@ class _SandboxedRun:
 
 class TestRunOneHappyPath(unittest.TestCase):
     def test_writes_record_with_every_reproducibility_field(self):
-        # CLAUDE.md: "every run logs model version string, run date, temperature,
+        # PROJECT_SPEC.md: "every run logs model version string, run date, temperature,
         # prompt file SHA256, into results/run_config.jsonl".
         provider = _StubProvider()
         with _SandboxedRun(provider) as sb:
