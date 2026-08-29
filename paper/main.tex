@@ -127,36 +127,43 @@
 % question-and-answer flow logged in this project's own working notes,
 % 2026-08-18 - not guessed (see header note above, now resolved).
 \address{%
-$^{1}$ \quad School of Professional Studies, New York University, New York, NY 10003, USA; kj2578@nyu.edu}
+$^{1}$ \quad School of Professional Studies, New York University, New York, NY 10003, USA; kj2578@nyu.edu (K.J.)}
 
 \corres{Correspondence: smadhu6364@gmail.com}
 
-\abstract{No prior work benchmarks end-to-end risk-register generation
-against real, published, human-authored ground truth across multiple large
-language models; existing evaluations are single-model and rely on expert
-opinion, not ground truth. We address this gap with a benchmark of 3
-models (one proprietary, two open-weight) $\times$ 3 prompting strategies
-(zero-shot, few-shot, structured reasoning) $\times$ 21 projects with
-public planning documentation and a published human risk register (18
-World Bank Project Appraisal Documents, 3 UK business cases), evaluated
-with a fully automated pipeline: semantic matching against ground truth as
-the primary signal, plus a supplementary, non-human-substitute judge
-model. Across 302 real, non-pilot runs, generated registers recover 55.6\%
-of ground-truth risks on average (mean recall 0.556) while only 23.0\% of
-generated risks correspond to a real ground-truth risk (mean precision
-0.230); among matched pairs, the correct risk category is assigned 45.0\%
-of the time. Model choice separates recall more cleanly than prompting
-strategy: the proprietary model leads recall (0.612--0.693) with the
-fewest parse failures, while the weaker-recall open-weight model shows the
-highest category accuracy and precision, a conservative,
-fewer-but-more-accurate pattern. Category analysis finds a specific
-failure pattern: political and regulatory risk is most often missed
-entirely (191 real risks missed corpus-wide), while schedule risk is
-generated as a near-default, safe category regardless of project fit (238
-hallucinated instances against zero real misses). We release the corpus
-manifest, extraction and prompting code, and evaluation pipeline, with a
-disclosed account of the free-tier constraints that shaped the timeline,
-for reproducibility.}
+\abstract{\textbf{Background/Objectives}: No prior work benchmarks
+end-to-end risk-register generation against real, published,
+human-authored ground truth across multiple large language models;
+existing evaluations are single-model and rely on expert opinion, not
+ground truth. This study benchmarks multiple models and prompting
+strategies against genuine, published human-authored risk registers to
+address that gap. \textbf{Methods}: We benchmark 3 models (one
+proprietary, two open-weight) $\times$ 3 prompting strategies (zero-shot,
+few-shot, structured reasoning) $\times$ 21 projects with public planning
+documentation and a published human risk register (18 World Bank Project
+Appraisal Documents, 3 UK business cases), evaluated with a fully
+automated pipeline: semantic matching against ground truth as the primary
+signal, plus a supplementary, non-human-substitute judge model.
+\textbf{Results}: Across 302 real, non-pilot runs, generated registers
+recover 55.6\% of ground-truth risks on average (mean recall 0.556) while
+only 23.0\% of generated risks correspond to a real ground-truth risk
+(mean precision 0.230); among matched pairs, the correct risk category is
+assigned 45.0\% of the time. Model choice separates recall more cleanly
+than prompting strategy: the proprietary model leads recall
+(0.612--0.693) with the fewest parse failures, while the weaker-recall
+open-weight model shows the highest category accuracy and precision, a
+conservative, fewer-but-more-accurate pattern. Category analysis finds a
+specific failure pattern: political and regulatory risk is most often
+missed entirely (191 real risks missed corpus-wide), while schedule risk
+is generated as a near-default, safe category regardless of project fit
+(238 hallucinated instances against zero real misses).
+\textbf{Conclusions}: Generated risk registers recover roughly half of a
+human-authored register's real content while a large share of what they
+generate is unmatched, with a specific, non-uniform category failure
+pattern rather than uniform weakness. We release the corpus manifest,
+extraction and prompting code, and evaluation pipeline, with a disclosed
+account of the free-tier constraints that shaped the timeline, for
+reproducibility.}
 
 \keyword{large language models; project risk management; risk register
 generation; benchmark evaluation; natural language generation; prompt
@@ -1248,5 +1255,14 @@ PM & Project Management
 \reftitle{References}
 \bibliography{references}
 \end{adjustwidth}
+
+% \PublishersNote is defined by mdpi.cls (the standard MDPI disclaimer
+% text) but never auto-invoked by the class itself - confirmed by
+% grepping mdpi.cls, where it is defined once and called nowhere else.
+% Real published MDPI articles print this at the very end, after the
+% reference list (verified 2026-08-30 against a real published article,
+% Addict. Prev. 2026, 1, 5); omitted from earlier drafts of this file
+% simply because nothing calls it by default.
+\PublishersNote
 
 \end{document}
