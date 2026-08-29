@@ -121,36 +121,30 @@ $^{1}$ \quad School of Professional Studies, New York University, New York, NY 1
 
 \abstract{No prior work benchmarks end-to-end risk-register generation
 against real, published, human-authored ground truth across multiple large
-language models; existing evaluations are almost entirely single-model and
-rely on expert opinion rather than a genuine ground-truth artifact. We
-address this gap with a benchmark of 3 models (one general-purpose
-proprietary model and two architecturally distinct open-weight models)
-$\times$ 3 prompting strategies (zero-shot, few-shot, structured reasoning)
-$\times$ 21 real-world projects with both public planning documentation and
-a published human risk register (18 World Bank Project Appraisal Documents,
-3 UK government business cases), evaluated through a fully automated
-pipeline: embedding-based semantic matching against ground truth as the
-primary signal, and LLM-as-judge scoring as an explicitly supplementary,
-non-human-substitute signal. Across 302 real, non-pilot runs, generated
-registers recover 55.6\% of ground-truth risks on average (mean recall
-0.556) while only 23.0\% of generated risks correspond to a real
-ground-truth risk (mean precision 0.230); among matched pairs, the correct
-one of eight risk categories is assigned 45.0\% of the time. Model choice
-separates recall more cleanly than prompting strategy: the proprietary
-model leads recall (0.612--0.693) with the fewest parse failures, while the
-weaker-recall open-weight model instead has the highest category accuracy
-and precision in most conditions, a conservative
-generate-fewer-but-more-accurate failure mode distinct from the stronger
-model's broader, noisier recall. Category-level analysis (RQ3) finds a
-specific, non-uniform failure pattern rather than uniform weakness:
-political/regulatory risk is the category models most often fail to
-surface at all (191 real risks missed corpus-wide), while schedule risk is
-generated as a near-default, safe category even where a project's real
-register does not support it (238 hallucinated instances against zero real
-misses). We release the corpus manifest, extraction and prompting code, and
-evaluation pipeline, including a disclosed account of the free-tier
-provider constraints that shaped the experimental timeline, so the
-benchmark is reproducible rather than described only in the abstract.}
+language models; existing evaluations are single-model and rely on expert
+opinion, not ground truth. We address this gap with a benchmark of 3
+models (one proprietary, two open-weight) $\times$ 3 prompting strategies
+(zero-shot, few-shot, structured reasoning) $\times$ 21 projects with
+public planning documentation and a published human risk register (18
+World Bank Project Appraisal Documents, 3 UK business cases), evaluated
+with a fully automated pipeline: semantic matching against ground truth as
+the primary signal, plus a supplementary, non-human-substitute judge
+model. Across 302 real, non-pilot runs, generated registers recover 55.6\%
+of ground-truth risks on average (mean recall 0.556) while only 23.0\% of
+generated risks correspond to a real ground-truth risk (mean precision
+0.230); among matched pairs, the correct risk category is assigned 45.0\%
+of the time. Model choice separates recall more cleanly than prompting
+strategy: the proprietary model leads recall (0.612--0.693) with the
+fewest parse failures, while the weaker-recall open-weight model shows the
+highest category accuracy and precision, a conservative,
+fewer-but-more-accurate pattern. Category analysis finds a specific
+failure pattern: political and regulatory risk is most often missed
+entirely (191 real risks missed corpus-wide), while schedule risk is
+generated as a near-default, safe category regardless of project fit (238
+hallucinated instances against zero real misses). We release the corpus
+manifest, extraction and prompting code, and evaluation pipeline, with a
+disclosed account of the free-tier constraints that shaped the timeline,
+for reproducibility.}
 
 \keyword{large language models; project risk management; risk register
 generation; benchmark evaluation; natural language generation; prompt
@@ -1107,6 +1101,16 @@ whether the low-precision, high-recall pattern found in the short-register
 subgroup (Section~\ref{sec:rq1-results}) is one human raters would penalize
 heavily, mildly, or not at all, which Method A and Method C together
 cannot answer without a human baseline.
+
+\textbf{Extending Method C past the feasibility pilot.} The n=5 pilot
+(Section~\ref{sec:results}) found a 60\% parse-failure rate traced to
+\texttt{judge.py}'s fixed 512-token output budget, not to the judge model
+itself (Section~\ref{sec:limitations}). Before a full Method C run against
+the corpus's 392 real generations is worth attempting, that budget needs
+enlarging and re-validating on a second small pilot; only then does scaling
+to the full corpus, under the same free-tier daily quota that governs the
+main generation grid (Table~\ref{tab:quotas}), become a reasonable next
+step rather than a repeat of this pilot's failure mode at greater cost.
 
 \textbf{Contamination-controlled replication as model rosters change.} The
 free-tier model lineup used here (Section~\ref{sec:methods}) is a
