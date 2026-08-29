@@ -1,0 +1,17 @@
+{
+  "run_file": "P-GTM-SmartPublicFinances__gpt__zero_shot__run1.json",
+  "project_id": "P-GTM-SmartPublicFinances",
+  "generation_model": "gpt",
+  "generation_prompt_strategy": "zero_shot",
+  "generation_run_index": 1,
+  "judged": true,
+  "scores": {
+    "completeness": 5,
+    "accuracy": 5,
+    "actionability": 4,
+    "overall": 5,
+    "rationale": "The risk register comprehensively covers the key technical, institutional, political, and fiduciary risks identified in the Project Appraisal Document. Mitigations are well-aligned with project components and provide actionable, context-specific measures."
+  },
+  "parse_error": null,
+  "raw_judge_response": "{\"completeness\": 5, \"accuracy\": 5, \"actionability\": 4, \"overall\": 5, \"rationale\": \"The risk register comprehensively covers the key technical, institutional, political, and fiduciary risks identified in the Project Appraisal Document. Mitigations are well-aligned with project components and provide actionable, context-specific measures.\"}"
+}

@@ -14,8 +14,12 @@ the human register is held out as ground truth (strict no-leakage rule).
 models and prompts; RQ3 which risk categories LLMs miss or hallucinate (the paper's
 core failure-mode contribution).
 
-**Evaluation:** (A) semantic matching vs. ground truth (recall/precision/coverage);
-(B) expert Likert ratings + Fleiss' kappa; (C) LLM-as-judge (supplementary only).
+**Evaluation:** (A) semantic matching vs. ground truth (recall/precision/coverage,
+primary); (C) LLM-as-judge (supplementary only, never a human-judgment substitute).
+(B) expert Likert ratings + Fleiss' kappa was designed, built, and tested, but
+formally descoped from the paper 2026-08-18 after rater recruitment did not
+prove feasible - see `docs/methodology_log.md`. The protocol/code are not
+deleted and remain available for a future replication with real raters.
 
 ## Layout
 
@@ -99,10 +103,11 @@ files it was applied to.
 See `PROJECT_SPEC.md` for frozen research questions and methodology rules, and
 `INCLUSION_CRITERIA.md` for corpus selection. Status: corpus (21/21) and
 pipeline are complete and unit-tested; Method A's matching threshold is
-validated against a hand-labeled set; Method B's sampling/blinding is built;
-all 3 model slots are decided (`.env.example`); the run driver has been
-pre-flighted end to end with stubbed providers (`results/preflight_report.md`)
-and now supports batched claude+gpt runs (`--batch`/`--batch-check`) to bring
-the decided 2-run grid under the $30 cost guard. Remaining before a full run:
-real `.env` API keys and human-rater recruitment for Method B (target: full
-experiment run by end of August 2026).
+validated against a hand-labeled set; the full experiment grid has real,
+non-pilot data (see `docs/methodology_log.md`'s Current status). Method B's
+sampling/blinding code is built and tested but not run: rater recruitment
+never progressed past the ready-to-send outreach draft, and Method B was
+formally descoped from the paper 2026-08-18 rather than left as an
+indefinite blocker - the paper is scoped as a fully automated evaluation
+(Method A + Method C). Method B's code remains in the repo for a future
+replication with real recruiting capacity.

@@ -1,0 +1,11 @@
+{
+  "run_file": "P-JOR-InnovativeStartupsSMEsFund2__opensource__zero_shot__run1.json",
+  "project_id": "P-JOR-InnovativeStartupsSMEsFund2",
+  "generation_model": "opensource",
+  "generation_prompt_strategy": "zero_shot",
+  "generation_run_index": 1,
+  "judged": false,
+  "scores": null,
+  "parse_error": "no JSON object found in judge response",
+  "raw_judge_response": "{\"completeness\": 4, \"accuracy\": 4, \"actionability\": 2"
+}

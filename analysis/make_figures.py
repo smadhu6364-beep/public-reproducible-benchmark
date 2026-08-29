@@ -104,7 +104,11 @@ def fig_rq1(metrics: dict, note: str, out_dir: Path) -> Path:
 
 
 def _grid_matrix(metrics: dict, key: str) -> np.ndarray:
-    bmp = metrics["by_model_and_prompt"]
+    # corpus_wide_only, not the pooled field: the paper's RQ2 table (and its
+    # own stated convention) excludes the short-register subgroup from this
+    # breakdown, and the figure must show the same numbers as the table it
+    # sits next to, not a silently different pooled figure.
+    bmp = metrics["by_model_and_prompt_corpus_wide_only"]
     m = np.full((len(MODELS), len(PROMPTS)), np.nan)
     for i, model in enumerate(MODELS):
         for j, prompt in enumerate(PROMPTS):
@@ -147,7 +151,9 @@ def fig_rq2(metrics: dict, note: str, out_dir: Path) -> Path:
 
 
 def fig_rq3(metrics: dict, note: str, out_dir: Path) -> Path:
-    by_cat = metrics["by_category"]
+    # Same corpus_wide_only reasoning as _grid_matrix above: must match the
+    # paper's RQ3 table, which excludes the short-register subgroup.
+    by_cat = metrics["by_category_corpus_wide_only"]
     cats = sorted(by_cat.keys())
     missed = [by_cat[c]["missed_count"] for c in cats]
     hallucinated = [by_cat[c]["hallucinated_count"] for c in cats]
@@ -173,7 +179,12 @@ def fig_rq3(metrics: dict, note: str, out_dir: Path) -> Path:
     ax.set_xlim(lo - 0.08 * span, hi + 0.08 * span)
     ax.set_xlabel("<- missed count      |      hallucinated count ->")
     ax.set_title("RQ3: which risk categories are systematically missed vs. hallucinated")
-    ax.legend(loc="upper right", fontsize=8)
+    # Outside the axes (right side), not any in-plot corner: on real
+    # (non-synthetic) grid data several categories have hallucinated counts
+    # large enough that every corner collides with some bar's count
+    # annotation (tried upper-right: covered "technical" 511; lower-right:
+    # covered "environmental" 357).
+    ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), fontsize=8)
     ax.grid(axis="x", linestyle=":", alpha=0.4)
     note2 = ("* 'other': generated risks can never be category 'other' (output-schema enum), "
              "so its hallucinated count is structurally 0 - expected, not missing data.")
@@ -182,7 +193,7 @@ def fig_rq3(metrics: dict, note: str, out_dir: Path) -> Path:
              style="italic", color="#333333")
     fig.tight_layout(rect=(0, 0.06, 1, 1))
     out = out_dir / "fig_rq3_missed_hallucinated.png"
-    fig.savefig(out, dpi=150)
+    fig.savefig(out, dpi=150, bbox_inches="tight")
     plt.close(fig)
     return out
 

@@ -75,17 +75,67 @@ separation. The threshold was lowered from 0.50 to 0.45 to sit just above
 the lowest true positive, recovering legitimate granularity-mismatch
 matches that 0.50 was clipping.
 
-## Rater protocol (Method B)
+## Rater protocol (Method B) - formally descoped 2026-08-18
 
 Sampling, blinding, and per-rater packet assignment are seeded and fully
 reproducible; the packet-generation pipeline never reads
 `data/ground_truth/`, preserving the leakage guard. UK representation
 across the sampled set is enforced at a minimum of 1 UK register per
 cell, covering all 9 risk-category cells across the full 45-item sample.
+
 Recruitment of the 3-5 practitioner raters themselves (real project
-management experience on complex or public-sector-scale projects) is an
-open item as of this writing; see `docs/rater_recruitment_channels.md`
-and `docs/rater_recruitment_outreach.md`.
+management experience on complex or public-sector-scale projects) never
+progressed past the ready-to-send outreach draft
+(`docs/rater_recruitment_outreach.md`) - confirmed directly (not assumed)
+on 2026-08-18 that no outreach had gone out and no rater data exists
+anywhere. Given the Aug-2026 timeline, Method B is formally descoped from
+the paper rather than left as an indefinite placeholder: the paper is now
+scoped as a fully automated evaluation (Method A primary, Method C
+supplementary), with Method B's absence disclosed directly in the
+Methodology, Discussion/Limitations (renamed "Method B Descoping"), and
+Future Work sections, not silently dropped. The built protocol, sampling
+code (`src/build_rater_packets.py`), and kappa computation
+(`src/compute_kappa.py`) are untouched and still tested - only the paper's
+framing changed - so a future replication with real recruiting capacity
+does not have to rebuild any of it. See `docs/rater_recruitment_channels.md`
+and `docs/rater_recruitment_outreach.md` for the recruitment materials that
+were never sent.
+
+## Method C (LLM-as-judge) - real pilot run, 2026-08-18
+
+`src/judge.py` had only ever been exercised against mocked provider
+responses; on 2026-08-18 it was run for real, for the first time, against
+five real generated registers from `results/raw_outputs/`. This was a
+deliberately small feasibility pilot, not the full grid, gated by the same
+free-tier daily quota (Table `tab:quotas` in the paper) that governs the
+main generation grid, since the configured judge
+(`JUDGE_MODEL_LABEL=claude` in `.env`, i.e. Gemini) shares that 20
+request/day cap.
+
+Pilot files were drawn only from `gpt-oss-120b`- and
+Llama-3.3-70B-generated registers, deliberately excluding
+Gemini-generated ones, to sidestep the self-preference-bias risk
+`judge.py`'s own docstring already flags (the judge model is one of the
+three benchmarked models). Note this only defers the problem for a
+full-scale run: the Gemini-generated third of the corpus would still be
+self-judged unless a fourth, non-benchmarked model is wired into
+`MODEL_DISPATCH` as judge, which does not currently exist.
+
+Result: 2 of 5 calls (40%) returned a valid, parseable score (both
+`gpt-oss-120b`/zero-shot, scored completeness 5/5, accuracy 5/5,
+actionability 4/5 and 5/5, overall 5/5 - too small and too narrow a
+sample to support any model-comparison claim). The other 3 (60%) failed to
+parse: inspecting the raw responses directly, 2 were truncated mid-JSON
+(cut off after 2-3 score fields, before the closing brace or rationale)
+and 1 returned an empty string. This is the same hidden-reasoning-token
+truncation phenomenon already disclosed for the main generation grid, but
+here hitting `judge.py`'s own separate, smaller, hardcoded 512-token
+output budget. A 60% truncation-driven failure rate in this pilot means
+that budget needs to be enlarged before a full-scale Method C run would be
+worth attempting - logged here as an actionable follow-up, not fixed in
+this pass, so the code that produced this real pilot data isn't silently
+changed out from under it. Raw pilot outputs: `results/scored_pilot/`
+(5 files). Full writeup: paper's Method C Results subsection.
 
 ## Real cost and data-usage disclosures
 
