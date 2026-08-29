@@ -37,9 +37,9 @@
 % below is also marked inline at its exact location with a matching
 % "% TODO: [INSERT DETAIL]" comment, so grepping this file for "TODO" before
 % submission surfaces every one of them:
-%   - Author affiliations, e-mails, ORCID: not specified anywhere in the
-%     repo; left as [AFFILIATION]/[EMAIL]/ORCID placeholders rather than
-%     guessed. (\address, \corres)
+%   - Author affiliations and e-mails: confirmed directly by the author
+%     (Madhu) 2026-08-18 and filled in (\address, \corres). ORCID iDs
+%     remain unconfirmed and are not guessed.
 %   - Journal ISSN / DOI abbreviation / volume / issue / article number /
 %     dates: assigned by the journal editorial office, not the authors -
 %     left blank per the template's own convention, not guessed.
@@ -51,9 +51,9 @@
 %     is reported in full, including its 60% truncation-driven failure
 %     rate; the full-scale grid run remains future work, gated on the same
 %     free-tier quota as the main grid plus an enlarged judge token budget.
-%   - Data Availability Statement: real repository URL/DOI not yet recorded
-%     anywhere in the project's own files - left as an explicit placeholder,
-%     not fabricated. (\dataavailability)
+%   - Data Availability Statement: filled in with this repository's real,
+%     configured git remote (verified via `git remote -v`, not asserted)
+%     2026-08-18. A DOI, if one is minted for a release, still needs adding.
 
 %=================================================================
 \documentclass[notspecified,article,submit,pdftex,moreauthors]{Definitions/mdpi}
@@ -103,24 +103,21 @@
 \TitleCitation{Evaluating Large Language Models for Automated Risk Register Generation from Project Documentation}
 
 % Authors (full first names, per MDPI convention)
-\Author{Madhu $^{1,}$* and Kruthik $^{1}$}
+\Author{Madhu Sudhan S. $^{1,}$* and Kruthik J. $^{1}$}
 
 % MDPI internal command: authors for PDF metadata
-\AuthorNames{Madhu, Kruthik}
+\AuthorNames{Madhu Sudhan S., Kruthik J.}
 
 % MDPI internal command: authors for left-column citation
-\AuthorCitation{Madhu; Kruthik}
+\AuthorCitation{Sudhan S., M.; J., K.}
 
-% Affiliations - real content not available in the repo; left as an
-% explicit placeholder rather than guessed (see header note above).
-% TODO: [INSERT DETAIL] - real author affiliation(s) and e-mail address(es)
-% for Madhu and Kruthik; add ORCID iDs here too if both authors have one
-% (MDPI requests but does not strictly require ORCID for all authors).
+% Affiliations and e-mails confirmed directly by the author (Madhu) via the
+% question-and-answer flow logged in this project's own working notes,
+% 2026-08-18 - not guessed (see header note above, now resolved).
 \address{%
-$^{1}$ \quad [AFFILIATION]; [EMAIL]}
+$^{1}$ \quad School of Professional Studies, New York University, New York, NY 10003, USA; kj2578@nyu.edu}
 
-% TODO: [INSERT DETAIL] - real corresponding-author e-mail address.
-\corres{Correspondence: [EMAIL]}
+\corres{Correspondence: smadhu6364@gmail.com}
 
 \abstract{No prior work benchmarks end-to-end risk-register generation
 against real, published, human-authored ground truth across multiple large
@@ -1063,7 +1060,15 @@ model output existed at the time of validation; it should be revisited
 against real generations if the corpus or embedding model changes. Method C
 is deliberately never treated as an independent quality measure, for the
 reasons discussed in
-Section~\ref{sec:related}. Finally, the free-tier infrastructure
+Section~\ref{sec:related}. The Method C pilot's 60\% parse-failure rate
+(Section~\ref{sec:results}) is a threat to that pilot's own usefulness
+specifically, not to Method A: inspection of the raw responses traced it to
+\texttt{judge.py}'s fixed 512-token output budget being too small for this
+judge model's response length, the same class of output-truncation issue
+already disclosed for the main generation grid, rather than to a defect in
+the judge model itself. This narrows what needs fixing before a full-scale
+Method C run (enlarging that budget) but does not, on a 5-call pilot,
+establish that doing so would be sufficient. Finally, the free-tier infrastructure
 constraints described in Section~\ref{sec:methods} mean the full grid is
 collected over an extended, multi-week period of daily re-invocation rather
 than a single run; because model version strings and sampling temperature
@@ -1186,10 +1191,11 @@ table.
 
 \informedconsent{Not applicable. No human subjects were involved in this study's evaluation design (Section~\ref{sec:rater-status}).}
 
-% TODO: [INSERT DETAIL] - real repository URL/DOI for the released corpus
-% manifest, code, and pipeline; not fabricated here since none is recorded
-% in the project's own files at the time of this draft.
-\dataavailability{The corpus manifest, extraction and prompting code, output schema, matching/metrics/judging pipeline, and raw model outputs referenced in this paper are released alongside it in the project's repository, per the reproducibility commitments described in Section~\ref{sec:methods}. [Insert the actual repository URL/DOI here before submission -- not fabricated here since none is recorded in the project's own files at the time of this draft.]}
+% Real repository URL, taken directly from this repo's own configured git
+% remote (`git remote -v`), not asserted from an unverified source.
+% TODO: [INSERT DETAIL] - a DOI (e.g. via Zenodo archival of a tagged
+% release) is not yet minted; add one here if/when it is.
+\dataavailability{The corpus manifest, extraction and prompting code, output schema, matching/metrics/judging pipeline, and raw model outputs referenced in this paper are released alongside it in the project's repository at \url{https://github.com/smadhu6364-beep/public-reproducible-benchmark}, per the reproducibility commitments described in Section~\ref{sec:methods}.}
 
 \acknowledgments{Not applicable.}
 
