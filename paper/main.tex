@@ -12,19 +12,25 @@
 % was explicitly dropped per the author's instruction rather than continued.
 %
 % MDPI template provenance: mdpi.com's own template page (mdpi.com/authors/
-% latex) returned HTTP 403 to automated fetches from this environment; the
+% latex) returns HTTP 403 to automated fetches from this environment; the
 % class/style files in Definitions/ were pulled instead from a public GitHub
 % mirror (github.com/xiuliyouran/MDPI_Template_LaTex), which is the standard
 % freely-redistributable MDPI class. "Project Management Horizons" is not
 % yet a \DeclareOption in that mirror's journalnames.tex (it postdates the
-% mirror's last update) and its ISSN/DOI abbreviation could not be verified
-% (mdpi.com blocked, not yet indexed on Wikipedia's MDPI journal list at
-% the time of this check) - rather than fabricate either, this file loads
-% the class under the built-in "notspecified" option (blank ISSN/DOI
-% abbreviation, a state the template already supports for other journals)
-% and overrides only the displayed journal name below. Confirm the real
-% ISSN/DOI abbreviation from the journal's own page before submission and
-% fill them in where marked.
+% mirror's last update), so this file still loads the class under the
+% built-in "notspecified" option and overrides fields post-load, the same
+% mechanism the class itself uses per-journal.
+%
+% 2026-08-30: The real ISSN and DOI abbreviation below are independently
+% verified, not asserted from an unverified source - mdpi.com itself still
+% blocks automated fetches, but Crossref's public journal API (not
+% MDPI-controlled) confirms "Project Management Horizons", publisher
+% MDPI AG, e-ISSN 3043-0887, with 3 real DOIs already registered
+% (10.3390/pmh1010001-3, Volume 1 Issue 1, 2026), independently confirming
+% the DOI abbreviation "pmh" from the actual registered DOI prefixes. The
+% journal's own short-name abbreviation (as MDPI would print it, e.g. an
+% ISO4-style form) could not be independently verified, so \@journalshort
+% below still uses the full name rather than a guessed abbreviation.
 %
 % Method B (blinded human-expert rating) is formally descoped from this
 % paper's evaluation design - see the dated entry in docs/methodology_log.md
@@ -40,12 +46,14 @@
 %   - Author affiliations and e-mails: confirmed directly by the author
 %     (Madhu) 2026-08-18 and filled in (\address, \corres). ORCID iDs
 %     remain unconfirmed and are not guessed.
-%   - Journal ISSN / DOI abbreviation / volume / issue / article number /
-%     dates: assigned by the journal editorial office, not the authors -
-%     left blank per the template's own convention, not guessed.
-%     (\@journalfull/\@journalshort override, \firstpage, \pubvolume,
-%     \issuenum, \articlenumber, \pubyear, \copyrightyear, \datereceived,
-%     \daterevised, \dateaccepted, \datepublished, \hreflink)
+%   - Journal ISSN (3043-0887) and DOI abbreviation (pmh) are now real,
+%     independently verified via Crossref's public API 2026-08-30 (see
+%     the journal-identity override block below). Article number /
+%     received-revised-accepted-published dates / DOI link are still
+%     genuinely assigned by the editorial office on acceptance, not the
+%     authors - left blank per the template's own convention, not guessed.
+%     (\articlenumber, \datereceived, \daterevised, \dateaccepted,
+%     \datepublished, \hreflink)
 %   - Section IV.C (Method C: LLM-as-Judge): a real, small feasibility
 %     pilot (n=5) was run 2026-08-18 against real generated registers and
 %     is reported in full, including its 60% truncation-driven failure
@@ -58,16 +66,16 @@
 %=================================================================
 \documentclass[notspecified,article,submit,pdftex,moreauthors]{Definitions/mdpi}
 
-% Override the displayed journal name/short name: "notspecified" ships with
-% blank values by design (see comment above); this is the only field this
-% pass overrides post-load rather than leaving as shipped.
-% TODO: [INSERT DETAIL] - confirm the real ISSN and DOI abbreviation for
-% Project Management Horizons once verifiable, and switch from the
-% "notspecified" class option to a real \DeclareOption entry if the
-% journal's template has since added one.
+% Override the journal identity fields "notspecified" ships blank (see
+% comment above) with real, independently-verified values (Crossref,
+% 2026-08-30) - not the journal's own site, which still blocks automated
+% fetches, and not an unverified claim.
 \makeatletter
+\gdef\@journal{pmh}
 \gdef\@journalfull{Project Management Horizons}
 \gdef\@journalshort{Project Management Horizons}
+\gdef\@doiabbr{pmh}
+\gdef\@ISSN{3043-0887}
 \makeatother
 
 %=================================================================
@@ -77,12 +85,14 @@
 \makeatletter
 \setcounter{page}{\@firstpage}
 \makeatother
-% Placeholder numeric values below, same convention MDPI's own template
-% ships with (not real editorial data) - the editorial office assigns the
-% real volume/issue/article number/dates on acceptance.
-% TODO: [INSERT DETAIL] - replace \pubvolume/\issuenum/\articlenumber/
-% \pubyear/\copyrightyear with the editorial office's real assignments;
-% do not submit with these placeholder values silently left in.
+% \pubvolume/\issuenum are not guesses: Crossref confirms Project
+% Management Horizons is genuinely in Volume 1, Issue 1 as of 2026-08-30
+% (3 articles registered so far, DOIs 10.3390/pmh1010001-3). This
+% submission would presumably be article 4 in that sequence, but the
+% editorial office assigns the real article number on acceptance, not
+% the authors - \articlenumber stays an explicit placeholder.
+% TODO: [INSERT DETAIL] - replace \articlenumber/\pubyear/\copyrightyear
+% with the editorial office's real assignments on acceptance.
 \pubvolume{1}
 \issuenum{1}
 \articlenumber{0}
