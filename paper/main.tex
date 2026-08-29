@@ -1105,12 +1105,19 @@ cannot answer without a human baseline.
 \textbf{Extending Method C past the feasibility pilot.} The n=5 pilot
 (Section~\ref{sec:results}) found a 60\% parse-failure rate traced to
 \texttt{judge.py}'s fixed 512-token output budget, not to the judge model
-itself (Section~\ref{sec:limitations}). Before a full Method C run against
-the corpus's 392 real generations is worth attempting, that budget needs
-enlarging and re-validating on a second small pilot; only then does scaling
-to the full corpus, under the same free-tier daily quota that governs the
-main generation grid (Table~\ref{tab:quotas}), become a reasonable next
-step rather than a repeat of this pilot's failure mode at greater cost.
+itself (Section~\ref{sec:limitations}). All three of the pilot's failures
+were consistent with output truncation specifically, so a natural next
+step is scaling that budget natively past its current 512-token floor,
+which should address the truncation-driven failure mode actually observed
+here; this narrows, but on a five-call pilot cannot guarantee, the parse
+failures a full run would encounter, since a larger budget does not rule
+out a genuinely malformed (non-truncated) response of the kind this
+pilot did not happen to produce. Before a full Method C run against the
+corpus's 392 real generations is worth attempting, the enlarged budget
+needs re-validating on a second small pilot; only then does scaling to the
+full corpus, under the same free-tier daily quota that governs the main
+generation grid (Table~\ref{tab:quotas}), become a reasonable next step
+rather than a repeat of this pilot's failure mode at greater cost.
 
 \textbf{Contamination-controlled replication as model rosters change.} The
 free-tier model lineup used here (Section~\ref{sec:methods}) is a
@@ -1124,7 +1131,12 @@ Section~\ref{sec:limitations} can be completed on a full
 \texttt{publication\_date}-labeled corpus rather than the 10-of-21 subset
 available now -- would test whether the recall/precision/category-accuracy
 pattern found here is a property of these specific models or a more general
-property of current-generation LLMs applied to this task.
+property of current-generation LLMs applied to this task. Extending
+\texttt{publication\_date} coverage to the remaining 11 projects is a
+direct prerequisite for that fuller analysis, and should draw on each
+document's genuine public posting or disclosure record rather than the
+World Bank's own ``Expected Approval Date'' field already shown to record
+a different concept entirely (Section~\ref{sec:limitations}).
 
 \section{Conclusions}
 
