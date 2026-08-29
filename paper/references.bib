@@ -5,6 +5,16 @@
 % Rule (see docs/lit_review_foundation.md): download the full text and confirm
 % author list, venue, volume/issue, and pages before citing in the manuscript.
 % Do not remove a TODO until you have checked the primary source.
+%
+% 2026-08-18: verification-log content lives in "annotation", not "note" -
+% found by rendering the actual compiled bibliography (both IEEEtran.bst and
+% mdpi.bst print "note" to readers), which was silently exposing internal
+% research-provenance commentary ("Verified 2026-07-26 via...", "RESOLVED...")
+% in the reference list itself. Renamed all 26 affected entries' field key
+% from "note" to "annotation" (a field neither .bst style has print logic
+% for), preserving every word of the real verification trail while keeping
+% it out of the printed, reader-facing bibliography. Do not rename back to
+% "note" without checking what the target .bst actually does with it.
 
 % =====================================================================
 % THEME 1 - AI in Project Management
@@ -18,7 +28,7 @@
   number  = {7},
   pages   = {1130},
   year    = {2025},
-  note    = {MDPI, DOI 10.3390/buildings15071130. Covers 2013--2024. Verified 2026-07-26: first 6 authors confirmed via SCIRP/ResearchGate citation string (which itself still reads "...Rashidian, S. et al."). One source separately named a possible 7th author (Skitmore, M.) but only in a search-tool summary, not in the directly-quoted citation string - not confident enough to assert as fact, left as "and others" pending direct confirmation.}
+  annotation    = {MDPI, DOI 10.3390/buildings15071130. Covers 2013--2024. Verified 2026-07-26: first 6 authors confirmed via SCIRP/ResearchGate citation string (which itself still reads "...Rashidian, S. et al."). One source separately named a possible 7th author (Skitmore, M.) but only in a search-tool summary, not in the directly-quoted citation string - not confident enough to assert as fact, left as "and others" pending direct confirmation.}
 }
 
 @article{leveraging2025ai_pm,
@@ -29,7 +39,7 @@
   number  = {2},
   pages   = {66},
   year    = {2025},
-  note    = {MDPI, DOI 10.3390/computers14020066. 97 studies, 2011--2024, PRISMA. Authors verified 2026-07-26 via WebSearch citing the MDPI URL directly; not independently re-fetched from the MDPI page itself.}
+  annotation    = {MDPI, DOI 10.3390/computers14020066. 97 studies, 2011--2024, PRISMA. Authors verified 2026-07-26 via WebSearch citing the MDPI URL directly; not independently re-fetched from the MDPI page itself.}
 }
 
 @article{mapping2025ai_landscape,
@@ -40,7 +50,7 @@
   number  = {10},
   pages   = {913},
   year    = {2025},
-  note    = {MDPI, DOI 10.3390/systems13100913. Scopus + WoS to Nov 2024. Verified 2026-07-26 by fetching mdpi.com/2079-8954/13/10/913 directly and reading the page's own author-list markup - highest-confidence verification in this file (primary page fetch, not just search).}
+  annotation    = {MDPI, DOI 10.3390/systems13100913. Scopus + WoS to Nov 2024. Verified 2026-07-26 by fetching mdpi.com/2079-8954/13/10/913 directly and reading the page's own author-list markup - highest-confidence verification in this file (primary page fetch, not just search).}
 }
 
 @article{aidriven2026usecases,
@@ -50,7 +60,7 @@
   volume  = {278},
   pages   = {1487--1493},
   year    = {2026},
-  note    = {ScienceDirect S1877050926007301. KEY GAP SOURCE (G1). Verified 2026-07-26 via WebSearch; the ScienceDirect page itself and the FH M{\"u}nster institutional-repository PDF both returned empty on direct fetch attempts (likely JS-walled), so this is search-confirmed rather than primary-fetch-confirmed.}
+  annotation    = {ScienceDirect S1877050926007301. KEY GAP SOURCE (G1). Verified 2026-07-26 via WebSearch; the ScienceDirect page itself and the FH M{\"u}nster institutional-repository PDF both returned empty on direct fetch attempts (likely JS-walled), so this is search-confirmed rather than primary-fetch-confirmed.}
 }
 
 @article{aitools2025knowledge,
@@ -60,7 +70,7 @@
   volume  = {6},
   pages   = {100196},
   year    = {2025},
-  note    = {KEY GAP SOURCE (G1). Volume/pages/DOI resolved 2026-07-26 via CrossRef API direct query (title-search match, exact title/journal match): DOI 10.1016/j.plas.2025.100196, article no. 100196. Author given names (previously initials only) confirmed the same way.}
+  annotation    = {KEY GAP SOURCE (G1). Volume/pages/DOI resolved 2026-07-26 via CrossRef API direct query (title-search match, exact title/journal match): DOI 10.1016/j.plas.2025.100196, article no. 100196. Author given names (previously initials only) confirmed the same way.}
 }
 
 @article{openinnovation2024ai,
@@ -71,7 +81,7 @@
   number  = {1},
   pages   = {100445},
   year    = {2024},
-  note    = {RESOLVED 2026-07-26 via CrossRef API direct query (exact title match): DOI 10.1016/j.joitmc.2024.100445. CORRECTION, not just confirmation - the previous WebSearch-derived author segmentation had the 2nd author wrong ("Perangin-Angin, Rosliyana"); CrossRef's authoritative record gives "Peranginangin, Randall Aginta" instead.}
+  annotation    = {RESOLVED 2026-07-26 via CrossRef API direct query (exact title match): DOI 10.1016/j.joitmc.2024.100445. CORRECTION, not just confirmation - the previous WebSearch-derived author segmentation had the 2nd author wrong ("Perangin-Angin, Rosliyana"); CrossRef's authoritative record gives "Peranginangin, Randall Aginta" instead.}
 }
 
 @incollection{jariwala2025pmis,
@@ -82,7 +92,7 @@
   publisher = {IGI Global Scientific Publishing},
   pages     = {117--160},
   year      = {2025},
-  note      = {CORRECTED, not just resolved, 2026-07-26: the previous author list ("Karshiboev, Aibek and Al-Samad, Khaled and Tarafdar, Md Tanvir Rahman and Papel, Md Saidul Islam") was WRONG - a single-source, uncross-checked WebSearch result that did not actually match this DOI/chapter. Re-verified independently via two sources: CrossRef API (DOI 10.4018/979-8-3373-0700-8.ch004, single author Mayur Jariwala, ORCID-authenticated 0009-0008-1686-8791, University of the Cumberlands, USA, published 2025-03-28, pp. 117-160, ISBN 9798337307008/9798337307022) and a direct web search reflecting IGI Global's own gateway page (chapter/373085), which independently agrees on the author and adds the book title/editor above. Confirmed a genuine IGI Global BOOK CHAPTER, not a journal article - bibtex type changed from \@article to \@incollection accordingly. Citation key renamed from karshiboev2026pmis to jariwala2025pmis (main.tex's \cite{} updated to match) since the old key no longer describes a real author.}
+  annotation      = {CORRECTED, not just resolved, 2026-07-26: the previous author list ("Karshiboev, Aibek and Al-Samad, Khaled and Tarafdar, Md Tanvir Rahman and Papel, Md Saidul Islam") was WRONG - a single-source, uncross-checked WebSearch result that did not actually match this DOI/chapter. Re-verified independently via two sources: CrossRef API (DOI 10.4018/979-8-3373-0700-8.ch004, single author Mayur Jariwala, ORCID-authenticated 0009-0008-1686-8791, University of the Cumberlands, USA, published 2025-03-28, pp. 117-160, ISBN 9798337307008/9798337307022) and a direct web search reflecting IGI Global's own gateway page (chapter/373085), which independently agrees on the author and adds the book title/editor above. Confirmed a genuine IGI Global BOOK CHAPTER, not a journal article - bibtex type changed from \@article to \@incollection accordingly. Citation key renamed from karshiboev2026pmis to jariwala2025pmis (main.tex's \cite{} updated to match) since the old key no longer describes a real author.}
 }
 
 % =====================================================================
@@ -97,7 +107,7 @@
   number  = {9},
   pages   = {04025119},
   year    = {2025},
-  note    = {ASCE, DOI 10.1061/JCEMD4.COENG-16658. CLOSEST COMPETITOR \#1. Full author list and article number resolved 2026-07-26 via direct CrossRef API query (ASCE's own page and WebSearch had both failed to surface authors).}
+  annotation    = {ASCE, DOI 10.1061/JCEMD4.COENG-16658. CLOSEST COMPETITOR \#1. Full author list and article number resolved 2026-07-26 via direct CrossRef API query (ASCE's own page and WebSearch had both failed to surface authors).}
 }
 
 @article{aladag2023assessing_chatgpt,
@@ -108,7 +118,7 @@
   number  = {22},
   pages   = {16071},
   year    = {2023},
-  note    = {Journal identified 2026-07-26 as Sustainability (MDPI), not a generic "MDPI journal" - DOI 10.3390/su152216071, article no. 16071 (MDPI uses article numbers in place of traditional page ranges). Expert focus-group, GPT-3.5. Single-author confirmed via multiple independent sources.}
+  annotation    = {Journal identified 2026-07-26 as Sustainability (MDPI), not a generic "MDPI journal" - DOI 10.3390/su152216071, article no. 16071 (MDPI uses article numbers in place of traditional page ranges). Expert focus-group, GPT-3.5. Single-author confirmed via multiple independent sources.}
 }
 
 @inproceedings{esrel2023iso31000_chatgpt,
@@ -118,7 +128,7 @@
   address   = {Southampton},
   publisher = {Research Publishing, Singapore},
   year      = {2023},
-  note      = {Verified 2026-07-26 via two independent sources: rpsonline.com.sg/proceedings/esrel2023 (paper P733) and SSRN (DOI 10.2139/ssrn.4504409) - both list the same 7 authors. Paper is numbered P733 in the proceedings; no traditional page range found. Publisher confirmed 2026-07-26 via WebSearch reflecting rpsonline.com.sg's own "About Us" page (ISBN 978-981-18-8071-1, eds. Brito, Aven, Baraldi, {\v C}epin, Zio).}
+  annotation      = {Verified 2026-07-26 via two independent sources: rpsonline.com.sg/proceedings/esrel2023 (paper P733) and SSRN (DOI 10.2139/ssrn.4504409) - both list the same 7 authors. Paper is numbered P733 in the proceedings; no traditional page range found. Publisher confirmed 2026-07-26 via WebSearch reflecting rpsonline.com.sg's own "About Us" page (ISBN 978-981-18-8071-1, eds. Brito, Aven, Baraldi, {\v C}epin, Zio).}
 }
 
 @article{ecam2024chatgpt_exceed_humans,
@@ -129,7 +139,7 @@
   number  = {13},
   pages   = {223--243},
   year    = {2024},
-  note    = {Emerald, DOI 10.1108/ECAM-08-2023-0819. GPT-4 vs experts, blind peer review. Verified 2026-07-26 via two independent sources (Emerald listing + ARCOM abstracts browse page) that agree on authors and pp. 223-243.}
+  annotation    = {Emerald, DOI 10.1108/ECAM-08-2023-0819. GPT-4 vs experts, blind peer review. Verified 2026-07-26 via two independent sources (Emerald listing + ARCOM abstracts browse page) that agree on authors and pp. 223-243.}
 }
 
 @inproceedings{wen2025riskgpt,
@@ -138,7 +148,7 @@
   booktitle = {Proceedings of the 23rd CIB World Building Congress},
   address = {West Lafayette, IN, USA},
   year    = {2025},
-  note    = {RiskGPT agent; case study on real construction projects. Verified 2026-07-26 via Purdue e-Pubs (docs.lib.purdue.edu/cib-conferences/vol1/iss1/294), cross-referenced against a separate WebSearch summary for the 3rd author's name. Bibtex type changed from \@article to \@inproceedings to match its real venue (a conference proceedings, not a journal) - this is a correction to the entry's type, not just its fields.}
+  annotation    = {RiskGPT agent; case study on real construction projects. Verified 2026-07-26 via Purdue e-Pubs (docs.lib.purdue.edu/cib-conferences/vol1/iss1/294), cross-referenced against a separate WebSearch summary for the 3rd author's name. Bibtex type changed from \@article to \@inproceedings to match its real venue (a conference proceedings, not a journal) - this is a correction to the entry's type, not just its fields.}
 }
 
 @article{contractkg2023llm,
@@ -148,7 +158,7 @@
   volume  = {175},
   pages   = {106179},
   year    = {2025},
-  note    = {GraphRAG + Nested Contract KG. RESOLVED 2026-07-26: the journal version DOES now exist, confirmed via CrossRef API (DOI 10.1016/j.autcon.2025.106179, published 2025-07, same 6 authors as the arXiv preprint). Originally posted as arXiv:2309.12132 (submitted 21 Sep 2023); now cited as the peer-reviewed journal version per standard practice once both exist.}
+  annotation    = {GraphRAG + Nested Contract KG. RESOLVED 2026-07-26: the journal version DOES now exist, confirmed via CrossRef API (DOI 10.1016/j.autcon.2025.106179, published 2025-07, same 6 authors as the arXiv preprint). Originally posted as arXiv:2309.12132 (submitted 21 Sep 2023); now cited as the peer-reviewed journal version per standard practice once both exist.}
 }
 
 @article{barcaui2023whoisbetter,
@@ -158,7 +168,7 @@
   volume  = {4},
   pages   = {100101},
   year    = {2023},
-  note    = {Verified 2026-07-26 directly against DOAJ's primary metadata record (doaj.org/article/b181cd091102424fadc886031e9a6d8a), DOI 10.1016/j.plas.2023.100101.}
+  annotation    = {Verified 2026-07-26 directly against DOAJ's primary metadata record (doaj.org/article/b181cd091102424fadc886031e9a6d8a), DOI 10.1016/j.plas.2023.100101.}
 }
 
 % =====================================================================
@@ -173,7 +183,7 @@
   number  = {18},
   pages   = {3379},
   year    = {2025},
-  note    = {MDPI, DOI 10.3390/buildings15183379. CLOSEST COMPETITOR \#2 (classification, not generation). Authors verified 2026-07-26 via WebSearch/DOI cross-check; matches the "Erfani-and-Khanjar" framing already used elsewhere in this paper (task \#26's differentiation paragraph), an independent internal cross-check that these names are real.}
+  annotation    = {MDPI, DOI 10.3390/buildings15183379. CLOSEST COMPETITOR \#2 (classification, not generation). Authors verified 2026-07-26 via WebSearch/DOI cross-check; matches the "Erfani-and-Khanjar" framing already used elsewhere in this paper (task \#26's differentiation paragraph), an independent internal cross-check that these names are real.}
 }
 
 @article{textmining2025scrm,
@@ -183,7 +193,7 @@
   volume  = {12},
   pages   = {100167},
   year    = {2025},
-  note    = {ScienceDirect S2949863525000676. 33 studies. Authors and journal name (previously fully unknown) found 2026-07-26 via WebSearch - ScienceDirect page itself returned empty on direct fetch, so single-source confirmation only.}
+  annotation    = {ScienceDirect S2949863525000676. 33 studies. Authors and journal name (previously fully unknown) found 2026-07-26 via WebSearch - ScienceDirect page itself returned empty on direct fetch, so single-source confirmation only.}
 }
 
 @article{textmining2026construction_scientometric,
@@ -192,7 +202,7 @@
   journal = {Frontiers in Built Environment},
   volume  = {12},
   year    = {2026},
-  note    = {DOI 10.3389/fbuil.2026.1815172 (153 articles reviewed, 2015--2025, WoS+Scopus+Google Scholar). Author resolved 2026-07-26 via direct CrossRef API query (the Frontiers full-text page was too large to fetch/parse directly in an earlier attempt).}
+  annotation    = {DOI 10.3389/fbuil.2026.1815172 (153 articles reviewed, 2015--2025, WoS+Scopus+Google Scholar). Author resolved 2026-07-26 via direct CrossRef API query (the Frontiers full-text page was too large to fetch/parse directly in an earlier attempt).}
 }
 
 % =====================================================================
@@ -205,7 +215,7 @@
   year    = {2024},
   eprint  = {2412.05579},
   archivePrefix = {arXiv},
-  note    = {Justifies Method C = supplementary only. Full author list confirmed 2026-07-26 directly against the arXiv abstract page (submitted 7 Dec 2024, v2 10 Dec 2024).}
+  annotation    = {Justifies Method C = supplementary only. Full author list confirmed 2026-07-26 directly against the arXiv abstract page (submitted 7 Dec 2024, v2 10 Dec 2024).}
 }
 
 @article{nofreelabels2025,
@@ -214,7 +224,7 @@
   year    = {2025},
   eprint  = {2503.05061},
   archivePrefix = {arXiv},
-  note    = {Full author list confirmed 2026-07-26 directly against the arXiv abstract page (submitted 7 Mar 2025, v2 1 Apr 2026).}
+  annotation    = {Full author list confirmed 2026-07-26 directly against the arXiv abstract page (submitted 7 Mar 2025, v2 1 Apr 2026).}
 }
 
 @inproceedings{iui2025llmjudge_expert,
@@ -225,7 +235,7 @@
   pages     = {952--966},
   year      = {2025},
   doi       = {10.1145/3708359.3712091},
-  note      = {Expert-domain judging = our setting. RESOLVED 2026-07-26: IUI 2025 acceptance and exact pages now confirmed directly via ACM Digital Library / CrossRef (DOI 10.1145/3708359.3712091, presented 24-27 Mar 2025) - the earlier concern (arXiv page's Comments field didn't mention acceptance) is now moot given this direct ACM confirmation. Originally posted as arXiv:2410.20266 (submitted 26 Oct 2024).}
+  annotation      = {Expert-domain judging = our setting. RESOLVED 2026-07-26: IUI 2025 acceptance and exact pages now confirmed directly via ACM Digital Library / CrossRef (DOI 10.1145/3708359.3712091, presented 24-27 Mar 2025) - the earlier concern (arXiv page's Comments field didn't mention acceptance) is now moot given this direct ACM confirmation. Originally posted as arXiv:2410.20266 (submitted 26 Oct 2024).}
 }
 
 @inproceedings{zheng2023judging_llm_judge,
@@ -235,7 +245,7 @@
   year      = {2023},
   eprint    = {2306.05685},
   archivePrefix = {arXiv},
-  note      = {Positional/verbosity/self-enhancement bias. Full author list AND the NeurIPS 2023 Datasets and Benchmarks Track venue both confirmed 2026-07-26 directly against the arXiv page's own Comments field - the strongest single confirmation in this file, since the primary source states the venue explicitly.}
+  annotation      = {Positional/verbosity/self-enhancement bias. Full author list AND the NeurIPS 2023 Datasets and Benchmarks Track venue both confirmed 2026-07-26 directly against the arXiv page's own Comments field - the strongest single confirmation in this file, since the primary source states the venue explicitly.}
 }
 
 % =====================================================================
@@ -250,7 +260,7 @@
   number  = {5},
   pages   = {378--382},
   year    = {1971},
-  note    = {DOI 10.1037/h0031619. Confirmed 2026-07-26 via WebSearch cross-check (SCIRP, ResearchGate, Semantic Scholar all agree) - matches the values already on file.}
+  annotation    = {DOI 10.1037/h0031619. Confirmed 2026-07-26 via WebSearch cross-check (SCIRP, ResearchGate, Semantic Scholar all agree) - matches the values already on file.}
 }
 
 @article{landiskoch1977agreement,
@@ -261,7 +271,7 @@
   number  = {1},
   pages   = {159--174},
   year    = {1977},
-  note    = {Interpretation bands. Confirmed 2026-07-26 via WebSearch cross-check: majority of independent sources (Semantic Scholar, Scilit, sciepub.com x3) agree on pp. 159-174 as already on file; one SCIRP listing shows 150-174, treated as a likely transcription error since it is an outlier against 5+ agreeing sources.}
+  annotation    = {Interpretation bands. Confirmed 2026-07-26 via WebSearch cross-check: majority of independent sources (Semantic Scholar, Scilit, sciepub.com x3) agree on pp. 159-174 as already on file; one SCIRP listing shows 150-174, treated as a likely transcription error since it is an outlier against 5+ agreeing sources.}
 }
 
 @inproceedings{brown2020fewshot,
@@ -271,7 +281,7 @@
   year      = {2020},
   eprint    = {2005.14165},
   archivePrefix = {arXiv},
-  note      = {Few-shot in-context learning. Full 31-author list confirmed 2026-07-26 directly against the arXiv abstract page. NeurIPS 2020 venue is well-established (this is the GPT-3 paper) but note the arXiv page itself carries no explicit "Comments: NeurIPS 2020" tag the way the Zheng et al. entry above does - proceedings page numbers not independently confirmed.}
+  annotation      = {Few-shot in-context learning. Full 31-author list confirmed 2026-07-26 directly against the arXiv abstract page. NeurIPS 2020 venue is well-established (this is the GPT-3 paper) but note the arXiv page itself carries no explicit "Comments: NeurIPS 2020" tag the way the Zheng et al. entry above does - proceedings page numbers not independently confirmed.}
 }
 
 @inproceedings{wei2022cot,
@@ -281,7 +291,7 @@
   year      = {2022},
   eprint    = {2201.11903},
   archivePrefix = {arXiv},
-  note      = {Full author list confirmed 2026-07-26 directly against the arXiv abstract page. Same caveat as Brown et al. above: NeurIPS 2022 venue is well-established public knowledge but not shown via an explicit Comments tag on the arXiv page itself; proceedings pages not independently confirmed.}
+  annotation      = {Full author list confirmed 2026-07-26 directly against the arXiv abstract page. Same caveat as Brown et al. above: NeurIPS 2022 venue is well-established public knowledge but not shown via an explicit Comments tag on the arXiv page itself; proceedings pages not independently confirmed.}
 }
 
 @inproceedings{thakur2024kappa,
@@ -291,5 +301,5 @@
   year      = {2024},
   eprint    = {2406.12624},
   archivePrefix = {arXiv},
-  note      = {Title, authors, and content ALL confirmed 2026-07-26 directly against the arXiv abstract page (submitted 18 Jun 2024) - resolves an entry that previously had every field flagged unknown. Argues for alignment metrics beyond simple percent agreement; the abstract itself does not use the literal term "Cohen's kappa", so the pre-existing note's framing is a reasonable paraphrase, not a verbatim match - worth Kruthik double-checking the full text if this specific framing matters to the paper's argument. Official peer-reviewed venue is GEM2 2025 (ACL Anthology 2025.gem-1.33, pp. 404-430); the arXiv submission and this entry's "year" field are 2024 - both years are defensible depending on whether you're citing the preprint or the proceedings.}
+  annotation      = {Title, authors, and content ALL confirmed 2026-07-26 directly against the arXiv abstract page (submitted 18 Jun 2024) - resolves an entry that previously had every field flagged unknown. Argues for alignment metrics beyond simple percent agreement; the abstract itself does not use the literal term "Cohen's kappa", so the pre-existing note's framing is a reasonable paraphrase, not a verbatim match - worth Kruthik double-checking the full text if this specific framing matters to the paper's argument. Official peer-reviewed venue is GEM2 2025 (ACL Anthology 2025.gem-1.33, pp. 404-430); the arXiv submission and this entry's "year" field are 2024 - both years are defensible depending on whether you're citing the preprint or the proceedings.}
 }

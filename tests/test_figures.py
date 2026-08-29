@@ -15,6 +15,16 @@ was written. Those additions turned out to be purely additive, but the figures
 code reads `metrics.json` by key, so a rename or removal upstream would break
 the paper's figures silently at the next run. These tests fail loudly instead.
 
+Third, corpus_wide_only vs. pooled. Found 2026-08-17: fig_rq2/fig_rq3 read the
+pooled `by_model_and_prompt`/`by_category` fields (which include the
+short-register subgroup), while the paper's RQ2/RQ3 tables - and its own
+stated convention that figures exclude that subgroup unless stated otherwise -
+use `by_model_and_prompt_corpus_wide_only`/`by_category_corpus_wide_only`. The
+figures and tables silently disagreed on the actual numbers. Fixed by reading
+the `_corpus_wide_only` fields; the fixture below now gives the pooled and
+corpus_wide_only variants different values specifically so a regression back
+to the pooled field fails a value assertion, not just a missing-key check.
+
 Rendering uses matplotlib's Agg backend (no display needed) but does require
 matplotlib to be installed - the tests skip cleanly if it isn't, so the suite
 still runs on a bare interpreter.
@@ -40,24 +50,35 @@ except ImportError:  # matplotlib not installed in this interpreter
 
 def _metrics_fixture():
     """A minimal metrics.json in the CURRENT schema, including the keys added
-    on 2026-07-21, with every value hand-set so the figures are predictable."""
-    cell = {"n_runs": 2, "mean_recall": 0.5, "mean_precision": 0.4,
-            "mean_category_accuracy": 0.8, "n_parse_failed": 0}
+    on 2026-07-21, with every value hand-set so the figures are predictable.
+
+    Pooled (`by_model_and_prompt`/`by_category`) and corpus_wide_only variants
+    are deliberately given DIFFERENT values below, not copies of each other:
+    the figures must read the corpus_wide_only ones, and a fixture where both
+    variants matched would let that regress silently (see module docstring)."""
+    pooled_cell = {"n_runs": 2, "mean_recall": 0.9, "mean_precision": 0.9,
+                   "mean_category_accuracy": 0.9, "n_parse_failed": 0}
+    cwo_cell = {"n_runs": 2, "mean_recall": 0.5, "mean_precision": 0.4,
+                "mean_category_accuracy": 0.8, "n_parse_failed": 0}
     return {
         "n_scored_runs_total": 36,
         "n_parse_failed_total": 2,
         "corpus_wide": {"n_runs": 18, "mean_recall": 0.55, "mean_precision": 0.42,
                         "mean_category_accuracy": 0.81},
-        "by_model_and_prompt": {f"{m} / {p}": dict(cell)
+        "by_model_and_prompt": {f"{m} / {p}": dict(pooled_cell)
                                 for m in mf.MODELS for p in mf.PROMPTS},
-        "by_model_and_prompt_corpus_wide_only": {f"{m} / {p}": dict(cell)
+        "by_model_and_prompt_corpus_wide_only": {f"{m} / {p}": dict(cwo_cell)
                                                  for m in mf.MODELS for p in mf.PROMPTS},
         "by_category": {
+            "technical": {"missed_count": 99, "hallucinated_count": 99},
+            "environmental": {"missed_count": 4, "hallucinated_count": 0},
+            "other": {"missed_count": 2, "hallucinated_count": 0},
+        },
+        "by_category_corpus_wide_only": {
             "technical": {"missed_count": 5, "hallucinated_count": 3},
             "environmental": {"missed_count": 4, "hallucinated_count": 0},
             "other": {"missed_count": 2, "hallucinated_count": 0},
         },
-        "by_category_corpus_wide_only": {"technical": {"missed_count": 3, "hallucinated_count": 2}},
         "by_category_excluding_parse_failures": {"technical": {"missed_count": 2, "hallucinated_count": 3}},
         "short_register_subgroup": {"n_runs": 18, "mean_recall": 0.6, "mean_precision": 0.15,
                                     "mean_category_accuracy": 0.7, "by_project": {}},
@@ -112,12 +133,13 @@ class TestFiguresRenderAgainstCurrentSchema(unittest.TestCase):
         m = _metrics_fixture()
         mat = mf._grid_matrix(m, "mean_recall")
         self.assertEqual(mat.shape, (len(mf.MODELS), len(mf.PROMPTS)))
+        # 0.5 (corpus_wide_only), not 0.9 (pooled) - see module docstring.
         self.assertAlmostEqual(float(mat[0, 0]), 0.5)
 
     def test_rq2_missing_cell_does_not_crash(self):
         # A partial grid (e.g. a resumed run) must still plot.
         m = _metrics_fixture()
-        del m["by_model_and_prompt"]["claude / zero_shot"]
+        del m["by_model_and_prompt_corpus_wide_only"]["claude / zero_shot"]
         mat = mf._grid_matrix(m, "mean_recall")
         self.assertEqual(mat.shape, (len(mf.MODELS), len(mf.PROMPTS)))
 
@@ -154,19 +176,21 @@ class TestMetricsSchemaContract(unittest.TestCase):
             report = met.compute_all(scored_dir=tmp)
 
         # These are the top-level keys the three figures actually index into.
-        for key in ("corpus_wide", "by_model_and_prompt", "by_category",
-                    "short_register_subgroup"):
+        for key in ("corpus_wide", "by_model_and_prompt_corpus_wide_only",
+                    "by_category_corpus_wide_only", "short_register_subgroup"):
             self.assertIn(key, report, f"make_figures reads {key!r}; metrics.py no longer emits it")
 
         for field in ("mean_recall", "mean_precision"):
             self.assertIn(field, report["corpus_wide"],
                           f"fig_rq1 reads corpus_wide[{field!r}]")
-        cell = next(iter(report["by_model_and_prompt"].values()))
+        cell = next(iter(report["by_model_and_prompt_corpus_wide_only"].values()))
         for field in ("mean_recall", "mean_precision"):
-            self.assertIn(field, cell, f"fig_rq2 reads by_model_and_prompt[*][{field!r}]")
-        cat = next(iter(report["by_category"].values()))
+            self.assertIn(field, cell,
+                          f"fig_rq2 reads by_model_and_prompt_corpus_wide_only[*][{field!r}]")
+        cat = next(iter(report["by_category_corpus_wide_only"].values()))
         for field in ("missed_count", "hallucinated_count"):
-            self.assertIn(field, cat, f"fig_rq3 reads by_category[*][{field!r}]")
+            self.assertIn(field, cat,
+                          f"fig_rq3 reads by_category_corpus_wide_only[*][{field!r}]")
 
 
 if __name__ == "__main__":

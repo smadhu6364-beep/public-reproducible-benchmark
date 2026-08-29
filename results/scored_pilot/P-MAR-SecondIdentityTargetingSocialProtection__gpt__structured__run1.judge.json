@@ -1,0 +1,11 @@
+{
+  "run_file": "P-MAR-SecondIdentityTargetingSocialProtection__gpt__structured__run1.json",
+  "project_id": "P-MAR-SecondIdentityTargetingSocialProtection",
+  "generation_model": "gpt",
+  "generation_prompt_strategy": "structured",
+  "generation_run_index": 1,
+  "judged": false,
+  "scores": null,
+  "parse_error": "no JSON object found in judge response",
+  "raw_judge_response": "{\"completeness\": 5, \"accuracy\": 4, \"actionability\": 4,"
+}

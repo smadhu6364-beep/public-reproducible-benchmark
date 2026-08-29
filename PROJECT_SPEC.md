@@ -41,8 +41,12 @@ behind RQ2 evolved, and for disclosed limitations.
   environmental | organizational | external), likelihood (1-5), impact (1-5),
   mitigation.
 - Evaluation: (A) semantic matching vs. ground truth - recall, precision,
-  per-category coverage; (B) expert Likert ratings + Fleiss' kappa;
-  (C) LLM-as-judge, supplementary only.
+  per-category coverage; (C) LLM-as-judge, supplementary only, never a
+  human-judgment substitute. (B) expert Likert ratings + Fleiss' kappa was
+  designed, built, and tested, but formally descoped from the paper
+  2026-08-18 after rater recruitment did not prove feasible - see
+  `docs/methodology_log.md`. The protocol/code are not deleted and remain
+  available for a future replication with real recruiting capacity.
 
 ## Repo structure (maintain exactly)
 
