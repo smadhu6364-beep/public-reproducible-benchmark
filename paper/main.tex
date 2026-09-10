@@ -7,12 +7,6 @@
 % journal-class overrides, no sidebar/footer macros, no \journal /
 % \articletype / \backmatter. Submission via EasyChair; single-blind, so
 % author identities are shown (not anonymized). Original, unpublished work.
-%
-% TODO before submission:
-%   - ORCID iDs unconfirmed for both authors; omitted, not guessed.
-%   - Data-availability DOI (a Zenodo archive of a tagged release) is not
-%     yet minted; add it once available.
-%   - Camera-ready only: balance the two columns on the final page.
 
 \documentclass[10pt, conference, letterpaper]{IEEEtran}
 \IEEEoverridecommandlockouts
@@ -74,10 +68,11 @@ category accuracy and precision in most conditions, a conservative
 generate-fewer-but-more-accurate pattern. Category-level analysis finds a
 specific, non-uniform failure pattern rather than uniform weakness:
 political and regulatory risk is the category models most often fail to
-surface at all (191 real risks missed corpus-wide), while schedule risk is
+surface at all (191 real risks missed corpus-wide, or 28.0 percent of all
+ground-truth risks the models do not recover), while schedule risk is
 generated as a near-default, safe category even where a project's real
-register does not support it (238 hallucinated instances against zero real
-misses). We release the corpus manifest, extraction and prompting code, and
+register does not support it (238 hallucinated schedule risks, and the only
+category for which no ground-truth risk is missed). We release the corpus manifest, extraction and prompting code, and
 evaluation pipeline, including a disclosed account of the free-tier
 provider constraints that shaped the timeline, so the benchmark is
 reproducible.
@@ -248,9 +243,13 @@ Three models -- one general-purpose proprietary model and two
 architecturally distinct open-weight models (Table~\ref{tab:models}) -- are
 each evaluated under three prompting strategies across all 21 projects,
 with 2 runs per cell at temperature 0--0.1: a $189$-cell $\times$ 2-run
-grid. Models receive planning documentation only; a project's ground-truth
-register never enters its prompt or any few-shot example (few-shot
-demonstrations are fully synthetic). The tier was originally meant to
+grid. The open-weight pair is Meta's \texttt{Llama-3.3-70B-Instruct} and
+OpenAI's \texttt{gpt-oss-120b}, an Apache-2.0 licensed Mixture-of-Experts
+model; both are served through SambaNova Cloud's serverless API under the
+exact identifiers in Table~\ref{tab:models}, with no local fine-tuning or
+weight modification. Models receive planning documentation only; a
+project's ground-truth register never enters its prompt or any few-shot
+example (few-shot demonstrations are fully synthetic). The tier was originally meant to
 include two proprietary models plus one open-weight model; it was changed
 after all three original provider accounts proved unfunded on first use, a
 real and disclosed change to the comparison's shape. All models run on
@@ -437,14 +436,15 @@ Llama-3.3-70B (open-wt.\ \#2) & structured & 5 & 0.408 & 0.274 & 0.630 \\
 Table~\ref{tab:rq3} gives missed and hallucinated counts by category.
 Political/regulatory risk is the category models most systematically fail
 to identify: 191 ground-truth political/regulatory risks have no matched
-generated counterpart, more than any other category, while its
-hallucination count (163) is comparatively low -- models are not
-mislabeling other risks as political/regulatory, they are simply not
-surfacing it as often as a human author does. Schedule risk shows the
-opposite pattern in pure form: zero ground-truth schedule risks are missed,
-while 238 generated schedule risks have no ground-truth match -- a
-near-default, safe category models emit even when the project's real
-register does not support it. Financial (497), technical (511), and
+generated counterpart -- 28.0\% of the 681 ground-truth risks missed
+corpus-wide, and more than any other category -- while its hallucination
+count (163) is comparatively low, so models are not mislabeling other risks
+as political/regulatory, they are simply not surfacing it as often as a
+human author does. Schedule risk shows the opposite pattern in pure form:
+it is the only category for which no ground-truth risk is missed, yet 238
+generated schedule risks have no ground-truth match -- a near-default, safe
+category models emit even when the project's real register does not support
+it. Financial (497), technical (511), and
 stakeholder (426) have the highest hallucination counts but, unlike
 schedule, also have real missed counts (130, 69, 30), so their story is
 over-generation alongside genuine omission. The ``other'' row (10 missed, 0
@@ -591,7 +591,6 @@ matching/metrics/judging pipeline, and raw model outputs referenced in this
 paper are released in the project repository at
 \url{https://github.com/smadhu6364-beep/public-reproducible-benchmark}, per
 the reproducibility commitments in Section~\ref{sec:methods}.
-% TODO: mint and add a DOI (e.g. a Zenodo archive of a tagged release).
 
 \section*{Acknowledgment}
 
