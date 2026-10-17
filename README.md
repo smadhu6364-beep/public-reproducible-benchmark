@@ -1,5 +1,10 @@
 # LLM Risk Register Benchmark
 
+![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)
+![Tests: 456](https://img.shields.io/badge/tests-456%20unit%20tests-brightgreen)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue)](LICENSE)
+![Dependencies: pinned](https://img.shields.io/badge/dependencies-pinned-informational)
+
 Code and data for an IEEE conference paper: **"Evaluating Large Language Models
 for Automated Risk Register Generation from Project Documentation: A Benchmark Study."**
 
@@ -17,12 +22,24 @@ core failure-mode contribution).
 **Evaluation:** (A) semantic matching vs. ground truth (recall/precision/coverage);
 (B) expert Likert ratings + Fleiss' kappa; (C) LLM-as-judge (supplementary only).
 
+## Reproduce in 3 commands
+
+These need no API keys, network calls to model providers, or spend. They install the exact pinned dependencies, run the full offline test suite, and print the projected cost of the experiment grid.
+
+```bash
+python -m venv .venv && .venv\Scriptsctivate && pip install -r requirements.txt   # Windows; on Linux/macOS: source .venv/bin/activate
+python -m unittest discover -s tests
+python src/run_experiments.py --estimate-only --runs 2
+```
+
+Running the real model calls needs API keys in `.env` (see [Setup](#setup) and [`docs/run_playbook.md`](docs/run_playbook.md)).
+
 ## Layout
 
 - `data/` corpus: `raw/` (PDFs, gitignored), `processed/` (text), `ground_truth/` (JSON registers, complete for all 21 included projects - 18 World Bank PADs + 3 UK business cases), `risk_source_audit/` (excised pages, audit-only, gitignored), `corpus_manifest.csv`
 - `prompts/` prompt templates + `output_schema.json` / `ground_truth_schema.json`
 - `src/` `extract.py`, `run_experiments.py` (sync + batch), `match.py`, `metrics.py`, `judge.py`, `check_env.py`, `audit_corpus.py`, `build_rater_packets.py`, `validate_threshold.py` - all implemented; no full experiment run yet (needs `.env` API keys - all 3 model slots are decided and pre-filled in `.env.example`)
-- `tests/` 438 unit tests covering the deterministic logic in `extract.py` (incl. the page-excision partition and the `--all` driver), `audit_corpus.py` (leakage detection and the FAIL/WARN/PASS aggregation driver), `match.py` (incl. its scoring driver), `validate_threshold.py` (the sweep/recommend statistics behind the 0.45 threshold decision), `metrics.py` (incl. the opt-in pretraining-cutoff contamination check), response parsing and driver logic (`run_experiments.py`/`judge.py`), batch-API request/response shapes and submit/collect (`run_experiments.py`), Method B sampling/blinding (`build_rater_packets.py`), the run driver's append-only + leakage + cost guards, `check_env.py`'s connectivity checks, `.env.example`/code consistency, git-level leakage guards (gitignore), ground-truth schema conformance, a static sweep guarding the out-of-repo-path `_show()` fix across 5 files, `run_experiments.py`'s and `metrics.py`'s synchronous CLI drivers, retry/backoff on transient provider errors, a requirements.txt-vs-imports consistency guard, a PROJECT_SPEC.md compliance self-check, an end-to-end playbook smoke test chaining run_experiments->match->metrics->figures, Method B's Fleiss' kappa computation (`compute_kappa.py`), and figure rendering - stubs the embedding model, the PDF reader, and all three model APIs (sync and batch), so it runs in a few seconds with no network/keys/spend. Run `python -m unittest discover -s tests`.
+- `tests/` 456 unit tests covering the deterministic logic in `extract.py` (incl. the page-excision partition and the `--all` driver), `audit_corpus.py` (leakage detection and the FAIL/WARN/PASS aggregation driver), `match.py` (incl. its scoring driver), `validate_threshold.py` (the sweep/recommend statistics behind the 0.45 threshold decision), `metrics.py` (incl. the opt-in pretraining-cutoff contamination check), response parsing and driver logic (`run_experiments.py`/`judge.py`), batch-API request/response shapes and submit/collect (`run_experiments.py`), Method B sampling/blinding (`build_rater_packets.py`), the run driver's append-only + leakage + cost guards, `check_env.py`'s connectivity checks, `.env.example`/code consistency, git-level leakage guards (gitignore), ground-truth schema conformance, a static sweep guarding the out-of-repo-path `_show()` fix across 5 files, `run_experiments.py`'s and `metrics.py`'s synchronous CLI drivers, retry/backoff on transient provider errors, a requirements.txt-vs-imports consistency guard, a PROJECT_SPEC.md compliance self-check, an end-to-end playbook smoke test chaining run_experiments->match->metrics->figures, Method B's Fleiss' kappa computation (`compute_kappa.py`), and figure rendering - stubs the embedding model, the PDF reader, and all three model APIs (sync and batch), so it runs in a few seconds with no network/keys/spend. Run `python -m unittest discover -s tests`.
 - `results/` `raw_outputs/` (append-only) + `scored/` + `rater_packets/` (Method B sampling/blinding, packets pending real generations); `analysis/` figures (pipeline in progress); `paper/` (Overleaf-linked)
 
 ## Running the pipeline
@@ -71,10 +88,13 @@ missing `matplotlib`, which fails only at the figures step.
 python -m unittest discover -s tests
 ```
 
-438 tests, ~14s. No API keys, network, real embedding model, or spend needed
+456 tests (11 skipped by default), under a minute. No API keys, network, real embedding model, or spend needed
 (the sentence-transformer and all 3 model APIs, sync and batch, are stubbed;
 one test that deliberately exercises a real embedding model is
 skipped by default, opt in with `RUN_SLOW_TESTS=1`).
+On a fresh clone one structure check, `test_documented_directories_exist`,
+fails because `data/raw/` is gitignored and therefore missing; create it with
+`mkdir data/raw` (or download the source PDFs into it) and the suite passes.
 Coverage is concentrated where this project has actually had bugs, or where a
 silent failure would invalidate results: page-range parsing and the `--all`
 driver (`extract.py`), greedy semantic matching and its scoring driver
